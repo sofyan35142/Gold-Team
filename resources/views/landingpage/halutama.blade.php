@@ -576,8 +576,9 @@
                                                                     <div class="section-title text-center pl-40 pr-40 mb-80 wow fadeInDown animated"
                                                                         data-animation="fadeInDown animated"
                                                                         data-delay=".2s">
-                                                                        <span>our services</span>
-                                                                        <h2>Best features of the provide</h2>
+                                                                        <span>jurusan</span>
+                                                                        <h2>Program Keahlian</h2>
+                                                                        
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -590,10 +591,8 @@
                                                                             <i class="fal fa-dice-d10"></i>
                                                                         </div>
                                                                         <div class="second-services-content">
-                                                                            <h5>Pixel Perfect Design</h5>
-                                                                            <p>Lorem ipsum dolor sit amet, ipsum
-                                                                                consectetur adipisicing elit, sed do
-                                                                                eiusmod tempor inc ididunt ut.</p>
+                                                                            <h5>Teknik Kendaraan Ringan</h5>
+                                                                            <p>Teknik Kendaraan Ringan adalah sebuah ilmu yang mempelajari kompetisi keahlian bidang teknik otomotif yang menekankan pada bidang jasa perbaikan kendaraan ringan (mobil). </p>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -605,10 +604,8 @@
                                                                             <i class="fal fa-database"></i>
                                                                         </div>
                                                                         <div class="second-services-content">
-                                                                            <h5>Install &amp; Play With It</h5>
-                                                                            <p>Lorem ipsum dolor sit amet, ipsum
-                                                                                consectetur adipisicing elit, sed do
-                                                                                eiusmod tempor inc ididunt ut.</p>
+                                                                            <h5>Teknik Elektronika Industri</h5>
+                                                                            <p>Teknik Elektronik Industri (TEI) adalah bidang yang fokus mempelajari tentang komponen listrik serta berbagai macam peralatan semi konduktor. Teknik Elektronika Industri digolongkan ke dalam bagian teknik listrik atau teknik elektro.</p>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -620,10 +617,8 @@
                                                                             <i class="fal fa-layer-group"></i>
                                                                         </div>
                                                                         <div class="second-services-content">
-                                                                            <h5>Web Development</h5>
-                                                                            <p>Lorem ipsum dolor sit amet, ipsum
-                                                                                consectetur adipisicing elit, sed do
-                                                                                eiusmod tempor inc ididunt ut.</p>
+                                                                            <h5>Rekayasa Perangkat Lunak</h5>
+                                                                            <p>Program Keahlian Rekayasa Perangkat Lunak (RPL) adalah salah satu kompetensi keahlian dalam bidang Teknologi Komputer dan Informatika yang secara khusus mempelajari tentang pemrograman komputer.</p>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -635,10 +630,8 @@
                                                                             <i class="fal fa-pencil-ruler"></i>
                                                                         </div>
                                                                         <div class="second-services-content">
-                                                                            <h5>Web Design</h5>
-                                                                            <p>Lorem ipsum dolor sit amet, ipsum
-                                                                                consectetur adipisicing elit, sed do
-                                                                                eiusmod tempor inc ididunt ut.</p>
+                                                                            <h5>Kimia Industri</h5>
+                                                                            <p>Program keahlian yang mempelajasi pemprosesan bahan mentah menjadi berupa barang setengah jadi ataupun barang jadi (produk) seperti : minyak bumi dan gas bumi, gas bio, detergen, cairan anti kuman, planstik, kertas, kecantikan, obat-obatan, makanan instan, dll. </p>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -650,14 +643,12 @@
                                                                             <i class="fal fa-user-plus"></i>
                                                                         </div>
                                                                         <div class="second-services-content">
-                                                                            <h5>Social Media</h5>
-                                                                            <p>Lorem ipsum dolor sit amet, ipsum
-                                                                                consectetur adipisicing elit, sed do
-                                                                                eiusmod tempor inc ididunt ut.</p>
+                                                                            <h5>Teknik Audio Video</h5>
+                                                                            <p>Jurusan Teknik Audio Video (TAV), merupakan salah satu diantara lima jurusan yang ada di SMKN 1 Sukorejo yang mendidik dan membekali siswa-siswinya terampil dan profesional dibidang audio video, pembuatan perangkat audio, mengoperasikan sound sistem, memahami multi media perekaman baik suara maupun gambar sampai proses editing dan siap untuk dipublikasikan atau sebagai movie dokumenter.</p>
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-lg-4 col-md-6">
+                                                                {{-- <div class="col-lg-4 col-md-6">
                                                                     <div class="s-single-services active wow fadeInUp animated"
                                                                         data-animation="fadeInDown animated"
                                                                         data-delay=".2s">
@@ -671,7 +662,7 @@
                                                                                 eiusmod tempor inc ididunt ut.</p>
                                                                         </div>
                                                                     </div>
-                                                                </div>
+                                                                </div> --}}
                                                             </div>
 
                                                         </div>
