@@ -85,6 +85,18 @@ class LandingController extends Controller
 
     public function jurusan()
     {
-        return view("landingpage.jurusan");
+        return view("landingpage.jurusan.jurusan");
+    }
+    public function tkr()
+    {
+        return view("landingpage.jurusan.tkr");
+    }
+    public function tei()
+    {
+        return view("landingpage.jurusan.tei");
+    }
+    public function rpl()
+    {
+        return view("landingpage.jurusan.rpl");
     }
 }

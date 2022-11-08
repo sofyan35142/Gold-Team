@@ -53,7 +53,7 @@
             <div class="container">
                 <nav class="navbar navbar-expand-md navbar-light">
                     <a class="navbar-brand" href="index.html">
-                        <img src="assets/img/logo.png" class="main-logo" alt="logo" />
+                        <img src="https://smkn1sukorejo.sch.id/wp-content/uploads/2019/10/cropped-LOGO1-2.png" class="main-logo" alt="logo" />
                         <img src="assets/img/logo-2.png" class="white-logo" alt="logo" />
                     </a>
                     <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
@@ -85,13 +85,13 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a href="service.html" class="nav-link dropdown-toggle">
+                                <a href="/jurusan" class="nav-link dropdown-toggle">
                                     Jurusan
                                     <i class="icofont-rounded-right"></i>
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
-                                        <a href="service.html" class="nav-link">Teknik Kendaraan Ringan (TKR)</a>
+                                        <a href="/tkr" class="nav-link">Teknik Kendaraan Ringan (TKR)</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="service-two.html" class="nav-link">Teknik Elektronika Industri (TEI)</a>

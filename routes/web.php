@@ -19,3 +19,6 @@ Route::get('/', function () {
 });
 
 Route::get('/jurusan', [LandingController::class, 'jurusan']);
+Route::get('/tkr', [LandingController::class, 'tkr']);
+Route::get('/tei', [LandingController::class, 'tei']);
+Route::get('/rpl', [LandingController::class, 'rpl']);
