@@ -44,8 +44,8 @@
     <div class="navbar-area">
         <div class="mobile-nav">
             <a href="index.html" class="logo">
-                <img src="assets/img/logo.png" class="main-logo" alt="logo" />
-                <img src="assets/img/logo-2.png" class="white-logo" alt="logo" />
+                <img src="../assets/img/logo.png" class="main-logo" alt="logo" />
+                <img src="../assets/img/logo-2.png" class="white-logo" alt="logo" />
             </a>
         </div>
 
@@ -53,8 +53,8 @@
             <div class="container">
                 <nav class="navbar navbar-expand-md navbar-light">
                     <a class="navbar-brand" href="index.html">
-                        <img src="assets/img/logo.png" class="main-logo" alt="logo" />
-                        <img src="assets/img/logo-2.png" class="white-logo" alt="logo" />
+                        <img src="../assets/img/logo.png" class="main-logo" alt="logo" />
+                        <img src="../assets/img/logo-2.png" class="white-logo" alt="logo" />
                     </a>
                     <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto">

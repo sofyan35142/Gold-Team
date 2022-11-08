@@ -13,9 +13,16 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+     //======================== LANDING PAGE ========================//
 Route::get('/', function () {
     return view('landingpage.halutama');
 });
+Route::get('/bug', function () {
+    return view('welcome');
+});
 
 Route::get('/jurusan', [LandingController::class, 'jurusan']);
+//==Route profil==//
+Route::get('/profil/visimisi', [LandingController::class, 'visimisi']);
+
+
