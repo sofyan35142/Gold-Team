@@ -6,33 +6,33 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css" />
 
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="../../assets/css/owl.carousel.min.css" />
 
-    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="../../assets/css/owl.theme.default.min.css" />
 
-    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="../../assets/css/slick.css" />
 
-    <link rel="stylesheet" href="assets/css/slick-theme.css" />
+    <link rel="stylesheet" href="../../assets/css/slick-theme.css" />
 
-    <link rel="stylesheet" href="assets/css/icofont.min.css" />
+    <link rel="stylesheet" href="../../assets/css/icofont.min.css" />
 
-    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <link rel="stylesheet" href="../../assets/css/magnific-popup.css" />
 
-    <link rel="stylesheet" href="assets/css/flaticon.css" />
+    <link rel="stylesheet" href="../../assets/css/flaticon.css" />
 
-    <link rel="stylesheet" href="assets/css/meanmenu.css" />
+    <link rel="stylesheet" href="../../assets/css/meanmenu.css" />
 
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
 
-    <link rel="stylesheet" href="assets/css/dark.css" />
+    <link rel="stylesheet" href="../../assets/css/dark.css" />
 
-    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="../../assets/css/responsive.css" />
 
     <title>Viscous - Cleaning Services HTML Template</title>
 
-    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+    <link rel="icon" type="image/png" href="../../assets/img/favicon.png" />
 </head>
 
 <body>
@@ -97,8 +97,8 @@
     <div class="navbar-area">
         <div class="mobile-nav">
             <a href="index.html" class="logo">
-                <img src="assets/img/logo.png" class="main-logo" alt="logo" />
-                <img src="assets/img/logo-2.png" class="white-logo" alt="logo" />
+                <img src="../../assets/img/logo.png" class="main-logo" alt="logo" />
+                <img src="../../assets/img/logo-2.png" class="white-logo" alt="logo" />
             </a>
         </div>
 
@@ -106,8 +106,8 @@
             <div class="container">
                 <nav class="navbar navbar-expand-md navbar-light">
                     <a class="navbar-brand" href="index.html">
-                        <img src="assets/img/logo.png" class="main-logo" alt="logo" />
-                        <img src="assets/img/logo-2.png" class="white-logo" alt="logo" />
+                        <img src="../../assets/img/logo.png" class="main-logo" alt="logo" />
+                        <img src="../../assets/img/logo-2.png" class="white-logo" alt="logo" />
                     </a>
                     <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto">
@@ -379,16 +379,16 @@
                 </div>
             </div>
             <div class="service-shapes">
-                <img src="assets/img/service/shapes/1.png" alt="shape" />
-                <img src="assets/img/service/shapes/2.png" alt="shape" />
-                <img src="assets/img/service/shapes/3.png" alt="shape" />
-                <img src="assets/img/service/shapes/4.png" alt="shape" />
-                <img src="assets/img/service/shapes/5.png" alt="shape" />
-                <img src="assets/img/service/shapes/6.png" alt="shape" />
-                <img src="assets/img/service/shapes/7.png" alt="shape" />
-                <img src="assets/img/service/shapes/8.png" alt="shape" />
-                <img src="assets/img/service/shapes/9.png" alt="shape" />
-                <img src="assets/img/service/shapes/10.png" alt="shape" />
+                <img src="../../assets/img/service/shapes/1.png" alt="shape" />
+                <img src="../../assets/img/service/shapes/2.png" alt="shape" />
+                <img src="../../assets/img/service/shapes/3.png" alt="shape" />
+                <img src="../../assets/img/service/shapes/4.png" alt="shape" />
+                <img src="../../assets/img/service/shapes/5.png" alt="shape" />
+                <img src="../../assets/img/service/shapes/6.png" alt="shape" />
+                <img src="../../assets/img/service/shapes/7.png" alt="shape" />
+                <img src="../../assets/img/service/shapes/8.png" alt="shape" />
+                <img src="../../assets/img/service/shapes/9.png" alt="shape" />
+                <img src="../../assets/img/service/shapes/10.png" alt="shape" />
             </div>
         </div>
     </section>
@@ -497,7 +497,7 @@
                 </div>
             </div>
             <div class="why-choose-shape">
-                <img src="assets/img/why-choose/shape-1.png" alt="shape" />
+                <img src="../../assets/img/why-choose/shape-1.png" alt="shape" />
             </div>
         </div>
     </section>
@@ -513,7 +513,7 @@
                             Lorem Ipsum is simply dummied text of the printing and
                             typesetting industry.
                         </p>
-                        <img src="assets/img/process-pattern-2.png" alt="arrow" />
+                        <img src="../../assets/img/process-pattern-2.png" alt="arrow" />
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
@@ -524,7 +524,7 @@
                             Lorem Ipsum is simply dummied text of the printing and
                             typesetting industry.
                         </p>
-                        <img src="assets/img/process-pattern-2.png" alt="arrow" />
+                        <img src="../../assets/img/process-pattern-2.png" alt="arrow" />
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 offset-sm-3 offset-md-0">
@@ -703,18 +703,18 @@
                 </div>
             </div>
             <div class="counter-shape">
-                <img src="assets/img/counter/1.png" alt="shape" />
-                <img src="assets/img/counter/2.png" alt="shape" />
-                <img src="assets/img/counter/3.png" alt="shape" />
-                <img src="assets/img/counter/4.png" alt="shape" />
-                <img src="assets/img/counter/5.png" alt="shape" />
-                <img src="assets/img/counter/6.png" alt="shape" />
-                <img src="assets/img/counter/7.png" alt="shape" />
-                <img src="assets/img/counter/1.png" alt="shape" />
-                <img src="assets/img/counter/8.png" alt="shape" />
-                <img src="assets/img/counter/4.png" alt="shape" />
-                <img src="assets/img/counter/shape-1.png" alt="bubble shape" />
-                <img src="assets/img/counter/shape-1.png" alt="bubble shape" />
+                <img src="../../assets/img/counter/1.png" alt="shape" />
+                <img src="../../assets/img/counter/2.png" alt="shape" />
+                <img src="../../assets/img/counter/3.png" alt="shape" />
+                <img src="../../assets/img/counter/4.png" alt="shape" />
+                <img src="../../assets/img/counter/5.png" alt="shape" />
+                <img src="../../assets/img/counter/6.png" alt="shape" />
+                <img src="../../assets/img/counter/7.png" alt="shape" />
+                <img src="../../assets/img/counter/1.png" alt="shape" />
+                <img src="../../assets/img/counter/8.png" alt="shape" />
+                <img src="../../assets/img/counter/4.png" alt="shape" />
+                <img src="../../assets/img/counter/shape-1.png" alt="bubble shape" />
+                <img src="../../assets/img/counter/shape-1.png" alt="bubble shape" />
             </div>
         </div>
     </div>
@@ -732,7 +732,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="team-card">
                         <div class="team-img">
-                            <img src="assets/img/team/1.png" alt="team member" />
+                            <img src="../../assets/img/team/1.png" alt="team member" />
                             <div class="team-social">
                                 <a href="#"><i class="icofont-facebook"></i></a>
                                 <a href="#"><i class="icofont-twitter"></i></a>
@@ -749,7 +749,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="team-card">
                         <div class="team-img">
-                            <img src="assets/img/team/2.png" alt="team member" />
+                            <img src="../../assets/img/team/2.png" alt="team member" />
                             <div class="team-social">
                                 <a href="#"><i class="icofont-facebook"></i></a>
                                 <a href="#"><i class="icofont-twitter"></i></a>
@@ -766,7 +766,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="team-card">
                         <div class="team-img">
-                            <img src="assets/img/team/3.png" alt="team member" />
+                            <img src="../../assets/img/team/3.png" alt="team member" />
                             <div class="team-social">
                                 <a href="#"><i class="icofont-facebook"></i></a>
                                 <a href="#"><i class="icofont-twitter"></i></a>
@@ -783,7 +783,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="team-card">
                         <div class="team-img">
-                            <img src="assets/img/team/4.png" alt="team member" />
+                            <img src="../../assets/img/team/4.png" alt="team member" />
                             <div class="team-social">
                                 <a href="#"><i class="icofont-facebook"></i></a>
                                 <a href="#"><i class="icofont-twitter"></i></a>
@@ -810,22 +810,22 @@
                             <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2">
                                 <div class="testimonial-image-slider slider-nav text-center">
                                     <div class="sin-testiImage">
-                                        <img src="assets/img/testimonial/1.png" alt="Client image" />
+                                        <img src="../../assets/img/testimonial/1.png" alt="Client image" />
                                     </div>
                                     <div class="sin-testiImage">
-                                        <img src="assets/img/testimonial/2.png" alt="Client image" />
+                                        <img src="../../assets/img/testimonial/2.png" alt="Client image" />
                                     </div>
                                     <div class="sin-testiImage">
-                                        <img src="assets/img/testimonial/1.png" alt="Client image" />
+                                        <img src="../../assets/img/testimonial/1.png" alt="Client image" />
                                     </div>
                                     <div class="sin-testiImage">
-                                        <img src="assets/img/testimonial/2.png" alt="Client image" />
+                                        <img src="../../assets/img/testimonial/2.png" alt="Client image" />
                                     </div>
                                     <div class="sin-testiImage">
-                                        <img src="assets/img/testimonial/1.png" alt="Client image" />
+                                        <img src="../../assets/img/testimonial/1.png" alt="Client image" />
                                     </div>
                                     <div class="sin-testiImage">
-                                        <img src="assets/img/testimonial/2.png" alt="Client image" />
+                                        <img src="../../assets/img/testimonial/2.png" alt="Client image" />
                                     </div>
                                 </div>
                             </div>
@@ -911,7 +911,7 @@
                 <div class="blog-area">
                     <div class="blog-img">
                         <a href="blog-details.html">
-                            <img src="assets/img/blog/1.png" alt="blog image" />
+                            <img src="../../assets/img/blog/1.png" alt="blog image" />
                         </a>
                     </div>
                     <div class="blog-text">
@@ -939,7 +939,7 @@
                 <div class="blog-area">
                     <div class="blog-img">
                         <a href="blog-details.html">
-                            <img src="assets/img/blog/2.png" alt="blog image" />
+                            <img src="../../assets/img/blog/2.png" alt="blog image" />
                         </a>
                     </div>
                     <div class="blog-text">
@@ -967,7 +967,7 @@
                 <div class="blog-area">
                     <div class="blog-img">
                         <a href="blog-details.html">
-                            <img src="assets/img/blog/3.png" alt="blog image" />
+                            <img src="../../assets/img/blog/3.png" alt="blog image" />
                         </a>
                     </div>
                     <div class="blog-text">
@@ -997,7 +997,7 @@
                 <div class="blog-area">
                     <div class="blog-img">
                         <a href="blog-details.html">
-                            <img src="assets/img/blog/1.png" alt="blog image" />
+                            <img src="../../assets/img/blog/1.png" alt="blog image" />
                         </a>
                     </div>
                     <div class="blog-text">
@@ -1025,7 +1025,7 @@
                 <div class="blog-area">
                     <div class="blog-img">
                         <a href="blog-details.html">
-                            <img src="assets/img/blog/2.png" alt="blog image" />
+                            <img src="../../assets/img/blog/2.png" alt="blog image" />
                         </a>
                     </div>
                     <div class="blog-text">
@@ -1053,7 +1053,7 @@
                 <div class="blog-area">
                     <div class="blog-img">
                         <a href="blog-details.html">
-                            <img src="assets/img/blog/3.png" alt="blog image" />
+                            <img src="../../assets/img/blog/3.png" alt="blog image" />
                         </a>
                     </div>
                     <div class="blog-text">
@@ -1083,7 +1083,7 @@
                 <div class="blog-area">
                     <div class="blog-img">
                         <a href="blog-details.html">
-                            <img src="assets/img/blog/1.png" alt="blog image" />
+                            <img src="../../assets/img/blog/1.png" alt="blog image" />
                         </a>
                     </div>
                     <div class="blog-text">
@@ -1111,7 +1111,7 @@
                 <div class="blog-area">
                     <div class="blog-img">
                         <a href="#">
-                            <img src="assets/img/blog/2.png" alt="blog image" />
+                            <img src="../../assets/img/blog/2.png" alt="blog image" />
                         </a>
                     </div>
                     <div class="blog-text">
@@ -1139,7 +1139,7 @@
                 <div class="blog-area">
                     <div class="blog-img">
                         <a href="#">
-                            <img src="assets/img/blog/3.png" alt="blog image" />
+                            <img src="../../assets/img/blog/3.png" alt="blog image" />
                         </a>
                     </div>
                     <div class="blog-text">
@@ -1174,7 +1174,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-md-6">
                         <div class="contact-img">
-                            <img src="assets/img/contact-img.png" alt="contact image" />
+                            <img src="../../assets/img/contact-img.png" alt="contact image" />
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
@@ -1233,7 +1233,7 @@
                     <div class="footer-widget">
                         <div class="logo">
                             <a href="index.html">
-                                <img src="assets/img/logo-2.png" alt="logo" />
+                                <img src="../../assets/img/logo-2.png" alt="logo" />
                             </a>
                         </div>
                         <p>
@@ -1372,26 +1372,26 @@
         <i class="icofont-scroll-long-up"></i>
     </div>
 
-    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-    <script src="assets/js/jquery.min.js"></script>
+    <script data-cfasync="false" src="../../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="../../assets/js/jquery.min.js"></script>
 
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/bootstrap.bundle.min.js"></script>
 
-    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="../../assets/js/owl.carousel.min.js"></script>
 
-    <script src="assets/js/slick.min.js"></script>
+    <script src="../../assets/js/slick.min.js"></script>
 
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="../../assets/js/jquery.magnific-popup.min.js"></script>
 
-    <script src="assets/js/meanmenu.js"></script>
+    <script src="../../assets/js/meanmenu.js"></script>
 
-    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+    <script src="../../assets/js/jquery.ajaxchimp.min.js"></script>
 
-    <script src="assets/js/form-validator.min.js"></script>
+    <script src="../../assets/js/form-validator.min.js"></script>
 
-    <script src="assets/js/contact-form-script.js"></script>
+    <script src="../../assets/js/contact-form-script.js"></script>
 
-    <script src="assets/js/custom.js"></script>
+    <script src="../../assets/js/custom.js"></script>
 </body>
 
 <!-- Mirrored from templates.hibootstrap.com/viscous/default/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Nov 2022 02:33:49 GMT -->
