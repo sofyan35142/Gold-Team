@@ -44,8 +44,8 @@
     <div class="navbar-area">
         <div class="mobile-nav">
             <a href="index.html" class="logo">
-                <img src="assets/img/logo.png" class="main-logo" alt="logo" />
-                <img src="assets/img/logo-2.png" class="white-logo" alt="logo" />
+                <img src="../assets/img/logo.png" class="main-logo" alt="logo" />
+                <img src="../assets/img/logo-2.png" class="white-logo" alt="logo" />
             </a>
         </div>
 
@@ -53,8 +53,13 @@
             <div class="container">
                 <nav class="navbar navbar-expand-md navbar-light">
                     <a class="navbar-brand" href="index.html">
+<<<<<<< HEAD
                         <img src="https://smkn1sukorejo.sch.id/wp-content/uploads/2019/10/cropped-LOGO1-2.png" class="main-logo" alt="logo" />
                         <img src="assets/img/logo-2.png" class="white-logo" alt="logo" />
+=======
+                        <img src="../assets/img/logo.png" class="main-logo" alt="logo" />
+                        <img src="../assets/img/logo-2.png" class="white-logo" alt="logo" />
+>>>>>>> 732b2ba1a8f9deeb1263dfe58b9b2088349bd8c8
                     </a>
                     <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto">

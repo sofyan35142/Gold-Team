@@ -99,4 +99,9 @@ class LandingController extends Controller
     {
         return view("landingpage.jurusan.rpl");
     }
+
+    public function visimisi()
+    {
+        return view("landingpage.profile.visimisi");
+    }
 }
