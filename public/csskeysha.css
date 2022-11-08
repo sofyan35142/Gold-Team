@@ -1,0 +1,22 @@
+.tkrfont{
+    color: rgb(7, 7, 90) !important;
+}
+
+.service-title-bg{
+    background-image: url(https://3.bp.blogspot.com/-gqF_My1hGIo/Wg13b4-7fRI/AAAAAAAAAxc/RUBGzyhKNHAigdP66F5kp-7KXgFlOYQeACLcBGAs/s1600/gerbang1.JPG) !important;
+    background-position: center center;
+    background-size: cover;
+    height: 350px;
+    position: relative;
+    z-index: 0
+}
+
+.elementor-video-iframe{
+    width: 100%;
+    height: 50%;
+    position: relative;
+}
+
+.sidebar{
+    padding-bottom: 1rem;
+}
