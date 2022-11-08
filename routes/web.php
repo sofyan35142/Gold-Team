@@ -19,3 +19,4 @@ Route::get('/', function () {
 });
 
 Route::get('/jurusan', [LandingController::class, 'jurusan']);
+Route::get('/guru', [LandingController::class, 'guru']);

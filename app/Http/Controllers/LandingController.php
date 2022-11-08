@@ -87,4 +87,9 @@ class LandingController extends Controller
     {
         return view("landingpage.jurusan");
     }
+
+    public function guru()
+    {
+        return view("landingpage.guru&staf");
+    }
 }
