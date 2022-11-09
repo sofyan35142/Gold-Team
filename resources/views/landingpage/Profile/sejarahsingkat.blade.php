@@ -30,37 +30,45 @@
                     <div class="blog-details-post">
                         <div class="blog-post-title">
                             <h3>
-                                Visi Misi
+                                Sejarah Singkat
                             </h3>
                         </div>
-                        <img src="../assets/img/visimisi.png" alt="service">
-                        <h3>
-                            TUJUAN
-                        </h3>
-                        <h4 class="fz-16px"><b>Tujuan Umum</b></h4>
-                        <p>1.Meningkatkan keimanan dan ketaqwaan peserta didik kepada Tuhan Yang Maha Esa.</p>
-                        <p>2.Mengembangkan potensi peserta didik agar menjadi warga negara yang berakhlak mulia, sehat,
-                            berilmu, cakap, kreatif, mandiri, demokratis, dan bertanggung jawab.</p>
-                        <p>3.Mengembangkan potensi peserta didik agar memiliki wawasan kebangsaan, memahami dan
-                            menghargai keanekaragaman budaya bangsa Indonesia.</p>
-                        <p>4.Mengembangkan potensi peserta didik agar memiliki kepedulian terhadap lingkungan hidup,
-                            dengan secara aktif turut memelihara dan melestarikan lingkungan hidup, serta memanfaatkan
-                            sumber daya alam dengan efektif dan efisien.</p>
-                        <p>5.Sekolah mampu mengalokasikan anggaran minimal sebesar 20% untuk membiayai kegiatan sekolah
-                            adiwiyata.</p>
-
-
-                        <h4 class="fz-16px"><b>Tujuan Khusus</b></h4>
-                        <p>1.Meningkatkan keimanan dan ketaqwaan peserta didik kepada Tuhan Yang Maha Esa.</p>
-                        <p>2.Mengembangkan potensi peserta didik agar menjadi warga negara yang berakhlak mulia, sehat,
-                            berilmu, cakap, kreatif, mandiri, demokratis, dan bertanggung jawab.</p>
-                        <p>3.Mengembangkan potensi peserta didik agar memiliki wawasan kebangsaan, memahami dan
-                            menghargai keanekaragaman budaya bangsa Indonesia.</p>
-                        <p>4.Mengembangkan potensi peserta didik agar memiliki kepedulian terhadap lingkungan hidup,
-                            dengan secara aktif turut memelihara dan melestarikan lingkungan hidup, serta memanfaatkan
-                            sumber daya alam dengan efektif dan efisien.</p>
-                        <p>5.Sekolah mampu mengalokasikan anggaran minimal sebesar 20% untuk membiayai kegiatan sekolah
-                            adiwiyata.</p>
+                        <p>
+                            SMK Negeri 1 Sukorejo merupakan sekolah kejuruan yang berdiri di kecamatan Sukorejo pada
+                            tahun 2004, berdasarkan Keputusan Bupati Pasuruan nomor : 1633/581/HKI/424.022/2003. Lembaga
+                            yang memiliki Nomor Pokok Sekolah Nasional (NPSN) : 20519147 tersebut awalnya membuka dua
+                            kompetensi keahlian, yaitu Teknik Kendaraan Ringan (TKR) dan Teknik Elektronika Industri
+                            (TEI). Kepala SMK Negeri 1 Sukorejo yang pertama adalah Drs. Herdjumanto. Beliau merupakan
+                            kepala sekolah yang handal dan pekerja keras, sehingga dengan dibantu beberapa orang guru,
+                            bisa mengelola lembaga ini menjadi lebih meningkat dan maju, baik dari segi kualitas
+                            pembelajaran maupun kuantitas siswa yang bisa diterima di sekolah tersebut.
+                        </p>
+                        <p>
+                            Kepemimpinan Bapak Herdjumanto berakhir pada tahun 2013, tepatnya 23 Mei 2013. Beliau
+                            digantikan oleh Drs. Imam Mahmudi, M.MPd. Pada Era kepemimpinan beliau, pada tahun pelajaran
+                            2014/2015 ada penambahan 2 kompetensi keahlian, yaitu Rekayasa Perangkat Lunak (RPL) dan
+                            Kimia Industri (KI). Dengan penambahan kedua kompetensi keahlian ini SMK Negeri 1 Sukorejo
+                            semakin berkembang, khususnya gedung dan sarana prasarana serta kuantitas peserta didiknya.
+                            Semakin besar jumlah peserta didik semakin banyak pula tenaga pendidik yang dibutuhkan.
+                            Alasan dibukanya dua jurusan ini adalah untuk mempersiapkan sekaligus memenuhi permintaan
+                            DUDI tempat peserta didik melakukan Prakerin, ternyata banyak perusahaan yang memerlukan
+                            jurusan tersebut. Pada tahun pelajaran 2015/2016 SMK Negeri 1 Sukorejo membuka satu
+                            kompetensi keahlian baru lagi, yaitu Teknik Audio Vidio (TAV). Pada tahun 2018, melalui
+                            berbagai inovasi dan kreativitas guru yang dilakukan dan juga semua warga sekolah akhirnya
+                            SMK Negeri 1 Sukorejo memenuhi persyaratan dari Direktorat Pembinaan SMK untuk memperoleh
+                            predikat “SMK Rujukan”.
+                        </p>
+                        <p>
+                            Pada awal tahun 2019 SMK Negeri 1 Sukorejo memiliki Kepala Sekolah yang baru, yaitu Bapak
+                            Rudi Trisantoso, S.Pd., M.Pd. Pada tahun 2019 sekolah ini semakin sering ditempati
+                            perekrutan tenaga kerja dari berbagai DUDI. Disamping itu pada tahun 2019 itu pula sekolah
+                            ini mendapat tambahan predikat sebagai “SMK Pengampu” dari Dinas Pendidikan Provinsi Jawa
+                            Timur. Saat ini jumlah siswa di SMK Negeri 1 Sukorejo sebanyak 1.108 siswa dengan rombongan
+                            belajar sebanyak 33 rombel. Adapun sarana pembelajaran yang ada sebanyak 27 kelas ruang
+                            teori dan 9 ruang untuk praktek. Sedangkan sumberdaya yang ada sebanyak 54 orang guru dan 25
+                            orang karyawan. Berdasarkan keputusan Badan Akreditasi Nasional Sekolah/Madrasah nomor :
+                            032/BAN-SM/SK/2019 tahun 2019 dinyatakan bahwa SMK Negeri 1 Sukorejo “Terakreditasi A”.
+                        </p>
                     </div>
                 </div>
                 <div class="col-lg-4 main-service-area blog-side-bar">
@@ -172,12 +180,6 @@
                             <a href="#">Wash</a>
                             <a href="#">Call</a>
                         </div> --}}
-<<<<<<< HEAD
-                        <div class="ratio ratio-16x9">
-                            <iframe
-                                src="https://www.youtube.com/embed/kAU5CmEOVtA?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0"
-                                title="YouTube video" allowfullscreen></iframe>
-=======
                         <div class="discount-text" style="background: transparent">
                             <iframe class="ytvideo" src="https://www.youtube.com/embed/oQKjX1z7aMM"
                                 title="YouTube video player" frameborder="0"
@@ -241,7 +243,6 @@
                                     </div>
                                 </form>
                             </div>
->>>>>>> 1e8f886671a3aa5d57fd00d74a3515949e04f1f4
                         </div>
                     </div>
                 </div>
