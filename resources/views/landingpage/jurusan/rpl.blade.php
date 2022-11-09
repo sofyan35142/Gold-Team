@@ -53,7 +53,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
-                    <img src="foto/rpl.jpg" alt="service">
+                    <img src="foto/jurusan/RPL.JPG" alt="service">
                     <div class="service-details-post">
                         <h3>Rekayasa Perangkat Lunak <span class="tkrfont"> (RPL)</span></h3>
                         <p>Program Keahlian Rekayasa Perangkat Lunak (RPL) adalah salah satu kompetensi keahlian dalam
@@ -150,14 +150,13 @@ Next
                                 </li>
                             </ul>
                         </div>
-                        <div class="sidebar">
-                            <iframe class="elementor-video-iframe" allowfullscreen title="youtube Video Player"
-                                src="https://www.youtube.com/embed/cxtGfQh188A?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0"></iframe>
-
-                            <div class="discount-shapes">
-
-                            </div>
+                        <div class="ratio ratio-16x9">
+                             <iframe src="https://www.youtube.com/embed/GFzf9j7_nw0?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0" title="YouTube video" allowfullscreen></iframe>
                         </div>
+                        <div class="discount-shapes">
+
+                        </div>
+                        
                     </div>
                 </div>
             </div>

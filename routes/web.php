@@ -21,15 +21,17 @@ Route::get('/bug', function () {
     return view('welcome');
 });
 
-Route::get('/jurusan', [LandingController::class, 'jurusan']);
 //==Route profil==//
 Route::get('/profil/visimisi', [LandingController::class, 'visimisi']);
 
-
-<<<<<<< HEAD
+//==Route jurusan==//
 Route::get('/jurusan', [LandingController::class, 'jurusan']);
 Route::get('/tkr', [LandingController::class, 'tkr']);
 Route::get('/tei', [LandingController::class, 'tei']);
 Route::get('/rpl', [LandingController::class, 'rpl']);
-=======
->>>>>>> 732b2ba1a8f9deeb1263dfe58b9b2088349bd8c8
+Route::get('/tki', [LandingController::class, 'tki']);
+Route::get('/tav', [LandingController::class, 'tav']);
+
+Route::get('/modulproduktiftkr', [LandingController::class, 'modulproduktiftkr']);
+Route::get('/reparasibengkel', [LandingController::class, 'reparasibengkel']);
+Route::get('/modulproduktiftei', [LandingController::class, 'modulproduktiftei']);

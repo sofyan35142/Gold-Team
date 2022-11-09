@@ -183,22 +183,10 @@
                             <a href="#">Wash</a>
                             <a href="#">Call</a>
                         </div> --}}
-                        <div class="discount-text">
-                            <h1>Get <span>15% Discount</span> on your first Service</h1>
-                            <div class="theme-button">
-                                <a href="#" class="default-btn">Book Now</a>
-                            </div>
-                            <div class="discount-shapes">
-                                <img src="../assets/img/counter/1.png" alt="shape">
-                                <img src="../assets/img/counter/2.png" alt="shape">
-                                <img src="../assets/img/counter/3.png" alt="shape">
-                                <img src="../assets/img/counter/4.png" alt="shape">
-                                <img src="../assets/img/counter/5.png" alt="shape">
-                                <img src="../assets/img/counter/6.png" alt="shape">
-                                <img src="../assets/img/counter/7.png" alt="shape">
-                                <img src="../assets/img/counter/8.png" alt="shape">
-                                <img src="../assets/img/counter/5.png" alt="shape">
-                            </div>
+                        <div class="ratio ratio-16x9">
+                            <iframe
+                                src="https://www.youtube.com/embed/kAU5CmEOVtA?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0"
+                                title="YouTube video" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>

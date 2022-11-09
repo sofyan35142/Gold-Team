@@ -30,7 +30,13 @@
 
     <link rel="stylesheet" href="csskeysha.css" />
 
-    <title>Viscous - Cleaning Services HTML Template</title>
+    <title>SMKN 1 SUKOREJO - BISA SUKSES</title>
 
-    <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
+    <link rel="icon" type="image/png" href="foto/logo.png" />
+
+    <style>
+        td{
+            border-right:1px solid #e2e5e9;
+        }
+    </style>
 </head>
