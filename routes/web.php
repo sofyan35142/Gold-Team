@@ -19,6 +19,7 @@ Route::get('/bug', function () {
     return view('welcome');
 });
 
+<<<<<<< HEAD
 //BERANDA
 Route::get('/', function () {
     return view('landingpage.beranda.halutama');
@@ -28,11 +29,18 @@ Route::get('/lokerbkk', [LandingController::class, 'lokerbkk']);
 Route::get('/agenda', [LandingController::class, 'agenda']);
 
 Route::get('/jurusan', [LandingController::class, 'jurusan']);
+=======
+>>>>>>> 0f3dfe30ce75b82e902317dcffa8e6ed62d1befe
 
 
 // ==Route profil==//
 
 Route::get('/guru', [LandingController::class, 'guru']);
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 0f3dfe30ce75b82e902317dcffa8e6ed62d1befe
 //==Route profil==//
 
 Route::get('/profil/visimisi', [LandingController::class, 'visimisi']);
@@ -41,8 +49,23 @@ Route::get('/profil/sejarahsingkat', [LandingController::class, 'sejarahsingkat'
 Route::get('/profil/sekolahadiwiyata', [LandingController::class, 'sekolahadiwiyata']);
 Route::get('/profil/sekolahrujukan', [LandingController::class, 'sekolahrujukan']);
 
+<<<<<<< HEAD
 //JURUSAN
+=======
+//==Route jurusan==//
+>>>>>>> 0f3dfe30ce75b82e902317dcffa8e6ed62d1befe
 Route::get('/jurusan', [LandingController::class, 'jurusan']);
 Route::get('/tkr', [LandingController::class, 'tkr']);
 Route::get('/tei', [LandingController::class, 'tei']);
 Route::get('/rpl', [LandingController::class, 'rpl']);
+<<<<<<< HEAD
+=======
+
+Route::get('/tki', [LandingController::class, 'tki']);
+Route::get('/tav', [LandingController::class, 'tav']);
+
+Route::get('/modulproduktiftkr', [LandingController::class, 'modulproduktiftkr']);
+Route::get('/reparasibengkel', [LandingController::class, 'reparasibengkel']);
+Route::get('/modulproduktiftei', [LandingController::class, 'modulproduktiftei']);
+
+>>>>>>> 0f3dfe30ce75b82e902317dcffa8e6ed62d1befe

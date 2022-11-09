@@ -172,6 +172,12 @@
                             <a href="#">Wash</a>
                             <a href="#">Call</a>
                         </div> --}}
+<<<<<<< HEAD
+                        <div class="ratio ratio-16x9">
+                            <iframe
+                                src="https://www.youtube.com/embed/kAU5CmEOVtA?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0"
+                                title="YouTube video" allowfullscreen></iframe>
+=======
                         <div class="discount-text" style="background: transparent">
                             <iframe class="ytvideo" src="https://www.youtube.com/embed/oQKjX1z7aMM"
                                 title="YouTube video player" frameborder="0"
@@ -235,6 +241,7 @@
                                     </div>
                                 </form>
                             </div>
+>>>>>>> 1e8f886671a3aa5d57fd00d74a3515949e04f1f4
                         </div>
                     </div>
                 </div>

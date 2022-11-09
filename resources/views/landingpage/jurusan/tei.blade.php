@@ -53,7 +53,7 @@ Teknik Elektronika Industri
 <div class="container">
 <div class="row">
 <div class="col-lg-8">
-<iframe class="elementor-video-iframe" allowfullscreen title="youtube Video Player" src="https://www.youtube.com/embed/Cxf-wPX0uQg?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0"></iframe>
+<img src="foto/jurusan/TEI1.JPG" alt="service">
 <div class="service-details-post">
 <h3>Teknik Elektronika Industri <span class="tkrfont" > (TEI)</span></h3>
 <p>Teknik Elektronik Industri (TEI) adalah bidang yang fokus mempelajari tentang komponen listrik serta berbagai macam peralatan semi konduktor. Teknik Elektronika Industri digolongkan ke dalam bagian teknik listrik atau teknik elektro. Ada beberapa hal yang dipelajari oleh kompetensi Teknik Elektronika Industri, yaitu mulai dari elektronika umum (rekayasa elektronika), mikrokontroller, mikroprocessor, pneumatic, PLC, programming berbasis komputer, dan lain sebagainya terkait perangkat industri yang memiliki hubungan atau bekerja dengan sistem elektronik. Selain itu, peluang kerja lulusan Teknik Elektronika Industri SMKN 1 Sukorejo bisa dikatakan sangat luas, mengingat ketrampilan yang diajarkan juga kompleks. Secara umum, output lulusan kompetensi TEI SMKN 1 Sukorejo rata-rata sangat mudah mencari pekerjaan. Tentu jenis pekerjaan terkait dengan elektronika industri pada posisi teknisi elektronika industri, instrumentasi, atau teknisi kontrol.</p>
@@ -140,10 +140,10 @@ Wash Home
 </li>
 </ul>
 </div>
-<div class="discount-text">
-<h1>Get <span>15% Discount</span> on your first Service</h1>
-<div class="theme-button">
-<a href="#" class="default-btn">Book Now</a>
+<div class="ratio ratio-16x9">
+  <iframe src="https://www.youtube.com/embed/Cxf-wPX0uQg?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0" title="YouTube video" allowfullscreen></iframe>
+</div>
+
 </div>
 <div class="discount-shapes">
 <img src="../assets/img/counter/1.png" alt="shape">

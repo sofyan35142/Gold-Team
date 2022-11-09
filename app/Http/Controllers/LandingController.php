@@ -58,7 +58,30 @@ class LandingController extends Controller
     {
         return view("landingpage.jurusan.rpl");
     }
-        // CONTROLLER PROFIL
+    public function tki()
+    {
+        return view("landingpage.jurusan.tki");
+    }
+    public function tav()
+    {
+        return view("landingpage.jurusan.tav");
+    }
+    public function modulproduktiftkr()
+    {
+        return view("landingpage.jurusan.modulproduktiftkr");
+    }
+    public function reparasibengkel()
+    {
+        return view("landingpage.jurusan.reparasibengkel");
+    }
+    public function modulproduktiftei()
+    {
+        return view("landingpage.jurusan.modulproduktiftei");
+    }
+
+
+
+
     public function visimisi()
     {
         return view("landingpage.profile.visimisi");
