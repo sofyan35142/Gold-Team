@@ -7,77 +7,36 @@ use Illuminate\Http\Request;
 
 class LandingController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
         //
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create()
     {
         //
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
         //
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Jurusan  $jurusan
-     * @return \Illuminate\Http\Response
-     */
     public function show(Jurusan $jurusan)
     {
         //
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Jurusan  $jurusan
-     * @return \Illuminate\Http\Response
-     */
     public function edit(Jurusan $jurusan)
     {
         //
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Jurusan  $jurusan
-     * @return \Illuminate\Http\Response
-     */
     public function update(Request $request, Jurusan $jurusan)
     {
         //
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Jurusan  $jurusan
-     * @return \Illuminate\Http\Response
-     */
     public function destroy(Jurusan $jurusan)
     {
         //
@@ -99,12 +58,28 @@ class LandingController extends Controller
     {
         return view("landingpage.jurusan.rpl");
     }
-
+        // CONTROLLER PROFIL
     public function visimisi()
     {
         return view("landingpage.profile.visimisi");
     }
 
+    public function strukturorganisasi()
+    {
+        return view("landingpage.profile.strukturorganisasi");
+    }
+    public function sejarahsingkat()
+    {
+        return view("landingpage.profile.sejarahsingkat");
+    }
+    public function sekolahadiwiyata()
+    {
+        return view("landingpage.profile.sekolahadiwiyata");
+    }
+    public function sekolahrujukan()
+    {
+        return view("landingpage.profile.sekolahrujukan");
+    }
     public function guru()
     {
         return view("landingpage.beranda.guru&staf");

@@ -9,13 +9,15 @@
 .colorori {
     color: #646464 !important;
 }
-.iknrounded{
+
+.iknrounded {
     float: none !important;
     top: 0 !important;
 }
-.sidetitle{
+
+.sidetitle {
     background: #0d6efd none repeat scroll 0 0;
-    border:none;
+    border: none;
     font-size: 16px;
     margin: 0 0 20px;
     padding: 8px 20px;
@@ -27,7 +29,8 @@
     font-weight: 500;
     position: relative;
 }
-.sidetitle::before{
+
+.sidetitle::before {
     position: absolute;
     content: "";
     width: 100%;
@@ -35,10 +38,31 @@
     top: -3px;
     border-top: 2px solid #0c288b;
 }
-.sidetitle::after{
 
-}
-.effecthover-s:hover{
+.sidetitle::after {}
+
+.effecthover-s:hover {
     padding-left: 10px;
     color: #0c288b !important;
+}
+
+.ytvideo {
+    position: inherit;
+    right: 50px;
+    width: 356px;
+    height: 13pc;
+    bottom: 3pc;
+}
+
+.fz-16px{
+    font-size: 16px;
+}
+
+/***************** RESPONSIVE ZAKI *************/
+@media (max-width:767px) {
+    .ytvideo {
+        position: inherit;
+        left: -1.9px;
+        top: -18.9px;
+    }
 }

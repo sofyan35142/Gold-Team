@@ -30,37 +30,35 @@
                     <div class="blog-details-post">
                         <div class="blog-post-title">
                             <h3>
-                                Visi Misi
+                                Sekolah Rujukan
                             </h3>
                         </div>
-                        <img src="../assets/img/visimisi.png" alt="service">
-                        <h3>
-                            TUJUAN
-                        </h3>
-                        <h4 class="fz-16px"><b>Tujuan Umum</b></h4>
-                        <p>1.Meningkatkan keimanan dan ketaqwaan peserta didik kepada Tuhan Yang Maha Esa.</p>
-                        <p>2.Mengembangkan potensi peserta didik agar menjadi warga negara yang berakhlak mulia, sehat,
-                            berilmu, cakap, kreatif, mandiri, demokratis, dan bertanggung jawab.</p>
-                        <p>3.Mengembangkan potensi peserta didik agar memiliki wawasan kebangsaan, memahami dan
-                            menghargai keanekaragaman budaya bangsa Indonesia.</p>
-                        <p>4.Mengembangkan potensi peserta didik agar memiliki kepedulian terhadap lingkungan hidup,
-                            dengan secara aktif turut memelihara dan melestarikan lingkungan hidup, serta memanfaatkan
-                            sumber daya alam dengan efektif dan efisien.</p>
-                        <p>5.Sekolah mampu mengalokasikan anggaran minimal sebesar 20% untuk membiayai kegiatan sekolah
-                            adiwiyata.</p>
-
-
-                        <h4 class="fz-16px"><b>Tujuan Khusus</b></h4>
-                        <p>1.Meningkatkan keimanan dan ketaqwaan peserta didik kepada Tuhan Yang Maha Esa.</p>
-                        <p>2.Mengembangkan potensi peserta didik agar menjadi warga negara yang berakhlak mulia, sehat,
-                            berilmu, cakap, kreatif, mandiri, demokratis, dan bertanggung jawab.</p>
-                        <p>3.Mengembangkan potensi peserta didik agar memiliki wawasan kebangsaan, memahami dan
-                            menghargai keanekaragaman budaya bangsa Indonesia.</p>
-                        <p>4.Mengembangkan potensi peserta didik agar memiliki kepedulian terhadap lingkungan hidup,
-                            dengan secara aktif turut memelihara dan melestarikan lingkungan hidup, serta memanfaatkan
-                            sumber daya alam dengan efektif dan efisien.</p>
-                        <p>5.Sekolah mampu mengalokasikan anggaran minimal sebesar 20% untuk membiayai kegiatan sekolah
-                            adiwiyata.</p>
+                        <img src="../assets/img/wssosialisasi.jpg" alt="service">
+                        <h6>Sekolah Adiwiyata dan Pendidikan Karakter</h6>
+                        <p>
+                            Pengembangan SMK rujukan sebagai upaya mendukung peningkatan mutu pembelajaran di SMK serta pemenuhan kebutuhan sarana prasarana pendidikan yang diperlukan dalam pelaksanaan kegiatan pembelajaran di SMK.   Pengembangan Sekolah Rujukan (Program Peningkatan Pembelajaran) di SMK adalah agar sekolah mampu:
+                        </p>
+                        <p>
+                            1.Menyelaraskan kurikulum Kompetensi Keahlian yang lulusannya paling banyak dibutuhkan oleh DUDI pasangan di daerah setempat. Diharapkan Kompetensi Keahlian ini dapat menjadi Kompetensi Keahlian unggulan, sehingga dapat menjadi kebanggaan wilayah atau Kompetensi Keahlian Prioritas.
+                        </p>
+                        <p>
+                            2.Meningkatkan pengalaman kerja nyata guru di DUDI untuk digunakan sebagai acuan dan atau diterapkan dan dikembangkan di sekolah.
+                        </p>
+                        <p>
+                            3.Mengimplementasikan Gerakan Literasi di Sekolah (GLS).
+                        </p>
+                        <p>
+                            4.Mengembangkan Penguatan Pengembangan Karakter (PPK).
+                        </p>
+                        <p>
+                            5.Mengimplementasikan pembelajaran RI 4.0.
+                        </p>
+                        <p>
+                            6.Meningkatkan mutu penilaian.
+                        </p>
+                        <p>
+                            7.Menjadi acuan SMK lain dalam peningkatan mutu pembelajaran.
+                        </p>
                     </div>
                 </div>
                 <div class="col-lg-4 main-service-area blog-side-bar">
@@ -172,11 +170,10 @@
                             <a href="#">Wash</a>
                             <a href="#">Call</a>
                         </div> --}}
-                        <div class="discount-text" style="background: transparent">
-                            <iframe class="ytvideo" src="https://www.youtube.com/embed/oQKjX1z7aMM"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                        <div class="ratio ratio-16x9">
+                            <iframe
+                                src="https://www.youtube.com/embed/WxgpJkI4qAg?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0"
+                                title="YouTube video" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>

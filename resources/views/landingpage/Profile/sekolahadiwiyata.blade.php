@@ -30,37 +30,32 @@
                     <div class="blog-details-post">
                         <div class="blog-post-title">
                             <h3>
-                                Visi Misi
+                                Sekolah Adiwiyata
                             </h3>
                         </div>
-                        <img src="../assets/img/visimisi.png" alt="service">
-                        <h3>
-                            TUJUAN
-                        </h3>
-                        <h4 class="fz-16px"><b>Tujuan Umum</b></h4>
-                        <p>1.Meningkatkan keimanan dan ketaqwaan peserta didik kepada Tuhan Yang Maha Esa.</p>
-                        <p>2.Mengembangkan potensi peserta didik agar menjadi warga negara yang berakhlak mulia, sehat,
-                            berilmu, cakap, kreatif, mandiri, demokratis, dan bertanggung jawab.</p>
-                        <p>3.Mengembangkan potensi peserta didik agar memiliki wawasan kebangsaan, memahami dan
-                            menghargai keanekaragaman budaya bangsa Indonesia.</p>
-                        <p>4.Mengembangkan potensi peserta didik agar memiliki kepedulian terhadap lingkungan hidup,
-                            dengan secara aktif turut memelihara dan melestarikan lingkungan hidup, serta memanfaatkan
-                            sumber daya alam dengan efektif dan efisien.</p>
-                        <p>5.Sekolah mampu mengalokasikan anggaran minimal sebesar 20% untuk membiayai kegiatan sekolah
-                            adiwiyata.</p>
-
-
-                        <h4 class="fz-16px"><b>Tujuan Khusus</b></h4>
-                        <p>1.Meningkatkan keimanan dan ketaqwaan peserta didik kepada Tuhan Yang Maha Esa.</p>
-                        <p>2.Mengembangkan potensi peserta didik agar menjadi warga negara yang berakhlak mulia, sehat,
-                            berilmu, cakap, kreatif, mandiri, demokratis, dan bertanggung jawab.</p>
-                        <p>3.Mengembangkan potensi peserta didik agar memiliki wawasan kebangsaan, memahami dan
-                            menghargai keanekaragaman budaya bangsa Indonesia.</p>
-                        <p>4.Mengembangkan potensi peserta didik agar memiliki kepedulian terhadap lingkungan hidup,
-                            dengan secara aktif turut memelihara dan melestarikan lingkungan hidup, serta memanfaatkan
-                            sumber daya alam dengan efektif dan efisien.</p>
-                        <p>5.Sekolah mampu mengalokasikan anggaran minimal sebesar 20% untuk membiayai kegiatan sekolah
-                            adiwiyata.</p>
+                        <img src="../assets/img/adiwiyatalogo.png" alt="service">
+                        <h6>Sekolah Adiwiyata dan Pendidikan Karakter</h6>
+                        <p>
+                            Adiwiyata bermakna sebagai tempat yang baik dan ideal, di mana dapat diperoleh segala ilmu pe­nge­tahuan dan berbagai norma, serta etika yang dapat menjadi dasar manusia untuk menuju terciptanya ke­se­jahteraan hidup dalam menuju cita-cita pembangunan yang berkelanjutan.
+                        </p>
+                        <p>
+                            Dengan demikian, se­ko­lah Adiwiyata merupakan tempat me­wujudkan war­­ga se­k­olah yang bertanggung jawab dalam upa­ya Perlindungan dan Pengelolaan Lingkungan Hi­dup (PPLH) melalui tata kelola sekolah yang baik untuk men­dukung pembangunan yang berkelanjutan di Indonesia.
+                        </p>
+                        <p>
+                            Sekolah adiwiyata dan pendidikan karakter bukan merupakan hal yang baru. Pada tahun 2018 Kementerian Lingkungan Hidup dan Kehutanan memberikan penghargaan adiwiyata kepada 396 sekolah adiwiyata.
+                        </p>
+                        <p>
+                            Program sekolah adiwiyata harus selaras dengan prinsip edukatif, partisipatif, dan berkelanjutan. Penerapan sekolah adiwiyata juga perlu dijalankan secara bersama untuk mencapai bonum commune.
+                        </p>
+                        <p>
+                            Aktivitas sekolah adiwiyata dapat berupa langkah-langkah awal seperti stop penggunaan sampah plastik, penanaman pohon (satu anak satu pohon), penataan taman kelas, kerajinan tangan berbahan dasar bahan alami, aksi pungut sampah plastik dan mengajak masyarakat bijak terhadap sampah. Semuanya dimulai dari para pendidik, tenaga pendidik, dan peserta didik. Bermula dari diri, berlanjut di kelas, dan dijadikan budaya sekolah.
+                        </p>
+                        <p>
+                            Jika sebatas konsepsi, maka sekolah adiwiyata dan pendidikan karakter gagal. Sekolah adiwiyata dan pendidikan karakter perlu diwujudnyatakan dalam bentuk tindakan/aksi nyata di sekolah. Sekolah adiwiyata merupakan sekolah berjiwa cinta lingkungan hidup. Sekolah adiwiyata berkaitan langsung dengan perhatian kita kepada pelestarian lingkungan hidup yang diterapkan melalui penerapan pendidikan karakter berkelanjutan.
+                        </p>
+                        <p>
+                            Melalui kegiatan sekolah adiwiyata kita berupaya menciptakan genarasi berkarakter. Generasi yang peduli lingkungan hidup. Insan yang senang dengan lingkungan yang sehat, bebas sampah plastik, indah, hijau, dan berdampak pada ekosistem akademik yang damai. Generasi yang mampu mewujudkan lingkungan hidup yang homeostatis (stabil dan seimbang)
+                        </p>
                     </div>
                 </div>
                 <div class="col-lg-4 main-service-area blog-side-bar">
@@ -172,11 +167,10 @@
                             <a href="#">Wash</a>
                             <a href="#">Call</a>
                         </div> --}}
-                        <div class="discount-text" style="background: transparent">
-                            <iframe class="ytvideo" src="https://www.youtube.com/embed/oQKjX1z7aMM"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                        <div class="ratio ratio-16x9">
+                            <iframe
+                                src="https://www.youtube.com/embed/WxgpJkI4qAg?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0"
+                                title="YouTube video" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
