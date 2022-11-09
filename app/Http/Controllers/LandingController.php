@@ -107,6 +107,20 @@ class LandingController extends Controller
 
     public function guru()
     {
-        return view("landingpage.guru&staf");
+        return view("landingpage.beranda.guru&staf");
     }
+
+    public function keahlian()
+    {
+        return view("landingpage.beranda.keahlian");
+    }
+    public function lokerbkk()
+    {
+        return view("landingpage.beranda.lokerbkk");
+    }
+    public function agenda()
+    {
+        return view("landingpage.beranda.agenda");
+    }
+
 }

@@ -33,4 +33,6 @@
     <title>Viscous - Cleaning Services HTML Template</title>
 
     <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
+   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">
+ 
 </head>
