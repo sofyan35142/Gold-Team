@@ -6,15 +6,15 @@
                         <ul>
                             <li>
                                 <i class="icofont-clock-time"></i>
-                                Sun - Thu : 10:00AM - 06:00PM
+                                Senin - Jum'at : 10:00AM - 06:00PM
                             </li>
                             <li>
                                 <i class="icofont-location-pin"></i>
-                                28/A Street, New York City
+                                Jl. Sumbergareng Kecamatan Sukorejo, Kabupaten Pasuruan,
                             </li>
                             <li>
                                 <i class="icofont-phone"></i>
-                                <a href="tel:+880123456789"> +88 0123 456 789 </a>
+                                <a href="tel:+880123456789"> Email Smk </a>
                             </li>
                         </ul>
                     </div>
@@ -53,13 +53,18 @@
             <div class="container">
                 <nav class="navbar navbar-expand-md navbar-light">
                     <a class="navbar-brand" href="index.html">
+<<<<<<< HEAD
+                        <img src="https://smkn1sukorejo.sch.id/wp-content/uploads/2019/10/cropped-LOGO1-2.png" class="main-logo" alt="logo" />
+                        <img src="assets/img/logo-2.png" class="white-logo" alt="logo" />
+=======
                         <img src="../assets/img/logo.png" class="main-logo" alt="logo" />
                         <img src="../assets/img/logo-2.png" class="white-logo" alt="logo" />
+>>>>>>> 732b2ba1a8f9deeb1263dfe58b9b2088349bd8c8
                     </a>
                     <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a href="about.html" class="nav-link">Beranda</a>
+                                <a href="/" class="nav-link">Beranda</a>
                             </li>
                             <li class="nav-item">
                                 <a href="#" class="nav-link dropdown-toggle active">
@@ -85,13 +90,13 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a href="service.html" class="nav-link dropdown-toggle">
+                                <a href="/jurusan" class="nav-link dropdown-toggle">
                                     Jurusan
                                     <i class="icofont-rounded-right"></i>
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
-                                        <a href="service.html" class="nav-link">Teknik Kendaraan Ringan (TKR)</a>
+                                        <a href="/tkr" class="nav-link">Teknik Kendaraan Ringan (TKR)</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="service-two.html" class="nav-link">Teknik Elektronika Industri (TEI)</a>
