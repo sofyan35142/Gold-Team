@@ -68,19 +68,19 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
-                                        <a href="index.html" class="nav-link active">Visi Misi</a>
+                                        <a href="/profil/visimisi" class="nav-link active">Visi Misi</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="index-two.html" class="nav-link">Struktur Organisasi</a>
+                                        <a href="/profil/strukturorganisasi" class="nav-link">Struktur Organisasi</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="index-three.html" class="nav-link">Sejarah Singkat</a>
+                                        <a href="/profil/sejarahsingkat" class="nav-link">Sejarah Singkat</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="index-three.html" class="nav-link">Sekolah Adiwiyata</a>
+                                        <a href="/profil/sekolahadiwiyata" class="nav-link">Sekolah Adiwiyata</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="index-three.html" class="nav-link">Sekolah Rujukan</a>
+                                        <a href="/profil/sekolahrujukan" class="nav-link">Sekolah Rujukan</a>
                                     </li>
                                 </ul>
                             </li>

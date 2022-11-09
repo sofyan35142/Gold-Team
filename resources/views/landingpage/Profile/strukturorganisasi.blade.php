@@ -28,39 +28,14 @@
             <div class="row">
                 <div class="col-lg-8">
                     <div class="blog-details-post">
-                        <div class="blog-post-title">
+                        <div class="blog-post-title text-center mb-5">
                             <h3>
-                                Visi Misi
+                                STRUKTUR ORGANISASI
                             </h3>
+                            <h4>SMK NEGERI 1 SUKOREJO</h4>
+                            <h7>TAHUN AJARAN 2021/2022</h7>
                         </div>
-                        <img src="../assets/img/visimisi.png" alt="service">
-                        <h3>
-                            TUJUAN
-                        </h3>
-                        <h4 class="fz-16px"><b>Tujuan Umum</b></h4>
-                        <p>1.Meningkatkan keimanan dan ketaqwaan peserta didik kepada Tuhan Yang Maha Esa.</p>
-                        <p>2.Mengembangkan potensi peserta didik agar menjadi warga negara yang berakhlak mulia, sehat,
-                            berilmu, cakap, kreatif, mandiri, demokratis, dan bertanggung jawab.</p>
-                        <p>3.Mengembangkan potensi peserta didik agar memiliki wawasan kebangsaan, memahami dan
-                            menghargai keanekaragaman budaya bangsa Indonesia.</p>
-                        <p>4.Mengembangkan potensi peserta didik agar memiliki kepedulian terhadap lingkungan hidup,
-                            dengan secara aktif turut memelihara dan melestarikan lingkungan hidup, serta memanfaatkan
-                            sumber daya alam dengan efektif dan efisien.</p>
-                        <p>5.Sekolah mampu mengalokasikan anggaran minimal sebesar 20% untuk membiayai kegiatan sekolah
-                            adiwiyata.</p>
-
-
-                        <h4 class="fz-16px"><b>Tujuan Khusus</b></h4>
-                        <p>1.Meningkatkan keimanan dan ketaqwaan peserta didik kepada Tuhan Yang Maha Esa.</p>
-                        <p>2.Mengembangkan potensi peserta didik agar menjadi warga negara yang berakhlak mulia, sehat,
-                            berilmu, cakap, kreatif, mandiri, demokratis, dan bertanggung jawab.</p>
-                        <p>3.Mengembangkan potensi peserta didik agar memiliki wawasan kebangsaan, memahami dan
-                            menghargai keanekaragaman budaya bangsa Indonesia.</p>
-                        <p>4.Mengembangkan potensi peserta didik agar memiliki kepedulian terhadap lingkungan hidup,
-                            dengan secara aktif turut memelihara dan melestarikan lingkungan hidup, serta memanfaatkan
-                            sumber daya alam dengan efektif dan efisien.</p>
-                        <p>5.Sekolah mampu mengalokasikan anggaran minimal sebesar 20% untuk membiayai kegiatan sekolah
-                            adiwiyata.</p>
+                        <img src="../assets/img/strukturorganisasi.jpg" alt="service">
                     </div>
                 </div>
                 <div class="col-lg-4 main-service-area blog-side-bar">

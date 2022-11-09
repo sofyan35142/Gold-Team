@@ -14,19 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
      //======================== LANDING PAGE ========================//
-Route::get('/', function () {
-    return view('landingpage.halutama');
-});
-Route::get('/bug', function () {
-    return view('welcome');
-});
-
-Route::get('/jurusan', [LandingController::class, 'jurusan']);
-// ==Route profil==//
+//==Route profil==//
 Route::get('/profil/visimisi', [LandingController::class, 'visimisi']);
 Route::get('/profil/strukturorganisasi', [LandingController::class, 'strukturorganisasi']);
 Route::get('/profil/sejarahsingkat', [LandingController::class, 'sejarahsingkat']);
-Route::get('/profil/sekolahadiwiyata', [LandingController::class, 'sekolahadiwiyata']);
-Route::get('/profil/sekolahrujukan', [LandingController::class, 'sekolahrujukan']);
 
 
