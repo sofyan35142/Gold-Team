@@ -39,7 +39,7 @@
                             </li>
                             <li>
                                 <i class="icofont-rounded-double-right"></i>
-                                <a href="/tkr">Teknik Kendaraan Ringan</a>
+                                <a href="/tei">Teknik Elektronika Industri</a>
                             </li>
                             <li>
                                 <i class="icofont-rounded-double-right"></i>

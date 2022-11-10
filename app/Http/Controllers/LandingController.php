@@ -53,6 +53,44 @@ class LandingController extends Controller
     {
         return view("landingpage.jurusan.modulproduktiftei");
     }
+    public function modulproduktifrpl()
+    {
+        return view("landingpage.jurusan.modulproduktifrpl");
+    }
+    public function artikelilmiah()
+    {
+        return view("landingpage.jurusan.artikelilmiah");
+    }
+    public function modulproduktiftki()
+    {
+        return view("landingpage.jurusan.modulproduktiftki");
+    }
+    public function modulproduktiftav()
+    {
+        return view("landingpage.jurusan.modulproduktiftav");
+    }
+
+    ////LSP////
+    public function lsp()
+    {
+        return view("landingpage.lsp.lsp");
+    }
+    public function visimisilsp()
+    {
+        return view("landingpage.lsp.visimisilsp");
+    }
+    public function skematerlisensi()
+    {
+        return view("landingpage.lsp.skematerlisensi");
+    }
+    public function tempatujikom()
+    {
+        return view("landingpage.lsp.tempatujikom");
+    }
+    public function jmlpemegangsertifikat()
+    {
+        return view("landingpage.lsp.jmlpemegangsertifikat");
+    }
 
     public function visimisi()
     {

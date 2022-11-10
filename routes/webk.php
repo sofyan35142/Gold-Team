@@ -13,38 +13,9 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-     //======================== LANDING PAGE ========================//
-
-Route::get('/bug', function () {
-    return view('welcome');
-});
-
-//BERANDA
-Route::get('/', function () {
-    return view('landingpage.beranda.halutama');
-});
-Route::get('/keahlian', [LandingController::class, 'keahlian']);
-Route::get('/lokerbkk', [LandingController::class, 'lokerbkk']);
-Route::get('/agenda', [LandingController::class, 'agenda']);
-
-//DATA
-Route::get('/dharma', [LandingController::class, 'dharma']);
-Route::get('/datawalas', [LandingController::class, 'datawalas']);
-Route::get('/dataalumni', [LandingController::class, 'dataalumni']);
+//======================== LANDING PAGE ========================//
 
 
-// ==Route profil==//
-
-Route::get('/guru', [LandingController::class, 'guru']);
-
-
-//==Route profil==//
-
-Route::get('/profil/visimisi', [LandingController::class, 'visimisi']);
-Route::get('/profil/strukturorganisasi', [LandingController::class, 'strukturorganisasi']);
-Route::get('/profil/sejarahsingkat', [LandingController::class, 'sejarahsingkat']);
-Route::get('/profil/sekolahadiwiyata', [LandingController::class, 'sekolahadiwiyata']);
-Route::get('/profil/sekolahrujukan', [LandingController::class, 'sekolahrujukan']);
 
 //JURUSAN
 Route::get('/jurusan', [LandingController::class, 'jurusan']);
@@ -65,7 +36,6 @@ Route::get('/modulproduktiftav', [LandingController::class, 'modulproduktiftav']
 
 
 //LSP
-Route::get('/lsp', [LandingController::class, 'lsp']);
 Route::get('/visimisilsp', [LandingController::class, 'visimisilsp']);
 Route::get('/skematerlisensi', [LandingController::class, 'skematerlisensi']);
 Route::get('/tempatujikom', [LandingController::class, 'tempatujikom']);

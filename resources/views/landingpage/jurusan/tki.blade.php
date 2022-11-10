@@ -56,20 +56,53 @@
                     <img src="foto/jurusan/KI1.JPG" alt="service">
                     <div class="service-details-post">
                         <h3>Teknik Kimia Industri <span class="tkrfont"> (TKI)</span></h3>
-                        <p>Program keahlian yang mempelajasi pemprosesan bahan mentah menjadi berupa barang setengah jadi ataupun barang jadi (produk) seperti : minyak bumi dan gas bumi, gas bio, detergen, cairan anti kuman, planstik, kertas, kecantikan, obat-obatan, makanan instan, dll. Lulusan Teknik Kimia Industri berpeluang kerja antara lain : Di Industri Kimia (Sebagai Analisis Laboratorium dan Operator Peralatan Industri Kimia); Industri Pangan (Indofood, Unilever, Makanan Instan dll); Industri Kesehatan dan Kecantikan : (Industri Obat-obatan, detergen, sabun, pasta gigi, dll); Pertambangan : Pertamina, Pabrik Pengolahan Oli, dan Gas; Industri Selter Industri Pupuk dan Peptisida, Dll.</p>
+                        <p>Program keahlian yang mempelajasi pemprosesan bahan mentah menjadi berupa barang setengah
+                            jadi ataupun barang jadi (produk) seperti : minyak bumi dan gas bumi, gas bio, detergen,
+                            cairan anti kuman, planstik, kertas, kecantikan, obat-obatan, makanan instan, dll. Lulusan
+                            Teknik Kimia Industri berpeluang kerja antara lain : Di Industri Kimia (Sebagai Analisis
+                            Laboratorium dan Operator Peralatan Industri Kimia); Industri Pangan (Indofood, Unilever,
+                            Makanan Instan dll); Industri Kesehatan dan Kecantikan : (Industri Obat-obatan, detergen,
+                            sabun, pasta gigi, dll); Pertambangan : Pertamina, Pabrik Pengolahan Oli, dan Gas; Industri
+                            Selter Industri Pupuk dan Peptisida, Dll.</p>
                         <p><b>VISI DAN MISI</b></p>
 
                         <p><b>Visi</b>
-                            <br />Terwujudnya tamatan yang berimtaq kepada Tuhan Yang Maha Esa. Berbudi Pekerti Luhur, Mandiri, Berdaya saing tinggi, berperilaku profesional dan berwawasan lingkungan dalam menyongsong era globalisasi
-                            
+                            <br />Terwujudnya tamatan yang berimtaq kepada Tuhan Yang Maha Esa. Berbudi Pekerti Luhur,
+                            Mandiri, Berdaya saing tinggi, berperilaku profesional dan berwawasan lingkungan dalam
+                            menyongsong era globalisasi
+
                         </p>
                         <p><b>Misi</b>
-                            <br />1. Menyiapkan tenaga kerja terampil berkualitas dan profesional sesuai dengan standart kompetensi industri
-                            <br />2. Membekali peserta didik dengan pengetahuan, ketrampilan dan atitude agar kompeten dan mampu secara mandiri baik di dunia industri maupun di jenjang pendidikan yang lebih tinggi
-                            <br/>3. Menghasilkan tamatan yang memiliki kemampuan yang berkualitas dan mampu bersaing di dunia kerja maupun mampu bekerja mandiri
+                            <br />1. Menyiapkan tenaga kerja terampil berkualitas dan profesional sesuai dengan standart
+                            kompetensi industri
+                            <br />2. Membekali peserta didik dengan pengetahuan, ketrampilan dan atitude agar kompeten
+                            dan mampu secara mandiri baik di dunia industri maupun di jenjang pendidikan yang lebih
+                            tinggi
+                            <br />3. Menghasilkan tamatan yang memiliki kemampuan yang berkualitas dan mampu bersaing di
+                            dunia kerja maupun mampu bekerja mandiri
                         </p>
 
+                        <h3>Ketua Kompetensi Keahlian <span class="tkrfont"> (KaKomLi)</span></h3>
+                        <div class="d-flex flex-row">
+                            <div class="p-2"><img class="img-guru"
+                                    src="https://smkn1sukorejo.sch.id/wp-content/uploads/2022/06/20211223_063732-hanny-mualifah-scaled.jpg" />
+                            </div>
+                            <div class="p-2"><b>HANIK MUALLIFAH, S.T</b>
+                                <br />
+                                <p>NIP: 19750619 200904 2 001
+                                    <br />
+                                    Tempat/Tgl Lahir: Madiun, 19 Juni 1975
+                                    <br />
+                                    Status: PNS
+                                    <br />
+                                    Gol. Ruang: III/c
+                                </p>
+
+
+                            </div>
+                        </div>
                     </div>
+
                     {{-- <div class="page-button">
 <div class="row">
 <div class="col-md-3 col-sm-6">
@@ -91,7 +124,7 @@ Next
 </div>
 </div> --}}
                 </div>
-                {{---------------------- side bar sekolah ----------------------}}
+                {{-- -------------------- side bar sekolah -------------------- --}}
                 <div class="col-lg-4 main-service-area blog-side-bar">
                     <div class="service-sidebar">
                         <form class="search-form">
@@ -241,7 +274,8 @@ Next
                                     <div class="col-md-12 col-sm-6">
                                         <div class="form-group">
                                             <input type="email" name="email" id="email" class="form-control"
-                                                required data-error="Please enter your email" placeholder="Your Email">
+                                                required data-error="Please enter your email"
+                                                placeholder="Your Email">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
