@@ -92,7 +92,7 @@
                             <ul class="dropdown-menu">
                                 <li class="nav-item">
                                     <a href="/tkr" class="nav-link">Teknik Kendaraan Ringan (TKR) </a>
-                                    
+
                                     <ul class="dropdown-menu dropside">
                                         <li class="nav-item"><a
                                                 href="/modulproduktiftkr">Modul
@@ -149,19 +149,19 @@
                                     <a href="/guru" class="nav-link">DATA FURU & KARYAWAN</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="blog-right-sidebar.html" class="nav-link">DHARMA WANITA PERSATUAN</a>
+                                    <a href="/dharma" class="nav-link">DHARMA WANITA PERSATUAN</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="blog-details.html" class="nav-link">DATA SISWA</a>
+                                    <a href="/datawalas" class="nav-link">DATA SISWA</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="blog.html" class="nav-link">DATA ALUMNI</a>
+                                    <a href="/dataalumni" class="nav-link">DATA ALUMNI</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="blog-right-sidebar.html" class="nav-link">EKSTRAKULIKULER</a>
+                                    <a href="/ekstraa" class="nav-link">EKSTRAKULIKULER</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="blog-details.html" class="nav-link">PRESTASI</a>
+                                    <a href="/prestasi" class="nav-link">PRESTASI</a>
                                 </li>
                             </ul>
                         </li>
@@ -203,7 +203,7 @@
                                 <li class="nav-item">
                                     <a href="/jmlpemegangsertifikat" class="nav-link">Jumlah Pemegang Sertifikat</a>
                                 </li>
-                                
+
                             </ul>
                         </li>
                     </ul>
