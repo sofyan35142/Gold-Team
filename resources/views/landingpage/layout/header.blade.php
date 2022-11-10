@@ -145,13 +145,22 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li class="nav-item">
-                                    <a href="blog.html" class="nav-link">Blog</a>
+                                    <a href="/guru" class="nav-link">DATA FURU & KARYAWAN</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="blog-right-sidebar.html" class="nav-link">Blog Right sidebar</a>
+                                    <a href="blog-right-sidebar.html" class="nav-link">DHARMA WANITA PERSATUAN</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="blog-details.html" class="nav-link">Blog details</a>
+                                    <a href="blog-details.html" class="nav-link">DATA SISWA</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="blog.html" class="nav-link">DATA ALUMNI</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="blog-right-sidebar.html" class="nav-link">EKSTRAKULIKULER</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="blog-details.html" class="nav-link">PRESTASI</a>
                                 </li>
                             </ul>
                         </li>

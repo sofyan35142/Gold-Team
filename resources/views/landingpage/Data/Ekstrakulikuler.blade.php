@@ -5,6 +5,14 @@
 
 <head>
     @include('landingpage.layout.head')
+    {{-- <style>
+        td{
+            border: 1px solid black !important;
+        }
+        th{
+            border: 1px solid black !important;
+        }
+    </style> --}}
 </head>
 
 <body>
@@ -64,7 +72,7 @@
                     <div class="blog-details-post">
                         <div class="blog-post-title">
                             <h3>
-                                Data Guru & Karyawan
+                               Data Alumni
                             </h3>
                             <ul>
                                 <li>
@@ -77,33 +85,98 @@
                                 </li>
                             </ul>
                         </div>
-                        <table class="table table-bordered">
+                        <table class="table table-bordered" >
                             <thead>
-                            <th> No </th>
-                            <th> Foto </th>
-                            <th> Nama </th>
-                            <th> NIP </th>
-                            <th> TEMPAT LAHIR </th>
-                            <th> TGL LAHIR </th>
-                            <th> TMT AWAL</th>
-                            <th> STATUS </th>
-                            <th> GOL.RUANGAN </th>
-                            <th> JABATAN</th>
+                                <th><b> No </b></th>
+                                <th><b> Nama </b></th>
+                                <th><b> L/P </b></th>
+                                <th><b> Tempat Lahir </b></th>
+                                <th><b> TGL LAHIR </b></th>
+                                <th><b> ORANGTUA </b></th>
+                                <th><b> PROGRAM KEAHLIAN </b></th>
+                                <th><b> NO.IJAZAH </b></th>
+                                <th><b> TH.LULUS </b></th>
                             </thead>
                             <tbody>
-                            <tr>
+                               <tr>
                                 <td>1</td>
-                                <td>1</td>
-                                <td>RUDI TRISANTOSO, S.Pd, M.Pd</td>
-                                <td>19710124 199512 1 001</td>
+                                <td>A'AN PRASTIO</td>
+                                <td>L</td>
                                 <td>Pasuruan</td>
-                                <td>24 Jan 1971</td>
-                                <td>16 Jan 2019</td>
-                                <td>PNS</td>
-                                <td>IV/b – Pembina Tingkat I</td>
-                                <td>KEPALA SEKOLAH</td>
-                            </tr>
+                                <td>28 November 1998</td>
+                                <td> Supar</td>
+                                <td>Teknik Elektronika Industri</td>
+                                <td>DN-05 Mk/06 0012039</td>
+                                <td>2017</td>
+                               </tr>
+                               <tr>
+                                <td>1</td>
+                                <td>A'AN PRASTIO</td>
+                                <td>L</td>
+                                <td>Pasuruan</td>
+                                <td>28 November 1998</td>
+                                <td> Supar</td>
+                                <td>Teknik Elektronika Industri</td>
+                                <td>DN-05 Mk/06 0012039</td>
+                                <td>2017</td>
+                               </tr>
+                               <tr>
+                                <td>1</td>
+                                <td>A. HUSEN</td>
+                                <td>L</td>
+                                <td>Pasuruan</td>
+                                <td>06 JUNI 2000</td>
+                                <td> Kanan</td>
+                                <td>Teknik Kendaraan Ringan</td>
+                                <td>M-SMK/13-3/0893900</td>
+                                <td>2017</td>
+                               </tr>
+                               <tr>
+                                <td>1</td>
+                                <td>A. ZAILANI AL AYYUBI</td>
+                                <td>L</td>
+                                <td>Pasuruan</td>
+                                <td>06 Juli 2001</td>
+                                <td> Nawi </td>
+                                <td>Teknik Kendaraan Ringan</td>
+                                <td>M-SMK/13-3/0893827</td>
+                                <td>2018</td>
+                               </tr>
+                               <tr>
+                                <td>1</td>
+                                <td>ABDUL GHOFUR</td>
+                                <td>L</td>
+                                <td>Pasuruan</td>
+                                <td>10 April 2001</td>
+                                <td> Saikhun Efendi </td>
+                                <td>Teknik Kendaraan Ringan</td>
+                                <td>M-SMK/13-3/0939260</td>
+                                <td>2020</td>
+                               </tr>
+                               <tr>
+                                <td>1</td>
+                                <td>ABDUL KHALID FADJUANI</td>
+                                <td>L</td>
+                                <td>Pasuruan</td>
+                                <td>11 September 1998</td>
+                                <td> SUGIANTORO </td>
+                                <td>Kimia Industri</td>
+                                <td>DN-05 Mk/06 0012253</td>
+                                <td>2017</td>
+                               </tr>
+                               <tr>
+                                <td>1</td>
+                                <td>A. ZAILANI AL AYYUBI</td>
+                                <td>L</td>
+                                <td>Pasuruan</td>
+                                <td>06 Juli 2001</td>
+                                <td> Nawi </td>
+                                <td>Teknik Kendaraan Ringan</td>
+                                <td>M-SMK/13-3/0893827</td>
+                                <td>2018</td>
+                               </tr>
                             </tbody>
+
                         </table>
                     </div>
                     <div class="page-button">
@@ -225,19 +298,22 @@
                                     </a>
                                 </li>
                             </ul>
-                             <p class="sidetitle">Email :</p>
+                            <p class="sidetitle">Email :</p>
                             <ul>
                                 <li class="hcard overflow-auto border-0">
                                     <a class="colorori mb-2 effecthover-s" href="#">
                                         <i class="icofont-rounded-right iknrounded"></i>
-                                       <b>info@smkn1sukorejo.sch.id</b>
+                                        <b>info@smkn1sukorejo.sch.id</b>
                                     </a>
                                 </li>
                             </ul>
-                             <p class="sidetitle">Alamat</p>
+                            <p class="sidetitle">Alamat</p>
                             <ul>
-                               <div class="textwidget">
-                               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.585483431905!2d112.7150166749192!3d-7.727543392290657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7d1337b9fbe51%3A0x5f53153c148fedfd!2sSMK%20Negeri%201%20Sukorejo!5e0!3m2!1sid!2sid!4v1667957123853!5m2!1sid!2sid" width="415" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <div class="textwidget">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.585483431905!2d112.7150166749192!3d-7.727543392290657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7d1337b9fbe51%3A0x5f53153c148fedfd!2sSMK%20Negeri%201%20Sukorejo!5e0!3m2!1sid!2sid!4v1667957123853!5m2!1sid!2sid"
+                                        width="415" height="250" style="border:0;" allowfullscreen=""
+                                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </ul>
                         </div>
                     </div>
@@ -447,27 +523,13 @@
         <i class="icofont-scroll-long-up"></i>
     </div>
 
-    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-    <script src="assets/js/jquery.min.js"></script>
-
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-
-    <script src="assets/js/owl.carousel.min.js"></script>
-
-    <script src="assets/js/slick.min.js"></script>
-
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-
-    <script src="assets/js/meanmenu.js"></script>
-
-    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
-
-    <script src="assets/js/form-validator.min.js"></script>
-
-    <script src="assets/js/contact-form-script.js"></script>
-
-    <script src="assets/js/custom.js"></script>
+    @include('landingpage.layout.js')
 </body>
+{{-- <script>
+    $(document).ready(function() {
+        $('#example').DataTable();
+    });
+</script> --}}
 
 <!-- Mirrored from templates.hibootstrap.com/viscous/default/blog-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Nov 2022 02:34:12 GMT -->
 

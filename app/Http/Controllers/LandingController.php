@@ -17,31 +17,6 @@ class LandingController extends Controller
         //
     }
 
-    public function store(Request $request)
-    {
-        //
-    }
-
-    public function show(Jurusan $jurusan)
-    {
-        //
-    }
-
-    public function edit(Jurusan $jurusan)
-    {
-        //
-    }
-
-    public function update(Request $request, Jurusan $jurusan)
-    {
-        //
-    }
-
-    public function destroy(Jurusan $jurusan)
-    {
-        //
-    }
-
     public function jurusan()
     {
         return view("landingpage.jurusan.jurusan");
@@ -78,9 +53,6 @@ class LandingController extends Controller
     {
         return view("landingpage.jurusan.modulproduktiftei");
     }
-
-
-
 
     public function visimisi()
     {
@@ -120,5 +92,15 @@ class LandingController extends Controller
     {
         return view("landingpage.beranda.agenda");
     }
+    public function dharma(){
+        return view('landingpage.Data.dharmawanita');
+    }
+    public function datawalas(){
+        return view('landingpage.Data.datawalas');
+    }
+    public function dataalumni(){
+        return view('landingpage.Data.dataalumni');
+    }
+
 
 }

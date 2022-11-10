@@ -28,11 +28,15 @@
 
     <link rel="stylesheet" href="../csszaki.css" />
 
-    <link rel="stylesheet" href="csskeysha.css" />
+    <link rel="stylesheet" href="../csskeysha.css" />
+    <link rel="stylesheet" href="../cssyosop.css" />
 
     <title>SMKN 1 SUKOREJO - BISA SUKSES</title>
 
     <link rel="icon" type="image/png" href="foto/logo.png" />
+
+    {{-- <link rel="stylesheet" type="text/css" href="/DataTables/datatables.css"> --}}
+      <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.12.1/datatables.min.css"/>
 
     <style>
         td{
