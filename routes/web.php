@@ -48,4 +48,5 @@ Route::get('/tav', [LandingController::class, 'tav']);
 Route::get('/modulproduktiftkr', [LandingController::class, 'modulproduktiftkr']);
 Route::get('/reparasibengkel', [LandingController::class, 'reparasibengkel']);
 Route::get('/modulproduktiftei', [LandingController::class, 'modulproduktiftei']);
+Route::get('/modulproduktifrpl', [LandingController::class, 'modulproduktifrpl']);
 
