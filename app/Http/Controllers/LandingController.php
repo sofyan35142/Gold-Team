@@ -58,7 +58,6 @@ class LandingController extends Controller
     {
         return view("landingpage.jurusan.rpl");
     }
-<<<<<<< HEAD
     public function tki()
     {
         return view("landingpage.jurusan.tki");
@@ -81,16 +80,13 @@ class LandingController extends Controller
     }
 
 
-    
 
-=======
-        // CONTROLLER PROFIL
->>>>>>> 1e8f886671a3aa5d57fd00d74a3515949e04f1f4
+
     public function visimisi()
     {
         return view("landingpage.profile.visimisi");
     }
-<<<<<<< HEAD
+
     public function strukturorganisasi()
     {
         return view("landingpage.profile.strukturorganisasi");
@@ -106,11 +102,23 @@ class LandingController extends Controller
     public function sekolahrujukan()
     {
         return view("landingpage.profile.sekolahrujukan");
-=======
-
+    }
     public function guru()
     {
-        return view("landingpage.guru&staf");
->>>>>>> 7375d8512b2e92a9e1932b6ad2555a2411a9ddab
+        return view("landingpage.beranda.guru&staf");
     }
+
+    public function keahlian()
+    {
+        return view("landingpage.beranda.keahlian");
+    }
+    public function lokerbkk()
+    {
+        return view("landingpage.beranda.lokerbkk");
+    }
+    public function agenda()
+    {
+        return view("landingpage.beranda.agenda");
+    }
+
 }

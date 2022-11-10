@@ -14,13 +14,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
      //======================== LANDING PAGE ========================//
-Route::get('/', function () {
-    return view('landingpage.halutama');
-});
+
 Route::get('/bug', function () {
     return view('welcome');
 });
 
+//BERANDA
+Route::get('/', function () {
+    return view('landingpage.beranda.halutama');
+});
+Route::get('/keahlian', [LandingController::class, 'keahlian']);
+Route::get('/lokerbkk', [LandingController::class, 'lokerbkk']);
+Route::get('/agenda', [LandingController::class, 'agenda']);
+
+Route::get('/jurusan', [LandingController::class, 'jurusan']);
 
 
 // ==Route profil==//
@@ -36,7 +43,7 @@ Route::get('/profil/sejarahsingkat', [LandingController::class, 'sejarahsingkat'
 Route::get('/profil/sekolahadiwiyata', [LandingController::class, 'sekolahadiwiyata']);
 Route::get('/profil/sekolahrujukan', [LandingController::class, 'sekolahrujukan']);
 
-//==Route jurusan==//
+//JURUSAN
 Route::get('/jurusan', [LandingController::class, 'jurusan']);
 Route::get('/tkr', [LandingController::class, 'tkr']);
 Route::get('/tei', [LandingController::class, 'tei']);
