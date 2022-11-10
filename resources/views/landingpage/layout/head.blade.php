@@ -32,11 +32,6 @@
 
     <title>SMKN 1 SUKOREJO - BISA SUKSES</title>
 
-<<<<<<< HEAD
-    <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
-   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">
-
-=======
     <link rel="icon" type="image/png" href="foto/logo.png" />
 
     <style>
@@ -44,5 +39,4 @@
             border-right:1px solid #e2e5e9;
         }
     </style>
->>>>>>> 0f3dfe30ce75b82e902317dcffa8e6ed62d1befe
 </head>
