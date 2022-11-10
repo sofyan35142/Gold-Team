@@ -139,6 +139,12 @@ class LandingController extends Controller
     public function dataalumni(){
         return view('landingpage.Data.dataalumni');
     }
+    public function ekstra(){
+        return view('landingpage.Data.Ekstrakulikuler');
+    }
+    public function prestasi(){
+        return view('landingpage.Data.prestasi');
+    }
 
 
 }

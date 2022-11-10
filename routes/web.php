@@ -31,6 +31,8 @@ Route::get('/agenda', [LandingController::class, 'agenda']);
 Route::get('/dharma', [LandingController::class, 'dharma']);
 Route::get('/datawalas', [LandingController::class, 'datawalas']);
 Route::get('/dataalumni', [LandingController::class, 'dataalumni']);
+Route::get('/ekstraa', [LandingController::class, 'ekstra']);
+Route::get('/prestasi', [LandingController::class, 'prestasi']);
 
 
 // ==Route profil==//
