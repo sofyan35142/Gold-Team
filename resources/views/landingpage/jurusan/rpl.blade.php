@@ -75,7 +75,25 @@
                             <br />5. Mampu memasang sebuah PC.
                             <br />6. Mengerti akan fungsi dari komputer
                         </p>
+                        <h3>Ketua Kompetensi Keahlian <span class="tkrfont"> (KaKomLi)</span></h3>
+                        <div class="d-flex flex-row">
+                            <div class="p-2"><img class="img-guru"
+                                    src="https://smkn1sukorejo.sch.id/wp-content/uploads/2022/06/IMG_20200726_194531-Widya-Syabil.jpg" />
+                            </div>
+                            <div class="p-2"><b>WIDYAWATI, S.Kom</b>
+                                
+                                <p>NIP: 19951227 201903 1 003
+                                    <br />
+                                    Tempat/Tgl Lahir: Pasuruan, 07 Agustus 1976
+                                    <br />
+                                    Status: PNS
+                                    <br />
+                                    Gol. Ruang: III/c
+                                </p>
 
+
+                            </div>
+                        </div>
 
                     </div>
                     {{-- <div class="page-button">
@@ -110,53 +128,109 @@ Next
                             </div>
                         </form>
                         <div class="service-list">
-                            <p>Categories</p>
+                            <p class="sidetitle">Instansi Terkait</p>
                             <ul>
-                                <li>
-                                    <a href="#">
-                                        Toilet Cleaning
-                                        <i class="icofont-rounded-right"></i>
+                                <li class="hcard overflow-auto">
+                                    <a class="colorori mb-2" href="#">
+                                        <i class="icofont-rounded-right iknrounded"></i>
+                                        Cabang Dinas Pendidikan Wilayah Pasuruan
+                                    </a>
+                                    <a class="colorori mb-2" href="#">
+                                        <i class="icofont-rounded-right iknrounded"></i>
+                                        Kementerian Pendidikan & Kebudayaan
+                                    </a>
+                                    <a class="colorori mb-2" href="#">
+                                        <i class="icofont-rounded-right iknrounded"></i>
+                                        Direktorat PSMK
+                                    </a>
+                                    <a class="colorori mb-2" href="#">
+                                        <i class="icofont-rounded-right iknrounded"></i>
+                                        Dinas Pendidikan Jatim
+                                    </a>
+                                    <a class="colorori mb-2" href="#">
+                                        <i class="icofont-rounded-right iknrounded"></i>
+                                        Pemerintah Kabupaten Pasuruan
+                                    </a>
+                                    <a class="colorori mb-2" href="#">
+                                        <i class="icofont-rounded-right iknrounded"></i>
+                                        Dinas Ketenagakerjaan Kabupaten Pasuruan
+                                    </a>
+                                    <a class="colorori mb-2" href="#">
+                                        <i class="icofont-rounded-right iknrounded"></i>
+                                        Sistem Informasi Inovasi Sekolah
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="#">
-                                        Stay Hygienic
-                                        <i class="icofont-rounded-right"></i>
+                            </ul>
+                            <p class="sidetitle">Potensi Sekitar</p>
+                            <ul>
+                                <li class="hcard overflow-auto">
+                                    <a class="colorori mb-2" href="#">
+                                        <i class="icofont-rounded-right iknrounded"></i>
+                                        Kecamatan Sukorejo Kab.Pasuruan
+                                    </a>
+                                    <a class="colorori mb-2" href="#">
+                                        <i class="icofont-rounded-right iknrounded"></i>
+                                        Kaboki-Pionir Ekspor Tas Rajut
+                                    </a>
+                                    <a class="colorori mb-2" href="#">
+                                        <i class="icofont-rounded-right iknrounded"></i>
+                                        Taman Safari Indonesia 2
+                                    </a>
+                                    <a class="colorori mb-2" href="#">
+                                        <i class="icofont-rounded-right iknrounded"></i>
+                                        Saygon Waterpark
+                                    </a>
+                                    <a class="colorori mb-2" href="#">
+                                        <i class="icofont-rounded-right iknrounded"></i>
+                                        Kebon Raya Purwodadi
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="#">
-                                        News
-                                        <i class="icofont-rounded-right"></i>
+                            </ul>
+                            <p class="sidetitle">Kategori</p>
+                            <ul>
+                                <li class="hcard overflow-auto border-0">
+                                    <a class="colorori mb-2 effecthover-s" href="#">
+                                        <i class="icofont-ui-folder iknrounded"></i>
+                                        Agenda Sekolah
                                     </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Cleaning Floor
-                                        <i class="icofont-rounded-right"></i>
+                                    <a class="colorori mb-2 effecthover-s" href="#">
+                                        <i class="icofont-ui-folder iknrounded"></i>
+                                        Artikel Guru
                                     </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Cleaning Kitchen
-                                        <i class="icofont-rounded-right"></i>
+                                    <a class="colorori mb-2 effecthover-s" href="#">
+                                        <i class="icofont-ui-folder iknrounded"></i>
+                                        Informasi Sekolah
                                     </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Wash Home
-                                        <i class="icofont-rounded-right"></i>
+                                    <a class="colorori mb-2 effecthover-s" href="#">
+                                        <i class="icofont-ui-folder iknrounded"></i>
+                                        Kegiatan BKK
+                                    </a>
+                                    <a class="colorori mb-2 effecthover-s" href="#">
+                                        <i class="icofont-ui-folder iknrounded"></i>
+                                        Kegiatan Sekolah
+                                    </a>
+                                    <a class="colorori mb-2 effecthover-s" href="#">
+                                        <i class="icofont-ui-folder iknrounded"></i>
+                                        Lowongan Kerja
                                     </a>
                                 </li>
                             </ul>
                         </div>
+                        {{-- <div class="tags">
+                            <p>Most Popular Tags</p>
+                            <a href="#">Enjoy</a>
+                            <a href="#">Clean</a>
+                            <a href="#">Hygienic</a>
+                            <a href="#">Time</a>
+                            <a href="#">Brush</a>
+                            <a href="#">Wash</a>
+                            <a href="#">Call</a>
+                        </div> --}}
                         <div class="ratio ratio-16x9">
-                             <iframe src="https://www.youtube.com/embed/GFzf9j7_nw0?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0" title="YouTube video" allowfullscreen></iframe>
+                            <iframe
+                                src="https://www.youtube.com/embed/_3QdWBLnRlo?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0"
+                                title="YouTube video" allowfullscreen></iframe>
                         </div>
-                        <div class="discount-shapes">
-
-                        </div>
-                        
                     </div>
                 </div>
             </div>

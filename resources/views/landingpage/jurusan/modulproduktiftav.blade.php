@@ -28,7 +28,7 @@
             <div class="d-table-cell">
                 <div class="container">
                     <div class="service-title-text">
-                        <h2>Modul Produktif RPL</h2>
+                        <h2>Modul Produktif TAV</h2>
                         <ul>
                             <li>
                                 <a href="/">Beranda</a>
@@ -39,11 +39,11 @@
                             </li>
                             <li>
                                 <i class="icofont-rounded-double-right"></i>
-                                <a href="/rpl">Rekayasa Perangkat Lunak</a>
+                                <a href="/tav">Teknik Audio Video</a>
                             </li>
                             <li>
                                 <i class="icofont-rounded-double-right"></i>
-                                Modul Produktif RPL
+                                Modul Produktif TAV
                             </li>
                         </ul>
                     </div>
@@ -59,11 +59,11 @@
                 <div class="col-lg-8">
                     {{-- <img src="foto/jurusan/TEI.JPG" alt="service"> --}}
                     <div class="service-details-post">
-                        <h3>Modul Produktif RPL</h3>
+                        <h3>Modul Produktif TAV</h3>
                         <p>Modul pembelajaran mengacu pada “PERATURAN DIREKTUR JENDERAL PENDIDIKAN DASAR DAN MENENGAH
                             KEMENTERIAN PENDIDIKAN DAN KEBUDAYAAN” nomor : 07/D.D5/KK/2018</p>
                         <h2 class="text-align: center;">SEKOLAH MENENGAH KEJURUAN
-                            <span class="tkrfont"> (SMK)</span><br />Jurusan Rekayasa Perangkat Lunak
+                            <span class="tkrfont"> (SMK)</span><br />Jurusan Teknik Audio Video
                         </h2>
                         <p><b>C1. Dasar Bidang Keahlian</b></p>
                         <div class="table table-bordered">
@@ -78,6 +78,7 @@
                                     <tr>
                                         <td style="color: black;">Simulasi dan Komunikasi Digital</td>
                                         <td style="color: black;"><a
+                                                style="font-size: 14px; font-style: normal; font-weight: 400;"
                                                 href="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/Bahan-Ajar-SIMKOMDIG-Semester-1.pdf"
                                                 target="_blank" rel="noopener">Bahan Ajar SIMKOMDIG (Lengkap)</a></td>
                                     </tr>
@@ -90,11 +91,11 @@
                                         <td style="color: black;"><a
                                                 href="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/Modul-KD-3.1-Materi-dan-Perubahannya.pdf"
                                                 target="_blank" rel="noopener">Perubahan Materi dan Pemisahan
-                                                Campuran</a><br /><a
+                                                Campuran</a><br><a
                                                 style="font-size: 14px; font-style: normal; font-weight: 400;"
                                                 href="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/3.2.-Lambang-Unsur-Rumus-Kimia-Dan-Persamaan-Reaksi.pdf"
-                                                target="_blank" rel="noopener">Lambang Unsur, Rumus Kimia, dan Persamaan
-                                                Reaksi</a></td>
+                                                target="_blank" rel="noopener">Lambang Unsur, Rumus&nbsp;Kimia, dan
+                                                Persamaan Reaksi</a></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -110,80 +111,22 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td style="color: black;">Sistem Komputer</td>
+                                        <td style="color: black;">Kerja Bengkel dan Gambar Teknik</td>
                                         <td style="color: black;"><a
-                                                href="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/SISTEM-KOMPUTER-X-1.pdf"
-                                                target="_blank" rel="noopener">Sistem Komputer X &#8211; 1</a><br /><a
-                                                href="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/SISTEM-KOMPUTER-X-2.pdf"
-                                                target="_blank" rel="noopener">Sistem Komputer X &#8211; 2</a><br /><a
-                                                href="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/Modul-ALU.pdf"
-                                                target="_blank" rel="noopener">Modul ALU</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td style="color: black;">Komputer dan Jaringan Dasar</td>
-                                        <td style="color: black;">
-                                            <ul>
-                                                <li style="text-align: left;"><a
-                                                        href="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/09/K3LH-Semua.pdf"
-                                                        target="_blank" rel="noopener">K3LH Umum</a></li>
-                                                <li style="text-align: left;"><a
-                                                        href="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/09/K3LH-Komputer.pdf"
-                                                        target="_blank" rel="noopener">K3LH dalam Lab Komputer</a></li>
-                                                <li style="text-align: left;"><a
-                                                        href="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/09/Topologi-Jaringan.pdf"
-                                                        target="_blank" rel="noopener">Topologi Jaringan</a></li>
-                                                <li style="text-align: left;"><a
-                                                        href="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/09/Topologi-Jaringan.pdf"
-                                                        target="_blank" rel="noopener">Perangkat Lunak</a></li>
-                                                <li style="text-align: left;"><a
-                                                        href="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/09/modul-perawatanpc.pdf"
-                                                        target="_blank" rel="noopener">Modul Perawatan PC</a></li>
-                                            </ul>
+                                                href="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/b-teknik-audio-video_teknik-kerja-bengkel.pdf"
+                                                target="_blank" rel="noopener">Modul Kerja Bengkel dan Gambar Teknik</a>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td style="color: black; text-align: left;">Pemrograman Dasar</td>
-                                        <td style="color: black;">
-                                            <ul>
-                                                <li style="text-align: left;"><a
-                                                        href="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/09/modul-pemrograman-dasar.pdf"
-                                                        target="_blank" rel="noopener">Modul Pemrograman Dasar</a></li>
-                                                <li style="text-align: left;"><a
-                                                        href="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/09/Modul-1-Algoritma-Pemrograman.pdf"
-                                                        target="_blank" rel="noopener">Algoritma Pemrograman</a></li>
-                                                <li style="text-align: left;"><a
-                                                        href="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/09/Modul-2-Alur-Logika-Pemrograman.pdf"
-                                                        target="_blank" rel="noopener">Alur Logika Pemrograman</a>
-                                                </li>
-                                                <li style="text-align: left;"><a
-                                                        href="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/09/Bahasa-Pemrograman-Komputer.pdf"
-                                                        target="_blank" rel="noopener">Bahasa Pemrograman Komputer</a>
-                                                </li>
-                                            </ul>
-                                        </td>
+                                        <td style="color: black;">Dasar Listrik dan Elektronika</td>
+                                        <td style="color: black;">Belum Ada</td>
                                     </tr>
                                     <tr>
-                                        <td style="color: black; text-align: left;">Dasar Desain Grafis</td>
-                                        <td style="color: black;">
-                                            <ul>
-                                                <li style="text-align: left;"><a
-                                                        href="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/3.1-UNSUR-UNSUR-TATA-LETAK.pdf"
-                                                        target="_blank" rel="noopener">Unsur-unsur Tata Letak</a></li>
-                                                <li style="text-align: left;"><a
-                                                        href="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/3.2-WARNA-CMYK-DAN-RGB.pdf"
-                                                        target="_blank" rel="noopener">Warna CMYK dan RGB</a></li>
-                                                <li style="text-align: left;"><a
-                                                        href="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/3.3-PRINSIP-PRINSIP-TATA-LETAK.pdf"
-                                                        target="_blank" rel="noopener">Prinsip-prinsip Tata Letak</a>
-                                                </li>
-                                                <li style="text-align: left;"><a
-                                                        href="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/3.4-FORMAT-GAMBAR.pdf"
-                                                        target="_blank" rel="noopener">Format Gambar</a></li>
-                                                <li style="text-align: left;"><a
-                                                        href="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/3.5-SCANNING.pdf"
-                                                        target="_blank" rel="noopener">Scanning</a></li>
-                                            </ul>
+                                        <td style="color: black;">Teknik Pemrograman, Mikroprosesor, Mikrokontroller
                                         </td>
+                                        <td style="color: black;"><a
+                                                href="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/E-TAV_teknik-mikroprosessor-dan-pemrograman.pdf"
+                                                target="_blank" rel="noopener">Teknik Pemrograman (Lengkap)</a></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -199,92 +142,68 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td style="color: black;">Pemodelan Perangkat Lunak</td>
-                                        <td><a href="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/Modul-Kebutuhan-Sistem-PL.pdf"
-                                                target="_blank" rel="noopener">Modul Kebutuhan Sistem PL</a><span
-                                                style="color: #000000;"><br /></span><a
-                                                href="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/Modul-Konsep-Perangkat-Lunak.pdf"
-                                                target="_blank" rel="noopener">Modul Konsep Perangkat Lunak</a><span
-                                                style="color: #000000;"><br /></span><a
-                                                href="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/Modul-Alur-Kerja-Sistem-PL.pdf"
-                                                target="_blank" rel="noopener">Modul Alur Kerja Sistem PL</a><span
-                                                style="color: #000000;"><br /></span></td>
+                                        <td style="color: black;">Pemrograman, Mikroprosesor, dan Mikrokontroller</td>
+                                        <td style="color: black;">
+                                            <p><a href="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/D-TEI_Mikroprosesor.pdf"
+                                                    target="_blank" rel="noopener">Mikroporsesor</a></p>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td style="color: black;">Basis Data</td>
-                                        <td style="color: black;"><a
-                                                href="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/modul-mysql-Basis-Data.pdf"
-                                                target="_blank" rel="noopener">Modul MySQL Basisdata</a></td>
+                                        <td style="color: black;">Penerapan Rangkaian Elektronika</td>
+                                        <td style="color: black;">Belum Ada</td>
                                     </tr>
                                     <tr>
-                                        <td style="color: black;">Pemrograman Berorientasi Objek</td>
-                                        <td style="color: black;"><a
-                                                href="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/09/3.1-PENGEMBANGAN-BERORIENTASI-OBYEK.pdf"
-                                                target="_blank" rel="noopener">Pengembangan Berorientasi
-                                                Objek</a><br /><a href="http://3.2 GRAPHICAL USER INTERFACE"
-                                                target="_blank" rel="noopener">Graphical User Interface (GUI)</a></td>
+                                        <td style="color: black;">Perencanaan dan Instalasi Sistem Audio Video</td>
+                                        <td style="color: black;">
+                                            <p>Belum Ada</p>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td style="color: black;">Pemrograman Web dan Perangkat Bergerak</td>
+                                        <td style="color: black;">Penerapan Sistem Radio dan Televisi</td>
                                         <td style="color: black;">
                                             <ul>
                                                 <li style="text-align: left;"><a
-                                                        href="https://smkn1sukorejo.sch.id/wp-content/uploads/2019/08/Modul-01-HTML.pdf">Modul
-                                                        HTML</a> #1</li>
-                                                <li style="text-align: left;"><a
-                                                        href="https://smkn1sukorejo.sch.id/wp-content/uploads/2019/08/Modul-02-CSS.pdf">Modul
-                                                        CSS</a></li>
-                                                <li style="text-align: left;"><a
-                                                        href="https://smkn1sukorejo.sch.id/wp-content/uploads/2019/08/Modul-03-Desain-Web.pdf">Modul
-                                                        Desain WEB</a></li>
-                                                <li style="text-align: left;"><a
-                                                        href="https://smkn1sukorejo.sch.id/wp-content/uploads/2019/08/Modul-04-PHP.pdf">Modul
-                                                        PHP</a></li>
-                                                <li style="text-align: left;"><a
-                                                        href="https://smkn1sukorejo.sch.id/wp-content/uploads/2019/08/Modul-05-Pemrosesan-Form-dan-Validasi.pdf">Pemrosesan
-                                                        Form dan Falidasi</a></li>
-                                                <li style="text-align: left;"><a
-                                                        href="https://smkn1sukorejo.sch.id/wp-content/uploads/2019/08/Modul-06-Interaksi-Database.pdf">Interaksi
-                                                        Data Base</a></li>
-                                                <li style="text-align: left;"><a
-                                                        href="https://smkn1sukorejo.sch.id/wp-content/uploads/2019/08/Modul-Aturan-Penulisan-CSS.pdf">Penulisan
-                                                        CSS</a></li>
-                                                <li style="text-align: left;"><a
-                                                        href="https://smkn1sukorejo.sch.id/wp-content/uploads/2019/08/Modul-Dasar-Pemrograman-Web-Klien.pdf">Dasar
-                                                        Pemrograman WEB Client</a></li>
-                                                <li style="text-align: left;"><a
-                                                        href="https://smkn1sukorejo.sch.id/wp-content/uploads/2019/08/Modul-Javascript.pdf">Java
-                                                        Script</a></li>
-                                                <li style="text-align: left;"><a
-                                                        href="https://smkn1sukorejo.sch.id/wp-content/uploads/2019/08/Modul-Looping.pdf">Looping</a>
+                                                        href="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/BAB-VI_1.pdf"
+                                                        target="_blank" rel="noopener">Prinsip Pengiriman Gambar</a>
                                                 </li>
                                                 <li style="text-align: left;"><a
-                                                        href="https://smkn1sukorejo.sch.id/wp-content/uploads/2019/08/Modul-Membuat-Form.pdf">Membuat
-                                                        Form</a></li>
+                                                        href="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/BAB-VI_2.pdf"
+                                                        target="_blank" rel="noopener">Mata dan Warna</a></li>
                                                 <li style="text-align: left;"><a
-                                                        href="https://smkn1sukorejo.sch.id/wp-content/uploads/2019/08/Modul-Mengenal-OOP.pdf">Mengenal
-                                                        OOP</a></li>
+                                                        href="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/BAB-VI_3.pdf"
+                                                        target="_blank" rel="noopener">NTSC Coder</a></li>
+                                                <li style="text-align: left;"><a
+                                                        href="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/BAB-VI_41.pdf"
+                                                        target="_blank" rel="noopener">Rangkaian Televisi</a></li>
+                                                <li style="text-align: left;"><a
+                                                        href="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/BAB-VI_42.pdf"
+                                                        target="_blank" rel="noopener">Prinsip Konvergensian</a></li>
+                                                <li style="text-align: left;"><a
+                                                        href="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/Modul_Radio2.pdf"
+                                                        target="_blank" rel="noopener">Modul Radio</a></li>
                                             </ul>
-                                            <p>
-                                                <!-- /wp:list -->
-                                            </p>
-                                            <p>
-                                                <!-- wp:paragraph -->
-                                                <!-- /wp:paragraph -->
-                                            </p>
-                                            <p>
-                                                <!-- wp:paragraph -->
-                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td style="color: black;">Produk Kreatif dan Kewirausahaan</td>
-                                        <td><a href="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/MODUL-PKK-KELAS-XI-SEMESTER-GANJIL.pdf"
-                                                target="_blank" rel="noopener">Modul PKK Kelas XI Semester
-                                                Ganjil</a><br /><a
-                                                href="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/modul-6-kb-3.pdf"
-                                                target="_blank" rel="noopener">Mengkoordinasikan Kegiatan Usaha</a>
+                                        <td style="color: black;">Perawatan dan Perbaikan Peralatan Audio dan Video
                                         </td>
+                                        <td style="color: black;"><a
+                                                href="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/modul-perawatan-dan-perbaikan-peralatan-audio-video.pdf"
+                                                target="_blank" rel="noopener">Modul Perawatan dan Perbaikan Peralatan
+                                                Audio dan Video</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="color: black;">Produk Kreatif dan Kewirausahaan</td>
+                                        <td style="color: black;"><a
+                                                href="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/MODUL-PKK-KELAS-XI-SEMESTER-GANJIL.pdf"
+                                                target="_blank" rel="noopener"
+                                                style="font-size: 14px; font-style: normal; font-weight: 400;">Modul
+                                                PKK Kelas XI Semester Ganjil</a><br
+                                                style="color: rgb(122, 122, 122);"><a
+                                                href="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/modul-6-kb-3.pdf"
+                                                target="_blank" rel="noopener"
+                                                style="font-size: 14px; font-style: normal; font-weight: 400;">Mengkoordinasikan
+                                                Kegiatan Usaha</a><br></td>
                                     </tr>
                                 </tbody>
                             </table>

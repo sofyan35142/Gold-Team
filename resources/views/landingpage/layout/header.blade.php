@@ -52,7 +52,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-md navbar-light">
                 <a class="navbar-brand" href="index.html">
-                    <img src="https://smkn1sukorejo.sch.id/wp-content/uploads/2019/10/cropped-LOGO1-2.png"
+                    <img src="foto/header1.png"
                         class="main-logo" alt="logo" />
                     <img src="assets/img/logo-2.png" class="white-logo" alt="logo" />
                 </a>
@@ -91,7 +91,8 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li class="nav-item">
-                                    <a href="/tkr" class="nav-link">Teknik Kendaraan Ringan (TKR)</a>
+                                    <a href="/tkr" class="nav-link">Teknik Kendaraan Ringan (TKR) </a>
+                                    
                                     <ul class="dropdown-menu dropside">
                                         <li class="nav-item"><a
                                                 href="/modulproduktiftkr">Modul
@@ -113,10 +114,10 @@
                                     <a href="/rpl" class="nav-link">Rekayasa Perangkat Lunak (RPL)</a>
                                     <ul class="dropdown-menu dropside">
                                         <li class="nav-item"><a
-                                                href="https://smkn1sukorejo.sch.id/kompetensi-keahlian/rekayasa-perangkat-lunak-rpl/modul-produktif-rpl/">Modul
+                                                href="/modulproduktifrpl">Modul
                                                 Produktif RPL</a></li>
                                         <li class="nav-item"><a
-                                                href="https://smkn1sukorejo.sch.id/kompetensi-keahlian/rekayasa-perangkat-lunak-rpl/artikel-ilmiah/">Artikel
+                                                href="/artikelilmiah">Artikel
                                                 Ilmiah</a></li>
                                     </ul>
                                 </li>
@@ -124,15 +125,15 @@
                                     <a href="/tki" class="nav-link">Teknik Kimia Industri (TKI)</a>
                                     <ul class="dropdown-menu dropside">
                                         <li class="nav-item"><a
-                                                href="https://smkn1sukorejo.sch.id/kompetensi-keahlian/teknik-kimia-industri-tki/modul-produktif-ki/">Modul
-                                                Produktif KI</a></li>
+                                                href="/modulproduktiftki">Modul
+                                                Produktif TKI</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
                                     <a href="/tav" class="nav-link">Teknik Audio Video (TAV)</a>
                                     <ul class="dropdown-menu dropside">
                                         <li class="nav-item"><a
-                                                href="https://smkn1sukorejo.sch.id/kompetensi-keahlian/teknik-audio-vidio-tav/modul-produktif-tav/">Modul
+                                                href="/modulproduktiftav">Modul
                                                 Produktif TAV</a></li>
                                     </ul>
                                 </li>
@@ -177,16 +178,23 @@
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link dropdown-toggle">
-                                Lsp
+                                LSP
                                 <i class="icofont-rounded-right"></i>
                             </a>
                             <ul class="dropdown-menu">
                                 <li class="nav-item">
-                                    <a href="team.html" class="nav-link">Team</a>
+                                    <a href="/visimisilsp" class="nav-link">Visi Dan Misi LSP</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="team-two.html" class="nav-link">Team two</a>
+                                    <a href="/skematerlisensi" class="nav-link">Skema Terlisensi</a>
                                 </li>
+                                <li class="nav-item">
+                                    <a href="/tempatujikom" class="nav-link">Tempat Uji Kompetensi</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/jmlpemegangsertifikat" class="nav-link">Jumlah Pemegang Sertifikat</a>
+                                </li>
+                                
                             </ul>
                         </li>
                     </ul>
