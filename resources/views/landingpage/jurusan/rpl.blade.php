@@ -75,8 +75,30 @@
                             <br />5. Mampu memasang sebuah PC.
                             <br />6. Mengerti akan fungsi dari komputer
                         </p>
-                        
 
+
+                    </div>
+                    <div class="service-details-post">
+
+                        <h3>Ketua Kompetensi Keahlian <span class="tkrfont"> (KaKomLi)</span></h3>
+                        <div class="d-flex flex-row">
+                            <div class="p-2"><img class="img-guru"
+                                    src="https://smkn1sukorejo.sch.id/wp-content/uploads/2022/06/IMG_20200726_194531-Widya-Syabil.jpg" />
+                            </div>
+                            <div class="p-2"><b>WIDYAWATI, S.Kom</b>
+
+                                <p>NIP: 19951227 201903 1 003
+                                    <br />
+                                    Tempat/Tgl Lahir: Pasuruan, 07 Agustus 1976
+                                    <br />
+                                    Status: PNS
+                                    <br />
+                                    Gol. Ruang: III/c
+                                </p>
+
+
+                            </div>
+                        </div>
                     </div>
                     {{-- <div class="page-button">
 <div class="row">
@@ -212,31 +234,6 @@ Next
                             <iframe
                                 src="https://www.youtube.com/embed/GFzf9j7_nw0?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0"
                                 title="YouTube video" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-8">
-
-                    <div class="service-details-post">
-
-                        <h3>Ketua Kompetensi Keahlian <span class="tkrfont"> (KaKomLi)</span></h3>
-                        <div class="d-flex flex-row">
-                            <div class="p-2"><img class="img-guru"
-                                    src="https://smkn1sukorejo.sch.id/wp-content/uploads/2022/06/IMG_20200726_194531-Widya-Syabil.jpg" />
-                            </div>
-                            <div class="p-2"><b>WIDYAWATI, S.Kom</b>
-                                
-                                <p>NIP: 19951227 201903 1 003
-                                    <br />
-                                    Tempat/Tgl Lahir: Pasuruan, 07 Agustus 1976
-                                    <br />
-                                    Status: PNS
-                                    <br />
-                                    Gol. Ruang: III/c
-                                </p>
-
-
-                            </div>
                         </div>
                     </div>
                 </div>
