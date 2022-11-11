@@ -82,47 +82,8 @@
                             dunia kerja maupun mampu bekerja mandiri
                         </p>
 
-                        <h3>Ketua Kompetensi Keahlian <span class="tkrfont"> (KaKomLi)</span></h3>
-                        <div class="d-flex flex-row">
-                            <div class="p-2"><img class="img-guru"
-                                    src="https://smkn1sukorejo.sch.id/wp-content/uploads/2022/06/20211223_063732-hanny-mualifah-scaled.jpg" />
-                            </div>
-                            <div class="p-2"><b>HANIK MUALLIFAH, S.T</b>
-                                <br />
-                                <p>NIP: 19750619 200904 2 001
-                                    <br />
-                                    Tempat/Tgl Lahir: Madiun, 19 Juni 1975
-                                    <br />
-                                    Status: PNS
-                                    <br />
-                                    Gol. Ruang: III/c
-                                </p>
 
-
-                            </div>
-                        </div>
                     </div>
-
-                    {{-- <div class="page-button">
-<div class="row">
-<div class="col-md-3 col-sm-6">
-<div class="theme-button">
-<a href="#" class="default-btn">
-<i class="icofont-rounded-left"></i>
-Previous
-</a>
-</div>
-</div>
-<div class="col-md-3 col-sm-6 offset-md-6">
-<div class="theme-button">
-<a href="#" class="default-btn">
-Next
-<i class="icofont-rounded-right"></i>
-</a>
-</div>
-</div>
-</div>
-</div> --}}
                 </div>
                 {{-- -------------------- side bar sekolah -------------------- --}}
                 <div class="col-lg-4 main-service-area blog-side-bar">
@@ -241,10 +202,35 @@ Next
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-8">
+
+                    <div class="service-details-post">
+
+                        <h3>Ketua Kompetensi Keahlian <span class="tkrfont"> (KaKomLi)</span></h3>
+                        <div class="d-flex flex-row">
+                            <div class="p-2"><img class="img-guru"
+                                    src="https://smkn1sukorejo.sch.id/wp-content/uploads/2022/06/20211223_063732-hanny-mualifah-scaled.jpg" />
+                            </div>
+                            <div class="p-2"><b>HANIK MUALLIFAH, S.T</b>
+                                <br />
+                                <p>NIP: 19750619 200904 2 001
+                                    <br />
+                                    Tempat/Tgl Lahir: Madiun, 19 Juni 1975
+                                    <br />
+                                    Status: PNS
+                                    <br />
+                                    Gol. Ruang: III/c
+                                </p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    </div>
+
 
 
     <div class="contact-section">

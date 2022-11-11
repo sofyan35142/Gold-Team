@@ -82,46 +82,8 @@
                             perawatan dan perbaikan system kelistrikan otomotif serta dibekali kemampuan dalam
                             berwirausaha sesuai dengan perkembangan kebutuhan masyarakat, dunia industri.
                         </p>
-                        <h3>Ketua Kompetensi Keahlian <span class="tkrfont"> (KaKomLi)</span></h3>
-                        <div class="d-flex flex-row">
-                            <div class="p-2"><img class="img-guru"
-                            src="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/07/ndr-Rohmad-Munandar.jpg"
-                            width="10px" /></div>
-                            <div class="p-2"><b>ROHMAD MUNANDAR, S.Pd</b>
-                                <br/>
-                            <p>NIP:  19740609 200902 1 002
-                                <br/>
-                                Tempat/Tgl Lahir: Sukoharjo, 09 Juni 1974
-                                <br/>
-                                Status: PNS
-                                <br/>
-                                Gol. Ruang: III/b
-                            </p>
-                            
-                            
-                            </div>
-                        </div>
+
                     </div>
-                    {{-- <div class="page-button">
-<div class="row">
-<div class="col-md-3 col-sm-6">
-<div class="theme-button">
-<a href="#" class="default-btn">
-<i class="icofont-rounded-left"></i>
-Previous
-</a>
-</div>
-</div>
-<div class="col-md-3 col-sm-6 offset-md-6">
-<div class="theme-button">
-<a href="#" class="default-btn">
-Next
-<i class="icofont-rounded-right"></i>
-</a>
-</div>
-</div>
-</div>
-</div> --}}
                 </div>
                 <div class="col-lg-4 main-service-area blog-side-bar">
                     <div class="service-sidebar">
@@ -239,12 +201,35 @@ Next
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-8">
+
+                    <div class="service-details-post">
+
+                        <h3>Ketua Kompetensi Keahlian <span class="tkrfont"> (KaKomLi)</span></h3>
+                        <div class="d-flex flex-row">
+                            <div class="p-2"><img class="img-guru"
+                                    src="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/07/ndr-Rohmad-Munandar.jpg"
+                                    width="10px" />
+                            </div>
+                            <div class="p-2"><b>ROHMAD MUNANDAR, S.Pd</b>
+                                <br />
+                                <p>NIP: 19740609 200902 1 002
+                                    <br />
+                                    Tempat/Tgl Lahir: Sukoharjo, 09 Juni 1974
+                                    <br />
+                                    Status: PNS
+                                    <br />
+                                    Gol. Ruang: III/b
+                                </p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    </div>
-
-
     <div class="contact-section">
         <div class="container">
             <div class="contact-area">
@@ -272,7 +257,8 @@ Next
                                     <div class="col-md-12 col-sm-6">
                                         <div class="form-group">
                                             <input type="email" name="email" id="email" class="form-control"
-                                                required data-error="Please enter your email" placeholder="Your Email">
+                                                required data-error="Please enter your email"
+                                                placeholder="Your Email">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>

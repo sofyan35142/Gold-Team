@@ -256,11 +256,11 @@
                             <a href="#">Wash</a>
                             <a href="#">Call</a>
                         </div> --}}
-                        <div class="ratio ratio-16x9">
+                        {{-- <div class="ratio ratio-16x9">
                             <iframe
                                 src="https://www.youtube.com/embed/_3QdWBLnRlo?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0"
                                 title="YouTube video" allowfullscreen></iframe>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>

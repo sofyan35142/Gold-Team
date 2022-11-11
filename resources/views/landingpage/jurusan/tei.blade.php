@@ -67,55 +67,7 @@
                             juga kompleks. Secara umum, output lulusan kompetensi TEI SMKN 1 Sukorejo rata-rata sangat
                             mudah mencari pekerjaan. Tentu jenis pekerjaan terkait dengan elektronika industri pada
                             posisi teknisi elektronika industri, instrumentasi, atau teknisi kontrol.</p>
-                        {{-- <p>Tujuan Khusus Teknik Kenderaan Ringan :
-Program Keahlian Teknik Otomotif Kompetensi Teknik Kendaraan Ringan sebagai bagian dari pendidikan menengah, bertujuan menyiapkan siswa / tamatan:</p>
-
-<p>1. Untuk memasuki lapangan kerja mekanik otomotif serta mengembangkan sikap profesional dalam bidang Teknik Kenderaan Ringan.
-<br/>2. Menyiapkan siswa agar mampu memilih karir, mampu berkompetisi dan mampu mengembangkan diri dalam lingkup keahlian teknik otomotif, khususnya teknik Kenderaan Ringan
-<br/>3. Menyiapkan siswa untuk mengisi tenaga kerja tingkat menengah yang mandiri (bekerja untuk dirinya sendiri) dan untuk mengisi kebutuhan dunia kerja yang berkaitan dengan teknik Kenderaan Ringan.
-<br/>4. Menyiapkan tamatan agar menjadi warga Negara yang produktif, adaptif dan kreatif khususnya yang berkaitan dengan teknik Kenderaan Ringan.
-</p>
-<p>Lulusan kompetensi keahlian Teknik Kendaraan Ringan (TKR) dibekali dengan ilmu pengetahuan dan keterampilan dalam perawatan dan perbaikan motor otomotif, perawatan dan perbaikan sistem pemindah tenaga otomotif,  perawatan dan perbaikan chasis dan suspense otomotif, perawatan dan perbaikan system kelistrikan otomotif serta dibekali kemampuan dalam berwirausaha sesuai dengan perkembangan kebutuhan masyarakat, dunia industri.</p> --}}
-                        <h3>Ketua Kompetensi Keahlian <span class="tkrfont"> (KaKomLi)</span></h3>
-                        <div class="d-flex flex-row">
-                            <div class="p-2"><img class="img-guru"
-                                    src="https://smkn1sukorejo.sch.id/wp-content/uploads/2022/06/Foto-Sofan-kuning-Sofan-Dedi.jpg" />
-                            </div>
-                            <div class="p-2"><b>SOFAN DEDI PRINYATO, S.Pd., Gr</b>
-                                <br />
-                                <p>NIP: 19890506 202221 1 009
-                                    <br />
-                                    Tempat/Tgl Lahir: Sidoarjo, 06 Mei 1989
-                                    <br />
-                                    Status: PPPK
-                                    <br />
-                                    Gol. Ruang: IX
-                                </p>
-
-
-                            </div>
-                        </div>
                     </div>
-                    {{-- <div class="page-button">
-<div class="row">
-<div class="col-md-3 col-sm-6">
-<div class="theme-button">
-<a href="#" class="default-btn">
-<i class="icofont-rounded-left"></i>
-Previous
-</a>
-</div>
-</div>
-<div class="col-md-3 col-sm-6 offset-md-6">
-<div class="theme-button">
-<a href="#" class="default-btn">
-Next
-<i class="icofont-rounded-right"></i>
-</a>
-</div>
-</div>
-</div>
-</div> --}}
                 </div>
                 <div class="col-lg-4 main-service-area blog-side-bar">
                     <div class="service-sidebar">
@@ -228,16 +180,39 @@ Next
                         </div> --}}
                         <div class="ratio ratio-16x9">
                             <iframe
-                                src="https://www.youtube.com/embed/_3QdWBLnRlo?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0"
+                                src="https://www.youtube.com/embed/Cxf-wPX0uQg?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0"
                                 title="YouTube video" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="service-details-post">
+
+                        <h3>Ketua Kompetensi Keahlian <span class="tkrfont"> (KaKomLi)</span></h3>
+                        <div class="d-flex flex-row">
+                            <div class="p-2"><img class="img-guru"
+                                    src="https://smkn1sukorejo.sch.id/wp-content/uploads/2022/06/Foto-Sofan-kuning-Sofan-Dedi.jpg" />
+                            </div>
+                            <div class="p-2"><b>SOFAN DEDI PRINYATO, S.Pd., Gr</b>
+                                <br />
+                                <p>NIP: 19890506 202221 1 009
+                                    <br />
+                                    Tempat/Tgl Lahir: Sidoarjo, 06 Mei 1989
+                                    <br />
+                                    Status: PPPK
+                                    <br />
+                                    Gol. Ruang: IX
+                                </p>
+
+
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    </div>
-    </div>
+
 
 
     <div class="contact-section">
