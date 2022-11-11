@@ -146,7 +146,7 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li class="nav-item">
-                                    <a href="/guru" class="nav-link">DATA FURU & KARYAWAN</a>
+                                    <a href="/guruu" class="nav-link">DATA FURU & KARYAWAN</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="/dharma" class="nav-link">DHARMA WANITA PERSATUAN</a>

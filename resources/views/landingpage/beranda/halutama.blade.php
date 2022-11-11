@@ -113,7 +113,7 @@
                             Biodata Guru dan Staf Karyawan
                         </p>
                         <div class="theme-button">
-                            <a href="/guru" class="default-btn">Baca Selengkapnya</a>
+                            <a href="/guruu" class="default-btn">Baca Selengkapnya</a>
                         </div>
                     </div>
                 </div>
@@ -166,7 +166,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
+                {{-- <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="service-card">
                         <i class="flaticon-wiper"></i>
                         <h3>Office Cleaning</h3>
@@ -177,9 +177,9 @@
                             <a href="service-details.html" class="default-btn">Read More</a>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
-            <div class="service-shapes">
+            {{-- <div class="service-shapes">
                 <img src="assets/img/service/shapes/1.png" alt="shape" />
                 <img src="assets/img/service/shapes/2.png" alt="shape" />
                 <img src="assets/img/service/shapes/3.png" alt="shape" />
@@ -190,7 +190,7 @@
                 <img src="assets/img/service/shapes/8.png" alt="shape" />
                 <img src="assets/img/service/shapes/9.png" alt="shape" />
                 <img src="assets/img/service/shapes/10.png" alt="shape" />
-            </div>
+            </div> --}}
         </div>
     </section>
 
@@ -249,10 +249,16 @@
                             <h4>POs-pos Terbaru</h4>
                         </div>
                         <div class="plan-features">
-
-                            <li>Lowongan Kerja PT.ADM</li>
-                            <li>“ALUMNI SHARING SESSION” BERSAMA ALUMNI ALUMNI HEBAT SMK NEGERI 1 SUKOREJO</li>
-
+                            <ul>
+                            <li>
+                                <i class="icofont-rounded-right iknrounded"></i>
+                                SMK NEGERI 1 SUKOREJO MELAKUKAN PRESENTASI PROJECT BERSAMA PENGEMBANGAN SAVING PEMAKAIAN ENERGI DI GOLF CART (KENDARAAN GOLF) DIHADAPAN DIREKSI TAMAN DAYU GOLF & RESORT
+                                </li>
+                            <li>
+                                <i class="icofont-rounded-right iknrounded"></i>
+                                PENILAIAN KINERJA KEPALA SEKOLAH (PKKS) TAHUN 2022
+                            </li>
+</ul>
                         </div>
                     </div>
                 </div>
@@ -265,27 +271,39 @@
                             <ul>
                                 <a href="">
                                     <li>
-                                        Fully Satisfaction
+                                        <i class="icofont-rounded-right iknrounded"></i>
+                                        Agenda Sekolah
                                     </li>
                                 </a>
                                 <a href="">
                                     <li>
-                                        7 Hours
+                                        <i class="icofont-rounded-right iknrounded"></i>
+                                        Informasi Sekolah
                                     </li>
                                 </a>
                                 <a href="">
                                     <li>
-                                        2 time in a week
+                                        <i class="icofont-rounded-right iknrounded"></i>
+                                        Kegiatan BKK
                                     </li>
                                 </a>
                                 <a href="">
                                     <li>
-                                        Full Cleaning
+                                        <i class="icofont-rounded-right iknrounded"></i>
+                                        Kegiatan Sekolah
                                     </li>
                                 </a>
                                 <a href="">
                                     <li>
-                                        All Our Equipment
+                                        <i class="icofont-rounded-right iknrounded"></i>
+                                        Lowongan Kerja
+                                    </li>
+                                </a>
+                                <br>
+                                <a href="">
+                                    <li>
+                                        <i class="icofont-rounded-right iknrounded"></i>
+                                        Artikel Guru
                                     </li>
                                 </a>
                             </ul>
@@ -301,27 +319,32 @@
                             <ul>
                                 <a href="">
                                     <li>
-                                        Kecamatan Sukorejo Kab. Pasuruan
+                                        <i class="icofont-rounded-right iknrounded"></i>
+                                        <span>Kecamatan Sukorejo Kab. Pasuruan</span>
                                     </li>
                                 </a>
                                 <a href="">
                                     <li>
+                                        <i class="icofont-rounded-right iknrounded"></i>
                                         Kaboki-Pionir Ekspor Tas Rajut
                                     </li>
                                 </a>
                                 <a href="">
                                     <li>
+                                        <i class="icofont-rounded-right iknrounded"></i>
                                         Taman Safari Indonesia 2
                                     </li>
                                 </a>
                                 <a href="">
                                     <li>
+                                        <i class="icofont-rounded-right iknrounded"></i>
                                         Saygon Waterpark
                                     </li>
                                 </a>
                                 <a href="">
                                     <li>
-                                        Kebon Raya Purwodadi
+                                        <i class="icofont-rounded-right iknrounded"></i>
+                                        <span>Kebon Raya Purwodadi</span>
                                     </li>
                                 </a>
                             </ul>

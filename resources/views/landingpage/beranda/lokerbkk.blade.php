@@ -34,7 +34,7 @@
         <div class="d-table">
             <div class="d-table-cell">
                 <div class="container">
-                    <div class="blog-title-text">
+                    {{-- <div class="blog-title-text">
                         <h2>Blog Details</h2>
                         <ul>
                             <li>
@@ -49,7 +49,7 @@
                                 Blog Details
                             </li>
                         </ul>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>
@@ -369,20 +369,21 @@
                                     </a>
                                 </li>
                             </ul>
-                             <p class="sidetitle">Email :</p>
-                            <ul>
-                                <li class="hcard overflow-auto border-0">
-                                    <a class="colorori mb-2 effecthover-s" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                       <b>info@smkn1sukorejo.sch.id</b>
-                                    </a>
-                                </li>
-                            </ul>
-                             <p class="sidetitle">Alamat</p>
-                            <ul>
-                               <div class="textwidget">
-                               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.585483431905!2d112.7150166749192!3d-7.727543392290657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7d1337b9fbe51%3A0x5f53153c148fedfd!2sSMK%20Negeri%201%20Sukorejo!5e0!3m2!1sid!2sid!4v1667957123853!5m2!1sid!2sid" width="415" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            </ul>
+                        </div>
+                        {{-- <div class="tags">
+                            <p>Most Popular Tags</p>
+                            <a href="#">Enjoy</a>
+                            <a href="#">Clean</a>
+                            <a href="#">Hygienic</a>
+                            <a href="#">Time</a>
+                            <a href="#">Brush</a>
+                            <a href="#">Wash</a>
+                            <a href="#">Call</a>
+                        </div> --}}
+                        <div class="ratio ratio-16x9">
+                            <iframe
+                                src="https://www.youtube.com/embed/_3QdWBLnRlo?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0"
+                                title="YouTube video" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>

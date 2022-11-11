@@ -26,6 +26,7 @@ Route::get('/', function () {
 Route::get('/keahlian', [LandingController::class, 'keahlian']);
 Route::get('/lokerbkk', [LandingController::class, 'lokerbkk']);
 Route::get('/agenda', [LandingController::class, 'agenda']);
+Route::get('/guruu', [LandingController::class, 'guru']);
 
 //DATA
 Route::get('/dharma', [LandingController::class, 'dharma']);
@@ -37,7 +38,7 @@ Route::get('/prestasi', [LandingController::class, 'prestasi']);
 
 // ==Route profil==//
 
-Route::get('/guru', [LandingController::class, 'guru']);
+
 
 
 //==Route profil==//

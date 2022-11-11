@@ -26,3 +26,14 @@
     display: -webkit-box;
     word-break: break-word;
 }
+
+.imgge{
+    height: 242px !important;
+    width: 180px !important;
+}
+
+.imgguru{
+    height: 80px !important;
+    width: 160px !important;
+    /* max-width: none; */
+}
