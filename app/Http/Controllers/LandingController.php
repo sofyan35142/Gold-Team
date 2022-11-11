@@ -7,41 +7,6 @@ use Illuminate\Http\Request;
 
 class LandingController extends Controller
 {
-    public function index()
-    {
-        //
-    }
-
-    public function create()
-    {
-        //
-    }
-
-    public function store(Request $request)
-    {
-        //
-    }
-
-    public function show(Jurusan $jurusan)
-    {
-        //
-    }
-
-    public function edit(Jurusan $jurusan)
-    {
-        //
-    }
-
-    public function update(Request $request, Jurusan $jurusan)
-    {
-        //
-    }
-
-    public function destroy(Jurusan $jurusan)
-    {
-        //
-    }
-
     public function jurusan()
     {
         return view("landingpage.jurusan.jurusan");
@@ -121,4 +86,25 @@ class LandingController extends Controller
         return view("landingpage.beranda.agenda");
     }
 
+    //===ROUTE BURSA KERJA KHUSUS===//
+    public function visimisi_bkk()
+    {
+        return view("landingpage.BKK.visimisi_bkk");
+    }
+    public function strukturorganisasi_bkk()
+    {
+        return view("landingpage.BKK.strukturorganisasi_bkk");
+    }
+    public function kegiatan_bkk()
+    {
+        return view("landingpage.BKK.kegiatan_bkk");
+    }
+    public function kewirausahaan_bkk()
+    {
+        return view("landingpage.BKK.kewirausahaan_bkk");
+    }
+    public function lowongan_kerja()
+    {
+        return view("landingpage.BKK.lowongan_kerja");
+    }
 }

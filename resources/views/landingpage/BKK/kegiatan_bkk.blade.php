@@ -1,13 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zxx">
-<!-- Mirrored from templates.hibootstrap.com/viscous/default/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Nov 2022 02:33:31 GMT -->
-
-<!-- Mirrored from previewthemes.com/enzio/home-1 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 Nov 2022 03:25:34 GMT -->
-<!-- Added by HTTrack -->
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 @include('landingpage.layout.head')
 
 <body>
+
     <div class="loader-content">
         <div class="d-table">
             <div class="d-table-cell">
@@ -22,20 +18,24 @@
             </div>
         </div>
     </div>
+
+
     @include('landingpage.layout.header')
+
+
     <div class="service-title service-title-bg bg-3">
         <div class="d-table">
             <div class="d-table-cell">
                 <div class="container">
                     <div class="service-title-text">
-                        <h2>Visi Misi</h2>
+                        <h2>Struktur Organisasi BKK</h2>
                         <ul>
                             <li>
-                                <a href="/">Profil</a>
+                                <a href="/">Bursa Kerja Khusus</a>
                             </li>
                             <li>
                                 <i class="icofont-rounded-double-right"></i>
-                                <a href="/jurusan">Visi Misi</a>
+                                <a href="/jurusan">Struktur Organisasi BKK</a>
                             </li>
                         </ul>
                     </div>
@@ -43,44 +43,68 @@
             </div>
         </div>
     </div>
-    <div class="blog-details-area blog-details-page-area pt-100">
+    <div class="service-details-area main-service-area pt-100 services-details-page">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
-                    <div class="blog-details-post">
+                    <div class="service-details-post">
                         <div class="blog-post-title">
                             <h3>
-                                Visi Misi
+                                Kegiatan BKK
                             </h3>
                         </div>
-                        <img src="../assets/img/visimisi.png" alt="service">
-                        <h3>
-                            TUJUAN
-                        </h3>
-                        <h4 class="fz-16px"><b>Tujuan Umum</b></h4>
-                        <p>1.Meningkatkan keimanan dan ketaqwaan peserta didik kepada Tuhan Yang Maha Esa.</p>
-                        <p>2.Mengembangkan potensi peserta didik agar menjadi warga negara yang berakhlak mulia, sehat,
-                            berilmu, cakap, kreatif, mandiri, demokratis, dan bertanggung jawab.</p>
-                        <p>3.Mengembangkan potensi peserta didik agar memiliki wawasan kebangsaan, memahami dan
-                            menghargai keanekaragaman budaya bangsa Indonesia.</p>
-                        <p>4.Mengembangkan potensi peserta didik agar memiliki kepedulian terhadap lingkungan hidup,
-                            dengan secara aktif turut memelihara dan melestarikan lingkungan hidup, serta memanfaatkan
-                            sumber daya alam dengan efektif dan efisien.</p>
-                        <p>5.Sekolah mampu mengalokasikan anggaran minimal sebesar 20% untuk membiayai kegiatan sekolah
-                            adiwiyata.</p>
+                        <div class="row">
+                            <div class="col-sm-6 mb-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img style="height: 8pc" src="../assets/img/workshop.jpg" class="card-img-top"
+                                        alt="...">
+                                    <div class="card-body">
+                                        <div class="judulkbkk">
+                                            Workshop Tracer Study dan Program Kesiapan Kerja Bekerja
+                                            sama dengan Dinas Tenaga Kerja Kabupaten Pasuruan
+                                        </div>
+                                        <a href="#" class="btn btn-primary">Lihat</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 mb-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img style="height: 8pc" src="../assets/img/kegiatanbkk2.jpg" class="card-img-top"
+                                        alt="...">
+                                    <div class="card-body">
+                                        <div class="judulkbkk">
+                                            Implementasi Link and Match SMK Pusat Keunggulan – SMKN 1 Sukorejo
+                                        </div>
+                                        <a href="#" class="btn btn-primary">Lihat</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 mb-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img style="height: 8pc" src="../assets/img/kegiatanbkk3.jpg" class="card-img-top"
+                                        alt="...">
+                                    <div class="card-body">
+                                        <div class="judulkbkk">
+                                            Sosialisasi Penyesuaian Budaya Kerja dari PT. Astra Daihatsu
+                                        </div>
+                                        <a href="#" class="btn btn-primary">Lihat</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 mb-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img style="height: 8pc" src="../assets/img/kegiatanbkk4.jpg" class="card-img-top"
+                                        alt="...">
+                                    <div class="card-body">
+                                        <div class="judulkbkk">
+                                            Guru Tamu Kimia Industri dari PT. Mandiri Investama Sejati
+                                        </div>
+                                        <a href="#" class="btn btn-primary">Lihat</a>
+                                    </div>
+                                </div>
+                            </div>
 
-
-                        <h4 class="fz-16px"><b>Tujuan Khusus</b></h4>
-                        <p>1.Meningkatkan keimanan dan ketaqwaan peserta didik kepada Tuhan Yang Maha Esa.</p>
-                        <p>2.Mengembangkan potensi peserta didik agar menjadi warga negara yang berakhlak mulia, sehat,
-                            berilmu, cakap, kreatif, mandiri, demokratis, dan bertanggung jawab.</p>
-                        <p>3.Mengembangkan potensi peserta didik agar memiliki wawasan kebangsaan, memahami dan
-                            menghargai keanekaragaman budaya bangsa Indonesia.</p>
-                        <p>4.Mengembangkan potensi peserta didik agar memiliki kepedulian terhadap lingkungan hidup,
-                            dengan secara aktif turut memelihara dan melestarikan lingkungan hidup, serta memanfaatkan
-                            sumber daya alam dengan efektif dan efisien.</p>
-                        <p>5.Sekolah mampu mengalokasikan anggaran minimal sebesar 20% untuk membiayai kegiatan sekolah
-                            adiwiyata.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-4 main-service-area blog-side-bar">
@@ -182,34 +206,80 @@
                                 </li>
                             </ul>
                         </div>
-                        {{-- <div class="tags">
-                            <p>Most Popular Tags</p>
-                            <a href="#">Enjoy</a>
-                            <a href="#">Clean</a>
-                            <a href="#">Hygienic</a>
-                            <a href="#">Time</a>
-                            <a href="#">Brush</a>
-                            <a href="#">Wash</a>
-                            <a href="#">Call</a>
-                        </div> --}}
-                        <div class="ratio ratio-16x9">
-                            <iframe
-                                src="https://www.youtube.com/embed/kAU5CmEOVtA?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0"
-                                title="YouTube video" allowfullscreen></iframe>
+                        <div class="discount-text" style="background: transparent">
+                            <iframe class="ytvideo" src="https://www.youtube.com/embed/oQKjX1z7aMM"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="contact-section">
+        <div class="container">
+            <div class="contact-area">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="contact-img">
+                            <img src="assets/img/contact-img.png" alt="contact image">
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-6 offset-lg-1">
+                        <div class="section-head">
+                            <h2>We Love to <span> Hear from You</span></h2>
+                            <p>Feel free and share with us. We will get you</p>
+                        </div>
+                        <div class="contact-form">
+                            <form id="contactForm">
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-6">
+                                        <div class="form-group">
+                                            <input type="text" name="name" id="name" class="form-control"
+                                                required data-error="Please enter your name" placeholder="Your Name">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-sm-6">
+                                        <div class="form-group">
+                                            <input type="email" name="email" id="email" class="form-control"
+                                                required data-error="Please enter your email"
+                                                placeholder="Your Email">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12">
+                                        <div class="form-group">
+                                            <textarea name="message" class="form-control" id="message" cols="30" rows="5" required
+                                                data-error="Write your message" placeholder="Your Message"></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12">
+                                        <button type="submit" class="default-btn page-btn">
+                                            Send Message
+                                        </button>
+                                        <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     @include('landingpage.layout.footer')
+
 
     <div class="top-btn">
         <i class="icofont-scroll-long-up"></i>
     </div>
     @include('landingpage.layout.js')
 </body>
-
-<!-- Mirrored from previewthemes.com/enzio/home-1 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 Nov 2022 03:25:34 GMT -->
 
 </html>

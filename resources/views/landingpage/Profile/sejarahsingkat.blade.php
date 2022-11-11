@@ -23,6 +23,26 @@
         </div>
     </div>
     @include('landingpage.layout.header')
+    <div class="service-title service-title-bg bg-3">
+        <div class="d-table">
+            <div class="d-table-cell">
+                <div class="container">
+                    <div class="service-title-text">
+                        <h2>Sejarah Singkat</h2>
+                        <ul>
+                            <li>
+                                <a href="/">Profil</a>
+                            </li>
+                            <li>
+                                <i class="icofont-rounded-double-right"></i>
+                                <a href="/jurusan">Sejarah Singkat</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="blog-details-area blog-details-page-area pt-100">
         <div class="container">
             <div class="row">

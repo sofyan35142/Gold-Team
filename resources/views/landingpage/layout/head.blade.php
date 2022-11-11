@@ -28,11 +28,11 @@
 
     <link rel="stylesheet" href="../csszaki.css" />
 
-    <link rel="stylesheet" href="csskeysha.css" />
+    <link rel="stylesheet" href="../csskeysha.css" />
 
     <title>SMKN 1 SUKOREJO - BISA SUKSES</title>
 
-    <link rel="icon" type="image/png" href="foto/logo.png" />
+    <link rel="icon" type="image/png" href="../foto/logo.png" />
 
     <style>
         td{

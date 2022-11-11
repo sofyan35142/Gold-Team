@@ -54,10 +54,50 @@
     bottom: 3pc;
 }
 
-.fz-16px{
+.fz-16px {
     font-size: 16px;
 }
 
+.listitemzak {
+    width: fit-content !important;
+    color: #646464 !important;
+}
+
+.judulkbkk {
+    height: 3pc;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* width: 330px;
+    height: 60px;
+    position: relative; */
+    margin-bottom: 20px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    word-break: break-word;
+}
+.h-200{
+    height: 200px;
+}
+.badge{
+    display: inline-block;
+    padding: 0.25em 0.4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+}
+.dangerspan{
+    background-color: red;
+    color: white;
+}
+.secondspan{
+    background-color:#6c757d;
+    color: white;
+}
 /***************** RESPONSIVE ZAKI *************/
 @media (max-width:767px) {
     .ytvideo {

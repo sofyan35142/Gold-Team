@@ -68,19 +68,19 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li class="nav-item">
-                                    <a href="index.html" class="nav-link active">Visi Misi</a>
+                                    <a href="/profil/visimisi" class="nav-link active">Visi Misi</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="index-two.html" class="nav-link">Struktur Organisasi</a>
+                                    <a href="/profil/strukturorganisasi" class="nav-link">Struktur Organisasi</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="index-three.html" class="nav-link">Sejarah Singkat</a>
+                                    <a href="/profil/sejarahsingkat" class="nav-link">Sejarah Singkat</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="index-three.html" class="nav-link">Sekolah Adiwiyata</a>
+                                    <a href="/porfil/sekolahadiwiyata" class="nav-link">Sekolah Adiwiyata</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="index-three.html" class="nav-link">Sekolah Rujukan</a>
+                                    <a href="/profil/sekolahrujukan" class="nav-link">Sekolah Rujukan</a>
                                 </li>
                             </ul>
                         </li>
@@ -162,16 +162,25 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li class="nav-item">
-                                    <a href="pricing.html" class="nav-link">Pricing</a>
+                                    <a href="/BKK/visimisi-bkk" class="nav-link">Visi dan Misi BKK</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="testimonial.html" class="nav-link">Testimonial</a>
+                                    <a href="/BKK/strukturorganisasi-bkk" class="nav-link">Struktur Organisai BKK</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="recent-project.html" class="nav-link">Recent Project</a>
+                                    <a href="/BKK/kegiatan-bkk" class="nav-link">Kegiatan BKK</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="404.html" class="nav-link">404 Page</a>
+                                    <a href="/BKK/kewirausahaan-bkk" class="nav-link">Kewirausahaan Sketsu</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/BKK/lowongan-kerja" class="nav-link">Lowongan Kerja</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/BKK/bimbingan-karir" class="nav-link">Bimbingan Karir</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/BKK/perusahaan-mitra" class="nav-link">Perusahaan Karir</a>
                                 </li>
                             </ul>
                         </li>

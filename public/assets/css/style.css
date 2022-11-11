@@ -389,8 +389,8 @@ h3 {
 .home-slider-item::before {
 	position: absolute;
 	content: '';
-	/* background: -webkit-gradient(linear, left top, right top, color-stop(20%, rgba(3, 24, 136, 0.846376)), to(rgba(0, 0, 0, 0)));
-	background: linear-gradient(90deg, rgba(3, 24, 136, 0.846376) 20%, rgba(0, 0, 0, 0) 100%); */
+	background: -webkit-gradient(linear, left top, right top, color-stop(20%, rgba(3, 24, 136, 0.846376)), to(rgba(0, 0, 0, 0)));
+	background: linear-gradient(90deg, rgba(3, 24, 136, 0.846376) 20%, rgba(0, 0, 0, 0) 100%);
 	width: 100%;
 	height: 100%;
 	left: 0;
@@ -450,18 +450,12 @@ h3 {
 	margin-top: 0
 }
 .items-bg1 {
-width: auto;
-height: 900px;
-	background-image: url(../img/home/PPDB1.png)
+	background-image: url(../img/home/1.jpg)
 }
 .items-bg2 {
-width: auto ;
-height: 900px;
-	background-image: url(../img/home/TKR2.png)
+	background-image: url(../img/home/2.jpg)
 }
 .items-bg3 {
-    width: auto;
-height: 700px;
 	background-image: url(../img/home/3.jpg)
 }
 .home-text {
@@ -4705,3 +4699,4 @@ height: 700px;
 		transform: rotate(359deg)
 	}
 }
+
