@@ -28,14 +28,14 @@
             <div class="d-table-cell">
                 <div class="container">
                     <div class="service-title-text">
-                        <h2>Struktur Organisasi BKK</h2>
+                        <h2>Kegiatan BKK</h2>
                         <ul>
                             <li>
                                 <a href="/">Bursa Kerja Khusus</a>
                             </li>
                             <li>
                                 <i class="icofont-rounded-double-right"></i>
-                                <a href="/jurusan">Struktur Organisasi BKK</a>
+                                <a href="/jurusan">Kegiatan BKK</a>
                             </li>
                         </ul>
                     </div>
@@ -43,7 +43,7 @@
             </div>
         </div>
     </div>
-    <div class="service-details-area main-service-area pt-100 services-details-page">
+    <div class="blog-section blog-style-two blog-details-area blog-left-sidebar pt-100 blog-right-sidebar-area">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
@@ -54,56 +54,100 @@
                             </h3>
                         </div>
                         <div class="row">
-                            <div class="col-sm-6 mb-3">
-                                <div class="card" style="width: 18rem;">
-                                    <img style="height: 8pc" src="../assets/img/workshop.jpg" class="card-img-top"
-                                        alt="...">
-                                    <div class="card-body">
-                                        <div class="judulkbkk">
-                                            Workshop Tracer Study dan Program Kesiapan Kerja Bekerja
-                                            sama dengan Dinas Tenaga Kerja Kabupaten Pasuruan
-                                        </div>
-                                        <a href="#" class="btn btn-primary">Lihat</a>
+                            <div class="col-md-6">
+                                <div class="blog-area">
+                                    <div class="blog-img">
+                                        <a href="blog-details.html">
+                                            <img src="../assets/img/workshop.jpg" alt="blog image">
+                                        </a>
+                                    </div>
+                                    <div class="blog-text">
+                                        <p>WORKSHOP TRACER STUDY DAN PROGRAM KESIAPAN KERJA BEKERJA SAMA DENGAN DINAS
+                                            TENAGA KERJA KABUPATEN PASURUAN</p>
+                                        <a href="blog-details.html" class="blog-btn">
+                                            Read more
+                                            <i class="icofont-rounded-right"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6 mb-3">
-                                <div class="card" style="width: 18rem;">
-                                    <img style="height: 8pc" src="../assets/img/kegiatanbkk2.jpg" class="card-img-top"
-                                        alt="...">
-                                    <div class="card-body">
-                                        <div class="judulkbkk">
-                                            Implementasi Link and Match SMK Pusat Keunggulan – SMKN 1 Sukorejo
-                                        </div>
-                                        <a href="#" class="btn btn-primary">Lihat</a>
+                            <div class="col-md-6">
+                                <div class="blog-area">
+                                    <div class="blog-img">
+                                        <a href="blog-details.html">
+                                            <img src="../assets/img/kegiatanbkk2.jpg" alt="blog image">
+                                        </a>
+                                    </div>
+                                    <div class="blog-text">
+                                        <p>Implementasi Link and Match SMK Pusat Keunggulan – SMKN 1 Sukorejo</p>
+                                        <br>
+                                        <br>
+                                        <a href="blog-details.html" class="blog-btn">
+                                            Read more
+                                            <i class="icofont-rounded-right"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6 mb-3">
-                                <div class="card" style="width: 18rem;">
-                                    <img style="height: 8pc" src="../assets/img/kegiatanbkk3.jpg" class="card-img-top"
-                                        alt="...">
-                                    <div class="card-body">
-                                        <div class="judulkbkk">
-                                            Sosialisasi Penyesuaian Budaya Kerja dari PT. Astra Daihatsu
-                                        </div>
-                                        <a href="#" class="btn btn-primary">Lihat</a>
+                            <div class="col-md-6">
+                                <div class="blog-area">
+                                    <div class="blog-img">
+                                        <a href="blog-details.html">
+                                            <img src="../assets/img/kegiatanbkk3.jpg" alt="blog image">
+                                        </a>
+                                    </div>
+                                    <div class="blog-text">
+                                        <p>Sosialisasi Penyesuaian Budaya Kerja dari PT. Astra Daihatsu
+                                        </p>
+                                        <a href="blog-details.html" class="blog-btn">
+                                            Read more
+                                            <i class="icofont-rounded-right"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6 mb-3">
-                                <div class="card" style="width: 18rem;">
-                                    <img style="height: 8pc" src="../assets/img/kegiatanbkk4.jpg" class="card-img-top"
-                                        alt="...">
-                                    <div class="card-body">
-                                        <div class="judulkbkk">
-                                            Guru Tamu Kimia Industri dari PT. Mandiri Investama Sejati
-                                        </div>
-                                        <a href="#" class="btn btn-primary">Lihat</a>
+                            <div class="col-md-6">
+                                <div class="blog-area">
+                                    <div class="blog-img">
+                                        <a href="blog-details.html">
+                                            <img class="img" src="../assets/img/kegiatanbkk4.jpg" alt="blog image">
+                                        </a>
+                                    </div>
+                                    <div class="blog-text">
+                                        <p> Guru Tamu Kimia Industri dari PT. Mandiri Investama Sejati
+                                        </p>
+                                        <a href="blog-details.html" class="blog-btn">
+                                            Read more
+                                            <i class="icofont-rounded-right"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
-
+                        </div>
+                        <div class="main-blog-post">
+                            <nav>
+                                <ul class="pagination  justify-content-center">
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                                            <i class="icofont-rounded-left"></i>
+                                        </a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">1</a>
+                                    </li>
+                                    <li class="page-item" aria-current="page">
+                                        <a class="page-link active" href="#">2</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">3</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">
+                                            <i class="icofont-rounded-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
                         </div>
                     </div>
                 </div>
@@ -223,7 +267,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-md-6">
                         <div class="contact-img">
-                            <img src="../assets/img/contact-img.png" alt="contact image">
+                            <img src="../assets/img/workshop.jpg" alt="contact image">
                         </div>
                     </div>
                     <div class="col-lg-5 col-md-6 offset-lg-1">

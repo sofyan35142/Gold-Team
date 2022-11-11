@@ -43,42 +43,85 @@
             </div>
         </div>
     </div>
-
-
-    <div class="service-details-area main-service-area pt-100 services-details-page">
+    <div class="blog-section blog-style-two blog-details-area blog-left-sidebar pt-100 blog-right-sidebar-area">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
-                    {{-- <img src="foto/jurusan/RPL.JPG" alt="service"> --}}
                     <div class="service-details-post">
+                        <div class="blog-post-title">
+                            <h3>
+                                Kegiatan BKK
+                            </h3>
+                        </div>
                         <div class="row">
-                            <div class="col-sm-6">
-                                <div class="card">
-                                    <img class="card-img-top" src="../assets/img/lowongan1.jpg" alt="Card image cap">
-                                    <div class="card-body">
-                                        <p class="card-text">Lowongan Kerja PT. ADM</p>
+                            <div class="col-md-6">
+                                <div class="blog-area">
+                                    <div class="blog-img">
+                                        <a href="blog-details.html">
+                                            <img src="../assets/img/lowongan1.jpg" alt="blog image">
+                                        </a>
+                                    </div>
+                                    <div class="blog-text">
+                                        <p>Lowongan Kerja PT. ADM</p>
                                         <br>
                                         <div class="d-flex flex-row">
-                                            <div class="p-2"><p class="card-text"><small class="text-muted">Status: <Span class="dangerspan badge">Selesai</Span></small>
-                                            </p></div>
-                                            <div class="p-2"><a class="btn btn-primary" href="#" role="button"><i class="icofont-eye-alt"></i></a></div>
-                                          </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="card">
-                                    <img class="card-img-top" src="../assets/img/lowongan1.jpg" alt="Card image cap">
-                                    <div class="card-body">
-                                        <p class="card-text">Lowongan Kerja PT. Karya Idaman Bersama (KIB)</p>
-                                        <div class="d-flex flex-row">
-                                            <div class="p-2"><p class="card-text"><small class="text-muted">Status: <Span class="secondspan badge">Masih ada</Span></small>
-                                            </p></div>
-                                            <div class="p-2"><a class="btn btn-primary" href="#" role="button"><i class="icofont-eye-alt"></i></a></div>
+                                            <div class="p-2">
+                                                <p class="card-text"><small class="text-muted">Status: <span
+                                                            class="dangerspan badge">Selesai</span></small>
+                                                </p>
+                                            </div>
+                                            <div class="p-2"><a class="btn btn-primary" href="#"
+                                                    role="button"><i class="icofont-eye-alt"></i></a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-md-6">
+                                <div class="blog-area">
+                                    <div class="blog-img">
+                                        <a href="blog-details.html">
+                                            <img src="../assets/img/lowongan1.jpg" alt="blog image">
+                                        </a>
+                                    </div>
+                                    <div class="blog-text">
+                                        <p>Lowongan Kerja PT. Karya Idaman Bersama (KIB)</p>
+                                        <div class="d-flex flex-row">
+                                            <div class="p-2">
+                                                <p class="card-text"><small class="text-muted">Status: <span
+                                                            class="secondspan badge">Masih ada</span></small>
+                                                </p>
+                                            </div>
+                                            <div class="p-2"><a class="btn btn-primary" href="#"
+                                                    role="button"><i class="icofont-eye-alt"></i></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-blog-post">
+                            <nav>
+                                <ul class="pagination  justify-content-center">
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                                            <i class="icofont-rounded-left"></i>
+                                        </a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">1</a>
+                                    </li>
+                                    <li class="page-item" aria-current="page">
+                                        <a class="page-link active" href="#">2</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">3</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">
+                                            <i class="icofont-rounded-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
                         </div>
                     </div>
                 </div>
@@ -181,16 +224,6 @@
                                 </li>
                             </ul>
                         </div>
-                        {{-- <div class="tags">
-                            <p>Most Popular Tags</p>
-                            <a href="#">Enjoy</a>
-                            <a href="#">Clean</a>
-                            <a href="#">Hygienic</a>
-                            <a href="#">Time</a>
-                            <a href="#">Brush</a>
-                            <a href="#">Wash</a>
-                            <a href="#">Call</a>
-                        </div> --}}
                         <div class="discount-text" style="background: transparent">
                             <iframe class="ytvideo" src="https://www.youtube.com/embed/oQKjX1z7aMM"
                                 title="YouTube video player" frameborder="0"
@@ -202,15 +235,13 @@
             </div>
         </div>
     </div>
-
-
     <div class="contact-section">
         <div class="container">
             <div class="contact-area">
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-md-6">
                         <div class="contact-img">
-                            <img src="../assets/img/contact-img.png" alt="contact image">
+                            <img src="../assets/img/workshop.jpg" alt="contact image">
                         </div>
                     </div>
                     <div class="col-lg-5 col-md-6 offset-lg-1">
