@@ -7,8 +7,6 @@ use Illuminate\Http\Request;
 
 class LandingController extends Controller
 {
-<<<<<<< HEAD
-=======
     public function index()
     {
         //
@@ -19,7 +17,6 @@ class LandingController extends Controller
         //
     }
 
->>>>>>> c9a38e79fcd2f71d6ce5b47b8f6a5cb9274b6d11
     public function jurusan()
     {
         return view("landingpage.jurusan.jurusan");

@@ -29,14 +29,11 @@
     <link rel="stylesheet" href="../csszaki.css" />
 
     <link rel="stylesheet" href="../csskeysha.css" />
-<<<<<<< HEAD
-=======
     <link rel="stylesheet" href="../cssyosop.css" />
->>>>>>> c9a38e79fcd2f71d6ce5b47b8f6a5cb9274b6d11
 
     <title>SMKN 1 SUKOREJO - BISA SUKSES</title>
 
-    <link rel="icon" type="image/png" href="../foto/logo.png" />
+    <link rel="icon" type="image/png" href="../foto/smk.png" />
 
     {{-- <link rel="stylesheet" type="text/css" href="/DataTables/datatables.css"> --}}
       <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.12.1/datatables.min.css"/>
