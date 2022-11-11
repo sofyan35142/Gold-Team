@@ -52,8 +52,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-md navbar-light">
                 <a class="navbar-brand" href="index.html">
-                    <img src="foto/header1.png"
-                        class="main-logo" alt="logo" />
+                    <img src="foto/header1.png" class="main-logo" alt="logo" />
                     <img src="assets/img/logo-2.png" class="white-logo" alt="logo" />
                 </a>
                 <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
@@ -149,19 +148,19 @@
                                     <a href="/guruu" class="nav-link">DATA FURU & KARYAWAN</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="/dharma" class="nav-link">DHARMA WANITA PERSATUAN</a>
+                                    <a href="/data/dharma" class="nav-link">DHARMA WANITA PERSATUAN</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="/datawalas" class="nav-link">DATA SISWA</a>
+                                    <a href="/data/datawalas" class="nav-link">DATA SISWA</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="/dataalumni" class="nav-link">DATA ALUMNI</a>
+                                    <a href="/data/dataalumni" class="nav-link">DATA ALUMNI</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="/ekstraa" class="nav-link">EKSTRAKULIKULER</a>
+                                    <a href="/data/ekstraa" class="nav-link">EKSTRAKULIKULER</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="/prestasi" class="nav-link">PRESTASI</a>
+                                    <a href="/data/prestasi" class="nav-link">PRESTASI</a>
                                 </li>
                             </ul>
                         </li>

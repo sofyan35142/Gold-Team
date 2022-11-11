@@ -362,12 +362,9 @@
             referrerpolicy="no-referrer-when-downgrade"></iframe>
             <br> <br>
         <video width="1500" height="550" controls>
-            <source src="movie.mp4" type="video/mp4">
-            <source src="movie.ogg" type="video/ogg">
-            <iframe class="elementor-video-iframe" allowfullscreen title="vimeo Video Player"
-                src="https://player.vimeo.com/video/763637575?autoplay=1&amp;color&amp;autopause=0&amp;loop=1&amp;muted=0&amp;title=1&amp;portrait=1&amp;byline=1#t="></iframe>
+            <iframe class="elementor-video-iframe" allowfullscreen="" title="vimeo Video Player" src="https://player.vimeo.com/video/763637575?autoplay=1&amp;color&amp;autopause=0&amp;loop=1&amp;muted=0&amp;title=1&amp;portrait=1&amp;byline=1#t=" __idm_id__="4022273"></iframe>
+        </video>
     </div>
-    </video>
     </div>
     <div class="contact-section">
         <div class="container">

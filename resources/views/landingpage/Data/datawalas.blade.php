@@ -38,7 +38,7 @@
 
 
 
-    <div class="blog-title blog-title-bg bg-2">
+    <div class="service-title-bg">
         <div class="d-table">
             <div class="d-table-cell">
                 <div class="container">

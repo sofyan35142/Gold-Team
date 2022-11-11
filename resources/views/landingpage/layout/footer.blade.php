@@ -26,7 +26,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="footer-widget pl-40">
-                        <h3>Services</h3>
+                        <h3>Pos-pos terbaru</h3>
                         <ul>
                             <li>
                                 <i class="icofont-simple-right"></i>
@@ -53,7 +53,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="footer-widget pl-40">
-                        <h3>Quick Links</h3>
+                        <h3>Jurusan</h3>
                         <ul>
                             <li>
                                 <i class="icofont-simple-right"></i>
@@ -80,7 +80,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="footer-widget">
-                        <h3>Find Us</h3>
+                        <h3>Alamat</h3>
                         <p class="find-text">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit sed
                         </p>

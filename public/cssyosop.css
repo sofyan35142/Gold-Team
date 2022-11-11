@@ -37,3 +37,12 @@
     width: 160px !important;
     /* max-width: none; */
 }
+
+.service-title-bg {
+    background-image: url(foto/Lorong1.JPG) !important;
+    background-position: center center;
+    background-size: cover;
+    height: 350px;
+    position: relative;
+    z-index: 0
+}

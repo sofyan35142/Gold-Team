@@ -29,11 +29,11 @@ Route::get('/agenda', [LandingController::class, 'agenda']);
 Route::get('/guruu', [LandingController::class, 'guru']);
 
 //DATA
-Route::get('/dharma', [LandingController::class, 'dharma']);
-Route::get('/datawalas', [LandingController::class, 'datawalas']);
-Route::get('/dataalumni', [LandingController::class, 'dataalumni']);
-Route::get('/ekstraa', [LandingController::class, 'ekstra']);
-Route::get('/prestasi', [LandingController::class, 'prestasi']);
+Route::get('/data/dharma', [LandingController::class, 'dharma']);
+Route::get('/data/datawalas', [LandingController::class, 'datawalas']);
+Route::get('/data/dataalumni', [LandingController::class, 'dataalumni']);
+Route::get('/data/ekstraa', [LandingController::class, 'ekstra']);
+Route::get('/data/prestasi', [LandingController::class, 'prestasi']);
 
 
 // ==Route profil==//

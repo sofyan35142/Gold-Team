@@ -13,7 +13,7 @@
 @include('landingpage.layout.header')
 
 
-    <div class="blog-title blog-title-bg bg-1">
+    <div class="service-title-bg">
         <div class="d-table">
             <div class="d-table-cell">
                 <div class="container">
