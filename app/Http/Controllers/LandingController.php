@@ -7,6 +7,19 @@ use Illuminate\Http\Request;
 
 class LandingController extends Controller
 {
+<<<<<<< HEAD
+=======
+    public function index()
+    {
+        //
+    }
+
+    public function create()
+    {
+        //
+    }
+
+>>>>>>> c9a38e79fcd2f71d6ce5b47b8f6a5cb9274b6d11
     public function jurusan()
     {
         return view("landingpage.jurusan.jurusan");
@@ -43,9 +56,44 @@ class LandingController extends Controller
     {
         return view("landingpage.jurusan.modulproduktiftei");
     }
+    public function modulproduktifrpl()
+    {
+        return view("landingpage.jurusan.modulproduktifrpl");
+    }
+    public function artikelilmiah()
+    {
+        return view("landingpage.jurusan.artikelilmiah");
+    }
+    public function modulproduktiftki()
+    {
+        return view("landingpage.jurusan.modulproduktiftki");
+    }
+    public function modulproduktiftav()
+    {
+        return view("landingpage.jurusan.modulproduktiftav");
+    }
 
-
-
+    ////LSP////
+    public function lsp()
+    {
+        return view("landingpage.lsp.lsp");
+    }
+    public function visimisilsp()
+    {
+        return view("landingpage.lsp.visimisilsp");
+    }
+    public function skematerlisensi()
+    {
+        return view("landingpage.lsp.skematerlisensi");
+    }
+    public function tempatujikom()
+    {
+        return view("landingpage.lsp.tempatujikom");
+    }
+    public function jmlpemegangsertifikat()
+    {
+        return view("landingpage.lsp.jmlpemegangsertifikat");
+    }
 
     public function visimisi()
     {
@@ -85,6 +133,22 @@ class LandingController extends Controller
     {
         return view("landingpage.beranda.agenda");
     }
+    public function dharma(){
+        return view('landingpage.Data.dharmawanita');
+    }
+    public function datawalas(){
+        return view('landingpage.Data.datawalas');
+    }
+    public function dataalumni(){
+        return view('landingpage.Data.dataalumni');
+    }
+    public function ekstra(){
+        return view('landingpage.Data.Ekstrakulikuler');
+    }
+    public function prestasi(){
+        return view('landingpage.Data.prestasi');
+    }
+
 
     //===ROUTE BURSA KERJA KHUSUS===//
     public function visimisi_bkk()

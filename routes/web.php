@@ -27,7 +27,12 @@ Route::get('/keahlian', [LandingController::class, 'keahlian']);
 Route::get('/lokerbkk', [LandingController::class, 'lokerbkk']);
 Route::get('/agenda', [LandingController::class, 'agenda']);
 
-Route::get('/jurusan', [LandingController::class, 'jurusan']);
+//DATA
+Route::get('/dharma', [LandingController::class, 'dharma']);
+Route::get('/datawalas', [LandingController::class, 'datawalas']);
+Route::get('/dataalumni', [LandingController::class, 'dataalumni']);
+Route::get('/ekstraa', [LandingController::class, 'ekstra']);
+Route::get('/prestasi', [LandingController::class, 'prestasi']);
 
 
 Route::get('/guru', [LandingController::class, 'guru']);
@@ -63,4 +68,15 @@ Route::get('/tav', [LandingController::class, 'tav']);
 Route::get('/modulproduktiftkr', [LandingController::class, 'modulproduktiftkr']);
 Route::get('/reparasibengkel', [LandingController::class, 'reparasibengkel']);
 Route::get('/modulproduktiftei', [LandingController::class, 'modulproduktiftei']);
+Route::get('/modulproduktifrpl', [LandingController::class, 'modulproduktifrpl']);
+Route::get('/artikelilmiah', [LandingController::class, 'artikelilmiah']);
+Route::get('/modulproduktiftki', [LandingController::class, 'modulproduktiftki']);
+Route::get('/modulproduktiftav', [LandingController::class, 'modulproduktiftav']);
 
+
+//LSP
+Route::get('/lsp', [LandingController::class, 'lsp']);
+Route::get('/visimisilsp', [LandingController::class, 'visimisilsp']);
+Route::get('/skematerlisensi', [LandingController::class, 'skematerlisensi']);
+Route::get('/tempatujikom', [LandingController::class, 'tempatujikom']);
+Route::get('/jmlpemegangsertifikat', [LandingController::class, 'jmlpemegangsertifikat']);

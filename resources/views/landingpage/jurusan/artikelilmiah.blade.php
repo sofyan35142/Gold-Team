@@ -28,7 +28,7 @@
             <div class="d-table-cell">
                 <div class="container">
                     <div class="service-title-text">
-                        <h2>Teknik Kendaraan Ringan</h2>
+                        <h2>Artikel Ilmiah</h2>
                         <ul>
                             <li>
                                 <a href="/">Beranda</a>
@@ -39,7 +39,11 @@
                             </li>
                             <li>
                                 <i class="icofont-rounded-double-right"></i>
-                                Teknik Kendaraan Ringan
+                                <a href="/rpl">Rekayasa Perangkat Lunak</a>
+                            </li>
+                            <li>
+                                <i class="icofont-rounded-double-right"></i>
+                                Artikel Ilmiah
                             </li>
                         </ul>
                     </div>
@@ -53,54 +57,53 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
-                    <img src="foto/jurusan/TKR.JPG" alt="service">
+                    {{-- <img src="foto/jurusan/TEI.JPG" alt="service"> --}}
                     <div class="service-details-post">
-                        <h3>Teknik Kendaraan Ringan <span class="tkrfont"> (TKR)</span></h3>
+                        <h3>Artikel Ilmiah</h3>
 
+                        <h2 class="text-align: center;" style="font-size: 20px;">PEMANFAATAN VMWARE WORKSTATION UNTUK
+                            MENINGKATKAN KEMAMPUAN PESERTA DIDIK KELAS X RPL DALAM MELAKUKAN PRAKTIKUM INSTALASI SISTEM
+                            OPERASI DI SMK NEGERI 1 SUKOREJO
+                        </h2>
+                        <p style="color: rgb(23, 3, 80); font-size: 17px; text-align: center;">Oleh: Arif Kurniawan</p>
+                        <p style="color: rgb(23, 3, 80); font-size: 17px; text-align: center;">NIM. 203153772637</p>
+                        <br />
+                        
+                        <h4 style="text-align: center;">ABSTRAK</h4>
+                        <br />
+                        <p>Penelitian ini bertujuan untuk: (1) mengetahui penggunaan VMware Workstation sebagai media
+                            pembelajaran guna meningkatkan kemampuan siswa dalam melakukan instalasi sistem operasi; (2)
+                            mengetahui kemampuan siswa dalam melakukan instalasi sistem operasi baik dalam aspek
+                            kognitif, afektif maupun psikomotorik, setelah menggunakan media pembelajaran VMware
+                            Workstation dalam pembelajaran.
+                            <br />
+                            <br />
+                            Penelitian ini merupakan jenis penelitian tindakan kelas yang menggunakan media pembelajaran
+                            VMware Workstation sebagai alat bantu untuk meningkatkan kemampuan siswa. Penelitian
+                            tindakan kelas ini dilakukan dengan 4 tahap yaitu perencanaan, tindakan, observasi dan
+                            refleksi. Sasaran penelitian ini adalah siswa kelas X RPL SMK Negeri 1 Sukorejo Pasuruan
+                            dengan jumlah 13 siswa. Penelitian dilaksanakan dengan sistematika 2 siklus, dimana tiap
+                            siklus. Variabel yang diteliti yaitu kemampuan siswa dalam melakukan instalasi sistem
+                            operasi baik dalam aspek kognitif, afektif maupun psikomotorik. Aspek kognitif diamati
+                            melalui hasil tes tertulis yang dilaksanakan tiap akhir siklus. Aspek afektif dan
+                            psikomotorik diamati melalui pengamatan menggunakan lembar observasi. Data dianalisis secara
+                            deskriptif dengan perhitungan sederhana.
+                            <br />
+                            <br />
+                            Hasil penelitian menunjukan: (1) rata-rata presentase ketuntasan aspek kognitif mengalami
+                            peningkatan sebesar 29,48% dari siklus I dengan rata-rata ketuntasan sebesar 53,85% dan
+                            siklus II sebesar 83,33%; (2) rata-rata aspek afektif mengalami peningkatan sebesar 10,26%
+                            dari siklus I dengan rata-rata 70,51% dan siklus II sebesar 80,77%; (3) rata-rata aspek
+                            psikomotorik mengalami peningkatan sebesar 8,76% dari siklus I dengan rata-rata 76,56% dan
+                            siklus II sebesar 85,32%. Berdasarkan hasil yang diperoleh, kemampuan siswa mengalami
+                            peningkatan baik dari aspek kognitif, afektif maupun psikomotorik, sehingga penggunaan media
+                            pembelajaran VMware Workstation sebagai upaya meningkatkan kemampuan siswa dalam melakukan
+                            instalasi sistem operasi berhasil.
 
-                        <p>Teknik Kendaraan Ringan adalah sebuah ilmu yang mempelajari kompetisi keahlian bidang teknik
-                            otomotif yang menekankan pada bidang jasa perbaikan kendaraan ringan (mobil). Tujuan
-                            kompetensi keahlian Teknik Kendaraan Ringan adalah untuk membekali peserta didik dengan
-                            keterampilan, pengetahuan, dan sikap pada dunia otomotif.</p>
-                        <p>Tujuan Khusus Teknik Kenderaan Ringan :
-                            Program Keahlian Teknik Otomotif Kompetensi Teknik Kendaraan Ringan sebagai bagian dari
-                            pendidikan menengah, bertujuan menyiapkan siswa / tamatan:</p>
-
-                        <p>1. Untuk memasuki lapangan kerja mekanik otomotif serta mengembangkan sikap profesional dalam
-                            bidang Teknik Kenderaan Ringan.
-                            <br />2. Menyiapkan siswa agar mampu memilih karir, mampu berkompetisi dan mampu
-                            mengembangkan diri dalam lingkup keahlian teknik otomotif, khususnya teknik Kenderaan Ringan
-                            <br />3. Menyiapkan siswa untuk mengisi tenaga kerja tingkat menengah yang mandiri (bekerja
-                            untuk dirinya sendiri) dan untuk mengisi kebutuhan dunia kerja yang berkaitan dengan teknik
-                            Kenderaan Ringan.
-                            <br />4. Menyiapkan tamatan agar menjadi warga Negara yang produktif, adaptif dan kreatif
-                            khususnya yang berkaitan dengan teknik Kenderaan Ringan.
+                            Kata kunci: media pembelajaran, VMware Workstation, sistem operasi
                         </p>
-                        <p>Lulusan kompetensi keahlian Teknik Kendaraan Ringan (TKR) dibekali dengan ilmu pengetahuan
-                            dan keterampilan dalam perawatan dan perbaikan motor otomotif, perawatan dan perbaikan
-                            sistem pemindah tenaga otomotif, perawatan dan perbaikan chasis dan suspense otomotif,
-                            perawatan dan perbaikan system kelistrikan otomotif serta dibekali kemampuan dalam
-                            berwirausaha sesuai dengan perkembangan kebutuhan masyarakat, dunia industri.
-                        </p>
-                        <h3>Ketua Kompetensi Keahlian <span class="tkrfont"> (KaKomLi)</span></h3>
-                        <div class="d-flex flex-row">
-                            <div class="p-2"><img class="img-guru"
-                            src="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/07/ndr-Rohmad-Munandar.jpg"
-                            width="10px" /></div>
-                            <div class="p-2"><b>ROHMAD MUNANDAR, S.Pd</b>
-                                <br/>
-                            <p>NIP:  19740609 200902 1 002
-                                <br/>
-                                Tempat/Tgl Lahir: Sukoharjo, 09 Juni 1974
-                                <br/>
-                                Status: PNS
-                                <br/>
-                                Gol. Ruang: III/b
-                            </p>
-                            
-                            
-                            </div>
-                        </div>
+                        <button type="button" class="btn btn-primary"><a href="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/11/Abstraksi-1.pdf"><img class="img-dow" src="https://storage.needpix.com/rsynced_images/download-1915753_1280.png" width="30px" /> <b style="color:white; text-size: 18px;">Download</b></a></button>
+
                     </div>
                     {{-- <div class="page-button">
 <div class="row">
@@ -234,7 +237,7 @@ Next
                         </div> --}}
                         <div class="ratio ratio-16x9">
                             <iframe
-                                src="https://www.youtube.com/embed/cxtGfQh188A?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0"
+                                src="https://www.youtube.com/embed/_3QdWBLnRlo?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0"
                                 title="YouTube video" allowfullscreen></iframe>
                         </div>
                     </div>
@@ -272,7 +275,8 @@ Next
                                     <div class="col-md-12 col-sm-6">
                                         <div class="form-group">
                                             <input type="email" name="email" id="email" class="form-control"
-                                                required data-error="Please enter your email" placeholder="Your Email">
+                                                required data-error="Please enter your email"
+                                                placeholder="Your Email">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>

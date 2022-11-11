@@ -1,0 +1,28 @@
+.imgsop{
+        height: 155px !important;
+        width: 150px !important;
+}
+.thsop{
+    width: 12px;
+    /* padding-right: 0px; */
+}
+.thimg{
+    width: 118px !important;
+}
+.imgg{
+    height: 310px;
+}
+
+.overflow {
+    /* height: 3pc; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* width: 330px;
+    height: 60px;
+    position: relative; */
+    /* margin-bottom: 20px; */
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    word-break: break-word;
+}

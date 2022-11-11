@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="zxx">
 
-<!-- Mirrored from templates.hibootstrap.com/viscous/default/blog-details.html by HTTrack Website Copier/3.x [XR&CO'2014'], Tue, 08 Nov 2022 02:34:11 GMT -->
+<!-- Mirrored from templates.hibootstrap.com/viscous/default/blog-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Nov 2022 02:34:11 GMT -->
 
 <head>
     @include('landingpage.layout.head')
@@ -64,7 +64,7 @@
                     <div class="blog-details-post">
                         <div class="blog-post-title">
                             <h3>
-                                Data Guru & Karyawan
+                                Data Dharwa Wanita Persatuan
                             </h3>
                             <ul>
                                 <li>
@@ -77,33 +77,105 @@
                                 </li>
                             </ul>
                         </div>
-                        <table class="table table-bordered">
-                            <thead>
-                            <th> No </th>
-                            <th> Foto </th>
-                            <th> Nama </th>
-                            <th> NIP </th>
-                            <th> TEMPAT LAHIR </th>
-                            <th> TGL LAHIR </th>
-                            <th> TMT AWAL</th>
-                            <th> STATUS </th>
-                            <th> GOL.RUANGAN </th>
-                            <th> JABATAN</th>
-                            </thead>
-                            <tbody>
+                        <table class="table table-bordered" id="id">
+                            <td> No </td>
+                            <td> Foto </td>
+                            <td> Nama </td>
+                            <td> TEMPAT LAHIR </td>
+                            <td> TGL LAHIR </td>
+                            <td> Alamat </td>
+                            <td> JABATAN</td>
+
                             <tr>
                                 <td>1</td>
-                                <td>1</td>
-                                <td>RUDI TRISANTOSO, S.Pd, M.Pd</td>
-                                <td>19710124 199512 1 001</td>
+                                <td><img src="{{ asset ('dharmawanita/aida.jpeg') }}" alt="" height="150px"></td>
+                                <td>Nur Aida, S.Pd / Ny. Rudi Trisantoso, S.Pd., M.Pd</td>
                                 <td>Pasuruan</td>
-                                <td>24 Jan 1971</td>
-                                <td>16 Jan 2019</td>
-                                <td>PNS</td>
-                                <td>IV/b – Pembina Tingkat I</td>
-                                <td>KEPALA SEKOLAH</td>
+                                <td>16 Mei 1970</td>
+                                <td>Perumahan Landungsari indah blok I-20 RT 3 RW 6 Landungsari-Dau, Kab. Malang</td>
+                                <td>KETUA</td>
                             </tr>
-                            </tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><img src="{{ asset ('dharmawanita/luluk.jpg') }}" alt="" height="150px"></td>
+                                <td>Luluk Kusuma Herminingsih, S.Pd</td>
+                                <td>Pasuruan</td>
+                                <td>06-Feb-1968</td>
+                                <td>Jaqi RT 008 RW 002 Candiwates Prigen, Kab. Pasuruan</td>
+                                <td>WAKIL KETUA</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td><img src="{{ asset ('dharmawanita/asnah.jpg') }}" alt="" height="150px"></td>
+                                <td>Asnah Yuniarti, S.Pd</td>
+                                <td>Pasuruan</td>
+                                <td>06 Ags 1973</td>
+                                <td>Dusun Sendi RT 01/RW 23 Sumbergedang Pandaan Pasuruan</td>
+                                <td>SEKRETARIS</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td> <img src="{{ asset ('dharmawanita/endang.jpg') }}" alt=""> </td>
+                                <td>Endang Sri Handayani, S.Pd</td>
+                                <td>Magelang</td>
+                                <td>04 Des 1972</td>
+                                <td>Dsn Karanglo, Sukorejo</td>
+                                <td>BENDAHARA</td>
+                            </tr>
+                            <tr>
+                               <td>1</td>
+                                <td><img src="{{ asset ('dharmawanita/asnah.jpg') }}" alt="" height="150px"></td>
+                                <td>Siti Juwariah,S.Pd</td>
+                                <td>Trenggalek</td>
+                                <td>31 Des 1968</td>        
+                                <td>RT 06 RW 05 Kalitengah, Karangjati, Pandaan, Pasuruan</td>
+                                <td>KOORDINATOR SIE BIDANG PENDIDIKAN</td>
+                            </tr>
+                            <tr>
+                               <td>1</td>
+                                <td><img src="{{ asset ('dharmawanita/khuswantun.jpg') }}" alt="" height="150px"></td>
+                                <td>Khuswatul Khasanah, S.Pd</td>
+                                <td>Pasuruan</td>
+                                <td>06 Des 1971</td>
+                                <td>Kejapanan Gang Kuntodewo RT 08 RW 12 Kejapanan - Gempol - Pasuruan</td>
+                                <td>ANGGOTA SIE BIDANG PENDIDIKAN</td>
+                            </tr>
+                            <tr>
+                               <td>1</td>
+                                <td><img src="{{ asset ('dharmawanita/ririk.jpg') }}" alt="" height="150px"></td>
+                                <td>Ririk Suryawati, S.Pd</td>
+                                <td>Pasuruan</td>
+                                <td>06 Feb 1977</td>
+                                <td>Dusun Besongol RT 01 RW 03 Desa Sumberejo Kec. Pandaan</td>
+                                <td>ANGGOTA SIE BIDANG PENDIDIKAN</td>
+                            </tr>
+                            <tr>
+                               <td>1</td>
+                                <td><img src="{{ asset ('dharmawanita/titik.jpg') }}" alt="" height="150px"></td>
+                                <td>Titik Chomzah, S.Pd.</td>
+                                <td>Pasuruan</td>
+                                <td>10 Nov 1973</td>
+                                <td>Jl. Anggrek I RT 09 RW 06 Prigen Pasuruan</td>
+                                <td>ANGGOTA SIE BIDANG PENDIDIKAN</td>
+                            </tr>
+                            <tr>
+                               <td>1</td>
+                                <td><img src="{{ asset ('dharmawanita/lina.jpg') }}" alt="" height="150px"></td>
+                                <td>Lina Indrawati,S.Pd</td>
+                                <td>Pasuruan</td>
+                                <td>22 Jul 1969</td>
+                                <td>Jln. Tawes No 4 Kalirejo Bangil</td>
+                                <td>ANGGOTA SIE BIDANG PENDIDIKAN</td>
+                            </tr>
+                            <tr>
+                               <td>1</td>
+                                <td><img src="{{ asset ('dharmawanita/juanita.jpg') }}" alt="" height="150px"></td>
+                                <td>Juanitasari, S.Pd</td>
+                                <td>Pasuruan</td>
+                                <td>05 Nov 1993</td>
+                                <td>Dsn. Al-kemar RT. 16 RW.10 MArtopuro Purwosari</td>
+                                <td>ANGGOTA SIE BIDANG PENDIDIKAN</td>
+                            </tr>
                         </table>
                     </div>
                     <div class="page-button">
@@ -447,28 +519,14 @@
         <i class="icofont-scroll-long-up"></i>
     </div>
 
-    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-    <script src="assets/js/jquery.min.js"></script>
 
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-
-    <script src="assets/js/owl.carousel.min.js"></script>
-
-    <script src="assets/js/slick.min.js"></script>
-
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-
-    <script src="assets/js/meanmenu.js"></script>
-
-    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
-
-    <script src="assets/js/form-validator.min.js"></script>
-
-    <script src="assets/js/contact-form-script.js"></script>
-
-    <script src="assets/js/custom.js"></script>
+@include('landingpage.layout.js')
 </body>
-
+<script>
+    $(document).ready(function () {
+     $('#id').DataTable();
+ });
+ </script>
 <!-- Mirrored from templates.hibootstrap.com/viscous/default/blog-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Nov 2022 02:34:12 GMT -->
 
 </html>

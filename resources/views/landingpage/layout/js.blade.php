@@ -18,3 +18,4 @@
 <script src="../assets/js/contact-form-script.js"></script>
 
 <script src="../assets/js/custom.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/v/bs4/jq-3.6.0/dt-1.12.1/datatables.min.js"></script>
