@@ -65,24 +65,33 @@
                             <table class="table">
                                 <thead>
                                     <tr>
-                                        <td style="color: rgb(23, 3, 80); font-size: 20px;"><b>Nama Buku Pedoman</b></td>
+                                        <td style="color: rgb(23, 3, 80); font-size: 20px;"><b>Nama Buku Pedoman</b>
+                                        </td>
                                         <td style="color: rgb(23, 3, 80); font-size: 20px;"><b>Aksi</b></td>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td style="color: black;">New Step 1 Toyota</td>
-                                        <td style="color: black;"><a href="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/New-Step-1-Toyota.pdf"><img class="img-key" src="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/54110747-stock-vector-manual-book-user-manual-icon-owner-s-manual-flat-vector-illustration-information-icon-with-a-spanner.jpg" width="10px" /> Download</a></td>
+                                        <td style="color: black;"><a
+                                                href="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/New-Step-1-Toyota.pdf"><img
+                                                    class="img-key"
+                                                    src="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/54110747-stock-vector-manual-book-user-manual-icon-owner-s-manual-flat-vector-illustration-information-icon-with-a-spanner.jpg"
+                                                    width="10px" /> Download</a></td>
                                     </tr>
                                     <tr>
                                         <td style="color: black;">Toyota Seri 5-K</td>
-                                        <td style="color: black;"><a href="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/Toyota-Seri-5-K.pdf"><img class="img-key" src="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/54110747-stock-vector-manual-book-user-manual-icon-owner-s-manual-flat-vector-illustration-information-icon-with-a-spanner.jpg" width="75px" /> Download</a></td>
+                                        <td style="color: black;"><a
+                                                href="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/Toyota-Seri-5-K.pdf"><img
+                                                    class="img-key"
+                                                    src="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/54110747-stock-vector-manual-book-user-manual-icon-owner-s-manual-flat-vector-illustration-information-icon-with-a-spanner.jpg"
+                                                    width="75px" /> Download</a></td>
                                     </tr>
-                                    
+
                                 </tbody>
                             </table>
                         </div>
-                        
+
 
                     </div>
                     {{-- <div class="page-button">
@@ -102,73 +111,73 @@ Next
 <i class="icofont-rounded-right"></i>
 </a>
 </div>
-</div>
-</div>
 </div> --}}
-                </div>
-                <div class="col-lg-4 main-service-area blog-side-bar">
-                    <div class="service-sidebar">
-                        <form class="search-form">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Search">
-                                <button type="submit" class="btn btn-primary">
-                                    <i class="icofont-search-1"></i>
-                                </button>
-                            </div>
-                        </form>
-                        <div class="service-list">
-                            <p>Categories</p>
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        Toilet Cleaning
-                                        <i class="icofont-rounded-right"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Stay Hygienic
-                                        <i class="icofont-rounded-right"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        News
-                                        <i class="icofont-rounded-right"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Cleaning Floor
-                                        <i class="icofont-rounded-right"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Cleaning Kitchen
-                                        <i class="icofont-rounded-right"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Wash Home
-                                        <i class="icofont-rounded-right"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="ratio ratio-16x9">
-                            <iframe
-                                src="https://www.youtube.com/embed/cxtGfQh188A?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0"
-                                title="YouTube video" allowfullscreen></iframe>
-                        </div>
-                        <div class="discount-shapes">
-
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
+        <div class="col-lg-4 main-service-area blog-side-bar">
+            <div class="service-sidebar">
+                <form class="search-form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="icofont-search-1"></i>
+                        </button>
+                    </div>
+                </form>
+                <div class="service-list">
+                    <p>Categories</p>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Toilet Cleaning
+                                <i class="icofont-rounded-right"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Stay Hygienic
+                                <i class="icofont-rounded-right"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                News
+                                <i class="icofont-rounded-right"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Cleaning Floor
+                                <i class="icofont-rounded-right"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Cleaning Kitchen
+                                <i class="icofont-rounded-right"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Wash Home
+                                <i class="icofont-rounded-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                {{-- <div class="ratio ratio-16x9">
+                            <iframe
+                                src="https://www.youtube.com/embed/cxtGfQh188A?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0"
+                                title="YouTube video" allowfullscreen></iframe>
+                        </div> --}}
+                <div class="discount-shapes">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
     </div>
     </div>
 
@@ -200,8 +209,7 @@ Next
                                     <div class="col-md-12 col-sm-6">
                                         <div class="form-group">
                                             <input type="email" name="email" id="email" class="form-control"
-                                                required data-error="Please enter your email"
-                                                placeholder="Your Email">
+                                                required data-error="Please enter your email" placeholder="Your Email">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>

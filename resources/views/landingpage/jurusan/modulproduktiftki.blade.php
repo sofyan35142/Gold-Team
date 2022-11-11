@@ -285,11 +285,11 @@ Next
                                 </li>
                             </ul>
                         </div>
-                        <div class="ratio ratio-16x9">
+                        {{-- <div class="ratio ratio-16x9">
                             <iframe
                                 src="https://www.youtube.com/embed/cxtGfQh188A?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0"
                                 title="YouTube video" allowfullscreen></iframe>
-                        </div>
+                        </div> --}}
                         <div class="discount-shapes">
 
                         </div>

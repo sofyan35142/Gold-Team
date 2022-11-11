@@ -23,6 +23,26 @@
         </div>
     </div>
     @include('landingpage.layout.header')
+    <div class="service-title service-title-bg bg-3">
+        <div class="d-table">
+            <div class="d-table-cell">
+                <div class="container">
+                    <div class="service-title-text">
+                        <h2>Sekolah Rujukan</h2>
+                        <ul>
+                            <li>
+                                <a href="/">Profil</a>
+                            </li>
+                            <li>
+                                <i class="icofont-rounded-double-right"></i>
+                                <a href="/jurusan">Sekoalah Rujukan</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="blog-details-area blog-details-page-area pt-100">
         <div class="container">
             <div class="row">
@@ -36,13 +56,20 @@
                         <img src="../assets/img/wssosialisasi.jpg" alt="service">
                         <h6>Sekolah Adiwiyata dan Pendidikan Karakter</h6>
                         <p>
-                            Pengembangan SMK rujukan sebagai upaya mendukung peningkatan mutu pembelajaran di SMK serta pemenuhan kebutuhan sarana prasarana pendidikan yang diperlukan dalam pelaksanaan kegiatan pembelajaran di SMK.   Pengembangan Sekolah Rujukan (Program Peningkatan Pembelajaran) di SMK adalah agar sekolah mampu:
+                            Pengembangan SMK rujukan sebagai upaya mendukung peningkatan mutu pembelajaran di SMK serta
+                            pemenuhan kebutuhan sarana prasarana pendidikan yang diperlukan dalam pelaksanaan kegiatan
+                            pembelajaran di SMK. Pengembangan Sekolah Rujukan (Program Peningkatan Pembelajaran) di SMK
+                            adalah agar sekolah mampu:
                         </p>
                         <p>
-                            1.Menyelaraskan kurikulum Kompetensi Keahlian yang lulusannya paling banyak dibutuhkan oleh DUDI pasangan di daerah setempat. Diharapkan Kompetensi Keahlian ini dapat menjadi Kompetensi Keahlian unggulan, sehingga dapat menjadi kebanggaan wilayah atau Kompetensi Keahlian Prioritas.
+                            1.Menyelaraskan kurikulum Kompetensi Keahlian yang lulusannya paling banyak dibutuhkan oleh
+                            DUDI pasangan di daerah setempat. Diharapkan Kompetensi Keahlian ini dapat menjadi
+                            Kompetensi Keahlian unggulan, sehingga dapat menjadi kebanggaan wilayah atau Kompetensi
+                            Keahlian Prioritas.
                         </p>
                         <p>
-                            2.Meningkatkan pengalaman kerja nyata guru di DUDI untuk digunakan sebagai acuan dan atau diterapkan dan dikembangkan di sekolah.
+                            2.Meningkatkan pengalaman kerja nyata guru di DUDI untuk digunakan sebagai acuan dan atau
+                            diterapkan dan dikembangkan di sekolah.
                         </p>
                         <p>
                             3.Mengimplementasikan Gerakan Literasi di Sekolah (GLS).
@@ -186,7 +213,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-md-6">
                         <div class="contact-img">
-                            <img src="assets/img/contact-img.png" alt="contact image">
+                            <img src="../assets/img/contact-img.png" alt="contact image">
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">

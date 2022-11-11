@@ -147,4 +147,25 @@ class LandingController extends Controller
     }
 
 
+    //===ROUTE BURSA KERJA KHUSUS===//
+    public function visimisi_bkk()
+    {
+        return view("landingpage.BKK.visimisi_bkk");
+    }
+    public function strukturorganisasi_bkk()
+    {
+        return view("landingpage.BKK.strukturorganisasi_bkk");
+    }
+    public function kegiatan_bkk()
+    {
+        return view("landingpage.BKK.kegiatan_bkk");
+    }
+    public function kewirausahaan_bkk()
+    {
+        return view("landingpage.BKK.kewirausahaan_bkk");
+    }
+    public function lowongan_kerja()
+    {
+        return view("landingpage.BKK.lowongan_kerja");
+    }
 }

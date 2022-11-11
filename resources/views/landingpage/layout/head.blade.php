@@ -33,7 +33,7 @@
 
     <title>SMKN 1 SUKOREJO - BISA SUKSES</title>
 
-    <link rel="icon" type="image/png" href="foto/logo.png" />
+    <link rel="icon" type="image/png" href="../foto/smk.png" />
 
     {{-- <link rel="stylesheet" type="text/css" href="/DataTables/datatables.css"> --}}
       <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.12.1/datatables.min.css"/>

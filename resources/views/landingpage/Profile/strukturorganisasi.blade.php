@@ -23,6 +23,26 @@
         </div>
     </div>
     @include('landingpage.layout.header')
+    <div class="service-title service-title-bg bg-3">
+        <div class="d-table">
+            <div class="d-table-cell">
+                <div class="container">
+                    <div class="service-title-text">
+                        <h2>Struktur Organisasi</h2>
+                        <ul>
+                            <li>
+                                <a href="/">Profil</a>
+                            </li>
+                            <li>
+                                <i class="icofont-rounded-double-right"></i>
+                                <a href="/jurusan">Struktur Organisasi</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="blog-details-area blog-details-page-area pt-100">
         <div class="container">
             <div class="row">
@@ -164,7 +184,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-md-6">
                         <div class="contact-img">
-                            <img src="assets/img/contact-img.png" alt="contact image">
+                            <img src="../assets/img/contact-img.png" alt="contact image">
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
