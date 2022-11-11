@@ -29,10 +29,7 @@
     <link rel="stylesheet" href="../csszaki.css" />
 
     <link rel="stylesheet" href="../csskeysha.css" />
-<<<<<<< HEAD
-=======
     <link rel="stylesheet" href="../cssyosop.css" />
->>>>>>> c9a38e79fcd2f71d6ce5b47b8f6a5cb9274b6d11
 
     <title>SMKN 1 SUKOREJO - BISA SUKSES</title>
 

@@ -184,7 +184,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-md-6">
                         <div class="contact-img">
-                            <img src="assets/img/contact-img.png" alt="contact image">
+                            <img src="../assets/img/contact-img.png" alt="contact image">
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">

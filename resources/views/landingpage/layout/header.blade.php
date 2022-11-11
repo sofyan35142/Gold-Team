@@ -77,7 +77,7 @@
                                     <a href="/profil/sejarahsingkat" class="nav-link">Sejarah Singkat</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="/porfil/sekolahadiwiyata" class="nav-link">Sekolah Adiwiyata</a>
+                                    <a href="/profil/sekolahadiwiyata" class="nav-link">Sekolah Adiwiyata</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="/profil/sekolahrujukan" class="nav-link">Sekolah Rujukan</a>
