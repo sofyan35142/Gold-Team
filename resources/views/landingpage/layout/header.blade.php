@@ -62,7 +62,7 @@
                             <a href="/" class="nav-link">Beranda</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link dropdown-toggle active">
+                            <a href="#" class="nav-link dropdown-toggle">
                                 Profil
                                 <i class="icofont-rounded-right"></i>
                             </a>
@@ -219,10 +219,10 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li class="nav-item">
-                                    <a href="/testimonialumni" class="nav-link">Testimoni Alumni</a>
+                                    <a href="/alumni/testimoni" class="nav-link">Testimoni Alumni</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="/data/alumni" class="nav-link">Profil Alumni</a>
+                                    <a href="/alumni/profilealumni" class="nav-link">Profil Alumni</a>
                                 </li>
                             </ul>
                         </li>
