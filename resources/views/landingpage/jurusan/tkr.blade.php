@@ -110,22 +110,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 main-service-area blog-side-bar">
-                    <div class="team-section team-style-two team-style-three team-members pt-1000">
-                        <div class="team-card">
-                            <div class="team-img">
-                                <div class="row">
-                                    <div class="container">
-                                        <img src="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/07/ndr-Rohmad-Munandar.jpg"
-                                            alt="team member">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="team-text">
-                                <h4 class="h4">Ketua Komoetensi Keahlian</h4>
-                                <p><b>ROHMAD MUNANDAR, S.Pd</b></p>
-                            </div>
-                        </div>
-                    </div>
+                   
 
                     <div class="team-section team-style-two team-style-three team-members pt-1000">
                         <div class="team-card">
