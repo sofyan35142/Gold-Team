@@ -17,18 +17,9 @@
         <div class="d-table">
             <div class="d-table-cell">
                 <div class="container">
-                    {{-- <div class="blog-title-text">
-                        <h2>Blogs Right Sidebar</h2>
-                        <ul>
-                            <li>
-                                <a href="index.html">Home</a>
-                            </li>
-                            <li>
-                                <i class="icofont-rounded-double-right"></i>
-                                Blogs Right Sidebar
-                            </li>
-                        </ul>
-                    </div> --}}
+                    <div class="blog-title-text">
+                        <h2 style="color: white">Ekstra Kurikuler</h2>
+                    </div>
                 </div>
             </div>
         </div>
@@ -71,7 +62,7 @@
                             <div class="blog-area">
                                 <div class="blog-img">
                                     <a href="blog-details.html">
-                                        <img src="../ekstra/paskib.jpg" alt="blog image">
+                                        <img src="../ekstra/    paskib.jpg" alt="blog image">
                                     </a>
                                 </div>
                                 <div class="blog-text">

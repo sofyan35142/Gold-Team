@@ -96,103 +96,76 @@
         </div>
     </div>
 
-    <section class="service-section pt-100 pb-70">
+    <div class="service-style-three pt-100 pb-70">
         <div class="container">
             <div class="section-head text-center">
                 <h2>SMK NEGERI 1 SUKOREJO</h2>
-                <p>
-                    Jl. Sumbergareng Desa Sukorejo Kecamatan Sukorejo, Kabupaten Pasuruan, Kode Pos 67161
-                </p>
+                <p>Jl. Sumbergareng Desa Sukorejo Kecamatan Sukorejo, Kabupaten Pasuruan, Kode Pos 67161</p>
             </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="service-card">
-                        <i class="flaticon-medal"></i>
-                        <h3>Guru dan Staf</h3>
-                        <p>
-                            Biodata Guru dan Staf Karyawan
-                        </p>
-                        <div class="theme-button">
-                            <a href="/guruu" class="default-btn">Baca Selengkapnya</a>
-                        </div>
+            <div class="service-slider owl-carousel owl-theme">
+                <div class="service-item">
+                    <i class="flaticon-spray"></i>
+                    <h3>Guru Dan Staf</h3>
+                    <p>Biodata Guru Dan Karyawan</p>
+                    <div class="theme-button">
+                        <a href="service-details.html" class="default-btn">Read More</a>
+                    </div>
+                    <div class="service-shape">
+                        <img src="assets/img/service/shapes/service-pattern-6.png" alt="shape">
+                        <img src="assets/img/service/shapes/service-pattern-7.png" alt="shape">
+                        <img src="assets/img/service/shapes/service-pattern-8.png" alt="shape">
+                        <img src="assets/img/service/shapes/service-pattern-9.png" alt="shape">
+                        <img src="assets/img/service/shapes/service-pattern-10.png" alt="shape">
                     </div>
                 </div>
-                {{-- <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="service-card active-service">
-                        <i class="flaticon-credit-card"></i>
-                        <h3>Low Cost Service</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor contratc.
-                        </p>
-                        <div class="theme-button">
-                            <a href="service-details.html" class="default-btn">Read More</a>
-                        </div>
+                <div class="service-item">
+                    <i class="flaticon-clean-house"></i>
+                    <h3>Program Keahlian</h3>
+                    <p>Pengenalan Kompetensi Keahlian</p>
+                    <div class="theme-button">
+                        <a href="service-details.html" class="default-btn">Read More</a>
                     </div>
-                </div> --}}
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="service-card">
-                        <i class="flaticon-icon-1584892"></i>
-                        <h3>Program Keahlian</h3>
-                        <p>
-                            Pengenalan Kompetensi Keahlian
-                        </p>
-                        <div class="theme-button">
-                            <a href="/keahlian" class="default-btn">Selengkapnya</a>
-                        </div>
+                    <div class="service-shape">
+                        <img src="assets/img/service/shapes/service-pattern-6.png" alt="shape">
+                        <img src="assets/img/service/shapes/service-pattern-7.png" alt="shape">
+                        <img src="assets/img/service/shapes/service-pattern-8.png" alt="shape">
+                        <img src="assets/img/service/shapes/service-pattern-9.png" alt="shape">
+                        <img src="assets/img/service/shapes/service-pattern-10.png" alt="shape">
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="service-card">
-                        <i class="flaticon-spray"></i>
-                        <h3>Agenda Sekolah</h3>
-                        <p>
-                            Kegiatan-Kegiatan Sekolah
-                        </p>
-                        <div class="theme-button">
-                            <a href="/agenda" class="default-btn">Selengkapnya</a>
-                        </div>
+                <div class="service-item">
+                    <i class="flaticon-wiper"></i>
+                    <h3>Agenda Sekolah</h3>
+                    <p>Kegiatan-kegiatan Sekolah.</p>
+                    <div class="theme-button">
+                        <a href="service-details.html" class="default-btn">Read More</a>
+                    </div>
+                    <div class="service-shape">
+                        <img src="assets/img/service/shapes/service-pattern-6.png" alt="shape">
+                        <img src="assets/img/service/shapes/service-pattern-7.png" alt="shape">
+                        <img src="assets/img/service/shapes/service-pattern-8.png" alt="shape">
+                        <img src="assets/img/service/shapes/service-pattern-9.png" alt="shape">
+                        <img src="assets/img/service/shapes/service-pattern-10.png" alt="shape">
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="service-card">
-                        <i class="flaticon-clean-house"></i>
-                        <h3>Loker Dari BKK</h3>
-                        <p>
-                            Lowongan Pekerjaan Dari BKK
-                        </p>
-                        <div class="theme-button">
-                            <a href="/lokerbkk" class="default-btn">Selengkapnya</a>
-                        </div>
+                <div class="service-item">
+                    <i class="flaticon-spray"></i>
+                    <h3>Loker dari BKK</h3>
+                    <p>Lowongan Pekerjaan dari BKK.</p>
+                    <div class="theme-button">
+                        <a href="service-details.html" class="default-btn">Read More</a>
+                    </div>
+                    <div class="service-shape">
+                        <img src="assets/img/service/shapes/service-pattern-6.png" alt="shape">
+                        <img src="assets/img/service/shapes/service-pattern-7.png" alt="shape">
+                        <img src="assets/img/service/shapes/service-pattern-8.png" alt="shape">
+                        <img src="assets/img/service/shapes/service-pattern-9.png" alt="shape">
+                        <img src="assets/img/service/shapes/service-pattern-10.png" alt="shape">
                     </div>
                 </div>
-                {{-- <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="service-card">
-                        <i class="flaticon-wiper"></i>
-                        <h3>Office Cleaning</h3>
-                        <p>
-                            $$
-                        </p>
-                        <div class="theme-button">
-                            <a href="service-details.html" class="default-btn">Read More</a>
-                        </div>
-                    </div>
-                </div> --}}
             </div>
-            {{-- <div class="service-shapes">
-                <img src="assets/img/service/shapes/1.png" alt="shape" />
-                <img src="assets/img/service/shapes/2.png" alt="shape" />
-                <img src="assets/img/service/shapes/3.png" alt="shape" />
-                <img src="assets/img/service/shapes/4.png" alt="shape" />
-                <img src="assets/img/service/shapes/5.png" alt="shape" />
-                <img src="assets/img/service/shapes/6.png" alt="shape" />
-                <img src="assets/img/service/shapes/7.png" alt="shape" />
-                <img src="assets/img/service/shapes/8.png" alt="shape" />
-                <img src="assets/img/service/shapes/9.png" alt="shape" />
-                <img src="assets/img/service/shapes/10.png" alt="shape" />
-            </div> --}}
         </div>
-    </section>
+    </div>
 
     <section class="about-style-two about-style-three pt-100 pb-70">
         <div class="container-fluid">
@@ -250,15 +223,17 @@
                         </div>
                         <div class="plan-features">
                             <ul>
-                            <li>
-                                <i class="icofont-rounded-right iknrounded"></i>
-                                SMK NEGERI 1 SUKOREJO MELAKUKAN PRESENTASI PROJECT BERSAMA PENGEMBANGAN SAVING PEMAKAIAN ENERGI DI GOLF CART (KENDARAAN GOLF) DIHADAPAN DIREKSI TAMAN DAYU GOLF & RESORT
+                                <li>
+                                    <i class="icofont-rounded-right iknrounded"></i>
+                                    SMK NEGERI 1 SUKOREJO MELAKUKAN PRESENTASI PROJECT BERSAMA PENGEMBANGAN SAVING
+                                    PEMAKAIAN ENERGI DI GOLF CART (KENDARAAN GOLF) DIHADAPAN DIREKSI TAMAN DAYU GOLF &
+                                    RESORT
                                 </li>
-                            <li>
-                                <i class="icofont-rounded-right iknrounded"></i>
-                                PENILAIAN KINERJA KEPALA SEKOLAH (PKKS) TAHUN 2022
-                            </li>
-</ul>
+                                <li>
+                                    <i class="icofont-rounded-right iknrounded"></i>
+                                    PENILAIAN KINERJA KEPALA SEKOLAH (PKKS) TAHUN 2022
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -360,101 +335,307 @@
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.585483431905!2d112.7150166749192!3d-7.727543392290657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7d1337b9fbe51%3A0x5f53153c148fedfd!2sSMK%20Negeri%201%20Sukorejo!5e0!3m2!1sid!2sid!4v1667877880917!5m2!1sid!2sid"
             width="1500" height="450" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <br> <br>
-        <video width="1500" height="550" controls>
-            <iframe class="elementor-video-iframe" allowfullscreen="" title="vimeo Video Player" src="https://player.vimeo.com/video/763637575?autoplay=1&amp;color&amp;autopause=0&amp;loop=1&amp;muted=0&amp;title=1&amp;portrait=1&amp;byline=1#t=" __idm_id__="4022273"></iframe>
-        </video>
+        <br> <br>
+        {{-- <video width="1500" height="550" controls> --}}
+        <iframe title="vimeo-player" src="https://player.vimeo.com/video/763637575?h=8fb781726d" width="1400"
+            height="450" frameborder="0" allowfullscreen></iframe>
+        {{-- </video>    --}}
     </div>
-    </div>
-    <div class="contact-section">
+
+    <section class="blog-section pt-100">
         <div class="container">
-            <div class="contact-area">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 col-md-6">
-                        <div class="contact-img">
-                            <img src="assets/img/contact-img.png" alt="contact image" />
-                        </div>
+            <div class="section-head text-center">
+                <h2>Berita & Blog Terbaru</h2>
+            </div>
+            <div class="blog-slider owl-carousel owl-theme">
+                <div class="blog-area">
+                    <div class="blog-img">
+                        <a href="#">
+                            <img src="assets/img/blog/1.png" alt="blog image">
+                        </a>
                     </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="contact-text">
-                            <div class="section-head">
-                                <h2>We Love to <span> Hear from You</span></h2>
-                                <p>Feel free and share with us. We will get you</p>
-                            </div>
-                            <div class="contact-form">
-                                <form id="contactForm">
-                                    <div class="row">
-                                        <div class="col-md-12 col-sm-6">
-                                            <div class="form-group">
-                                                <input type="text" name="name" id="name"
-                                                    class="form-control" required data-error="Please enter your name"
-                                                    placeholder="Your Name" />
-                                                <div class="help-block with-errors"></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12 col-sm-6">
-                                            <div class="form-group">
-                                                <input type="email" name="email" id="email"
-                                                    class="form-control" required data-error="Please enter your email"
-                                                    placeholder="Your Email" />
-                                                <div class="help-block with-errors"></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-12 col-md-12">
-                                            <div class="form-group">
-                                                <textarea name="message" class="form-control" id="message" cols="30" rows="5" required
-                                                    data-error="Write your message" placeholder="Your Message"></textarea>
-                                                <div class="help-block with-errors"></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-12 col-md-12">
-                                            <button type="submit" class="default-btn page-btn">
-                                                Send Message
-                                            </button>
-                                            <div id="msgSubmit" class="h3 text-center hidden"></div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
+                    <div class="blog-text">
+                        <h4><a href="#">REKRUTMENT (TES FISIK) <br> PT. ADM</a></h4>
+                        <ul>
+                            <li>
+                                <i class="icofont-calendar"></i>
+                                20 Feb 2021
+                            </li>
+                            <li>
+                                <i class="icofont-ui-user"></i>
+                                <a href="#">John Doe</a>
+                            </li>
+                        </ul>
+                        <p class="overflow">Sukorejo, 12 November 2022 SMK Negeri 1 Sukorejo kembali dipercaya PT.
+                            Astra Daihatsu Motor untuk menjadi tuan rumah penyelenggaraan tes fisik.
+
+                            Sebagai sekolah binaan Daihatsu, SMK Negeri 1 Sukorejo memberikan kesempatan sekolah sekitar
+                            untuk turut serta dalam seleksi PT. ADM, pada tes fisik kali ini diikuti oleh 11 Sekolah
+                            diantaranya yaitu</p>
+                        <a href="blog-details.html" class="blog-btn">
+                            Read more
+                            <i class="icofont-rounded-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="blog-area">
+                    <div class="blog-img">
+                        <a href="#">
+                            <img src="assets/img/blog/2.png" alt="blog image">
+                        </a>
+                    </div>
+                    <div class="blog-text">
+                        <h4><a href="#" class="overflow1">SMK NEGERI 1 SUKOREJO MELAKUKAN PRESENTASI PROJECT
+                                BERSAMA PENGEMBANGAN SAVING PEMAKAIAN ENERGI DI GOLF CART (KENDARAAN GOLF) DIHADAPAN
+                                DIREKSI TAMAN DAYU GOLF & RESORT</a></h4>
+                        <ul>
+                            <li>
+                                <i class="icofont-calendar"></i>
+                                20 Feb 2021
+                            </li>
+                            <li>
+                                <i class="icofont-ui-user"></i>
+                                <a href="#">John Doe</a>
+                            </li>
+                        </ul>
+                        <p class="overflow">09 November 2022, SMK Negeri 1 Sukorejo berkesempatan hadir di Taman Dayu
+                            Golf & Resort dalam rangka Presentasi Projek Bersama Pengembangan Saving Pemakaian Energi di
+                            Golf Cart (Kendaraan Golf). Dengan adanya project bersama ini diharapkan dapat memberikan
+                            dampak positif yang saling menguntungkan antara SMK Negeri 1 Sukorejo dengan Taman Dayu Golf
+                            & Resort.</p>
+                        <a href="blog-details.html" class="blog-btn">
+                            Read more
+                            <i class="icofont-rounded-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="blog-area">
+                    <div class="blog-img">
+                        <a href="#">
+                            <img src="assets/img/blog/3.png" alt="blog image">
+                        </a>
+                    </div>
+                    <div class="blog-text">
+                        <h4><a href="#" class="overflow1">KREASI ANAK SKETSU – EKSTRAK JAHE OLAHAN SISWA SISWI
+                                KIMIA INDUSTRI</a></h4>
+                        <ul>
+                            <li>
+                                <i class="icofont-calendar"></i>
+                                20 Feb 2021
+                            </li>
+                            <li>
+                                <i class="icofont-ui-user"></i>
+                                <a href="#">John Doe</a>
+                            </li>
+                        </ul>
+                        <p class="overflow">Di tengah pandemi global seperti ini setiap individu diharapkan memiliki
+                            imun dan daya tahan tubuh yang kuat. Daya tahan tubuh yang kuat dapat ditopang dari pola
+                            hidup yang sehat. Indonesia merupakan negara yang terkenal kaya akan rempah-rempahnya. Hal
+                            ini menjadi salah satu alasan bagi Teknik Kimia Industri SMK Negeri 1 Sukorejo untuk membuat
+                            ekstrak jahe dalam</p>
+                        <a href="blog-details.html" class="blog-btn">
+                            Read more
+                            <i class="icofont-rounded-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="blog-area">
+                    <div class="blog-img">
+                        <a href="#">
+                            <img src="assets/img/blog/1.png" alt="blog image">
+                        </a>
+                    </div>
+                    <div class="blog-text">
+                        <h4><a href="#" class="overflow1">SMK NEGERI 1 SUKOREJO MEMAMERKAN SEPEDA DENGAN BAHAN
+                                BAKAR LPG PADA PAMERAN EXPO & EXPOSE YANG DIGELAR DI CITY OF TOMORROW (CITO)
+                                SURABAYA</a></h4>
+                        <ul>
+                            <li>
+                                <i class="icofont-calendar"></i>
+                                20 Feb 2021
+                            </li>
+                            <li>
+                                <i class="icofont-ui-user"></i>
+                                <a href="#">John Doe</a>
+                            </li>
+                        </ul>
+                        <p class="overflow">Sepeda dengan bahan bakar LPG karya inovatif SMK Negeri 1 Sukorejo menjadi
+                            salah satu dari ratusan karya inovasi SMK Pusat Keunggulan (PK) yang dipamerkan dalam
+                            pameran Expo Dan Expose yang digelar di City Of Tomorrow (Cito) Mall Surabaya pada 27-31
+                            Oktober 2022. Sebagai salah satu SMK di Kabupaten Pasuruan yang masuk dalam SMK Pusat
+                            Keunggulan (SMK PK), SMK Negeri 1</p>
+                        <a href="blog-details.html" class="blog-btn">
+                            Read more
+                            <i class="icofont-rounded-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="blog-area">
+                    <div class="blog-img">
+                        <a href="#">
+                            <img src="assets/img/blog/2.png" alt="blog image">
+                        </a>
+                    </div>
+                    <div class="blog-text">
+                        <h4><a href="#" class="overflow1">AYO ALUMNI TAHUN 2021 ISI TRACER STUDY DARI
+                                KEMDIKBUDRISTEK UNTUK MEWUJUDKAN DATA LULUSAN SMK YANG AKURAT</a></h4>
+                        <ul>
+                            <li>
+                                <i class="icofont-calendar"></i>
+                                20 Feb 2021
+                            </li>
+                            <li>
+                                <i class="icofont-ui-user"></i>
+                                <a href="#">John Doe</a>
+                            </li>
+                        </ul>
+                        <p class="overflow">Halo Alumni SMK Negeri 1 Sukorejo yang kami banggakan Dalam rangka
+                            penjaminan mutu dan peningkatan relevansi pendidikan vokasi dengan dunia kerja,
+                            Kemdikbudristek menetapkan kebijakan untuk mendapatkan data nasional lulusan SMK yang akurat
+                            melalui Tracer Study SMK. Bagi kalian yang termasuk Alumni SMK Negeri 1 Sukorejo lulusan
+                            tahun 2021 yuk segera mengisi data penelusuran tamatan DISINI</p>
+                        <a href="blog-details.html" class="blog-btn">
+                            Read more
+                            <i class="icofont-rounded-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="blog-area">
+                    <div class="blog-img">
+                        <a href="#">
+                            <img src="assets/img/blog/3.png" alt="blog image">
+                        </a>
+                    </div>
+                    <div class="blog-text">
+                        <h4><a href="#" class="overflow1">“ALUMNI SHARING SESSION” BERSAMA ALUMNI ALUMNI HEBAT
+                                SMK NEGERI 1 SUKOREJO</a></h4>
+                        <ul>
+                            <li>
+                                <i class="icofont-calendar"></i>
+                                20 Feb 2021
+                            </li>
+                            <li>
+                                <i class="icofont-ui-user"></i>
+                                <a href="#">John Doe</a>
+                            </li>
+                        </ul>
+                        <p class="overflow">SMK Negeri 1 Sukorejo kembali mengundang alumni alumni hebat untuk sharing
+                            ilmu dan pengalaman kepada alumni lain serta peserta didik yang masih aktif sekolah.
+                            Beberapa alumni yang dapat hadir berbagi cerita kesuksesannya yaitu : Fery Indra Setiawan
+                            Alumni multi talent jurusan Teknik Elektronika Industri Tahun 2010 yang saat ini telah
+                            menyelesaikan pendidikan S2 nya dan</p>
+                        <a href="blog-details.html" class="blog-btn">
+                            Read more
+                            <i class="icofont-rounded-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="blog-area">
+                    <div class="blog-img">
+                        <a href="#">
+                            <img src="assets/img/blog/1.png" alt="blog image">
+                        </a>
+                    </div>
+                    <div class="blog-text">
+                        <h4><a href="#" class="overflow1">AYO ALUMNI TAHUN 2021 ISI TRACER STUDY DARI
+                                KEMDIKBUDRISTEK UNTUK MEWUJUDKAN DATA LULUSAN SMK YANG AKURAT</a></h4>
+                        <ul>
+                            <li>
+                                <i class="icofont-calendar"></i>
+                                20 Feb 2021
+                            </li>
+                            <li>
+                                <i class="icofont-ui-user"></i>
+                                <a href="#">John Doe</a>
+                            </li>
+                        </ul>
+                        <p class="overflow">Halo Alumni SMK Negeri 1 Sukorejo yang kami banggakan Dalam rangka
+                            penjaminan mutu dan peningkatan relevansi pendidikan vokasi dengan dunia kerja,
+                            Kemdikbudristek menetapkan kebijakan untuk mendapatkan data nasional lulusan SMK yang akurat
+                            melalui Tracer Study SMK. Bagi kalian yang termasuk Alumni SMK Negeri 1 Sukorejo lulusan
+                            tahun 2021 yuk segera mengisi data penelusuran tamatan DISINI </p>
+                        <a href="blog-details.html" class="blog-btn">
+                            Read more
+                            <i class="icofont-rounded-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="blog-area">
+                    <div class="blog-img">
+                        <a href="#">
+                            <img src="assets/img/blog/2.png" alt="blog image">
+                        </a>
+                    </div>
+                    <div class="blog-text">
+                        <h4><a href="#" class="overflow1">Perwakilan RPL Sketsu, Tembus Provinsi</a></h4>
+                        <ul>
+                            <li>
+                                <i class="icofont-calendar"></i>
+                                20 Feb 2021
+                            </li>
+                            <li>
+                                <i class="icofont-ui-user"></i>
+                                <a href="#">John Doe</a>
+                            </li>
+                        </ul>
+                        <p class="overflow">Alhamdulillah, kami ucapkan kepada Allah SWT atas keberhasilan Eri Ernanda
+                            sebagai peserta pertama yang lolos Lomba LKS ke tingkat Provinsi di bidang Cloud Computing.
+                            Eri Ernanda dari SMKN 1 Sukorejo (@sketsu_bisa) berhasil mendapatkan Juara 1 di wilker 2
+                            Jatim dengan memperoleh rata-rata skor 70.3, diikuti Afrizal Arif Maulana sebagai Juara 2
+                            dari SMKN 1 Purwosari</p>
+                        <a href="blog-details.html" class="blog-btn">
+                            Read more
+                            <i class="icofont-rounded-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="blog-area">
+                    <div class="blog-img">
+                        <a href="#">
+                            <img src="assets/img/blog/3.png" alt="blog image">
+                        </a>
+                    </div>
+                    <div class="blog-text">
+                        <h4><a href="#" class="overflow1">KUNJUNGAN INDUSTRI JURUSAN KIMIA INDUSTRI KE PT.
+                                AMERTA INDAH OTSUKA (POCARI SWEAT)</a></h4>
+                        <ul>
+                            <li>
+                                <i class="icofont-calendar"></i>
+                                20 Feb 2021
+                            </li>
+                            <li>
+                                <i class="icofont-ui-user"></i>
+                                <a href="#">John Doe</a>
+                            </li>
+                        </ul>
+                        <p class="overflow"> Sukorejo, 12 Oktober 2022 Peserta didik SMK Negeri 1 Sukorejo melakukan
+                            kunjungan industri ke PT. Amerta Indah Otsuka (Pocari Sweat) – Kejayan Pasuruan. PT Amerta
+                            Indah Otsuka adalah bagian dari Otsuka Parmaceutical Co., Ltd Jepang dengan produk terkemuka
+                            seperti Pocari Sweat, SOYJOY, dan Ionessence. Kunjungan industri diikuti oleh siswa kelas XI
+                            Jurusan Kimia Industri dan</p>
+                        <a href="blog-details.html" class="blog-btn">
+                            Read more
+                            <i class="icofont-rounded-right"></i>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
+
+    </section>
     @include('landingpage.layout.footer')
 
     <div class="top-btn">
         <i class="icofont-scroll-long-up"></i>
     </div>
-<script>
-    $(document).ready( function () {
-    $('#id1').DataTable();
-} );
-</script>
+    <script>
+        $(document).ready(function() {
+            $('#id1').DataTable();
+        });
+    </script>
 
-    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-    <script src="assets/js/jquery.min.js"></script>
-
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-
-    <script src="assets/js/owl.carousel.min.js"></script>
-
-    <script src="assets/js/slick.min.js"></script>
-
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-
-    <script src="assets/js/meanmenu.js"></script>
-
-    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
-
-    <script src="assets/js/form-validator.min.js"></script>
-
-    <script src="assets/js/contact-form-script.js"></script>
-
-    <script src="assets/js/custom.js"></script>
+    @include('landingpage.layout.js')
 
 
 </body>
