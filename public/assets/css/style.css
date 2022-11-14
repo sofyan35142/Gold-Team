@@ -449,14 +449,17 @@ h3 {
 .home-slider-area.owl-theme .owl-nav {
 	margin-top: 0
 }
+
 .items-bg1 {
-	background-image: url(../img/home/1.jpg)
+    background-image: url(../img/home/1.jpg)
 }
+
 .items-bg2 {
-	background-image: url(../img/home/2.jpg)
+    background-image: url(../img/home/2.jpg)
 }
+
 .items-bg3 {
-	background-image: url(../img/home/3.jpg)
+    background-image: url(../img/home/3.jpg)
 }
 .home-text {
 	max-width: 740px;

@@ -26,3 +26,38 @@
     display: -webkit-box;
     word-break: break-word;
 }
+.overflow1 {
+    /* height: 3pc; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* width: 330px;
+    height: 60px;
+    position: relative; */
+    /* margin-bottom: 20px; */
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    word-break: break-word;
+}
+
+.imgge{
+    height: 242px !important;
+    width: 180px !important;
+}
+
+.imgguru{
+    height: 300px !important;
+    width: 305px !important;
+    /* max-width: none; */
+}
+
+.service-title-bg {
+    background-image: url(foto/Lorong1.JPG) !important;
+    background-position: center center;
+    background-size: cover;
+    height: 350px;
+    position: relative;
+    z-index: 0
+}
+
+

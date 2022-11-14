@@ -30,11 +30,11 @@
 
 
 
-    <div class="blog-title blog-title-bg bg-2">
+    <div class="service-title-bg">
         <div class="d-table">
             <div class="d-table-cell">
                 <div class="container">
-                    <div class="blog-title-text">
+                    {{-- <div class="blog-title-text">
                         <h2>Blog Details</h2>
                         <ul>
                             <li>
@@ -49,7 +49,7 @@
                                 Blog Details
                             </li>
                         </ul>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>
@@ -75,32 +75,32 @@
 
                             <tr>
                                 <td>1</td>
-                                <td>TKR</td>
-                                <td> foto <br> RUDI TRISANTOSO, S.Pd, M.Pd</td>
+                                <td>Teknik Kendaraan Ringan (TKR)</td>
+                                <td> <img class="imgge" src="../kakomli/rohmad.jpg" alt=""> <br><b> Rohmad Munandar,S.Pd</b></td>
                             </tr>
 
                             <tr>
-                                <td>1</td>
-                                <td>1</td>
-                                <td> <img src="assets/img/megawati.png" alt="" width="200px" height="200px"> <br> RUDI TRISANTOSO, S.Pd, M.Pd</td>
+                                <td>2</td>
+                                <td>Teknik Elektronika Industri (TEI)</td>
+                                <td> <img class="imgge" src="../kakomli/sofan.jpeg" alt="" width="200px" height="200px"> <br><b> Sofan Dedi Priyanto, S.Pd., Gr</b></td>
                             </tr>
 
                             <tr>
-                                <td>1</td>
-                                <td>1</td>
-                                <td>RUDI TRISANTOSO, S.Pd, M.Pd</td>
+                                <td>3</td>
+                                <td>Rekayasa Perangkat Lunak (RPL)</td>
+                                <td><img class="imgge" src="" alt=""></td>
                             </tr>
 
                             <tr>
-                                <td>1</td>
-                                <td>1</td>
-                                <td>RUDI TRISANTOSO, S.Pd, M.Pd</td>
+                                <td>4</td>
+                                <td>Teknik Audio Video(TAV)</td>
+                                <td><img class="imgge" src="../kakomli/Agung.jpg" alt=""> <br><b> Agung Karunia Adi, S.T</b> </td>
                             </tr>
 
                             <tr>
-                                <td>1</td>
-                                <td>1</td>
-                                <td>RUDI TRISANTOSO, S.Pd, M.Pd</td>
+                                <td>5</td>
+                                <td>Teknik Kimia Industri (TKI)</td>
+                                <td><img class="imgge" src="../kakomli/hanik.jpg" alt=""> <br><b> Hanik Muallifah, ST</b></td>
                             </tr>
 
                         </table>

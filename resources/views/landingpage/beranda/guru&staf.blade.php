@@ -1,52 +1,32 @@
 <!doctype html>
 <html lang="zxx">
 
-<!-- Mirrored from templates.hibootstrap.com/viscous/default/blog-details.html by HTTrack Website Copier/3.x [XR&CO'2014'], Tue, 08 Nov 2022 02:34:11 GMT -->
+<!-- Mirrored from templates.hibootstrap.com/viscous/default/team.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Nov 2022 02:34:12 GMT -->
 
 <head>
-    @include('landingpage.layout.head')
+
+   @include('landingpage.layout.head')
 </head>
 
 <body>
 
-    <div class="loader-content">
-        <div class="d-table">
-            <div class="d-table-cell">
-                <div id="loading-center">
-                    <div id="loading-center-absolute">
-                        <div class="object" id="object_one"></div>
-                        <div class="object" id="object_two"></div>
-                        <div class="object" id="object_three"></div>
-                        <div class="object" id="object_four"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    @include('landingpage.layout.header')
+@include('landingpage.layout.header')
 
 
 
-
-    <div class="blog-title blog-title-bg bg-2">
+    <div class="team-title team-title-bg">
         <div class="d-table">
             <div class="d-table-cell">
                 <div class="container">
-                    <div class="blog-title-text">
-                        <h2>Blog Details</h2>
+                    <div class="team-title-text">
+                        <h2>Our Team Members</h2>
                         <ul>
                             <li>
                                 <a href="index.html">Home</a>
                             </li>
                             <li>
                                 <i class="icofont-rounded-double-right"></i>
-                                <a href="blog.html">Blogs</a>
-                            </li>
-                            <li>
-                                <i class="icofont-rounded-double-right"></i>
-                                Blog Details
+                                Team Members
                             </li>
                         </ul>
                     </div>
@@ -56,204 +36,170 @@
     </div>
 
 
-    <div class="blog-details-area blog-details-page-area pt-100">
+    <div class="team-section team-style-two team-style-three team-members pt-100 pb-70">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8">
-                    {{-- <img src="assets/img/blog/7.png" alt="service"> --}}
-                    <div class="blog-details-post">
-                        <div class="blog-post-title">
-                            <h3>
-                                Data Guru & Karyawan
-                            </h3>
-                            <ul>
-                                <li>
-                                    <i class="icofont-calendar"></i>
-                                    20 Feb 2021
-                                </li>
-                                <li>
-                                    <i class="icofont-ui-user"></i>
-                                    <a href="#">John Doe</a>
-                                </li>
-                            </ul>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-card">
+                        <div class="team-img">
+                            <img class="imgguru" src="../guru/rudi.jpg" alt="team member">
+                            <div class="team-social">
+                                <a href="#"><i class="icofont-facebook"></i></a>
+                                <a href="#"><i class="icofont-twitter"></i></a>
+                                <a href="#"><i class="icofont-instagram"></i></a>
+                            </div>
                         </div>
-                        <table class="table table-bordered">
-                            <thead>
-                            <th> No </th>
-                            <th> Foto </th>
-                            <th> Nama </th>
-                            <th> NIP </th>
-                            <th> TEMPAT LAHIR </th>
-                            <th> TGL LAHIR </th>
-                            <th> TMT AWAL</th>
-                            <th> STATUS </th>
-                            <th> GOL.RUANGAN </th>
-                            <th> JABATAN</th>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>1</td>
-                                <td>RUDI TRISANTOSO, S.Pd, M.Pd</td>
-                                <td>19710124 199512 1 001</td>
-                                <td>Pasuruan</td>
-                                <td>24 Jan 1971</td>
-                                <td>16 Jan 2019</td>
-                                <td>PNS</td>
-                                <td>IV/b – Pembina Tingkat I</td>
-                                <td>KEPALA SEKOLAH</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="page-button">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="theme-button">
-                                    <a href="#" class="default-btn">
-                                        <i class="icofont-rounded-left"></i>
-                                        Previous Post
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-3 offset-md-6">
-                                <div class="theme-button">
-                                    <a href="#" class="default-btn">
-                                        Next Post
-                                        <i class="icofont-rounded-right"></i>
-                                    </a>
-                                </div>
-                            </div>
+                        <div class="team-text">
+                            <h4>RUDI TRISANTOSO, S.Pd, M.Pd</h4>
+                            <p>Kepala Sekolah</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 main-service-area blog-side-bar">
-                    <div class="service-sidebar">
-                        <form class="search-form">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Search">
-                                <button type="submit" class="btn btn-primary">
-                                    <i class="icofont-search-1"></i>
-                                </button>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-card">
+                        <div class="team-img">
+                            <img class="imgguru" src="../guru/titik.jpg" alt="team member">
+                            <div class="team-social">
+                                <a href="#"><i class="icofont-facebook"></i></a>
+                                <a href="#"><i class="icofont-twitter"></i></a>
+                                <a href="#"><i class="icofont-instagram"></i></a>
                             </div>
-                        </form>
-                        <div class="service-list">
-                            <p class="sidetitle">Instansi Terkait</p>
-                            <ul>
-                                <li class="hcard overflow-auto">
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Cabang Dinas Pendidikan Wilayah Pasuruan
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Kementerian Pendidikan & Kebudayaan
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Direktorat PSMK
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Dinas Pendidikan Jatim
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Pemerintah Kabupaten Pasuruan
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Dinas Ketenagakerjaan Kabupaten Pasuruan
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Sistem Informasi Inovasi Sekolah
-                                    </a>
-                                </li>
-                            </ul>
-                            <p class="sidetitle">Potensi Sekitar</p>
-                            <ul>
-                                <li class="hcard overflow-auto">
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Kecamatan Sukorejo Kab.Pasuruan
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Kaboki-Pionir Ekspor Tas Rajut
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Taman Safari Indonesia 2
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Saygon Waterpark
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Kebon Raya Purwodadi
-                                    </a>
-                                </li>
-                            </ul>
-                            <p class="sidetitle">Kategori</p>
-                            <ul>
-                                <li class="hcard overflow-auto border-0">
-                                    <a class="colorori mb-2 effecthover-s" href="#">
-                                        <i class="icofont-ui-folder iknrounded"></i>
-                                        Agenda Sekolah
-                                    </a>
-                                    <a class="colorori mb-2 effecthover-s" href="#">
-                                        <i class="icofont-ui-folder iknrounded"></i>
-                                        Artikel Guru
-                                    </a>
-                                    <a class="colorori mb-2 effecthover-s" href="#">
-                                        <i class="icofont-ui-folder iknrounded"></i>
-                                        Informasi Sekolah
-                                    </a>
-                                    <a class="colorori mb-2 effecthover-s" href="#">
-                                        <i class="icofont-ui-folder iknrounded"></i>
-                                        Kegiatan BKK
-                                    </a>
-                                    <a class="colorori mb-2 effecthover-s" href="#">
-                                        <i class="icofont-ui-folder iknrounded"></i>
-                                        Kegiatan Sekolah
-                                    </a>
-                                    <a class="colorori mb-2 effecthover-s" href="#">
-                                        <i class="icofont-ui-folder iknrounded"></i>
-                                        Lowongan Kerja
-                                    </a>
-                                </li>
-                            </ul>
-                             <p class="sidetitle">Email :</p>
-                            <ul>
-                                <li class="hcard overflow-auto border-0">
-                                    <a class="colorori mb-2 effecthover-s" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                       <b>info@smkn1sukorejo.sch.id</b>
-                                    </a>
-                                </li>
-                            </ul>
-                             <p class="sidetitle">Alamat</p>
-                            <ul>
-                               <div class="textwidget">
-                               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.585483431905!2d112.7150166749192!3d-7.727543392290657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7d1337b9fbe51%3A0x5f53153c148fedfd!2sSMK%20Negeri%201%20Sukorejo!5e0!3m2!1sid!2sid!4v1667957123853!5m2!1sid!2sid" width="415" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            </ul>
+                        </div>
+                        <div class="team-text">
+                            <h4>TITIK CHOMZAH, <br> S.Pd</h4>
+                            <p>	WAKA KURIKULUM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-card">
+                        <div class="team-img">
+                            <img class="imgguru" src="../guru/asnah.jpg" alt="team member">
+                            <div class="team-social">
+                                <a href="#"><i class="icofont-facebook"></i></a>
+                                <a href="#"><i class="icofont-twitter"></i></a>
+                                <a href="#"><i class="icofont-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-text">
+                            <h4>ASNAH YUNIARTI, <br> S.Pd</h4>
+                            <p>WAKA SARANA DAN PRASARANA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-card">
+                        <div class="team-img">
+                            <img class="imgguru" src="../guru/elly.jpg" alt="team member">
+                            <div class="team-social">
+                                <a href="#"><i class="icofont-facebook"></i></a>
+                                <a href="#"><i class="icofont-twitter"></i></a>
+                                <a href="#"><i class="icofont-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-text">
+                            <h4>ELLYA MAGHFIRLI, <br> S.Pd</h4>
+                            <p>WAKA KESISWAAN</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-card">
+                        <div class="team-img">
+                            <img class="imgguru" src="../guru/joko.jpg" alt="team member">
+                            <div class="team-social">
+                                <a href="#"><i class="icofont-facebook"></i></a>
+                                <a href="#"><i class="icofont-twitter"></i></a>
+                                <a href="#"><i class="icofont-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-text">
+                            <h4>JOKO SISWANTO, S.T., M.Pd</h4>
+                            <p>WAKA HUMAS DAN <br> HKI</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-card">
+                        <div class="team-img">
+                            <img class="imgguru" src="../guru/rohmad.jpg" alt="team member">
+                            <div class="team-social">
+                                <a href="#"><i class="icofont-facebook"></i></a>
+                                <a href="#"><i class="icofont-twitter"></i></a>
+                                <a href="#"><i class="icofont-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-text">
+                            <h4>ROHMAD MUNANDAR, S.Pd</h4>
+                            <p>KAKOMLI TEKNIK KENDARAAN RINGAN</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-card">
+                        <div class="team-img">
+                            <img class="imgguru" src="../guru/hanny.jpg" alt="team member">
+                            <div class="team-social">
+                                <a href="#"><i class="icofont-facebook"></i></a>
+                                <a href="#"><i class="icofont-twitter"></i></a>
+                                <a href="#"><i class="icofont-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-text">
+                            <h4>HANIK MUALLIFAH, <br> S.T</h4>
+                            <p>KAKOMLI TEKNIK KIMIA <br> INDUSTRI</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-card">
+                        <div class="team-img">
+                            <img class="imgguru" src="../guru/sofan.jpg" alt="team member">
+                            <div class="team-social">
+                                <a href="#"><i class="icofont-facebook"></i></a>
+                                <a href="#"><i class="icofont-twitter"></i></a>
+                                <a href="#"><i class="icofont-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-text">
+                            <h4>SOFAN DEDI PRINYATO, S.Pd., Gr</h4>
+                            <p>KAKOMLI TEKNIK ELEKTRONIKA INDUSTRI</p>
                         </div>
                     </div>
                 </div>
             </div>
+            <nav>
+                <ul class="pagination  justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                            <i class="icofont-rounded-left"></i>
+                        </a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item" aria-current="page">
+                        <a class="page-link active" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">
+                            <i class="icofont-rounded-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </div>
 
 
-
-
-    <div class="contact-section details-page">
+    <div class="contact-section contact-style-two">
         <div class="container">
             <div class="contact-area">
                 <div class="row align-items-center">
-                    <div class="col-lg-6 col-md-6">
+                    <div class="col-md-6">
                         <div class="contact-img">
                             <img src="assets/img/contact-img.png" alt="contact image">
                         </div>
@@ -305,7 +251,7 @@
     </div>
 
 
-    <footer class="footer-area">
+    <footer class="footer-area footer-style-two">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6">
@@ -400,9 +346,9 @@
                             <li>
                                 <i class="icofont-ui-message"></i>
                                 <a
-                                    href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#abc2c5cdc4ebddc2d8c8c4ded885c8c4c6">
+                                    href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#4a23242c250a3c233929253f3964292527">
                                     <span class="__cf_email__"
-                                        data-cfemail="c0a9aea6af80b6a9b3a3afb5b3eea3afad">[email&#160;protected]</span>
+                                        data-cfemail="3a53545c557a4c534959554f4914595557">[email&#160;protected]</span>
                                 </a>
                             </li>
                         </ul>
@@ -447,28 +393,10 @@
         <i class="icofont-scroll-long-up"></i>
     </div>
 
-    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-    <script src="assets/js/jquery.min.js"></script>
+@include('landingpage.layout.js')
 
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-
-    <script src="assets/js/owl.carousel.min.js"></script>
-
-    <script src="assets/js/slick.min.js"></script>
-
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-
-    <script src="assets/js/meanmenu.js"></script>
-
-    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
-
-    <script src="assets/js/form-validator.min.js"></script>
-
-    <script src="assets/js/contact-form-script.js"></script>
-
-    <script src="assets/js/custom.js"></script>
 </body>
 
-<!-- Mirrored from templates.hibootstrap.com/viscous/default/blog-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Nov 2022 02:34:12 GMT -->
+<!-- Mirrored from templates.hibootstrap.com/viscous/default/team.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Nov 2022 02:34:13 GMT -->
 
 </html>
