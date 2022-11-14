@@ -76,10 +76,12 @@
     display: -webkit-box;
     word-break: break-word;
 }
-.h-200{
+
+.h-200 {
     height: 200px;
 }
-.badge{
+
+.badge {
     display: inline-block;
     padding: 0.25em 0.4em;
     font-size: 75%;
@@ -90,14 +92,86 @@
     vertical-align: baseline;
     border-radius: 0.25rem;
 }
-.dangerspan{
+
+.dangerspan {
     background-color: red;
     color: white;
 }
-.secondspan{
-    background-color:#6c757d;
+
+.secondspan {
+    background-color: #6c757d;
     color: white;
 }
+
+.imgvisi {
+    width: -webkit-fill-available;
+}
+
+.w-48 {
+    width: 48%;
+}
+
+.nameso {
+    position: absolute;
+    bottom: -51px;
+    text-align: center;
+    background: blue;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.shadows {
+    box-shadow: 0 0 25px 0 #0000001f;
+}
+
+.mb-40px {
+    margin-bottom: 40px !important;
+}
+
+.img-overlay {
+    position: relative;
+    /* width: 25%; */
+}
+
+.img-overlay-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    /* background-color: rgba(0, 0, 0, .5); */
+}
+
+.img-overlay:hover .overlay {
+    opacity: 1;
+}
+.h-12pc{
+    height: 12pc;
+}
+.text {
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 86%;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, .5);
+}
+
 /***************** RESPONSIVE ZAKI *************/
 @media (max-width:767px) {
     .ytvideo {

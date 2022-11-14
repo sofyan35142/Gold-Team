@@ -58,120 +58,47 @@
                         <img src="../assets/img/strukturorganisasi.jpg" alt="service">
                     </div>
                 </div>
-                <div class="col-lg-4 main-service-area blog-side-bar">
-                    <div class="service-sidebar">
-                        <form class="search-form">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Search">
-                                <button type="submit" class="btn btn-primary">
-                                    <i class="icofont-search-1"></i>
-                                </button>
+                <div class="col-lg-4 main-service-area blog-side-bar border shadows mb-40px">
+                    <div class="row">
+                        <div class="col-lg-6 mt-3">
+                            <div class="img-overlay">
+                                <img class="h-12pc w-100" src="../assets/img/so/rudi.jpg" alt="Avatar" class="img-overlay-image">
+                                <div class="overlay">
+                                    <div class="text">RUDI TRISANTOSO, S.Pd, M.Pd</div>
+                                </div>
                             </div>
-                        </form>
-                        <div class="service-list">
-                            <p class="sidetitle">Instansi Terkait</p>
-                            <ul>
-                                <li class="hcard overflow-auto">
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Cabang Dinas Pendidikan Wilayah Pasuruan
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Kementerian Pendidikan & Kebudayaan
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Direktorat PSMK
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Dinas Pendidikan Jatim
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Pemerintah Kabupaten Pasuruan
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Dinas Ketenagakerjaan Kabupaten Pasuruan
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Sistem Informasi Inovasi Sekolah
-                                    </a>
-                                </li>
-                            </ul>
-                            <p class="sidetitle">Potensi Sekitar</p>
-                            <ul>
-                                <li class="hcard overflow-auto">
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Kecamatan Sukorejo Kab.Pasuruan
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Kaboki-Pionir Ekspor Tas Rajut
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Taman Safari Indonesia 2
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Saygon Waterpark
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Kebon Raya Purwodadi
-                                    </a>
-                                </li>
-                            </ul>
-                            <p class="sidetitle">Kategori</p>
-                            <ul>
-                                <li class="hcard overflow-auto border-0">
-                                    <a class="colorori mb-2 effecthover-s" href="#">
-                                        <i class="icofont-ui-folder iknrounded"></i>
-                                        Agenda Sekolah
-                                    </a>
-                                    <a class="colorori mb-2 effecthover-s" href="#">
-                                        <i class="icofont-ui-folder iknrounded"></i>
-                                        Artikel Guru
-                                    </a>
-                                    <a class="colorori mb-2 effecthover-s" href="#">
-                                        <i class="icofont-ui-folder iknrounded"></i>
-                                        Informasi Sekolah
-                                    </a>
-                                    <a class="colorori mb-2 effecthover-s" href="#">
-                                        <i class="icofont-ui-folder iknrounded"></i>
-                                        Kegiatan BKK
-                                    </a>
-                                    <a class="colorori mb-2 effecthover-s" href="#">
-                                        <i class="icofont-ui-folder iknrounded"></i>
-                                        Kegiatan Sekolah
-                                    </a>
-                                    <a class="colorori mb-2 effecthover-s" href="#">
-                                        <i class="icofont-ui-folder iknrounded"></i>
-                                        Lowongan Kerja
-                                    </a>
-                                </li>
-                            </ul>
                         </div>
-                        {{-- <div class="tags">
-                            <p>Most Popular Tags</p>
-                            <a href="#">Enjoy</a>
-                            <a href="#">Clean</a>
-                            <a href="#">Hygienic</a>
-                            <a href="#">Time</a>
-                            <a href="#">Brush</a>
-                            <a href="#">Wash</a>
-                            <a href="#">Call</a>
-                        </div> --}}
-                        <div class="discount-text" style="background: transparent">
-                            <iframe class="ytvideo" src="https://www.youtube.com/embed/oQKjX1z7aMM"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                        <div class="col-lg-6 mt-3">
+                            <div class="img-overlay">
+                                <img class="h-12pc w-100" src="../assets/img/so/titik.jpg" alt="Avatar" class="img-overlay-image">
+                                <div class="overlay">
+                                    <div class="text">TITIK CHOMZAH, S.Pd</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mt-3">
+                            <div class="img-overlay">
+                                <img class="h-12pc w-100" src="../assets/img/so/ellya.jpg" alt="Avatar" class="img-overlay-image">
+                                <div class="overlay">
+                                    <div class="text">ELLYA MAGHFIRLI, S.Pd</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mt-3">
+                            <div class="img-overlay">
+                                <img class="h-12pc w-100" src="../assets/img/so/asnah.jpg" alt="Avatar" class="img-overlay-image">
+                                <div class="overlay">
+                                    <div class="text">ASNAH YUNIARTI, S.Pd</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mt-3">
+                            <div class="img-overlay">
+                                <img class="h-12pc w-100" src="../assets/img/so/joko.jpeg" alt="Avatar" class="img-overlay-image">
+                                <div class="overlay">
+                                    <div class="text">JOKO SISWANTO, S.T., M.Pd</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -198,17 +125,17 @@
                                     <div class="row">
                                         <div class="col-md-12 col-sm-6">
                                             <div class="form-group">
-                                                <input type="text" name="name" id="name"
-                                                    class="form-control" required=""
-                                                    data-error="Please enter your name" placeholder="Your Name">
+                                                <input type="text" name="name" id="name" class="form-control"
+                                                    required="" data-error="Please enter your name"
+                                                    placeholder="Your Name">
                                                 <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
                                         <div class="col-md-12 col-sm-6">
                                             <div class="form-group">
-                                                <input type="email" name="email" id="email"
-                                                    class="form-control" required=""
-                                                    data-error="Please enter your email" placeholder="Your Email">
+                                                <input type="email" name="email" id="email" class="form-control"
+                                                    required="" data-error="Please enter your email"
+                                                    placeholder="Your Email">
                                                 <div class="help-block with-errors"></div>
                                             </div>
                                         </div>

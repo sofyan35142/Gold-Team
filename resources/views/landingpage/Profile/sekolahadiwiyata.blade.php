@@ -97,119 +97,31 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-4 main-service-area blog-side-bar">
-                    <div class="service-sidebar">
-                        <form class="search-form">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Search">
-                                <button type="submit" class="btn btn-primary">
-                                    <i class="icofont-search-1"></i>
-                                </button>
-                            </div>
-                        </form>
-                        <div class="service-list">
-                            <p class="sidetitle">Instansi Terkait</p>
-                            <ul>
-                                <li class="hcard overflow-auto">
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Cabang Dinas Pendidikan Wilayah Pasuruan
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Kementerian Pendidikan & Kebudayaan
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Direktorat PSMK
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Dinas Pendidikan Jatim
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Pemerintah Kabupaten Pasuruan
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Dinas Ketenagakerjaan Kabupaten Pasuruan
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Sistem Informasi Inovasi Sekolah
-                                    </a>
-                                </li>
-                            </ul>
-                            <p class="sidetitle">Potensi Sekitar</p>
-                            <ul>
-                                <li class="hcard overflow-auto">
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Kecamatan Sukorejo Kab.Pasuruan
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Kaboki-Pionir Ekspor Tas Rajut
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Taman Safari Indonesia 2
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Saygon Waterpark
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Kebon Raya Purwodadi
-                                    </a>
-                                </li>
-                            </ul>
-                            <p class="sidetitle">Kategori</p>
-                            <ul>
-                                <li class="hcard overflow-auto border-0">
-                                    <a class="colorori mb-2 effecthover-s" href="#">
-                                        <i class="icofont-ui-folder iknrounded"></i>
-                                        Agenda Sekolah
-                                    </a>
-                                    <a class="colorori mb-2 effecthover-s" href="#">
-                                        <i class="icofont-ui-folder iknrounded"></i>
-                                        Artikel Guru
-                                    </a>
-                                    <a class="colorori mb-2 effecthover-s" href="#">
-                                        <i class="icofont-ui-folder iknrounded"></i>
-                                        Informasi Sekolah
-                                    </a>
-                                    <a class="colorori mb-2 effecthover-s" href="#">
-                                        <i class="icofont-ui-folder iknrounded"></i>
-                                        Kegiatan BKK
-                                    </a>
-                                    <a class="colorori mb-2 effecthover-s" href="#">
-                                        <i class="icofont-ui-folder iknrounded"></i>
-                                        Kegiatan Sekolah
-                                    </a>
-                                    <a class="colorori mb-2 effecthover-s" href="#">
-                                        <i class="icofont-ui-folder iknrounded"></i>
-                                        Lowongan Kerja
-                                    </a>
-                                </li>
-                            </ul>
+                <div class="col-lg-4 main-service-area blog-side-bar shadow ">
+                    <div class="blog-area">
+                        <div class="blog-img">
+                            <a href="blog-details.html">
+                                <img src="../assets/img/blog/1.png" alt="blog image">
+                            </a>
                         </div>
-                        {{-- <div class="tags">
-                            <p>Most Popular Tags</p>
-                            <a href="#">Enjoy</a>
-                            <a href="#">Clean</a>
-                            <a href="#">Hygienic</a>
-                            <a href="#">Time</a>
-                            <a href="#">Brush</a>
-                            <a href="#">Wash</a>
-                            <a href="#">Call</a>
-                        </div> --}}
-                        <div class="ratio ratio-16x9">
-                            <iframe
-                                src="https://www.youtube.com/embed/WxgpJkI4qAg?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0"
-                                title="YouTube video" allowfullscreen></iframe>
+                        <div class="blog-text">
+                            <h4><a href="blog-details.html">How to cleanroom yourself</a></h4>
+                            <ul>
+                                <li>
+                                    <i class="icofont-calendar"></i>
+                                    20 Feb 2021
+                                </li>
+                                <li>
+                                    <i class="icofont-ui-user"></i>
+                                    <a href="#">John Doe</a>
+                                </li>
+                            </ul>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor contratc
+                                ut labore et dolore magna aliqua, sed do eiusmod.</p>
+                            <a href="blog-details.html" class="blog-btn">
+                                Read more
+                                <i class="icofont-rounded-right"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -236,17 +148,17 @@
                                     <div class="row">
                                         <div class="col-md-12 col-sm-6">
                                             <div class="form-group">
-                                                <input type="text" name="name" id="name"
-                                                    class="form-control" required=""
-                                                    data-error="Please enter your name" placeholder="Your Name">
+                                                <input type="text" name="name" id="name" class="form-control"
+                                                    required="" data-error="Please enter your name"
+                                                    placeholder="Your Name">
                                                 <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
                                         <div class="col-md-12 col-sm-6">
                                             <div class="form-group">
-                                                <input type="email" name="email" id="email"
-                                                    class="form-control" required=""
-                                                    data-error="Please enter your email" placeholder="Your Email">
+                                                <input type="email" name="email" id="email" class="form-control"
+                                                    required="" data-error="Please enter your email"
+                                                    placeholder="Your Email">
                                                 <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
