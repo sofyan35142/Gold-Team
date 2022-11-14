@@ -192,7 +192,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link dropdown-toggle">
+                            <a href="/lsp" class="nav-link dropdown-toggle">
                                 LSP
                                 <i class="icofont-rounded-right"></i>
                             </a>
