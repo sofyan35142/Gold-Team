@@ -53,7 +53,7 @@
     <div class="service-details-area main-service-area pt-100 services-details-page">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8">
+                <div class="col-lg-12">
                     {{-- <img src="foto/jurusan/TKR.JPG" alt="service"> --}}
                     <div class="service-details-post">
                         <h1>Tempat Uji Kompetensi</h1>
@@ -89,44 +89,7 @@
                             <br />
                             Jenis TUK : Sewaktu
                         </p>
-                        <div class="entry-content">
-                            <div data-elementor-type="wp-page" data-elementor-id="1704" class="elementor elementor-1704"
-                                data-elementor-settings="[]">
-                                <div class="elementor-inner">
-                                    <div class="elementor-section-wrap">
-                                        <section
-                                            class="elementor-element elementor-element-ee694aa elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section"
-                                            data-id="ee694aa" data-element_type="section">
-                                            <div class="elementor-container elementor-column-gap-default">
-                                                <div class="elementor-row">
-                                                    <div class="elementor-element elementor-element-5126293 elementor-column elementor-col-100 elementor-top-column"
-                                                        data-id="5126293" data-element_type="column">
-                                                        <div class="elementor-column-wrap  elementor-element-populated">
-                                                            <div class="elementor-widget-wrap">
-                                                                <div class="elementor-element elementor-element-693b17a elementor-widget elementor-widget-image"
-                                                                    data-id="693b17a" data-element_type="widget"
-                                                                    data-widget_type="image.default">
-                                                                    <div class="elementor-widget-container">
-                                                                        <div class="elementor-image">
-                                                                            <img width="640" height="321"
-                                                                                src="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/Tabel-LSP.jpg"
-                                                                                class="attachment-large size-large"
-                                                                                alt=""
-                                                                                srcset="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/Tabel-LSP.jpg 733w, https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/Tabel-LSP-300x151.jpg 300w"
-                                                                                sizes="(max-width: 640px) 100vw, 640px" />
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </section>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        
 
 
 
@@ -152,67 +115,7 @@ Next
 </div>
 </div> --}}
                 </div>
-                <div class="col-lg-4 main-service-area blog-side-bar">
-                    <div class="service-sidebar">
-                        <form class="search-form">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Search">
-                                <button type="submit" class="btn btn-primary">
-                                    <i class="icofont-search-1"></i>
-                                </button>
-                            </div>
-                        </form>
-                        <div class="service-list">
-                            <p>Categories</p>
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        Toilet Cleaning
-                                        <i class="icofont-rounded-right"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Stay Hygienic
-                                        <i class="icofont-rounded-right"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        News
-                                        <i class="icofont-rounded-right"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Cleaning Floor
-                                        <i class="icofont-rounded-right"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Cleaning Kitchen
-                                        <i class="icofont-rounded-right"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Wash Home
-                                        <i class="icofont-rounded-right"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        {{-- <div class="ratio ratio-16x9">
-                            <iframe
-                                src="https://www.youtube.com/embed/cxtGfQh188A?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0"
-                                title="YouTube video" allowfullscreen></iframe>
-                        </div> --}}
-                        <div class="discount-shapes">
-
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </div>
