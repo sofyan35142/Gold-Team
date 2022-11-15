@@ -110,7 +110,97 @@
                     </div>
                 </div>
                 <div class="col-lg-4 main-service-area blog-side-bar">
-                   
+
+                    {{-- <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-e42d576"
+                        data-id="e42d576" data-element_type="column">
+                        <div class="elementor-column-wrap elementor-element-populated">
+                            <div class="elementor-widget-wrap">
+                                <div class="elementor-element elementor-element-4e51a48 elementor-widget elementor-widget-heading"
+                                    data-id="4e51a48" data-element_type="widget" data-widget_type="heading.default">
+                                    <div class="elementor-widget-container">
+                                        <h3 class="elementor-heading-title elementor-size-default">Guru Prodi TKJ</h3>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-4afdaa1 elementor-arrows-position-inside elementor-pagination-position-outside elementor-widget elementor-widget-image-carousel"
+                                    data-id="4afdaa1" data-element_type="widget"
+                                    data-settings="{&quot;slides_to_show&quot;:&quot;1&quot;,&quot;navigation&quot;:&quot;both&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;infinite&quot;:&quot;yes&quot;,&quot;effect&quot;:&quot;slide&quot;,&quot;speed&quot;:500}"
+                                    data-widget_type="image-carousel.default">
+                                    <div class="elementor-widget-container">
+                                        <div class="elementor-image-carousel-wrapper swiper-container" dir="ltr">
+                                            <div class="elementor-image-carousel swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <figure class="swiper-slide-inner"><img class="swiper-slide-image"
+                                                            src="https://smktelkom-bdg.sch.id/wp-content/uploads/2020/11/Bu-Mila-225x300.jpg"
+                                                            alt="Milkhatussyafa&#039;ah Taufiq" />
+                                                        <figcaption class="elementor-image-carousel-caption">
+                                                            Milkhatussyafa'ah Taufiq</figcaption>
+                                                    </figure>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <figure class="swiper-slide-inner"><img class="swiper-slide-image"
+                                                            src="https://smktelkom-bdg.sch.id/wp-content/uploads/2020/11/Bu-Fitri-1-225x300.jpg"
+                                                            alt="Fitri Yanti" />
+                                                        <figcaption class="elementor-image-carousel-caption">Fitri Yanti
+                                                        </figcaption>
+                                                    </figure>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <figure class="swiper-slide-inner"><img class="swiper-slide-image"
+                                                            src="https://smktelkom-bdg.sch.id/wp-content/uploads/2020/11/Bu-Ane-1-225x300.jpg"
+                                                            alt="Ane Riyana" />
+                                                        <figcaption class="elementor-image-carousel-caption">Ane Riyana
+                                                        </figcaption>
+                                                    </figure>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <figure class="swiper-slide-inner"><img class="swiper-slide-image"
+                                                            src="https://smktelkom-bdg.sch.id/wp-content/uploads/2020/11/Pak-Pipin-225x300.jpg"
+                                                            alt="Muhammad Thoifur" />
+                                                        <figcaption class="elementor-image-carousel-caption">Muhammad
+                                                            Thoifur</figcaption>
+                                                    </figure>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <figure class="swiper-slide-inner"><img class="swiper-slide-image"
+                                                            src="https://smktelkom-bdg.sch.id/wp-content/uploads/2020/09/260-300x300.jpg"
+                                                            alt="Amorsa Erlosima Prianda" />
+                                                        <figcaption class="elementor-image-carousel-caption">Amorsa
+                                                            Erlosima Prianda</figcaption>
+                                                    </figure>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <figure class="swiper-slide-inner"><img class="swiper-slide-image"
+                                                            src="https://smktelkom-bdg.sch.id/wp-content/uploads/2020/11/Pak-Darman-225x300.jpg"
+                                                            alt="Maidarman" />
+                                                        <figcaption class="elementor-image-carousel-caption">Maidarman
+                                                        </figcaption>
+                                                    </figure>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <figure class="swiper-slide-inner"><img class="swiper-slide-image"
+                                                            src="https://smktelkom-bdg.sch.id/wp-content/uploads/2020/11/Pak-Arariko-1.png"
+                                                            alt="Arariko" />
+                                                        <figcaption class="elementor-image-carousel-caption">Arariko
+                                                        </figcaption>
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-pagination"></div>
+                                            <div class="elementor-swiper-button elementor-swiper-button-prev">
+                                                <i aria-hidden="true" class="eicon-chevron-left"></i> <span
+                                                    class="elementor-screen-only">Previous</span>
+                                            </div>
+                                            <div class="elementor-swiper-button elementor-swiper-button-next">
+                                                <i aria-hidden="true" class="eicon-chevron-right"></i> <span
+                                                    class="elementor-screen-only">Next</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> --}}
+
 
                     <div class="team-section team-style-two team-style-three team-members pt-1000">
                         <div class="team-card">
@@ -150,7 +240,7 @@
             </div>
         </div>
     </div>
-    
+
 
 
     @include('landingpage.layout.footer')

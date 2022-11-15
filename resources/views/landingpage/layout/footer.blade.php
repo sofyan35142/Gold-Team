@@ -23,7 +23,7 @@
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="footer-widget pl-40">
-                    <h3>Services</h3>
+                    <h3>Pos-pos Terbaru</h3>
                     <ul>
                         <li>
                             <i class="icofont-simple-right"></i>
@@ -50,27 +50,31 @@
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="footer-widget pl-40">
-                    <h3>Quick Links</h3>
+                    <h3>Kategori</h3>
                     <ul>
                         <li>
                             <i class="icofont-simple-right"></i>
-                            <a href="index.html">Home</a>
+                            <a href="index.html">Agenda Sekolah</a>
                         </li>
                         <li>
                             <i class="icofont-simple-right"></i>
-                            <a href="about.html">About Us</a>
+                            <a href="about.html">Informasi Sekolah</a>
                         </li>
                         <li>
                             <i class="icofont-simple-right"></i>
-                            <a href="blog.html">Blog</a>
+                            <a href="blog.html">Kegiatan BKK</a>
                         </li>
                         <li>
                             <i class="icofont-simple-right"></i>
-                            <a href="team.html">Team</a>
+                            <a href="team.html">Kegiatan Sekolah</a>
                         </li>
                         <li>
                             <i class="icofont-simple-right"></i>
-                            <a href="testimonial.html">Testimonial</a>
+                            <a href="testimonial.html">Lowongan Kerja</a>
+                        </li>
+                        <li>
+                            <i class="icofont-simple-right"></i>
+                            <a href="testimonial.html">Artikel Guru</a>
                         </li>
                     </ul>
                 </div>
