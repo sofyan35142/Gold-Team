@@ -157,6 +157,10 @@ class LandingController extends Controller
     {
         return view("landingpage.BKK.kegiatan_bkk");
     }
+    public function detail_kegiatan_bkk()
+    {
+        return view("landingpage.BKK.detail.kegiatan_bkk");
+    }
     public function kewirausahaan_bkk()
     {
         return view("landingpage.BKK.kewirausahaan_bkk");
@@ -164,6 +168,10 @@ class LandingController extends Controller
     public function lowongan_kerja()
     {
         return view("landingpage.BKK.lowongan_kerja");
+    }
+    public function detail_lowongan()
+    {
+        return view("landingpage.BKK.detail.detaillowongan");
     }
 
     //Alumni

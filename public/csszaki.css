@@ -156,9 +156,11 @@
 .img-overlay:hover .overlay {
     opacity: 1;
 }
-.h-12pc{
+
+.h-12pc {
     height: 12pc;
 }
+
 .text {
     color: white;
     font-size: 15px;
@@ -171,20 +173,53 @@
     text-align: center;
     background-color: rgba(0, 0, 0, .5);
 }
+
 .blog-area {
-	-webkit-box-shadow: 0 1px 14px rgba(72, 73, 121, .15);
-	box-shadow: 0 1px 14px rgba(72, 73, 121, .15);
-	border-radius: 10px;
-	width: 100%;
-	margin-bottom: 30px
+    -webkit-box-shadow: 0 1px 14px rgba(72, 73, 121, .15);
+    box-shadow: 0 1px 14px rgba(72, 73, 121, .15);
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 30px
 }
-.p-10px{
+
+.p-10px {
     padding: 10px;
 }
-.scrollblg{
+
+.scrollblg {
     overflow: auto;
     height: 358mm;
 }
+
+.overimg {
+    overflow-x: hidden;
+    height: 216px;
+
+}
+
+.elipsiszak {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.elipsisjudul {
+    display: block;
+    /* Fallback for non-webkit */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 53px;
+    /* border: 1px solid black; */
+}
+.float-right{
+    float: right;
+}
+
 /***************** RESPONSIVE ZAKI *************/
 @media (max-width:767px) {
     .ytvideo {

@@ -53,8 +53,10 @@ Route::get('/profil/sekolahrujukan', [LandingController::class, 'sekolahrujukan'
 Route::get('/BKK/visimisi-bkk', [LandingController::class, 'visimisi_bkk']);
 Route::get('/BKK/strukturorganisasi-bkk', [LandingController::class, 'strukturorganisasi_bkk']);
 Route::get('/BKK/kegiatan-bkk', [LandingController::class, 'kegiatan_bkk']);
+Route::get('/BKK/detail-kegiatan-bkk', [LandingController::class, 'detail_kegiatan_bkk']);
 Route::get('/BKK/kewirausahaan-bkk', [LandingController::class, 'kewirausahaan_bkk']);
 Route::get('/BKK/lowongan-kerja', [LandingController::class, 'lowongan_kerja']);
+Route::get('/BKK/detail-lowongan', [LandingController::class, 'detail_lowongan']);
 Route::get('/BKK/bimbingan-karir', [LandingController::class, 'bimbingan_karir']);
 Route::get('/BKK/perusahaan-mitra', [LandingController::class, 'perusahaan_mitra']);
 
