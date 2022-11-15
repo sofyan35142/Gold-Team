@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admincontroller;
 use App\Http\Controllers\LandingController;
 use Illuminate\Support\Facades\Route;
 
@@ -21,7 +22,7 @@ Route::get('/bug', function () {
 
 //BERANDA
 Route::get('/', function () {
-    return view('landingpage.beranda.halutama');
+    return view('landingpage.beranda.beranda');
 });
 Route::get('/keahlian', [LandingController::class, 'keahlian']);
 Route::get('/lokerbkk', [LandingController::class, 'lokerbkk']);
@@ -83,3 +84,7 @@ Route::get('/visimisilsp', [LandingController::class, 'visimisilsp']);
 Route::get('/skematerlisensi', [LandingController::class, 'skematerlisensi']);
 Route::get('/tempatujikom', [LandingController::class, 'tempatujikom']);
 Route::get('/jmlpemegangsertifikat', [LandingController::class, 'jmlpemegangsertifikat']);
+
+
+//Admin
+Route::get('/index', [Admincontroller::class, 'index']);

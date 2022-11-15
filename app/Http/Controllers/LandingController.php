@@ -130,18 +130,6 @@ class LandingController extends Controller
     {
         return view("landingpage.beranda.agenda");
     }
-    public function dharma(){
-        return view('landingpage.Data.dharmawanita');
-    }
-    public function datawalas(){
-        return view('landingpage.Data.datawalas');
-    }
-    public function ekstra(){
-        return view('landingpage.Data.Ekstrakulikuler');
-    }
-    public function prestasi(){
-        return view('landingpage.Data.prestasi');
-    }
 
 
     //===ROUTE BURSA KERJA KHUSUS===//
@@ -174,4 +162,19 @@ class LandingController extends Controller
         public function profilealumni(){
         return view('landingpage.alumni.profilealumni');
     }
+
+    //Data
+        public function dharma(){
+        return view('landingpage.Data.dharmawanita');
+    }
+    public function datawalas(){
+        return view('landingpage.Data.datawalas');
+    }
+    public function ekstra(){
+        return view('landingpage.Data.Ekstrakulikuler');
+    }
+    public function prestasi(){
+        return view('landingpage.Data.prestasi');
+    }
+
 }
