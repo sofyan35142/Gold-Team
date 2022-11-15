@@ -171,7 +171,20 @@
     text-align: center;
     background-color: rgba(0, 0, 0, .5);
 }
-
+.blog-area {
+	-webkit-box-shadow: 0 1px 14px rgba(72, 73, 121, .15);
+	box-shadow: 0 1px 14px rgba(72, 73, 121, .15);
+	border-radius: 10px;
+	width: 100%;
+	margin-bottom: 30px
+}
+.p-10px{
+    padding: 10px;
+}
+.scrollblg{
+    overflow: auto;
+    height: 358mm;
+}
 /***************** RESPONSIVE ZAKI *************/
 @media (max-width:767px) {
     .ytvideo {
