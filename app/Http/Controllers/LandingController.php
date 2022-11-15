@@ -136,9 +136,6 @@ class LandingController extends Controller
     public function datawalas(){
         return view('landingpage.Data.datawalas');
     }
-    public function dataalumni(){
-        return view('landingpage.Data.dataalumni');
-    }
     public function ekstra(){
         return view('landingpage.Data.Ekstrakulikuler');
     }
@@ -167,5 +164,14 @@ class LandingController extends Controller
     public function lowongan_kerja()
     {
         return view("landingpage.BKK.lowongan_kerja");
+    }
+
+    //Alumni
+    public function testimonialumni()
+    {
+        return view("landingpage.alumni.testialumni");
+    }
+        public function profilealumni(){
+        return view('landingpage.alumni.profilealumni');
     }
 }

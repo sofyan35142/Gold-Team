@@ -53,7 +53,7 @@
     <div class="service-details-area main-service-area pt-100 services-details-page">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8">
+                <div class="col-lg-12">
                     {{-- <img src="foto/jurusan/TKR.JPG" alt="service"> --}}
                     <div class="service-details-post">
                         <h1>Skema Terlisensi</h1>
@@ -114,126 +114,14 @@ Next
 </div>
 </div> --}}
                 </div>
-                <div class="col-lg-4 main-service-area blog-side-bar">
-                    <div class="service-sidebar">
-                        <form class="search-form">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Search">
-                                <button type="submit" class="btn btn-primary">
-                                    <i class="icofont-search-1"></i>
-                                </button>
-                            </div>
-                        </form>
-                        <div class="service-list">
-                            <p>Categories</p>
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        Toilet Cleaning
-                                        <i class="icofont-rounded-right"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Stay Hygienic
-                                        <i class="icofont-rounded-right"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        News
-                                        <i class="icofont-rounded-right"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Cleaning Floor
-                                        <i class="icofont-rounded-right"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Cleaning Kitchen
-                                        <i class="icofont-rounded-right"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Wash Home
-                                        <i class="icofont-rounded-right"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        {{-- <div class="ratio ratio-16x9">
-                            <iframe
-                                src="https://www.youtube.com/embed/cxtGfQh188A?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0"
-                                title="YouTube video" allowfullscreen></iframe>
-                        </div> --}}
-                        <div class="discount-shapes">
-
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </div>
     </div>
 
 
-    <div class="contact-section">
-        <div class="container">
-            <div class="contact-area">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 col-md-6">
-                        <div class="contact-img">
-                            <img src="assets/img/contact-img.png" alt="contact image">
-                        </div>
-                    </div>
-                    <div class="col-lg-5 col-md-6 offset-lg-1">
-                        <div class="section-head">
-                            <h2>We Love to <span> Hear from You</span></h2>
-                            <p>Feel free and share with us. We will get you</p>
-                        </div>
-                        <div class="contact-form">
-                            <form id="contactForm">
-                                <div class="row">
-                                    <div class="col-md-12 col-sm-6">
-                                        <div class="form-group">
-                                            <input type="text" name="name" id="name" class="form-control"
-                                                required data-error="Please enter your name" placeholder="Your Name">
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12 col-sm-6">
-                                        <div class="form-group">
-                                            <input type="email" name="email" id="email" class="form-control"
-                                                required data-error="Please enter your email" placeholder="Your Email">
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12 col-md-12">
-                                        <div class="form-group">
-                                            <textarea name="message" class="form-control" id="message" cols="30" rows="5" required
-                                                data-error="Write your message" placeholder="Your Message"></textarea>
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12 col-md-12">
-                                        <button type="submit" class="default-btn page-btn">
-                                            Send Message
-                                        </button>
-                                        <div id="msgSubmit" class="h3 text-center hidden"></div>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    
 
 
     @include('landingpage.layout.footer')

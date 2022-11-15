@@ -1,282 +1,34 @@
 <!doctype html>
 <html lang="zxx">
 
-<!-- Mirrored from templates.hibootstrap.com/viscous/default/blog-details.html by HTTrack Website Copier/3.x [XR&CO'2014'], Tue, 08 Nov 2022 02:34:11 GMT -->
+<!-- Mirrored from templates.hibootstrap.com/viscous/default/team.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Nov 2022 02:34:12 GMT -->
 
 <head>
-    @include('landingpage.layout.head')
+
+   @include('landingpage.layout.head')
 </head>
 
 <body>
 
-    <div class="loader-content">
-        <div class="d-table">
-            <div class="d-table-cell">
-                <div id="loading-center">
-                    <div id="loading-center-absolute">
-                        <div class="object" id="object_one"></div>
-                        <div class="object" id="object_two"></div>
-                        <div class="object" id="object_three"></div>
-                        <div class="object" id="object_four"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    @include('landingpage.layout.header')
+@include('landingpage.layout.header')
 
 
 
-
-    <div class="service-title-bg">
+    <div class="team-title team-title-bg">
         <div class="d-table">
             <div class="d-table-cell">
                 <div class="container">
-                    {{-- <div class="blog-title-text">
-                        <h2>Blog Details</h2>
+                    <div class="team-title-text">
+                        <h2>Our Team Members</h2>
                         <ul>
                             <li>
                                 <a href="index.html">Home</a>
                             </li>
                             <li>
                                 <i class="icofont-rounded-double-right"></i>
-                                <a href="blog.html">Blogs</a>
-                            </li>
-                            <li>
-                                <i class="icofont-rounded-double-right"></i>
-                                Blog Details
+                                Team Members
                             </li>
                         </ul>
-                    </div> --}}
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="blog-details-area blog-details-page-area pt-100">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    {{-- <img src="assets/img/blog/7.png" alt="service"> --}}
-                    <div class="blog-details-post">
-                        <div class="blog-post-title">
-                            <h3>
-                                Data Guru & Karyawan
-                            </h3>
-                            <ul>
-                                <li>
-                                    <i class="icofont-calendar"></i>
-                                    20 Feb 2021
-                                </li>
-                                <li>
-                                    <i class="icofont-ui-user"></i>
-                                    <a href="#">John Doe</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <table class="table table-bordered">
-                            <thead>
-                            {{-- <th> No </th> --}}
-                            <th> Foto </th>
-                            <th> Nama </th>
-                            <th> NIP </th>
-                            <th> TEMPAT LAHIR </th>
-                            <th> TGL LAHIR </th>
-                            <th> TMT AWAL</th>
-                            <th> STATUS </th>
-                            <th> GOL RUANGAN </th>
-                            <th> JABATAN</th>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                {{-- <td>1</td> --}}
-                                <td>foto</td>
-                                <td>RUDI TRISANTOSO, S.Pd, M.Pd</td>
-                                <td>19710124 199512 1 001</td>
-                                <td>Pasuruan</td>
-                                <td>24 Jan 1971</td>
-                                <td>16 Jan 2019</td>
-                                <td>PNS</td>
-                                <td>IV/b  Pembina Tingkat I</td>
-                                <td>KEPALA SEKOLAH</td>
-                            </tr>
-                            <tr>
-                                {{-- <td>2</td> --}}
-                                <td>foto</td>
-                                <td>TITIK CHOMZAH, S.Pd</td>
-                                <td>19731110 200801 2 007</td>
-                                <td>Pasuruan</td>
-                                <td>10 Nov 1973</td>
-                                <td>06 Okt 2011</td>
-                                <td>PNS</td>
-                                <td>III/c</td>
-                                <td>WAKA KURIKULUM</td>
-                            </tr>
-                            <tr>
-                                {{-- <td>3</td> --}}
-                                <td><img class="imgguru" src="../guru/asnah.jpg" alt=""></td>
-                                <td>ASNAH YUNIARTI, S.Pd</td>
-                                <td>19730806 200604 2 012</td>
-                                <td>Pasuruan</td>
-                                <td>06 Ags 1973</td>
-                                <td>02 Jan 2007</td>
-                                <td>PNS</td>
-                                <td>III/d</td>
-                                <td>WAKA SARANA DAN PRASARANA</td>
-                            </tr>
-                            <tr>
-                                {{-- <td>4</td> --}}
-                                <td><img class="imgguru" src="../guru/elly.jpg" alt=""></td>
-                                <td>ELLYA MAGHFIRLI, S.Pd</td>
-                                <td>19730709 199803 2 007</td>
-                                <td>Pasuruan</td>
-                                <td>09 Jul 1973</td>
-                                <td>01 Jan 2005</td>
-                                <td>PNS</td>
-                                <td>IV/a</td>
-                                <td>WAKA KESISWAAN</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="page-button">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="theme-button">
-                                    <a href="#" class="default-btn">
-                                        <i class="icofont-rounded-left"></i>
-                                        Previous Post
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-3 offset-md-6">
-                                <div class="theme-button">
-                                    <a href="#" class="default-btn">
-                                        Next Post
-                                        <i class="icofont-rounded-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 main-service-area blog-side-bar">
-                    <div class="service-sidebar">
-                        <form class="search-form">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Search">
-                                <button type="submit" class="btn btn-primary">
-                                    <i class="icofont-search-1"></i>
-                                </button>
-                            </div>
-                        </form>
-                        <div class="service-list">
-                            <p class="sidetitle">Instansi Terkait</p>
-                            <ul>
-                                <li class="hcard overflow-auto">
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Cabang Dinas Pendidikan Wilayah Pasuruan
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Kementerian Pendidikan & Kebudayaan
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Direktorat PSMK
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Dinas Pendidikan Jatim
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Pemerintah Kabupaten Pasuruan
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Dinas Ketenagakerjaan Kabupaten Pasuruan
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Sistem Informasi Inovasi Sekolah
-                                    </a>
-                                </li>
-                            </ul>
-                            <p class="sidetitle">Potensi Sekitar</p>
-                            <ul>
-                                <li class="hcard overflow-auto">
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Kecamatan Sukorejo Kab.Pasuruan
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Kaboki-Pionir Ekspor Tas Rajut
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Taman Safari Indonesia 2
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Saygon Waterpark
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Kebon Raya Purwodadi
-                                    </a>
-                                </li>
-                            </ul>
-                            <p class="sidetitle">Kategori</p>
-                            <ul>
-                                <li class="hcard overflow-auto border-0">
-                                    <a class="colorori mb-2 effecthover-s" href="#">
-                                        <i class="icofont-ui-folder iknrounded"></i>
-                                        Agenda Sekolah
-                                    </a>
-                                    <a class="colorori mb-2 effecthover-s" href="#">
-                                        <i class="icofont-ui-folder iknrounded"></i>
-                                        Artikel Guru
-                                    </a>
-                                    <a class="colorori mb-2 effecthover-s" href="#">
-                                        <i class="icofont-ui-folder iknrounded"></i>
-                                        Informasi Sekolah
-                                    </a>
-                                    <a class="colorori mb-2 effecthover-s" href="#">
-                                        <i class="icofont-ui-folder iknrounded"></i>
-                                        Kegiatan BKK
-                                    </a>
-                                    <a class="colorori mb-2 effecthover-s" href="#">
-                                        <i class="icofont-ui-folder iknrounded"></i>
-                                        Kegiatan Sekolah
-                                    </a>
-                                    <a class="colorori mb-2 effecthover-s" href="#">
-                                        <i class="icofont-ui-folder iknrounded"></i>
-                                        Lowongan Kerja
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        {{-- <div class="tags">
-                            <p>Most Popular Tags</p>
-                            <a href="#">Enjoy</a>
-                            <a href="#">Clean</a>
-                            <a href="#">Hygienic</a>
-                            <a href="#">Time</a>
-                            <a href="#">Brush</a>
-                            <a href="#">Wash</a>
-                            <a href="#">Call</a>
-                        </div> --}}
-                        <div class="ratio ratio-16x9">
-                            <iframe
-                                src="https://www.youtube.com/embed/_3QdWBLnRlo?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0"
-                                title="YouTube video" allowfullscreen></iframe>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -284,228 +36,175 @@
     </div>
 
 
-
-
-    <div class="contact-section details-page">
-        <div class="container">
-            <div class="contact-area">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 col-md-6">
-                        <div class="contact-img">
-                            <img src="assets/img/contact-img.png" alt="contact image">
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="section-head">
-                            <h2>We Love to <span> Hear from You</span></h2>
-                            <p>Feel free and share it with us. We will get you</p>
-                        </div>
-                        <div class="contact-form">
-                            <form id="contactForm">
-                                <div class="row">
-                                    <div class="col-md-12 col-sm-6">
-                                        <div class="form-group">
-                                            <input type="text" name="name" id="name" class="form-control"
-                                                required data-error="Please enter your name" placeholder="Your Name">
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12 col-sm-6">
-                                        <div class="form-group">
-                                            <input type="email" name="email" id="email" class="form-control"
-                                                required data-error="Please enter your email"
-                                                placeholder="Your Email">
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12 col-md-12">
-                                        <div class="form-group">
-                                            <textarea name="message" class="form-control" id="message" cols="30" rows="5" required
-                                                data-error="Write your message" placeholder="Your Message"></textarea>
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12 col-md-12">
-                                        <button type="submit" class="default-btn page-btn">
-                                            Send Message
-                                        </button>
-                                        <div id="msgSubmit" class="h3 text-center hidden"></div>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <footer class="footer-area">
+    <div class="team-section team-style-two team-style-three team-members pt-100 pb-70">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6">
-                    <div class="footer-widget">
-                        <div class="logo">
-                            <a href="index.html">
-                                <img src="assets/img/logo-2.png" alt="logo">
-                            </a>
+                    <div class="team-card">
+                        <div class="team-img">
+                            <img class="imgguru" src="../guru/rudi.jpg" alt="team member">
+                            <div class="team-social">
+                                <a href="#"><i class="icofont-facebook"></i></a>
+                                <a href="#"><i class="icofont-twitter"></i></a>
+                                <a href="#"><i class="icofont-instagram"></i></a>
+                            </div>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, tur adipiscing elit, sed do eiusmod tempor contratc.</p>
-                        <div class="email">
-                            <form class="newsletter-form" data-bs-toggle="validator">
-                                <input type="email" class="form-control" placeholder="Enter Your Email"
-                                    name="EMAIL" required autocomplete="off">
-                                <button class="default-btn electronics-btn" type="submit">
-                                    <i class="icofont-location-arrow"></i>
-                                </button>
-                                <div id="validator-newsletter" class="form-result"></div>
-                            </form>
+                        <div class="team-text">
+                            <h4>RUDI TRISANTOSO, S.Pd, M.Pd</h4>
+                            <p>Kepala Sekolah</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <div class="footer-widget pl-40">
-                        <h3>Services</h3>
-                        <ul>
-                            <li>
-                                <i class="icofont-simple-right"></i>
-                                <a href="service-details.html">Low cost</a>
-                            </li>
-                            <li>
-                                <i class="icofont-simple-right"></i>
-                                <a href="service-details.html">Fastest Service</a>
-                            </li>
-                            <li>
-                                <i class="icofont-simple-right"></i>
-                                <a href="service-details.html">Professional Cleaning</a>
-                            </li>
-                            <li>
-                                <i class="icofont-simple-right"></i>
-                                <a href="service-details.html">Home Cleaning</a>
-                            </li>
-                            <li>
-                                <i class="icofont-simple-right"></i>
-                                <a href="service-details.html">Office Cleaning</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-widget pl-40">
-                        <h3>Quick Links</h3>
-                        <ul>
-                            <li>
-                                <i class="icofont-simple-right"></i>
-                                <a href="index.html">Home</a>
-                            </li>
-                            <li>
-                                <i class="icofont-simple-right"></i>
-                                <a href="about.html">About Us</a>
-                            </li>
-                            <li>
-                                <i class="icofont-simple-right"></i>
-                                <a href="blog.html">Blog</a>
-                            </li>
-                            <li>
-                                <i class="icofont-simple-right"></i>
-                                <a href="team.html">Team</a>
-                            </li>
-                            <li>
-                                <i class="icofont-simple-right"></i>
-                                <a href="testimonial.html">Testimonial</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-widget">
-                        <h3>Find Us</h3>
-                        <p class="find-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed</p>
-                        <ul class="find-us">
-                            <li>
-                                <i class="icofont-location-pin"></i>
-                                28/A Street, New York City
-                            </li>
-                            <li>
-                                <i class="icofont-phone"></i>
-                                <a href="tel:+88 0123 456 789">
-                                    +88 0123 456 789
-                                </a>
-                            </li>
-                            <li>
-                                <i class="icofont-ui-message"></i>
-                                <a
-                                    href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#abc2c5cdc4ebddc2d8c8c4ded885c8c4c6">
-                                    <span class="__cf_email__"
-                                        data-cfemail="c0a9aea6af80b6a9b3a3afb5b3eea3afad">[email&#160;protected]</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="bottom-footer">
-            <div class="container">
-                <div class="row  align-items-center">
-                    <div class="col-lg-6">
-                        <div class="footer-social">
-                            <ul>
-                                <li>
-                                    <a href="#"><i class="icofont-facebook"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="icofont-twitter"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="icofont-linkedin"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="icofont-instagram"></i></a>
-                                </li>
-                            </ul>
+                    <div class="team-card">
+                        <div class="team-img">
+                            <img class="imgguru" src="../guru/titik.jpg" alt="team member">
+                            <div class="team-social">
+                                <a href="#"><i class="icofont-facebook"></i></a>
+                                <a href="#"><i class="icofont-twitter"></i></a>
+                                <a href="#"><i class="icofont-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-text">
+                            <h4>TITIK CHOMZAH, <br> S.Pd</h4>
+                            <p>	WAKA KURIKULUM</p>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="copyright-text text-end">
-                            <p>&copy;2022 Viscous. All Rights Reserved By <a href="https://hibootstrap.com/"
-                                    target="_blank">HiBootstrap</a></p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-card">
+                        <div class="team-img">
+                            <img class="imgguru" src="../guru/asnah.jpg" alt="team member">
+                            <div class="team-social">
+                                <a href="#"><i class="icofont-facebook"></i></a>
+                                <a href="#"><i class="icofont-twitter"></i></a>
+                                <a href="#"><i class="icofont-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-text">
+                            <h4>ASNAH YUNIARTI, <br> S.Pd</h4>
+                            <p>WAKA SARANA DAN PRASARANA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-card">
+                        <div class="team-img">
+                            <img class="imgguru" src="../guru/elly.jpg" alt="team member">
+                            <div class="team-social">
+                                <a href="#"><i class="icofont-facebook"></i></a>
+                                <a href="#"><i class="icofont-twitter"></i></a>
+                                <a href="#"><i class="icofont-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-text">
+                            <h4>ELLYA MAGHFIRLI, <br> S.Pd</h4>
+                            <p>WAKA KESISWAAN</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-card">
+                        <div class="team-img">
+                            <img class="imgguru" src="../guru/joko.jpg" alt="team member">
+                            <div class="team-social">
+                                <a href="#"><i class="icofont-facebook"></i></a>
+                                <a href="#"><i class="icofont-twitter"></i></a>
+                                <a href="#"><i class="icofont-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-text">
+                            <h4>JOKO SISWANTO, S.T., M.Pd</h4>
+                            <p>WAKA HUMAS DAN <br> HKI</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-card">
+                        <div class="team-img">
+                            <img class="imgguru" src="../guru/rohmad.jpg" alt="team member">
+                            <div class="team-social">
+                                <a href="#"><i class="icofont-facebook"></i></a>
+                                <a href="#"><i class="icofont-twitter"></i></a>
+                                <a href="#"><i class="icofont-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-text">
+                            <h4>ROHMAD MUNANDAR, S.Pd</h4>
+                            <p>KAKOMLI TEKNIK KENDARAAN RINGAN</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-card">
+                        <div class="team-img">
+                            <img class="imgguru" src="../guru/hanny.jpg" alt="team member">
+                            <div class="team-social">
+                                <a href="#"><i class="icofont-facebook"></i></a>
+                                <a href="#"><i class="icofont-twitter"></i></a>
+                                <a href="#"><i class="icofont-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-text">
+                            <h4>HANIK MUALLIFAH, <br> S.T</h4>
+                            <p>KAKOMLI TEKNIK KIMIA <br> INDUSTRI</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-card">
+                        <div class="team-img">
+                            <img class="imgguru" src="../guru/sofan.jpg" alt="team member">
+                            <div class="team-social">
+                                <a href="#"><i class="icofont-facebook"></i></a>
+                                <a href="#"><i class="icofont-twitter"></i></a>
+                                <a href="#"><i class="icofont-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-text">
+                            <h4>SOFAN DEDI PRINYATO, S.Pd., Gr</h4>
+                            <p>KAKOMLI TEKNIK ELEKTRONIKA INDUSTRI</p>
                         </div>
                     </div>
                 </div>
             </div>
+            <nav>
+                <ul class="pagination  justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                            <i class="icofont-rounded-left"></i>
+                        </a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item" aria-current="page">
+                        <a class="page-link active" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">
+                            <i class="icofont-rounded-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-    </footer>
+    </div>
+
+@include('landingpage.layout.footer')
 
 
     <div class="top-btn">
         <i class="icofont-scroll-long-up"></i>
     </div>
 
-    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-    <script src="assets/js/jquery.min.js"></script>
+@include('landingpage.layout.js')
 
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-
-    <script src="assets/js/owl.carousel.min.js"></script>
-
-    <script src="assets/js/slick.min.js"></script>
-
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-
-    <script src="assets/js/meanmenu.js"></script>
-
-    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
-
-    <script src="assets/js/form-validator.min.js"></script>
-
-    <script src="assets/js/contact-form-script.js"></script>
-
-    <script src="assets/js/custom.js"></script>
 </body>
 
-<!-- Mirrored from templates.hibootstrap.com/viscous/default/blog-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Nov 2022 02:34:12 GMT -->
+<!-- Mirrored from templates.hibootstrap.com/viscous/default/team.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Nov 2022 02:34:13 GMT -->
 
 </html>

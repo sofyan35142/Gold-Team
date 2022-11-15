@@ -63,7 +63,6 @@
                                     </div>
                                     <div class="blog-text">
                                         <p>Lowongan Kerja PT. ADM</p>
-                                        <br>
                                         <div class="d-flex flex-row">
                                             <div class="p-2">
                                                 <p class="card-text"><small class="text-muted">Status: <span

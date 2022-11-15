@@ -52,9 +52,9 @@
         <div class="container">
             <nav class="navbar navbar-expand-md navbar-light">
                 <a class="navbar-brand" href="index.html">
-                    <img src="foto/header1.png"
+                    <img src="../foto/header1.png"
                         class="main-logo" alt="logo" />
-                    <img src="assets/img/logo-2.png" class="white-logo" alt="logo" />
+                    <img src="../assets/img/logo-2.png" class="white-logo" alt="logo" />
                 </a>
                 <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto">
@@ -62,7 +62,7 @@
                             <a href="/" class="nav-link">Beranda</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link dropdown-toggle active">
+                            <a href="#" class="nav-link dropdown-toggle">
                                 Profil
                                 <i class="icofont-rounded-right"></i>
                             </a>
@@ -146,7 +146,7 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li class="nav-item">
-                                    <a href="/guruu" class="nav-link">DATA FURU & KARYAWAN</a>
+                                    <a href="/guruu" class="nav-link">DATA GURU & KARYAWAN</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="/data/dharma" class="nav-link">DHARMA WANITA PERSATUAN</a>
@@ -155,10 +155,7 @@
                                     <a href="/data/datawalas" class="nav-link">DATA SISWA</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="/data/dataalumni" class="nav-link">DATA ALUMNI</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="/data/ekstraa" class="nav-link">EKSTRAKULIKULER</a>
+                                    <a href="/data/ekstraa" class="nav-link">EKSTRAKURIKULER</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="/data/prestasi" class="nav-link">PRESTASI</a>
@@ -187,15 +184,15 @@
                                     <a href="/BKK/lowongan-kerja" class="nav-link">Lowongan Kerja</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="/BKK/bimbingan-karir" class="nav-link">Bimbingan Karir</a>
+                                    <a href="#" class="nav-link">Bimbingan Karir</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="/BKK/perusahaan-mitra" class="nav-link">Perusahaan Karir</a>
+                                    <a href="#" class="nav-link">Perusahaan Karir</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link dropdown-toggle">
+                            <a href="/lsp" class="nav-link dropdown-toggle">
                                 LSP
                                 <i class="icofont-rounded-right"></i>
                             </a>
@@ -213,6 +210,20 @@
                                     <a href="/jmlpemegangsertifikat" class="nav-link">Jumlah Pemegang Sertifikat</a>
                                 </li>
 
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link dropdown-toggle">
+                                Alumni
+                                <i class="icofont-rounded-right"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a href="/alumni/testimoni" class="nav-link">Testimoni Alumni</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/alumni/profilealumni" class="nav-link">Profil Alumni</a>
+                                </li>
                             </ul>
                         </li>
                     </ul>
