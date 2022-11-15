@@ -108,7 +108,7 @@
                     <h3>Guru Dan Staf</h3>
                     <p>Biodata Guru Dan Karyawan</p>
                     <div class="theme-button">
-                        <a href="service-details.html" class="default-btn">Read More</a>
+                        <a href="/guruu" class="default-btn">Read More</a>
                     </div>
                     <div class="service-shape">
                         <img src="assets/img/service/shapes/service-pattern-6.png" alt="shape">
@@ -123,7 +123,7 @@
                     <h3>Program Keahlian</h3>
                     <p>Pengenalan Kompetensi Keahlian</p>
                     <div class="theme-button">
-                        <a href="service-details.html" class="default-btn">Read More</a>
+                        <a href="/jurusan" class="default-btn">Read More</a>
                     </div>
                     <div class="service-shape">
                         <img src="assets/img/service/shapes/service-pattern-6.png" alt="shape">
@@ -172,7 +172,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 p-0">
                     <div class="about-img">
-                        <img src="assets/img/about-two.png" alt="about image">
+                        <center><img src="../guru/rudi.png" class="imgkep" alt="about image"></center>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -206,6 +206,38 @@
         </div>
     </section>
 
+
+    <div class="service-style-three pt-100 pb-70">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 p-0">
+                    <div class="about-img">
+                        <img src="../guru/video.svg" alt="about image">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-text">
+                        <div class="section-head">
+                            <span><b>Bro, Nonton!</b></span>
+                            <br>
+                            <h3> Video Profil Sketsu</h3>
+                            <br>
+                            <p>Video srofil sekolah memperkenalkan kepada kalian hal-hal berkaitan dengan Kejurusan,
+                                lingkungan sekolah , fasilitas umum sekolah, fasilitas pembelajaran (kelas,lab,dll),
+                                ruang belajar, kegiatan siswa, dan masih banyak lagi. <br>
+
+                                Biar kalian tidak penasaran apa saja yang ada di dalam SMK NEGERI 1 SUKOREJO, segera
+                                tonton video profilnya. Jangan Sampai Tidak Ditonton Nanti Menyesal.</p>
+                        </div>
+                        <div class="theme-button text-left">
+                            <a href="#" class="btn btn-danger"><i class="fa-sharp fa-solid fa-play"></i>
+                                GAISO DIPLAY </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     {{-- <section class="pricing-section pb-70">
         <div class="container">
             <div class="row">
@@ -322,17 +354,16 @@
             </div>
         </div>
     </section> --}}
-
     <div class="team-section pt-100 pb-70">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.585483431905!2d112.7150166749192!3d-7.727543392290657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7d1337b9fbe51%3A0x5f53153c148fedfd!2sSMK%20Negeri%201%20Sukorejo!5e0!3m2!1sid!2sid!4v1667877880917!5m2!1sid!2sid"
-            width="1500" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            width="1450" height="450" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
         <br> <br>
-        {{-- <video width="1500" height="550" controls> --}}
+
         <iframe title="vimeo-player" src="https://player.vimeo.com/video/763637575?h=8fb781726d" width="1400"
             height="450" frameborder="0" allowfullscreen></iframe>
-        {{-- </video>    --}}
+
     </div>
 
     <section class="blog-section pt-100">
@@ -618,7 +649,7 @@
 
     </section>
     @include('landingpage.layout.footer')
-
+    @include('landingpage.layout.js')
     <div class="top-btn">
         <i class="icofont-scroll-long-up"></i>
     </div>
@@ -628,7 +659,6 @@
         });
     </script>
 
-    @include('landingpage.layout.js')
 
 
 </body>
