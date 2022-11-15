@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admincontroller;
+use App\Http\Controllers\JurusanController;
 use App\Http\Controllers\LandingController;
 use Illuminate\Support\Facades\Route;
 
@@ -88,3 +89,6 @@ Route::get('/jmlpemegangsertifikat', [LandingController::class, 'jmlpemegangsert
 
 //Admin
 Route::get('/index', [Admincontroller::class, 'index']);
+Route::get('/jurusanadmin', [JurusanController::class, 'jurusanview'])->name('jurusanview');
+Route::get('/tambahjurusan', [JurusanController::class, 'tambahjurusan']);
+Route::post('/insertjurusan', [JurusanController::class, 'insertjurusan']);
