@@ -32,18 +32,6 @@
                     <div class="d-table-cell">
                         <div class="container">
                             <div class="home-text">
-                                {{-- <h1>Your Hygienic Home Our Responsibility</h1>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                    do eiusmod tempor ut labore et dolore magna aliqua. Quis
-                                    ipsum suspendisse ultrices gravida. Viverra maecenas
-                                    accumsan lacus vel facilisis. Quis ipsum suspendisse
-                                    ultrices gravida.
-                                </p>
-                                <div class="theme-button">
-                                    <a href="about.html" class="default-btn active-btn">know More</a>
-                                    <a href="contact.html" class="default-btn">Get Started</a>
-                                </div> --}}
                             </div>
                         </div>
                     </div>
@@ -230,8 +218,23 @@
                                 tonton video profilnya. Jangan Sampai Tidak Ditonton Nanti Menyesal.</p>
                         </div>
                         <div class="theme-button text-left">
-                            <a href="#" class="btn btn-danger"><i class="fa-sharp fa-solid fa-play"></i>
-                                GAISO DIPLAY </a>
+                            <div class="play-video btn btn-danger"><i class="fa-sharp fa-solid fa-play"></i> Play Video</div>
+
+                            <div class="video-popup modalyosop">
+                                <div class="modal-contentyosop">
+                                    <span class="close-modal">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+                                            <path
+                                                d="M28.5 9.6l-2.1-2.1-8.4 8.4-8.4-8.4-2.1 2.1 8.4 8.4-8.4 8.4 2.1 2.1 8.4-8.4 8.4 8.4 2.1-2.1-8.4-8.4z"
+                                                style="fill: #FFF;" />
+                                        </svg>
+                                    </span>
+                                    <div class="video-container">
+                                        <!-- Enter the video ID into the data-id attribute -->
+                                        <div id="player" data-id="oQKjX1z7aMM"></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -645,8 +648,6 @@
                 </div>
             </div>
         </div>
-
-
     </section>
     @include('landingpage.layout.footer')
     @include('landingpage.layout.js')
@@ -658,9 +659,6 @@
             $('#id1').DataTable();
         });
     </script>
-
-
-
 </body>
 
 <!-- Mirrored from previewthemes.com/enzio/home-1 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 Nov 2022 03:25:34 GMT -->

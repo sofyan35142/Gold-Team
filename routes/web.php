@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admincontroller;
+use App\Http\Controllers\JurusanController;
 use App\Http\Controllers\LandingController;
 use Illuminate\Support\Facades\Route;
 
@@ -55,8 +56,10 @@ Route::get('/profil/sekolahrujukan', [LandingController::class, 'sekolahrujukan'
 Route::get('/BKK/visimisi-bkk', [LandingController::class, 'visimisi_bkk']);
 Route::get('/BKK/strukturorganisasi-bkk', [LandingController::class, 'strukturorganisasi_bkk']);
 Route::get('/BKK/kegiatan-bkk', [LandingController::class, 'kegiatan_bkk']);
+Route::get('/BKK/detail-kegiatan-bkk', [LandingController::class, 'detail_kegiatan_bkk']);
 Route::get('/BKK/kewirausahaan-bkk', [LandingController::class, 'kewirausahaan_bkk']);
 Route::get('/BKK/lowongan-kerja', [LandingController::class, 'lowongan_kerja']);
+Route::get('/BKK/detail-lowongan', [LandingController::class, 'detail_lowongan']);
 Route::get('/BKK/bimbingan-karir', [LandingController::class, 'bimbingan_karir']);
 Route::get('/BKK/perusahaan-mitra', [LandingController::class, 'perusahaan_mitra']);
 
@@ -89,3 +92,6 @@ Route::get('/jmlpemegangsertifikat', [LandingController::class, 'jmlpemegangsert
 
 //Admin
 Route::get('/index', [Admincontroller::class, 'index']);
+Route::get('/jurusanadmin', [JurusanController::class, 'jurusanview'])->name('jurusanview');
+Route::get('/tambahjurusan', [JurusanController::class, 'tambahjurusan']);
+Route::post('/insertjurusan', [JurusanController::class, 'insertjurusan']);
