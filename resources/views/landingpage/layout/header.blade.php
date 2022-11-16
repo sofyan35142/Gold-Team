@@ -184,7 +184,7 @@
                                     <a href="/BKK/lowongan-kerja" class="nav-link">Lowongan Kerja</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">Bimbingan Karir</a>
+                                    <a href="/BKK/bimbingan-karir" class="nav-link">Bimbingan Karir</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="#" class="nav-link">Perusahaan Karir</a>

@@ -4,12 +4,12 @@
 <!-- Mirrored from templates.hibootstrap.com/viscous/default/blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Nov 2022 02:34:11 GMT -->
 
 <head>
-@include('landingpage.layout.head')
+    @include('landingpage.layout.head')
 </head>
 
 <body>
 
-@include('landingpage.layout.header')
+    @include('landingpage.layout.header')
 
 
     <div class="blog-title blog-title-bg">
@@ -62,12 +62,12 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="blog-area">
                         <div class="blog-img">
-                            <a href="blog-details.html">
+                            <a href="#">
                                 <img class="imgg" src="../ekstra/pramuka.jpg" alt="blog image">
                             </a>
                         </div>
                         <div class="blog-text">
-                            <h4><a href="blog-details.html">Pramuka</a></h4>
+                            <h4><a href="#">Pramuka</a></h4>
                             <ul>
                                 <li>
                                     <i class="icofont-calendar"></i>
@@ -78,8 +78,12 @@
                                     <a href="#">Faruk</a>
                                 </li>
                             </ul>
-                            <p class="overflow">Gerakan Pramuka bertujuan untuk membentuk setiap Pramuka agar memiliki kepribadian yang beriman, bertakwa, berakhlak mulia, berjiwa patriotik, taat hukum, disiplin, menjunjung tinggi nilai-nilai luhur bangsa, dan memiliki berkecakapan hidup sebagai kader bangsa dalam menjaga dan membangun Negeara Kesatuan Republik Indonesia, mengamalkan Pancasila, serta melestarikan lingkungan.</p>
-                            <a href="blog-details.html" class="blog-btn">
+                            <p class="overflow">Gerakan Pramuka bertujuan untuk membentuk setiap Pramuka agar memiliki
+                                kepribadian yang beriman, bertakwa, berakhlak mulia, berjiwa patriotik, taat hukum,
+                                disiplin, menjunjung tinggi nilai-nilai luhur bangsa, dan memiliki berkecakapan hidup
+                                sebagai kader bangsa dalam menjaga dan membangun Negeara Kesatuan Republik Indonesia,
+                                mengamalkan Pancasila, serta melestarikan lingkungan.</p>
+                            <a href="#" class="blog-btn">
                                 Read more
                                 <i class="icofont-rounded-right"></i>
                             </a>
@@ -89,12 +93,12 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="blog-area">
                         <div class="blog-img">
-                            <a href="blog-details.html">
+                            <a href="/ekstradetail">
                                 <img class="imgg" src="../ekstra/paskib.jpg" alt="blog image">
                             </a>
                         </div>
                         <div class="blog-text">
-                            <h4><a href="blog-details.html">PASKIBRA</a></h4>
+                            <h4><a href="/ekstradetail">PASKIBRA</a></h4>
                             <ul>
                                 <li>
                                     <i class="icofont-calendar"></i>
@@ -105,8 +109,12 @@
                                     <a href="#">M. Chaiyi</a>
                                 </li>
                             </ul>
-                            <p class="overflow">PASKIBRA atau Pasukan Pengibar Bendera merupakan pasukan yang memiliki tugas utama untuk mengibarkan bendera namun PASKIBRA hanya dalam tingkatan sekolah atau berbentuk sebuah ekstrakurikuler sekolah sedangkan PASKIBRAKA merupakan Pasukan Pengibar duplikat Bendera Pusaka biasanya PASKIBRAKA digunakan pada saat upacara peringatan proklamasi Kemerdekaan Indonesia.</p>
-                            <a href="blog-details.html" class="blog-btn">
+                            <p class="overflow">PASKIBRA atau Pasukan Pengibar Bendera merupakan pasukan yang memiliki
+                                tugas utama untuk mengibarkan bendera namun PASKIBRA hanya dalam tingkatan sekolah atau
+                                berbentuk sebuah ekstrakurikuler sekolah sedangkan PASKIBRAKA merupakan Pasukan Pengibar
+                                duplikat Bendera Pusaka biasanya PASKIBRAKA digunakan pada saat upacara peringatan
+                                proklamasi Kemerdekaan Indonesia.</p>
+                            <a href="/ekstradetail" class="blog-btn">
                                 Read more
                                 <i class="icofont-rounded-right"></i>
                             </a>
@@ -116,12 +124,12 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="blog-area">
                         <div class="blog-img">
-                            <a href="blog-details.html">
+                            <a href="#">
                                 <img class="imgg" src="../ekstra/pmr.jpg" alt="blog image">
                             </a>
                         </div>
                         <div class="blog-text">
-                            <h4><a href="blog-details.html">PMR</a></h4>
+                            <h4><a href="#">PMR</a></h4>
                             <ul>
                                 <li>
                                     <i class="icofont-calendar"></i>
@@ -132,8 +140,11 @@
                                     <a href="#">Dewi Indriyani</a>
                                 </li>
                             </ul>
-                            <p class="overflow">Palang Merah Remaja atau PMR adalah suatu organisasi binaan dari Palang Merah Indonesia yang berpusat di sekolah-sekolah ataupun kelompok-kelompok masyarakat (sanggar, kelompok belajar, dll.) yang bertujuan membangun dan mengembangkan karakter Kepalangmerahan agar siap menjadi Relawan PMI pada masa depan.</p>
-                            <a href="blog-details.html" class="blog-btn">
+                            <p class="overflow">Palang Merah Remaja atau PMR adalah suatu organisasi binaan dari Palang
+                                Merah Indonesia yang berpusat di sekolah-sekolah ataupun kelompok-kelompok masyarakat
+                                (sanggar, kelompok belajar, dll.) yang bertujuan membangun dan mengembangkan karakter
+                                Kepalangmerahan agar siap menjadi Relawan PMI pada masa depan.</p>
+                            <a href="#" class="blog-btn">
                                 Read more
                                 <i class="icofont-rounded-right"></i>
                             </a>
@@ -143,12 +154,12 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="blog-area">
                         <div class="blog-img">
-                            <a href="blog-details.html">
+                            <a href="#">
                                 <img class="imgg" src="../ekstra/banjar.jpeg" alt="blog image">
                             </a>
                         </div>
                         <div class="blog-text">
-                            <h4><a href="blog-details.html">Al Banjari</a></h4>
+                            <h4><a href="#">Al Banjari</a></h4>
                             <ul>
                                 <li>
                                     <i class="icofont-calendar"></i>
@@ -159,8 +170,11 @@
                                     <a href="#">M. Zuhal Munzif</a>
                                 </li>
                             </ul>
-                            <p class="overflow"> Al-Banjari adalah pelopor pengajaran Hukum Islam di Kalimantan Selatan. Sekembalinya ke kampung halaman dari Mekkah, hal pertama yang dikerjakannya ialah membuka tempat pengajian (semacam pesantren) bernama Dalam Pagar, yang kemudian lama-kelamaan menjadi sebuah kampung yang ramai tempat menuntut ilmu agama Islam.</p>
-                            <a href="blog-details.html" class="blog-btn">
+                            <p class="overflow"> Al-Banjari adalah pelopor pengajaran Hukum Islam di Kalimantan Selatan.
+                                Sekembalinya ke kampung halaman dari Mekkah, hal pertama yang dikerjakannya ialah
+                                membuka tempat pengajian (semacam pesantren) bernama Dalam Pagar, yang kemudian
+                                lama-kelamaan menjadi sebuah kampung yang ramai tempat menuntut ilmu agama Islam.</p>
+                            <a href="#" class="blog-btn">
                                 Read more
                                 <i class="icofont-rounded-right"></i>
                             </a>
@@ -170,12 +184,12 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="blog-area">
                         <div class="blog-img">
-                            <a href="blog-details.html">
-                                <img src="assets/img/blog/5.png" alt="blog image">
+                            <a href="#">
+                                <img class="imgg" src="../ekstra/silat.jpeg" alt="blog image">
                             </a>
                         </div>
                         <div class="blog-text">
-                            <h4><a href="blog-details.html">Glass cleaning tips</a></h4>
+                            <h4><a href="#">Pencak Silat</a></h4>
                             <ul>
                                 <li>
                                     <i class="icofont-calendar"></i>
@@ -183,12 +197,17 @@
                                 </li>
                                 <li>
                                     <i class="icofont-ui-user"></i>
-                                    <a href="#">John Doe</a>
+                                    <a href="#">Andre Omega</a>
                                 </li>
                             </ul>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor contratc
-                                ut labore et dolore magna aliqua, sed do eiusmod.</p>
-                            <a href="blog-details.html" class="blog-btn">
+                            <p class="overflow"> Pencak silat atau dikenal silat adalah suatu seni bela diri tradisional
+                                Indonesia yang memperhatikan seni keindahan gerakan dalam setiap jurusnya. Tiap-tiap
+                                daerah di Indonesia mempunyai aliran pencak silat yang khas.
+
+                                Seni bela diri ini telah diakui oleh UNESCO sebagai warisan budaya Nusantara. Meski
+                                demikian, pencak silat juga dapat dijumpai di berbagai negara Asia, seperti di Malaysia,
+                                Brunei, Filipina, Singapura, hingga Thailand bagian selatan</p>
+                            <a href="#" class="blog-btn">
                                 Read more
                                 <i class="icofont-rounded-right"></i>
                             </a>
@@ -198,12 +217,12 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="blog-area">
                         <div class="blog-img">
-                            <a href="blog-details.html">
-                                <img src="assets/img/blog/6.png" alt="blog image">
+                            <a href="#">
+                                <img class="imgg" src="../ekstra/voli.png" alt="blog image">
                             </a>
                         </div>
                         <div class="blog-text">
-                            <h4><a href="blog-details.html">How to clean your home</a></h4>
+                            <h4><a href="#">Bola Volly</a></h4>
                             <ul>
                                 <li>
                                     <i class="icofont-calendar"></i>
@@ -211,12 +230,17 @@
                                 </li>
                                 <li>
                                     <i class="icofont-ui-user"></i>
-                                    <a href="#">John Doe</a>
+                                    <a href="#">Handoko</a>
                                 </li>
                             </ul>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor contratc
-                                ut labore et dolore magna aliqua, sed do eiusmod.</p>
-                            <a href="blog-details.html" class="blog-btn">
+                            <p class="overflow">Permainan bola voli termasuk salah satu contoh dari cabang olahraga
+                                bola besar. Bisa dikatakan, permainan ini masuk ke dalam kategori pertandingan karena
+                                melibatkan dua tim yang saling berhadapan untuk mendapatkan hasil pertandingan.
+
+                                Cara memainkan bola voli adalah dengan memukul bola agar melewati bagian atas net yang
+                                ada di tengah lapangan. Agar mendapatkan skor, para pemain dalam satu tim harus
+                                mengarahkan bola ke area lawan, sehingga bola terjatuh di daerah pertahanan lawan.</p>
+                            <a href="#" class="blog-btn">
                                 Read more
                                 <i class="icofont-rounded-right"></i>
                             </a>
@@ -250,12 +274,12 @@
         </div>
     </div>
 
-@include('landingpage.layout.footer')
+    @include('landingpage.layout.footer')
 
     <div class="top-btn">
         <i class="icofont-scroll-long-up"></i>
     </div>
-@include('landingpage.layout.js')
+    @include('landingpage.layout.js')
 </body>
 
 <!-- Mirrored from templates.hibootstrap.com/viscous/default/blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Nov 2022 02:34:11 GMT -->
