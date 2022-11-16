@@ -60,7 +60,7 @@
                                 <img class="img-key" src="{{ asset('foto/' . $jurusan->foto) }}" alt="">
                                
                                 <h3>{{ $jurusan->jurusan }}</h3>
-                                <p>{{ $jurusan->deskripsi }}</p>
+                                <p class="card-jurusan">{{ $jurusan->deskripsi }}</p>
                                 <div class="theme-button">
                                     <a href="/detailjurusan/{{$jurusan->id}}" class="default-btn">Selengkapnya</a>
                                 </div>

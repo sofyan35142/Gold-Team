@@ -3840,7 +3840,15 @@ h3 {
 	z-index: 0;
 	margin-bottom: 30px;
 	background: #fff;
-	border: 1px solid #c3ccff
+	border: 1px solid #c3ccff;
+	width: 400px;
+    height: 370px;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    word-break: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .main-service-area .service-item::before {
 	position: absolute;
@@ -3894,7 +3902,17 @@ h3 {
 .main-service-area .service-item p {
 	-webkit-transition: .5s;
 	transition: .5s;
-	margin-bottom: 20px
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 330px;
+	height: 100px;
+	position: relative;
+	margin-bottom: 20px;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+	display: -webkit-box;
+	word-break: break-word;
+
 }
 .main-service-area .service-item .theme-button .default-btn {
 	color: #6096fd;
@@ -3975,7 +3993,8 @@ h3 {
 	font-size: 18px!important;
 	font-weight: 600;
 	color: #111;
-	margin-bottom: 15px
+	margin-bottom: 15px;
+	
 }
 .main-service-area .service-sidebar .service-list ul {
 	padding-left: 0

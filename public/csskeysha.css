@@ -140,3 +140,16 @@ h1 {
     -webkit-box-shadow: 0 10px 30px 0 #cfc4f7;
     box-shadow: 0 10px 30px 0 #cfc4f7
 }
+
+.cardjurusan {
+    overflow: hidden;
+        text-overflow: ellipsis;
+        width: 330px;
+        height: 100px;
+        position: relative;
+        margin-bottom: 20px;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        word-break: break-word;
+}
