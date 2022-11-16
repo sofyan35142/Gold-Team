@@ -19,7 +19,15 @@ class LandingController extends Controller
 
     public function jurusan()
     {
-        return view("landingpage.jurusan.jurusan");
+        $data = Jurusan::all();
+        return view("landingpage.jurusan.jurusan", compact('data'));
+    }
+    public function detailjurusan($id)
+    {
+        
+        $data = Jurusan::find($id);
+        
+        return view("landingpage.jurusan.detailjurusan", compact('data'));
     }
     public function tkr()
     {

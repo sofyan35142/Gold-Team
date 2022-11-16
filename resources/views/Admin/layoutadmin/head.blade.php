@@ -31,14 +31,16 @@
     <link rel="stylesheet" href="../../assets1/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
     <link rel="stylesheet" href="../../assets1/vendor/libs/typeahead-js/typeahead.css" />
     <link rel="stylesheet" href="../../assets1/vendor/libs/datatables-bs5/datatables.bootstrap5.css">
-<link rel="stylesheet" href="../../assets1/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css">
-<link rel="stylesheet" href="../../assets1/vendor/libs/datatables-checkboxes-jquery/datatables.checkboxes.css">
-<link rel="stylesheet" href="../../assets1/vendor/libs/datatables-buttons-bs5/buttons.bootstrap5.css">
-<link rel="stylesheet" href="../../assets1/vendor/libs/flatpickr/flatpickr.css" />
-<!-- Row Group CSS -->
-<link rel="stylesheet" href="../../assets1/vendor/libs/datatables-rowgroup-bs5/rowgroup.bootstrap5.css">
-<!-- Form Validation -->
-<link rel="stylesheet" href="../../assets1/vendor/libs/formvalidation/dist/css/formValidation.min.css" />
+    <link rel="stylesheet" href="../../assets1/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css">
+    <link rel="stylesheet" href="../../assets1/vendor/libs/datatables-checkboxes-jquery/datatables.checkboxes.css">
+    <link rel="stylesheet" href="../../assets1/vendor/libs/datatables-buttons-bs5/buttons.bootstrap5.css">
+    <link rel="stylesheet" href="../../assets1/vendor/libs/flatpickr/flatpickr.css" />
+    <link rel="stylesheet" href="../../assets/vendor/libs/toastr/toastr.css" />
+    <link rel="stylesheet" href="../../assets/vendor/libs/animate-css/animate.css" />
+    <!-- Row Group CSS -->
+    <link rel="stylesheet" href="../../assets1/vendor/libs/datatables-rowgroup-bs5/rowgroup.bootstrap5.css">
+    <!-- Form Validation -->
+    <link rel="stylesheet" href="../../assets1/vendor/libs/formvalidation/dist/css/formValidation.min.css" />
 
     <!-- Page CSS -->
     

@@ -63,6 +63,8 @@ Route::get('/BKK/perusahaan-mitra', [LandingController::class, 'perusahaan_mitra
 
 //JURUSAN
 Route::get('/jurusan', [LandingController::class, 'jurusan']);
+
+Route::get('/detailjurusan/{id}', [LandingController::class, 'detailjurusan']);
 Route::get('/tkr', [LandingController::class, 'tkr']);
 Route::get('/tei', [LandingController::class, 'tei']);
 Route::get('/rpl', [LandingController::class, 'rpl']);
@@ -89,6 +91,14 @@ Route::get('/jmlpemegangsertifikat', [LandingController::class, 'jmlpemegangsert
 
 //Admin
 Route::get('/index', [Admincontroller::class, 'index']);
-Route::get('/jurusanadmin', [JurusanController::class, 'jurusanview'])->name('jurusanview');
-Route::get('/tambahjurusan', [JurusanController::class, 'tambahjurusan']);
+
+
+// Jurusan Admin
+Route::get('/index/jurusan', [JurusanController::class, 'jurusanview'])->name('jurusanview');
+Route::get('/index/tambahjurusan', [JurusanController::class, 'tambahjurusan']);
 Route::post('/insertjurusan', [JurusanController::class, 'insertjurusan']);
+
+Route::get('/jurusan/edit/{id}', [JurusanController::class, 'editjurusan']);
+Route::post('jurusan/update/{id}', [JurusanController::class, 'updatejurusan']);
+
+Route::get('/jurusan/deletejurusan/{id}', [JurusanController::class, 'deletejurusan']);

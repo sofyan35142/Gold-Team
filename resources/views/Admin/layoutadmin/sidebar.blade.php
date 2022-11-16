@@ -211,6 +211,12 @@
                         </ul>
                     </li>
                     <li class="menu-item">
+                        <a href="/index/jurusan" class="menu-link">
+                            <i class='menu-icon tf-icons bx bx-check-shield'></i>
+                            <div data-i18n="Jurusan">Jurusan</div>
+                        </a>
+                    </li>
+                    {{-- <li class="menu-item">
                         <a href="javascript:void(0);" class="menu-link menu-toggle">
                             <i class='menu-icon tf-icons bx bx-check-shield'></i>
                             <div data-i18n="Jurusan">Jurusan</div>
@@ -227,7 +233,7 @@
                                 </a>
                             </li>
                         </ul>
-                    </li>
+                    </li> --}}
                     <li class="menu-item">
                         <a href="javascript:void(0);" class="menu-link menu-toggle">
                             <i class="menu-icon tf-icons bx bx-dock-top"></i>

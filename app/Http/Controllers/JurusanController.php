@@ -9,8 +9,8 @@ class JurusanController extends Controller
 {
     public function jurusanview()
     {
-        $data=Jurusan::all();
-        return view('Admin.jurusan.jurusan',compact('data'));
+        $data = Jurusan::all();
+        return view('Admin.jurusan.jurusan', compact('data'));
     }
     public function tambahjurusan()
     {
@@ -27,9 +27,8 @@ class JurusanController extends Controller
         //     'required|image|mimes:jpg,png,jpeg,gif,svg|max:2048|dimensions:min_width=100,min_height=100,max_width=1000,max_height=1000',
         // ]);
         $data = Jurusan::create([
-            
+
             'jurusan' => $request->jurusan,
-            'singkatan' => $request->singkatan,
             'deskripsi' => $request->deskripsi,
             'foto' => $request->foto
         ]);
@@ -38,6 +37,49 @@ class JurusanController extends Controller
             $request->file('foto')->move('foto/', $request->file('foto')->getClientOriginalName());
             $data->foto = $request->file('foto')->getClientOriginalName();
             $data->save();
-        }        return redirect()->route('jurusanview')->with('success', 'Data Berhasil Di Tambahkan');
+        }
+        return redirect()->route('jurusanview')->with('success', 'Berhasil Di Tambahkan');
+    }
+    public function editjurusan($id)
+    {
+
+        $data = Jurusan::findOrFail($id);
+        $data = Jurusan::find($id);
+
+        //dd($data);
+
+        return view('Admin.jurusan.editjurusan', compact('data'));
+    }
+    public function updatejurusan(Request $request, $id)
+    {
+
+        $data = Jurusan::find($id);
+
+
+
+        if ($request->hasFile('foto')) {
+            $request->file('foto')->move('foto/', $request->file('foto')->getClientOriginalName());
+            $namafoto = $request->file('foto')->getClientOriginalName();
+            $data->update([
+                'foto' => $namafoto,
+                'jurusan' => $request->jurusan,
+                'deskripsi' => $request->deskripsi,
+            ]);
+        } else {
+            $data->update([
+                //'foto' => request->foto
+                'jurusan' => $request->jurusan,
+                'deskripsi' => $request->deskripsi,
+
+            ]);
+        }
+
+        return redirect()->route('jurusanview')->with('success', 'Berhasil Di Update');
+    }
+    public function deletejurusan($id)
+    {
+        $data = Jurusan::find($id);
+        $data->delete();
+        return redirect()->route('jurusanview')->with('success', 'Berhasil Di Hapus');
     }
 }
