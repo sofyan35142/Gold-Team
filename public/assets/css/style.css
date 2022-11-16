@@ -1314,7 +1314,7 @@ h3 {
 	opacity: 1
 }
 .testimonial-bg {
-	background-image: url(../img/testimonial/teastimonial-bg.png);
+	/* background-image: url(../img/testimonial/teastimonial-bg.png); */
 	background-position: center center;
 	background-size: cover;
 	width: 100%;

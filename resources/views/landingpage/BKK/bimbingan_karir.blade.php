@@ -40,16 +40,6 @@
             <div class="d-table-cell">
                 <div class="container">
                     <div class="service-title-text">
-<<<<<<< HEAD
-                        <h2>Jurusan</h2>
-                        <ul>
-                            <li>
-                                <a href="/">Beranda</a>
-                            </li>
-                            <li>
-                                <i class="icofont-rounded-double-right"></i>
-                                Jurusan
-=======
                         <h2>Kegiatan BKK</h2>
                         <ul>
                             <li>
@@ -62,7 +52,6 @@
                             <li>
                                 <i class="icofont-rounded-double-right"></i>
                                 <a href="/jurusan">Sosialisasi Penyesuaian Budaya Kerja dari PT. Astra Daihatsu</a>
->>>>>>> 26a997d7c6a34606fa9b1aea2945fb026a44a729
                             </li>
                         </ul>
                     </div>
@@ -70,7 +59,6 @@
             </div>
         </div>
     </div>
-<<<<<<< HEAD
 
 
     <div class="main-service-area single-service-page pt-100">
@@ -185,55 +173,12 @@
 @include('landingpage.layout.js')
 
 
-=======
-    <div class="blog-details-area blog-details-page-area pt-100">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <img class="w-100" src="../assets/img/lowongankerja/lowongan5.jpg" alt="service">
-                    <div class="blog-details-post">
-                        <div class="blog-post-title">
-                            <h3>
-                                LOWONGAN KERJA INDOMARET
-                            </h3>
-                            <ul>
-                                <li>
-                                    <i class="icofont-calendar"></i>
-                                    20 Feb 2021
-                                </li>
-                                <li>
-                                    <i class="icofont-ui-user"></i>
-                                    <a href="#">John Doe</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <p>Kabar gembira bagi para pencari ker#ja. PT Indomarco Prismatama, beroperasi sebagai
-                            Indomaret, adalah jaringan pengecer waralaba di Indonesia. Kembali membuka kesempatan kerja
-                            untuk lulusanSMK.</p>
-
-                        <p>Bagi alumni SMK Negeri 1 Sukorejo yang berminat dapat segera mendaftarkan diri <a
-                                href="#">DISINI.</a> Berkas lamaran kerja dikumpulkan di Ruang BKK SMKN 1 Sukorejo
-                            paling akhir tanggal 19 Agustus 2022 Pukul 09.00 WIB</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    @include('landingpage.layout.footer')
-
->>>>>>> 26a997d7c6a34606fa9b1aea2945fb026a44a729
 
     <div class="top-btn">
         <i class="icofont-scroll-long-up"></i>
     </div>
-<<<<<<< HEAD
 </body>
 
 <!-- Mirrored from templates.hibootstrap.com/viscous/default/service.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Nov 2022 02:34:10 GMT -->
 
-=======
-    @include('landingpage.layout.js')
-</body>
-
->>>>>>> 26a997d7c6a34606fa9b1aea2945fb026a44a729
 </html>

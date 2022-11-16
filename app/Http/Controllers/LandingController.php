@@ -191,4 +191,7 @@ class LandingController extends Controller
     public function detailekstra(){
         return view('landingpage.Data.detailekstra');
     }
+    public function detailprestasi(){
+        return view('landingpage.Data.detailprestasi');
+    }
 }

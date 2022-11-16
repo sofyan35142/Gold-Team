@@ -35,7 +35,8 @@ Route::get('/data/dharma', [LandingController::class, 'dharma']);
 Route::get('/data/datawalas', [LandingController::class, 'datawalas']);
 Route::get('/data/ekstraa', [LandingController::class, 'ekstra']);
 Route::get('/data/prestasi', [LandingController::class, 'prestasi']);
-Route::get('ekstradetail', [LandingController::class, 'detailekstra']);
+Route::get('/ekstradetail', [LandingController::class, 'detailekstra']);
+Route::get('/prestasidetail', [LandingController::class, 'detailprestasi']);
 
 
 // ==ROUTE ALUMNI==//

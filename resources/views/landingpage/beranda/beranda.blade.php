@@ -32,6 +32,18 @@
                     <div class="d-table-cell">
                         <div class="container">
                             <div class="home-text">
+                                {{-- <h1>Your Hygienic Home Our Responsibility</h1>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                    do eiusmod tempor ut labore et dolore magna aliqua. Quis
+                                    ipsum suspendisse ultrices gravida. Viverra maecenas
+                                    accumsan lacus vel facilisis. Quis ipsum suspendisse
+                                    ultrices gravida.
+                                </p>
+                                <div class="theme-button">
+                                    <a href="about.html" class="default-btn active-btn">know More</a>
+                                    <a href="contact.html" class="default-btn">Get Started</a>
+                                </div> --}}
                             </div>
                         </div>
                     </div>
@@ -218,156 +230,59 @@
                                 tonton video profilnya. Jangan Sampai Tidak Ditonton Nanti Menyesal.</p>
                         </div>
                         <div class="theme-button text-left">
-                            <div class="play-video btn btn-danger"><i class="fa-sharp fa-solid fa-play"></i> Play Video</div>
-
-                            <div class="video-popup modalyosop">
-                                <div class="modal-contentyosop">
-                                    <span class="close-modal">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
-                                            <path
-                                                d="M28.5 9.6l-2.1-2.1-8.4 8.4-8.4-8.4-2.1 2.1 8.4 8.4-8.4 8.4 2.1 2.1 8.4-8.4 8.4 8.4 2.1-2.1-8.4-8.4z"
-                                                style="fill: #FFF;" />
-                                        </svg>
-                                    </span>
-                                    <div class="video-container">
-                                        <!-- Enter the video ID into the data-id attribute -->
-                                        <div id="player" data-id="oQKjX1z7aMM"></div>
-                                    </div>
-                                </div>
-                            </div>
+                            <a href="#" class="btn btn-danger"><i class="fa-sharp fa-solid fa-play"></i>
+                                GAISO DIPLAY </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    {{-- <section class="pricing-section pb-70">
+    </div>' <div class="counter-style-two pt-100 pb-70">
         <div class="container">
+            <h2 class="text-center">Siswa Kami Lebih dari 1000+</h2>
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="price-card-area">
-                        <div class="price-head-text">
-                            <h4>POs-pos Terbaru</h4>
-                        </div>
-                        <div class="plan-features">
-                            <ul>
-                                <li>
-                                    <i class="icofont-rounded-right iknrounded"></i>
-                                    SMK NEGERI 1 SUKOREJO MELAKUKAN PRESENTASI PROJECT BERSAMA PENGEMBANGAN SAVING
-                                    PEMAKAIAN ENERGI DI GOLF CART (KENDARAAN GOLF) DIHADAPAN DIREKSI TAMAN DAYU GOLF &
-                                    RESORT
-                                </li>
-                                <li>
-                                    <i class="icofont-rounded-right iknrounded"></i>
-                                    PENILAIAN KINERJA KEPALA SEKOLAH (PKKS) TAHUN 2022
-                                </li>
-                            </ul>
-                        </div>
+                <div class="col-md-3 col-5">
+                    <div class="counter-text">
+                        <h2><span class="counter">1</span>K</h2>
+                        <p>Laki-Laki</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="price-card-area active-price">
-                        <div class="price-head-text">
-                            <h4>Kategori</h4>
-                        </div>
-                        <div class="plan-features">
-                            <ul>
-                                <a href="">
-                                    <li>
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Agenda Sekolah
-                                    </li>
-                                </a>
-                                <a href="">
-                                    <li>
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Informasi Sekolah
-                                    </li>
-                                </a>
-                                <a href="">
-                                    <li>
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Kegiatan BKK
-                                    </li>
-                                </a>
-                                <a href="">
-                                    <li>
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Kegiatan Sekolah
-                                    </li>
-                                </a>
-                                <a href="">
-                                    <li>
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Lowongan Kerja
-                                    </li>
-                                </a>
-                                <br>
-                                <a href="">
-                                    <li>
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Artikel Guru
-                                    </li>
-                                </a>
-                            </ul>
-                        </div>
+                <div class="col-md-3 col-7">
+                    <div class="counter-text">
+                        <h2><span class="counter">989</span>+</h2>
+                        <p>Perempuan</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 offset-md-3 col-sm-6 offset-lg-0 offset-sm-3">
-                    <div class="price-card-area">
-                        <div class="price-head-text">
-                            <h4>Potensi Sekitar</h4>
-                        </div>
-                        <div class="plan-features">
-                            <ul>
-                                <a href="">
-                                    <li>
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        <span>Kecamatan Sukorejo Kab. Pasuruan</span>
-                                    </li>
-                                </a>
-                                <a href="">
-                                    <li>
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Kaboki-Pionir Ekspor Tas Rajut
-                                    </li>
-                                </a>
-                                <a href="">
-                                    <li>
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Taman Safari Indonesia 2
-                                    </li>
-                                </a>
-                                <a href="">
-                                    <li>
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Saygon Waterpark
-                                    </li>
-                                </a>
-                                <a href="">
-                                    <li>
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        <span>Kebon Raya Purwodadi</span>
-                                    </li>
-                                </a>
-                            </ul>
-                        </div>
+                <div class="col-md-3 col-5">
+                    <div class="counter-text">
+                        <h2><span class="counter">45</span>+</h2>
+                        <p>Total Siswa</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-7">
+                    <div class="counter-text">
+                        <h2><span class="counter">12</span>+</h2>
+                        <p>Guru</p>
                     </div>
                 </div>
             </div>
+            {{-- <div class="counter-shape">
+                <img src="assets/img/counter/1.png" alt="shape">
+                <img src="assets/img/counter/2.png" alt="shape">
+                <img src="assets/img/counter/3.png" alt="shape">
+                <img src="assets/img/counter/4.png" alt="shape">
+                <img src="assets/img/counter/5.png" alt="shape">
+                <img src="assets/img/counter/6.png" alt="shape">
+                <img src="assets/img/counter/7.png" alt="shape">
+                <img src="assets/img/counter/1.png" alt="shape">
+                <img src="assets/img/counter/8.png" alt="shape">
+                <img src="assets/img/counter/4.png" alt="shape">
+            </div> --}}
         </div>
-    </section> --}}
-    <div class="team-section pt-100 pb-70">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.585483431905!2d112.7150166749192!3d-7.727543392290657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7d1337b9fbe51%3A0x5f53153c148fedfd!2sSMK%20Negeri%201%20Sukorejo!5e0!3m2!1sid!2sid!4v1667877880917!5m2!1sid!2sid"
-            width="1450" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <br> <br>
-
-        <iframe title="vimeo-player" src="https://player.vimeo.com/video/763637575?h=8fb781726d" width="1400"
-            height="450" frameborder="0" allowfullscreen></iframe>
-
     </div>
+
+
+
 
     <section class="blog-section pt-100">
         <div class="container">
@@ -649,6 +564,235 @@
             </div>
         </div>
     </section>
+
+    <div class="testimonial-section testimonial-bg ptb-100">
+        <div class="testimonial-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 offset-lg-0 col-md-10 offset-md-1 col-sm-10 offset-sm-1">
+                        <div class="row">
+                            <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2">
+                                <div class="testimonial-image-slider slider-nav text-center">
+                                    <div class="sin-testiImage">
+                                        <img src="../assets/img/testimonial/1.png" alt="Client image">
+                                    </div>
+                                    <div class="sin-testiImage">
+                                        <img src="../assets/img/testimonial/2.png" alt="Client image">
+                                    </div>
+                                    <div class="sin-testiImage">
+                                        <img src="../assets/img/testimonial/1.png" alt="Client image">
+                                    </div>
+                                    <div class="sin-testiImage">
+                                        <img src="../assets/img/testimonial/2.png" alt="Client image">
+                                    </div>
+                                    <div class="sin-testiImage">
+                                        <img src="../assets/img/testimonial/1.png" alt="Client image">
+                                    </div>
+                                    <div class="sin-testiImage">
+                                        <img src="../assets/img/testimonial/2.png" alt="Client image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-text-slider slider-for text-center">
+                            <div class="sin-testiText">
+                                <h2>Mukhamad Sofyan</h2>
+                                <span>Co-worker of 3S</span>
+                                <p>sekolah disini sangat menyenangkan bukan.</p>
+                            </div>
+                            <div class="sin-testiText">
+                                <h2>Stepheny Mc.man</h2>
+                                <span>Co-worker of 3S</span>
+                                <p>Saya bangga menjadi bagian dari SMKN 1 SUKOREJO. Karena selalu mendukung dalam
+                                    memberikan fasilitas dan kemudahan dalam menunjang pembelajaran serta menerapkan
+                                    pendidikan <b>attitude</b> yang baik. SmkN 1 SUKOREJO pilihan yang tepat untuk
+                                    mempersiapkan diri didunia kerja.</p>
+                            </div>
+                            <div class="sin-testiText">
+                                <h2>Stepheny Mc.man</h2>
+                                <span>Co-worker of 3S</span>
+                                <p>Kurikulum yang selalu up-to-date dan menyesuaikan kebutuhan pasar industri membuat
+                                    lulusan SMKN 1 SUKOREJO dapat diandalkan oleh perusahaan..</p>
+                            </div>
+                            <div class="sin-testiText">
+                                <h2>Stepheny Mc.man</h2>
+                                <span>Co-worker of 3S</span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do is ut labore et
+                                    dolore magna aliqua. Quis ipsum suspendisse ultrices . Risus commodo viverra
+                                    maecenas accumsan lacus vel facilisis.</p>
+                            </div>
+                            <div class="sin-testiText">
+                                <h2>Stepheny Mc.man</h2>
+                                <span>Co-worker of 3S</span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do is ut labore et
+                                    dolore magna aliqua. Quis ipsum suspendisse ultrices . Risus commodo viverra
+                                    maecenas accumsan lacus vel facilisis.</p>
+                            </div>
+                            <div class="sin-testiText">
+                                <h2>Stepheny Mc.man</h2>
+                                <span>Co-worker of 3S</span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do is ut labore et
+                                    dolore magna aliqua. Quis ipsum suspendisse ultrices . Risus commodo viverra
+                                    maecenas accumsan lacus vel facilisis.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <div class="team-section pt-100 pb-70">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.585483431905!2d112.7150166749192!3d-7.727543392290657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7d1337b9fbe51%3A0x5f53153c148fedfd!2sSMK%20Negeri%201%20Sukorejo!5e0!3m2!1sid!2sid!4v1667877880917!5m2!1sid!2sid"
+            width="1450" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="logo-slider">
+        <div class="logo-slide-track">
+            <div class="slideyosop">
+                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/4Rivers.png"
+                    alt="" />
+            </div>
+            <div class="slideyosop">
+                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/AVT.png"
+                    alt="" />
+            </div>
+            <div class="slideyosop">
+                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/CareerSource.png"
+                    alt="" />
+            </div>
+            <div class="slideyosop">
+                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/CFEC.png"
+                    alt="" />
+            </div>
+            <div class="slideyosop">
+                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/CityofOrlando.png"
+                    alt="" />
+            </div>
+            <div class="slideyosop">
+                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/CommunityCoordinatedCare.png"
+                    alt="" />
+            </div>
+            <div class="slideyosop">
+                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/DentalSociety.png"
+                    alt="" />
+            </div>
+            <div class="slideyosop">
+                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/DrPhillips.png"
+                    alt="" />
+            </div>
+            <div class="slideyosop">
+                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/Ferran.png"
+                    alt="" />
+            </div>
+            <div class="slideyosop">
+                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/FloridaADA.png"
+                    alt="" />
+            </div>
+            <div class="slideyosop">
+                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/FloridaHospital.png"
+                    alt="" />
+            </div>
+            <div class="slideyosop">
+                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/Goodwill.png"
+                    alt="" />
+            </div>
+            <div class="slideyosop">
+                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/HarvardJolly.png"
+                    alt="" />
+            </div>
+            <div class="slideyosop">
+                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/HiltonOrlando.png"
+                    alt="" />
+            </div>
+            <div class="slideyosop">
+                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/IndraSystems.png"
+                    alt="" />
+            </div>
+            <div class="slideyosop">
+                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/JobsPartnership.png"
+                    alt="" />
+            </div>
+            <div class="slideyosop">
+                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/Kenworth.png"
+                    alt="" />
+            </div>
+            <div class="slideyosop">
+                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/L3.png"
+                    alt="" />
+            </div>
+            <div class="slideyosop">
+                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/Lockheed.png"
+                    alt="" />
+            </div>
+            <div class="slideyosop">
+                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/MACF.png"
+                    alt="" />
+            </div>
+            <div class="slideyosop">
+                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/Marriott.png"
+                    alt="" />
+            </div>
+            <div class="slideyosop">
+                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/Mitsubishi.png"
+                    alt="" />
+            </div>
+            <div class="slideyosop">
+                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/NCS.png"
+                    alt="" />
+            </div>
+            <div class="slideyosop">
+                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/Northrop.png"
+                    alt="" />
+            </div>
+            <div class="slideyosop">
+                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/OrangeCountyFarmBureau.png"
+                    alt="" />
+            </div>
+            <div class="slideyosop">
+                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/OrlandoHealth.png"
+                    alt="" />
+            </div>
+            <div class="slideyosop">
+                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/ProImageSolutions.png"
+                    alt="" />
+            </div>
+            <div class="slideyosop">
+                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/PublicAllies.png"
+                    alt="" />
+            </div>
+            <div class="slideyosop">
+                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/SeaWorld.png"
+                    alt="" />
+            </div>
+            <div class="slideyosop">
+                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/SecondHarvest.png"
+                    alt="" />
+            </div>
+            <div class="slideyosop">
+                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/UF.png"
+                    alt="" />
+            </div>
+            <div class="slideyosop">
+                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/Universal.png"
+                    alt="" />
+            </div>
+            <div class="slideyosop">
+                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/UP.png"
+                    alt="" />
+            </div>
+            <div class="slideyosop">
+                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/WaltDisney.png"
+                    alt="" />
+            </div>
+            <div class="slideyosop">
+                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/Wyndham.png"
+                    alt="" />
+            </div>
+        </div>
+    </div>
     @include('landingpage.layout.footer')
     @include('landingpage.layout.js')
     <div class="top-btn">
@@ -659,8 +803,30 @@
             $('#id1').DataTable();
         });
     </script>
+    <script>
+        $(document).ready(function() {
+            $('.customer-logos').slick({
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1500,
+                arrows: false,
+                dots: false,
+                pauseOnHover: false,
+                responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 4
+                    }
+                }, {
+                    breakpoint: 520,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                }]
+            });
+        });
+    </script>
 </body>
-
-<!-- Mirrored from previewthemes.com/enzio/home-1 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 Nov 2022 03:25:34 GMT -->
 
 </html>
