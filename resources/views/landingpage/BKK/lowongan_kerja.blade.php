@@ -43,253 +43,277 @@
             </div>
         </div>
     </div>
-    <div class="blog-section blog-style-two blog-details-area blog-left-sidebar pt-100 blog-right-sidebar-area">
+    <div class="main-blog-post pt-100">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8">
-                    <div class="service-details-post">
-                        <div class="blog-post-title">
-                            <h3>
-                                Kegiatan BKK
-                            </h3>
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-area">
+                        <div class="blog-img overimg">
+                            <a href="/BKK/detail-lowongan">
+                                <img src="../assets/img/lowongan1.jpg" alt="blog image">
+                            </a>
                         </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="blog-area">
-                                    <div class="blog-img">
-                                        <a href="blog-details.html">
-                                            <img src="../assets/img/lowongan1.jpg" alt="blog image">
-                                        </a>
-                                    </div>
-                                    <div class="blog-text">
-                                        <p>Lowongan Kerja PT. ADM</p>
-                                        <div class="d-flex flex-row">
-                                            <div class="p-2">
-                                                <p class="card-text"><small class="text-muted">Status: <span
-                                                            class="dangerspan badge">Selesai</span></small>
-                                                </p>
-                                            </div>
-                                            <div class="p-2"><a class="btn btn-primary" href="#"
-                                                    role="button"><i class="icofont-eye-alt"></i></a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="blog-area">
-                                    <div class="blog-img">
-                                        <a href="blog-details.html">
-                                            <img src="../assets/img/lowongan1.jpg" alt="blog image">
-                                        </a>
-                                    </div>
-                                    <div class="blog-text">
-                                        <p>Lowongan Kerja PT. Karya Idaman Bersama (KIB)</p>
-                                        <div class="d-flex flex-row">
-                                            <div class="p-2">
-                                                <p class="card-text"><small class="text-muted">Status: <span
-                                                            class="secondspan badge">Masih ada</span></small>
-                                                </p>
-                                            </div>
-                                            <div class="p-2"><a class="btn btn-primary" href="#"
-                                                    role="button"><i class="icofont-eye-alt"></i></a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="main-blog-post">
-                            <nav>
-                                <ul class="pagination  justify-content-center">
-                                    <li class="page-item disabled">
-                                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
-                                            <i class="icofont-rounded-left"></i>
-                                        </a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">1</a>
-                                    </li>
-                                    <li class="page-item" aria-current="page">
-                                        <a class="page-link active" href="#">2</a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">3</a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">
-                                            <i class="icofont-rounded-right"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
+                        <div class="blog-text">
+                            <h4 class="elipsisjudul"><a href="/BKK/detail-lowongan">Lowongan Kerja PT. ADM</a></h4>
+                            <ul>
+                                <li>
+                                    <i class="icofont-calendar"></i>
+                                    20 Feb 2021
+                                </li>
+                                <li>
+                                    <i class="icofont-ui-user"></i>
+                                    <a href="#">Admin Sketsu</a>
+                                </li>
+                            </ul>
+                            <p class="elipsiszak">PT. ASTRA DAIHATSU MOTOR (PT. ADM)
+                                adalah perusahaan multi nasional yang bergerak dalam produksi mobil merk daihatsu saat
+                                ini membuka lowongan pekerjaan sebagai Operator dengan kriteria sebagaimana tercantum
+                                dalam brosur.
+
+                                Bagi yang berminat bisa langsung mengisi link pendaftaran DISINI
+                                Pendaftaran ditutup pada
+                                Tanggal : 09 November 2022
+                                Pukul : 10.00 WIB</p>
+                            <a href="/BKK/detail-lowongan" class="blog-btn">
+                                Read more
+                                <i class="icofont-rounded-right"></i>
+                            </a>
+                            <small class="text-muted float-right">Status: <span class="dangerspan badge">Selesai</span></small>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 main-service-area blog-side-bar">
-                    <div class="service-sidebar">
-                        <form class="search-form">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Search">
-                                <button type="submit" class="btn btn-primary">
-                                    <i class="icofont-search-1"></i>
-                                </button>
-                            </div>
-                        </form>
-                        <div class="service-list">
-                            <p class="sidetitle">Instansi Terkait</p>
-                            <ul>
-                                <li class="hcard overflow-auto">
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Cabang Dinas Pendidikan Wilayah Pasuruan
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Kementerian Pendidikan & Kebudayaan
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Direktorat PSMK
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Dinas Pendidikan Jatim
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Pemerintah Kabupaten Pasuruan
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Dinas Ketenagakerjaan Kabupaten Pasuruan
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Sistem Informasi Inovasi Sekolah
-                                    </a>
-                                </li>
-                            </ul>
-                            <p class="sidetitle">Potensi Sekitar</p>
-                            <ul>
-                                <li class="hcard overflow-auto">
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Kecamatan Sukorejo Kab.Pasuruan
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Kaboki-Pionir Ekspor Tas Rajut
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Taman Safari Indonesia 2
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Saygon Waterpark
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Kebon Raya Purwodadi
-                                    </a>
-                                </li>
-                            </ul>
-                            <p class="sidetitle">Kategori</p>
-                            <ul>
-                                <li class="hcard overflow-auto border-0">
-                                    <a class="colorori mb-2 effecthover-s" href="#">
-                                        <i class="icofont-ui-folder iknrounded"></i>
-                                        Agenda Sekolah
-                                    </a>
-                                    <a class="colorori mb-2 effecthover-s" href="#">
-                                        <i class="icofont-ui-folder iknrounded"></i>
-                                        Artikel Guru
-                                    </a>
-                                    <a class="colorori mb-2 effecthover-s" href="#">
-                                        <i class="icofont-ui-folder iknrounded"></i>
-                                        Informasi Sekolah
-                                    </a>
-                                    <a class="colorori mb-2 effecthover-s" href="#">
-                                        <i class="icofont-ui-folder iknrounded"></i>
-                                        Kegiatan BKK
-                                    </a>
-                                    <a class="colorori mb-2 effecthover-s" href="#">
-                                        <i class="icofont-ui-folder iknrounded"></i>
-                                        Kegiatan Sekolah
-                                    </a>
-                                    <a class="colorori mb-2 effecthover-s" href="#">
-                                        <i class="icofont-ui-folder iknrounded"></i>
-                                        Lowongan Kerja
-                                    </a>
-                                </li>
-                            </ul>
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-area">
+                        <div class="blog-img overimg">
+                            <a href="/BKK/detail-lowongan">
+                                <img src="../assets/img/lowongankerja/lowongan1.jpg" alt="blog image">
+                            </a>
                         </div>
-                        <div class="discount-text" style="background: transparent">
-                            <iframe class="ytvideo" src="https://www.youtube.com/embed/oQKjX1z7aMM"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                        <div class="blog-text">
+                            <h4 class="elipsisjudul"><a href="/BKK/detail-lowongan">Lowongan Kerja PT. Karya Idaman Bersama
+                                    (KIB)</a></h4>
+                            <ul>
+                                <li>
+                                    <i class="icofont-calendar"></i>
+                                    20 Feb 2021
+                                </li>
+                                <li>
+                                    <i class="icofont-ui-user"></i>
+                                    <a href="#">Admin Sketsu</a>
+                                </li>
+                            </ul>
+                            <p class="elipsiszak">INFO LOWONGAN KERJA BKK SMKN 1 SUKOREJO
+                                Sukorejo, 12 September 2022
+                                PT. Karya Idaman Bersama membuka lowongan pekerjaan, dengan kriteria sebagai berikut :
+                                Persyaratan :
+                                1. Alumni SMK Negeri 1 Sukorejo
+                                2. Semua Jurusan
+                                3. Perempuan
+                                4. Usia Max. 22 tahun
+                                5. TB : Min. 155 cm (BB ideal)
+                                6. Tidak berkacamata
+                                7. Tidak buta waŕna
+                                8. Sudah Vaksin min sudah Dosis 2
+                                9. Surat sehat
+                                10. Berpenampilan Menarik</p>
+                            <a href="/BKK/detail-lowongan" class="blog-btn">
+                                Read more
+                                <i class="icofont-rounded-right"></i>
+                            </a>
+                            <small class="text-muted float-right">Status: <span class="dangerspan badge">Selesai</span></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-area">
+                        <div class="blog-img overimg">
+                            <a href="/BKK/detail-lowongan">
+                                <img src="../assets/img/lowongankerja/lowongan2.jpg" alt="blog image">
+                            </a>
+                        </div>
+                        <div class="blog-text">
+                            <h4 class="elipsisjudul"><a href="/BKK/detail-lowongan">LOWONGAN KERJA – PT. SHINWA NONWOVENS
+                                    INDONESIA</a></h4>
+                            <ul>
+                                <li>
+                                    <i class="icofont-calendar"></i>
+                                    20 Feb 2021
+                                </li>
+                                <li>
+                                    <i class="icofont-ui-user"></i>
+                                    <a href="#">Admin Sketsu</a>
+                                </li>
+                            </ul>
+                            <p class="elipsiszak">INFO BKK SMKN 1 SUKOREJO
+                                09 September 2022
+
+                                PT. SHINWA NONWOVENS INDONESIA
+                                (JL. Kraton Industri Raya No.6-8, Pasuruan Industrial Estate Rembang 67151 Curah Dukuh
+                                Jawa Timur) Membuka lowongan pekerjaan untuk bagian QC.
+
+                                Persyaratan :
+                                1. Alumni SMK Negeri 1 Sukorejo
+                                2. Laki – Laki
+                                3. Jurusan Kimia Industri
+                                4. Usia maksimal 20 tahun
+                                5. Diutamakan yang sudah vaksin booster
+                                6. Penempatan di PIER
+                                7. Disiplin dan Cekatan
+                                8. Sanggup bekerja sistem Shift</p>
+                            <a href="/BKK/detail-lowongan" class="blog-btn">
+                                Read more
+                                <i class="icofont-rounded-right"></i>
+                            </a>
+                            <small class="text-muted float-right">Status: <span class="dangerspan badge">Selesai</span></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-area">
+                        <div class="blog-img overimg">
+                            <a href="/BKK/detail-lowongan">
+                                <img src="../assets/img/lowongankerja/lowongan3.jpg" alt="blog image">
+                            </a>
+                        </div>
+                        <div class="blog-text">
+                            <h4 class="elipsisjudul"><a href="/BKK/detail-lowongan">LOWONGAN KERJA CIMORY DAIRY LAND
+                                    PRIGEN</a></h4>
+                            <ul>
+                                <li>
+                                    <i class="icofont-calendar"></i>
+                                    20 Feb 2021
+                                </li>
+                                <li>
+                                    <i class="icofont-ui-user"></i>
+                                    <a href="#">Admin Sketsu</a>
+                                </li>
+                            </ul>
+                            <p class="elipsiszak">INFO BKK SMK NEGERI 1 SUKOREJO
+                                Cimory Dairy Land Prigen membutuhkan karyawan dengan kriteria:
+                                1. Alumni SMKN 1 Sukorejo
+                                2. Laki-laki dan perempuan
+                                3. Tinggi dan berat badan ideal (diutamakan Laki-laki 160 perempuan 155)
+                                4. Jujur dan bertanggung jawab
+
+
+                                Bagi yang berminat langsung ikut tes :
+                                Hari : Minggu, 4 September 2022
+                                Jam : 09.00 WIB
+                                Tempat: Aula SMKN 1 Sukorejo
+
+
+                                Syarat :
+                                1. Berpakaian rapi.
+                                2. Membawa alat tulis
+                                3. Membawa CV dan surat lamaran dilampiri
+                                Fotokopi KTP</p>
+                            <a href="/BKK/detail-lowongan" class="blog-btn">
+                                Read more
+                                <i class="icofont-rounded-right"></i>
+                            </a>
+                            <small class="text-muted float-right">Status: <span class="dangerspan badge">Selesai</span></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-area">
+                        <div class="blog-img overimg">
+                            <a href="/BKK/detail-lowongan">
+                                <img src="../assets/img/lowongankerja/lowongan4.jpg" alt="blog image">
+                            </a>
+                        </div>
+                        <div class="blog-text">
+                            <h4 class="elipsisjudul"><a href="/BKK/detail-lowongan">LOWONGAN KERJA PT. JATIM AUTOCOMP
+                                    INDONESIA (PT. JAI)</a></h4>
+                            <ul>
+                                <li>
+                                    <i class="icofont-calendar"></i>
+                                    20 Feb 2021
+                                </li>
+                                <li>
+                                    <i class="icofont-ui-user"></i>
+                                    <a href="#">Admin Sketsu</a>
+                                </li>
+                            </ul>
+                            <p class="elipsiszak">PT. Jatim Autocomp Indonesia memberikan kesempatan kerja untuk alumni
+                                SMK Negeri 1 Sukorejo. Apabila kalian berminat dan memenuhi syarat yang tercantum dapat
+                                langsung datang ke SMK Negeri 1 Sukorejo pada salah satu sesi yang tercantum dalam
+                                brosur.
+
+                                Persiapkan diri kalian sebaik mungkin untuk menjadi bagian dari PT. Jatim Autocomp
+                                Indonesia (PT. JAI)
+
+                            </p>
+                            <a href="/BKK/detail-lowongan" class="blog-btn">
+                                Read more
+                                <i class="icofont-rounded-right"></i>
+                            </a>
+                            <small class="text-muted float-right">Status: <span class="secondspan badge">Masih Ada</span></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-area">
+                        <div class="blog-img overimg">
+                            <a href="/BKK/detail-lowongan">
+                                <img src="../assets/img/lowongankerja/lowongan5.jpg" alt="blog image">
+                            </a>
+                        </div>
+                        <div class="blog-text">
+                            <h4 class="elipsisjudul"><a href="/BKK/detail-lowongan">LOWONGAN KERJA INDOMARET</a></h4>
+                            <ul>
+                                <li>
+                                    <i class="icofont-calendar"></i>
+                                    20 Feb 2021
+                                </li>
+                                <li>
+                                    <i class="icofont-ui-user"></i>
+                                    <a href="#">Admin Sketsu</a>
+                                </li>
+                            </ul>
+                            <p class="elipsiszak">Kabar gembira bagi para pencari kerja. PT Indomarco Prismatama,
+                                beroperasi sebagai Indomaret, adalah jaringan pengecer waralaba di Indonesia. Kembali
+                                membuka kesempatan kerja untuk lulusanSMK.
+
+                                Bagi alumni SMK Negeri 1 Sukorejo yang berminat dapat segera mendaftarkan diri DISINI.
+                                Berkas lamaran kerja dikumpulkan di Ruang BKK SMKN 1 Sukorejo paling akhir tanggal 19
+                                Agustus 2022 Pukul 09.00 WIB
+
+                            </p>
+                            <a href="/BKK/detail-lowongan" class="blog-btn">
+                                Read more
+                                <i class="icofont-rounded-right"></i>
+                            </a>
+                            <small class="text-muted float-right">Status: <span class="secondspan badge">Masih Ada</span></small>
                         </div>
                     </div>
                 </div>
             </div>
+            <nav>
+                <ul class="pagination  justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                            <i class="icofont-rounded-left"></i>
+                        </a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item" aria-current="page">
+                        <a class="page-link active" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">
+                            <i class="icofont-rounded-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </div>
-    <div class="contact-section">
-        <div class="container">
-            <div class="contact-area">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 col-md-6">
-                        <div class="contact-img">
-                            <img src="../assets/img/workshop.jpg" alt="contact image">
-                        </div>
-                    </div>
-                    <div class="col-lg-5 col-md-6 offset-lg-1">
-                        <div class="section-head">
-                            <h2>We Love to <span> Hear from You</span></h2>
-                            <p>Feel free and share with us. We will get you</p>
-                        </div>
-                        <div class="contact-form">
-                            <form id="contactForm">
-                                <div class="row">
-                                    <div class="col-md-12 col-sm-6">
-                                        <div class="form-group">
-                                            <input type="text" name="name" id="name" class="form-control"
-                                                required data-error="Please enter your name" placeholder="Your Name">
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12 col-sm-6">
-                                        <div class="form-group">
-                                            <input type="email" name="email" id="email" class="form-control"
-                                                required data-error="Please enter your email"
-                                                placeholder="Your Email">
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12 col-md-12">
-                                        <div class="form-group">
-                                            <textarea name="message" class="form-control" id="message" cols="30" rows="5" required
-                                                data-error="Write your message" placeholder="Your Message"></textarea>
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12 col-md-12">
-                                        <button type="submit" class="default-btn page-btn">
-                                            Send Message
-                                        </button>
-                                        <div id="msgSubmit" class="h3 text-center hidden"></div>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
     @include('landingpage.layout.footer')
 
 
