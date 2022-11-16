@@ -1,4 +1,30 @@
 <!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- =========================================================
 * Frest - Bootstrap Admin Template | v1.0.0
 ==============================================================
@@ -16,7 +42,7 @@
   
 <!-- Mirrored from pixinvent.com/demo/frest-clean-bootstrap-admin-dashboard-template/html/vertical-menu-template-semi-dark/tables-datatables-basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 15 Nov 2022 01:22:18 GMT -->
 @include('Admin.layoutadmin.head')
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 <body>
 
   <!-- Layout wrapper -->
@@ -67,51 +93,42 @@
         
           <div class="container-xxl flex-grow-1 container-p-y">
             
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card mb-4">
+                    <h5 class="card-header">Tambah jurusan</h5>
+                    <div class="card-body">
+                        <form action="/jurusan/update/{{ $data->id }}" method="POST" enctype="multipart/form-data">
+                                @csrf
+                        <div>
+                        <label for="defaultFormControlInput" class="form-label">Jurusan</label>
+                        <input type="text" name="jurusan" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" value="{{ $data->jurusan }}"/>
+                        </div>
+                        <br/>
+
+                        <div>
+                        <label for="defaultFormControlInput" class="form-label">Deskripsi</label>
+                        <input type="text" name="deskripsi" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" value="{{ $data->deskripsi }}"/>
+                        </div>
+                        <br/>
+
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Update Foto</label>
+                            <br/>
+                            <img class="img mb-3" src="{{ asset('foto/' . $data->foto) }}" alt="" style="width: 100px;">
+                            <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto }}">
+                            <i style="float: left;font-size: 11px;color: red">Abaikan jika tidak merubah foto</i>
+                        </div>
+                        <button type="submit" class="btn rounded-pill btn-primary">Submit</button>
+                        </form>
+                        
+                    </div>
+                    </div>
+                </div>
+            </div>
 
 
 <!-- DataTable with Buttons -->
-      
-<div class="card mb-4">
-  <div class="card-datatable table-responsive pt-0">
-    <h5 class="card-header">Data Jurusan</h5>
-    <a href="/index/tambahjurusan" type="button" class="btn rounded-pill btn-primary">Tambah</a>
-    <table class="table" id="jurusan">
-  <thead>
-    <tr>
-      <th scope="col">No.</th>
-      <th scope="col">Jurusan</th>
-      <th scope="col">Deskripsi</th>
-      <th scope="col">Foto</th>
-      <th scope="col">Aksi</th>
-    </tr>
-  </thead>
-  <tbody class="table-group-divider">
-    <?php $no = 1; ?>
-    @foreach ($data as $jurusan)
-    <tr>
-        <td>{{ $no }}</td>
-        <td>{{ $jurusan->jurusan }}</td>
-        <td>{{ $jurusan->deskripsi }}</td>
-        <td>
-            <img src="{{ asset('foto/' . $jurusan->foto) }}" alt="" style="width: 80px; height:80px;">
-        </td>
-
-
-        <td>
-            <a href="/jurusan/edit/{{ $jurusan->id }}" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></a>
-            <a href="#" class="btn btn-danger delete" data-id="{{ $jurusan->id }}" data-jurusan="{{ $jurusan->jurusan }}"><i class="fa-solid fa-trash"></i></a>
-        </td>
-    </tr>
-          
-
-  </tbody>
-   <?php $no++; ?>
-@endforeach
-</table>
-  </div>
-</div>
-<!-- Modal to add new record -->
-
 
 <!--/ DataTable with Buttons -->
 
@@ -238,42 +255,13 @@
   <!-- Page JS -->
   <script src="../../assets1/js/tables-datatables-basic.js"></script>
   <script src="//cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-</body>
-<script>
-    $('.delete').click(function() {
-        var jurusanid = $(this).attr('data-id');
-        var jurusan = $(this).attr('data-jurusan');
 
-        swal({
-                title: "Apakah kamu yakin?",
-                text: "Kamu akan menghapus jurusan " + jurusan + "",
-                icon: "warning",
-                buttons: true,
-                dangerMode: true,
-            })
-            .then((willDelete) => {
-                if (willDelete) {
-                    window.location = "/jurusan/deletejurusan/" + jurusanid + ""
-                    swal("Data berhasil dihapus", {
-                        icon: "success",
-                    });
-                } else {
-                    swal("Data tidak jadi dihapus");
-                }
-            });
-    });
-</script>
+  
+</body>
 <script>
     $(document).ready(function() {
         $('#jurusan').DataTable();
     });
-</script>
-<script>
-    @if(Session::get('success'))
-    toastr.success("{{ Session::get('success') }}")
-    @endif
 </script>
 
 <!-- Mirrored from pixinvent.com/demo/frest-clean-bootstrap-admin-dashboard-template/html/vertical-menu-template-semi-dark/tables-datatables-basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 15 Nov 2022 01:22:20 GMT -->
