@@ -29,6 +29,7 @@ Route::get('/keahlian', [LandingController::class, 'keahlian']);
 Route::get('/lokerbkk', [LandingController::class, 'lokerbkk']);
 Route::get('/agenda', [LandingController::class, 'agenda']);
 Route::get('/guruu', [LandingController::class, 'guru']);
+Route::get('/agendadetail', [LandingController::class, 'agendadetail']);
 
 //DATA
 Route::get('/data/dharma', [LandingController::class, 'dharma']);
@@ -67,15 +68,12 @@ Route::get('/BKK/perusahaan-mitra', [LandingController::class, 'perusahaan_mitra
 
 //JURUSAN
 Route::get('/jurusan', [LandingController::class, 'jurusan']);
-
 Route::get('/detailjurusan/{id}', [LandingController::class, 'detailjurusan']);
 Route::get('/tkr', [LandingController::class, 'tkr']);
 Route::get('/tei', [LandingController::class, 'tei']);
 Route::get('/rpl', [LandingController::class, 'rpl']);
-
 Route::get('/tki', [LandingController::class, 'tki']);
 Route::get('/tav', [LandingController::class, 'tav']);
-
 Route::get('/modulproduktiftkr', [LandingController::class, 'modulproduktiftkr']);
 Route::get('/reparasibengkel', [LandingController::class, 'reparasibengkel']);
 Route::get('/modulproduktiftei', [LandingController::class, 'modulproduktiftei']);
@@ -101,8 +99,6 @@ Route::get('/index', [Admincontroller::class, 'index']);
 Route::get('/index/jurusan', [JurusanController::class, 'jurusanview'])->name('jurusanview');
 Route::get('/index/tambahjurusan', [JurusanController::class, 'tambahjurusan']);
 Route::post('/insertjurusan', [JurusanController::class, 'insertjurusan']);
-
 Route::get('/jurusan/edit/{id}', [JurusanController::class, 'editjurusan']);
 Route::post('jurusan/update/{id}', [JurusanController::class, 'updatejurusan']);
-
 Route::get('/jurusan/deletejurusan/{id}', [JurusanController::class, 'deletejurusan']);

@@ -293,7 +293,7 @@
                 <div class="blog-area">
                     <div class="blog-img">
                         <a href="#">
-                            <img src="assets/img/blog/1.png" alt="blog image">
+                            <img class="img-blog" src="../blog/tes.png" alt="blog image">
                         </a>
                     </div>
                     <div class="blog-text">
@@ -323,7 +323,7 @@
                 <div class="blog-area">
                     <div class="blog-img">
                         <a href="#">
-                            <img src="assets/img/blog/2.png" alt="blog image">
+                            <img class="img-blog" src="../blog/golf.png" alt="blog image">
                         </a>
                     </div>
                     <div class="blog-text">
@@ -354,7 +354,7 @@
                 <div class="blog-area">
                     <div class="blog-img">
                         <a href="#">
-                            <img src="assets/img/blog/3.png" alt="blog image">
+                            <img class="img-blog" src="../blog/kreasi.jpg" alt="blog image">
                         </a>
                     </div>
                     <div class="blog-text">
@@ -384,7 +384,7 @@
                 <div class="blog-area">
                     <div class="blog-img">
                         <a href="#">
-                            <img src="assets/img/blog/1.png" alt="blog image">
+                            <img class="img-blog" src="../blog/sepeda.png" alt="blog image">
                         </a>
                     </div>
                     <div class="blog-text">
@@ -415,12 +415,11 @@
                 <div class="blog-area">
                     <div class="blog-img">
                         <a href="#">
-                            <img src="assets/img/blog/2.png" alt="blog image">
+                            <img class="img-blog" src="assets/img/blog/2.png" alt="blog image">
                         </a>
                     </div>
                     <div class="blog-text">
-                        <h4><a href="#" class="overflow1">AYO ALUMNI TAHUN 2021 ISI TRACER STUDY DARI
-                                KEMDIKBUDRISTEK UNTUK MEWUJUDKAN DATA LULUSAN SMK YANG AKURAT</a></h4>
+                        <h4><a href="#" class="overflow1">PENUTUPAN PEKAN P5 – UNJUK HASIL KEWIRAUSAHAAN & KREASI SENI</a></h4>
                         <ul>
                             <li>
                                 <i class="icofont-calendar"></i>
@@ -431,11 +430,7 @@
                                 <a href="#">John Doe</a>
                             </li>
                         </ul>
-                        <p class="overflow">Halo Alumni SMK Negeri 1 Sukorejo yang kami banggakan Dalam rangka
-                            penjaminan mutu dan peningkatan relevansi pendidikan vokasi dengan dunia kerja,
-                            Kemdikbudristek menetapkan kebijakan untuk mendapatkan data nasional lulusan SMK yang akurat
-                            melalui Tracer Study SMK. Bagi kalian yang termasuk Alumni SMK Negeri 1 Sukorejo lulusan
-                            tahun 2021 yuk segera mengisi data penelusuran tamatan DISINI</p>
+                        <p class="overflow">Para peserta didik SMK Negeri 1 Sukorejo saling berlomba memasarkan hasil wirausaha dalam kegiatan bazar yang diramaikan juga oleh Bapak Ibu Guru dan Bapak Kepala Sekolah. Beraneka macam jajanan dan minuman hasil kreativitas peserta didik dipamerkan dan dijual dalam bazar penutupan pekan P5.</p>
                         <a href="blog-details.html" class="blog-btn">
                             Read more
                             <i class="icofont-rounded-right"></i>
@@ -445,7 +440,7 @@
                 <div class="blog-area">
                     <div class="blog-img">
                         <a href="#">
-                            <img src="assets/img/blog/3.png" alt="blog image">
+                            <img class="img-blog" src="../blog/alumni.png" alt="blog image">
                         </a>
                     </div>
                     <div class="blog-text">
@@ -475,7 +470,7 @@
                 <div class="blog-area">
                     <div class="blog-img">
                         <a href="#">
-                            <img src="assets/img/blog/1.png" alt="blog image">
+                            <img class="img-blog" src="../blog/alumni.png" alt="blog image">
                         </a>
                     </div>
                     <div class="blog-text">
@@ -505,11 +500,11 @@
                 <div class="blog-area">
                     <div class="blog-img">
                         <a href="#">
-                            <img src="assets/img/blog/2.png" alt="blog image">
+                            <img class="img-blog" src="../blog/musik.png" alt="blog image">
                         </a>
                     </div>
                     <div class="blog-text">
-                        <h4><a href="#" class="overflow1">Perwakilan RPL Sketsu, Tembus Provinsi</a></h4>
+                        <h4><a href="#" class="overflow1">SELAMAT ! PERWAKILAN SMK NEGERI 1 SUKOREJO MEMBORONG PIALA PADA SKY MUSIC COMPETITION</a></h4>
                         <ul>
                             <li>
                                 <i class="icofont-calendar"></i>
@@ -520,11 +515,7 @@
                                 <a href="#">John Doe</a>
                             </li>
                         </ul>
-                        <p class="overflow">Alhamdulillah, kami ucapkan kepada Allah SWT atas keberhasilan Eri Ernanda
-                            sebagai peserta pertama yang lolos Lomba LKS ke tingkat Provinsi di bidang Cloud Computing.
-                            Eri Ernanda dari SMKN 1 Sukorejo (@sketsu_bisa) berhasil mendapatkan Juara 1 di wilker 2
-                            Jatim dengan memperoleh rata-rata skor 70.3, diikuti Afrizal Arif Maulana sebagai Juara 2
-                            dari SMKN 1 Purwosari</p>
+                        <p class="overflow">Siswa SMK Negeri 1 Sukorejo memborong 2 piala dalam kegiatan lomba menyanyi yang diadakan oleh Sky Music Competition. 2 kategori lomba yang berhasil dimenangkan oleh perwakilan SMK Negeri 1 Sukorejo yaitu 1. Juara Favorit dengan jumlah like terbanyak diinstagram 2. Juara1 Kategori Acoustic Group 3. Juara 2 Kategori Penyanyi Solo Terimakasih atas perjuangannya untuk mengharumkan</p>
                         <a href="blog-details.html" class="blog-btn">
                             Read more
                             <i class="icofont-rounded-right"></i>
@@ -534,7 +525,7 @@
                 <div class="blog-area">
                     <div class="blog-img">
                         <a href="#">
-                            <img src="assets/img/blog/3.png" alt="blog image">
+                            <img class="img-blog" src="../blog/kreasi.jpg" alt="blog image">
                         </a>
                     </div>
                     <div class="blog-text">

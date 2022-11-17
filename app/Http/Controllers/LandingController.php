@@ -24,9 +24,9 @@ class LandingController extends Controller
     }
     public function detailjurusan($id)
     {
-        
+
         $data = Jurusan::find($id);
-        
+
         return view("landingpage.jurusan.detailjurusan", compact('data'));
     }
     public function tkr()
@@ -201,5 +201,9 @@ class LandingController extends Controller
     }
     public function detailprestasi(){
         return view('landingpage.Data.detailprestasi');
+    }
+
+    public function agendadetail(){
+        return view('landingpage.beranda.detailagenda');
     }
 }
