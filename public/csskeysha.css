@@ -153,3 +153,8 @@ h1 {
         display: -webkit-box;
         word-break: break-word;
 }
+.img-sidebar {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
