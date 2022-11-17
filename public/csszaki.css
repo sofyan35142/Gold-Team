@@ -219,7 +219,17 @@
 .float-right{
     float: right;
 }
-
+.text-elipsiszak{
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.h-fc{
+    height: fit-content;
+}
+.hovchange::before{
+    src: attr(data-imageb);
+}
 /***************** RESPONSIVE ZAKI *************/
 @media (max-width:767px) {
     .ytvideo {
