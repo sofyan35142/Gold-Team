@@ -46,15 +46,13 @@
     <div class="blog-details-area blog-details-page-area pt-100">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-8">
                     <div class="blog-details-post">
                         <div class="blog-post-title">
                             <h3>
                                 Visi Misi
                             </h3>
                         </div>
-                        <img class="imgvisi" src="../assets/img/visimisi.png" alt="service">
-
                         <h3 class="mt-3">
                             TUJUAN
                         </h3>
@@ -82,6 +80,11 @@
                             sumber daya alam dengan efektif dan efisien.</p>
                         <p>5.Sekolah mampu mengalokasikan anggaran minimal sebesar 20% untuk membiayai kegiatan sekolah
                             adiwiyata.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 main-service-area blog-side-bar border shadows mb-40px h-fc py-3">
+                    <div class="service-sidebar">
+                        <img class="imgvisi" src="../assets/img/visimisi.png" alt="service">
                     </div>
                 </div>
             </div>

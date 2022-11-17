@@ -173,6 +173,10 @@ class LandingController extends Controller
     {
         return view("landingpage.BKK.bimbingan_karir");
     }
+    public function perusahaan_mitra()
+    {
+        return view("landingpage.BKK.perusahaan_mitra");
+    }
 
     //Alumni
     public function testimonialumni()
