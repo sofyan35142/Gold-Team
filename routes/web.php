@@ -30,6 +30,7 @@ Route::get('/lokerbkk', [LandingController::class, 'lokerbkk']);
 Route::get('/agenda', [LandingController::class, 'agenda']);
 Route::get('/guruu', [LandingController::class, 'guru']);
 Route::get('/agendadetail', [LandingController::class, 'agendadetail']);
+Route::get('/blogbanyak', [LandingController::class, 'blogbanyak']);
 
 //DATA
 Route::get('/data/dharma', [LandingController::class, 'dharma']);

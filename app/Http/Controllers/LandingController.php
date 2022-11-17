@@ -206,4 +206,8 @@ class LandingController extends Controller
     public function agendadetail(){
         return view('landingpage.beranda.detailagenda');
     }
+
+    public function blogbanyak(){
+        return view ('landingpage.beranda.bloglebihbanyak');
+    }
 }
