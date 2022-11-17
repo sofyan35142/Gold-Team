@@ -65,7 +65,7 @@
                         <h3 id="jurusan">{{$data->jurusan}}</h3>
 
 
-                        <p id="deskirpsi">{{$data->deskripsi}}</p>
+                        <p id="deskirpsi">{!! $data->deskripsi !!}</p>
 
                     </div>
 

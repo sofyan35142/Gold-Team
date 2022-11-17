@@ -91,7 +91,7 @@
     <tr>
         <td>{{ $no }}</td>
         <td>{{ $jurusan->jurusan }}</td>
-        <td>{{ $jurusan->deskripsi }}</td>
+        <td>{!! $jurusan->deskripsi !!}</td>
         <td>
             <img src="{{ asset('foto/' . $jurusan->foto) }}" alt="" style="width: 80px; height:80px;">
         </td>

@@ -108,12 +108,16 @@
 
                         <div>
                         <label for="editor" class="form-label">Deskripsi</label>
-                        <input type="text" name="deskripsi" class="form-control" id="editor"  aria-describedby="defaultFormControlHelp" />
+                        {{-- <input type="text" name="deskripsi" class="form-control" id="editor"  aria-describedby="defaultFormControlHelp" /> --}}
+                        <div class="card-body">
+                                <textarea name="deskripsi" id="editor"></textarea>
+                            </div>
                         </div>
                         <br/>
 
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Upload Foto Peserta</label>
+                            
                             <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>
                         <button type="submit" class="btn rounded-pill btn-primary">Submit</button>

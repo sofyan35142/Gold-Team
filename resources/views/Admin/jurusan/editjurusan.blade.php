@@ -108,7 +108,10 @@
 
                         <div>
                         <label for="editor" class="form-label">Deskripsi</label>
-                        <input type="text" name="deskripsi" class="form-control" id="editor"  aria-describedby="defaultFormControlHelp" value="{{ $data->deskripsi }}"/>
+                        <div class="card-body">
+                                <textarea name="deskripsi" id="editor" value="{!! $data->deskripsi !!}"></textarea>
+                            </div>
+                        {{-- <input type="text" name="deskripsi" class="form-control" id="editor"  aria-describedby="defaultFormControlHelp" /> --}}
                         </div>
                         <br/>
 
