@@ -259,16 +259,6 @@
                                 </li>
                             </ul>
                         </div>
-                        {{-- <div class="tags">
-                            <p>Most Popular Tags</p>
-                            <a href="#">Enjoy</a>
-                            <a href="#">Clean</a>
-                            <a href="#">Hygienic</a>
-                            <a href="#">Time</a>
-                            <a href="#">Brush</a>
-                            <a href="#">Wash</a>
-                            <a href="#">Call</a>
-                        </div> --}}
                         <div class="ratio ratio-16x9">
                             <iframe
                                 src="https://www.youtube.com/embed/_3QdWBLnRlo?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0"

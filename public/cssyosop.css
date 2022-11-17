@@ -248,3 +248,78 @@ h2 {
             }
         }
 
+.img-blog{
+    height: 350px;
+}
+
+.img-detailblog{
+    height: 80px;
+    width: 100px;
+}
+
+.sidebar-post-inner {
+  float: left;
+  width: 100%;
+  padding: 0;
+  margin: 0 10px 30px 0;
+}
+
+.sidebar-post-inner .image-widget-post {
+  width: 30%;
+  height: auto;
+  float: left;
+}
+
+.sidebar-post-inner:last-child {
+  margin-bottom: 0;
+}
+.sidebar-post-inner .info-widget-post h5 {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  margin-bottom: 0;
+  color: #1C3547;
+}
+
+.info-widget-post small {
+  color: #828893;
+}
+
+.sidebar-post-inner .info-widget-post {
+  width: 70%;
+  height: auto;
+  float: left;
+  padding-left: 15px;
+}
+.sidebar-post-inner img {
+  width: 115px;
+}
+.sidebar-post-inner a {
+  display: block;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  border-radius: 2px;
+}
+
+.sidebar-categroies .catgeorie-list {
+  position: relative;
+}
+.sidebar-categroies .catgeorie-list li {
+  position: relative;
+  line-height: 24px;
+  padding-bottom: 15px;
+  margin-bottom: 5px;
+}
+.sidebar-categroies .catgeorie-list li a {
+  line-height: 18px;
+  font-weight: 500;
+  color: #1C3547;
+  display: block;
+}
+
+.img-detail{
+    height: 580px;
+    width: auto;
+}
