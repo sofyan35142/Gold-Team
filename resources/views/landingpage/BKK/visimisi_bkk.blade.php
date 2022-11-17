@@ -48,7 +48,7 @@
     <div class="service-details-area main-service-area pt-100 services-details-page">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-8">
                     {{-- <img src="foto/jurusan/RPL.JPG" alt="service"> --}}
                     <div class="service-details-post">
                         <div class="blog-post-title">
@@ -56,7 +56,7 @@
                                 Visi Dan Misi BKK
                             </h3>
                         </div>
-                        <img class="mb-3 w-100" src="../assets/img/ruangbkk.png" alt="service">
+                        {{-- <img class="mb-3 w-100" src="" alt="service"> --}}
                         <h3>Visi :</h3>
                         <ul>
                             <li class="listitemzak">Terwujudnya Tingkat Keterserapan Tamatan Yang Tinggi Baik Di Dunia
@@ -78,6 +78,12 @@
                             <li class="listitemzak"><i class="icofont-rounded-right"></i>Menjalin komunikasi yang baik
                                 dengan Dinas Tenaga Kerja, Dinas Perindustrian, BLK dan APINDO.</li>
                         </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 main-service-area blog-side-bar border shadows mb-40px h-fc py-3">
+                    <div class="service-sidebar">
+                        <h6>Ruangan BKK</h6>
+                        <img class="imgvisi" src="../assets/img/ruangbkk.png" alt="service">
                     </div>
                 </div>
             </div>

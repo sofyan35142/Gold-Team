@@ -124,7 +124,7 @@
                             </a>
                         </div>
                     </div>
-                    scrollblg <div class="blog-area p-10px">
+                    <div class="blog-area p-10px">
                         <div class="blog-img">
                             <a href="blog-details.html">
                                 <img src="../assets/img/blog/1.png" alt="blog image">
@@ -150,7 +150,7 @@
                             </a>
                         </div>
                     </div>
-                    scrollblg <div class="blog-area p-10px">
+                    <div class="blog-area p-10px">
                         <div class="blog-img">
                             <a href="blog-details.html">
                                 <img src="../assets/img/blog/1.png" alt="blog image">
@@ -176,7 +176,7 @@
                             </a>
                         </div>
                     </div>
-                    scrollblg <div class="blog-area p-10px">
+                    <div class="blog-area p-10px">
                         <div class="blog-img">
                             <a href="blog-details.html">
                                 <img src="../assets/img/blog/1.png" alt="blog image">

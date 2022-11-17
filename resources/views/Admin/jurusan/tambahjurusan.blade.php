@@ -107,13 +107,17 @@
                         <br/>
 
                         <div>
-                        <label for="defaultFormControlInput" class="form-label">Deskripsi</label>
-                        <input type="text" name="deskripsi" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" />
+                        <label for="editor" class="form-label">Deskripsi</label>
+                        {{-- <input type="text" name="deskripsi" class="form-control" id="editor"  aria-describedby="defaultFormControlHelp" /> --}}
+                        <div class="card-body">
+                                <textarea name="deskripsi" id="editor"></textarea>
+                            </div>
                         </div>
                         <br/>
 
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Upload Foto Peserta</label>
+                            
                             <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>
                         <button type="submit" class="btn rounded-pill btn-primary">Submit</button>
@@ -252,6 +256,14 @@
   <!-- Page JS -->
   <script src="../../assets1/js/tables-datatables-basic.js"></script>
   <script src="//cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/35.3.1/classic/ckeditor.js"></script>
+  <script>
+    ClassicEditor
+        .create( document.querySelector('#editor') )
+        .catch( error => {
+          console.error(error);
+        });
+  </script>
 </body>
 <script>
     $(document).ready(function() {

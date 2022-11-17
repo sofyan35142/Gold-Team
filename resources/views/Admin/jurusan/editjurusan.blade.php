@@ -107,8 +107,11 @@
                         <br/>
 
                         <div>
-                        <label for="defaultFormControlInput" class="form-label">Deskripsi</label>
-                        <input type="text" name="deskripsi" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" value="{{ $data->deskripsi }}"/>
+                        <label for="editor" class="form-label">Deskripsi</label>
+                        <div class="card-body">
+                                <textarea name="deskripsi" id="editor" value="{!! $data->deskripsi !!}"></textarea>
+                            </div>
+                        {{-- <input type="text" name="deskripsi" class="form-control" id="editor"  aria-describedby="defaultFormControlHelp" /> --}}
                         </div>
                         <br/>
 
@@ -256,6 +259,16 @@
   <script src="../../assets1/js/tables-datatables-basic.js"></script>
   <script src="//cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
 
+
+  <script src="https://cdn.ckeditor.com/ckeditor5/35.3.1/classic/ckeditor.js"></script>
+  <script>
+    ClassicEditor
+        .create( document.querySelector('#editor') )
+        .catch( error => {
+          console.error(error);
+        });
+  </script>
+                       
   
 </body>
 <script>
@@ -266,3 +279,5 @@
 
 <!-- Mirrored from pixinvent.com/demo/frest-clean-bootstrap-admin-dashboard-template/html/vertical-menu-template-semi-dark/tables-datatables-basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 15 Nov 2022 01:22:20 GMT -->
 </html>
+
+

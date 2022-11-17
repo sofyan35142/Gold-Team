@@ -1,15 +1,6 @@
 <!doctype html>
 <html lang="zxx">
-<<<<<<< HEAD
-
-<!-- Mirrored from templates.hibootstrap.com/viscous/default/service.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Nov 2022 02:34:10 GMT -->
 @include('landingpage.layout.head')
-
-
-=======
-@include('landingpage.layout.head')
-
->>>>>>> 26a997d7c6a34606fa9b1aea2945fb026a44a729
 <body>
 
     <div class="loader-content">
@@ -30,12 +21,7 @@
 
     @include('landingpage.layout.header')
 
-<<<<<<< HEAD
-
-    <div class="service-title service-title-bg">
-=======
     <div class="service-title service-title-bg bg-3">
->>>>>>> 26a997d7c6a34606fa9b1aea2945fb026a44a729
         <div class="d-table">
             <div class="d-table-cell">
                 <div class="container">
