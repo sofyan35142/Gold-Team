@@ -53,7 +53,7 @@
     <div class="service-details-area main-service-area pt-100 services-details-page">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-8">
                     {{-- <img src="foto/jurusan/TKR.JPG" alt="service"> --}}
                     <div class="service-details-post">
                         <h1>Visi Dan Misi LSP</h1>
@@ -97,28 +97,14 @@
                             Video (TAV) dan Rekayasa Perangkat Lunak (RPL).</p>
 
                     </div>
-                    {{-- <div class="page-button">
-<div class="row">
-<div class="col-md-3 col-sm-6">
-<div class="theme-button">
-<a href="#" class="default-btn">
-<i class="icofont-rounded-left"></i>
-Previous
-</a>
-</div>
-</div>
-<div class="col-md-3 col-sm-6 offset-md-6">
-<div class="theme-button">
-<a href="#" class="default-btn">
-Next
-<i class="icofont-rounded-right"></i>
-</a>
-</div>
-</div>
-</div>
-</div> --}}
+
                 </div>
-                
+                <div class="col-lg-4 main-service-area blog-side-bar">
+                    <div class="service-details-post">
+                                        <img src="foto/lsp.jpg"
+                                            alt="logo lsp">
+                    </div>         
+                </div>
             </div>
         </div>
     </div>

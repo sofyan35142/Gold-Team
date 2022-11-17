@@ -48,7 +48,7 @@
     <div class="service-details-area main-service-area pt-100 services-details-page">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-8">
                     {{-- <img src="foto/jurusan/TKR.JPG" alt="service"> --}}
                     <div class="service-details-post">
                         <h1>LSP</h1>
@@ -113,116 +113,8 @@
                             <br />
                             a/n : LSP SMKN 1 SUKOREJO
                         </p>
-                        <h3>LAY OUT, PAPAN NAMA DAN KANTOR LSP</h3>
-                        <section
-                            class="elementor-element elementor-element-6a0ad8a elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section"
-                            data-id="6a0ad8a" data-element_type="section">
-                            <div class="elementor-container elementor-column-gap-default">
-                                <div class="elementor-row">
-                                    <div class="elementor-element elementor-element-7026e8b elementor-column elementor-col-100 elementor-top-column"
-                                        data-id="7026e8b" data-element_type="column">
-                                        <div class="elementor-column-wrap  elementor-element-populated">
-                                            <div class="elementor-widget-wrap">
-                                                <div class="elementor-element elementor-element-b5fed15 elementor-widget elementor-widget-image"
-                                                    data-id="b5fed15" data-element_type="widget"
-                                                    data-widget_type="image.default">
-                                                    <div class="elementor-widget-container">
-                                                        <div class="elementor-image">
-                                                            <img width="640" height="242"
-                                                                src="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/Logo-LSP-1024x387.jpg"
-                                                                class="attachment-large size-large" alt=""
-                                                                srcset="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/Logo-LSP-1024x387.jpg 1024w, https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/Logo-LSP-300x113.jpg 300w, https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/Logo-LSP-768x290.jpg 768w, https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/Logo-LSP.jpg 1229w"
-                                                                sizes="(max-width: 640px) 100vw, 640px" />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section
-                            class="elementor-element elementor-element-17d3b97 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section"
-                            data-id="17d3b97" data-element_type="section">
-                            <div class="elementor-container elementor-column-gap-default">
-                                <div class="elementor-row">
-                                    <div class="elementor-element elementor-element-d5909f0 elementor-column elementor-col-100 elementor-top-column"
-                                        data-id="d5909f0" data-element_type="column">
-                                        <div class="elementor-column-wrap  elementor-element-populated">
-                                            <div class="elementor-widget-wrap">
-                                                <div class="elementor-element elementor-element-7a60d17 elementor-widget elementor-widget-image"
-                                                    data-id="7a60d17" data-element_type="widget"
-                                                    data-widget_type="image.default">
-                                                    <div class="elementor-widget-container">
-                                                        <div class="elementor-image">
-                                                            <img width="640" height="367"
-                                                                src="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/Kantor-LSP-1024x587.jpg"
-                                                                class="attachment-large size-large" alt=""
-                                                                srcset="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/Kantor-LSP-1024x587.jpg 1024w, https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/Kantor-LSP-300x172.jpg 300w, https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/Kantor-LSP-768x440.jpg 768w, https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/Kantor-LSP.jpg 1434w"
-                                                                sizes="(max-width: 640px) 100vw, 640px" />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section
-                            class="elementor-element elementor-element-f14a3b1 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section"
-                            data-id="f14a3b1" data-element_type="section">
-                            <div class="elementor-container elementor-column-gap-default">
-                                <div class="elementor-row">
-                                    <div class="elementor-element elementor-element-4128256 elementor-column elementor-col-100 elementor-top-column"
-                                        data-id="4128256" data-element_type="column">
-                                        <div class="elementor-column-wrap  elementor-element-populated">
-                                            <div class="elementor-widget-wrap">
-                                                <div class="elementor-element elementor-element-5b59e1d elementor-widget elementor-widget-image"
-                                                    data-id="5b59e1d" data-element_type="widget"
-                                                    data-widget_type="image.default">
-                                                    <div class="elementor-widget-container">
-                                                        <div class="elementor-image">
-                                                            <img width="640" height="478"
-                                                                src="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/Denah-LSP.png"
-                                                                class="attachment-large size-large" alt=""
-                                                                srcset="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/Denah-LSP.png 672w, https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/Denah-LSP-300x224.png 300w, https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/Denah-LSP-136x102.png 136w"
-                                                                sizes="(max-width: 640px) 100vw, 640px" />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section
-                            class="elementor-element elementor-element-41e4419 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section"
-                            data-id="41e4419" data-element_type="section">
-                            <div class="elementor-container elementor-column-gap-default">
-                                <div class="elementor-row">
-                                    <div class="elementor-element elementor-element-09d1bd8 elementor-column elementor-col-100 elementor-top-column"
-                                        data-id="09d1bd8" data-element_type="column">
-                                        <div class="elementor-column-wrap  elementor-element-populated">
-                                            <div class="elementor-widget-wrap">
-                                                <div class="elementor-element elementor-element-0ce3808 elementor-widget elementor-widget-text-editor"
-                                                    data-id="0ce3808" data-element_type="widget"
-                                                    data-widget_type="text-editor.default">
-                                                    <div class="elementor-widget-container">
-                                                        <div class="elementor-text-editor elementor-clearfix"><iframe
-                                                                src="https://bnsp.go.id/detaillsp?id=91"
-                                                                width="100%" height="750px">
-                                                            </iframe></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
+                        
+                        
 
 
                     </div>
@@ -248,8 +140,51 @@ Next
 </div> --}}
                 </div>
                 <div class="col-lg-4 main-service-area blog-side-bar">
-                   
+                    <div class="service-details-post">
+                        <h3>PAPAN NAMA</h3>
+                            <img src="foto/lspsmk.jpg"
+                                            alt="papan nama">
+                    </div>
+                    <div class="service-details-post">
+                        <h3>KANTOR LSP</h3>
+                            <img src="foto/kantorlsp.jpg"
+                                            alt="kantor lsp">
+                    </div>
+                    <div class="service-details-post">
+                        <h3>DENAH LOKASI (LAY OUT)</h3>
+                            <img src="foto/layoutlsp.png"
+                                            alt="layout lsp">
+                    </div>
                     
+                </div>
+                <div class="col-lg-8">
+                    <div class="service-details-post">
+                        <section
+                            class="elementor-element elementor-element-41e4419 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section"
+                            data-id="41e4419" data-element_type="section">
+                            <div class="elementor-container elementor-column-gap-default">
+                                <div class="elementor-row">
+                                    <div class="elementor-element elementor-element-09d1bd8 elementor-column elementor-col-100 elementor-top-column"
+                                        data-id="09d1bd8" data-element_type="column">
+                                        <div class="elementor-column-wrap  elementor-element-populated">
+                                            <div class="elementor-widget-wrap">
+                                                <div class="elementor-element elementor-element-0ce3808 elementor-widget elementor-widget-text-editor"
+                                                    data-id="0ce3808" data-element_type="widget"
+                                                    data-widget_type="text-editor.default">
+                                                    <div class="elementor-widget-container">
+                                                        <div class="elementor-text-editor elementor-clearfix"><iframe
+                                                                src="https://bnsp.go.id/detaillsp?id=91"
+                                                                width="100%" height="750px">
+                                                            </iframe></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
                 </div>
             </div>
         </div>
