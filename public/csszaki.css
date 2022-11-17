@@ -80,6 +80,9 @@
 .h-200 {
     height: 200px;
 }
+.h-40 {
+    height: 40px;
+}
 
 .badge {
     display: inline-block;
@@ -227,8 +230,24 @@
 .h-fc{
     height: fit-content;
 }
+.price-card-area .plan-features ul li {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    color: #111;
+    line-height: 1.3 !important;
+    margin-bottom: 20px;
+}
+.price-card-area .plan-features {
+    padding: 30px 30px 30px 20px !important;
+}
 .hovchange::before{
     src: attr(data-imageb);
+}
+.cardkbkk{
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
 }
 /***************** RESPONSIVE ZAKI *************/
 @media (max-width:767px) {

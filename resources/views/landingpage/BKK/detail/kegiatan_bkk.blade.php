@@ -30,15 +30,16 @@
                         <h2>Kegiatan BKK</h2>
                         <ul>
                             <li>
-                                <a href="/">Bursa Kerja Khusus</a>
+                                <a href="/#">Bursa Kerja Khusus</a>
                             </li>
                             <li>
                                 <i class="icofont-rounded-double-right"></i>
-                                <a href="/jurusan">Kegiatan BKK</a>
+                                <a href="/#">Kegiatan BKK</a>
                             </li>
                             <li>
                                 <i class="icofont-rounded-double-right"></i>
-                                <a href="/jurusan">Sosialisasi Penyesuaian Budaya Kerja dari PT. Astra Daihatsu</a>
+                                <a class="text-elipsiszak" href="/#">WORKSHOP TRACER STUDY DAN PROGRAM KESIAPAN KERJA BEKERJA SAMA DENGAN
+                                    DINAS TENAGA KERJA KABUPATEN PASURUAN</a>
                             </li>
                         </ul>
                     </div>
@@ -46,34 +47,112 @@
             </div>
         </div>
     </div>
-    <div class="blog-details-area blog-details-page-area pt-100">
+    <div class="recent-style-two blog-details-area blog-details-page-area pt-100">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <img class="w-100" src="../assets/img/lowongankerja/lowongan5.jpg" alt="service">
-                    <div class="blog-details-post">
-                        <div class="blog-post-title">
-                            <h3>
-                                LOWONGAN KERJA INDOMARET
-                            </h3>
-                            <ul>
-                                <li>
-                                    <i class="icofont-calendar"></i>
-                                    20 Feb 2021
-                                </li>
-                                <li>
-                                    <i class="icofont-ui-user"></i>
-                                    <a href="#">John Doe</a>
-                                </li>
-                            </ul>
+                <div class="blog-details-post">
+                    <div class="blog-post-title">
+                        <h3>
+                            WORKSHOP TRACER STUDY DAN PROGRAM KESIAPAN KERJA BEKERJA SAMA DENGAN DINAS TENAGA KERJA
+                            KABUPATEN PASURUAN
+                        </h3>
+                        <ul>
+                            <li>
+                                <i class="icofont-calendar"></i>
+                                20 Feb 2021
+                            </li>
+                            <li>
+                                <i class="icofont-ui-user"></i>
+                                <a href="#">John Doe</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="recent-items">
+                                <div class="recent-img">
+                                    <img src="../assets/img/detailbkk/detailbkk1.jpg" alt="project image"
+                                        height="466">
+                                    <div class="recent-hover">
+                                        <div class="d-table">
+                                            <div class="d-table-cell">
+                                                <a href="../assets/img/detailbkk/detailbkk1.jpg" class="popup-gallery">
+                                                    <i class="icofont-eye-alt"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <p>Kabar gembira bagi para pencari ker#ja. PT Indomarco Prismatama, beroperasi sebagai
-                            Indomaret, adalah jaringan pengecer waralaba di Indonesia. Kembali membuka kesempatan kerja
-                            untuk lulusanSMK.</p>
-
-                        <p>Bagi alumni SMK Negeri 1 Sukorejo yang berminat dapat segera mendaftarkan diri <a
-                                href="#">DISINI.</a> Berkas lamaran kerja dikumpulkan di Ruang BKK SMKN 1 Sukorejo
-                            paling akhir tanggal 19 Agustus 2022 Pukul 09.00 WIB</p>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="recent-items">
+                                <div class="recent-img">
+                                    <img src="../assets/img/detailbkk/detailbkk2.jpg" alt="project image"
+                                        height="466">
+                                    <div class="recent-hover">
+                                        <div class="d-table">
+                                            <div class="d-table-cell">
+                                                <a href="../assets/img/detailbkk/detailbkk2.jpg" class="popup-gallery">
+                                                    <i class="icofont-eye-alt"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="recent-items">
+                                <div class="recent-img">
+                                    <img src="../assets/img/detailbkk/detailbkk3.jpg" alt="project image"
+                                        height="466">
+                                    <div class="recent-hover">
+                                        <div class="d-table">
+                                            <div class="d-table-cell">
+                                                <a href="../assets/img/detailbkk/detailbkk3.jpg" class="popup-gallery">
+                                                    <i class="icofont-eye-alt"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="recent-items">
+                                <div class="recent-img">
+                                    <img src="../assets/img/detailbkk/detailbkk4.jpg" alt="project image"
+                                        height="466">
+                                    <div class="recent-hover">
+                                        <div class="d-table">
+                                            <div class="d-table-cell">
+                                                <a href="../assets/img/detailbkk/detailbkk4.jpg" class="popup-gallery">
+                                                    <i class="icofont-eye-alt"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="recent-items">
+                                <div class="recent-img">
+                                    <img src="../assets/img/detailbkk/detailbkk5.jpg" alt="project image"
+                                        height="466">
+                                    <div class="recent-hover">
+                                        <div class="d-table">
+                                            <div class="d-table-cell">
+                                                <a href="https://www.youtube.com/embed/EvXEDf4hBxU" class="popup-gallery">
+                                                    <i class="icofont-eye-alt"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -50,7 +50,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="blog-area">
                         <div class="blog-img">
-                            <a href="blog-details.html">
+                            <a href="/BKK/detail-kegiatan-bkk">
                                 <img src="../assets/img/workshop.jpg" alt="blog image">
                             </a>
                         </div>
@@ -65,8 +65,8 @@
                                     <a href="#">John Doe</a>
                                 </li>
                             </ul>
-                            <h4><a href="blog-details.html">WORKSHOP TRACER STUDY DAN PROGRAM KESIAPAN KERJA BEKERJA SAMA DENGAN DINAS TENAGA KERJA KABUPATEN PASURUAN</a></h4>
-                            <a href="blog-details.html" class="blog-btn">
+                            <h4><a href="/BKK/detail-kegiatan-bkk">WORKSHOP TRACER STUDY DAN PROGRAM KESIAPAN KERJA BEKERJA SAMA DENGAN DINAS TENAGA KERJA KABUPATEN PASURUAN</a></h4>
+                            <a href="/BKK/detail-kegiatan-bkk" class="blog-btn">
                                 Read more
                                 <i class="icofont-rounded-right"></i>
                             </a>
@@ -76,7 +76,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="blog-area">
                         <div class="blog-img">
-                            <a href="blog-details.html">
+                            <a href="/BKK/detail-kegiatan-bkk">
                                 <img src="../assets/img/kegiatanbkk2.jpg" alt="blog image">
                             </a>
                         </div>
@@ -92,8 +92,8 @@
                                     <a href="#">John Doe</a>
                                 </li>
                             </ul>
-                            <h4><a href="blog-details.html">Implementasi Link and Match SMK Pusat Keunggulan – SMKN 1 Sukorejo</a></h4>
-                            <a href="blog-details.html" class="blog-btn">
+                            <h4><a href="/BKK/detail-kegiatan-bkk">Implementasi Link and Match SMK Pusat Keunggulan – SMKN 1 Sukorejo</a></h4>
+                            <a href="/BKK/detail-kegiatan-bkk" class="blog-btn">
                                 Read more
                                 <i class="icofont-rounded-right"></i>
                             </a>
@@ -103,7 +103,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="blog-area">
                         <div class="blog-img">
-                            <a href="blog-details.html">
+                            <a href="/BKK/detail-kegiatan-bkk">
                                 <img src="../assets/img/kegiatanbkk3.jpg" alt="blog image">
                             </a>
                         </div>
@@ -119,8 +119,8 @@
                                     <a href="#">John Doe</a>
                                 </li>
                             </ul>
-                            <h4><a href="blog-details.html">Sosialisasi Penyesuaian Budaya Kerja dari PT. Astra Daihatsu</a></h4>
-                            <a href="blog-details.html" class="blog-btn">
+                            <h4><a href="/BKK/detail-kegiatan-bkk">Sosialisasi Penyesuaian Budaya Kerja dari PT. Astra Daihatsu</a></h4>
+                            <a href="/BKK/detail-kegiatan-bkk" class="blog-btn">
                                 Read more
                                 <i class="icofont-rounded-right"></i>
                             </a>
@@ -130,7 +130,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="blog-area">
                         <div class="blog-img">
-                            <a href="blog-details.html">
+                            <a href="/BKK/detail-kegiatan-bkk">
                                 <img src="../assets/img/kegiatanbkk4.jpg" alt="blog image">
                             </a>
                         </div>
@@ -146,8 +146,8 @@
                                     <a href="#">John Doe</a>
                                 </li>
                             </ul>
-                            <h4><a href="blog-details.html">Guru Tamu Kimia Industri dari PT. Mandiri Investama Sejati</a></h4>
-                            <a href="blog-details.html" class="blog-btn">
+                            <h4><a href="/BKK/detail-kegiatan-bkk">Guru Tamu Kimia Industri dari PT. Mandiri Investama Sejati</a></h4>
+                            <a href="/BKK/detail-kegiatan-bkk" class="blog-btn">
                                 Read more
                                 <i class="icofont-rounded-right"></i>
                             </a>
@@ -157,7 +157,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="blog-area">
                         <div class="blog-img">
-                            <a href="blog-details.html">
+                            <a href="/BKK/detail-kegiatan-bkk">
                                 <img src="../assets/img/kegiatan-bkk/kegiatanbkk5.jpg" alt="blog image">
                             </a>
                         </div>
@@ -173,8 +173,8 @@
                                     <a href="#">John Doe</a>
                                 </li>
                             </ul>
-                            <h4><a href="blog-details.html">Strategi Menembus Dunia Kerja di Era Industri 4.0 – Bersama PT. Yanmar</a></h4>
-                            <a href="blog-details.html" class="blog-btn">
+                            <h4><a href="/BKK/detail-kegiatan-bkk">Strategi Menembus Dunia Kerja di Era Industri 4.0 – Bersama PT. Yanmar</a></h4>
+                            <a href="/BKK/detail-kegiatan-bkk" class="blog-btn">
                                 Read more
                                 <i class="icofont-rounded-right"></i>
                             </a>
@@ -184,7 +184,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="blog-area">
                         <div class="blog-img">
-                            <a href="blog-details.html">
+                            <a href="/BKK/detail-kegiatan-bkk">
                                 <img src="../assets/img/kegiatan-bkk/kegiatanbkk6.jpg" alt="blog image">
                             </a>
                         </div>
@@ -200,8 +200,8 @@
                                     <a href="#">John Doe</a>
                                 </li>
                             </ul>
-                            <h4><a href="blog-details.html">Strategi Menembus Dunia Kerja di Era Industri 4.0 – Bersama PT. Panverta</a></h4>
-                            <a href="blog-details.html" class="blog-btn">
+                            <h4><a href="/BKK/detail-kegiatan-bkk">Strategi Menembus Dunia Kerja di Era Industri 4.0 – Bersama PT. Panverta</a></h4>
+                            <a href="/BKK/detail-kegiatan-bkk" class="blog-btn">
                                 Read more
                                 <i class="icofont-rounded-right"></i>
                             </a>

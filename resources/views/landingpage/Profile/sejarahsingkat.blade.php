@@ -46,7 +46,7 @@
     <div class="blog-details-area blog-details-page-area pt-100">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-8">
                     <div class="blog-details-post">
                         <div class="blog-post-title">
                             <h3>
@@ -89,6 +89,14 @@
                             orang karyawan. Berdasarkan keputusan Badan Akreditasi Nasional Sekolah/Madrasah nomor :
                             032/BAN-SM/SK/2019 tahun 2019 dinyatakan bahwa SMK Negeri 1 Sukorejo “Terakreditasi A”.
                         </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 main-service-area blog-side-bar border shadows mb-40px h-fc py-3">
+                    <div class="service-sidebar">
+                        <img class="imgvisi mb-2 hovchange" data-imageb="../foto/header.JPG" src="../foto/header.JPG" alt="service">
+                        <img class="imgvisi mb-2" src="../foto/taman.jpg" alt="service">
+                        <img class="imgvisi mb-2" src="../foto/labkimia1.JPG" alt="service">
+                        <img class="imgvisi mb-2" src="../foto/header.JPG" alt="service">
                     </div>
                 </div>
             </div>
