@@ -1,8 +1,12 @@
 <?php
 
 use App\Http\Controllers\Admincontroller;
+use App\Http\Controllers\BerandaController;
 use App\Http\Controllers\JurusanController;
 use App\Http\Controllers\LandingController;
+use App\Http\Controllers\DataController;
+use App\Models\Beranda;
+use Illuminate\Routing\Route as RoutingRoute;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,9 +26,10 @@ Route::get('/bug', function () {
 });
 
 //BERANDA
-Route::get('/', function () {
-    return view('landingpage.beranda.beranda');
-});
+// Route::get('/', function () {
+//     return view('landingpage.beranda.beranda');
+// });
+Route::get('/', [LandingController::class, 'beranda']);
 Route::get('/keahlian', [LandingController::class, 'keahlian']);
 Route::get('/lokerbkk', [LandingController::class, 'lokerbkk']);
 Route::get('/agenda', [LandingController::class, 'agenda']);
@@ -103,3 +108,19 @@ Route::post('/insertjurusan', [JurusanController::class, 'insertjurusan']);
 Route::get('/jurusan/edit/{id}', [JurusanController::class, 'editjurusan']);
 Route::post('jurusan/update/{id}', [JurusanController::class, 'updatejurusan']);
 Route::get('/jurusan/deletejurusan/{id}', [JurusanController::class, 'deletejurusan']);
+
+//Admin Beranda//BLOG
+Route::get('/beranda/blog', [BerandaController::class, 'viewblog'])->name('viewblog');
+Route::get('/beranda/tambahblog', [BerandaController::class, 'tambahblog']);
+Route::post('/insertblog', [BerandaController::class, 'insertblog']);
+Route::get('/beranda/editblog/{id}', [BerandaController::class, 'editblog']);
+Route::post('/beranda/updateblog/{id}', [BerandaController::class, 'updateblog']);
+Route::get('/blog/deleteblog/{id}', [BerandaController::class, 'deleteblog']);
+
+//EKSTRA
+Route::get('/data/ekstra', [DataController::class, 'ekstra'])->name('ekstra');
+Route::get('/data/tambahekstra', [DataController::class, 'tambahekstra']);
+Route::post('/insertekstra', [DataController::class, 'insertekstra']);
+Route::get('/data/editekstra/{id}', [DataController::class, 'editekstra']);
+Route::post('/data/updateekstra/{id}', [DataController::class, 'updateekstra']);
+Route::get('/data/deleteekstra/{id}', [DataController::class, 'deleteekstra']);

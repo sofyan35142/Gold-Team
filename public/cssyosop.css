@@ -14,6 +14,7 @@
 
 .imgg {
     height: 310px;
+    width: 415px;
 }
 
 .overflow {
@@ -43,7 +44,14 @@
     display: -webkit-box;
     word-break: break-word;
 }
-
+.yosopelipsis p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    word-break: break-word;
+}
 .imgge {
     height: 242px !important;
     width: 180px !important;

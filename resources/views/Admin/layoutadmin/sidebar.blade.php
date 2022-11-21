@@ -140,12 +140,12 @@
                     <li class="menu-item">
                         <a href="javascript:void(0);" class="menu-link menu-toggle">
                             <i class='menu-icon tf-icons bx bx-food-menu'></i>
-                            <div data-i18n="Invoice">Beranda</div>
+                            <div data-i18n="Beranda">Beranda</div>
                         </a>
                         <ul class="menu-sub">
                             <li class="menu-item">
-                                <a href="app-invoice-list.html" class="menu-link">
-                                    <div data-i18n="List">List</div>
+                                <a href="/beranda/blog" class="menu-link">
+                                    <div data-i18n="blog">blog</div>
                                 </a>
                             </li>
                             <li class="menu-item">
@@ -240,124 +240,31 @@
                             <div data-i18n="Data">Data</div>
                         </a>
                         <ul class="menu-sub">
-                            <li class="menu-item">
-                                <a href="javascript:void(0);" class="menu-link menu-toggle">
-                                    <div data-i18n="User Profile">User Profile</div>
-                                </a>
-                                <ul class="menu-sub">
-                                    <li class="menu-item">
-                                        <a href="pages-profile-user.html" class="menu-link">
-                                            <div data-i18n="Profile">Profile</div>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a href="pages-profile-teams.html" class="menu-link">
-                                            <div data-i18n="Teams">Teams</div>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a href="pages-profile-projects.html" class="menu-link">
-                                            <div data-i18n="Projects">Projects</div>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a href="pages-profile-connections.html" class="menu-link">
-                                            <div data-i18n="Connections">Connections</div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="menu-item">
-                                <a href="javascript:void(0);" class="menu-link menu-toggle">
-                                    <div data-i18n="BKK">BKK</div>
-                                </a>
-                                <ul class="menu-sub">
-                                    <li class="menu-item">
-                                        <a href="pages-account-settings-account.html" class="menu-link">
-                                            <div data-i18n="Account">Account</div>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a href="pages-account-settings-security.html" class="menu-link">
-                                            <div data-i18n="Security">Security</div>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a href="pages-account-settings-billing.html" class="menu-link">
-                                            <div data-i18n="Billing & Plans">Billing & Plans</div>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a href="pages-account-settings-notifications.html" class="menu-link">
-                                            <div data-i18n="Notifications">Notifications</div>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a href="pages-account-settings-connections.html" class="menu-link">
-                                            <div data-i18n="Connections">Connections</div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
+
                             <li class="menu-item">
                                 <a href="pages-faq.html" class="menu-link">
                                     <div data-i18n="Lsp">Lsp</div>
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a href="javascript:void(0);" class="menu-link menu-toggle">
-                                    <div data-i18n="Help Center">Help Center</div>
+                                <a href="pages-pricing.html" class="menu-link">
+                                    <div data-i18n="P">p</div>
                                 </a>
-                                <ul class="menu-sub">
-                                    <li class="menu-item">
-                                        <a href="pages-help-center-landing.html" class="menu-link">
-                                            <div data-i18n="Landing">Landing</div>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a href="pages-help-center-categories.html" class="menu-link">
-                                            <div data-i18n="Categories">Categories</div>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a href="pages-help-center-article.html" class="menu-link">
-                                            <div data-i18n="Article">Article</div>
-                                        </a>
-                                    </li>
-                                </ul>
                             </li>
                             <li class="menu-item">
                                 <a href="pages-pricing.html" class="menu-link">
-                                    <div data-i18n="Pricing">Alumni</div>
+                                    <div data-i18n="P">p</div>
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a href="javascript:void(0);" class="menu-link menu-toggle">
-                                    <div data-i18n="Misc">Misc</div>
+                                <a href="/data/ekstra" class="menu-link">
+                                    <div data-i18n="Ekstra">Ekstra</div>
                                 </a>
-                                <ul class="menu-sub">
-                                    <li class="menu-item">
-                                        <a href="pages-misc-error.html" class="menu-link" target="_blank">
-                                            <div data-i18n="Error">Error</div>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a href="pages-misc-under-maintenance.html" class="menu-link"
-                                            target="_blank">
-                                            <div data-i18n="Under Maintenance">Under Maintenance</div>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a href="pages-misc-comingsoon.html" class="menu-link" target="_blank">
-                                            <div data-i18n="Coming Soon">Coming Soon</div>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a href="pages-misc-not-authorized.html" class="menu-link" target="_blank">
-                                            <div data-i18n="Not Authorized">Not Authorized</div>
-                                        </a>
-                                    </li>
-                                </ul>
+                            </li>
+                            <li class="menu-item">
+                                <a href="pages-pricing.html" class="menu-link">
+                                    <div data-i18n="P">p</div>
+                                </a>
                             </li>
                         </ul>
                     </li>

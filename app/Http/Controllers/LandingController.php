@@ -2,14 +2,17 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Blog;
+use App\Models\ekstra;
 use App\Models\Jurusan;
 use Illuminate\Http\Request;
 
 class LandingController extends Controller
 {
-    public function index()
+    public function beranda()
     {
-        //
+        $data=Blog::all();
+        return view("landingpage.beranda.beranda", compact('data'));
     }
 
     public function create()
@@ -195,7 +198,8 @@ class LandingController extends Controller
         return view('landingpage.Data.datawalas');
     }
     public function ekstra(){
-        return view('landingpage.Data.Ekstrakulikuler');
+        $data=ekstra::all();
+        return view('landingpage.Data.Ekstrakulikuler', compact('data'));
     }
     public function prestasi(){
         return view('landingpage.Data.prestasi');
