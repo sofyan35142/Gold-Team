@@ -10,11 +10,11 @@ class BerandaController extends Controller
     public function viewblog(){
 
         $data=Blog::all();
-        return view('Admin.beranda.blog', compact('data'));
+        return view('Admin.beranda.blog.blog', compact('data'));
     }
 
     public function tambahblog(){
-        return view('Admin.beranda.tambahblog');
+        return view('Admin.beranda.blog.tambahblog');
     }
 
      public function insertblog(Request $request)
@@ -36,7 +36,7 @@ class BerandaController extends Controller
 
     public function editblog($id){
          $data = Blog::findorfail($id);
-        return view('Admin.beranda.editblog', compact('data'));
+        return view('Admin.beranda.blog.editblog', compact('data'));
     }
 
      public function updateblog(Request $request, $id)

@@ -38,7 +38,7 @@ Route::get('/agendadetail', [LandingController::class, 'agendadetail']);
 Route::get('/blogbanyak', [LandingController::class, 'blogbanyak']);
 
 //DATA
-Route::get('/data/dharma', [LandingController::class, 'dharma']);
+Route::get('/data/dharmaa', [LandingController::class, 'dharma']);
 Route::get('/data/datawalas', [LandingController::class, 'datawalas']);
 Route::get('/data/ekstraa', [LandingController::class, 'ekstra']);
 Route::get('/data/prestasi', [LandingController::class, 'prestasi']);
@@ -109,13 +109,15 @@ Route::get('/jurusan/edit/{id}', [JurusanController::class, 'editjurusan']);
 Route::post('jurusan/update/{id}', [JurusanController::class, 'updatejurusan']);
 Route::get('/jurusan/deletejurusan/{id}', [JurusanController::class, 'deletejurusan']);
 
-//Admin Beranda//BLOG
+////////////-------------ADMIN BERANDA------------/////////////////
 Route::get('/beranda/blog', [BerandaController::class, 'viewblog'])->name('viewblog');
 Route::get('/beranda/tambahblog', [BerandaController::class, 'tambahblog']);
 Route::post('/insertblog', [BerandaController::class, 'insertblog']);
 Route::get('/beranda/editblog/{id}', [BerandaController::class, 'editblog']);
 Route::post('/beranda/updateblog/{id}', [BerandaController::class, 'updateblog']);
 Route::get('/blog/deleteblog/{id}', [BerandaController::class, 'deleteblog']);
+
+///////////////-----------------------DataAdmin-------------------------//////////////
 
 //EKSTRA
 Route::get('/data/ekstra', [DataController::class, 'ekstra'])->name('ekstra');
@@ -124,3 +126,28 @@ Route::post('/insertekstra', [DataController::class, 'insertekstra']);
 Route::get('/data/editekstra/{id}', [DataController::class, 'editekstra']);
 Route::post('/data/updateekstra/{id}', [DataController::class, 'updateekstra']);
 Route::get('/data/deleteekstra/{id}', [DataController::class, 'deleteekstra']);
+
+//Guru
+Route::get('/data/guru', [DataController::class, 'guru'])->name('guru');
+Route::get('/data/tambahguru', [DataController::class, 'tambahguru']);
+Route::post('/insertguru', [DataController::class, 'insertguru']);
+Route::get('/data/editguru/{id}', [DataController::class, 'editguru']);
+Route::post('/data/updateguru/{id}', [DataController::class, 'updateguru']);
+Route::get('/data/deleteguru/{id}', [DataController::class, 'deleteguru']);
+
+//DHARMAWANITA
+Route::get('/data/dharma', [DataController::class, 'dharma'])->name('dharma');
+Route::get('/data/tambahdharma', [DataController::class, 'tambahdharma']);
+Route::post('/insertdharma', [DataController::class, 'insertdharma']);
+Route::get('/data/editdharma/{id}', [DataController::class, 'editdharma']);
+Route::post('/data/updatedharma/{id}', [DataController::class, 'updatedharma']);
+Route::get('/data/deletedharma/{id}', [DataController::class, 'deletedharma']);
+
+
+//Prestasi
+Route::get('/data/prestasii', [DataController::class, 'prestasi'])->name('prestasi');
+Route::get('/data/tambahprestasi', [DataController::class, 'tambahprestasi']);
+Route::post('/insertprestasi', [DataController::class, 'insertprestasi']);
+Route::get('/data/editprestasi/{id}', [DataController::class, 'editprestasi']);
+Route::post('/data/updateprestasi/{id}', [DataController::class, 'updateprestasi']);
+Route::get('/data/deleteprestasi/{id}', [DataController::class, 'deleteprestasi']);

@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <!-- =========================================================
 * Frest - Bootstrap Admin Template | v1.0.0
 ==============================================================
@@ -17,6 +16,7 @@
 @include('Admin.layoutadmin.head')
 
 <body>
+
   <!-- Layout wrapper -->
 <div class="layout-wrapper layout-content-navbar  ">
   <div class="layout-container">
@@ -26,11 +26,8 @@
 <!-- / Menu -->
     <!-- Layout container -->
     <div class="layout-page">
-
 <!-- Navbar -->
-
   @include('Admin.layoutadmin.navbar')
-
 <!-- / Navbar -->
 
       <!-- Content wrapper -->
@@ -40,79 +37,63 @@
 
           <div class="container-xxl flex-grow-1 container-p-y">
 
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="card mb-4">
-                    <h5 class="card-header">Edit Ekstra</h5>
-                    <div class="card-body">
-                        <form action="/data/updateekstra/{{ $data->id }}" method="POST" enctype="multipart/form-data">
-                                @csrf
-                        <div>
-                        <label for="defaultFormControlInput" class="form-label">judul</label>
-                        <input type="text" name="judul" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" value="{{ $data->judul }}"/>
-                        </div>
-                        <br/>
-                        <div>
-                        <label for="defaultFormControlInput" class="form-label">nama</label>
-                        <input type="text" name="nama" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" value="{{ $data->judul }}"/>
-                        </div>
-                        <br/>
-
-                        <div>
-                        <label for="editor" class="form-label">Deskripsi</label>
-                        <div class="card-body">
-                                <textarea name="deskripsi" id="editor">{!! $data->deskripsi !!}</textarea>
-                            </div>
-                        {{-- <input type="text" name="deskripsi" class="form-control" id="editor"  aria-describedby="defaultFormControlHelp" /> --}}
-                        </div>
-                        <br/>
-
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Update Foto</label>
-                            <br/>
-                            <img class="img mb-3" src="{{ asset('fotoblog/' . $data->foto) }}" alt="" style="width: 100px;">
-                            <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto }}">
-                            <i style="float: left;font-size: 11px;color: red">Abaikan jika tidak merubah foto</i>
-                        </div>
-                        <button type="submit" class="btn rounded-pill btn-primary">Submit</button>
-                        </form>
-
-                    </div>
-                    </div>
-                </div>
-            </div>
-
-
 <!-- DataTable with Buttons -->
 
+<div class="card mb-4">
+  <div class="card-datatable table-responsive pt-0">
+    <h5 class="card-header">DharmaWanita</h5>
+    <a href="/data/tambahdharma" type="button" class="btn rounded-pill btn-primary">Tambah</a>
+    <table class="table" id="ekstra">
+  <thead>
+    <tr>
+      <th scope="col">No.</th>
+      <th scope="col">Nama</th>
+      <th scope="col">Jabatan</th>
+      <th scope="col">Tempat Lahir</th>
+      <th scope="col">Tanggal Lahir</th>
+      <th scope="col">Alamat</th>
+      <th scope="col">Foto</th>
+      <th scope="col">Aksi</th>
+    </tr>
+  </thead>
+  <tbody class="table-group-divider">
+    <?php $no = 1; ?>
+    @foreach ($data as $dharma)
+<tr>
+        <td>{{ $no }}</td>
+        <td>{{ $dharma->nama }}</td>
+        <td>{{ $dharma->jabatan }}</td>
+        <td>{{ $dharma->tgl_lahir }}</td>
+        <td>{{ $dharma->tempat_lahir }}</td>
+        <td>{{ $dharma->alamat }}</td>
+        <td>
+            <img src="{{ asset('dharmawanita/' . $dharma->foto) }}" alt="" style="width: 80px; height:80px;">
+        </td>
+
+
+        <td>
+            <a href="/data/editdharma/{{ $dharma->id }}" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></a>
+            <a href="#" class="btn btn-danger delete" data-id="{{ $dharma->id }}" data-dharma="{{ $dharma->nama }}"><i class="fa-solid fa-trash"></i></a>
+        </td>
+    </tr>
+
+
+  </tbody>
+   <?php $no++; ?>
+@endforeach
+</table>
+  </div>
+</div>
+<!-- Modal to add new record -->
 <!--/ DataTable with Buttons -->
-
-
-
 <!-- Complex Headers -->
-
 <!--/ Complex Headers -->
-
-
-
 <!-- Row grouping -->
-
 <!--/ Row grouping -->
-
-
-
 <!-- Multilingual -->
-
 <!--/ Multilingual -->
-
-
-
           </div>
           <!-- / Content -->
-
-
-
-
 <!-- Footer -->
 <footer class="content-footer footer bg-footer-theme">
   <div class="container-fluid d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
@@ -156,13 +137,6 @@
 
   </div>
   <!-- / Layout wrapper -->
-
-
-  <div class="buy-now">
-    <a href="https://1.envato.market/frest_admin" target="_blank" class="btn btn-danger btn-buy-now">Buy Now</a>
-  </div>
-
-
 
 
   <!-- Core JS -->
@@ -210,21 +184,42 @@
   <!-- Page JS -->
   <script src="../../assets1/js/tables-datatables-basic.js"></script>
   <script src="//cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
-
-
-  <script src="https://cdn.ckeditor.com/ckeditor5/35.3.1/classic/ckeditor.js"></script>
-  <script>
-    ClassicEditor
-        .create( document.querySelector('#editor') )
-        .catch( error => {
-          console.error(error);
-        });
-  </script>
-
-
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 </body>
+<script>
+    $('.delete').click(function() {
+        var dharmaid = $(this).attr('data-id');
+        var dharma = $(this).attr('data-dharma');
+        swal({
+                title: "Apakah kamu yakin?",
+                text: "Kamu akan menghapus dharma " + dharma + "",
+                icon: "warning",
+                buttons: true,
+                dangerMode: true,
+            })
+            .then((willDelete) => {
+                if (willDelete) {
+                    window.location = "/data/deletedharma/" + dharmaid + ""
+                    swal("Data berhasil dihapus", {
+                        icon: "success",
+                    });
+                } else {
+                    swal("Data tidak jadi dihapus");
+                }
+            });
+    });
+</script>
+<script>
+    $(document).ready(function() {
+        $('#ekstra').DataTable();
+    });
+</script>
+<script>
+    @if (Session::get('success'))
+        toastr.success("{{ Session::get('success') }}")
+    @endif
+</script>
 
 <!-- Mirrored from pixinvent.com/demo/frest-clean-bootstrap-admin-dashboard-template/html/vertical-menu-template-semi-dark/tables-datatables-basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 15 Nov 2022 01:22:20 GMT -->
 </html>
-
-

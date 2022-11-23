@@ -43,18 +43,13 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="card mb-4">
-                    <h5 class="card-header">Edit Ekstra</h5>
+                    <h5 class="card-header">Edit blog</h5>
                     <div class="card-body">
-                        <form action="/data/updateekstra/{{ $data->id }}" method="POST" enctype="multipart/form-data">
+                        <form action="/beranda/updateblog/{{ $data->id }}" method="POST" enctype="multipart/form-data">
                                 @csrf
                         <div>
                         <label for="defaultFormControlInput" class="form-label">judul</label>
                         <input type="text" name="judul" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" value="{{ $data->judul }}"/>
-                        </div>
-                        <br/>
-                        <div>
-                        <label for="defaultFormControlInput" class="form-label">nama</label>
-                        <input type="text" name="nama" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" value="{{ $data->judul }}"/>
                         </div>
                         <br/>
 

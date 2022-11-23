@@ -93,6 +93,8 @@
 
                 </div>
                  @endforeach
+
+
                 {{-- <div class="col-lg-4 col-md-6">
                     <div class="blog-area">
                         <div class="blog-img">
@@ -276,6 +278,8 @@
             </nav>
         </div>
     </div>
+
+    
 
     @include('landingpage.layout.footer')
 

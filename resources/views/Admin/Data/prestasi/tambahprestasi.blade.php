@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <!-- =========================================================
 * Frest - Bootstrap Admin Template | v1.0.0
 ==============================================================
@@ -13,10 +12,13 @@
  -->
 <!-- beautify ignore:start -->
 <html lang="en" class="light-style layout-navbar-fixed layout-menu-fixed " dir="ltr" data-theme="theme-semi-dark" data-assets-path="../../assets1/" data-template="vertical-menu-template-semi-dark">
+
+
 <!-- Mirrored from pixinvent.com/demo/frest-clean-bootstrap-admin-dashboard-template/html/vertical-menu-template-semi-dark/tables-datatables-basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 15 Nov 2022 01:22:18 GMT -->
 @include('Admin.layoutadmin.head')
 
 <body>
+
   <!-- Layout wrapper -->
 <div class="layout-wrapper layout-content-navbar  ">
   <div class="layout-container">
@@ -26,48 +28,43 @@
 <!-- / Menu -->
     <!-- Layout container -->
     <div class="layout-page">
-
 <!-- Navbar -->
-
-  @include('Admin.layoutadmin.navbar')
-
+  @include("Admin.layoutadmin.navbar")
 <!-- / Navbar -->
-
       <!-- Content wrapper -->
       <div class="content-wrapper">
-
         <!-- Content -->
-
           <div class="container-xxl flex-grow-1 container-p-y">
-
             <div class="row">
                 <div class="col-md-12">
                     <div class="card mb-4">
-                    <h5 class="card-header">Edit blog</h5>
+                    <h5 class="card-header">Tambah ekstra</h5>
                     <div class="card-body">
-                        <form action="/beranda/updateblog/{{ $data->id }}" method="POST" enctype="multipart/form-data">
+                        <form action="/insertprestasi" method="POST" enctype="multipart/form-data">
                                 @csrf
                         <div>
-                        <label for="defaultFormControlInput" class="form-label">judul</label>
-                        <input type="text" name="judul" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" value="{{ $data->judul }}"/>
+                        <label for="defaultFormControlInput" class="form-label">NAMA LOMBA</label>
+                        <input type="text" name="nama_lomba" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" />
+                        </div>
+                        <div>
+                        <label for="defaultFormControlInput" class="form-label">Nama Pemenang</label>
+                        <input type="text" name="nama_pemenang" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" />
                         </div>
                         <br/>
 
                         <div>
                         <label for="editor" class="form-label">Deskripsi</label>
-                        <div class="card-body">
-                                <textarea name="deskripsi" id="editor" value="{!! $data->deskripsi !!}"></textarea>
-                            </div>
                         {{-- <input type="text" name="deskripsi" class="form-control" id="editor"  aria-describedby="defaultFormControlHelp" /> --}}
+                        <div class="card-body">
+                                <textarea name="deskripsi" id="editor"></textarea>
+                            </div>
                         </div>
                         <br/>
 
                         <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Update Foto</label>
-                            <br/>
-                            <img class="img mb-3" src="{{ asset('fotoblog/' . $data->foto) }}" alt="" style="width: 100px;">
-                            <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto }}">
-                            <i style="float: left;font-size: 11px;color: red">Abaikan jika tidak merubah foto</i>
+                            <label for="exampleInputEmail1" class="form-label">Upload Foto Prestasi</label>
+
+                            <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>
                         <button type="submit" class="btn rounded-pill btn-primary">Submit</button>
                         </form>
@@ -104,10 +101,6 @@
 
           </div>
           <!-- / Content -->
-
-
-
-
 <!-- Footer -->
 <footer class="content-footer footer bg-footer-theme">
   <div class="container-fluid d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
@@ -205,9 +198,7 @@
   <!-- Page JS -->
   <script src="../../assets1/js/tables-datatables-basic.js"></script>
   <script src="//cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
-
-
-  <script src="https://cdn.ckeditor.com/ckeditor5/35.3.1/classic/ckeditor.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/35.3.1/classic/ckeditor.js"></script>
   <script>
     ClassicEditor
         .create( document.querySelector('#editor') )
@@ -215,11 +206,7 @@
           console.error(error);
         });
   </script>
-
-
 </body>
 
 <!-- Mirrored from pixinvent.com/demo/frest-clean-bootstrap-admin-dashboard-template/html/vertical-menu-template-semi-dark/tables-datatables-basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 15 Nov 2022 01:22:20 GMT -->
 </html>
-
-

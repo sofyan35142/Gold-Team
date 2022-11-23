@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Blog;
 use App\Models\ekstra;
+use App\Models\Guru;
 use App\Models\Jurusan;
 use Illuminate\Http\Request;
 
@@ -126,7 +127,8 @@ class LandingController extends Controller
     }
     public function guru()
     {
-        return view("landingpage.beranda.guru&staf");
+        $data=Guru::all();
+        return view("landingpage.beranda.guru&staf", compact('data'));
     }
 
     public function keahlian()

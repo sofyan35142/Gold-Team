@@ -43,39 +43,77 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="card mb-4">
-                    <h5 class="card-header">Edit Ekstra</h5>
+                    <h5 class="card-header">Edit blog</h5>
                     <div class="card-body">
-                        <form action="/data/updateekstra/{{ $data->id }}" method="POST" enctype="multipart/form-data">
+                        <form action="/data/updateguru/{{ $data->id }}" method="POST" enctype="multipart/form-data">
                                 @csrf
-                        <div>
-                        <label for="defaultFormControlInput" class="form-label">judul</label>
-                        <input type="text" name="judul" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" value="{{ $data->judul }}"/>
-                        </div>
-                        <br/>
-                        <div>
-                        <label for="defaultFormControlInput" class="form-label">nama</label>
-                        <input type="text" name="nama" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" value="{{ $data->judul }}"/>
-                        </div>
-                        <br/>
+                              <div class="row">
+          <!-- Date Picker-->
+          <div class="col-md-12 col-12 mb-4">
+            <label for="flatpickr-date" class="form-label">Nama</label>
+            <input type="text" name="nama" class="form-control"  id="flatpickr-date" value="{{ $data->nama }}" />
+          </div>
+          <!-- /Date Picker -->
 
-                        <div>
-                        <label for="editor" class="form-label">Deskripsi</label>
-                        <div class="card-body">
-                                <textarea name="deskripsi" id="editor">{!! $data->deskripsi !!}</textarea>
-                            </div>
-                        {{-- <input type="text" name="deskripsi" class="form-control" id="editor"  aria-describedby="defaultFormControlHelp" /> --}}
-                        </div>
-                        <br/>
+ <!-- Datetime Picker-->
+          <div class="col-md-12 col-12 mb-4">
+            <label for="flatpickr-datetime" class="form-label">Nip</label>
+            <input type="number" name="nip" class="form-control" id="flatpickr-datetime" value="{{ $data->nip }}" />
+          </div>
+          <!-- /Datetime Picker-->
 
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Update Foto</label>
-                            <br/>
-                            <img class="img mb-3" src="{{ asset('fotoblog/' . $data->foto) }}" alt="" style="width: 100px;">
-                            <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto }}">
-                            <i style="float: left;font-size: 11px;color: red">Abaikan jika tidak merubah foto</i>
-                        </div>
-                        <button type="submit" class="btn rounded-pill btn-primary">Submit</button>
-                        </form>
+          <!-- Time Picker-->
+          <div class="col-md-6 col-12 mb-4">
+            <label for="flatpickr-time" class="form-label">Jabatan</label>
+            <input type="text" name="jabatan" class="form-control" id="flatpickr-time" value="{{ $data->jabatan }}" />
+          </div>
+          <!-- /Time Picker -->
+
+          <!-- Multiple Dates Picker-->
+          <div class="col-md-6 col-12 mb-4">
+            <label for="flatpickr-multi" class="form-label">Tempat Lahir</label>
+            <input type="text" name="tempat_lahir" class="form-control" id="flatpickr-multi" value="{{ $data->tempat_lahir }}" />
+          </div>
+          <!-- /Multiple Dates Picker-->
+
+          <!-- Range Picker-->
+          <div class="col-md-6 col-12 mb-4">
+            <label for="flatpickr-range" class="form-label">Tanggal Lahir</label>
+            <input type="date" name="tgl_lahir" class="form-control" id="flatpickr-range" value="{{ $data->tgl_lahir }}" />
+          </div>
+          <!-- /Range Picker-->
+
+          <!-- Human Friendly Date Picker-->
+          <div class="col-md-6 col-12 mb-4">
+            <label for="flatpickr-human-friendly" class="form-label">TMT Awal</label>
+            <input type="date" name="tmt_awal" class="form-control" id="flatpickr-human-friendly" value="{{ $data->tmt_awal }}" />
+          </div>
+          <!-- /Human Friendly Date Picker-->
+
+          <!-- Disabled Range-->
+          <div class="col-md-6 col-12 mb-md-0 mb-4">
+            <label for="flatpickr-disabled-range" class="form-label">Status</label>
+            <input type="text" name="status" class="form-control" id="flatpickr-disabled-range" value="{{ $data->status }}" />
+          </div>
+          <!-- /Disabled Range-->
+
+          <!-- Inline Picker-->
+          <div class="col-md-6 col-12">
+            <label for="flatpickr-inline" class="form-label">Golongan Ruangan</label>
+            <input type="text" name="gol_ruangan" class="form-control mb-1" id="flatpickr-inline" value="{{ $data->gol_ruangan }}" />
+          </div>
+          <!-- /Inline Picker-->
+<br>
+         <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Update Foto</label>
+        <br/>
+        <img class="img mb-3" src="{{ asset('guru/' . $data->foto) }}" alt="" style="width: 100px;">
+        <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto }}">
+        <i style="float: left;font-size: 11px;color: red">Abaikan jika tidak merubah foto</i>
+        </div>
+        <button type="submit" class="btn btn-primary">Simpan</button>
+                    </from>
+        </div>
 
                     </div>
                     </div>

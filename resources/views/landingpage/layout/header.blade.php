@@ -149,7 +149,7 @@
                                     <a href="/guruu" class="nav-link">DATA GURU & KARYAWAN</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="/data/dharma" class="nav-link">DHARMA WANITA PERSATUAN</a>
+                                    <a href="/data/dharmaa" class="nav-link">DHARMA WANITA PERSATUAN</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="/data/datawalas" class="nav-link">DATA SISWA</a>

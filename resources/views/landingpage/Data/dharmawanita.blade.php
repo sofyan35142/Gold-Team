@@ -5,12 +5,12 @@
 
 <head>
 
-   @include('landingpage.layout.head')
+    @include('landingpage.layout.head')
 </head>
 
 <body>
 
-@include('landingpage.layout.header')
+    @include('landingpage.layout.header')
 
 
 
@@ -35,6 +35,36 @@
         </div>
     </div>
 
+{{--
+    <div class="section over-hide">
+        <div class="container">
+            <div class="row full-height justify-content-center">
+                <div class="col-12 text-center align-self-center py-5">
+                    <div class="section text-center py-5 py-md-0">
+                        <input class="pricing" type="checkbox" id="pricing" name="pricing" />
+                        <label for="pricing"><span class="block-diff">kayaking<span
+                                    class="float-right">camping</span></span></label>
+                        <div class="card-3d-wrap mx-auto">
+                            <div class="card-3d-wrapper">
+                                <div class="card-front">
+                                    <div class="pricing-wrap">
+                                        <h4 class="mb-5">Kayaking</h4>
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <div class="pricing-wrap">
+                                        <h4 class="mb-5">Camping</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> --}}
+
+    
 
     <div class="team-section team-style-two team-style-three team-members pt-100 pb-70">
         <div class="container">
@@ -55,7 +85,7 @@
                         </div>
                     </div>
                 </div>
-                                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-6">
                     <div class="team-card">
                         <div class="team-img">
                             <img class="imgguru" src="../dharmawanita/luluk.jpg" alt="team member">
@@ -66,7 +96,7 @@
                             </div>
                         </div>
                         <div class="team-text">
-                            <h4>	Luluk Kusuma Herminingsih, S.Pd</h4>
+                            <h4> Luluk Kusuma Herminingsih, S.Pd</h4>
                             <p>WAKA KESISWAAN</p>
                         </div>
                     </div>
@@ -147,7 +177,7 @@
                             </div>
                         </div>
                         <div class="team-text">
-                            <h4>	Ririk Suryawati, <br> S.Pd</h4>
+                            <h4> Ririk Suryawati, <br> S.Pd</h4>
                             <p>ANGGOTA SIE BIDANG PENDIDIKAN</p>
                         </div>
                     </div>
@@ -195,13 +225,13 @@
         </div>
     </div>
 
-@include('landingpage.layout.footer')
+    @include('landingpage.layout.footer')
 
     <div class="top-btn">
         <i class="icofont-scroll-long-up"></i>
     </div>
 
-@include('landingpage.layout.js')
+    @include('landingpage.layout.js')
 </body>
 
 <!-- Mirrored from templates.hibootstrap.com/viscous/default/team.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Nov 2022 02:34:13 GMT -->

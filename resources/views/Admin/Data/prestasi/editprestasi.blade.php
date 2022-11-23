@@ -43,20 +43,18 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="card mb-4">
-                    <h5 class="card-header">Edit Ekstra</h5>
+                    <h5 class="card-header">Edit blog</h5>
                     <div class="card-body">
-                        <form action="/data/updateekstra/{{ $data->id }}" method="POST" enctype="multipart/form-data">
+                        <form action="/data/updateprestasi/{{ $data->id }}" method="POST" enctype="multipart/form-data">
                                 @csrf
-                        <div>
-                        <label for="defaultFormControlInput" class="form-label">judul</label>
-                        <input type="text" name="judul" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" value="{{ $data->judul }}"/>
+                         <div>
+                        <label for="defaultFormControlInput" class="form-label">NAMA LOMBA</label>
+                        <input type="text" name="nama_lomba" class="form-control" id="defaultFormControlInput" value="{{ $data->nama_lomba }}" aria-describedby="defaultFormControlHelp" />
                         </div>
-                        <br/>
                         <div>
-                        <label for="defaultFormControlInput" class="form-label">nama</label>
-                        <input type="text" name="nama" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" value="{{ $data->judul }}"/>
+                        <label for="defaultFormControlInput" class="form-label">Nama Pemenang</label>
+                        <input type="text" name="nama_pemenang" class="form-control" id="defaultFormControlInput" value="{{ $data->nama_pemenang }}" aria-describedby="defaultFormControlHelp" />
                         </div>
-                        <br/>
 
                         <div>
                         <label for="editor" class="form-label">Deskripsi</label>
@@ -70,7 +68,7 @@
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Update Foto</label>
                             <br/>
-                            <img class="img mb-3" src="{{ asset('fotoblog/' . $data->foto) }}" alt="" style="width: 100px;">
+                            <img class="img mb-3" src="{{ asset('prestasi/' . $data->foto) }}" alt="" style="width: 100px;">
                             <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto }}">
                             <i style="float: left;font-size: 11px;color: red">Abaikan jika tidak merubah foto</i>
                         </div>
