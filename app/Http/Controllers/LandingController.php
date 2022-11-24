@@ -2,12 +2,29 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Blog;
+use App\Models\ekstra;
+use App\Models\Guru;
 use App\Models\Jurusan;
 use Illuminate\Http\Request;
 use App\Models\profilvisimisi;
 
 class LandingController extends Controller
 {
+<<<<<<< HEAD
+=======
+    public function beranda()
+    {
+        $data=Blog::all();
+        return view("landingpage.beranda.beranda", compact('data'));
+    }
+
+    public function create()
+    {
+        //
+    }
+
+>>>>>>> ccbfb0d8f6eab737101ee148fbeacf37d6633f7c
     public function jurusan()
     {
         $data = Jurusan::all();
@@ -122,7 +139,8 @@ class LandingController extends Controller
 
     public function guru()
     {
-        return view("landingpage.beranda.guru&staf");
+        $data=Guru::all();
+        return view("landingpage.beranda.guru&staf", compact('data'));
     }
 
     public function keahlian()
@@ -199,7 +217,8 @@ class LandingController extends Controller
         return view('landingpage.Data.datawalas');
     }
     public function ekstra(){
-        return view('landingpage.Data.Ekstrakulikuler');
+        $data=ekstra::all();
+        return view('landingpage.Data.Ekstrakulikuler', compact('data'));
     }
     public function prestasi(){
         return view('landingpage.Data.prestasi');

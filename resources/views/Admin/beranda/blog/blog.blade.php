@@ -12,8 +12,6 @@
  -->
 <!-- beautify ignore:start -->
 <html lang="en" class="light-style layout-navbar-fixed layout-menu-fixed " dir="ltr" data-theme="theme-semi-dark" data-assets-path="../../assets1/" data-template="vertical-menu-template-semi-dark">
-
-
 <!-- Mirrored from pixinvent.com/demo/frest-clean-bootstrap-admin-dashboard-template/html/vertical-menu-template-semi-dark/tables-datatables-basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 15 Nov 2022 01:22:18 GMT -->
 @include('Admin.layoutadmin.head')
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -22,43 +20,15 @@
   <!-- Layout wrapper -->
 <div class="layout-wrapper layout-content-navbar  ">
   <div class="layout-container">
-
-
-
-
-
-
-
 <!-- Menu -->
 
 @include('Admin.layoutadmin.sidebar')
 <!-- / Menu -->
-
-
-
     <!-- Layout container -->
     <div class="layout-page">
-
-
-
-
-
 <!-- Navbar -->
-
-
-
-
-
-
-
-
   @include('Admin.layoutadmin.navbar')
-
-
-
 <!-- / Navbar -->
-
-
 
       <!-- Content wrapper -->
       <div class="content-wrapper">
@@ -67,33 +37,43 @@
 
           <div class="container-xxl flex-grow-1 container-p-y">
 
-
-
 <!-- DataTable with Buttons -->
 
 <div class="card mb-4">
   <div class="card-datatable table-responsive pt-0">
-    <h5 class="card-header">Data Jurusan</h5>
-    {{-- <a href="/index/tambahjurusan" type="button" class="btn rounded-pill btn-primary">Tambah</a> --}}
-    <table class="table" id="jurusan">
+    <h5 class="card-header">Blog</h5>
+    <a href="/beranda/tambahblog" type="button" class="btn rounded-pill btn-primary">Tambah</a>
+    <table class="table" id="blog">
   <thead>
     <tr>
       <th scope="col">No.</th>
-      <th scope="col">nama</th>
+      <th scope="col">Judul</th>
       <th scope="col">Deskripsi</th>
+      <th scope="col">Foto</th>
       <th scope="col">Aksi</th>
     </tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
-        <td>1</td>
-        <td>rudi</td>
-        <td>hahaha</td>
-        <td>edit</td>
+    <?php $no = 1; ?>
+    @foreach ($data as $blog)
+<tr>
+        <td>{{ $no }}</td>
+        <td>{{ $blog->judul }}</td>
+        <td>{!! $blog->deskripsi !!}</td>
+        <td>
+            <img src="{{ asset('fotoblog/' . $blog->foto) }}" alt="" style="width: 80px; height:80px;">
+        </td>
+
+
+        <td>
+            <a href="/beranda/editblog/{{ $blog->id }}" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></a>
+            <a href="#" class="btn btn-danger delete" data-id="{{ $blog->id }}" data-blog="{{ $blog->judul }}"><i class="fa-solid fa-trash"></i></a>
+        </td>
     </tr>
 
 
   </tbody>
+   <?php $no++; ?>
 @endforeach
 </table>
   </div>
@@ -174,13 +154,6 @@
   <!-- / Layout wrapper -->
 
 
-  <div class="buy-now">
-    <a href="https://1.envato.market/frest_admin" target="_blank" class="btn btn-danger btn-buy-now">Buy Now</a>
-  </div>
-
-
-
-
   <!-- Core JS -->
   <!-- build:js assets1/vendor/js/core.js -->
   <script src="../../assets1/vendor/libs/jquery/jquery.js"></script>
@@ -231,19 +204,19 @@
 </body>
 <script>
     $('.delete').click(function() {
-        var jurusanid = $(this).attr('data-id');
-        var jurusan = $(this).attr('data-jurusan');
+        var blogid = $(this).attr('data-id');
+        var blog = $(this).attr('data-blog');
 
         swal({
                 title: "Apakah kamu yakin?",
-                text: "Kamu akan menghapus jurusan " + jurusan + "",
+                text: "Kamu akan menghapus blog " + blog + "",
                 icon: "warning",
                 buttons: true,
                 dangerMode: true,
             })
             .then((willDelete) => {
                 if (willDelete) {
-                    window.location = "/jurusan/deletejurusan/" + jurusanid + ""
+                    window.location = "/blog/deleteblog/" + blogid + ""
                     swal("Data berhasil dihapus", {
                         icon: "success",
                     });
@@ -255,11 +228,11 @@
 </script>
 <script>
     $(document).ready(function() {
-        $('#jurusan').DataTable();
+        $('#blog').DataTable();
     });
 </script>
 <script>
-    @if(Session::get('success'))
+    @if (Session::get('success'))
     toastr.success("{{ Session::get('success') }}")
     @endif
 </script>

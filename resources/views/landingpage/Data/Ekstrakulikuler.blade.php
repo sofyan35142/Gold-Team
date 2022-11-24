@@ -59,15 +59,20 @@
     <div class="main-blog-post">
         <div class="container">
             <div class="row">
+                 @foreach ($data as $ekstra)
                 <div class="col-lg-4 col-md-6">
+
+
                     <div class="blog-area">
+
+
                         <div class="blog-img">
                             <a href="#">
-                                <img class="imgg" src="../ekstra/pramuka.jpg" alt="blog image">
+                                <img class="imgg" src="{{ asset('fotoekstra/' . $ekstra->foto) }}" alt="blog image">
                             </a>
                         </div>
-                        <div class="blog-text">
-                            <h4><a href="#">Pramuka</a></h4>
+                        <div class="blog-text yosopelipsis" >
+                            <h4><a href="#">{{ $ekstra->judul }}</a></h4>
                             <ul>
                                 <li>
                                     <i class="icofont-calendar"></i>
@@ -75,22 +80,22 @@
                                 </li>
                                 <li>
                                     <i class="icofont-ui-user"></i>
-                                    <a href="#">Faruk</a>
+                                    <a href="#">{{ $ekstra->nama }}</a>
                                 </li>
                             </ul>
-                            <p class="overflow">Gerakan Pramuka bertujuan untuk membentuk setiap Pramuka agar memiliki
-                                kepribadian yang beriman, bertakwa, berakhlak mulia, berjiwa patriotik, taat hukum,
-                                disiplin, menjunjung tinggi nilai-nilai luhur bangsa, dan memiliki berkecakapan hidup
-                                sebagai kader bangsa dalam menjaga dan membangun Negeara Kesatuan Republik Indonesia,
-                                mengamalkan Pancasila, serta melestarikan lingkungan.</p>
+                            {!! $ekstra->deskripsi !!}
                             <a href="#" class="blog-btn">
                                 Read more
                                 <i class="icofont-rounded-right"></i>
                             </a>
                         </div>
                     </div>
+
                 </div>
-                <div class="col-lg-4 col-md-6">
+                 @endforeach
+
+
+                {{-- <div class="col-lg-4 col-md-6">
                     <div class="blog-area">
                         <div class="blog-img">
                             <a href="/ekstradetail">
@@ -246,7 +251,7 @@
                             </a>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
             <nav>
                 <ul class="pagination  justify-content-center">
@@ -273,6 +278,8 @@
             </nav>
         </div>
     </div>
+
+    
 
     @include('landingpage.layout.footer')
 

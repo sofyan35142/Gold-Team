@@ -305,14 +305,15 @@
                 <h2>Berita & Blog Terbaru</h2>
             </div>
             <div class="blog-slider owl-carousel owl-theme">
+                @foreach ($data as $blog)
                 <div class="blog-area">
                     <div class="blog-img">
                         <a href="#">
-                            <img class="img-blog" src="../blog/tes.png" alt="blog image">
+                            <img class="img-blog" src="{{ asset('fotoblog/' . $blog->foto) }}" alt="blog image">
                         </a>
                     </div>
                     <div class="blog-text">
-                        <h4><a href="#">REKRUTMENT (TES FISIK) <br> PT. ADM</a></h4>
+                        <h4><a href="#">{{ $blog->judul }}</a></h4>
                         <ul>
                             <li>
                                 <i class="icofont-calendar"></i>
@@ -323,19 +324,15 @@
                                 <a href="#">John Doe</a>
                             </li>
                         </ul>
-                        <p class="overflow">Sukorejo, 12 November 2022 SMK Negeri 1 Sukorejo kembali dipercaya PT.
-                            Astra Daihatsu Motor untuk menjadi tuan rumah penyelenggaraan tes fisik.
-
-                            Sebagai sekolah binaan Daihatsu, SMK Negeri 1 Sukorejo memberikan kesempatan sekolah sekitar
-                            untuk turut serta dalam seleksi PT. ADM, pada tes fisik kali ini diikuti oleh 11 Sekolah
-                            diantaranya yaitu</p>
+                        <p class="overflow">{!! $blog->deskripsi !!}</p>
                         <a href="blog-details.html" class="blog-btn">
                             Read more
                             <i class="icofont-rounded-right"></i>
                         </a>
                     </div>
                 </div>
-                <div class="blog-area">
+                @endforeach
+                {{-- <div class="blog-area">
                     <div class="blog-img">
                         <a href="#">
                             <img class="img-blog" src="../blog/golf.png" alt="blog image">
@@ -575,7 +572,7 @@
                             <i class="icofont-rounded-right"></i>
                         </a>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </section>
@@ -657,7 +654,14 @@
         </div>
     </div>
 
+<<<<<<< HEAD
     <div class="team-section pt-100 pb-70">
+=======
+
+    
+
+     <div class="team-section pt-100 pb-70">
+>>>>>>> ccbfb0d8f6eab737101ee148fbeacf37d6633f7c
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.585483431905!2d112.7150166749192!3d-7.727543392290657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7d1337b9fbe51%3A0x5f53153c148fedfd!2sSMK%20Negeri%201%20Sukorejo!5e0!3m2!1sid!2sid!4v1667877880917!5m2!1sid!2sid"
             width="1450" height="450" style="border:0;" allowfullscreen="" loading="lazy"

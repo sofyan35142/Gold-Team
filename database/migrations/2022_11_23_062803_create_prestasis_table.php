@@ -13,8 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-         Schema::create('sliders', function (Blueprint $table) {
+        Schema::create('prestasis', function (Blueprint $table) {
             $table->id();
+            $table->string('nama_lomba');
+            $table->string('nama_pemenang');
+            $table->text('deskripsi');
             $table->string('foto');
             $table->timestamps();
         });
@@ -27,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('prestasis');
     }
 };
