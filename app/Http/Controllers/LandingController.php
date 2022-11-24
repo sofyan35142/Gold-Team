@@ -4,19 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Models\Jurusan;
 use Illuminate\Http\Request;
+use App\Models\profilvisimisi;
 
 class LandingController extends Controller
 {
-    public function index()
-    {
-        //
-    }
-
-    public function create()
-    {
-        //
-    }
-
     public function jurusan()
     {
         $data = Jurusan::all();
@@ -100,9 +91,15 @@ class LandingController extends Controller
         return view("landingpage.lsp.jmlpemegangsertifikat");
     }
 
+    //start profil Sekolah
+    public function profil()
+    {
+        return view("landingpage.profile.profil");
+    }
     public function visimisi()
     {
-        return view("landingpage.profile.visimisi");
+        $data = profilvisimisi::all();
+        return view("landingpage.profile.visimisi",compact('data'));
     }
 
     public function strukturorganisasi()
@@ -121,6 +118,8 @@ class LandingController extends Controller
     {
         return view("landingpage.profile.sekolahrujukan");
     }
+    //end profil sekolah
+
     public function guru()
     {
         return view("landingpage.beranda.guru&staf");
@@ -140,7 +139,11 @@ class LandingController extends Controller
     }
 
 
-    //===ROUTE BURSA KERJA KHUSUS===//
+    //start bkk
+    public function bkk()
+    {
+        return view("landingpage.BKK.bkk");
+    }
     public function visimisi_bkk()
     {
         return view("landingpage.BKK.visimisi_bkk");
@@ -177,6 +180,7 @@ class LandingController extends Controller
     {
         return view("landingpage.BKK.perusahaan_mitra");
     }
+    //end BKK
 
     //Alumni
     public function testimonialumni()

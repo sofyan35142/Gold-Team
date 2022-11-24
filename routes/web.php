@@ -46,16 +46,17 @@ Route::get('/alumni/testimoni', [LandingController::class, 'testimonialumni']);
 Route::get('/alumni/profilealumni', [LandingController::class, 'profilealumni']);
 
 
-//================ ROUTE ZAKI ==============//
-//==Route profil==//
-
+// start profil
+Route::get('/profil', [LandingController::class, 'profil']);
 Route::get('/profil/visimisi', [LandingController::class, 'visimisi']);
 Route::get('/profil/strukturorganisasi', [LandingController::class, 'strukturorganisasi']);
 Route::get('/profil/sejarahsingkat', [LandingController::class, 'sejarahsingkat']);
 Route::get('/profil/sekolahadiwiyata', [LandingController::class, 'sekolahadiwiyata']);
 Route::get('/profil/sekolahrujukan', [LandingController::class, 'sekolahrujukan']);
+// end profil
 
-//==Route BKK==//
+// start bkk
+Route::get('/BKK', [LandingController::class, 'BKK']);
 Route::get('/BKK/visimisi-bkk', [LandingController::class, 'visimisi_bkk']);
 Route::get('/BKK/strukturorganisasi-bkk', [LandingController::class, 'strukturorganisasi_bkk']);
 Route::get('/BKK/kegiatan-bkk', [LandingController::class, 'kegiatan_bkk']);
@@ -65,7 +66,7 @@ Route::get('/BKK/lowongan-kerja', [LandingController::class, 'lowongan_kerja']);
 Route::get('/BKK/detail-lowongan', [LandingController::class, 'detail_lowongan']);
 Route::get('/BKK/bimbingan-karir', [LandingController::class, 'bimbingan_karir']);
 Route::get('/BKK/perusahaan-mitra', [LandingController::class, 'perusahaan_mitra']);
-
+// end bkk
 
 //JURUSAN
 Route::get('/jurusan', [LandingController::class, 'jurusan']);
@@ -92,7 +93,7 @@ Route::get('/tempatujikom', [LandingController::class, 'tempatujikom']);
 Route::get('/jmlpemegangsertifikat', [LandingController::class, 'jmlpemegangsertifikat']);
 
 
-//Admin
+//StartAdmin
 Route::get('/index', [Admincontroller::class, 'index']);
 
 
@@ -103,3 +104,17 @@ Route::post('/insertjurusan', [JurusanController::class, 'insertjurusan']);
 Route::get('/jurusan/edit/{id}', [JurusanController::class, 'editjurusan']);
 Route::post('jurusan/update/{id}', [JurusanController::class, 'updatejurusan']);
 Route::get('/jurusan/deletejurusan/{id}', [JurusanController::class, 'deletejurusan']);
+
+// start profil sekolah-admin
+    // visi misi
+Route::get('/index/profil', [Admincontroller::class, 'profilvisimisi']);
+Route::get('/index/addprofilvisimisi', [Admincontroller::class, 'addprofilvisimisi']);
+Route::post('/insertprofilvisimisi', [Admincontroller::class, 'insertprofilvisimisi']);
+Route::get('/visimisi/delete/{id}', [Admincontroller::class, 'deletevisimisi']);
+Route::get('/visimisi/edit/{id}', [Admincontroller::class, 'editviewvisimisi']);
+Route::post('/editvisimisi/{id}', [Admincontroller::class, 'editvisimisi']);
+    // struktur organisasi
+Route::get('/index/strukturorganisasi', [Admincontroller::class, 'strukturorganisasi']);
+Route::get('/index/addstrukturorganisasi', [Admincontroller::class, 'addstrukturorganisasi']);
+Route::get('/index/editstrukturorganisasi', [Admincontroller::class, 'editstrukturorganisasi']);
+// end profil sekolah-admin

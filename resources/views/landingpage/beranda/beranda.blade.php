@@ -229,9 +229,24 @@
                                 Biar kalian tidak penasaran apa saja yang ada di dalam SMK NEGERI 1 SUKOREJO, segera
                                 tonton video profilnya. Jangan Sampai Tidak Ditonton Nanti Menyesal.</p>
                         </div>
-                        <div class="theme-button text-left">
+                        <div class="theme-button text-left play-video">
                             <a href="#" class="btn btn-danger"><i class="fa-sharp fa-solid fa-play"></i>
-                                GAISO DIPLAY </a>
+                                BISA DIPLAY </a>
+                        </div>
+                        <div class="video-popup modalyosop">
+                            <div class="modal-contentyosop">
+                                <span class="close-modal">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+                                        <path
+                                            d="M28.5 9.6l-2.1-2.1-8.4 8.4-8.4-8.4-2.1 2.1 8.4 8.4-8.4 8.4 2.1 2.1 8.4-8.4 8.4 8.4 2.1-2.1-8.4-8.4z"
+                                            style="fill: #FFF;" />
+                                    </svg>
+                                </span>
+                                <div class="video-container">
+                                    <!-- Enter the video ID into the data-id attribute -->
+                                    <div id="player" data-id="DGIXT7ce3vQ"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -419,7 +434,8 @@
                         </a>
                     </div>
                     <div class="blog-text">
-                        <h4><a href="#" class="overflow1">PENUTUPAN PEKAN P5 – UNJUK HASIL KEWIRAUSAHAAN & KREASI SENI</a></h4>
+                        <h4><a href="#" class="overflow1">PENUTUPAN PEKAN P5 – UNJUK HASIL KEWIRAUSAHAAN &
+                                KREASI SENI</a></h4>
                         <ul>
                             <li>
                                 <i class="icofont-calendar"></i>
@@ -430,7 +446,10 @@
                                 <a href="#">John Doe</a>
                             </li>
                         </ul>
-                        <p class="overflow">Para peserta didik SMK Negeri 1 Sukorejo saling berlomba memasarkan hasil wirausaha dalam kegiatan bazar yang diramaikan juga oleh Bapak Ibu Guru dan Bapak Kepala Sekolah. Beraneka macam jajanan dan minuman hasil kreativitas peserta didik dipamerkan dan dijual dalam bazar penutupan pekan P5.</p>
+                        <p class="overflow">Para peserta didik SMK Negeri 1 Sukorejo saling berlomba memasarkan hasil
+                            wirausaha dalam kegiatan bazar yang diramaikan juga oleh Bapak Ibu Guru dan Bapak Kepala
+                            Sekolah. Beraneka macam jajanan dan minuman hasil kreativitas peserta didik dipamerkan dan
+                            dijual dalam bazar penutupan pekan P5.</p>
                         <a href="blog-details.html" class="blog-btn">
                             Read more
                             <i class="icofont-rounded-right"></i>
@@ -504,7 +523,8 @@
                         </a>
                     </div>
                     <div class="blog-text">
-                        <h4><a href="#" class="overflow1">SELAMAT ! PERWAKILAN SMK NEGERI 1 SUKOREJO MEMBORONG PIALA PADA SKY MUSIC COMPETITION</a></h4>
+                        <h4><a href="#" class="overflow1">SELAMAT ! PERWAKILAN SMK NEGERI 1 SUKOREJO MEMBORONG
+                                PIALA PADA SKY MUSIC COMPETITION</a></h4>
                         <ul>
                             <li>
                                 <i class="icofont-calendar"></i>
@@ -515,7 +535,11 @@
                                 <a href="#">John Doe</a>
                             </li>
                         </ul>
-                        <p class="overflow">Siswa SMK Negeri 1 Sukorejo memborong 2 piala dalam kegiatan lomba menyanyi yang diadakan oleh Sky Music Competition. 2 kategori lomba yang berhasil dimenangkan oleh perwakilan SMK Negeri 1 Sukorejo yaitu 1. Juara Favorit dengan jumlah like terbanyak diinstagram 2. Juara1 Kategori Acoustic Group 3. Juara 2 Kategori Penyanyi Solo Terimakasih atas perjuangannya untuk mengharumkan</p>
+                        <p class="overflow">Siswa SMK Negeri 1 Sukorejo memborong 2 piala dalam kegiatan lomba menyanyi
+                            yang diadakan oleh Sky Music Competition. 2 kategori lomba yang berhasil dimenangkan oleh
+                            perwakilan SMK Negeri 1 Sukorejo yaitu 1. Juara Favorit dengan jumlah like terbanyak
+                            diinstagram 2. Juara1 Kategori Acoustic Group 3. Juara 2 Kategori Penyanyi Solo Terimakasih
+                            atas perjuangannya untuk mengharumkan</p>
                         <a href="blog-details.html" class="blog-btn">
                             Read more
                             <i class="icofont-rounded-right"></i>
@@ -633,14 +657,14 @@
         </div>
     </div>
 
-     <div class="team-section pt-100 pb-70">
+    <div class="team-section pt-100 pb-70">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.585483431905!2d112.7150166749192!3d-7.727543392290657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7d1337b9fbe51%3A0x5f53153c148fedfd!2sSMK%20Negeri%201%20Sukorejo!5e0!3m2!1sid!2sid!4v1667877880917!5m2!1sid!2sid"
             width="1450" height="450" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
-   
+
     @include('landingpage.layout.footer')
     @include('landingpage.layout.js')
     <div class="top-btn">
