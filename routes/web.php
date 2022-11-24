@@ -110,7 +110,6 @@ Route::get('/jurusan/edit/{id}', [JurusanController::class, 'editjurusan']);
 Route::post('jurusan/update/{id}', [JurusanController::class, 'updatejurusan']);
 Route::get('/jurusan/deletejurusan/{id}', [JurusanController::class, 'deletejurusan']);
 
-<<<<<<< HEAD
 // start profil sekolah-admin
     // visi misi
 Route::get('/index/profil', [Admincontroller::class, 'profilvisimisi']);
@@ -124,7 +123,6 @@ Route::get('/index/strukturorganisasi', [Admincontroller::class, 'strukturorgani
 Route::get('/index/addstrukturorganisasi', [Admincontroller::class, 'addstrukturorganisasi']);
 Route::get('/index/editstrukturorganisasi', [Admincontroller::class, 'editstrukturorganisasi']);
 // end profil sekolah-admin
-=======
 ////////////-------------ADMIN BERANDA------------/////////////////
 Route::get('/beranda/blog', [BerandaController::class, 'viewblog'])->name('viewblog');
 Route::get('/beranda/tambahblog', [BerandaController::class, 'tambahblog']);
@@ -167,4 +165,3 @@ Route::post('/insertprestasi', [DataController::class, 'insertprestasi']);
 Route::get('/data/editprestasi/{id}', [DataController::class, 'editprestasi']);
 Route::post('/data/updateprestasi/{id}', [DataController::class, 'updateprestasi']);
 Route::get('/data/deleteprestasi/{id}', [DataController::class, 'deleteprestasi']);
->>>>>>> ccbfb0d8f6eab737101ee148fbeacf37d6633f7c

@@ -11,8 +11,6 @@ use App\Models\profilvisimisi;
 
 class LandingController extends Controller
 {
-<<<<<<< HEAD
-=======
     public function beranda()
     {
         $data=Blog::all();
@@ -24,7 +22,6 @@ class LandingController extends Controller
         //
     }
 
->>>>>>> ccbfb0d8f6eab737101ee148fbeacf37d6633f7c
     public function jurusan()
     {
         $data = Jurusan::all();

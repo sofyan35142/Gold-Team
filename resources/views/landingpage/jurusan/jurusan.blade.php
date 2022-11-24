@@ -54,39 +54,40 @@
                 <div class="col-lg-12">
                     <div class="row">
                         @foreach ($data as $jurusan)
-                        <div class="col-lg-4 col-md-6">
-                            
-                               <div class="service-item">
-                                <img class="img-key" src="{{ asset('foto/' . $jurusan->foto) }}" alt="">
-                               
-                                <h3>{{ $jurusan->jurusan }}</h3>
-                                <p class="card-jurusan">{{ $jurusan->deskripsi }}</p>
-                                <div class="theme-button">
-                                    <a href="/detailjurusan/{{$jurusan->id}}" class="default-btn">Selengkapnya</a>
-                                </div>
-                                <div class="service-shape">
-                                    <img src="../../assets/img/service/shapes/service-pattern-6.png" alt="shape">
-                                    <img src="../../assets/img/service/shapes/service-pattern-7.png" alt="shape">
-                                    <img src="../../assets/img/service/shapes/service-pattern-8.png" alt="shape">
-                                    <img src="../../assets/img/service/shapes/service-pattern-9.png" alt="shape">
-                                    <img src="../../assets/img/service/shapes/service-pattern-10.png" alt="shape">
-                                </div>
-                            </div> 
-                           
-                            
+                            <div class="col-lg-4 col-md-6">
 
-                        </div>
-                         @endforeach
+                                <div class="service-item">
+                                    <img class="img-key" src="{{ asset('foto/' . $jurusan->foto) }}" alt="">
+                                    <h3 style="height: 50px">{{ $jurusan->jurusan }}</h3>
+                                    <div style="height: 110px" class="card-jurusan elipsiszak">{!! $jurusan->deskripsi !!}
+                                    </div>
+                                    <div class="theme-button">
+                                        <a href="/detailjurusan/{{ $jurusan->id }}"
+                                            class="default-btn">Selengkapnya</a>
+                                    </div>
+                                    <div class="service-shape">
+                                        <img src="../../assets/img/service/shapes/service-pattern-6.png" alt="shape">
+                                        <img src="../../assets/img/service/shapes/service-pattern-7.png" alt="shape">
+                                        <img src="../../assets/img/service/shapes/service-pattern-8.png" alt="shape">
+                                        <img src="../../assets/img/service/shapes/service-pattern-9.png" alt="shape">
+                                        <img src="../../assets/img/service/shapes/service-pattern-10.png"
+                                            alt="shape">
+                                    </div>
+                                </div>
 
+
+
+                            </div>
+                        @endforeach
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </div>
 
 
-    
+
 
 
     @include('landingpage.layout.footer')

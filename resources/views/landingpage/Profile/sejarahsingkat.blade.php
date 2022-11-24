@@ -94,6 +94,10 @@
                 <div class="col-lg-4 main-service-area blog-side-bar border shadows mb-40px h-fc py-3">
                     <div class="service-sidebar">
                         <img class="imgvisi mb-2 hovchange" data-imageb="../foto/header.JPG" src="../foto/header.JPG" alt="service">
+                        <div class="border side-sejarah" style="height: 254px;
+                        margin-bottom: 0.5rem;">
+                            <h1>h</h1>
+                        </div>
                         <img class="imgvisi mb-2" src="../foto/taman.jpg" alt="service">
                         <img class="imgvisi mb-2" src="../foto/labkimia1.JPG" alt="service">
                         <img class="imgvisi mb-2" src="../foto/header.JPG" alt="service">
