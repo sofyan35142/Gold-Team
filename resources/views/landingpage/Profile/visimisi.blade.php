@@ -46,47 +46,24 @@
     <div class="blog-details-area blog-details-page-area pt-100">
         <div class="container">
             <div class="row">
+                @foreach ($data as $visimisi)
                 <div class="col-lg-8">
                     <div class="blog-details-post">
                         <div class="blog-post-title">
                             <h3>
-                                Visi Misi
+                                {!! $visimisi->visimisi !!}
                             </h3>
                         </div>
-                        <h3 class="mt-3">
-                            TUJUAN
-                        </h3>
-                        <h4 class="fz-16px"><b>Tujuan Umum</b></h4>
-                        <p>1.Meningkatkan keimanan dan ketaqwaan peserta didik kepada Tuhan Yang Maha Esa.</p>
-                        <p>2.Mengembangkan potensi peserta didik agar menjadi warga negara yang berakhlak mulia, sehat,
-                            berilmu, cakap, kreatif, mandiri, demokratis, dan bertanggung jawab.</p>
-                        <p>3.Mengembangkan potensi peserta didik agar memiliki wawasan kebangsaan, memahami dan
-                            menghargai keanekaragaman budaya bangsa Indonesia.</p>
-                        <p>4.Mengembangkan potensi peserta didik agar memiliki kepedulian terhadap lingkungan hidup,
-                            dengan secara aktif turut memelihara dan melestarikan lingkungan hidup, serta memanfaatkan
-                            sumber daya alam dengan efektif dan efisien.</p>
-                        <p>5.Sekolah mampu mengalokasikan anggaran minimal sebesar 20% untuk membiayai kegiatan sekolah
-                            adiwiyata.</p>
-
-
-                        <h4 class="fz-16px"><b>Tujuan Khusus</b></h4>
-                        <p>1.Meningkatkan keimanan dan ketaqwaan peserta didik kepada Tuhan Yang Maha Esa.</p>
-                        <p>2.Mengembangkan potensi peserta didik agar menjadi warga negara yang berakhlak mulia, sehat,
-                            berilmu, cakap, kreatif, mandiri, demokratis, dan bertanggung jawab.</p>
-                        <p>3.Mengembangkan potensi peserta didik agar memiliki wawasan kebangsaan, memahami dan
-                            menghargai keanekaragaman budaya bangsa Indonesia.</p>
-                        <p>4.Mengembangkan potensi peserta didik agar memiliki kepedulian terhadap lingkungan hidup,
-                            dengan secara aktif turut memelihara dan melestarikan lingkungan hidup, serta memanfaatkan
-                            sumber daya alam dengan efektif dan efisien.</p>
-                        <p>5.Sekolah mampu mengalokasikan anggaran minimal sebesar 20% untuk membiayai kegiatan sekolah
-                            adiwiyata.</p>
+                        {!! $visimisi->descvisimisiprofil !!}
                     </div>
                 </div>
                 <div class="col-lg-4 main-service-area blog-side-bar border shadows mb-40px h-fc py-3">
                     <div class="service-sidebar">
-                        <img class="imgvisi" src="../assets/img/visimisi.png" alt="service">
+                        {{-- <img class="imgvisi" src="../assets/img/visimisi.png" alt="service"> --}}
+                        <img class="imgvisi" src="{{asset('../assets/img/' . $visimisi->foto_side)}}" alt="service">
                     </div>
                 </div>
+                @endforeach
             </div>
         </div>
     </div>

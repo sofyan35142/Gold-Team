@@ -18,7 +18,7 @@ class JurusanController extends Controller
     }
     public function insertjurusan(Request $request)
     {
-        // dd($request->all);
+        // dd($request->all());
         // $this->validate($request, [
         //     'jurusan' => 'required|max:255',
         //     'singkatan' => 'required',
@@ -52,11 +52,7 @@ class JurusanController extends Controller
     }
     public function updatejurusan(Request $request, $id)
     {
-
         $data = Jurusan::find($id);
-
-
-
         if ($request->hasFile('foto')) {
             $request->file('foto')->move('foto/', $request->file('foto')->getClientOriginalName());
             $namafoto = $request->file('foto')->getClientOriginalName();

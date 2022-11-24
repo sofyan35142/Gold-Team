@@ -3,7 +3,6 @@
 @include('landingpage.layout.head')
 
 <body>
-
     <div class="loader-content">
         <div class="d-table">
             <div class="d-table-cell">
@@ -18,19 +17,12 @@
             </div>
         </div>
     </div>
-
-
     @include('landingpage.layout.header')
-
-
     <div class="service-title service-title-bg bg-3">
         <div class="d-table">
             <div class="d-table-cell">
                 <div class="container">
-                    
-                     <div class="service-title-text">
-                        
-                       
+                    <div class="service-title-text">
                         <h2>{{ $data->jurusan }}</h2>
                         <ul>
                             <li>
@@ -42,35 +34,24 @@
                             </li>
                             <li>
                                 <i class="icofont-rounded-double-right"></i>
-                                {{$data->jurusan}}
+                                {{ $data->jurusan }}
                             </li>
                         </ul>
-                       
-                    </div>   
-                   
-                    
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
-
     <div class="service-details-area main-service-area pt-100 services-details-page">
         <div class="container">
             <div class="row">
-                
-                  <div class="col-lg-8">
+                <div class="col-lg-8">
                     <img src="../foto/jurusan/TKR.JPG" alt="service">
                     <div class="service-details-post">
-                        <h3 id="jurusan">{{$data->jurusan}}</h3>
-
-
+                        <h3 id="jurusan">{{ $data->jurusan }}</h3>
                         <p id="deskirpsi">{!! $data->deskripsi !!}</p>
-
                     </div>
-
                     <div class="service-details-post">
-
                         <h3>Ketua Kompetensi Keahlian <span class="tkrfont"> (KaKomLi)</span></h3>
                         <div class="d-flex flex-row">
                             <div class="p-2"><img class="img-guru"
@@ -87,16 +68,11 @@
                                     <br />
                                     Gol. Ruang: III/b
                                 </p>
-
-
                             </div>
                         </div>
                     </div>
-                </div>  
-               
-                
+                </div>
                 <div class="col-lg-4 main-service-area blog-side-bar">
-
                     {{-- <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-e42d576"
                         data-id="e42d576" data-element_type="column">
                         <div class="elementor-column-wrap elementor-element-populated">
@@ -186,8 +162,6 @@
                             </div>
                         </div>
                     </div> --}}
-
-
                     <div class="team-section team-style-two team-style-three team-members pt-1000">
                         <div class="team-card">
                             <div class="team-img">
@@ -220,8 +194,6 @@
                             </div>
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </div>

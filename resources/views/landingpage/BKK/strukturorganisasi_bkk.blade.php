@@ -163,8 +163,8 @@
                                 pencari kerja sesuai dengan bakat dan minatnya</li>
                             <li class="listitemzak"><i class="icofont-rounded-right"></i>Memberikan motivasi secara
                                 khusus tentang Ketenagakerjaan</li>
-                            <li class="listitemzak"><i class="icofont-rounded-right">Memberikan pelayanan bagi siswa
-                                    dan alumni yang membutuhkan bimbingan jabatan</i></li>
+                            <li class="listitemzak"><i class="icofont-rounded-right"></i>Memberikan pelayanan bagi siswa
+                                    dan alumni yang membutuhkan bimbingan jabatan</li>
                         </ul>
                         <h3>J. KETUA IKATAN ALUMNI</h3>
                         <ul>
@@ -182,7 +182,7 @@
                 </div>
                 <div class="col-lg-4 main-service-area blog-side-bar border shadows mb-40px">
                     <div class="row">
-                        <div class="col-lg-6 mt-3">
+                        <div class="col-sm-6 wrz-50 mt-3">
                             <div class="img-overlay">
                                 <img class="h-12pc w-100" src="../assets/img/so/rudi.jpg" alt="Avatar"
                                     class="img-overlay-image">
@@ -191,7 +191,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 mt-3">
+                        <div class="col-sm-6 wrz-50 mt-3">
                             <div class="img-overlay">
                                 <img class="h-12pc w-100" src="../assets/img/so/joko.jpeg" alt="Avatar"
                                     class="img-overlay-image">
@@ -200,7 +200,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 mt-3">
+                        <div class="col-sm-6 wrz-50 mt-3">
                             <div class="img-overlay">
                                 <img class="h-12pc w-100" src="../assets/img/so/tutik.jpg" alt="Avatar"
                                     class="img-overlay-image">
@@ -209,7 +209,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 mt-3">
+                        <div class="col-sm-6 wrz-50 mt-3">
                             <div class="img-overlay">
                                 <img class="h-12pc w-100" src="../assets/img/so/kasipah.jpg" alt="Avatar"
                                     class="img-overlay-image">
