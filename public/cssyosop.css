@@ -384,7 +384,7 @@ h2 {
 }
 
 .back {
-  background: #03446A;
+  background: white;
   color: white;
   transform: rotateY( 180deg );
 }

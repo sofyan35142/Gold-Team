@@ -630,26 +630,23 @@
         $(document).ready(function() {
             $('.customer-logos').slick({
                 slidesToShow: 6,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 1500,
-                arrows: false,
-                dots: false,
-                pauseOnHover: false,
-                responsive: [{
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 4
-                    }
-                }, {
-                    breakpoint: 520,
-                    settings: {
-                        slidesToShow: 3
-                    }
-                }]
-            });
+!1sid!2sid"
+            width="1450" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+
+    @include('landingpage.layout.footer')
+    @include('landingpage.layout.js')
+    <div class="top-btn">
+        <i class="icofont-scroll-long-up"></i>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $('#id1').DataTable();
         });
     </script>
-</body>
-
-</html>
+    <script>
+        $(document).ready(function() {
+            $('.customer-logos').slick({
+                sToShow: 6,
