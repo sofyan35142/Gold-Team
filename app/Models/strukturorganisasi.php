@@ -8,7 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class strukturorganisasi extends Model
 {
     use HasFactory;
-    use HasFactory;
     protected $primaryKey = "id";
     protected $table = 'strukturorganisasi';
     protected $guarded = [];

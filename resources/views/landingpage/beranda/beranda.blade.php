@@ -589,19 +589,25 @@
                                         <img src="../assets/img/testimonial/1.png" alt="Client image">
                                     </div>
                                     <div class="sin-testiImage">
-                                        <img src="../assets/img/testimonial/2.png" alt="Client image">
+                                        <img src="../assets/img/testimonial/1.png" alt="Client image">
                                     </div>
                                     <div class="sin-testiImage">
                                         <img src="../assets/img/testimonial/1.png" alt="Client image">
                                     </div>
                                     <div class="sin-testiImage">
-                                        <img src="../assets/img/testimonial/2.png" alt="Client image">
+                                        <img src="../assets/img/testimonial/1.png" alt="Client image">
                                     </div>
                                     <div class="sin-testiImage">
                                         <img src="../assets/img/testimonial/1.png" alt="Client image">
                                     </div>
                                     <div class="sin-testiImage">
-                                        <img src="../assets/img/testimonial/2.png" alt="Client image">
+                                        <img src="../assets/img/testimonial/1.png" alt="Client image">
+                                    </div>
+                                    <div class="sin-testiImage">
+                                        <img src="../assets/img/testimonial/1.png" alt="Client image">
+                                    </div>
+                                    <div class="sin-testiImage">
+                                        <img src="../assets/img/testimonial/1.png" alt="Client image">
                                     </div>
                                 </div>
                             </div>
@@ -613,39 +619,39 @@
                                 <p>sekolah disini sangat menyenangkan bukan.</p>
                             </div>
                             <div class="sin-testiText">
-                                <h2>Stepheny Mc.man</h2>
+                                <h2>Mukhamad Sofyan</h2>
                                 <span>Co-worker of 3S</span>
-                                <p>Saya bangga menjadi bagian dari SMKN 1 SUKOREJO. Karena selalu mendukung dalam
-                                    memberikan fasilitas dan kemudahan dalam menunjang pembelajaran serta menerapkan
-                                    pendidikan <b>attitude</b> yang baik. SmkN 1 SUKOREJO pilihan yang tepat untuk
-                                    mempersiapkan diri didunia kerja.</p>
+                                <p>sekolah disini sangat menyenangkan bukan.</p>
                             </div>
                             <div class="sin-testiText">
-                                <h2>Stepheny Mc.man</h2>
+                                <h2>Mukhamad Sofyan</h2>
                                 <span>Co-worker of 3S</span>
-                                <p>Kurikulum yang selalu up-to-date dan menyesuaikan kebutuhan pasar industri membuat
-                                    lulusan SMKN 1 SUKOREJO dapat diandalkan oleh perusahaan..</p>
+                                <p>sekolah disini sangat menyenangkan bukan.</p>
                             </div>
                             <div class="sin-testiText">
-                                <h2>Stepheny Mc.man</h2>
+                                <h2>Mukhamad Sofyan</h2>
                                 <span>Co-worker of 3S</span>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do is ut labore et
-                                    dolore magna aliqua. Quis ipsum suspendisse ultrices . Risus commodo viverra
-                                    maecenas accumsan lacus vel facilisis.</p>
+                                <p>sekolah disini sangat menyenangkan bukan.</p>
                             </div>
                             <div class="sin-testiText">
-                                <h2>Stepheny Mc.man</h2>
+                                <h2>Mukhamad Sofyan</h2>
                                 <span>Co-worker of 3S</span>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do is ut labore et
-                                    dolore magna aliqua. Quis ipsum suspendisse ultrices . Risus commodo viverra
-                                    maecenas accumsan lacus vel facilisis.</p>
+                                <p>sekolah disini sangat menyenangkan bukan.</p>
                             </div>
                             <div class="sin-testiText">
-                                <h2>Stepheny Mc.man</h2>
+                                <h2>Mukhamad Sofyan</h2>
                                 <span>Co-worker of 3S</span>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do is ut labore et
-                                    dolore magna aliqua. Quis ipsum suspendisse ultrices . Risus commodo viverra
-                                    maecenas accumsan lacus vel facilisis.</p>
+                                <p>sekolah disini sangat menyenangkan bukan.</p>
+                            </div>
+                            <div class="sin-testiText">
+                                <h2>Mukhamad Sofyan</h2>
+                                <span>Co-worker of 3S</span>
+                                <p>sekolah disini sangat menyenangkan bukan.</p>
+                            </div>
+                            <div class="sin-testiText">
+                                <h2>Mukhamad Sofyan</h2>
+                                <span>Co-worker of 3S</span>
+                                <p>sekolah disini sangat menyenangkan bukan.</p>
                             </div>
                         </div>
                     </div>
@@ -674,7 +680,7 @@
     <script>
         $(document).ready(function() {
             $('.customer-logos').slick({
-                slidesToShow: 6,
+                sToShow: 6,
                 slidesToScroll: 1,
                 autoplay: true,
                 autoplaySpeed: 1500,

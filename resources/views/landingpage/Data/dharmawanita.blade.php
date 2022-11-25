@@ -35,7 +35,7 @@
         </div>
     </div>
 
-{{--
+    {{--
     <div class="section over-hide">
         <div class="container">
             <div class="row full-height justify-content-center">
@@ -64,24 +64,37 @@
         </div>
     </div> --}}
 
-    
+
 
     <div class="team-section team-style-two team-style-three team-members pt-100 pb-70">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6">
-                    <div class="team-card">
-                        <div class="team-img">
-                            <img class="imgguru" src="../dharmawanita/aida.jpeg" alt="team member">
-                            <div class="team-social">
-                                <a href="#"><i class="icofont-facebook"></i></a>
-                                <a href="#"><i class="icofont-twitter"></i></a>
-                                <a href="#"><i class="icofont-instagram"></i></a>
+                    <div class="carddharma">
+                        <input type="checkbox" id="card2" class="more">
+                        <div class="content">
+                            <div class="front">
+                                <div class="team-card">
+                                    <div class="team-img">
+                                        <img class="imgguru" src="../dharmawanita/luluk.jpg" alt="team member">
+                                        <div class="team-social">
+                                            <label for="card2" class="btn btn-dharma btn-lg btn-block w-100">Detail</label>
+                                        </div>
+                                    </div>
+                                    <div class="team-text">
+                                        <h4> Luluk Kusuma Herminingsih, S.Pd</h4>
+                                        <p>WAKA KESISWAAN</p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="team-text">
-                            <h4>Nur Aida, S.Pd / Ny. Rudi Trisantoso, S.Pd., M.Pd</h4>
-                            <p>KETUA</p>
+                            <div class="back">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat laudantium magnam, vel magni voluptatibus iste delectus numquam maiores animi totam non, reprehenderit accusamus nam aut sapiente sint maxime adipisci ipsum.
+                                </p>
+                                <label for="card2" class="button return" aria-hidden="true">
+                                    <i class="fas fa-arrow-left"></i>
+                                </label>
+                            </div>
                         </div>
                     </div>
                 </div>

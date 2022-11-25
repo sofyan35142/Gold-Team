@@ -28,8 +28,8 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
-    {{-- <link rel="stylesheet" href="../csszaki.css" />
-    <link rel="stylesheet" href="../scsszaki.css" /> --}}
+    <link rel="stylesheet" href="../csszaki.css" />
+    <link rel="stylesheet" href="../scsszaki.css" />
 
     <link rel="stylesheet" href="../csskeysha.css" />
     <link rel="stylesheet" href="../cssyosop.css" />
@@ -39,11 +39,11 @@
     <link rel="icon" type="image/png" href="../foto/smk.png" />
 
     {{-- <link rel="stylesheet" type="text/css" href="/DataTables/datatables.css"> --}}
-      <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.12.1/datatables.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.12.1/datatables.min.css" />
 
     <style>
-        td{
-            border-right:1px solid #e2e5e9;
+        td {
+            border-right: 1px solid #e2e5e9;
         }
     </style>
 </head>

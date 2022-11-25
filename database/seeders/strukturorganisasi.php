@@ -2,8 +2,9 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class strukturorganisasi extends Seeder
 {
@@ -14,6 +15,11 @@ class strukturorganisasi extends Seeder
      */
     public function run()
     {
-        //
+        DB::table('strukturorganisasi')->insert([
+            'judul' => '',
+            'tahun_ajaran' => '',
+            'foto_struktur' =>'',
+            'foto_sidestruktur' =>''
+        ]);
     }
 }

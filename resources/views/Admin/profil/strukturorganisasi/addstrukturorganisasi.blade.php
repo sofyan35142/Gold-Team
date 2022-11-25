@@ -22,31 +22,30 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="card mb-4">
-                                    <h5 class="card-header">Tambah Profil Visi Misi</h5>
+                                    <h5 class="card-header">Tambah Struktur Organisasi</h5>
                                     <div class="card-body">
-                                        <form action="/insertprofilvisimisi" method="POST" enctype="multipart/form-data">
+                                        <form action="/insertprofilvisimisi" method="POST"
+                                            enctype="multipart/form-data">
                                             @csrf
                                             <div>
-                                                <label for="defaultFormControlInput" class="form-label">Visi Misi</label>
+                                                <label for="defaultFormControlInput" class="form-label">Judul</label>
                                                 <input type="text" name="visimisi" class="form-control"
                                                     id="defaultFormControlInput"
                                                     aria-describedby="defaultFormControlHelp" />
                                             </div>
                                             <br />
-                                            <div>
-                                                <label for="editor" class="form-label">Deskripsi</label>
-                                                {{-- <input type="text" name="deskripsi" class="form-control" id="editor"  aria-describedby="defaultFormControlHelp" /> --}}
-                                                <div class="card-body">
-                                                    <textarea name="descvisimisiprofil" id="editor"></textarea>
-                                                </div>
-                                                <br />
-                                                <div class="mb-3">
-                                                    <label for="exampleInputEmail1" class="form-label">Upload Foto Side visi Misi</label>
-                                                    <input type="file" name="foto_side" class="form-control"
-                                                        id="exampleInputEmail1" aria-describedby="emailHelp">
-                                                </div>
-                                                <button type="submit"
-                                                    class="btn rounded-pill btn-primary">Submit</button>
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">Upload Foto struktur organisasi</label>
+                                                <input type="file" name="foto_side" class="form-control"
+                                                    id="exampleInputEmail1" aria-describedby="emailHelp">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label"></label>
+                                                <input type="file" name="foto_side" class="form-control"
+                                                    id="exampleInputEmail1" aria-describedby="emailHelp">
+                                            </div>
+                                            <button type="submit"
+                                                class="btn rounded-pill btn-primary">Submit</button>
                                         </form>
                                     </div>
                                 </div>

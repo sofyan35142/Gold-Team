@@ -6,79 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-<<<<<<< HEAD
-    <style>
-        .container {
-            text-align: center;
-            margin-top: 10%;
-        }
-
-        .play-video {
-            display: inline-block;
-            padding: 10px 25px;
-            text-align: center;
-            color: #fff;
-            background: #40c0c0;
-            border: 1px solid transparent;
-            border-radius: 50px;
-            font-size: 1.1em;
-            cursor: pointer;
-        }
-
-        .modal {
-            position: fixed;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            opacity: 0;
-            visibility: hidden;
-            transform: scale(1.1);
-            transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
-            z-index: 100;
-        }
-
-        .show-modal {
-            opacity: 1;
-            visibility: visible;
-            transform: scale(1);
-            transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
-        }
-
-        .modal-content {
-            position: relative;
-            max-width: 50em;
-            margin: 0 auto;
-            display: block;
-            padding: 0 3%;
-            height: auto;
-            z-index: 10;
-            top: 50%;
-            transform:
-                /*translateX(-50%)*/
-                translateY(-50%);
-            /*left: 50%;*/
-        }
-
-        .video-container {
-            padding-bottom: 56.25%;
-            position: relative;
-            overflow: hidden;
-            height: 0;
-            /*border: 2px #FFF solid;*/
-            box-shadow: 0 0 15px #333;
-        }
-
-        .video-container iframe,
-        .video-container object,
-        .video-container embed {
-            position: absolute;
-            height: 100%;
-            width: 100%;
-=======
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-    
     <style>
         * {
             box-sizing: border-box;
@@ -91,7 +20,7 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
-            font-family: 'Montserrat', sans-serif;
+            font-family: "Montserrat", sans-serif;
         }
 
         .wrapper {
@@ -127,7 +56,6 @@
         .back {
             position: absolute;
             top: 0;
->>>>>>> ccbfb0d8f6eab737101ee148fbeacf37d6633f7c
             left: 0;
             width: 100%;
             height: 100%;
@@ -151,7 +79,7 @@
         }
 
         .front:after {
-            content: '';
+            content: "";
             position: absolute;
             top: 0;
             left: 0;
@@ -163,41 +91,6 @@
             background: linear-gradient(40deg, rgba(67, 138, 243, 0.7), rgba(255, 242, 166, 0.7));
         }
 
-<<<<<<< HEAD
-        .close-modal {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-            top: -20px;
-            right: 35px;
-            width: 40px;
-            height: 40px;
-            cursor: pointer;
-            border-radius: 100%;
-            border: 1px #fff solid;
-            box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
-            background-color: #70d0d0;
-            text-align: center;
-            text-decoration: none;
-            color: #fff;
-            z-index: 101;
-            transition: all 0.3s ease;
-        }
-
-        .-webkit-.touchevents .close-modal {
-            line-height: 0.5;
-        }
-
-        .close-modal svg {
-            width: 100%;
-        }
-
-        .close-modal:hover {
-            opacity: 0.8;
-            color: #fff;
-        }
-=======
         .front .inner {
             grid-template-rows: 5fr 1fr 1fr 2fr 1fr;
             justify-items: center;
@@ -247,7 +140,7 @@
         }
 
         .back .info:not(:first-of-type):before {
-            content: '';
+            content: "";
             position: absolute;
             left: -0.9em;
             height: 18px;
@@ -284,7 +177,7 @@
 
         .back .description {
             grid-row: 5;
-            grid-column: -1;
+            grid-column: 1/-1;
             font-size: 0.86em;
             border-radius: 5px;
             font-weight: 600;
@@ -303,17 +196,17 @@
         }
 
         .back .location {
-            grid-column: 0.3333333333;
+            grid-column: 1/3;
             justify-self: left;
         }
 
         .back .price {
-            grid-column: -3;
+            grid-column: 3/-1;
             justify-self: right;
         }
 
         .back .button {
-            grid-column: -1;
+            grid-column: 1/-1;
             justify-self: center;
         }
 
@@ -374,29 +267,10 @@
         ::-webkit-scrollbar-thumb:hover {
             background: #355cc9;
         }
->>>>>>> ccbfb0d8f6eab737101ee148fbeacf37d6633f7c
     </style>
 </head>
 
 <body>
-<<<<<<< HEAD
-    <div class="container">
-
-        <div class="play-video">Play Video</div>
-
-        <div class="video-popup modal">
-            <div class="modal-content">
-                <span class="close-modal">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
-                        <path
-                            d="M28.5 9.6l-2.1-2.1-8.4 8.4-8.4-8.4-2.1 2.1 8.4 8.4-8.4 8.4 2.1 2.1 8.4-8.4 8.4 8.4 2.1-2.1-8.4-8.4z"
-                            style="fill: #FFF;" />
-                    </svg>
-                </span>
-                <div class="video-container">
-                    <!-- Enter the video ID into the data-id attribute -->
-                    <div id="player" data-id="DGIXT7ce3vQ"></div>
-=======
     <div class="wrapper">
         <div class="card">
             <input type="checkbox" id="card1" class="more" aria-hidden="true">
@@ -597,68 +471,10 @@
                             <i class="fas fa-arrow-left"></i>
                         </label>
                     </div>
->>>>>>> ccbfb0d8f6eab737101ee148fbeacf37d6633f7c
                 </div>
             </div>
         </div>
     </div>
-    <script>
-        var tag = document.createElement("script");
-        tag.src = "https://www.youtube.com/iframe_api";
-
-        var firstScriptTag = document.getElementsByTagName("script")[0];
-        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-        // Get video ID
-        var vidId = document.getElementById("player").dataset.id;
-
-        // Build the player
-        var player;
-
-        function onYouTubeIframeAPIReady() {
-            player = new YT.Player("player", {
-                height: "390",
-                width: "640",
-                videoId: vidId,
-                events: {
-                    onReady: onPlayerReady
-                }
-            });
-        }
-
-        // ==== Variables for popup
-        var modal = document.querySelector(".modal"),
-            close = document.querySelector(".close-modal"),
-            root = document.getElementsByTagName("html")[0];
-
-        // Do stuff when player is ready
-        function onPlayerReady(event) {
-            document.querySelector(".play-video").addEventListener("click", function() {
-                modal.classList.add("show-modal");
-
-                // Play video
-                setTimeout(function() {
-                    event.target.playVideo();
-                }, 100);
-            });
-
-            // Close if outside box is clicked
-            window.addEventListener("click", function(e) {
-                if (e.target === modal) {
-                    modal.classList.remove("show-modal");
-                    root.classList.remove("no-scroll");
-                    event.target.pauseVideo();
-                }
-            });
-
-            // Close if close button is clicked
-            close.addEventListener("click", function() {
-                modal.classList.remove("show-modal");
-                root.classList.remove("no-scroll");
-                event.target.pauseVideo();
-            });
-        }
-    </script>
 </body>
 
 </html>
