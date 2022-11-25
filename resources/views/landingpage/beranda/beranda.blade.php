@@ -26,60 +26,34 @@
     @include('landingpage.layout.header')
 
     <div class="home-section">
-        <div class="home-slider-area owl-carousel owl-theme">
-            <div class="home-slider-item items-bg1">
-                <div class="d-table">
-                    <div class="d-table-cell">
-                        <div class="container">
-                            <div class="home-text">
-                            </div>
+        <div id="banner" style="height: 37pc" class="bg-secondary">
+            <div id="mainBanner" class="carousel slide" data-ride="carousel" data-interval="7000">
+                <ol class="carousel-indicators">
+                    <li data-target="#mainBanner" data-slide-to="5" class="active"></li>
+                    <li data-target="#mainBanner" data-slide-to="6"></li>
+                    <li data-target="#mainBanner" data-slide-to="7"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" style="height: 37pc;background-color: orange">
+                        <div class="p-4 bounceIn">Slide</div>
+                    </div>
+                    <div class="carousel-item" style="height: 37pc;background-color: red">
+                        <div class="p-4">
+                            <h3 class="bounceIn">Slide</h3>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="home-slider-item items-bg2">
-                <div class="d-table">
-                    <div class="d-table-cell">
-                        <div class="container">
-                            <div class="home-text">
-                                {{-- <h1>We provide High Quality Service</h1>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                    do eiusmod tempor ut labore et dolore magna aliqua. Quis
-                                    ipsum suspendisse ultrices gravida. Viverra maecenas
-                                    accumsan lacus vel facilisis. Quis ipsum suspendisse
-                                    ultrices gravida.
-                                </p>
-                                <div class="theme-button">
-                                    <a href="about.html" class="default-btn active-btn">know More</a>
-                                    <a href="contact.html" class="default-btn">Get Started</a>
-                                </div> --}}
-                            </div>
-                        </div>
+                    <div class="carousel-item" style="height: 37pc;background-color: green">
+                        <div class="p-4 bounceIn">Slide</div>
                     </div>
                 </div>
-            </div>
-            <div class="home-slider-item items-bg3">
-                <div class="d-table">
-                    <div class="d-table-cell">
-                        <div class="container">
-                            {{-- <div class="home-text">
-                                <h1>Our Working Process is Unique</h1>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                    do eiusmod tempor ut labore et dolore magna aliqua. Quis
-                                    ipsum suspendisse ultrices gravida. Viverra maecenas
-                                    accumsan lacus vel facilisis. Quis ipsum suspendisse
-                                    ultrices gravida.
-                                </p>
-                                <div class="theme-button">
-                                    <a href="about.html" class="default-btn active-btn">know More</a>
-                                    <a href="contact.html" class="default-btn">Get Started</a>
-                                </div>
-                            </div> --}}
-                        </div>
-                    </div>
-                </div>
+                <a class="carousel-control-prev" href="#mainBanner" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#mainBanner" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
         </div>
     </div>
@@ -294,31 +268,31 @@
             </div>
             <div class="blog-slider owl-carousel owl-theme">
                 @foreach ($data as $blog)
-                <div class="blog-area">
-                    <div class="blog-img">
-                        <a href="#">
-                            <img class="img-blog" src="{{ asset('fotoblog/' . $blog->foto) }}" alt="blog image">
-                        </a>
+                    <div class="blog-area">
+                        <div class="blog-img">
+                            <a href="#">
+                                <img class="img-blog" src="{{ asset('fotoblog/' . $blog->foto) }}" alt="blog image">
+                            </a>
+                        </div>
+                        <div class="blog-text">
+                            <h4><a href="#">{{ $blog->judul }}</a></h4>
+                            <ul>
+                                <li>
+                                    <i class="icofont-calendar"></i>
+                                    20 Feb 2021
+                                </li>
+                                <li>
+                                    <i class="icofont-ui-user"></i>
+                                    <a href="#">John Doe</a>
+                                </li>
+                            </ul>
+                            <p class="overflow">{!! $blog->deskripsi !!}</p>
+                            <a href="blog-details.html" class="blog-btn">
+                                Read more
+                                <i class="icofont-rounded-right"></i>
+                            </a>
+                        </div>
                     </div>
-                    <div class="blog-text">
-                        <h4><a href="#">{{ $blog->judul }}</a></h4>
-                        <ul>
-                            <li>
-                                <i class="icofont-calendar"></i>
-                                20 Feb 2021
-                            </li>
-                            <li>
-                                <i class="icofont-ui-user"></i>
-                                <a href="#">John Doe</a>
-                            </li>
-                        </ul>
-                        <p class="overflow">{!! $blog->deskripsi !!}</p>
-                        <a href="blog-details.html" class="blog-btn">
-                            Read more
-                            <i class="icofont-rounded-right"></i>
-                        </a>
-                    </div>
-                </div>
                 @endforeach
             </div>
         </div>
@@ -333,20 +307,21 @@
                             <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2">
                                 <div class="testimonial-image-slider slider-nav text-center">
                                     @foreach ($dataa as $alumni)
-                                    <div class="sin-testiImage">
-                                        <img class="img-blog" src="{{ asset('fotoalumni/' . $alumni->foto) }}" alt="blog image">
-                                    </div>
+                                        <div class="sin-testiImage">
+                                            <img class="img-blog" src="{{ asset('fotoalumni/' . $alumni->foto) }}"
+                                                alt="blog image">
+                                        </div>
                                     @endforeach
                                 </div>
                             </div>
                         </div>
                         <div class="testimonial-text-slider slider-for text-center">
                             @foreach ($dataa as $alumni)
-                            <div class="sin-testiText">
-                                <h2>{{ $alumni->nama }}</h2>
-                                <span>{{ $alumni->pekerjaan }}</span>
-                                <p style="word-break: break-all;">{!! $alumni->deskripsi !!}</p>
-                            </div>
+                                <div class="sin-testiText">
+                                    <h2>{{ $alumni->nama }}</h2>
+                                    <span>{{ $alumni->pekerjaan }}</span>
+                                    <p style="word-break: break-all;">{!! $alumni->deskripsi !!}</p>
+                                </div>
                             @endforeach
                         </div>
                     </div>
@@ -354,46 +329,44 @@
             </div>
         </div>
     </div>
-
     <div class="team-section pt-100 pb-70">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.585483431905!2d112.7150166749192!3d-7.727543392290657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7d1337b9fbe51%3A0x5f53153c148fedfd!2sSMK%20Negeri%201%20Sukorejo!5e0!3m2!1sid!2sid!4v1667877880917!5m2!1sid!2sid"
             width="1450" height="450" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-
-
     @include('landingpage.layout.footer')
     @include('landingpage.layout.js')
     <div class="top-btn">
         <i class="icofont-scroll-long-up"></i>
     </div>
     <script>
-        $(document).ready(function() {
-            $('#id1').DataTable();
+        // Hide all item in .carousel-item initially
+        $(".carousel-item *").addClass("d-none");
+
+        // Animate the first slide
+        setTimeout(function() {
+            $(".carousel-item.active *")
+                .removeClass("d-none")
+                .addClass("animated");
+        }, 200);
+
+        // Animate after the slider changes
+        $("#mainBanner").on("slid.bs.carousel", function(e) {
+            // Add .d-none to previous shown slide
+            $(".carousel-item *").addClass("d-none");
+
+            // Element for new slide
+            var c = e["relatedTarget"];
+
+            // After 0.7 sec slide changes, then make the animation for new slide
+            setTimeout(function() {
+                $(c)
+                    .find("*")
+                    .removeClass("d-none")
+                    .addClass("animated");
+                console.log("c");
+            }, 200);
         });
     </script>
-    <script>
-        $(document).ready(function() {
-            $('.customer-logos').slick({
-                slidesToShow: 6,
-!1sid!2sid"
-            width="1450" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-
-
-    @include('landingpage.layout.footer')
-    @include('landingpage.layout.js')
-    <div class="top-btn">
-        <i class="icofont-scroll-long-up"></i>
-    </div>
-    <script>
-        $(document).ready(function() {
-            $('#id1').DataTable();
-        });
-    </script>
-    <script>
-        $(document).ready(function() {
-            $('.customer-logos').slick({
-                sToShow: 6,
+</body>
