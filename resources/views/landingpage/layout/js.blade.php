@@ -18,6 +18,9 @@
 <script src="../assets/js/contact-form-script.js"></script>
 
 <script src="../assets/js/custom.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
 <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/jq-3.6.0/dt-1.12.1/datatables.min.js"></script>
         {{-- POP UP VIDEO --}}
 <script>

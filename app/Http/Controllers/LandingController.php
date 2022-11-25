@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\alumni;
 use App\Models\Blog;
 use App\Models\ekstra;
 use App\Models\Guru;
@@ -14,8 +15,9 @@ class LandingController extends Controller
 {
     public function beranda()
     {
+        $dataa=alumni::all();
         $data=Blog::all();
-        return view("landingpage.beranda.beranda", compact('data'));
+        return view("landingpage.beranda.beranda", compact('data','dataa'));
     }
 
     public function create()
@@ -113,7 +115,7 @@ class LandingController extends Controller
     }
     public function visimisi()
     {
-        $data = profilvisimisi::all();
+        // $data =profilvisimisi::all();
         return view("landingpage.profile.visimisi",compact('data'));
     }
 

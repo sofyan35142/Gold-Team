@@ -3,6 +3,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css">
 
     <link rel="stylesheet" href="../assets/css/owl.carousel.min.css" />
 
@@ -25,9 +26,8 @@
     <link rel="stylesheet" href="../assets/css/dark.css" />
 
     <link rel="stylesheet" href="../assets/css/responsive.css" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-
     <link rel="stylesheet" href="../csszaki.css" />
     <link rel="stylesheet" href="../scsszaki.css" />
 
