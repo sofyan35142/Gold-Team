@@ -24,29 +24,36 @@
                                 <div class="card mb-4">
                                     <h5 class="card-header">Tambah Profil Visi Misi</h5>
                                     <div class="card-body">
-                                        <form action="/editvisimisi/{{$data->id}}" method="POST" enctype="multipart/form-data">
+                                        <form action="/updatestrukturorganisasi/{{$data->id}}" method="POST" enctype="multipart/form-data">
                                             @csrf
-                                            <div>
-                                                <label for="defaultFormControlInput" class="form-label">Visi Misi</label>
-                                                <input type="text" value="{{$data->visimisi}}" name="visimisi" class="form-control"
+                                           <div>
+                                                <label for="defaultFormControlInput" class="form-label">judul</label>
+                                                <input type="text" name="judul" class="form-control"
                                                     id="defaultFormControlInput"
-                                                    aria-describedby="defaultFormControlHelp" />
+                                                    aria-describedby="defaultFormControlHelp" value="{{ $data->judul }}" />
+                                            </div>
+                                           <div>
+                                                <label for="defaultFormControlInput" class="form-label">tahun_ajaran</label>
+                                                <input type="text" name="tahun_ajaran" class="form-control"
+                                                    id="defaultFormControlInput"
+                                                    aria-describedby="defaultFormControlHelp" value="{{ $data->tahun_ajaran }}" />
                                             </div>
                                             <br />
-                                            <div>
-                                                <label for="editor" class="form-label">Deskripsi</label>
-                                                {{-- <input type="text" name="deskripsi" class="form-control" id="editor"  aria-describedby="defaultFormControlHelp" /> --}}
-                                                <div class="card-body">
-                                                    <textarea name="descvisimisiprofil" id="editor">{!! $data->descvisimisiprofil !!}</textarea>
-                                                </div>
-                                                <br />
-                                                <div class="mb-3">
-                                                    <img src="{{ asset('../assets/img/visimisi/' . $data->foto_side) }}" alt=""
-                                                        style="width: 80px; height:80px;">
-                                                    <label for="exampleInputEmail1" class="form-label">Upload Foto Side visi Misi</label>
-                                                    <input type="file" name="foto_side" class="form-control"
-                                                        id="exampleInputEmail1" aria-describedby="emailHelp">
-                                                </div>
+                                                 <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Update Foto Struktur</label>
+                            <br/>
+                            <img class="img mb-3" src="{{ asset('struktur/' . $data->foto_struktur) }}" alt="" style="width: 100px;">
+                            <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto_struktur }}">
+                            {{-- <i style="float: left;font-size: 11px;color: red">Abaikan jika tidak merubah foto</i> --}}
+                        </div>
+                                            <br />
+                                                 <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Update Foto Side Struktur</label>
+                            <br/>
+                            <img class="img mb-3" src="{{ asset('sidestruktur/' . $data->foto_sidestruktur) }}" alt="" style="width: 100px;">
+                            <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto_sidestruktur }}">
+                            {{-- <i style="float: left;font-size: 11px;color: red">Abaikan jika tidak merubah foto</i> --}}
+                        </div>
                                                 <button type="submit"
                                                     class="btn rounded-pill btn-primary">Submit</button>
                                         </form>

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\alumni;
 use App\Models\Blog;
 use Illuminate\Http\Request;
 
@@ -65,5 +66,58 @@ class BerandaController extends Controller
         return redirect()->route('viewblog')->with('success', 'Berhasil Di Hapus');
     }
 
+    //////////////////////////---------------ALUMNI BOSS-----------------------/////////////////
+    public function viewalumni(){
+        $data=alumni::all();
+        return view('Admin.beranda.alumni.alumni', compact('data'));
+    }
+    public function tambahalumni(){
+        return view('Admin.beranda.alumni.tambahalumni');
+    }
+    public function insertalumni(Request $request){
+        $data =alumni::create([
+      'nama' => $request->nama,
+      'pekerjaan' => $request->pekerjaan,
+            'deskripsi' => $request->deskripsi,
+            'foto' => $request->foto
+        ]);
+        // dd($data);
+        if ($request->hasFile('foto')) {
+            $request->file('foto')->move('fotoalumni/', $request->file('foto')->getClientOriginalName());
+            $data->foto = $request->file('foto')->getClientOriginalName();
+            $data->save();
+        }
+        return redirect()->route('viewalumni')->with('success', 'Berhasil Di Tambahkan');
+    }
 
+    public function editalumni($id){
+        $data=alumni::findOrFail($id);
+        return view('Admin.beranda.alumni.editalumni', compact('data'));
+    }
+    public function updatealumni(Request $request, $id)
+    {
+
+        $data =alumni::find($id);
+        $data->update([
+            'nama' => $request->nama,
+            'pekerjaan' => $request->pekerjaan,
+            'deskripsi' => $request->deskripsi,
+        ]);
+        // $data->update($request->all());
+        // dd($data);
+        if ($request->hasFile('foto')) {
+            $request->file('foto')->move('fotoalumni/', $request->file('foto')->getClientOriginalName());
+            $data->foto = $request->file('foto')->getClientOriginalName();
+            $data->save();
+        }
+
+        return redirect()->route('viewalumni')->with('success', 'Berhasil Di Update');
+    }
+
+    public function deletealumni($id)
+    {
+        $data =alumni::find($id);
+        $data->delete();
+        return redirect()->route('viewalumni')->with('success', 'Berhasil Di Hapus');
+    }
 }

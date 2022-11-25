@@ -13,12 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('strukturorganisasi', function (Blueprint $table) {
+        Schema::create('alumnis', function (Blueprint $table) {
             $table->id();
-            $table->string('judul');
-            $table->string('tahun_ajaran');
-            $table->string('foto_struktur');
-            $table->string('foto_sidestruktur');
+            $table->string('nama');
+            $table->string('pekerjaan');
+            $table->text('deskripsi');
+            $table->string('foto');
             $table->timestamps();
         });
     }
@@ -30,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('strukturorganisasi');
+        Schema::dropIfExists('alumnis');
     }
 };

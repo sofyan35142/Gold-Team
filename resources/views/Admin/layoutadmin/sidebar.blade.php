@@ -149,8 +149,8 @@
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a href="app-invoice-preview.html" class="menu-link">
-                                    <div data-i18n="Preview">Preview</div>
+                                <a href="/beranda/alumni" class="menu-link">
+                                    <div data-i18n="alumni">alumni</div>
                                 </a>
                             </li>
                             <li class="menu-item">
@@ -173,40 +173,28 @@
                         <ul class="menu-sub">
                             <li class="menu-item">
                                 <a href="app-user-list.html" class="menu-link">
-                                    <div data-i18n="List">List</div>
+                                    <div data-i18n="visimisi">visimisi</div>
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a href="javascript:void(0);" class="menu-link menu-toggle">
-                                    <div data-i18n="View">View</div>
+                                <a href="/index/strukturorganisasi" class="menu-link">
+                                    <div data-i18n="struktur">struktur</div>
                                 </a>
-                                <ul class="menu-sub">
-                                    <li class="menu-item">
-                                        <a href="app-user-view-account.html" class="menu-link">
-                                            <div data-i18n="Account">Account</div>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a href="app-user-view-security.html" class="menu-link">
-                                            <div data-i18n="Security">Security</div>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a href="app-user-view-billing.html" class="menu-link">
-                                            <div data-i18n="Billing & Plans">Billing & Plans</div>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a href="app-user-view-notifications.html" class="menu-link">
-                                            <div data-i18n="Notifications">Notifications</div>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a href="app-user-view-connections.html" class="menu-link">
-                                            <div data-i18n="Connections">Connections</div>
-                                        </a>
-                                    </li>
-                                </ul>
+                            </li>
+                            <li class="menu-item">
+                                <a href="app-user-list.html" class="menu-link">
+                                    <div data-i18n="visimisi">visimisi</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="app-user-list.html" class="menu-link">
+                                    <div data-i18n="visimisi">visimisi</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="app-user-list.html" class="menu-link">
+                                    <div data-i18n="visimisi">visimisi</div>
+                                </a>
                             </li>
                         </ul>
                     </li>

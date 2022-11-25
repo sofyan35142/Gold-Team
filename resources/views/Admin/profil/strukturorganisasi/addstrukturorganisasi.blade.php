@@ -22,27 +22,31 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="card mb-4">
-                                    <h5 class="card-header">Tambah Profil Visi Misi</h5>
+                                    <h5 class="card-header">Tambah Strukturorganisasi</h5>
                                     <div class="card-body">
-                                        <form action="/insertprofilvisimisi" method="POST" enctype="multipart/form-data">
+                                        <form action="/insertstrukturorganisasi" method="POST" enctype="multipart/form-data">
                                             @csrf
                                             <div>
-                                                <label for="defaultFormControlInput" class="form-label">Visi Misi</label>
-                                                <input type="text" name="visimisi" class="form-control"
+                                                <label for="defaultFormControlInput" class="form-label">judul</label>
+                                                <input type="text" name="judul" class="form-control"
+                                                    id="defaultFormControlInput"
+                                                    aria-describedby="defaultFormControlHelp" />
+                                            </div>
+                                            <div>
+                                                <label for="defaultFormControlInput" class="form-label">tahun ajaran</label>
+                                                <input type="text" name="tahun_ajaran" class="form-control"
                                                     id="defaultFormControlInput"
                                                     aria-describedby="defaultFormControlHelp" />
                                             </div>
                                             <br />
-                                            <div>
-                                                <label for="editor" class="form-label">Deskripsi</label>
-                                                {{-- <input type="text" name="deskripsi" class="form-control" id="editor"  aria-describedby="defaultFormControlHelp" /> --}}
-                                                <div class="card-body">
-                                                    <textarea name="descvisimisiprofil" id="editor"></textarea>
-                                                </div>
-                                                <br />
                                                 <div class="mb-3">
                                                     <label for="exampleInputEmail1" class="form-label">Upload Foto Side visi Misi</label>
-                                                    <input type="file" name="foto_side" class="form-control"
+                                                    <input type="file" name="foto_struktur" class="form-control"
+                                                        id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="exampleInputEmail1" class="form-label">Upload Foto</label>
+                                                    <input type="file" name="foto_sidestruktur" class="form-control"
                                                         id="exampleInputEmail1" aria-describedby="emailHelp">
                                                 </div>
                                                 <button type="submit"

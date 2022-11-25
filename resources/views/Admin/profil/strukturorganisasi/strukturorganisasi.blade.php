@@ -31,34 +31,39 @@
                                     <thead>
                                         <tr>
                                             <th scope="col">No.</th>
-                                            <th scope="col">Visi Misi</th>
-                                            <th scope="col">Deskripsi</th>
-                                            <th scope="col">Foto</th>
+                                            <th scope="col">Judul</th>
+                                            <th scope="col">tahun ajaran</th>
+                                            <th scope="col">Foto Struktur</th>
+                                            <th scope="col">Foto Side Struktur</th>
                                             <th scope="col">Aksi</th>
                                         </tr>
                                     </thead>
                                     <tbody class="table-group-divider">
                                         <?php $no = 1; ?>
-                                        {{-- @foreach ($data as $visimisi)
+                                        @foreach ($data as $struktur)
                                             <tr>
                                                 <td>{{ $no }}</td>
-                                                <td>{{ $visimisi->visimisi}}</td>
-                                                <td>{!! $visimisi->descvisimisiprofil !!}</td>
+                                                <td>{{ $struktur->judul }}</td>
+                                                <td>{{ $struktur->tahun_ajaran }}</td>
                                                 <td>
-                                                    <img src="{{ asset('../assets/img/visimisi/' . $visimisi->foto_side) }}" alt=""
+                                                    <img src="{{ asset('struktur/' . $struktur->foto_struktur) }}" alt=""
                                                         style="width: 80px; height:80px;">
                                                 </td>
                                                 <td>
-                                                    <a href="/visimisi/edit/{{ $visimisi->id }}"
+                                                    <img src="{{ asset('sidestruktur/' . $struktur->foto_sidestruktur) }}" alt=""
+                                                        style="width: 80px; height:80px;">
+                                                </td>
+                                                <td>
+                                                    <a href="/index/editstrukturorganisasi/{{ $struktur->id }}"
                                                         class="btn btn-warning"><i
                                                             class="fa-solid fa-pen-to-square"></i></a>
                                                     <a href="#" class="btn btn-danger delete"
-                                                        data-id="{{ $visimisi->id }}"
-                                                        data-jurusan="{{ $visimisi->visimisi }}"><i
+                                                        data-id="{{ $struktur->id }}"
+                                                        data-struktur="{{ $struktur->judul }}"><i
                                                             class="fa-solid fa-trash"></i></a>
                                                 </td>
                                             </tr>
-                                        @endforeach --}}
+                                        @endforeach
                                     </tbody>
                                     <?php $no++; ?>
                                 </table>
@@ -151,19 +156,19 @@
 </body>
 <script>
     $('.delete').click(function() {
-        var jurusanid = $(this).attr('data-id');
-        var jurusan = $(this).attr('data-jurusan');
+        var strukturid = $(this).attr('data-id');
+        var struktur = $(this).attr('data-struktur');
 
         swal({
                 title: "Apakah kamu yakin?",
-                text: "Kamu akan menghapus jurusan data ini",
+                text: "Kamu akan menghapus struktur data ini",
                 icon: "warning",
                 buttons: true,
                 dangerMode: true,
             })
             .then((willDelete) => {
                 if (willDelete) {
-                    window.location = "/visimisi/delete/" + jurusanid + ""
+                    window.location = "/index/deletestrukturorganisasi/" + strukturid + ""
                     swal("Data berhasil dihapus", {
                         icon: "success",
                     });

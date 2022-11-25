@@ -585,79 +585,30 @@
                         <div class="row">
                             <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2">
                                 <div class="testimonial-image-slider slider-nav text-center">
+                                    @foreach ($dataa as $alumni)
                                     <div class="sin-testiImage">
-                                        <img src="../assets/img/testimonial/1.png" alt="Client image">
+                                        <img class="img-blog" src="{{ asset('fotoalumni/' . $alumni->foto) }}" alt="blog image">
                                     </div>
-                                    <div class="sin-testiImage">
-                                        <img src="../assets/img/testimonial/2.png" alt="Client image">
-                                    </div>
-                                    <div class="sin-testiImage">
-                                        <img src="../assets/img/testimonial/1.png" alt="Client image">
-                                    </div>
-                                    <div class="sin-testiImage">
-                                        <img src="../assets/img/testimonial/2.png" alt="Client image">
-                                    </div>
-                                    <div class="sin-testiImage">
-                                        <img src="../assets/img/testimonial/1.png" alt="Client image">
-                                    </div>
-                                    <div class="sin-testiImage">
-                                        <img src="../assets/img/testimonial/2.png" alt="Client image">
-                                    </div>
+                                    @endforeach
                                 </div>
                             </div>
                         </div>
                         <div class="testimonial-text-slider slider-for text-center">
+                            @foreach ($dataa as $alumni)
                             <div class="sin-testiText">
-                                <h2>Mukhamad Sofyan</h2>
-                                <span>Co-worker of 3S</span>
-                                <p>sekolah disini sangat menyenangkan bukan.</p>
+                                <h2>{{ $alumni->nama }}</h2>
+                                <span>{{ $alumni->pekerjaan }}</span>
+                                <p style="word-break: break-all;">{!! $alumni->deskripsi !!}</p>
                             </div>
-                            <div class="sin-testiText">
-                                <h2>Stepheny Mc.man</h2>
-                                <span>Co-worker of 3S</span>
-                                <p>Saya bangga menjadi bagian dari SMKN 1 SUKOREJO. Karena selalu mendukung dalam
-                                    memberikan fasilitas dan kemudahan dalam menunjang pembelajaran serta menerapkan
-                                    pendidikan <b>attitude</b> yang baik. SmkN 1 SUKOREJO pilihan yang tepat untuk
-                                    mempersiapkan diri didunia kerja.</p>
-                            </div>
-                            <div class="sin-testiText">
-                                <h2>Stepheny Mc.man</h2>
-                                <span>Co-worker of 3S</span>
-                                <p>Kurikulum yang selalu up-to-date dan menyesuaikan kebutuhan pasar industri membuat
-                                    lulusan SMKN 1 SUKOREJO dapat diandalkan oleh perusahaan..</p>
-                            </div>
-                            <div class="sin-testiText">
-                                <h2>Stepheny Mc.man</h2>
-                                <span>Co-worker of 3S</span>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do is ut labore et
-                                    dolore magna aliqua. Quis ipsum suspendisse ultrices . Risus commodo viverra
-                                    maecenas accumsan lacus vel facilisis.</p>
-                            </div>
-                            <div class="sin-testiText">
-                                <h2>Stepheny Mc.man</h2>
-                                <span>Co-worker of 3S</span>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do is ut labore et
-                                    dolore magna aliqua. Quis ipsum suspendisse ultrices . Risus commodo viverra
-                                    maecenas accumsan lacus vel facilisis.</p>
-                            </div>
-                            <div class="sin-testiText">
-                                <h2>Stepheny Mc.man</h2>
-                                <span>Co-worker of 3S</span>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do is ut labore et
-                                    dolore magna aliqua. Quis ipsum suspendisse ultrices . Risus commodo viverra
-                                    maecenas accumsan lacus vel facilisis.</p>
-                            </div>
+                            @endforeach
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-<<<<<<< HEAD
 
-=======
->>>>>>> f5cb27f1a54e66d16d672f09754ca597be625a41
-     <div class="team-section pt-100 pb-70">
+    <div class="team-section pt-100 pb-70">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.585483431905!2d112.7150166749192!3d-7.727543392290657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7d1337b9fbe51%3A0x5f53153c148fedfd!2sSMK%20Negeri%201%20Sukorejo!5e0!3m2!1sid!2sid!4v1667877880917!5m2!1sid!2sid"
             width="1450" height="450" style="border:0;" allowfullscreen="" loading="lazy"

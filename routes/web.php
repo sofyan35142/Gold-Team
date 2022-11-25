@@ -119,10 +119,16 @@ Route::get('/visimisi/delete/{id}', [Admincontroller::class, 'deletevisimisi']);
 Route::get('/visimisi/edit/{id}', [Admincontroller::class, 'editviewvisimisi']);
 Route::post('/editvisimisi/{id}', [Admincontroller::class, 'editvisimisi']);
     // struktur organisasi
-Route::get('/index/strukturorganisasi', [Admincontroller::class, 'strukturorganisasi']);
+Route::get('/index/strukturorganisasi', [Admincontroller::class, 'strukturorganisasi'])->name('strukturorganisasi');
 Route::get('/index/addstrukturorganisasi', [Admincontroller::class, 'addstrukturorganisasi']);
-Route::get('/index/editstrukturorganisasi', [Admincontroller::class, 'editstrukturorganisasi']);
+Route::post('/insertstrukturorganisasi', [Admincontroller::class, 'insertstrukturorganisasi']);
+Route::get('/index/editstrukturorganisasi/{id}', [Admincontroller::class, 'editstrukturorganisasi']);
+Route::post('/updatestrukturorganisasi/{id}', [Admincontroller::class, 'updatestrukturorganisasi']);
+Route::get('/index/deletestrukturorganisasi/{id}', [AdminController::class, 'deletestrukturorganisasi']);
 // end profil sekolah-admin
+
+
+
 ////////////-------------ADMIN BERANDA------------/////////////////
 Route::get('/beranda/blog', [BerandaController::class, 'viewblog'])->name('viewblog');
 Route::get('/beranda/tambahblog', [BerandaController::class, 'tambahblog']);
@@ -130,6 +136,17 @@ Route::post('/insertblog', [BerandaController::class, 'insertblog']);
 Route::get('/beranda/editblog/{id}', [BerandaController::class, 'editblog']);
 Route::post('/beranda/updateblog/{id}', [BerandaController::class, 'updateblog']);
 Route::get('/blog/deleteblog/{id}', [BerandaController::class, 'deleteblog']);
+
+//////////////////------------ALUMNI BOSS----------////////////
+Route::get('/beranda/alumni', [BerandaController::class, 'viewalumni'])->name('viewalumni');
+Route::get('/beranda/tambahalumni', [BerandaController::class, 'tambahalumni']);
+Route::post('/insertalumni', [BerandaController::class, 'insertalumni']);
+Route::get('/beranda/editalumni/{id}', [BerandaController::class, 'editalumni']);
+Route::post('/beranda/updatealumni/{id}', [BerandaController::class, 'updatealumni']);
+Route::get('/alumni/deletealumni/{id}', [BerandaController::class, 'deletealumni']);
+
+
+
 
 ///////////////-----------------------DataAdmin-------------------------//////////////
 
