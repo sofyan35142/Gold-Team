@@ -30,7 +30,7 @@
         loop: true,
         margin: 30,
         nav: false,
-        smartSpeed: 2000,
+        smartSpeed: 2,
         dots: true,
         items: 1,
         autoplayHoverPause: true,

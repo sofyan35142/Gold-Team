@@ -83,6 +83,14 @@
                         </div>
                     </div>
                 </div>
+                <a class="carousel-control-prev" href="#mainBanner" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#mainBanner" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
         </div>
     </div> --}}
@@ -358,52 +366,44 @@
             </div>
         </div>
     </div>
-
     <div class="team-section pt-100 pb-70">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.585483431905!2d112.7150166749192!3d-7.727543392290657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7d1337b9fbe51%3A0x5f53153c148fedfd!2sSMK%20Negeri%201%20Sukorejo!5e0!3m2!1sid!2sid!4v1667877880917!5m2!1sid!2sid"
             width="1450" height="450" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-
-
     @include('landingpage.layout.footer')
     @include('landingpage.layout.js')
     <div class="top-btn">
         <i class="icofont-scroll-long-up"></i>
     </div>
     <script>
-        $(document).ready(function() {
-            $('#id1').DataTable();
+        // Hide all item in .carousel-item initially
+        $(".carousel-item *").addClass("d-none");
+
+        // Animate the first slide
+        setTimeout(function() {
+            $(".carousel-item.active *")
+                .removeClass("d-none")
+                .addClass("animated");
+        }, 200);
+
+        // Animate after the slider changes
+        $("#mainBanner").on("slid.bs.carousel", function(e) {
+            // Add .d-none to previous shown slide
+            $(".carousel-item *").addClass("d-none");
+
+            // Element for new slide
+            var c = e["relatedTarget"];
+
+            // After 0.7 sec slide changes, then make the animation for new slide
+            setTimeout(function() {
+                $(c)
+                    .find("*")
+                    .removeClass("d-none")
+                    .addClass("animated");
+                console.log("c");
+            }, 200);
         });
     </script>
-    <script>
-        $(document).ready(function() {
-                    $('.customer-logos').slick({
-                                slidesToShow: 6,
-                                !1 sid!2 sid "
-                                width = "1450"
-                                height = "450"
-                                style = "border:0;"
-                                allowfullscreen = ""
-                                loading = "lazy"
-                                referrerpolicy = "no-referrer-when-downgrade" > < /iframe> <
-                                /div>
-
-
-                                @include('landingpage.layout.footer')
-                                @include('landingpage.layout.js') <
-                                div class = "top-btn" >
-                                <
-                                i class = "icofont-scroll-long-up" > < /i> <
-                                /div> <
-                                script >
-                                $(document).ready(function() {
-                                    $('#id1').DataTable();
-                                });
-    </script>
-    <script>
-        $(document).ready(function() {
-                    $('.customer-logos').slick({
-                                sToShow: 6,
-7
+</body>
