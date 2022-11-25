@@ -26,6 +26,35 @@
     @include('landingpage.layout.header')
 
     <div class="home-section">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="guru/asnah.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="guru/rudi.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="guru/hadi.jpg" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    {{-- <div class="home-section">
         <div class="home-slider-area owl-carousel owl-theme">
             <div class="home-slider-item items-bg1">
                 <div class="d-table">
@@ -42,18 +71,6 @@
                     <div class="d-table-cell">
                         <div class="container">
                             <div class="home-text">
-                                {{-- <h1>We provide High Quality Service</h1>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                    do eiusmod tempor ut labore et dolore magna aliqua. Quis
-                                    ipsum suspendisse ultrices gravida. Viverra maecenas
-                                    accumsan lacus vel facilisis. Quis ipsum suspendisse
-                                    ultrices gravida.
-                                </p>
-                                <div class="theme-button">
-                                    <a href="about.html" class="default-btn active-btn">know More</a>
-                                    <a href="contact.html" class="default-btn">Get Started</a>
-                                </div> --}}
                             </div>
                         </div>
                     </div>
@@ -63,26 +80,12 @@
                 <div class="d-table">
                     <div class="d-table-cell">
                         <div class="container">
-                            {{-- <div class="home-text">
-                                <h1>Our Working Process is Unique</h1>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                    do eiusmod tempor ut labore et dolore magna aliqua. Quis
-                                    ipsum suspendisse ultrices gravida. Viverra maecenas
-                                    accumsan lacus vel facilisis. Quis ipsum suspendisse
-                                    ultrices gravida.
-                                </p>
-                                <div class="theme-button">
-                                    <a href="about.html" class="default-btn active-btn">know More</a>
-                                    <a href="contact.html" class="default-btn">Get Started</a>
-                                </div>
-                            </div> --}}
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 
     <div class="service-style-three pt-100 pb-70">
         <div class="container">
@@ -294,31 +297,31 @@
             </div>
             <div class="blog-slider owl-carousel owl-theme">
                 @foreach ($data as $blog)
-                <div class="blog-area">
-                    <div class="blog-img">
-                        <a href="#">
-                            <img class="img-blog" src="{{ asset('fotoblog/' . $blog->foto) }}" alt="blog image">
-                        </a>
+                    <div class="blog-area">
+                        <div class="blog-img">
+                            <a href="#">
+                                <img class="img-blog" src="{{ asset('blog/' . $blog->foto) }}" alt="blog image">
+                            </a>
+                        </div>
+                        <div class="blog-text">
+                            <h4><a href="#" class="overflow1">{{ $blog->judul }}</a></h4>
+                            <ul>
+                                <li>
+                                    <i class="icofont-calendar"></i>
+                                    20 Feb 2021
+                                </li>
+                                <li>
+                                    <i class="icofont-ui-user"></i>
+                                    <a href="#">John Doe</a>
+                                </li>
+                            </ul>
+                            <p class="overflow">{!! $blog->deskripsi !!}</p>
+                            <a href="blog-details.html" class="blog-btn">
+                                Read more
+                                <i class="icofont-rounded-right"></i>
+                            </a>
+                        </div>
                     </div>
-                    <div class="blog-text">
-                        <h4><a href="#">{{ $blog->judul }}</a></h4>
-                        <ul>
-                            <li>
-                                <i class="icofont-calendar"></i>
-                                20 Feb 2021
-                            </li>
-                            <li>
-                                <i class="icofont-ui-user"></i>
-                                <a href="#">John Doe</a>
-                            </li>
-                        </ul>
-                        <p class="overflow">{!! $blog->deskripsi !!}</p>
-                        <a href="blog-details.html" class="blog-btn">
-                            Read more
-                            <i class="icofont-rounded-right"></i>
-                        </a>
-                    </div>
-                </div>
                 @endforeach
             </div>
         </div>
@@ -333,20 +336,21 @@
                             <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2">
                                 <div class="testimonial-image-slider slider-nav text-center">
                                     @foreach ($dataa as $alumni)
-                                    <div class="sin-testiImage">
-                                        <img class="img-blog" src="{{ asset('fotoalumni/' . $alumni->foto) }}" alt="blog image">
-                                    </div>
+                                        <div class="sin-testiImage">
+                                            <img class="img-blog" src="{{ asset('fotoalumni/' . $alumni->foto) }}"
+                                                alt="blog image">
+                                        </div>
                                     @endforeach
                                 </div>
                             </div>
                         </div>
                         <div class="testimonial-text-slider slider-for text-center">
                             @foreach ($dataa as $alumni)
-                            <div class="sin-testiText">
-                                <h2>{{ $alumni->nama }}</h2>
-                                <span>{{ $alumni->pekerjaan }}</span>
-                                <p style="word-break: break-all;">{!! $alumni->deskripsi !!}</p>
-                            </div>
+                                <div class="sin-testiText">
+                                    <h2>{{ $alumni->nama }}</h2>
+                                    <span>{{ $alumni->pekerjaan }}</span>
+                                    <p style="word-break: break-all;">{!! $alumni->deskripsi !!}</p>
+                                </div>
                             @endforeach
                         </div>
                     </div>
@@ -375,25 +379,31 @@
     </script>
     <script>
         $(document).ready(function() {
-            $('.customer-logos').slick({
-                slidesToShow: 6,
-!1sid!2sid"
-            width="1450" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+                    $('.customer-logos').slick({
+                                slidesToShow: 6,
+                                !1 sid!2 sid "
+                                width = "1450"
+                                height = "450"
+                                style = "border:0;"
+                                allowfullscreen = ""
+                                loading = "lazy"
+                                referrerpolicy = "no-referrer-when-downgrade" > < /iframe> <
+                                /div>
 
 
-    @include('landingpage.layout.footer')
-    @include('landingpage.layout.js')
-    <div class="top-btn">
-        <i class="icofont-scroll-long-up"></i>
-    </div>
-    <script>
-        $(document).ready(function() {
-            $('#id1').DataTable();
-        });
+                                @include('landingpage.layout.footer')
+                                @include('landingpage.layout.js') <
+                                div class = "top-btn" >
+                                <
+                                i class = "icofont-scroll-long-up" > < /i> <
+                                /div> <
+                                script >
+                                $(document).ready(function() {
+                                    $('#id1').DataTable();
+                                });
     </script>
     <script>
         $(document).ready(function() {
-            $('.customer-logos').slick({
-                sToShow: 6,
+                    $('.customer-logos').slick({
+                                sToShow: 6,
+7

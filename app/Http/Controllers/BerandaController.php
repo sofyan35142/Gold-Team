@@ -28,7 +28,7 @@ class BerandaController extends Controller
         ]);
         // dd($data);
         if ($request->hasFile('foto')) {
-            $request->file('foto')->move('fotoblog/', $request->file('foto')->getClientOriginalName());
+            $request->file('foto')->move('blog/', $request->file('foto')->getClientOriginalName());
             $data->foto = $request->file('foto')->getClientOriginalName();
             $data->save();
         }
@@ -51,7 +51,7 @@ class BerandaController extends Controller
         // $data->update($request->all());
         // dd($data);
         if($request->hasFile('foto')){
-            $request->file('foto')->move('fotoekstra/', $request->file('foto')->getClientOriginalName());
+            $request->file('foto')->move('blog/', $request->file('foto')->getClientOriginalName());
             $data->foto = $request->file('foto')->getClientOriginalName();
             $data->save();
         }

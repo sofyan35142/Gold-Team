@@ -17,6 +17,8 @@ class DatabaseSeeder extends Seeder
         $this->call([
             jurusan::class,
             profilvisimisi::class,
+            strukturorganisasi::class,
+            dharma::class
         ]);
     }
 }

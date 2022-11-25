@@ -61,7 +61,7 @@
         <td>{{ $blog->judul }}</td>
         <td>{!! $blog->deskripsi !!}</td>
         <td>
-            <img src="{{ asset('fotoblog/' . $blog->foto) }}" alt="" style="width: 80px; height:80px;">
+            <img src="{{ asset('blog/' . $blog->foto) }}" alt="" style="width: 80px; height:80px;">
         </td>
 
 
