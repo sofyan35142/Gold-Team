@@ -55,19 +55,12 @@
                         <h3>Ketua Kompetensi Keahlian <span class="tkrfont"> (KaKomLi)</span></h3>
                         <div class="d-flex flex-row">
                             <div class="p-2"><img class="img-guru"
-                                    src="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/07/ndr-Rohmad-Munandar.jpg"
+                                    src="{{ asset('kakomli/' . $kakomli->foto) }}"
                                     width="10px" />
                             </div>
-                            <div class="p-2"><b>ROHMAD MUNANDAR, S.Pd</b>
+                            <div class="p-2"><b>{{$kakomli->nama_guru}}</b>
                                 <br />
-                                <p>NIP: 19740609 200902 1 002
-                                    <br />
-                                    Tempat/Tgl Lahir: Sukoharjo, 09 Juni 1974
-                                    <br />
-                                    Status: PNS
-                                    <br />
-                                    Gol. Ruang: III/b
-                                </p>
+                                {!! $kakomli->deskripsi !!}
                             </div>
                         </div>
                     </div>

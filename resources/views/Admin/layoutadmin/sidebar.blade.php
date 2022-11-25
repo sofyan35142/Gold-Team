@@ -210,26 +210,26 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="menu-item">
-                        <a href="/index/jurusan" class="menu-link">
-                            <i class='menu-icon tf-icons bx bx-check-shield'></i>
-                            <div data-i18n="Jurusan">Jurusan</div>
-                        </a>
-                    </li>
+                    
                     <li class="menu-item">
                         <a href="javascript:void(0);" class="menu-link menu-toggle">
                             <i class='menu-icon tf-icons bx bx-check-shield'></i>
-                            <div data-i18n="Jurusan">Jurusan</div>
+                            <div data-i18n="Jurusan">Kompetensi Keahlian</div>
                         </a>
                         <ul class="menu-sub">
                             <li class="menu-item">
-                                <a href="app-access-roles.html" class="menu-link">
-                                    <div data-i18n="Roles">Roles</div>
+                                <a href="/index/jurusan" class="menu-link">
+                                    <div data-i18n="Jurusan">Jurusan</div>
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a href="app-access-permission.html" class="menu-link">
-                                    <div data-i18n="Permission">Permission</div>
+                                <a href="#" class="menu-link">
+                                    <div data-i18n="Kakomli">Kepala Kompetensi Keahlian</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">
+                                    <div data-i18n="Modul">Modul Produktif</div>
                                 </a>
                             </li>
                         </ul>

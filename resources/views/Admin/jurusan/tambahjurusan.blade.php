@@ -114,7 +114,7 @@
                         </div>
                         <br/>
                         <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Upload Foto Peserta</label>
+                            <label for="exampleInputEmail1" class="form-label">Upload Foto Jurusan</label>
 
                             <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>

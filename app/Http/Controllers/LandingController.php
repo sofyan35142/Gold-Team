@@ -6,6 +6,7 @@ use App\Models\Blog;
 use App\Models\ekstra;
 use App\Models\Guru;
 use App\Models\Jurusan;
+use App\Models\Kakomli;
 use Illuminate\Http\Request;
 use App\Models\profilvisimisi;
 
@@ -31,8 +32,8 @@ class LandingController extends Controller
     {
 
         $data = Jurusan::find($id);
-
-        return view("landingpage.jurusan.detailjurusan", compact('data'));
+        $kakomli = Kakomli::find($id);
+        return view("landingpage.jurusan.detailjurusan", compact('data', 'kakomli'));
     }
     public function tkr()
     {
