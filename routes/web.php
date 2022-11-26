@@ -111,8 +111,17 @@ Route::post('jurusan/update/{id}', [JurusanController::class, 'updatejurusan']);
 Route::get('/jurusan/deletejurusan/{id}', [JurusanController::class, 'deletejurusan']);
 
 // start profil sekolah-admin
+    // profil
+Route::get('/index/profil', [Admincontroller::class, 'profil']);
+Route::get('/index/addprofil', [Admincontroller::class, 'addprofil']);
+Route::post('/insertprofilvisimisi', [Admincontroller::class, 'insertprofilvisimisi']);
+Route::get('/visimisi/delete/{id}', [Admincontroller::class, 'deletevisimisi']);
+Route::get('/visimisi/edit/{id}', [Admincontroller::class, 'editviewvisimisi']);
+Route::post('/editvisimisi/{id}', [Admincontroller::class, 'editvisimisi']);
+
+
     // visi misi
-Route::get('/index/profil', [Admincontroller::class, 'profilvisimisi']);
+Route::get('/index/profilvisimisi', [Admincontroller::class, 'profilvisimisi']);
 Route::get('/index/addprofilvisimisi', [Admincontroller::class, 'addprofilvisimisi']);
 Route::post('/insertprofilvisimisi', [Admincontroller::class, 'insertprofilvisimisi']);
 Route::get('/visimisi/delete/{id}', [Admincontroller::class, 'deletevisimisi']);
