@@ -96,7 +96,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="card mb-4">
-                    <h5 class="card-header">Tambah jurusan</h5>
+                    <h5 class="card-header">Edit jurusan</h5>
                     <div class="card-body">
                         <form action="/jurusan/update/{{ $data->id }}" method="POST" enctype="multipart/form-data">
                                 @csrf
@@ -109,7 +109,7 @@
                         <div>
                         <label for="editor" class="form-label">Deskripsi</label>
                         <div class="card-body">
-                                <textarea name="deskripsi" id="editor" value="{!! $data->deskripsi !!}"></textarea>
+                                <textarea name="deskripsi" id="editor" >{!! $data->deskripsi !!}</textarea>
                             </div>
                         {{-- <input type="text" name="deskripsi" class="form-control" id="editor"  aria-describedby="defaultFormControlHelp" /> --}}
                         </div>

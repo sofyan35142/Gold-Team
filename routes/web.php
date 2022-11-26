@@ -5,6 +5,7 @@ use App\Http\Controllers\BerandaController;
 use App\Http\Controllers\JurusanController;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\DataController;
+use App\Http\Controllers\KakomliController;
 use App\Models\Beranda;
 use Illuminate\Routing\Route as RoutingRoute;
 use Illuminate\Support\Facades\Route;
@@ -107,7 +108,7 @@ Route::get('/index/jurusan', [JurusanController::class, 'jurusanview'])->name('j
 Route::get('/index/tambahjurusan', [JurusanController::class, 'tambahjurusan']);
 Route::post('/insertjurusan', [JurusanController::class, 'insertjurusan']);
 Route::get('/jurusan/edit/{id}', [JurusanController::class, 'editjurusan']);
-Route::post('jurusan/update/{id}', [JurusanController::class, 'updatejurusan']);
+Route::post('/jurusan/update/{id}', [JurusanController::class, 'updatejurusan']);
 Route::get('/jurusan/deletejurusan/{id}', [JurusanController::class, 'deletejurusan']);
 
 // start profil sekolah-admin
@@ -191,3 +192,12 @@ Route::post('/insertprestasi', [DataController::class, 'insertprestasi']);
 Route::get('/data/editprestasi/{id}', [DataController::class, 'editprestasi']);
 Route::post('/data/updateprestasi/{id}', [DataController::class, 'updateprestasi']);
 Route::get('/data/deleteprestasi/{id}', [DataController::class, 'deleteprestasi']);
+
+
+//Kakomli
+Route::get('/index/kakomli', [KakomliController::class, 'kakomli'])->name('kakomli');;
+Route::get('/index/tambahkakomli', [KakomliController::class, 'create']);
+Route::post('/insertkakomli', [KakomliController::class, 'store']);
+Route::get('/kakomli/edit/{id}', [KakomliController::class, 'show']);
+Route::post('/kakomli/update/{id}', [KakomliController::class, 'update']);
+Route::get('/kakomli/deletekakomli/{id}', [KakomliController::class, 'destroy']);
