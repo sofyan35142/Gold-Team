@@ -9,11 +9,9 @@ use App\Models\Dharma;
 use App\Models\ekstra;
 use App\Models\Guru;
 use App\Models\Jurusan;
-<<<<<<< HEAD
 use App\Models\kepsek;
-=======
 use App\Models\Kakomli;
->>>>>>> 81de54456eccde3bb32b178b6fc038ae2cd173f2
+use App\Models\profilsekolah;
 use Illuminate\Http\Request;
 use App\Models\profilvisimisi;
 
@@ -119,7 +117,8 @@ class LandingController extends Controller
     //start profil Sekolah
     public function profil()
     {
-        return view("landingpage.profile.profil");
+        $data = profilsekolah::all();
+        return view("landingpage.profile.profil",compact('data'));
     }
     public function visimisi()
     {
