@@ -144,6 +144,16 @@
                         </a>
                         <ul class="menu-sub">
                             <li class="menu-item">
+                                <a href="/beranda/slider" class="menu-link">
+                                    <div data-i18n="Slider">Slider</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="/beranda/totalsiswa" class="menu-link">
+                                    <div data-i18n="total siswa">total siswa</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
                                 <a href="/beranda/blog" class="menu-link">
                                     <div data-i18n="blog">blog</div>
                                 </a>
@@ -159,8 +169,8 @@
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a href="app-invoice-add.html" class="menu-link">
-                                    <div data-i18n="Add">Add</div>
+                                <a href="/beranda/sponsor" class="menu-link">
+                                    <div data-i18n="Sponsor">Sponsor</div>
                                 </a>
                             </li>
                         </ul>
@@ -198,7 +208,7 @@
                             </li>
                         </ul>
                     </li>
-                    
+
                     <li class="menu-item">
                         <a href="javascript:void(0);" class="menu-link menu-toggle">
                             <i class='menu-icon tf-icons bx bx-check-shield'></i>
@@ -218,6 +228,41 @@
                             <li class="menu-item">
                                 <a href="#" class="menu-link">
                                     <div data-i18n="Modul">Modul Produktif</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="menu-item">
+                        <a href="javascript:void(0);" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons bx bx-file"></i>
+                            <div data-i18n="Data">LSP</div>
+                        </a>
+                        <ul class="menu-sub">
+
+                            <li class="menu-item">
+                                <a href="/index/lsp" class="menu-link">
+                                    <div data-i18n="LSP">LSP</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="/index/visimisilsp" class="menu-link">
+                                    <div data-i18n="Visi Misi LSP">Visi Misi LSP</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="pages-pricing.html" class="menu-link">
+                                    <div data-i18n="Skema Terlisensi">Skema Terlisensi</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="/data/ekstra" class="menu-link">
+                                    <div data-i18n="Tempat Uji Kompetensi">Tempat Uji Kompetensi</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="/data/prestasii" class="menu-link">
+                                    <div data-i18n="Jumlah Pemegang Sertifikat">Jumlah Pemegang Sertifikat</div>
                                 </a>
                             </li>
                         </ul>

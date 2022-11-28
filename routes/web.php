@@ -6,6 +6,7 @@ use App\Http\Controllers\JurusanController;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\DataController;
 use App\Http\Controllers\KakomliController;
+use App\Http\Controllers\LSPController;
 use App\Models\Beranda;
 use Illuminate\Routing\Route as RoutingRoute;
 use Illuminate\Support\Facades\Route;
@@ -20,7 +21,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-     //======================== LANDING PAGE ========================//
+//======================== LANDING PAGE ========================//
 
 Route::get('/bug', function () {
     return view('welcome');
@@ -92,7 +93,7 @@ Route::get('/modulproduktiftav', [LandingController::class, 'modulproduktiftav']
 
 
 //LSP
-Route::get('/lsp', [LandingController::class, 'lsp']);
+Route::get('/llsp', [LandingController::class, 'lsp']);
 Route::get('/visimisilsp', [LandingController::class, 'visimisilsp']);
 Route::get('/skematerlisensi', [LandingController::class, 'skematerlisensi']);
 Route::get('/tempatujikom', [LandingController::class, 'tempatujikom']);
@@ -112,7 +113,7 @@ Route::post('/jurusan/update/{id}', [JurusanController::class, 'updatejurusan'])
 Route::get('/jurusan/deletejurusan/{id}', [JurusanController::class, 'deletejurusan']);
 
 // start profil sekolah-admin
-    // profil
+// profil
 Route::get('/index/profil', [Admincontroller::class, 'profil']);
 Route::get('/index/addprofil', [Admincontroller::class, 'addprofil']);
 Route::post('/insertprofil', [Admincontroller::class, 'insertprofil']);
@@ -121,14 +122,14 @@ Route::get('/visimisi/edit/{id}', [Admincontroller::class, 'editviewvisimisi']);
 Route::post('/editvisimisi/{id}', [Admincontroller::class, 'editvisimisi']);
 
 
-    // visi misi
+// visi misi
 Route::get('/index/profilvisimisi', [Admincontroller::class, 'profilvisimisi']);
 Route::get('/index/addprofilvisimisi', [Admincontroller::class, 'addprofilvisimisi']);
 Route::post('/insertprofilvisimisi', [Admincontroller::class, 'insertprofilvisimisi']);
 Route::get('/visimisi/delete/{id}', [Admincontroller::class, 'deletevisimisi']);
 Route::get('/visimisi/edit/{id}', [Admincontroller::class, 'editviewvisimisi']);
 Route::post('/editvisimisi/{id}', [Admincontroller::class, 'editvisimisi']);
-    // struktur organisasi
+// struktur organisasi
 Route::get('/index/strukturorganisasi', [Admincontroller::class, 'strukturorganisasi'])->name('strukturorganisasi');
 Route::get('/index/addstrukturorganisasi', [Admincontroller::class, 'addstrukturorganisasi']);
 Route::post('/insertstrukturorganisasi', [Admincontroller::class, 'insertstrukturorganisasi']);
@@ -140,6 +141,16 @@ Route::get('/index/deletestrukturorganisasi/{id}', [AdminController::class, 'del
 
 
 ////////////-------------ADMIN BERANDA------------/////////////////
+
+////////////////----------BERANDA SLIDER-----------///////////////////////
+Route::get('/beranda/slider', [BerandaController::class, 'slider'])->name('slider');
+Route::get('/beranda/editslider/{id}', [BerandaController::class, 'editslider']);
+Route::post('/beranda/updateslider/{id}', [BerandaController::class, 'updateslider']);
+Route::get('/slider/deleteslider/{id}', [BerandaController::class, 'deleteslider']);
+
+
+
+////////////----------Beranda Blog-----------////////////////////////////////
 Route::get('/beranda/blog', [BerandaController::class, 'viewblog'])->name('viewblog');
 Route::get('/beranda/tambahblog', [BerandaController::class, 'tambahblog']);
 Route::post('/insertblog', [BerandaController::class, 'insertblog']);
@@ -163,6 +174,23 @@ Route::post('/insertalumni', [BerandaController::class, 'insertalumni']);
 Route::get('/beranda/editalumni/{id}', [BerandaController::class, 'editalumni']);
 Route::post('/beranda/updatealumni/{id}', [BerandaController::class, 'updatealumni']);
 Route::get('/alumni/deletealumni/{id}', [BerandaController::class, 'deletealumni']);
+
+
+
+//////////////////////------------TOTAL SISWA----------///////////////////////
+Route::get('/beranda/totalsiswa', [BerandaController::class, 'totalsiswa'])->name('totalsiswa');
+Route::get('/beranda/edittotal/{id}', [BerandaController::class, 'edittotal']);
+Route::post('/beranda/updatetotal/{id}', [BerandaController::class, 'updatetotal']);
+Route::get('/totalsiswa/deletetotal/{id}', [BerandaController::class, 'deletetotal']);
+
+
+/////////////////////-------------KERJA SAMA-SPONSOR-------------//////////////////
+Route::get('/beranda/sponsor', [BerandaController::class, 'sponsor'])->name('sponsor');
+Route::get('/beranda/tambahsponsor', [BerandaController::class, 'tambahsponsor']);
+Route::post('/insertsponsor', [BerandaController::class, 'insertsponsor']);
+Route::get('/beranda/editsponsor/{id}', [BerandaController::class, 'editsponsor']);
+Route::post('/beranda/updatesponsor/{id}', [BerandaController::class, 'updatesponsor']);
+Route::get('/sponsor/deletesponsor/{id}', [BerandaController::class, 'deletesponsor']);
 
 
 
@@ -210,3 +238,17 @@ Route::post('/insertkakomli', [KakomliController::class, 'store']);
 Route::get('/kakomli/edit/{id}', [KakomliController::class, 'show']);
 Route::post('/kakomli/update/{id}', [KakomliController::class, 'update']);
 Route::get('/kakomli/deletekakomli/{id}', [KakomliController::class, 'destroy']);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+//LSP
+Route::get('/index/lsp', [LSPController::class, 'indexlsp'])->name('indexlsp');
+Route::post('/updatelsp/{id}', [LSPController::class, 'edit']);
+
+
+Route::get('/index/visimisilsp', [LSPController::class, 'visimisilsp'])->name('visimisilsp');
+Route::post('/updatevisimisilsp/{id}', [LSPController::class, 'editlsp']);
+>>>>>>> 68853b91990b09e1875895dcdfaeba03143e40c1
+>>>>>>> 8187cf7d598339e7eabd3502124ddbbbdfd8d1d9

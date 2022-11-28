@@ -51,68 +51,9 @@
                 <div class="col-lg-8">
                     {{-- <img src="foto/jurusan/TKR.JPG" alt="service"> --}}
                     <div class="service-details-post">
-                        <h1>LSP</h1>
-                        <h3>DETAIL / SEJARAH PEMBENTUKAN LSP SMKN 1 SUKOREJO</h3>
-                        <p>Dibentuk berdasarkan :
-                            <br />
-                            1. Surat Keputusan Kepala SMK Negeri 1 Sukorejo Nomor : 421.5 /490/ 424.051.09.4 / 2015
-                            tertanggal : 17 September 2015 Tentang Pembentukan Panitia Kerja Pendirian LSP SMKN 1
-                            Sukorejo ,
-                            <br />
-                            2. Surat Keputusan Kepala SMK Negeri 1 Sukorejo Nomor : 421.5 /493/ 424.051.09.4 / 2015,
-                            tertanggal : 19 September 2015 Tentang Pembentukan Lembaga Sertifikasi Profesi SMKN 1
-                            Sukorejo
-                            <br />
-                            3. Lisensi dari Badan Nasional Sertifikasi Profesi dengan Surat Keputusan Ketua BNSP Nomor
-                            KEP.0023/BNSP/I/2019 tentang Perpanjangan Lisensi dan Penambahan Ruang Lingkup Kepada
-                            Lembaga Sertifikasi Profesi SMKN 1 Sukorejo Kab. Pasuruan
-                            <br />
-                            4. Sertifikat Lisensi dari Badan Nasional Sertifikasi Profesi kepada Lembaga Sertifikasi
-                            Profesi SMKN 1 Sukorejo Kab. Pasuruan dengan Nomor : BNSP-LSP-363-ID
-                        </p>
-                        <h3>PROFIL LSP</h3>
-
-                        <p>Nama LSP : LSP SMKN 1 Sukorejo
-                            <br />
-                            Jenis LSP : LSP Pihak Kesatu
-                            <br />
-                            Sub Jenis LSP : LSP P1 SMK
-                            <br />
-                            No SK Kepala SMK : 421.5/493/424.051.09.4/2015, Tanggal : 19/09/2015
-                            <br />
-                            No Sertifikat Lisensi : BNSP-LSP-365-ID
-                            <br />
-                            No SK LSP BNSP : KEP.0023/BNSP/I/2019, Tanggal : 17 Januari 2019
-                            <br />
-                            Masa Berlaku : 17/01/2019 sd. 17/01/2024
-                        </p>
-                        <h3>ALAMAT LSP</h3>
-                        <p>Propinsi : Jawa Timur
-                            <br />
-                            Kota/Kabupaten : Pasuruan
-                            <br />
-                            Alamat : Jalan Sumbergareng Kecamatan Sukorejo Kabupaten Pasuruan Kode Pos 67161
-                            <br />
-                            Koordinat Lokasi : -7.72787320270721,112.71725831150889
-                            <br />
-                            No. Telepon Kantor LSP : 08113664004, 08155280457
-                            <br />
-                            No. Telpon Admin LSP : 085855014190
-                            <br />
-                            No. Fax Kantor LSP : –
-                            <br />
-                            Email LSP (Aktif) : lspsmkn1sukorejo@gmail.com
-                            <br />
-                            Website LSP : smkn1sukorejo.sch.id (gabung dengan web SMK)
-                            <br />
-                            Media Sosial : https://web.facebook.com/sukorejo.sertifikasi.7
-                            <br />
-                            No. NPWP LSP : 00.337.465.9-624.000 (gabung dengan web SMK)
-                            <br />
-                            No. Rekening LSP : Bank BRI Cab Sukorejo No Rek. 6488-01-023265-53-8
-                            <br />
-                            a/n : LSP SMKN 1 SUKOREJO
-                        </p>
+                        
+                        <h1>{{$data->judul}}</h1>
+                        {!!$data->deskripsi!!}
                         
                         
 
@@ -142,17 +83,17 @@ Next
                 <div class="col-lg-4 main-service-area blog-side-bar">
                     <div class="service-details-post">
                         <h3>PAPAN NAMA</h3>
-                            <img src="foto/lspsmk.jpg"
+                            <img src="{{ asset('lsp/' . $data->papannama) }}"
                                             alt="papan nama">
                     </div>
                     <div class="service-details-post">
                         <h3>KANTOR LSP</h3>
-                            <img src="foto/kantorlsp.jpg"
+                            <img src="{{ asset('lsp/' . $data->kantor) }}"
                                             alt="kantor lsp">
                     </div>
                     <div class="service-details-post">
                         <h3>DENAH LOKASI (LAY OUT)</h3>
-                            <img src="foto/layoutlsp.png"
+                            <img src="{{ asset('lsp/' . $data->denah) }}"
                                             alt="layout lsp">
                     </div>
                     
@@ -173,7 +114,7 @@ Next
                                                     data-widget_type="text-editor.default">
                                                     <div class="elementor-widget-container">
                                                         <div class="elementor-text-editor elementor-clearfix"><iframe
-                                                                src="https://bnsp.go.id/detaillsp?id=91"
+                                                                src="{{$data->link}}"
                                                                 width="100%" height="750px">
                                                             </iframe></div>
                                                     </div>

@@ -30,12 +30,18 @@ class JurusanController extends Controller
 
             'jurusan' => $request->jurusan,
             'deskripsi' => $request->deskripsi,
-            'foto' => $request->foto
+            'foto' => $request->foto,
+            'produktif' => $request->produktif
         ]);
         // dd($data);
         if ($request->hasFile('foto')) {
             $request->file('foto')->move('foto/', $request->file('foto')->getClientOriginalName());
             $data->foto = $request->file('foto')->getClientOriginalName();
+            $data->save();
+        }
+        if ($request->hasFile('produktif')) {
+            $request->file('produktif')->move('foto/jurusan/', $request->file('produktif')->getClientOriginalName());
+            $data->foto = $request->file('produktif')->getClientOriginalName();
             $data->save();
         }
         return redirect()->route('jurusanview')->with('success', 'Berhasil Di Tambahkan');
@@ -58,6 +64,15 @@ class JurusanController extends Controller
             $namafoto = $request->file('foto')->getClientOriginalName();
             $data->update([
                 'foto' => $namafoto,
+                'jurusan' => $request->jurusan,
+                'deskripsi' => $request->deskripsi,
+            ]);
+        }
+        if ($request->hasFile('produktif')) {
+            $request->file('produktif')->move('foto/jurusan/', $request->file('produktif')->getClientOriginalName());
+            $namafoto1 = $request->file('produktif')->getClientOriginalName();
+            $data->update([
+                'foto' => $namafoto1,
                 'jurusan' => $request->jurusan,
                 'deskripsi' => $request->deskripsi,
             ]);

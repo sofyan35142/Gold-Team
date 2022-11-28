@@ -5,25 +5,34 @@ namespace App\Http\Controllers;
 use App\Models\alumni;
 use App\Models\Blog;
 use App\Models\Dharma;
-
+use App\Models\LSP;
+use App\Models\Visimisilsp;
 use App\Models\ekstra;
 use App\Models\Guru;
 use App\Models\Jurusan;
 use App\Models\kepsek;
 use App\Models\Kakomli;
+<<<<<<< HEAD
 use App\Models\profilsekolah;
+=======
+>>>>>>> 8187cf7d598339e7eabd3502124ddbbbdfd8d1d9
 use Illuminate\Http\Request;
 use App\Models\profilvisimisi;
-
+use App\Models\slider;
+use App\Models\sponsor;
+use App\Models\totalsiswa;
 
 class LandingController extends Controller
 {
     public function beranda()
     {
+        $sponsor=sponsor::all();
+        $slider=slider::all();
         $dataa=alumni::all();
         $data=Blog::all();
         $datakepsek=kepsek::all();
-        return view("landingpage.beranda.beranda", compact('data','dataa','datakepsek'));
+        $total=totalsiswa::all();
+        return view("landingpage.beranda.beranda", compact('data','dataa','datakepsek','total','slider','sponsor'));
     }
 
     public function create()
@@ -95,11 +104,13 @@ class LandingController extends Controller
     ////LSP////
     public function lsp()
     {
-        return view("landingpage.lsp.lsp");
+        $data = LSP::where('id', '=', 1)->firstOrFail();
+        return view("landingpage.lsp.lsp", compact('data'));
     }
     public function visimisilsp()
     {
-        return view("landingpage.lsp.visimisilsp");
+        $visi = Visimisilsp::where('id', '=', 1)->firstOrFail();
+        return view("landingpage.lsp.visimisilsp", compact('visi'));
     }
     public function skematerlisensi()
     {

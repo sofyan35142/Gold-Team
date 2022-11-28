@@ -3,12 +3,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
     <title>Admin SKETSU</title>
-    
+
     <meta name="description" content="Start your development with a Dashboard for Bootstrap 5" />
     <meta name="keywords" content="dashboard, bootstrap 5 dashboard, bootstrap 5 admin, bootstrap 5 design, bootstrap 5">
     <!-- Canonical SEO -->
     <link rel="canonical" href="https://1.envato.market/frest_admin">
-    
+
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="https://pixinvent.com/demo/frest-clean-bootstrap-admin-dashboard-template/assets1/img/favicon/favicon.ico" />
 
@@ -43,7 +43,7 @@
     <link rel="stylesheet" href="../../assets1/vendor/libs/formvalidation/dist/css/formValidation.min.css" />
 
     <!-- Page CSS -->
-    
+
     <!-- Helpers -->
     <script src="../../assets1/vendor/js/helpers.js"></script>
 
@@ -52,7 +52,7 @@
     <script src="../../assets1/vendor/js/template-customizer.js"></script>
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
     <script src="../../assets1/js/config.js"></script>
-    
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async="async" src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
     <script>

@@ -81,6 +81,7 @@
       <th scope="col">No.</th>
       <th scope="col">Jurusan</th>
       <th scope="col">Deskripsi</th>
+      <th scope="col">Logo</th>
       <th scope="col">Foto</th>
       <th scope="col">Aksi</th>
     </tr>
@@ -94,6 +95,9 @@
         <td>{!! $jurusan->deskripsi !!}</td>
         <td>
             <img src="{{ asset('foto/' . $jurusan->foto) }}" alt="" style="width: 80px; height:80px;">
+        </td>
+        <td>
+            <img src="{{ asset('foto/jurusan/' . $jurusan->produktif) }}" alt="" style="width: 120px;">
         </td>
 
 
@@ -142,27 +146,7 @@
 
 
 <!-- Footer -->
-<footer class="content-footer footer bg-footer-theme">
-  <div class="container-fluid d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
-    <div class="mb-2 mb-md-0">
-      © <script>
-          document.write(new Date().getFullYear())
-      </script>
-      , made with ❤️ by <a href="https://pixinvent.com/" target="_blank" class="footer-link fw-semibold">PIXINVENT</a>
-    </div>
-    <div>
-
-      <a href="https://themeforest.net/licenses/standard" class="footer-link me-4" target="_blank">License</a>
-      <a href="https://1.envato.market/pixinvent_portfolio" target="_blank" class="footer-link me-4">More Themes</a>
-
-      <a href="https://pixinvent.com/demo/frest-clean-bootstrap-admin-dashboard-template/documentation-bs5/" target="_blank" class="footer-link me-4">Documentation</a>
-
-
-      <a href="https://pixinvent.ticksy.com/" target="_blank" class="footer-link d-none d-sm-inline-block">Support</a>
-
-    </div>
-  </div>
-</footer>
+@include("Admin.layoutadmin.footer")
 <!-- / Footer -->
 
 

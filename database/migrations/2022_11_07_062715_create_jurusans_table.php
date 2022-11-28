@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('jurusan');
             $table->text('deskripsi');
             $table->string('foto');
+            $table->string('produktif');
             $table->timestamps();
         });
     }
