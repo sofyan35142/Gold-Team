@@ -11,6 +11,15 @@ class Admincontroller extends Controller
     public function index(){
         return view ('Admin.index');
     }
+    ///////////////////// START PROFIL LANDINGPAGE ADMIN ///////////////////////////
+    //start profil
+    public function profil(){
+        return view ('admin.profil.profil.profil');
+    }
+    public function addprofil(){
+        return view ('admin.profil.profil.addprofil');
+    }
+    //end profil
     // start profilvisimisi-admin
     public function profilvisimisi()
     {
@@ -124,5 +133,5 @@ class Admincontroller extends Controller
         return redirect()->route('strukturorganisasi')->with('success', 'Berhasil Di Hapus');
     }
     // end profil/strukturorganisasi
-    // end profil/strukturorganisasi
+    ///////////////////// END PROFIL LANDINGPAGE ADMIN ///////////////////////////
 }
