@@ -232,6 +232,41 @@
                             </li>
                         </ul>
                     </li>
+                    
+                    <li class="menu-item">
+                        <a href="javascript:void(0);" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons bx bx-file"></i>
+                            <div data-i18n="Data">LSP</div>
+                        </a>
+                        <ul class="menu-sub">
+
+                            <li class="menu-item">
+                                <a href="/index/lsp" class="menu-link">
+                                    <div data-i18n="LSP">LSP</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="/index/visimisilsp" class="menu-link">
+                                    <div data-i18n="Visi Misi LSP">Visi Misi LSP</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="pages-pricing.html" class="menu-link">
+                                    <div data-i18n="Skema Terlisensi">Skema Terlisensi</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="/data/ekstra" class="menu-link">
+                                    <div data-i18n="Tempat Uji Kompetensi">Tempat Uji Kompetensi</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="/data/prestasii" class="menu-link">
+                                    <div data-i18n="Jumlah Pemegang Sertifikat">Jumlah Pemegang Sertifikat</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
                     <li class="menu-item">
                         <a href="javascript:void(0);" class="menu-link menu-toggle">
                             <i class="menu-icon tf-icons bx bx-dock-top"></i>

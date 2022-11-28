@@ -116,10 +116,18 @@
                         <br/>
 
                         <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Update Foto</label>
+                            <label for="exampleInputEmail1" class="form-label">Update Logo Jurusan</label>
                             <br/>
                             <img class="img mb-3" src="{{ asset('foto/' . $data->foto) }}" alt="" style="width: 100px;">
                             <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto }}">
+                            <i style="float: left;font-size: 11px;color: red">Abaikan jika tidak merubah foto</i>
+                        </div>
+                        <div class="mb-3">
+                          <br/>
+                            <label for="exampleInputEmail1" class="form-label">Update Foto Kegiatan Jurusan</label>
+                            <br/>
+                            <img class="img mb-3" src="{{ asset('foto/jurusan/' . $data->produktif) }}" alt="" style="width: 150px;">
+                            <input type="file" name="produktif" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->produktif }}">
                             <i style="float: left;font-size: 11px;color: red">Abaikan jika tidak merubah foto</i>
                         </div>
                         <button type="submit" class="btn rounded-pill btn-primary">Submit</button>
@@ -162,27 +170,7 @@
           
 
 <!-- Footer -->
-<footer class="content-footer footer bg-footer-theme">
-  <div class="container-fluid d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
-    <div class="mb-2 mb-md-0">
-      © <script>
-          document.write(new Date().getFullYear())
-      </script>
-      , made with ❤️ by <a href="https://pixinvent.com/" target="_blank" class="footer-link fw-semibold">PIXINVENT</a>
-    </div>
-    <div>
-      
-      <a href="https://themeforest.net/licenses/standard" class="footer-link me-4" target="_blank">License</a>
-      <a href="https://1.envato.market/pixinvent_portfolio" target="_blank" class="footer-link me-4">More Themes</a>
-      
-      <a href="https://pixinvent.com/demo/frest-clean-bootstrap-admin-dashboard-template/documentation-bs5/" target="_blank" class="footer-link me-4">Documentation</a>
-      
-      
-      <a href="https://pixinvent.ticksy.com/" target="_blank" class="footer-link d-none d-sm-inline-block">Support</a>
-      
-    </div>
-  </div>
-</footer>
+@include("Admin.layoutadmin.footer")
 <!-- / Footer -->
 
           
