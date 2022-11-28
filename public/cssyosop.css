@@ -303,20 +303,22 @@ h2 {
 .info-widget-post small {
     color: #828893;
 }
+
 .course-sec .bg-shape {
-	position: absolute;
-	top: 180px;
-	left: 0;
-	border-radius: 10px;
-	height: calc(100% - 180px);
-	width: 100%
+    position: absolute;
+    top: 180px;
+    left: 0;
+    border-radius: 10px;
+    height: calc(100% - 180px);
+    width: 100%
 }
+
 .img-box5 .shape {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	-webkit-animation: jumpAni 7s linear infinite;
-	animation: jumpAni 7s linear infinite
+    position: absolute;
+    bottom: 0;
+    left: 48px;
+    -webkit-animation: jumpAni 7s linear infinite;
+    animation: jumpAni 7s linear infinite
 }
 
 .sidebar-post-inner .info-widget-post {
@@ -407,4 +409,13 @@ h2 {
     background: white;
     color: white;
     transform: rotateY(180deg);
+}
+
+.fotokepsek {
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
 }

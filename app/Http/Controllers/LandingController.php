@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\alumni;
 use App\Models\Blog;
 use App\Models\Dharma;
+
 use App\Models\LSP;
 use App\Models\Visimisilsp;
 use App\Models\ekstra;
@@ -12,10 +13,7 @@ use App\Models\Guru;
 use App\Models\Jurusan;
 use App\Models\kepsek;
 use App\Models\Kakomli;
-<<<<<<< HEAD
 use App\Models\profilsekolah;
-=======
->>>>>>> 8187cf7d598339e7eabd3502124ddbbbdfd8d1d9
 use Illuminate\Http\Request;
 use App\Models\profilvisimisi;
 use App\Models\slider;
@@ -111,10 +109,6 @@ class LandingController extends Controller
     {
         $visi = Visimisilsp::where('id', '=', 1)->firstOrFail();
         return view("landingpage.lsp.visimisilsp", compact('visi'));
-    }
-    public function skematerlisensi()
-    {
-        return view("landingpage.lsp.skematerlisensi");
     }
     public function tempatujikom()
     {
