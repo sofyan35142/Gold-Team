@@ -14,7 +14,7 @@ use App\Models\kepsek;
 use App\Models\Kakomli;
 use Illuminate\Http\Request;
 use App\Models\profilvisimisi;
-
+use App\Models\Skematerlisensi;
 
 class LandingController extends Controller
 {
@@ -105,7 +105,8 @@ class LandingController extends Controller
     }
     public function skematerlisensi()
     {
-        return view("landingpage.lsp.skematerlisensi");
+        $skema = Skematerlisensi::where('id', '=', 1)->firstOrFail();
+        return view("landingpage.lsp.skematerlisensi", compact('skema'));
     }
     public function tempatujikom()
     {

@@ -55,39 +55,8 @@
             <div class="row">
                 <div class="col-lg-8">
                     <div class="service-details-post">
-                        <h1>Skema Terlisensi</h1>
-                        <h3>RUANG LINGKUP SKEMA TERLISENSI :</h3>
-
-                        <p>SKEMA SERTIFIKASI KKNI LEVEL II PADA KOMPETENSI KEAHLIAN REKAYASA PERANGKAT LUNAK
-                            <br />
-                            Kode Skema : SKM/BNSP/00010/1/2020/33
-                            <br /><br />
-                            Jenis Skema : KKNI
-                            <br /><br />
-                            SKEMA SERTIFIKASI KKNI LEVEL II PADA KOMPETENSI KEAHLIAN TEKNIK ELEKTRONIKA INDUSTRI
-                            <br />
-                            Kode Skema : SKM/BNSP/00003/1/2020/1
-                            <br /><br />
-                            Jenis Skema : KKNI
-                            <br /><br />
-                            SKEMA SERTIFIKASI KKNI LEVEL II PADA KOMPETENSI KEAHLIAN TEKNIK AUDIO VIDEO
-                            <br />
-                            Kode Skema : SKM/BNSP/00003/1/2020/25
-                            <br /><br />
-                            Jenis Skema : KKNI
-                            <br /><br />
-                            SKEMA SERTIFIKASI KKNI LEVEL II PADA KOMPETENSI KEAHLIAN TEKNIK KENDARAAN RINGAN
-                            <br />
-                            Kode Skema : SKM/BNSP/00003/1/2020/59
-                            <br /><br />
-                            Jenis Skema : KKNI
-                            <br /><br />
-                            Skema Sertifikasi KKNI Level II Pada Kompetensi Keahlian Kimia Industri
-                            <br />
-                            Kode Skema : Dalam Proses Lisensi
-                            <br /><br />
-                            Jenis Skema : KKNI
-                        </p>
+                        <h1>{{$skema->judul}}</h1>
+                        {!! $skema->deskripsi !!}
 
 
 
@@ -98,7 +67,7 @@
                 <div class="col-lg-4 main-service-area blog-side-bar">
                     <div class="service-details-post">
                         <h3>Witness Re Lisensi</h3>
-                                        <img src="foto/kegiatan lsp.jpeg"
+                                        <img src="{{ asset('lsp/' . $skema->foto) }}"
                                             alt="logo lsp">
                     </div>         
                 </div>

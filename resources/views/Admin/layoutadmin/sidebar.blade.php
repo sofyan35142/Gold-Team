@@ -241,17 +241,17 @@
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a href="pages-pricing.html" class="menu-link">
+                                <a href="/index/skemalsp" class="menu-link">
                                     <div data-i18n="Skema Terlisensi">Skema Terlisensi</div>
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a href="/data/ekstra" class="menu-link">
+                                <a href="/index/ujikomlsp" class="menu-link">
                                     <div data-i18n="Tempat Uji Kompetensi">Tempat Uji Kompetensi</div>
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a href="/data/prestasii" class="menu-link">
+                                <a href="/index/jmllsp" class="menu-link">
                                     <div data-i18n="Jumlah Pemegang Sertifikat">Jumlah Pemegang Sertifikat</div>
                                 </a>
                             </li>

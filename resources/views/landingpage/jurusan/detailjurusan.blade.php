@@ -46,7 +46,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
-                    <img src="{{ asset('foto/jurusan/' . $jurusan->produktif) }}" alt="service">
+                    <img src="{{ asset('foto/jurusan/' . $data->produktif) }}" alt="service">
                     <div class="service-details-post">
                         <h3 id="jurusan">{{ $data->jurusan }}</h3>
                         <p id="deskirpsi">{!! $data->deskripsi !!}</p>

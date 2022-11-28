@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\DB;
 use App\Models\LSP;
 use App\Models\Visimisilsp;
+use App\Models\Skematerlisensi;
 use Illuminate\Http\Request;
 
 class LSPController extends Controller
@@ -131,5 +132,16 @@ class LSPController extends Controller
         $data = Visimisilsp::find($request->id);
         $data->update($request->all());
         return redirect('index/visimisilsp');
+    }
+    public function skemalsp()
+    {
+        $data = Skematerlisensi::where('id', '=', 1)->firstOrFail();
+        return view('Admin.lsp.skema', compact('data'));
+    }
+    public function updateskemalsp(Request $request)
+    {
+        $data = Skematerlisensi::find($request->id);
+        $data->update($request->all());
+        return redirect('index/skemalsp');
     }
 }

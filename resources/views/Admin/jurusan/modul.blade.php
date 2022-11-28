@@ -97,39 +97,17 @@
                 <div class="col-md-12">
                     <div class="card mb-4">
                     <h5 class="card-header">Skema Terlisensi</h5>
-                    <div class="card-body">
-                        <form action="/updateskemalsp/{{$data->id}}" method="POST" enctype="multipart/form-data">
-                                @csrf
-                        <input type="text" value="{{$data->id}}" name="id" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" hidden/>
-                        <div>
-                        <label for="defaultFormControlInput" class="form-label">Judul</label>
-                        <input type="text"  name="judul" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" value="{{ $data->judul }}"/>
-                        </div>
-                        <br/>
-
-                        
-                        <br/>
-
-                        <div>
-                        <label for="editor" class="form-label">Deskripsi</label>
-                        {{-- <input type="text" name="deskripsi" class="form-control" id="editor"  aria-describedby="defaultFormControlHelp" /> --}}
+                    <div class="col-md-6 col-lg-4 mb-3">
+                      <div class="card h-100">
+                        <img class="card-img-top" src="../../assets/img/elements/2.jpg" alt="Card image cap" />
                         <div class="card-body">
-                                <textarea name="deskripsi" id="editor">{!! $data->deskripsi !!}</textarea>
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                          </p>
+                          <a href="javascript:void(0)" class="btn btn-outline-primary">Go somewhere</a>
                         </div>
-                        <br/>
-                        <div>
-                        
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Foto </label>
-                            <br/>
-                            <img class="img mb-3" src="{{ asset('lsp/' . $data->foto) }}" alt="" style="width: 250px;">
-                            <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto }}">
-                           
-                        </div>
-                        <br/>
-                        <button type="submit" class="btn rounded-pill btn-primary">Update</button>
-                        </form>
-
+                      </div>
                     </div>
                     </div>
                 </div>

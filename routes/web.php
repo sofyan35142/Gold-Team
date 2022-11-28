@@ -219,3 +219,7 @@ Route::post('/updatelsp/{id}', [LSPController::class, 'edit']);
 
 Route::get('/index/visimisilsp', [LSPController::class, 'visimisilsp'])->name('visimisilsp');
 Route::post('/updatevisimisilsp/{id}', [LSPController::class, 'editlsp']);
+
+
+Route::get('/index/skemalsp', [LSPController::class, 'skemalsp'])->name('skemalsp');
+Route::post('/updateskemalsp/{id}', [LSPController::class, 'updateskemalsp']);
