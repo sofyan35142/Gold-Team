@@ -25,36 +25,328 @@
                         <div class="card mb-4">
                             <div class="card-datatable table-responsive pt-0">
                                 <h5 class="card-header">Data Profil Sekolah</h5>
-                                <a href="/index/addprofil" type="button"
-                                    class="btn rounded-pill btn-primary">Tambah +</a>
+                                <a href="/index/addprofil" type="button" class="btn rounded-pill btn-primary">Tambah
+                                    +</a>
                                 <table class="table" id="jurusan">
                                     <thead>
                                         <tr>
                                             <th scope="col">No.</th>
                                             <th scope="col">Identitas</th>
                                             <th scope="col">Keterangan</th>
+                                            <th scope="col">Status</th>
                                         </tr>
                                     </thead>
                                     <tbody class="table-group-divider">
-                                        <?php $no = 1; ?>
-                                        {{-- @foreach ($data as $struktur)
+                                        @foreach ($data as $profil)
                                             <tr>
-                                                <td>{{ $no }}</td>
-                                                <td>{{ $struktur->judul }}</td>
-                                                <td>{{ $struktur->tahun_ajaran }}</td>
+                                                <td>1</td>
+                                                <td>Foto Sekolah:</td>
+                                                <td>{{ $profil->foto_sekolah }}</td>
                                                 <td>
-                                                    <a href="/index/editstrukturorganisasi/{{ $struktur->id }}"
+                                                    <a href="/index/editstrukturorganisasi/{{ $profil->id }}"
                                                         class="btn btn-warning"><i
                                                             class="fa-solid fa-pen-to-square"></i></a>
                                                     <a href="#" class="btn btn-danger delete"
-                                                        data-id="{{ $struktur->id }}"
-                                                        data-struktur="{{ $struktur->judul }}"><i
+                                                        data-id="{{ $profil->id }}" data-profil="Foto Sekolah"><i
                                                             class="fa-solid fa-trash"></i></a>
                                                 </td>
                                             </tr>
-                                        @endforeach --}}
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Nama Sekolah:</td>
+                                                <td>{{ $profil->nama_sekolah }}</td>
+                                                <td>
+                                                    <a href="/index/editstrukturorganisasi/{{ $profil->id }}"
+                                                        class="btn btn-warning"><i
+                                                            class="fa-solid fa-pen-to-square"></i></a>
+                                                    <a href="#" class="btn btn-danger delete"
+                                                        data-id="{{ $profil->id }}"
+                                                        data-profil="Nama Sekolah"><i
+                                                            class="fa-solid fa-trash"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Nomor Pokok Sekolah Nasional (NPSN) :</td>
+                                                <td>{{ $profil->npsn }}</td>
+                                                <td>
+                                                    <a href="/index/editstrukturorganisasi/{{ $profil->id }}"
+                                                        class="btn btn-warning"><i
+                                                            class="fa-solid fa-pen-to-square"></i></a>
+                                                    <a href="#" class="btn btn-danger delete"
+                                                        data-id="{{ $profil->id }}"
+                                                        data-profil="NPSN"><i
+                                                            class="fa-solid fa-trash"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>Desa:</td>
+                                                <td>{{ $profil->desa }}</td>
+                                                <td>
+                                                    <a href="/index/editstrukturorganisasi/{{ $profil->id }}"
+                                                        class="btn btn-warning"><i
+                                                            class="fa-solid fa-pen-to-square"></i></a>
+                                                    <a href="#" class="btn btn-danger delete"
+                                                        data-id="{{ $profil->id }}"
+                                                        data-profil="Desa"><i
+                                                            class="fa-solid fa-trash"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>Kecamatan:</td>
+                                                <td>{{ $profil->kecamatan }}</td>
+                                                <td>
+                                                    <a href="/index/editstrukturorganisasi/{{ $profil->id }}"
+                                                        class="btn btn-warning"><i
+                                                            class="fa-solid fa-pen-to-square"></i></a>
+                                                    <a href="#" class="btn btn-danger delete"
+                                                        data-id="{{ $profil->id }}"
+                                                        data-profil="kecamatan"><i
+                                                            class="fa-solid fa-trash"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>Daerah:</td>
+                                                <td>{{ $profil->daerah }}</td>
+                                                <td>
+                                                    <a href="/index/editstrukturorganisasi/{{ $profil->id }}"
+                                                        class="btn btn-warning"><i
+                                                            class="fa-solid fa-pen-to-square"></i></a>
+                                                    <a href="#" class="btn btn-danger delete"
+                                                        data-id="{{ $profil->id }}"
+                                                        data-profil="daerah"><i
+                                                            class="fa-solid fa-trash"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>7</td>
+                                                <td>Provinsi:</td>
+                                                <td>{{ $profil->provinsi }}</td>
+                                                <td>
+                                                    <a href="/index/editstrukturorganisasi/{{ $profil->id }}"
+                                                        class="btn btn-warning"><i
+                                                            class="fa-solid fa-pen-to-square"></i></a>
+                                                    <a href="#" class="btn btn-danger delete"
+                                                        data-id="{{ $profil->id }}"
+                                                        data-profil="provinsi"><i
+                                                            class="fa-solid fa-trash"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>8</td>
+                                                <td>Kode Pos:</td>
+                                                <td>{{ $profil->kode_pos }}</td>
+                                                <td>
+                                                    <a href="/index/editstrukturorganisasi/{{ $profil->id }}"
+                                                        class="btn btn-warning"><i
+                                                            class="fa-solid fa-pen-to-square"></i></a>
+                                                    <a href="#" class="btn btn-danger delete"
+                                                        data-id="{{ $profil->id }}"
+                                                        data-profil="kode pos"><i
+                                                            class="fa-solid fa-trash"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>9</td>
+                                                <td>Alamat:</td>
+                                                <td>{{ $profil->alamat }}</td>
+                                                <td>
+                                                    <a href="/index/editstrukturorganisasi/{{ $profil->id }}"
+                                                        class="btn btn-warning"><i
+                                                            class="fa-solid fa-pen-to-square"></i></a>
+                                                    <a href="#" class="btn btn-danger delete"
+                                                        data-id="{{ $profil->id }}"
+                                                        data-profil="alamat"><i
+                                                            class="fa-solid fa-trash"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>10</td>
+                                                <td>No Telepon:</td>
+                                                <td>{{ $profil->no_telp }}</td>
+                                                <td>
+                                                    <a href="/index/editstrukturorganisasi/{{ $profil->id }}"
+                                                        class="btn btn-warning"><i
+                                                            class="fa-solid fa-pen-to-square"></i></a>
+                                                    <a href="#" class="btn btn-danger delete"
+                                                        data-id="{{ $profil->id }}"
+                                                        data-profil="No telepon"><i
+                                                            class="fa-solid fa-trash"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>11</td>
+                                                <td>Email :</td>
+                                                <td>{{ $profil->email }}</td>
+                                                <td>
+                                                    <a href="/index/editstrukturorganisasi/{{ $profil->id }}"
+                                                        class="btn btn-warning"><i
+                                                            class="fa-solid fa-pen-to-square"></i></a>
+                                                    <a href="#" class="btn btn-danger delete"
+                                                        data-id="{{ $profil->id }}"
+                                                        data-profil="Email"><i
+                                                            class="fa-solid fa-trash"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>12</td>
+                                                <td>Kegiatan Pembelajaran:</td>
+                                                <td>{{ $profil->kegiatan_pembelajaran }}</td>
+                                                <td>
+                                                    <a href="/index/editstrukturorganisasi/{{ $profil->id }}"
+                                                        class="btn btn-warning"><i
+                                                            class="fa-solid fa-pen-to-square"></i></a>
+                                                    <a href="#" class="btn btn-danger delete"
+                                                        data-id="{{ $profil->id }}"
+                                                        data-profil="Kegiatan Pembelajaran"><i
+                                                            class="fa-solid fa-trash"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>13</td>
+                                                <td>Waktu Penyelenggaraan:</td>
+                                                <td>{{ $profil->waktu_penyelenggaraan }}</td>
+                                                <td>
+                                                    <a href="/index/editstrukturorganisasi/{{ $profil->id }}"
+                                                        class="btn btn-warning"><i
+                                                            class="fa-solid fa-pen-to-square"></i></a>
+                                                    <a href="#" class="btn btn-danger delete"
+                                                        data-id="{{ $profil->id }}"
+                                                        data-profil="{{ $profil->judul }}"><i
+                                                            class="fa-solid fa-trash"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>14</td>
+                                                <td>Jarak Ke Pusat Kecamatan:</td>
+                                                <td>{{ $profil->jarak_ke_pusat_kecamatan }}</td>
+                                                <td>
+                                                    <a href="/index/editstrukturorganisasi/{{ $profil->id }}"
+                                                        class="btn btn-warning"><i
+                                                            class="fa-solid fa-pen-to-square"></i></a>
+                                                    <a href="#" class="btn btn-danger delete"
+                                                        data-id="{{ $profil->id }}"
+                                                        data-profil="{{ $profil->judul }}"><i
+                                                            class="fa-solid fa-trash"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>15</td>
+                                                <td>Jarak Ke Pusat Daerah:</td>
+                                                <td>{{ $profil->jarak_ke_pusat_daerah }}</td>
+                                                <td>
+                                                    <a href="/index/editstrukturorganisasi/{{ $profil->id }}"
+                                                        class="btn btn-warning"><i
+                                                            class="fa-solid fa-pen-to-square"></i></a>
+                                                    <a href="#" class="btn btn-danger delete"
+                                                        data-id="{{ $profil->id }}"
+                                                        data-profil="{{ $profil->judul }}"><i
+                                                            class="fa-solid fa-trash"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>16</td>
+                                                <td>Tahun Berdiri:</td>
+                                                <td>{{ $profil->tahun_berdiri }}</td>
+                                                <td>
+                                                    <a href="/index/editstrukturorganisasi/{{ $profil->id }}"
+                                                        class="btn btn-warning"><i
+                                                            class="fa-solid fa-pen-to-square"></i></a>
+                                                    <a href="#" class="btn btn-danger delete"
+                                                        data-id="{{ $profil->id }}"
+                                                        data-profil="{{ $profil->judul }}"><i
+                                                            class="fa-solid fa-trash"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>17</td>
+                                                <td>penerbit_SK:</td>
+                                                <td>{{ $profil->penerbit_SK }}</td>
+                                                <td>
+                                                    <a href="/index/editstrukturorganisasi/{{ $profil->id }}"
+                                                        class="btn btn-warning"><i
+                                                            class="fa-solid fa-pen-to-square"></i></a>
+                                                    <a href="#" class="btn btn-danger delete"
+                                                        data-id="{{ $profil->id }}"
+                                                        data-profil="{{ $profil->judul }}"><i
+                                                            class="fa-solid fa-trash"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>18</td>
+                                                <td>SK Pendirian Sekolah:</td>
+                                                <td>{{ $profil->sk_pendirian_sekolah }}</td>
+                                                <td>
+                                                    <a href="/index/editstrukturorganisasi/{{ $profil->id }}"
+                                                        class="btn btn-warning"><i
+                                                            class="fa-solid fa-pen-to-square"></i></a>
+                                                    <a href="#" class="btn btn-danger delete"
+                                                        data-id="{{ $profil->id }}"
+                                                        data-profil="{{ $profil->judul }}"><i
+                                                            class="fa-solid fa-trash"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>19</td>
+                                                <td>Status Sekolah</td>
+                                                <td>{{ $profil->status_sekolah }}</td>
+                                                <td>
+                                                    <a href="/index/editstrukturorganisasi/{{ $profil->id }}"
+                                                        class="btn btn-warning"><i
+                                                            class="fa-solid fa-pen-to-square"></i></a>
+                                                    <a href="#" class="btn btn-danger delete"
+                                                        data-id="{{ $profil->id }}"
+                                                        data-profil="{{ $profil->judul }}"><i
+                                                            class="fa-solid fa-trash"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>20</td>
+                                                <td>Kurikulum:</td>
+                                                <td>{{ $profil->kurikulum }}</td>
+                                                <td>
+                                                    <a href="/index/editstrukturorganisasi/{{ $profil->id }}"
+                                                        class="btn btn-warning"><i
+                                                            class="fa-solid fa-pen-to-square"></i></a>
+                                                    <a href="#" class="btn btn-danger delete"
+                                                        data-id="{{ $profil->id }}"
+                                                        data-profil="{{ $profil->judul }}"><i
+                                                            class="fa-solid fa-trash"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>21</td>
+                                                <td>Sumber Listrik:</td>
+                                                <td>{{ $profil->sumber_listrik }}</td>
+                                                <td>
+                                                    <a href="/index/editstrukturorganisasi/{{ $profil->id }}"
+                                                        class="btn btn-warning"><i
+                                                            class="fa-solid fa-pen-to-square"></i></a>
+                                                    <a href="#" class="btn btn-danger delete"
+                                                        data-id="{{ $profil->id }}"
+                                                        data-profil="{{ $profil->judul }}"><i
+                                                            class="fa-solid fa-trash"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>22</td>
+                                                <td>Akses Internet:</td>
+                                                <td>{{ $profil->akses_internet }}</td>
+                                                <td>
+                                                    <a href="/index/editstrukturorganisasi/{{ $profil->id }}"
+                                                        class="btn btn-warning"><i
+                                                            class="fa-solid fa-pen-to-square"></i></a>
+                                                    <a href="#" class="btn btn-danger delete"
+                                                        data-id="{{ $profil->id }}"
+                                                        data-profil="{{ $profil->judul }}"><i
+                                                            class="fa-solid fa-trash"></i></a>
+                                                </td>
+                                            </tr>
+                                        @endforeach
                                     </tbody>
-                                    <?php $no++; ?>
                                 </table>
                             </div>
                         </div>
@@ -145,19 +437,19 @@
 </body>
 <script>
     $('.delete').click(function() {
-        var strukturid = $(this).attr('data-id');
-        var struktur = $(this).attr('data-struktur');
+        var profilid = $(this).attr('data-id');
+        var profil = $(this).attr('data-profil');
 
         swal({
                 title: "Apakah kamu yakin?",
-                text: "Kamu akan menghapus struktur data ini",
+                text: "Kamu akan menghapus data Profil ini",
                 icon: "warning",
                 buttons: true,
                 dangerMode: true,
             })
             .then((willDelete) => {
                 if (willDelete) {
-                    window.location = "/index/deletestrukturorganisasi/" + strukturid + ""
+                    window.location = "/index/delete/" + profilid + ""
                     swal("Data berhasil dihapus", {
                         icon: "success",
                     });
