@@ -66,30 +66,39 @@
 
 
 
+
     <div class="team-section team-style-two team-style-three team-members pt-100 pb-70">
         <div class="container">
             <div class="row">
+                @foreach ($data as $dharma)
                 <div class="col-lg-3 col-md-6">
+
+
+
                     <div class="carddharma">
                         <input type="checkbox" id="card2" class="more">
                         <div class="content">
                             <div class="front">
                                 <div class="team-card">
                                     <div class="team-img">
-                                        <img class="imgguru" src="../dharmawanita/luluk.jpg" alt="team member">
+                                        <img class="imgguru" src="{{ asset('dharmawanita/' . $dharma->foto) }}" alt="team member">
                                         <div class="team-social">
                                             <label for="card2" class="btn btn-dharma btn-lg btn-block w-100">Detail</label>
                                         </div>
                                     </div>
                                     <div class="team-text">
-                                        <h4> Luluk Kusuma Herminingsih, S.Pd</h4>
-                                        <p>WAKA KESISWAAN</p>
+                                        <h4>{{ $dharma->nama }}</h4>
+                                        <p>{{ $dharma->jabatan }}</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="back">
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat laudantium magnam, vel magni voluptatibus iste delectus numquam maiores animi totam non, reprehenderit accusamus nam aut sapiente sint maxime adipisci ipsum.
+                                NAMA : {{ $dharma->nama }}
+                                JABATAN : {{ $dharma->jabatan }}
+                                TEMPAT LAHIR : {{ $dharma->tempat_lahir }}
+                                TANGGAL LAHIR : {{ $dharma->tgl_lahit }}
+                                ALAMAT : {{ $dharma->alamat }}
                                 </p>
                                 <label for="card2" class="button return" aria-hidden="true">
                                     <i class="fas fa-arrow-left"></i>
@@ -97,120 +106,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-card">
-                        <div class="team-img">
-                            <img class="imgguru" src="../dharmawanita/luluk.jpg" alt="team member">
-                            <div class="team-social">
-                                <a href="#"><i class="icofont-facebook"></i></a>
-                                <a href="#"><i class="icofont-twitter"></i></a>
-                                <a href="#"><i class="icofont-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="team-text">
-                            <h4> Luluk Kusuma Herminingsih, S.Pd</h4>
-                            <p>WAKA KESISWAAN</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-card">
-                        <div class="team-img">
-                            <img class="imgguru" src="../dharmawanita/asnah.jpg" alt="team member">
-                            <div class="team-social">
-                                <a href="#"><i class="icofont-facebook"></i></a>
-                                <a href="#"><i class="icofont-twitter"></i></a>
-                                <a href="#"><i class="icofont-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="team-text">
-                            <h4>Asnah Yuniarti, <br> S.Pd</h4>
-                            <p>SEKRETARIS</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-card">
-                        <div class="team-img">
-                            <img class="imgguru" src="../dharmawanita/endang.jpg" alt="team member">
-                            <div class="team-social">
-                                <a href="#"><i class="icofont-facebook"></i></a>
-                                <a href="#"><i class="icofont-twitter"></i></a>
-                                <a href="#"><i class="icofont-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="team-text">
-                            <h4>Endang Sri Handayani, S.Pd</h4>
-                            <p>BENDAHARA</p>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-card">
-                        <div class="team-img">
-                            <img class="imgguru" src="../dharmawanita/jujuk.jpg" alt="team member">
-                            <div class="team-social">
-                                <a href="#"><i class="icofont-facebook"></i></a>
-                                <a href="#"><i class="icofont-twitter"></i></a>
-                                <a href="#"><i class="icofont-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="team-text">
-                            <h4>Siti Juwariah, <br> S.Pd</h4>
-                            <p>KOORDINATOR SIE BIDANG PENDIDIKAN</p>
-                        </div>
-                    </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-card">
-                        <div class="team-img">
-                            <img class="imgguru" src="../dharmawanita/khuswantun.jpg" alt="team member">
-                            <div class="team-social">
-                                <a href="#"><i class="icofont-facebook"></i></a>
-                                <a href="#"><i class="icofont-twitter"></i></a>
-                                <a href="#"><i class="icofont-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="team-text">
-                            <h4>Khuswatul Khasanah, S.Pd</h4>
-                            <p>ANGGOTA SIE BIDANG PENDIDIKAN</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-card">
-                        <div class="team-img">
-                            <img class="imgguru" src="../dharmawanita/ririk.jpg" alt="team member">
-                            <div class="team-social">
-                                <a href="#"><i class="icofont-facebook"></i></a>
-                                <a href="#"><i class="icofont-twitter"></i></a>
-                                <a href="#"><i class="icofont-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="team-text">
-                            <h4> Ririk Suryawati, <br> S.Pd</h4>
-                            <p>ANGGOTA SIE BIDANG PENDIDIKAN</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-card">
-                        <div class="team-img">
-                            <img class="imgguru" src="../dharmawanita/titik.jpg" alt="team member">
-                            <div class="team-social">
-                                <a href="#"><i class="icofont-facebook"></i></a>
-                                <a href="#"><i class="icofont-twitter"></i></a>
-                                <a href="#"><i class="icofont-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="team-text">
-                            <h4>Titik Chomzah, <br> S.Pd.</h4>
-                            <p>ANGGOTA SIE BIDANG PENDIDIKAN</p>
-                        </div>
-                    </div>
-                </div>
+                 @endforeach
             </div>
             <nav>
                 <ul class="pagination  justify-content-center">

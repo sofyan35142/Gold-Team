@@ -112,8 +112,17 @@ Route::post('/jurusan/update/{id}', [JurusanController::class, 'updatejurusan'])
 Route::get('/jurusan/deletejurusan/{id}', [JurusanController::class, 'deletejurusan']);
 
 // start profil sekolah-admin
+    // profil
+Route::get('/index/profil', [Admincontroller::class, 'profil']);
+Route::get('/index/addprofil', [Admincontroller::class, 'addprofil']);
+Route::post('/insertprofilvisimisi', [Admincontroller::class, 'insertprofilvisimisi']);
+Route::get('/visimisi/delete/{id}', [Admincontroller::class, 'deletevisimisi']);
+Route::get('/visimisi/edit/{id}', [Admincontroller::class, 'editviewvisimisi']);
+Route::post('/editvisimisi/{id}', [Admincontroller::class, 'editvisimisi']);
+
+
     // visi misi
-Route::get('/index/profil', [Admincontroller::class, 'profilvisimisi']);
+Route::get('/index/profilvisimisi', [Admincontroller::class, 'profilvisimisi']);
 Route::get('/index/addprofilvisimisi', [Admincontroller::class, 'addprofilvisimisi']);
 Route::post('/insertprofilvisimisi', [Admincontroller::class, 'insertprofilvisimisi']);
 Route::get('/visimisi/delete/{id}', [Admincontroller::class, 'deletevisimisi']);
@@ -137,6 +146,15 @@ Route::post('/insertblog', [BerandaController::class, 'insertblog']);
 Route::get('/beranda/editblog/{id}', [BerandaController::class, 'editblog']);
 Route::post('/beranda/updateblog/{id}', [BerandaController::class, 'updateblog']);
 Route::get('/blog/deleteblog/{id}', [BerandaController::class, 'deleteblog']);
+
+
+////////////////----------SAMBUTAN KEPALA SEKOLAH-------------//////////////////////
+Route::get('/beranda/sambutankepsek', [BerandaController::class, 'sambutankepsek'])->name('sambutankepsek');
+Route::get('/beranda/editsambutan/{id}', [BerandaController::class, 'editsambutan']);
+Route::post('/beranda/updatesambutan/{id}', [BerandaController::class, 'updatesambutan']);
+Route::get('/sambutan/deletesambutan/{id}', [BerandaController::class, 'deletesambutan']);
+
+
 
 //////////////////------------ALUMNI BOSS----------////////////
 Route::get('/beranda/alumni', [BerandaController::class, 'viewalumni'])->name('viewalumni');

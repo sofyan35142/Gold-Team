@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\alumni;
 use App\Models\Blog;
+use App\Models\kepsek;
 use Illuminate\Http\Request;
 
 class BerandaController extends Controller
@@ -28,7 +29,7 @@ class BerandaController extends Controller
         ]);
         // dd($data);
         if ($request->hasFile('foto')) {
-            $request->file('foto')->move('fotoblog/', $request->file('foto')->getClientOriginalName());
+            $request->file('foto')->move('blog/', $request->file('foto')->getClientOriginalName());
             $data->foto = $request->file('foto')->getClientOriginalName();
             $data->save();
         }
@@ -51,7 +52,7 @@ class BerandaController extends Controller
         // $data->update($request->all());
         // dd($data);
         if($request->hasFile('foto')){
-            $request->file('foto')->move('fotoekstra/', $request->file('foto')->getClientOriginalName());
+            $request->file('foto')->move('blog/', $request->file('foto')->getClientOriginalName());
             $data->foto = $request->file('foto')->getClientOriginalName();
             $data->save();
         }
@@ -120,4 +121,43 @@ class BerandaController extends Controller
         $data->delete();
         return redirect()->route('viewalumni')->with('success', 'Berhasil Di Hapus');
     }
+
+    ////////////////---------------------SAMBUTAN KEPALA SEKOLAH----------------////////////////////////
+    public function sambutankepsek()
+    {
+        $data = kepsek::all();
+        return view('Admin.beranda.sambutankepsek.sambutan', compact('data'));
+    }
+    public function editsambutan($id)
+    {
+        $data = kepsek::findOrFail($id);
+        return view('Admin.beranda.sambutankepsek.editsambutan',compact('data'));
+    }
+    public function updatesambutan(Request $request, $id)
+    {
+        // dd('p');
+        $data = kepsek::find($id);
+        $data->update([
+            'nama' => $request->nama,
+            'sambutan' => $request->sambutan
+
+        ]);
+        // $data->update($request->all());
+        // dd($data);
+        if ($request->hasFile('foto')) {
+            $request->file('foto')->move('kepsek/', $request->file('foto')->getClientOriginalName());
+            $data->foto = $request->file('foto')->getClientOriginalName();
+            $data->save();
+        }
+
+        return redirect()->route('sambutankepsek')->with('success', 'Berhasil Di Update');
+    }
+
+    public function deletesambutan($id)
+    {
+        $data = kepsek::find($id);
+        $data->delete();
+        return redirect()->route('sambutankepsek')->with('success', 'Berhasil Di Hapus');
+    }
+
 }

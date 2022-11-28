@@ -681,8 +681,12 @@
     color: white;
     border-color: #0d6efd;
 }
+
 /* end dharmawnita card */
 
+.team-section iframe{
+    width: -webkit-fill-available;
+}
 
 /***************** keyframe ZAKI *************/
 @keyframes glowing {

@@ -22,7 +22,7 @@ class kakomli extends Seeder
             'foto' => 'rohmad.jpg',
         ]);
         DB::table('kakomlis')->insert([
-             'nama_guru' => 'SOFAN DEDI PRINYATO, S.Pd., Gr',
+            'nama_guru' => 'SOFAN DEDI PRINYATO, S.Pd., Gr',
             'id_jurusan' => '2',
             'deskripsi' => '<p>NIP &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: 19890506 202221 1 009<br>Tempat/Tgl Lahir : Sidoarjo, 06 Mei 1989<br>Status &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : PPPK<br>Gol. Ruang &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: IX</p>',
             'foto' => 'sofan.jpeg',

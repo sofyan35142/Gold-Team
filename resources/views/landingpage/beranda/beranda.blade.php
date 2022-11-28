@@ -26,35 +26,31 @@
     @include('landingpage.layout.header')
 
     <div class="home-section">
-        <div id="banner" style="height: 37pc" class="bg-secondary">
-            <div id="mainBanner" class="carousel slide" data-ride="carousel" data-interval="7000">
-                <ol class="carousel-indicators">
-                    <li data-target="#mainBanner" data-slide-to="5" class="active"></li>
-                    <li data-target="#mainBanner" data-slide-to="6"></li>
-                    <li data-target="#mainBanner" data-slide-to="7"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active" style="height: 37pc;background-color: orange">
-                        <div class="p-4 bounceIn">Slide</div>
-                    </div>
-                    <div class="carousel-item" style="height: 37pc;background-color: red">
-                        <div class="p-4">
-                            <h3 class="bounceIn">Slide</h3>
-                        </div>
-                    </div>
-                    <div class="carousel-item" style="height: 37pc;background-color: green">
-                        <div class="p-4 bounceIn">Slide</div>
-                    </div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img class="d-block w-100" src="../assets/img/home/slider-02.png" alt="First slide" style="height: 40pc;" >
                 </div>
-                <a class="carousel-control-prev" href="#mainBanner" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#mainBanner" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="../assets/img/home/smk.jpg" alt="Second slide" style="height: 40pc;">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="../assets/img/home/3.jpg" alt="Third slide" style="height: 40pc;">
+                </div>
             </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
     </div>
 
@@ -131,40 +127,27 @@
 
     <section class="about-style-two about-style-three pt-100 pb-70">
         <div class="container-fluid">
+            @foreach ($datakepsek as $kepsek)
+
+
             <div class="row align-items-center">
                 <div class="col-lg-6 p-0">
                     <div class="about-img">
-                        <center><img src="../guru/rudi.png" class="imgkep" alt="about image"></center>
+                        <center><img class="img-blog" src="{{ asset('kepsek/' . $kepsek->foto) }}" alt="blog image"></center> <br>
+                        <center><b>{{ $kepsek->nama }}</b></center>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="about-text">
                         <div class="section-head">
                             <h2>Sambutan Kepala Sekolah</h2>
-                            <p>Selamat datang di Website kami di Sekolah Menengah Kejuruan Telkom Bandung. Website ini
-                                kami tujukan untuk seluruh guru, karyawan dan siswa serta masyarakat umum agar dapat
-                                mengakses seluruh informasi tentang profil, aktifitas/kegiatan serta fasilitas sekolah
-                                secara berkala dan update.
-
-                                Tentunya Website sekolah kami masih terdapat banyak kekurangan, oleh karena itu kepada
-                                seluruh civitas akademika dan masyarakat umum dapat memberikan saran dan kritik yang
-                                membangun demi kemajuan website ini lebih lanjut.
-
-                                Kami berharap Website ini dapat dijadikan wahana interaksi yang positif baik antar
-                                civitas akademika maupun masyarakat pada umumnya sehingga dapat menjalin silaturahmi
-                                yang erat disegala unsur sesuai dengan motto sekolah kita.
-
-                                𝑺𝑴𝑲 𝑻𝒆𝒍𝒌𝒐𝒎 𝑩𝒂𝒏𝒅𝒖𝒏𝒈 𝑺𝒆𝒌𝒐𝒍𝒂𝒉𝒏𝒚𝒂 𝑺𝒂𝒏𝒈 𝑱𝒖𝒂𝒓𝒂,
-                                𝑷𝑹𝑰𝑴𝑨𝑺𝑬𝑹𝑼 𝑺𝒆𝒎𝒖𝒂 𝑷𝒓𝒊𝒎𝒂, 𝑺𝒆𝒎𝒖𝒂 𝑺𝒆𝒓𝒖, 𝑴𝒂𝒌𝒊𝒏 𝑷𝒓𝒊𝒎𝒂
-                                𝒅𝒂𝒏 𝑴𝒂𝒌𝒊𝒏 𝑺𝒆𝒓𝒖 𝒅𝒂𝒍𝒂𝒎 𝑲𝒂𝒓𝒂𝒌𝒕𝒆𝒓, 𝑷𝒓𝒆𝒔𝒕𝒂𝒔𝒊 𝒅𝒂𝒏
-                                𝑳𝒂𝒚𝒂𝒏𝒂𝒏
-
-                                Pada akhirnya, mari kita bekerja dan berkarya dengan keikhlasan yang tulus demi
-                                suksesnya masa depan anak-anak didik kita.</p>
+                            <p>{!! $kepsek->sambutan !!}</p>
                         </div>
                     </div>
                 </div>
+
             </div>
+            @endforeach
         </div>
     </section>
 
@@ -271,11 +254,11 @@
                     <div class="blog-area">
                         <div class="blog-img">
                             <a href="#">
-                                <img class="img-blog" src="{{ asset('fotoblog/' . $blog->foto) }}" alt="blog image">
+                                <img class="img-blog" src="{{ asset('blog/' . $blog->foto) }}" alt="blog image">
                             </a>
                         </div>
                         <div class="blog-text">
-                            <h4><a href="#">{{ $blog->judul }}</a></h4>
+                            <h4><a href="#" class="overflow1">{{ $blog->judul }}</a></h4>
                             <ul>
                                 <li>
                                     <i class="icofont-calendar"></i>
@@ -349,7 +332,7 @@
             $(".carousel-item.active *")
                 .removeClass("d-none")
                 .addClass("animated");
-        }, 200);
+        }, 1000);
 
         // Animate after the slider changes
         $("#mainBanner").on("slid.bs.carousel", function(e) {
@@ -366,8 +349,9 @@
                     .removeClass("d-none")
                     .addClass("animated");
                 console.log("c");
-            }, 200);
+            }, 1000);
         });
     </script>
 </body>
 {{-- push --}}
+

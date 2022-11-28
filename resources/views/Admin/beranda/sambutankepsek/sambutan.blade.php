@@ -41,33 +41,33 @@
 
 <div class="card mb-4">
   <div class="card-datatable table-responsive pt-0">
-    <h5 class="card-header">Blog</h5>
-    <a href="/beranda/tambahblog" type="button" class="btn rounded-pill btn-primary">Tambah</a>
+    <h5 class="card-header">SAMBUTAN KEPALA SEKOLAH</h5>
+    {{-- <a href="/beranda/tambahalumni" type="button" class="btn rounded-pill btn-primary">Tambah</a> --}}
     <table class="table" id="blog">
   <thead>
     <tr>
       <th scope="col">No.</th>
-      <th scope="col">Judul</th>
-      <th scope="col">Deskripsi</th>
+      <th scope="col">Nama</th>
+      <th scope="col">Sambutan</th>
       <th scope="col">Foto</th>
       <th scope="col">Aksi</th>
     </tr>
   </thead>
   <tbody class="table-group-divider">
     <?php $no = 1; ?>
-    @foreach ($data as $blog)
+    @foreach ($data as $sambutan)
 <tr>
         <td>{{ $no }}</td>
-        <td>{{ $blog->judul }}</td>
-        <td>{!! $blog->deskripsi !!}</td>
+        <td>{{ $sambutan->nama }}</td>
+        <td style="word-break: break-all;">{!! $sambutan->sambutan !!}</td>
         <td>
-            <img src="{{ asset('blog/' . $blog->foto) }}" alt="" style="width: 80px; height:80px;">
+            <img src="{{ asset('kepsek/' . $sambutan->foto) }}" alt="" style="width: 80px; height:80px;">
         </td>
 
 
         <td>
-            <a href="/beranda/editblog/{{ $blog->id }}" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></a>
-            <a href="#" class="btn btn-danger delete" data-id="{{ $blog->id }}" data-blog="{{ $blog->judul }}"><i class="fa-solid fa-trash"></i></a>
+            <a href="/beranda/editsambutan/{{ $sambutan->id }}" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></a>
+            <a href="#" class="btn btn-danger delete" data-id="{{ $sambutan->id }}" data-sambutan="{{ $sambutan->nama }}"><i class="fa-solid fa-trash"></i></a>
         </td>
     </tr>
 
@@ -204,19 +204,19 @@
 </body>
 <script>
     $('.delete').click(function() {
-        var blogid = $(this).attr('data-id');
-        var blog = $(this).attr('data-blog');
+        var sambutanid = $(this).attr('data-id');
+        var sambutan = $(this).attr('data-sambutan');
 
         swal({
                 title: "Apakah kamu yakin?",
-                text: "Kamu akan menghapus blog " + blog + "",
+                text: "Kamu akan menghapus sambutan " + sambutan + "",
                 icon: "warning",
                 buttons: true,
                 dangerMode: true,
             })
             .then((willDelete) => {
                 if (willDelete) {
-                    window.location = "/blog/deleteblog/" + blogid + ""
+                    window.location = "/sambutan/deletesambutan/" + sambutanid + ""
                     swal("Data berhasil dihapus", {
                         icon: "success",
                     });
