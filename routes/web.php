@@ -115,7 +115,7 @@ Route::get('/jurusan/deletejurusan/{id}', [JurusanController::class, 'deletejuru
     // profil
 Route::get('/index/profil', [Admincontroller::class, 'profil']);
 Route::get('/index/addprofil', [Admincontroller::class, 'addprofil']);
-Route::post('/insertprofilvisimisi', [Admincontroller::class, 'insertprofilvisimisi']);
+Route::post('/insertprofil', [Admincontroller::class, 'insertprofil']);
 Route::get('/visimisi/delete/{id}', [Admincontroller::class, 'deletevisimisi']);
 Route::get('/visimisi/edit/{id}', [Admincontroller::class, 'editviewvisimisi']);
 Route::post('/editvisimisi/{id}', [Admincontroller::class, 'editvisimisi']);
