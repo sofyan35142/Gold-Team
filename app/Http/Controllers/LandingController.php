@@ -9,23 +9,25 @@ use App\Models\Dharma;
 use App\Models\ekstra;
 use App\Models\Guru;
 use App\Models\Jurusan;
-<<<<<<< HEAD
 use App\Models\kepsek;
-=======
 use App\Models\Kakomli;
->>>>>>> 81de54456eccde3bb32b178b6fc038ae2cd173f2
 use Illuminate\Http\Request;
 use App\Models\profilvisimisi;
-
+use App\Models\slider;
+use App\Models\sponsor;
+use App\Models\totalsiswa;
 
 class LandingController extends Controller
 {
     public function beranda()
     {
+        $sponsor=sponsor::all();
+        $slider=slider::all();
         $dataa=alumni::all();
         $data=Blog::all();
         $datakepsek=kepsek::all();
-        return view("landingpage.beranda.beranda", compact('data','dataa','datakepsek'));
+        $total=totalsiswa::all();
+        return view("landingpage.beranda.beranda", compact('data','dataa','datakepsek','total','slider','sponsor'));
     }
 
     public function create()

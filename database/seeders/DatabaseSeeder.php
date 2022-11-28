@@ -24,7 +24,12 @@ class DatabaseSeeder extends Seeder
             strukturorganisasi::class,
             dharma::class,
             kepsek::class,
-            kakomli::class
+            kakomli::class,
+            totalsiswa::class,
+            slider::class,
+            blog::class,
+            alumni::class,
+            guru::class
         ]);
     }
 }

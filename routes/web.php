@@ -140,6 +140,16 @@ Route::get('/index/deletestrukturorganisasi/{id}', [AdminController::class, 'del
 
 
 ////////////-------------ADMIN BERANDA------------/////////////////
+
+////////////////----------BERANDA SLIDER-----------///////////////////////
+Route::get('/beranda/slider', [BerandaController::class, 'slider'])->name('slider');
+Route::get('/beranda/editslider/{id}', [BerandaController::class, 'editslider']);
+Route::post('/beranda/updateslider/{id}', [BerandaController::class, 'updateslider']);
+Route::get('/slider/deleteslider/{id}', [BerandaController::class, 'deleteslider']);
+
+
+
+////////////----------Beranda Blog-----------////////////////////////////////
 Route::get('/beranda/blog', [BerandaController::class, 'viewblog'])->name('viewblog');
 Route::get('/beranda/tambahblog', [BerandaController::class, 'tambahblog']);
 Route::post('/insertblog', [BerandaController::class, 'insertblog']);
@@ -163,6 +173,23 @@ Route::post('/insertalumni', [BerandaController::class, 'insertalumni']);
 Route::get('/beranda/editalumni/{id}', [BerandaController::class, 'editalumni']);
 Route::post('/beranda/updatealumni/{id}', [BerandaController::class, 'updatealumni']);
 Route::get('/alumni/deletealumni/{id}', [BerandaController::class, 'deletealumni']);
+
+
+
+//////////////////////------------TOTAL SISWA----------///////////////////////
+Route::get('/beranda/totalsiswa', [BerandaController::class, 'totalsiswa'])->name('totalsiswa');
+Route::get('/beranda/edittotal/{id}', [BerandaController::class, 'edittotal']);
+Route::post('/beranda/updatetotal/{id}', [BerandaController::class, 'updatetotal']);
+Route::get('/totalsiswa/deletetotal/{id}', [BerandaController::class, 'deletetotal']);
+
+
+/////////////////////-------------KERJA SAMA-SPONSOR-------------//////////////////
+Route::get('/beranda/sponsor', [BerandaController::class, 'sponsor'])->name('sponsor');
+Route::get('/beranda/tambahsponsor', [BerandaController::class, 'tambahsponsor']);
+Route::post('/insertsponsor', [BerandaController::class, 'insertsponsor']);
+Route::get('/beranda/editsponsor/{id}', [BerandaController::class, 'editsponsor']);
+Route::post('/beranda/updatesponsor/{id}', [BerandaController::class, 'updatesponsor']);
+Route::get('/sponsor/deletesponsor/{id}', [BerandaController::class, 'deletesponsor']);
 
 
 

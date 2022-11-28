@@ -93,13 +93,13 @@
                                 </div>
                             </div>
                             <div class="back">
-                                <p>
-                                NAMA : {{ $dharma->nama }}
-                                JABATAN : {{ $dharma->jabatan }}
-                                TEMPAT LAHIR : {{ $dharma->tempat_lahir }}
-                                TANGGAL LAHIR : {{ $dharma->tgl_lahit }}
-                                ALAMAT : {{ $dharma->alamat }}
-                                </p>
+                                <span style="color: black">
+                               <b> NAMA : </b> {{ $dharma->nama }} <br>
+                               <b> JABATAN : </b> {{ $dharma->jabatan }} <br>
+                               <b> TEMPAT LAHIR : </b> {{ $dharma->tempat_lahir }} <br>
+                               <b> TANGGAL LAHIR :</b> {{ $dharma->tgl_lahit }} <br>
+                                <b> ALAMAT : </b> {{ $dharma->alamat }}
+                                </span>
                                 <label for="card2" class="button return" aria-hidden="true">
                                     <i class="fas fa-arrow-left"></i>
                                 </label>

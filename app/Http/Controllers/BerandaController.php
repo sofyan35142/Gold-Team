@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\alumni;
 use App\Models\Blog;
 use App\Models\kepsek;
+use App\Models\slider;
+use App\Models\sponsor;
+use App\Models\totalsiswa;
 use Illuminate\Http\Request;
 
 class BerandaController extends Controller
@@ -158,6 +161,149 @@ class BerandaController extends Controller
         $data = kepsek::find($id);
         $data->delete();
         return redirect()->route('sambutankepsek')->with('success', 'Berhasil Di Hapus');
+    }
+
+
+    ////////////////-------TOTALL SISWA----------///////////////////
+    public function totalsiswa()
+    {
+        $data = totalsiswa::all();
+        return view('Admin.beranda.totalsiswa.totalsiswa', compact('data'));
+    }
+    public function edittotal($id)
+    {
+        $data = totalsiswa::findOrFail($id);
+        return view('Admin.beranda.totalsiswa.edittotal', compact('data'));
+    }
+    public function updatetotal(Request $request, $id)
+    {
+        $data = totalsiswa::find($id);
+        $data->update([
+            'judul' => $request->judul,
+            'laki_laki' => $request->laki_laki,
+            'perempuan' => $request->perempuan,
+            'total_siswa' => $request->total_siswa,
+            'guru' => $request->guru,
+
+        ]);
+        // $data->update($request->all());
+        // dd($data);
+
+        return redirect()->route('totalsiswa')->with('success', 'Berhasil Di Update');
+    }
+
+    public function deletetotal($id)
+    {
+        $data = totalsiswa::find($id);
+        $data->delete();
+        return redirect()->route('totalsiswa')->with('success', 'Berhasil Di Hapus');
+    }
+
+    ////////////////////////-----------------SLIDER----------/////////////////
+    public function slider()
+    {
+        $data = slider::all();
+        return view('Admin.beranda.slider.slider', compact('data'));
+    }
+    public function editslider($id)
+    {
+        $data = slider::findOrFail($id);
+        return view('Admin.beranda.slider.editslider', compact('data'));
+    }
+    public function updateslider(Request $request, $id)
+    {
+        $data = slider::find($id);
+        $data->update([
+
+
+        ]);
+        // $data->update($request->all());
+        // dd($data);
+        if ($request->hasFile('foto1')) {
+            $request->file('foto1')->move('fotoalumni/', $request->file('foto1')->getClientOriginalName());
+            $data->foto = $request->file('foto1')->getClientOriginalName();
+            $data->save();
+        }
+
+        if ($request->hasFile('foto2')) {
+            $request->file('foto2')->move('fotoalumni/', $request->file('foto2')->getClientOriginalName());
+            $data->foto = $request->file('foto2')->getClientOriginalName();
+            $data->save();
+        }
+
+        if ($request->hasFile('foto3')) {
+            $request->file('foto3')->move('fotoalumni/', $request->file('foto3')->getClientOriginalName());
+            $data->foto = $request->file('foto3')->getClientOriginalName();
+            $data->save();
+        }
+
+
+        return redirect()->route('slider')->with('success', 'Berhasil Di Update');
+    }
+
+    public function deleteslider($id)
+    {
+        $data = slider::find($id);
+        $data->delete();
+        return redirect()->route('slider')->with('success', 'Berhasil Di Hapus');
+    }
+
+
+    ////////////------------KERJASAMA----SPONSOR----/////////////////
+    public function sponsor()
+    {
+
+        $data = sponsor::all();
+        return view('Admin.beranda.sponsor.sponsor',compact('data'));
+    }
+
+    public function tambahsponsor()
+    {
+        return view('Admin.beranda.sponsor.tambahsponsor');
+    }
+
+    public function insertsponsor(Request $request)
+    {
+        $data = sponsor::create([
+            'foto' => $request->foto
+        ]);
+        // dd($data);
+        if ($request->hasFile('foto')) {
+            $request->file('foto')->move('sponsor/', $request->file('foto')->getClientOriginalName());
+            $data->foto = $request->file('foto')->getClientOriginalName();
+            $data->save();
+        }
+        return redirect()->route('sponsor')->with('success', 'Berhasil Di Tambahkan');
+    }
+
+    public function editsponsor($id)
+    {
+        $data = sponsor::findorfail($id);
+        return view('Admin.beranda.sponsor.editsponsor', compact('data'));
+    }
+
+    public function updatesponsor(Request $request, $id)
+    {
+
+        $data = Blog::find($id);
+        $data->update([
+        ]);
+        // $data->update($request->all());
+        // dd($data);
+        if ($request->hasFile('foto')) {
+            $request->file('foto')->move('blog/', $request->file('foto')->getClientOriginalName());
+            $data->foto = $request->file('foto')->getClientOriginalName();
+            $data->save();
+        }
+
+        return redirect()->route('sponsor')->with('success', 'Berhasil Di Update');
+    }
+
+    public function deletesponsor($id)
+    {
+        $data = Blog::find($id);
+        $data->delete();
+        return redirect()->route('sponsor')->with('success', 'Berhasil Di Hapus');
     }
 
 }
