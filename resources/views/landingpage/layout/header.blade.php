@@ -91,7 +91,7 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li class="nav-item">
-                                    <a href="/tkr" class="nav-link">Teknik Kendaraan Ringan (TKR) </a>
+                                    <a href="/detailjurusan/1" class="nav-link">Teknik Kendaraan Ringan (TKR) </a>
 
                                     <ul class="dropdown-menu dropside">
                                         <li class="nav-item"><a
@@ -103,7 +103,7 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="/tei" class="nav-link">Teknik Elektronika Industri (TEI)</a>
+                                    <a href="/detailjurusan/2" class="nav-link">Teknik Elektronika Industri (TEI)</a>
                                     <ul class="dropdown-menu dropside">
                                         <li class="nav-item"><a
                                                 href="/modulproduktiftei">Modul
@@ -111,7 +111,7 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="/rpl" class="nav-link">Rekayasa Perangkat Lunak (RPL)</a>
+                                    <a href="/detailjurusan/3" class="nav-link">Rekayasa Perangkat Lunak (RPL)</a>
                                     <ul class="dropdown-menu dropside">
                                         <li class="nav-item"><a
                                                 href="/modulproduktifrpl">Modul
@@ -122,7 +122,7 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="/tki" class="nav-link">Teknik Kimia Industri (TKI)</a>
+                                    <a href="/detailjurusan/4" class="nav-link">Teknik Kimia Industri (TKI)</a>
                                     <ul class="dropdown-menu dropside">
                                         <li class="nav-item"><a
                                                 href="/modulproduktiftki">Modul
@@ -130,7 +130,7 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="/tav" class="nav-link">Teknik Audio Video (TAV)</a>
+                                    <a href="/detailjurusan/5" class="nav-link">Teknik Audio Video (TAV)</a>
                                     <ul class="dropdown-menu dropside">
                                         <li class="nav-item"><a
                                                 href="/modulproduktiftav">Modul

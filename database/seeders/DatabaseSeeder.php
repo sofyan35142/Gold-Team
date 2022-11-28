@@ -3,6 +3,10 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+
+
+
+use Database\Seeders\kakomli;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -19,7 +23,8 @@ class DatabaseSeeder extends Seeder
             profilvisimisi::class,
             strukturorganisasi::class,
             dharma::class,
-            kepsek::class
+            kepsek::class,
+            kakomli::class
         ]);
     }
 }
