@@ -5,15 +5,13 @@ namespace App\Http\Controllers;
 use App\Models\alumni;
 use App\Models\Blog;
 use App\Models\Dharma;
-
+use App\Models\LSP;
+use App\Models\Visimisilsp;
 use App\Models\ekstra;
 use App\Models\Guru;
 use App\Models\Jurusan;
-<<<<<<< HEAD
 use App\Models\kepsek;
-=======
 use App\Models\Kakomli;
->>>>>>> 81de54456eccde3bb32b178b6fc038ae2cd173f2
 use Illuminate\Http\Request;
 use App\Models\profilvisimisi;
 
@@ -97,11 +95,13 @@ class LandingController extends Controller
     ////LSP////
     public function lsp()
     {
-        return view("landingpage.lsp.lsp");
+        $data = LSP::where('id', '=', 1)->firstOrFail();
+        return view("landingpage.lsp.lsp", compact('data'));
     }
     public function visimisilsp()
     {
-        return view("landingpage.lsp.visimisilsp");
+        $visi = Visimisilsp::where('id', '=', 1)->firstOrFail();
+        return view("landingpage.lsp.visimisilsp", compact('visi'));
     }
     public function skematerlisensi()
     {

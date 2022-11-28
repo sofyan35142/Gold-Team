@@ -6,6 +6,7 @@ use App\Http\Controllers\JurusanController;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\DataController;
 use App\Http\Controllers\KakomliController;
+use App\Http\Controllers\LSPController;
 use App\Models\Beranda;
 use Illuminate\Routing\Route as RoutingRoute;
 use Illuminate\Support\Facades\Route;
@@ -20,7 +21,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-     //======================== LANDING PAGE ========================//
+//======================== LANDING PAGE ========================//
 
 Route::get('/bug', function () {
     return view('welcome');
@@ -92,7 +93,7 @@ Route::get('/modulproduktiftav', [LandingController::class, 'modulproduktiftav']
 
 
 //LSP
-Route::get('/lsp', [LandingController::class, 'lsp']);
+Route::get('/llsp', [LandingController::class, 'lsp']);
 Route::get('/visimisilsp', [LandingController::class, 'visimisilsp']);
 Route::get('/skematerlisensi', [LandingController::class, 'skematerlisensi']);
 Route::get('/tempatujikom', [LandingController::class, 'tempatujikom']);
@@ -112,7 +113,7 @@ Route::post('/jurusan/update/{id}', [JurusanController::class, 'updatejurusan'])
 Route::get('/jurusan/deletejurusan/{id}', [JurusanController::class, 'deletejurusan']);
 
 // start profil sekolah-admin
-    // profil
+// profil
 Route::get('/index/profil', [Admincontroller::class, 'profil']);
 Route::get('/index/addprofil', [Admincontroller::class, 'addprofil']);
 Route::post('/insertprofilvisimisi', [Admincontroller::class, 'insertprofilvisimisi']);
@@ -121,14 +122,14 @@ Route::get('/visimisi/edit/{id}', [Admincontroller::class, 'editviewvisimisi']);
 Route::post('/editvisimisi/{id}', [Admincontroller::class, 'editvisimisi']);
 
 
-    // visi misi
+// visi misi
 Route::get('/index/profilvisimisi', [Admincontroller::class, 'profilvisimisi']);
 Route::get('/index/addprofilvisimisi', [Admincontroller::class, 'addprofilvisimisi']);
 Route::post('/insertprofilvisimisi', [Admincontroller::class, 'insertprofilvisimisi']);
 Route::get('/visimisi/delete/{id}', [Admincontroller::class, 'deletevisimisi']);
 Route::get('/visimisi/edit/{id}', [Admincontroller::class, 'editviewvisimisi']);
 Route::post('/editvisimisi/{id}', [Admincontroller::class, 'editvisimisi']);
-    // struktur organisasi
+// struktur organisasi
 Route::get('/index/strukturorganisasi', [Admincontroller::class, 'strukturorganisasi'])->name('strukturorganisasi');
 Route::get('/index/addstrukturorganisasi', [Admincontroller::class, 'addstrukturorganisasi']);
 Route::post('/insertstrukturorganisasi', [Admincontroller::class, 'insertstrukturorganisasi']);
@@ -210,3 +211,11 @@ Route::post('/insertkakomli', [KakomliController::class, 'store']);
 Route::get('/kakomli/edit/{id}', [KakomliController::class, 'show']);
 Route::post('/kakomli/update/{id}', [KakomliController::class, 'update']);
 Route::get('/kakomli/deletekakomli/{id}', [KakomliController::class, 'destroy']);
+
+//LSP
+Route::get('/index/lsp', [LSPController::class, 'indexlsp'])->name('indexlsp');
+Route::post('/updatelsp/{id}', [LSPController::class, 'edit']);
+
+
+Route::get('/index/visimisilsp', [LSPController::class, 'visimisilsp'])->name('visimisilsp');
+Route::post('/updatevisimisilsp/{id}', [LSPController::class, 'editlsp']);

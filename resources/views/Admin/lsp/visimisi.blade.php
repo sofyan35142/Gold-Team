@@ -78,7 +78,7 @@
 
 
 
-  @include("Admin.layoutadmin.navbar")
+  @include('Admin.layoutadmin.navbar')
 
 
 
@@ -96,34 +96,38 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="card mb-4">
-                    <h5 class="card-header">Tambah jurusan</h5>
+                    <h5 class="card-header">Visi dan Misi LSP</h5>
                     <div class="card-body">
-                        <form action="/insertjurusan" method="POST" enctype="multipart/form-data">
+                        <form action="/updatevisimisilsp/{{$data->id}}" method="POST" enctype="multipart/form-data">
                                 @csrf
+                        <input type="text" value="{{$data->id}}" name="id" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" hidden/>
                         <div>
-                        <label for="defaultFormControlInput" class="form-label">Jurusan</label>
-                        <input type="text" name="jurusan" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" />
+                        <label for="defaultFormControlInput" class="form-label">Judul</label>
+                        <input type="text"  name="judul" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" value="{{ $data->judul }}"/>
                         </div>
+                        <br/>
+
+                        
                         <br/>
 
                         <div>
                         <label for="editor" class="form-label">Deskripsi</label>
                         {{-- <input type="text" name="deskripsi" class="form-control" id="editor"  aria-describedby="defaultFormControlHelp" /> --}}
                         <div class="card-body">
-                                <textarea name="deskripsi" id="editor"></textarea>
+                                <textarea name="deskripsi" id="editor">{!! $data->deskripsi !!}</textarea>
                         </div>
                         <br/>
+                        <div>
+                        
                         <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Upload Logo Jurusan</label>
-
-                            <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <label for="exampleInputEmail1" class="form-label">Foto </label>
+                            <br/>
+                            <img class="img mb-3" src="{{ asset('lsp/' . $data->foto) }}" alt="" style="width: 250px;">
+                            <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto }}">
+                           
                         </div>
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Upload Foto Kegiatan Jurusan</label>
-
-                            <input type="file" name="produktif" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        </div>
-                        <button type="submit" class="btn rounded-pill btn-primary">Submit</button>
+                        <br/>
+                        <button type="submit" class="btn rounded-pill btn-primary">Update</button>
                         </form>
 
                     </div>
@@ -241,11 +245,11 @@
   <script src="//cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.ckeditor.com/ckeditor5/35.3.1/classic/ckeditor.js"></script>
   <script>
-    ClassicEditor
-        .create( document.querySelector('#editor') )
-        .catch( error => {
-          console.error(error);
-        });
+      ClassicEditor
+          .create(document.querySelector('#editor'))
+          .catch(error => {
+              console.error(error);
+          });
   </script>
 </body>
 <script>
