@@ -154,8 +154,8 @@
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a href="app-invoice-edit.html" class="menu-link">
-                                    <div data-i18n="Edit">Edit</div>
+                                <a href="/beranda/sambutankepsek" class="menu-link">
+                                    <div data-i18n="sambutan kepsek">sambutan kepsek</div>
                                 </a>
                             </li>
                             <li class="menu-item">

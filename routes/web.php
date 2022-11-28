@@ -137,6 +137,15 @@ Route::get('/beranda/editblog/{id}', [BerandaController::class, 'editblog']);
 Route::post('/beranda/updateblog/{id}', [BerandaController::class, 'updateblog']);
 Route::get('/blog/deleteblog/{id}', [BerandaController::class, 'deleteblog']);
 
+
+////////////////----------SAMBUTAN KEPALA SEKOLAH-------------//////////////////////
+Route::get('/beranda/sambutankepsek', [BerandaController::class, 'sambutankepsek'])->name('sambutankepsek');
+Route::get('/beranda/editsambutan/{id}', [BerandaController::class, 'editsambutan']);
+Route::post('/beranda/updatesambutan/{id}', [BerandaController::class, 'updatesambutan']);
+Route::get('/sambutan/deletesambutan/{id}', [BerandaController::class, 'deletesambutan']);
+
+
+
 //////////////////------------ALUMNI BOSS----------////////////
 Route::get('/beranda/alumni', [BerandaController::class, 'viewalumni'])->name('viewalumni');
 Route::get('/beranda/tambahalumni', [BerandaController::class, 'tambahalumni']);

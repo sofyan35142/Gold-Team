@@ -4,11 +4,15 @@ namespace App\Http\Controllers;
 
 use App\Models\alumni;
 use App\Models\Blog;
+use App\Models\Dharma;
+
 use App\Models\ekstra;
 use App\Models\Guru;
 use App\Models\Jurusan;
+use App\Models\kepsek;
 use Illuminate\Http\Request;
 use App\Models\profilvisimisi;
+
 
 class LandingController extends Controller
 {
@@ -16,7 +20,8 @@ class LandingController extends Controller
     {
         $dataa=alumni::all();
         $data=Blog::all();
-        return view("landingpage.beranda.beranda", compact('data','dataa'));
+        $datakepsek=kepsek::all();
+        return view("landingpage.beranda.beranda", compact('data','dataa','datakepsek'));
     }
 
     public function create()
@@ -210,7 +215,8 @@ class LandingController extends Controller
 
     //Data
         public function dharma(){
-        return view('landingpage.Data.dharmawanita');
+            $data=Dharma::all();
+        return view('landingpage.Data.dharmawanita', compact('data') );
     }
     public function datawalas(){
         return view('landingpage.Data.datawalas');

@@ -51,7 +51,7 @@
                                     <div class="front">
                                         <img class="imgguru" src="{{ asset('guru/' . $guru->foto) }}" alt="team member">
                                     </div>
-                                    <div class="back">
+                                    <div class="back" style="color: black;">
                                         NIP : {{ $guru->nip }} <br>
                                         TEMPAT LAHIR : {{ $guru->tempat_lahir }} <br>
                                         TANGGAL LAHIR : {{ $guru->tgl_lahir }} <br>
@@ -75,7 +75,7 @@
                 </div>
                 @endforeach
 
-                
+
                 {{-- <div class="col-lg-3 col-md-6">
                     <div class="team-card">
                         <div class="team-img">

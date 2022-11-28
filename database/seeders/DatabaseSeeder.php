@@ -18,7 +18,8 @@ class DatabaseSeeder extends Seeder
             jurusan::class,
             profilvisimisi::class,
             strukturorganisasi::class,
-            dharma::class
+            dharma::class,
+            kepsek::class
         ]);
     }
 }
