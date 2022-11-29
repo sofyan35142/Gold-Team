@@ -238,8 +238,6 @@ Route::post('/insertkakomli', [KakomliController::class, 'store']);
 Route::get('/kakomli/edit/{id}', [KakomliController::class, 'show']);
 Route::post('/kakomli/update/{id}', [KakomliController::class, 'update']);
 Route::get('/kakomli/deletekakomli/{id}', [KakomliController::class, 'destroy']);
-<<<<<<< HEAD
-=======
 
 //LSP
 Route::get('/index/lsp', [LSPController::class, 'indexlsp'])->name('indexlsp');
@@ -248,4 +246,3 @@ Route::post('/updatelsp/{id}', [LSPController::class, 'edit']);
 
 Route::get('/index/visimisilsp', [LSPController::class, 'visimisilsp'])->name('visimisilsp');
 Route::post('/updatevisimisilsp/{id}', [LSPController::class, 'editlsp']);
->>>>>>> 68853b91990b09e1875895dcdfaeba03143e40c1
