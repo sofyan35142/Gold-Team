@@ -10,6 +10,7 @@ use App\Models\LSP;
 use App\Models\Visimisilsp;
 use App\Models\ekstra;
 use App\Models\Guru;
+use App\Models\Jmlpemegang;
 use App\Models\Jurusan;
 use App\Models\kepsek;
 use App\Models\Kakomli;
@@ -19,6 +20,7 @@ use App\Models\profilvisimisi;
 use App\Models\Skematerlisensi;
 use App\Models\slider;
 use App\Models\sponsor;
+use App\Models\Tempatujikom;
 use App\Models\totalsiswa;
 
 class LandingController extends Controller
@@ -118,11 +120,14 @@ class LandingController extends Controller
     }
     public function tempatujikom()
     {
-        return view("landingpage.lsp.tempatujikom");
+        $ujikom = Tempatujikom::where('id', '=', 1)->firstOrFail();
+        
+        return view("landingpage.lsp.tempatujikom", compact('ujikom'));
     }
     public function jmlpemegangsertifikat()
     {
-        return view("landingpage.lsp.jmlpemegangsertifikat");
+        $jml = Jmlpemegang::where('id', '=', 1)->firstOrFail();
+        return view("landingpage.lsp.jmlpemegangsertifikat", compact('jml'));
     }
 
     //start profil Sekolah

@@ -96,9 +96,9 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="card mb-4">
-                    <h5 class="card-header">Visi dan Misi LSP</h5>
+                    <h5 class="card-header">Jumlah Pemegang Sertifikat</h5>
                     <div class="card-body">
-                        <form action="/updatevisimisilsp/{{$data->id}}" method="POST" enctype="multipart/form-data">
+                        <form action="/updatejmllsp/{{$data->id}}" method="POST" enctype="multipart/form-data">
                                 @csrf
                         <input type="text" value="{{$data->id}}" name="id" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" hidden/>
                         <div>
@@ -120,11 +120,23 @@
                         <div>
                         
                         <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Foto </label>
+                            <label for="exampleInputEmail1" class="form-label">Foto Jumlah Pemegang Sertifikat</label>
+                            <br/>
+                            <img class="img mb-3" src="{{ asset('lsp/' . $data->jml) }}" alt="" style="width: 250px;">
+                            <input type="file" name="jml" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->jml }}">
+                           
+                        </div>
+                        <br/>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Foto logo</label>
                             <br/>
                             <img class="img mb-3" src="{{ asset('lsp/' . $data->foto) }}" alt="" style="width: 250px;">
                             <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto }}">
                            
+                        </div>
+                        <br/>
+                        
+                        
                         </div>
                         <br/>
                         <button type="submit" class="btn rounded-pill btn-primary">Update</button>

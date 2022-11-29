@@ -25,15 +25,15 @@ class DatabaseSeeder extends Seeder
             dharma::class,
             kepsek::class,
             kakomli::class,
-<<<<<<< HEAD
             profilsekolah::class,
-=======
             totalsiswa::class,
             slider::class,
             blog::class,
             alumni::class,
-            guru::class
->>>>>>> 8187cf7d598339e7eabd3502124ddbbbdfd8d1d9
+            guru::class,
+            LSP::class,
+            Visimisilsp::class,
+            Skematerlisensi::class,
         ]);
     }
 }
