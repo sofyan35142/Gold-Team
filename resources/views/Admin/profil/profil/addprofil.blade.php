@@ -22,37 +22,169 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="card mb-4">
-                                    <h5 class="card-header">Tambah Strukturorganisasi</h5>
+                                    <h5 class="card-header">Tambah profile sekolah</h5>
                                     <div class="card-body">
-                                        <form action="/insertstrukturorganisasi" method="POST"
-                                            enctype="multipart/form-data">
+                                        <form action="/insertprofil" method="POST" enctype="multipart/form-data">
                                             @csrf
+                                            <h5>Identitas</h5>
                                             <div>
-                                                <label for="defaultFormControlInput" class="form-label">judul</label>
-                                                <input type="text" name="judul" class="form-control"
+                                                <label for="defaultFormControlInput" class="form-label">Foto
+                                                    Sekolah:</label>
+                                                <input type="file" name="foto_sekolah" class="form-control"
                                                     id="defaultFormControlInput"
                                                     aria-describedby="defaultFormControlHelp" />
                                             </div>
                                             <div>
-                                                <label for="defaultFormControlInput" class="form-label">tahun
-                                                    ajaran</label>
-                                                <input type="text" name="tahun_ajaran" class="form-control"
+                                                <label for="defaultFormControlInput" class="form-label">Nama
+                                                    Sekolah:</label>
+                                                <input type="text" name="nama_sekolah" class="form-control"
                                                     id="defaultFormControlInput"
                                                     aria-describedby="defaultFormControlHelp" />
                                             </div>
-                                            <br />
-                                            <div class="mb-3">
-                                                <label for="exampleInputEmail1" class="form-label">Upload Foto Side visi
-                                                    Misi</label>
-                                                <input type="file" name="foto_struktur" class="form-control"
-                                                    id="exampleInputEmail1" aria-describedby="emailHelp">
+                                            <div>
+                                                <label for="defaultFormControlInput" class="form-label">NPSN:</label>
+                                                <input type="text" name="npsn" class="form-control"
+                                                    id="defaultFormControlInput"
+                                                    aria-describedby="defaultFormControlHelp" />
                                             </div>
-                                            <div class="mb-3">
-                                                <label for="exampleInputEmail1" class="form-label">Upload Foto</label>
-                                                <input type="file" name="foto_sidestruktur" class="form-control"
-                                                    id="exampleInputEmail1" aria-describedby="emailHelp">
+                                            <div>
+                                                <label for="defaultFormControlInput" class="form-label">Desa:</label>
+                                                <input type="text" name="desa" class="form-control"
+                                                    id="defaultFormControlInput"
+                                                    aria-describedby="defaultFormControlHelp" />
                                             </div>
-                                            <button type="submit" class="btn rounded-pill btn-primary">Submit</button>
+                                            <div>
+                                                <label for="defaultFormControlInput"
+                                                    class="form-label">Kecamatan:</label>
+                                                <input type="text" name="kecamatan" class="form-control"
+                                                    id="defaultFormControlInput"
+                                                    aria-describedby="defaultFormControlHelp" />
+                                            </div>
+                                            <div>
+                                                <label for="defaultFormControlInput" class="form-label">Daerah:</label>
+                                                <input type="text" name="daerah" class="form-control"
+                                                    id="defaultFormControlInput"
+                                                    aria-describedby="defaultFormControlHelp" />
+                                            </div>
+                                            <div>
+                                                <label for="defaultFormControlInput"
+                                                    class="form-label">Provinsi:</label>
+                                                <input type="text" name="provinsi" class="form-control"
+                                                    id="defaultFormControlInput"
+                                                    aria-describedby="defaultFormControlHelp" />
+                                            </div>
+                                            <div>
+                                                <label for="defaultFormControlInput" class="form-label">Kode
+                                                    Pos:</label>
+                                                <input type="text" name="kode_pos" class="form-control"
+                                                    id="defaultFormControlInput"
+                                                    aria-describedby="defaultFormControlHelp" />
+                                            </div>
+                                            <div>
+                                                <label for="defaultFormControlInput" class="form-label">Alamat :</label>
+                                                <input type="text" name="alamat" class="form-control"
+                                                    id="defaultFormControlInput"
+                                                    aria-describedby="defaultFormControlHelp" />
+                                            </div>
+                                            <div>
+                                                <label for="defaultFormControlInput" class="form-label">No
+                                                    Telepon:</label>
+                                                <input type="text" name="no_telp" class="form-control"
+                                                    id="defaultFormControlInput"
+                                                    aria-describedby="defaultFormControlHelp" />
+                                            </div>
+                                            <div>
+                                                <label for="defaultFormControlInput" class="form-label">Email:</label>
+                                                <input type="text" name="email" class="form-control"
+                                                    id="defaultFormControlInput"
+                                                    aria-describedby="defaultFormControlHelp" />
+                                            </div>
+                                            <div>
+                                                <label for="defaultFormControlInput" class="form-label">Kegiatan
+                                                    Pembelajaran:</label>
+                                                <input type="text" name="kegiatan_pembelajaran" class="form-control"
+                                                    id="defaultFormControlInput"
+                                                    aria-describedby="defaultFormControlHelp" />
+                                            </div>
+                                            <div>
+                                                <label for="defaultFormControlInput" class="form-label">Waktu
+                                                    Penyelenggaraan:</label>
+                                                <input type="text" name="waktu_penyelenggaraan"
+                                                    class="form-control" id="defaultFormControlInput"
+                                                    aria-describedby="defaultFormControlHelp" />
+                                            </div>
+                                            <div>
+                                                <label for="defaultFormControlInput" class="form-label">Jarak Ke Pusat
+                                                    Kecematan:</label>
+                                                <input type="text" name="jarak_ke_pusat_kecamatan"
+                                                    class="form-control" id="defaultFormControlInput"
+                                                    aria-describedby="defaultFormControlHelp" />
+                                            </div>
+                                            <div>
+                                                <label for="defaultFormControlInput" class="form-label">Jarak Ke Pusat
+                                                    Daerah:</label>
+                                                <input type="text" name="jarak_ke_pusat_daerah"
+                                                    class="form-control" id="defaultFormControlInput"
+                                                    aria-describedby="defaultFormControlHelp" />
+                                            </div>
+                                            <div>
+                                                <label for="defaultFormControlInput" class="form-label">Tahun
+                                                    Berdiri:</label>
+                                                <input type="text" name="tahun_berdiri" class="form-control"
+                                                    id="defaultFormControlInput"
+                                                    aria-describedby="defaultFormControlHelp" />
+                                            </div>
+                                            <div>
+                                                <label for="defaultFormControlInput" class="form-label">penerbit
+                                                    SK:</label>
+                                                <input type="text" name="penerbit_SK" class="form-control"
+                                                    id="defaultFormControlInput"
+                                                    aria-describedby="defaultFormControlHelp" />
+                                            </div>
+                                            <div>
+                                                <label for="defaultFormControlInput" class="form-label">SK Pendirian
+                                                    Sekolah:</label>
+                                                <input type="text" name="sk_pendirian_sekolah"
+                                                    class="form-control" id="defaultFormControlInput"
+                                                    aria-describedby="defaultFormControlHelp" />
+                                            </div>
+                                            <div>
+                                                <label for="defaultFormControlInput" class="form-label">Status
+                                                    Sekolah:</label>
+                                                <input type="text" name="status_sekolah" class="form-control"
+                                                    id="defaultFormControlInput"
+                                                    aria-describedby="defaultFormControlHelp" />
+                                            </div>
+                                            <div>
+                                                <label for="defaultFormControlInput"
+                                                    class="form-label">Kurikulum:</label>
+                                                <input type="text" name="kurikulum" class="form-control"
+                                                    id="defaultFormControlInput"
+                                                    aria-describedby="defaultFormControlHelp" />
+                                            </div>
+                                            <div>
+                                                <label for="defaultFormControlInput" class="form-label">Status
+                                                    Bos:</label>
+                                                <input type="text" name="status_bos" class="form-control"
+                                                    id="defaultFormControlInput"
+                                                    aria-describedby="defaultFormControlHelp" />
+                                            </div>
+                                            <div>
+                                                <label for="defaultFormControlInput" class="form-label">Sumber
+                                                    Listrik:</label>
+                                                <input type="text" name="sumber_listrik" class="form-control"
+                                                    id="defaultFormControlInput"
+                                                    aria-describedby="defaultFormControlHelp" />
+                                            </div>
+                                            <div>
+                                                <label for="defaultFormControlInput" class="form-label">Akses
+                                                    Internet:</label>
+                                                <input type="text" name="akses_internet" class="form-control"
+                                                    id="defaultFormControlInput"
+                                                    aria-describedby="defaultFormControlHelp" />
+                                            </div>
+                                            <button type="submit"
+                                                class="btn rounded-pill btn-primary">Submit</button>
                                         </form>
                                     </div>
                                 </div>

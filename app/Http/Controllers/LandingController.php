@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\alumni;
 use App\Models\Blog;
 use App\Models\Dharma;
+
 use App\Models\LSP;
 use App\Models\Visimisilsp;
 use App\Models\ekstra;
@@ -12,8 +13,10 @@ use App\Models\Guru;
 use App\Models\Jurusan;
 use App\Models\kepsek;
 use App\Models\Kakomli;
+use App\Models\profilsekolah;
 use Illuminate\Http\Request;
 use App\Models\profilvisimisi;
+use App\Models\Skematerlisensi;
 use App\Models\slider;
 use App\Models\sponsor;
 use App\Models\totalsiswa;
@@ -110,7 +113,8 @@ class LandingController extends Controller
     }
     public function skematerlisensi()
     {
-        return view("landingpage.lsp.skematerlisensi");
+        $skema = Skematerlisensi::where('id', '=', 1)->firstOrFail();
+        return view("landingpage.lsp.skematerlisensi", compact('skema'));
     }
     public function tempatujikom()
     {
@@ -124,7 +128,8 @@ class LandingController extends Controller
     //start profil Sekolah
     public function profil()
     {
-        return view("landingpage.profile.profil");
+        $data = profilsekolah::all();
+        return view("landingpage.profile.profil",compact('data'));
     }
     public function visimisi()
     {

@@ -1,9 +1,5 @@
 <!DOCTYPE html>
 <html lang="zxx">
-<!-- Mirrored from templates.hibootstrap.com/viscous/default/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Nov 2022 02:33:31 GMT -->
-
-<!-- Mirrored from previewthemes.com/enzio/home-1 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 Nov 2022 03:25:34 GMT -->
-<!-- Added by HTTrack -->
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 @include('landingpage.layout.head')
 
@@ -140,7 +136,7 @@
                 <div class="col-lg-6 p-0">
                     <div class="about-img">
                     <div class="img-box5">
-                        <div class="img-blog"><img src="fotoblog/rudi.png"alt="about"></div>
+                        <div class="img-blog"><img class="fotokepsek" src="fotoblog/rudi.png"alt="about"></div>
                         <div class="shape"><img src="fotoblog/1.png"alt="shape"></div>
                     </div>
                         {{-- <center><img class="img-blog" src="{{ asset('kepsek/' . $kepsek->foto) }}" alt="blog image"></center> <br> --}}

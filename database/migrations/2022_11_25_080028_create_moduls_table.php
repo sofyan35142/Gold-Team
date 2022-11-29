@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('moduls', function (Blueprint $table) {
+        Schema::create('modul_tkrs', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
         });

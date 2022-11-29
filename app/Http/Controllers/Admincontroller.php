@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\profilsekolah;
 use App\Models\profilvisimisi;
 use App\Models\strukturorganisasi;
 use Illuminate\Http\Request;
@@ -14,10 +15,22 @@ class Admincontroller extends Controller
     ///////////////////// START PROFIL LANDINGPAGE ADMIN ///////////////////////////
     //start profil
     public function profil(){
-        return view ('admin.profil.profil.profil');
+        $data = profilsekolah::all();
+        return view ('admin.profil.profil.profil',compact('data'));
     }
     public function addprofil(){
         return view ('admin.profil.profil.addprofil');
+    }
+    public function insertprofil(Request $request){
+        dd($request->all());
+        $data = profilsekolah::create($request->all());
+        if ($request->hasFile('foto_sekolah')) {
+            $request->file('foto_sekolah')->move('assets/img/visimisi/', $request->file('foto_sekolah')->getClientOriginalName());
+            $data->foto_sekolah = $request->file('foto_sekolah')->getClientOriginalName();
+            $data->save();
+        }
+        // dd($data);
+        return redirect('/index/profil')->with('success','Data Berhasil Ditambahkan');
     }
     //end profil
     // start profilvisimisi-admin

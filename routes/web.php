@@ -116,7 +116,7 @@ Route::get('/jurusan/deletejurusan/{id}', [JurusanController::class, 'deletejuru
 // profil
 Route::get('/index/profil', [Admincontroller::class, 'profil']);
 Route::get('/index/addprofil', [Admincontroller::class, 'addprofil']);
-Route::post('/insertprofilvisimisi', [Admincontroller::class, 'insertprofilvisimisi']);
+Route::post('/insertprofil', [Admincontroller::class, 'insertprofil']);
 Route::get('/visimisi/delete/{id}', [Admincontroller::class, 'deletevisimisi']);
 Route::get('/visimisi/edit/{id}', [Admincontroller::class, 'editviewvisimisi']);
 Route::post('/editvisimisi/{id}', [Admincontroller::class, 'editvisimisi']);
@@ -246,3 +246,7 @@ Route::post('/updatelsp/{id}', [LSPController::class, 'edit']);
 
 Route::get('/index/visimisilsp', [LSPController::class, 'visimisilsp'])->name('visimisilsp');
 Route::post('/updatevisimisilsp/{id}', [LSPController::class, 'editlsp']);
+
+
+Route::get('/index/skemalsp', [LSPController::class, 'skemalsp'])->name('skemalsp');
+Route::post('/updateskemalsp/{id}', [LSPController::class, 'updateskemalsp']);
