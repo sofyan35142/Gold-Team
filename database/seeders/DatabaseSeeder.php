@@ -6,6 +6,7 @@ namespace Database\Seeders;
 
 
 
+use Database\Seeders\LSP;
 use Database\Seeders\kakomli;
 use Illuminate\Database\Seeder;
 
@@ -33,7 +34,7 @@ class DatabaseSeeder extends Seeder
             guru::class,
             ekstra::class,
             videoprofil::class,
-            prestasi::class
+            prestasi::class,
             LSP::class,
             Visimisilsp::class,
             Skematerlisensi::class,
