@@ -44,7 +44,7 @@ Route::get('/data/dharmaa', [LandingController::class, 'dharma']);
 Route::get('/data/datawalas', [LandingController::class, 'datawalas']);
 Route::get('/data/ekstraa', [LandingController::class, 'ekstra']);
 Route::get('/data/prestasi', [LandingController::class, 'prestasi']);
-Route::get('/ekstradetail', [LandingController::class, 'detailekstra']);
+Route::get('/ekstradetail/{id}', [LandingController::class, 'detailekstra']);
 Route::get('/prestasidetail', [LandingController::class, 'detailprestasi']);
 
 
@@ -136,6 +136,13 @@ Route::post('/insertstrukturorganisasi', [Admincontroller::class, 'insertstruktu
 Route::get('/index/editstrukturorganisasi/{id}', [Admincontroller::class, 'editstrukturorganisasi']);
 Route::post('/updatestrukturorganisasi/{id}', [Admincontroller::class, 'updatestrukturorganisasi']);
 Route::get('/index/deletestrukturorganisasi/{id}', [AdminController::class, 'deletestrukturorganisasi']);
+//Sejarah Singkat
+Route::get('/index/sejarahsingkat', [Admincontroller::class, 'sejarahsingkat'])->name('sejarahsingkat');
+Route::get('/index/addsejarahsingkat', [Admincontroller::class, 'addsejarahsingkat']);
+Route::post('/insertsejarahsingkat', [Admincontroller::class, 'insertsejarahsingkat']);
+Route::get('/sejarahsingkat/edit/{id}', [Admincontroller::class, 'editviewsejarahsingkat']);
+Route::post('/updatesejarahsingkat/{id}', [Admincontroller::class, 'updatesejarahsingkat']);
+Route::get('/sejarahsingkat/delete/{id}', [Admincontroller::class, 'deletesejarahsingkat']);
 // end profil sekolah-admin
 
 
@@ -191,6 +198,14 @@ Route::post('/insertsponsor', [BerandaController::class, 'insertsponsor']);
 Route::get('/beranda/editsponsor/{id}', [BerandaController::class, 'editsponsor']);
 Route::post('/beranda/updatesponsor/{id}', [BerandaController::class, 'updatesponsor']);
 Route::get('/sponsor/deletesponsor/{id}', [BerandaController::class, 'deletesponsor']);
+
+
+
+////////////////////-------------------------VIDEOPROFILE--------------////////////////////
+Route::get('/beranda/videoprofil', [BerandaController::class, 'videoprofil'])->name('videoprofil');
+Route::get('/beranda/editvideo/{id}', [BerandaController::class, 'editvideo']);
+Route::post('/beranda/updatevideo/{id}', [BerandaController::class, 'updatevideo']);
+Route::get('/videoprofil/deletevideo/{id}', [BerandaController::class, 'deletevideo']);
 
 
 

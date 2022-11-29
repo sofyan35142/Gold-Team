@@ -14,7 +14,7 @@
 <html lang="en" class="light-style layout-navbar-fixed layout-menu-fixed " dir="ltr" data-theme="theme-semi-dark" data-assets-path="../../assets1/" data-template="vertical-menu-template-semi-dark">
 <!-- Mirrored from pixinvent.com/demo/frest-clean-bootstrap-admin-dashboard-template/html/vertical-menu-template-semi-dark/tables-datatables-basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 15 Nov 2022 01:22:18 GMT -->
 @include('Admin.layoutadmin.head')
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 <body>
 
   <!-- Layout wrapper -->
@@ -41,39 +41,33 @@
 
 <div class="card mb-4">
   <div class="card-datatable table-responsive pt-0">
-    <h5 class="card-header">Ekstra</h5>
-    <a href="/data/tambahekstra" type="button" class="btn rounded-pill btn-primary">Tambah</a>
-    <table class="table" id="ekstra">
+    <h5 class="card-header">Video Profil</h5>
+    {{-- <a href="/data/tambahdharma" type="button" class="btn rounded-pill btn-primary">Tambah</a> --}}
+    <table class="table" >
   <thead>
     <tr>
       <th scope="col">No.</th>
       <th scope="col">Judul</th>
-      <th scope="col">Nama</th>
-      <th  scope="col">Deskripsi</th>
-      <th  scope="col">Foto</th>
-      <th scope="col">Foto Pembina</th>
+      <th scope="col">deskripsi</th>
+      <th scope="col">link</th>
+      <th scope="col">Foto</th>
       <th scope="col">Aksi</th>
     </tr>
   </thead>
   <tbody class="table-group-divider">
     <?php $no = 1; ?>
-    @foreach ($data as $ekstra)
+    @foreach ($data as $video)
 <tr>
         <td>{{ $no }}</td>
-        <td>{{ $ekstra->judul }}</td>
-        <td>{{ $ekstra->nama }}</td>
-        <td style="word-break:break-word;">{!! $ekstra->deskripsi !!}</td>
+        <td>{{ $video->judul }}</td>
+        <td>{!! $video->deskripsi !!}</td>
+        <td>{{ $video->link }}</td>
         <td>
-            <img src="{{ asset('fotoekstra/' . $ekstra->foto) }}" alt="" style="width: 80px; height:80px;">
+            <img src="{{ asset('videoprofil/' . $video->foto) }}" alt="" style="width: 80px; height:80px;">
         </td>
         <td>
-            <img src="{{ asset('fotoekstra/' . $ekstra->foto_pembina) }}" alt="" style="width: 80px; height:80px;">
-        </td>
-
-
-        <td>
-            <a href="/data/editekstra/{{ $ekstra->id }}" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></a>
-            <a href="#" class="btn btn-danger delete" data-id="{{ $ekstra->id }}" data-ekstra="{{ $ekstra->judul }}"><i class="fa-solid fa-trash"></i></a>
+            <a href="/beranda/editvideo/{{ $video->id }}" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></a>
+            <a href="#" class="btn btn-danger delete" data-id="{{ $video->id }}" data-video="{{ $video->nama }}"><i class="fa-solid fa-trash"></i></a>
         </td>
     </tr>
 
@@ -189,18 +183,18 @@
 </body>
 <script>
     $('.delete').click(function() {
-        var ekstraid = $(this).attr('data-id');
-        var ekstra = $(this).attr('data-ekstra');
+        var videoid = $(this).attr('data-id');
+        var video = $(this).attr('data-video');
         swal({
                 title: "Apakah kamu yakin?",
-                text: "Kamu akan menghapus ekstra " + ekstra + "",
+                text: "Kamu akan menghapus video " + video + "",
                 icon: "warning",
                 buttons: true,
                 dangerMode: true,
             })
             .then((willDelete) => {
                 if (willDelete) {
-                    window.location = "/data/deleteekstra/" + ekstraid + ""
+                    window.location = "/videoprofil/deletevideo/" + videoid + ""
                     swal("Data berhasil dihapus", {
                         icon: "success",
                     });

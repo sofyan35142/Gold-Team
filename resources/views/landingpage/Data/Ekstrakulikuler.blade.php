@@ -83,8 +83,8 @@
                                     <a href="#">{{ $ekstra->nama }}</a>
                                 </li>
                             </ul>
-                            {!! $ekstra->deskripsi !!}
-                            <a href="#" class="blog-btn">
+                            <span class="overflow">{!! $ekstra->deskripsi !!}</span>
+                            <a href="/ekstradetail/{{ $ekstra->id }}" class="blog-btn">
                                 Read more
                                 <i class="icofont-rounded-right"></i>
                             </a>
@@ -279,7 +279,7 @@
         </div>
     </div>
 
-    
+
 
     @include('landingpage.layout.footer')
 

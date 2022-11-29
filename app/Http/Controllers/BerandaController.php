@@ -8,6 +8,7 @@ use App\Models\kepsek;
 use App\Models\slider;
 use App\Models\sponsor;
 use App\Models\totalsiswa;
+use App\Models\videoprofil;
 use Illuminate\Http\Request;
 
 class BerandaController extends Controller
@@ -304,6 +305,45 @@ class BerandaController extends Controller
         $data = Blog::find($id);
         $data->delete();
         return redirect()->route('sponsor')->with('success', 'Berhasil Di Hapus');
+    }
+
+
+    //////////////////////////////-----------------------VIDEOPROFILE---------------------/////////////////////////
+    public function videoprofil()
+    {
+        $data = videoprofil::all();
+        return view('Admin.beranda.videoprofile.videoprofil', compact('data'));
+    }
+    public function editvideo($id)
+    {
+        $data = videoprofil::findOrFail($id);
+        return view('Admin.beranda.videoprofile.editvideoprofil', compact('data'));
+    }
+    public function updatevideo(Request $request, $id)
+    {
+        $data = videoprofil::find($id);
+        $data->update([
+            'judul' => $request->judul,
+            'link' => $request->link,
+            'deskripsi' => $request->deskripsi,
+
+        ]);
+        // $data->update($request->all());
+        // dd($data);
+        if ($request->hasFile('foto')) {
+            $request->file('foto')->move('videoprofil/', $request->file('foto')->getClientOriginalName());
+            $data->foto = $request->file('foto')->getClientOriginalName();
+            $data->save();
+        }
+
+        return redirect()->route('videoprofil')->with('success', 'Berhasil Di Update');
+    }
+
+    public function deletevideo($id)
+    {
+        $data = videoprofil::find($id);
+        $data->delete();
+        return redirect()->route('videoprofil')->with('success', 'Berhasil Di Hapus');
     }
 
 }

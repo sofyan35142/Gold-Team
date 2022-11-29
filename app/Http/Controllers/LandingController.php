@@ -13,6 +13,7 @@ use App\Models\Guru;
 use App\Models\Jurusan;
 use App\Models\kepsek;
 use App\Models\Kakomli;
+use App\Models\prestasi;
 use App\Models\profilsekolah;
 use Illuminate\Http\Request;
 use App\Models\profilvisimisi;
@@ -20,6 +21,7 @@ use App\Models\Skematerlisensi;
 use App\Models\slider;
 use App\Models\sponsor;
 use App\Models\totalsiswa;
+use App\Models\videoprofil;
 
 class LandingController extends Controller
 {
@@ -31,7 +33,8 @@ class LandingController extends Controller
         $data=Blog::all();
         $datakepsek=kepsek::all();
         $total=totalsiswa::all();
-        return view("landingpage.beranda.beranda", compact('data','dataa','datakepsek','total','slider','sponsor'));
+        $video=videoprofil::all();
+        return view("landingpage.beranda.beranda", compact('data','dataa','datakepsek','total','slider','sponsor','video'));
     }
 
     public function create()
@@ -240,10 +243,12 @@ class LandingController extends Controller
         return view('landingpage.Data.Ekstrakulikuler', compact('data'));
     }
     public function prestasi(){
-        return view('landingpage.Data.prestasi');
+        $prestasi=prestasi::all();
+        return view('landingpage.Data.prestasi', compact('prestasi'));
     }
-    public function detailekstra(){
-        return view('landingpage.Data.detailekstra');
+    public function detailekstra($id){
+        $detailekstra=ekstra::where('id',$id)->get();
+        return view('landingpage.Data.detailekstra', compact('detailekstra'));
     }
     public function detailprestasi(){
         return view('landingpage.Data.detailprestasi');

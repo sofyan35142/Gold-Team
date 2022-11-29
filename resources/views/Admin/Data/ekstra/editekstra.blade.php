@@ -48,13 +48,13 @@
                         <form action="/data/updateekstra/{{ $data->id }}" method="POST" enctype="multipart/form-data">
                                 @csrf
                         <div>
-                        <label for="defaultFormControlInput" class="form-label">judul</label>
+                        <label for="defaultFormControlInput" class="form-label">Judul Ekstra</label>
                         <input type="text" name="judul" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" value="{{ $data->judul }}"/>
                         </div>
                         <br/>
                         <div>
-                        <label for="defaultFormControlInput" class="form-label">nama</label>
-                        <input type="text" name="nama" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" value="{{ $data->judul }}"/>
+                        <label for="defaultFormControlInput" class="form-label">Nama Pembina</label>
+                        <input type="text" name="nama" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" value="{{ $data->nama }}"/>
                         </div>
                         <br/>
 
@@ -70,7 +70,14 @@
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Update Foto</label>
                             <br/>
-                            <img class="img mb-3" src="{{ asset('fotoblog/' . $data->foto) }}" alt="" style="width: 100px;">
+                            <img class="img mb-3" src="{{ asset('fotoekstra/' . $data->foto) }}" alt="" style="width: 100px;">
+                            <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto }}">
+                            {{-- <i style="float: left;font-size: 11px;color: red">Abaikan jika tidak merubah foto</i> --}}
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Update Foto Pembina</label>
+                            <br/>
+                            <img class="img mb-3" src="{{ asset('fotoekstra/' . $data->foto_pembina) }}" alt="" style="width: 100px;">
                             <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto }}">
                             <i style="float: left;font-size: 11px;color: red">Abaikan jika tidak merubah foto</i>
                         </div>

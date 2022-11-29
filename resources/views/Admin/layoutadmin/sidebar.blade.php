@@ -173,6 +173,11 @@
                                     <div data-i18n="Sponsor">Sponsor</div>
                                 </a>
                             </li>
+                            <li class="menu-item">
+                                <a href="/beranda/videoprofil" class="menu-link">
+                                    <div data-i18n="Video Profil">Video Profil</div>
+                                </a>
+                            </li>
                         </ul>
                     </li>
                     <li class="menu-item">
@@ -182,8 +187,8 @@
                         </a>
                         <ul class="menu-sub">
                             <li class="menu-item">
-                                <a href="app-user-list.html" class="menu-link">
-                                    <div data-i18n="visimisi">visimisi</div>
+                                <a href="/index/sejarahsingkat" class="menu-link">
+                                    <div data-i18n="sejarah singkat">sejarah singkat</div>
                                 </a>
                             </li>
                             <li class="menu-item">
@@ -232,7 +237,7 @@
                             </li>
                         </ul>
                     </li>
-                    
+
                     <li class="menu-item">
                         <a href="javascript:void(0);" class="menu-link menu-toggle">
                             <i class="menu-icon tf-icons bx bx-file"></i>
