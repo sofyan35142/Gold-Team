@@ -56,39 +56,8 @@
                 <div class="col-lg-8">
                     {{-- <img src="foto/jurusan/TKR.JPG" alt="service"> --}}
                     <div class="service-details-post">
-                        <h1>Tempat Uji Kompetensi</h1>
-                        <h3>DATA TEMPAT UJI KOMPETENSI (TUK) SEWAKTU LSP SMKN 1 SUKOREJO</h3>
-
-                        <p>1. Tempat Uji Kompetensi (TUK) REKAYASA PERANGKAT LUNAK (RPL)
-                            <br />
-                            Kode TUK : TUK-365-004- KKNI-RPL
-                            <br />
-                            Jenis TUK : Sewaktu
-                            <br />
-                            2. Tempat Uji Kompetensi (TUK) TEKNIK ELEKTRONIKA INDUSTRI (TEI)
-                            <br />
-                            Kode TUK : TUK-365-002-KKNI-TEI
-                            <br />
-                            Jenis TUK : Sewaktu
-                            <br />
-                            3. Tempat Uji Kompetensi (TUK) TEKNIK AUDIO VIDE0 (TAV)
-                            <br />
-                            Kode TUK : TUK-365-003-KKNI-TAV
-                            <br />
-                            Jenis TUK : Sewaktu
-                            <br />
-                            4. Tempat Uji Kompetensi (TUK) TEKNIK KENDARAAN RINGAN (TKR)
-                            <br />
-                            Kode TUK : TUK-365-001-KKNI-TKR
-                            <br />
-                            Jenis TUK : Sewaktu
-                            <br />
-                            5. Tempat Uji Kompetensi (TUK) KIMIA INDUSTRI (KI)
-                            <br />
-                            Kode TUK : TUK-365-005- KKNI-KIMIA INDUSTRI
-                            <br />
-                            Jenis TUK : Sewaktu
-                        </p>
+                        <h1>{{$ujikom->judul}}</h1>
+                        {!!$ujikom->deskripsi!!}
                         
 
 
@@ -99,10 +68,10 @@
                 <div class="col-lg-4 main-service-area blog-side-bar">
                     <div class="service-details-post">
                         <h3>Pelatihan Asesor Kompetensi</h3>
-                                        <img class="img-sidebar" src="foto/komp1.png"
+                                        <img class="img-sidebar" src="{{ asset('lsp/' . $ujikom->foto) }}"
                                             alt="logo lsp">
                                             
-                                        <img class="img-sidebar" src="foto/komp2.png"
+                                        <img class="img-sidebar" src="{{ asset('lsp/' . $ujikom->foto1) }}"
                                             alt="logo lsp">
                                             
                                         

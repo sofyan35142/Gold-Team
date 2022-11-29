@@ -265,3 +265,11 @@ Route::post('/updatevisimisilsp/{id}', [LSPController::class, 'editlsp']);
 
 Route::get('/index/skemalsp', [LSPController::class, 'skemalsp'])->name('skemalsp');
 Route::post('/updateskemalsp/{id}', [LSPController::class, 'updateskemalsp']);
+
+
+Route::get('/index/ujikomlsp', [LSPController::class, 'ujikom'])->name('ujikom');
+Route::post('/updateujikomlsp/{id}', [LSPController::class, 'updateujikom']);
+
+
+Route::get('/index/jmllsp', [LSPController::class, 'jml'])->name('jml');
+Route::post('/updatejmllsp/{id}', [LSPController::class, 'updatejml']);

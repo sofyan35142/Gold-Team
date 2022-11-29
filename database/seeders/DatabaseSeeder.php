@@ -34,6 +34,9 @@ class DatabaseSeeder extends Seeder
             ekstra::class,
             videoprofil::class,
             prestasi::class
+            LSP::class,
+            Visimisilsp::class,
+            Skematerlisensi::class,
         ]);
     }
 }

@@ -72,7 +72,7 @@ class JurusanController extends Controller
             $request->file('produktif')->move('foto/jurusan/', $request->file('produktif')->getClientOriginalName());
             $namafoto1 = $request->file('produktif')->getClientOriginalName();
             $data->update([
-                'foto' => $namafoto1,
+                'produktif' => $namafoto1,
                 'jurusan' => $request->jurusan,
                 'deskripsi' => $request->deskripsi,
             ]);
