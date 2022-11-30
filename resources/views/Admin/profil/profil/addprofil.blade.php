@@ -43,7 +43,7 @@
                                             </div>
                                             <div>
                                                 <label for="defaultFormControlInput" class="form-label">NPSN:</label>
-                                                <input type="text" name="npsn" class="form-control"
+                                                <input type="number" name="npsn" class="form-control"
                                                     id="defaultFormControlInput"
                                                     aria-describedby="defaultFormControlHelp" />
                                             </div>
@@ -76,7 +76,7 @@
                                             <div>
                                                 <label for="defaultFormControlInput" class="form-label">Kode
                                                     Pos:</label>
-                                                <input type="text" name="kode_pos" class="form-control"
+                                                <input type="number" name="kode_pos" class="form-control"
                                                     id="defaultFormControlInput"
                                                     aria-describedby="defaultFormControlHelp" />
                                             </div>
@@ -89,7 +89,7 @@
                                             <div>
                                                 <label for="defaultFormControlInput" class="form-label">No
                                                     Telepon:</label>
-                                                <input type="text" name="no_telp" class="form-control"
+                                                <input type="number" name="no_telp" class="form-control"
                                                     id="defaultFormControlInput"
                                                     aria-describedby="defaultFormControlHelp" />
                                             </div>
@@ -116,21 +116,21 @@
                                             <div>
                                                 <label for="defaultFormControlInput" class="form-label">Jarak Ke Pusat
                                                     Kecematan:</label>
-                                                <input type="text" name="jarak_ke_pusat_kecamatan"
+                                                <input type="number" name="jarak_ke_pusat_kecamatan"
                                                     class="form-control" id="defaultFormControlInput"
                                                     aria-describedby="defaultFormControlHelp" />
                                             </div>
                                             <div>
                                                 <label for="defaultFormControlInput" class="form-label">Jarak Ke Pusat
                                                     Daerah:</label>
-                                                <input type="text" name="jarak_ke_pusat_daerah"
+                                                <input type="number" name="jarak_ke_pusat_daerah"
                                                     class="form-control" id="defaultFormControlInput"
                                                     aria-describedby="defaultFormControlHelp" />
                                             </div>
                                             <div>
                                                 <label for="defaultFormControlInput" class="form-label">Tahun
                                                     Berdiri:</label>
-                                                <input type="text" name="tahun_berdiri" class="form-control"
+                                                <input type="number" name="tahun_berdiri" class="form-control"
                                                     id="defaultFormControlInput"
                                                     aria-describedby="defaultFormControlHelp" />
                                             </div>

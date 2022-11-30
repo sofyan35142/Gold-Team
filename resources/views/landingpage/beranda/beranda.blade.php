@@ -26,31 +26,34 @@
 
 
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-             @foreach ($slider as $foto)
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                <img class="d-block w-100" src="{{ asset('slider/' . $foto->foto1) }}" alt="First slide" style="height: 40pc;" >
+            @foreach ($slider as $foto)
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="{{ asset('slider/' . $foto->foto1) }}" alt="First slide"
+                            style="height: 40pc;">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="{{ asset('slider/' . $foto->foto2) }}" alt="Second slide"
+                            style="height: 40pc;">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="{{ asset('slider/' . $foto->foto3) }}" alt="Third slide"
+                            style="height: 40pc;">
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="{{ asset('slider/' . $foto->foto2) }}" alt="Second slide" style="height: 40pc;">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="{{ asset('slider/' . $foto->foto3) }}" alt="Third slide" style="height: 40pc;">
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             @endforeach
         </div>
 
@@ -130,29 +133,28 @@
     <section class="about-style-two about-style-three pt-100 pb-70">
         <div class="container-fluid">
             @foreach ($datakepsek as $kepsek)
-
-
-            <div class="row align-items-center">
-                <div class="col-lg-6 p-0">
-                    <div class="about-img">
-                    <div class="img-box5">
-                        <div class="img-blog"><img class="fotokepsek" src="fotoblog/rudi.png"alt="about"></div>
-                        <div class="shape"><img src="fotoblog/1.png"alt="shape"></div>
-                    </div>
-                        {{-- <center><img class="img-blog" src="{{ asset('kepsek/' . $kepsek->foto) }}" alt="blog image"></center> <br> --}}
-                        <center><b>{{ $kepsek->nama }}</b></center>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="about-text">
-                        <div class="section-head">
-                            <h2>Sambutan Kepala Sekolah</h2>
-                            <p>{!! $kepsek->sambutan !!}</p>
+                <div class="row align-items-center">
+                    <div class="col-lg-6 p-0">
+                        <div class="about-img">
+                            <div class="img-box5">
+                                <div class="img-blog"><img class="fotokepsek" src="fotoblog/rudi.png"alt="about">
+                                </div>
+                                <div class="shape"><img src="fotoblog/1.png"alt="shape"></div>
+                            </div>
+                            {{-- <center><img class="img-blog" src="{{ asset('kepsek/' . $kepsek->foto) }}" alt="blog image"></center> <br> --}}
+                            <center><b>{{ $kepsek->nama }}</b></center>
                         </div>
                     </div>
-                </div>
+                    <div class="col-lg-6">
+                        <div class="about-text">
+                            <div class="section-head">
+                                <h2>Sambutan Kepala Sekolah</h2>
+                                <p>{!! $kepsek->sambutan !!}</p>
+                            </div>
+                        </div>
+                    </div>
 
-            </div>
+                </div>
             @endforeach
         </div>
     </section>
@@ -206,37 +208,35 @@
     </div>
     <div class="counter-style-two pt-100 pb-70">
         @foreach ($total as $siswa)
-
-
-        <div class="container">
-            <h2 class="text-center">{{ $siswa->judul }}</h2>
-            <div class="row">
-                <div class="col-md-3 col-5">
-                    <div class="counter-text">
-                        <h2><span class="counter">{{ $siswa->laki_laki }}</h2>
-                        <p>Laki-Laki</p>
+            <div class="container">
+                <h2 class="text-center">{{ $siswa->judul }}</h2>
+                <div class="row">
+                    <div class="col-md-3 col-5">
+                        <div class="counter-text">
+                            <h2><span class="counter">{{ $siswa->laki_laki }}</h2>
+                            <p>Laki-Laki</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-3 col-7">
-                    <div class="counter-text">
-                        <h2><span class="counter">{{ $siswa->perempuan }}</span></h2>
-                        <p>Perempuan</p>
+                    <div class="col-md-3 col-7">
+                        <div class="counter-text">
+                            <h2><span class="counter">{{ $siswa->perempuan }}</span></h2>
+                            <p>Perempuan</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-3 col-5">
-                    <div class="counter-text">
-                        <h2><span class="counter">{{ $siswa->total_siswa }}</span></h2>
-                        <p>Total Siswa</p>
+                    <div class="col-md-3 col-5">
+                        <div class="counter-text">
+                            <h2><span class="counter">{{ $siswa->total_siswa }}</span></h2>
+                            <p>Total Siswa</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-3 col-7">
-                    <div class="counter-text">
-                        <h2><span class="counter">{{ $siswa->guru }}</span></h2>
-                        <p>Guru</p>
+                    <div class="col-md-3 col-7">
+                        <div class="counter-text">
+                            <h2><span class="counter">{{ $siswa->guru }}</span></h2>
+                            <p>Guru</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
         @endforeach
     </div>
 
@@ -353,4 +353,3 @@
     </script>
 </body>
 {{-- push --}}
-

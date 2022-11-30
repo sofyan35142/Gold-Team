@@ -25,8 +25,8 @@
                         <div class="card mb-4">
                             <div class="card-datatable table-responsive pt-0">
                                 <h5 class="card-header">Data Profil Sekolah</h5>
-                                <a href="/index/addprofil" type="button" class="btn rounded-pill btn-primary">Tambah
-                                    +</a>
+                                {{-- <a href="/index/addprofil" type="button" class="btn rounded-pill btn-primary">Tambah
+                                    +</a> --}}
                                 <table class="table" id="jurusan">
                                     <thead>
                                         <tr>
@@ -47,7 +47,7 @@
                                                         class="btn btn-warning"><i
                                                             class="fa-solid fa-pen-to-square"></i></a>
                                                     <a href="#" class="btn btn-danger delete"
-                                                        data-id="{{ $profil->id }}" data-profil="Foto Sekolah"><i
+                                                        data-id="foto_sekolah" data-profil="Foto Sekolah"><i
                                                             class="fa-solid fa-trash"></i></a>
                                                 </td>
                                             </tr>
@@ -60,7 +60,7 @@
                                                         class="btn btn-warning"><i
                                                             class="fa-solid fa-pen-to-square"></i></a>
                                                     <a href="#" class="btn btn-danger delete"
-                                                        data-id="{{ $profil->id }}"
+                                                        data-id="nama_sekolah"
                                                         data-profil="Nama Sekolah"><i
                                                             class="fa-solid fa-trash"></i></a>
                                                 </td>
@@ -74,7 +74,7 @@
                                                         class="btn btn-warning"><i
                                                             class="fa-solid fa-pen-to-square"></i></a>
                                                     <a href="#" class="btn btn-danger delete"
-                                                        data-id="{{ $profil->id }}"
+                                                        data-id="npsn"
                                                         data-profil="NPSN"><i
                                                             class="fa-solid fa-trash"></i></a>
                                                 </td>
@@ -88,7 +88,7 @@
                                                         class="btn btn-warning"><i
                                                             class="fa-solid fa-pen-to-square"></i></a>
                                                     <a href="#" class="btn btn-danger delete"
-                                                        data-id="{{ $profil->id }}"
+                                                        data-id="desa"
                                                         data-profil="Desa"><i
                                                             class="fa-solid fa-trash"></i></a>
                                                 </td>
@@ -102,7 +102,7 @@
                                                         class="btn btn-warning"><i
                                                             class="fa-solid fa-pen-to-square"></i></a>
                                                     <a href="#" class="btn btn-danger delete"
-                                                        data-id="{{ $profil->id }}"
+                                                        data-id="kecamatan"
                                                         data-profil="kecamatan"><i
                                                             class="fa-solid fa-trash"></i></a>
                                                 </td>
@@ -442,14 +442,14 @@
 
         swal({
                 title: "Apakah kamu yakin?",
-                text: "Kamu akan menghapus data Profil ini",
+                text: "Kamu akan menghapus data " + profil,
                 icon: "warning",
                 buttons: true,
                 dangerMode: true,
             })
             .then((willDelete) => {
                 if (willDelete) {
-                    window.location = "/index/delete/" + profilid + ""
+                    window.location = "/profil/delete/" + profilid + ""
                     swal("Data berhasil dihapus", {
                         icon: "success",
                     });

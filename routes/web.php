@@ -117,11 +117,8 @@ Route::get('/jurusan/deletejurusan/{id}', [JurusanController::class, 'deletejuru
 Route::get('/index/profil', [Admincontroller::class, 'profil']);
 Route::get('/index/addprofil', [Admincontroller::class, 'addprofil']);
 Route::post('/insertprofil', [Admincontroller::class, 'insertprofil']);
-Route::get('/visimisi/delete/{id}', [Admincontroller::class, 'deletevisimisi']);
-Route::get('/visimisi/edit/{id}', [Admincontroller::class, 'editviewvisimisi']);
-Route::post('/editvisimisi/{id}', [Admincontroller::class, 'editvisimisi']);
-
-
+Route::get('/profil/delete/{id}', [Admincontroller::class, 'deleteprofil']);
+Route::get('/profil/edit/{id}', [Admincontroller::class, 'editviewvisimisi']);
 // visi misi
 Route::get('/index/profilvisimisi', [Admincontroller::class, 'profilvisimisi']);
 Route::get('/index/addprofilvisimisi', [Admincontroller::class, 'addprofilvisimisi']);
@@ -134,6 +131,13 @@ Route::get('/index/strukturorganisasi', [Admincontroller::class, 'strukturorgani
 Route::get('/index/addstrukturorganisasi', [Admincontroller::class, 'addstrukturorganisasi']);
 Route::post('/insertstrukturorganisasi', [Admincontroller::class, 'insertstrukturorganisasi']);
 Route::get('/index/editstrukturorganisasi/{id}', [Admincontroller::class, 'editstrukturorganisasi']);
+Route::post('/updatestrukturorganisasi/{id}', [Admincontroller::class, 'updatestrukturorganisasi']);
+Route::get('/index/deletestrukturorganisasi/{id}', [AdminController::class, 'deletestrukturorganisasi']);
+//sekolah adiwiyata
+Route::get('/index/sekolahadiwiyata', [Admincontroller::class, 'sekolahadiwiyata']);
+Route::get('/index/addsekolahadiwiyata', [Admincontroller::class, 'addsekolahadiwiyata']);
+Route::post('/insertsekolahadiwiyata', [Admincontroller::class, 'insertsekolahadiwiyata']);
+Route::get('/index/editsekolahadiwiyata/{id}', [Admincontroller::class, 'editsekolahadiwiyata']);
 Route::post('/updatestrukturorganisasi/{id}', [Admincontroller::class, 'updatestrukturorganisasi']);
 Route::get('/index/deletestrukturorganisasi/{id}', [AdminController::class, 'deletestrukturorganisasi']);
 // end profil sekolah-admin
