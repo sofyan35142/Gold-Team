@@ -42,266 +42,221 @@
         <div class="container-fluid h-100">
             <div class="row h-100">
                 <div class="col-lg-6 p-0 h-100">
-                    <div class="why-us-img">
+                    <div class="why-us-img" style="background-image: url('http://127.0.0.1:8000/assets/img/fotoprofilsekolah/fotosekolah.jpg')">
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="why-us-text h-100 owl-carousel owl-theme" id="owl-demo">
                         @foreach ($data as $profil)
-                        <div class="h-100 idenwarp">
-                            <div class="row h-100">
-                                <div class="col-6 d-flex align-items-center">
-                                    <div class="basic-card basic-card-light d-flex align-items-center">
-                                        <div class="card-content">
-                                            <p class="card-text">
-                                                Nama Sekolah:
-                                            </p>
-                                            <span class="card-title">{{$profil->nama_sekolah}}</span>
+                            <div class="h-100 idenwarp">
+                                <div class="row h-100">
+                                    <div class="col-6 d-flex align-items-center">
+                                        <div class="basic-card basic-card-light d-flex align-items-center">
+                                            <div class="card-content">
+                                                <p class="card-text">
+                                                    Nama Sekolah:
+                                                </p>
+                                                <span class="card-title">{{ $profil->nama_sekolah }}</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-6 d-flex align-items-center">
-                                    <div class="basic-card basic-card-light d-flex align-items-center">
-                                        <div class="card-content">
-                                            <p class="card-text">
-                                                Nomor Pokok Sekolah Nasional (NPSN):
-                                            </p>
-                                            <span class="card-title">{{$profil->npsn}}</span>
+                                    <div class="col-6 d-flex align-items-center">
+                                        <div class="basic-card basic-card-light d-flex align-items-center">
+                                            <div class="card-content">
+                                                <p class="card-text">
+                                                    Nomor Pokok Sekolah Nasional (NPSN):
+                                                </p>
+                                                <span class="card-title">{{ $profil->npsn }}</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-6 d-flex align-items-center">
-                                    <div class="basic-card basic-card-light d-flex align-items-center">
-                                        <div class="card-content">
-                                            <p class="card-text">
-                                                Desa:
-                                            </p>
-                                            <span class="card-title">{{$profil->desa}}</span>
+                                    <div class="col-6 d-flex align-items-center">
+                                        <div class="basic-card basic-card-light d-flex align-items-center">
+                                            <div class="card-content">
+                                                <p class="card-text">
+                                                    Desa:
+                                                </p>
+                                                <span class="card-title">{{ $profil->desa }}</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-6 d-flex align-items-center">
-                                    <div class="basic-card basic-card-light d-flex align-items-center">
-                                        <div class="card-content">
-                                            <p class="card-text">
-                                                Kecamatan:
-                                            </p>
-                                            <span class="card-title">{{$profil->kecamatan}}</span>
+                                    <div class="col-6 d-flex align-items-center">
+                                        <div class="basic-card basic-card-light d-flex align-items-center">
+                                            <div class="card-content">
+                                                <p class="card-text">
+                                                    Kecamatan:
+                                                </p>
+                                                <span class="card-title">{{ $profil->kecamatan }}</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        @endforeach
+
+                        @foreach ($data as $profil)
+                            <div class="h-100 idenwarp">
+                                <div class="row h-100">
+                                    <div class="col-6 d-flex align-items-center">
+                                        <div class="basic-card basic-card-light d-flex align-items-center">
+                                            <div class="card-content">
+                                                <p class="card-text">
+                                                    No Telepon:
+                                                </p>
+                                                <span class="card-title">{{ $profil->no_telp }}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 d-flex align-items-center">
+                                        <div class="basic-card basic-card-light d-flex align-items-center">
+                                            <div class="card-content">
+                                                <p class="card-text">
+                                                    Email:
+                                                </p>
+                                                <span class="card-title">{{ $profil->email }}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 d-flex align-items-center">
+                                        <div class="basic-card basic-card-light d-flex align-items-center">
+                                            <div class="card-content">
+                                                <p class="card-text">
+                                                    Kegiatan Pembelajaran:
+                                                </p>
+                                                <span class="card-title">{{ $profil->kegiatan_pembelajaran }}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 d-flex align-items-center">
+                                        <div class="basic-card basic-card-light d-flex align-items-center">
+                                            <div class="card-content">
+                                                <p class="card-text">
+                                                    Waktu Penyelenggaraan:
+                                                </p>
+                                                <span class="card-title">{{ $profil->waktu_penyelenggaraan }}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         @endforeach
                         @foreach ($data as $profil)
-                        <div class="h-100 idenwarp">
-                            <div class="row h-100">
-                                <div class="col-6 d-flex align-items-center">
-                                    <div class="basic-card basic-card-light d-flex align-items-center">
-                                        <div class="card-content">
-                                            <p class="card-text">
-                                                Daerah:
-                                            </p>
-                                            <span class="card-title">{{$profil->daerah}}</span>
+                            <div class="h-100 idenwarp">
+                                <div class="row h-100">
+                                    <div class="col-6 d-flex align-items-center">
+                                        <div class="basic-card basic-card-light d-flex align-items-center">
+                                            <div class="card-content">
+                                                <p class="card-text">
+                                                    Jarak ke pusat kecamatan:
+                                                </p>
+                                                <span class="card-title">{{ $profil->jarak_ke_pusat_kecamatan }}</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-6 d-flex align-items-center">
-                                    <div class="basic-card basic-card-light d-flex align-items-center">
-                                        <div class="card-content">
-                                            <p class="card-text">
-                                                Provinsi:
-                                            </p>
-                                            <span class="card-title">{{$profil->provinsi}}</span>
+                                    <div class="col-6 d-flex align-items-center">
+                                        <div class="basic-card basic-card-light d-flex align-items-center">
+                                            <div class="card-content">
+                                                <p class="card-text">
+                                                    Jarak ke pusat daerah:
+                                                </p>
+                                                <span class="card-title">{{ $profil->jarak_ke_pusat_daerah }}</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-6 d-flex align-items-center">
-                                    <div class="basic-card basic-card-light d-flex align-items-center">
-                                        <div class="card-content">
-                                            <p class="card-text">
-                                                Kode Pos:
-                                            </p>
-                                            <span class="card-title">{{$profil->kode_pos}}</span>
+                                    <div class="col-6 d-flex align-items-center">
+                                        <div class="basic-card basic-card-light d-flex align-items-center">
+                                            <div class="card-content">
+                                                <p class="card-text">
+                                                    Tahun Berdiri:
+                                                </p>
+                                                <span class="card-title">{{ $profil->tahun_berdiri }}</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-6 d-flex align-items-center">
-                                    <div class="basic-card basic-card-light d-flex align-items-center">
-                                        <div class="card-content">
-                                            <p class="card-text">
-                                                Alamat:
-                                            </p>
-                                            <span class="card-title">{{$profil->alamat}}</span>
+                                    <div class="col-6 d-flex align-items-center">
+                                        <div class="basic-card basic-card-light d-flex align-items-center">
+                                            <div class="card-content">
+                                                <p class="card-text">
+                                                    Penerbit SK:
+                                                </p>
+                                                <span class="card-title">{{ $profil->penerbit_SK }}</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
                         @endforeach
                         @foreach ($data as $profil)
-                        <div class="h-100 idenwarp">
-                            <div class="row h-100">
-                                <div class="col-6 d-flex align-items-center">
-                                    <div class="basic-card basic-card-light d-flex align-items-center">
-                                        <div class="card-content">
-                                            <p class="card-text">
-                                                No Telepon:
-                                            </p>
-                                            <span class="card-title">{{$profil->no_telp}}</span>
+                            <div class="h-100 idenwarp">
+                                <div class="row h-100">
+                                    <div class="col-6 d-flex align-items-center">
+                                        <div class="basic-card basic-card-light d-flex align-items-center">
+                                            <div class="card-content">
+                                                <p class="card-text">
+                                                    SK pendirian sekolah:
+                                                </p>
+                                                <span class="card-title">{{ $profil->sk_pendirian_sekolah }}</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-6 d-flex align-items-center">
-                                    <div class="basic-card basic-card-light d-flex align-items-center">
-                                        <div class="card-content">
-                                            <p class="card-text">
-                                                Email:
-                                            </p>
-                                            <span class="card-title">{{$profil->email}}</span>
+                                    <div class="col-6 d-flex align-items-center">
+                                        <div class="basic-card basic-card-light d-flex align-items-center">
+                                            <div class="card-content">
+                                                <p class="card-text">
+                                                    Status Sekolah:
+                                                </p>
+                                                <span class="card-title">{{ $profil->status_sekolah }}</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-6 d-flex align-items-center">
-                                    <div class="basic-card basic-card-light d-flex align-items-center">
-                                        <div class="card-content">
-                                            <p class="card-text">
-                                                Kegiatan Pembelajaran:
-                                            </p>
-                                            <span class="card-title">{{$profil->kegiatan_pembelajaran}}</span>
+                                    <div class="col-6 d-flex align-items-center">
+                                        <div class="basic-card basic-card-light d-flex align-items-center">
+                                            <div class="card-content">
+                                                <p class="card-text">
+                                                    Kurikulum:
+                                                </p>
+                                                <span class="card-title">{{ $profil->kurikulum }}</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-6 d-flex align-items-center">
-                                    <div class="basic-card basic-card-light d-flex align-items-center">
-                                        <div class="card-content">
-                                            <p class="card-text">
-                                                Waktu Penyelenggaraan:
-                                            </p>
-                                            <span class="card-title">{{$profil->waktu_penyelenggaraan}}</span>
+                                    <div class="col-6 d-flex align-items-center">
+                                        <div class="basic-card basic-card-light d-flex align-items-center">
+                                            <div class="card-content">
+                                                <p class="card-text">
+                                                    Status Bos:
+                                                </p>
+                                                <span class="card-title">{{ $profil->status_bos }}</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
                         @endforeach
                         @foreach ($data as $profil)
-                        <div class="h-100 idenwarp">
-                            <div class="row h-100">
-                                <div class="col-6 d-flex align-items-center">
-                                    <div class="basic-card basic-card-light d-flex align-items-center">
-                                        <div class="card-content">
-                                            <p class="card-text">
-                                                Jarak ke pusat kecamatan:
-                                            </p>
-                                            <span class="card-title">{{$profil->jarak_ke_pusat_kecamatan}}</span>
+                            <div class="h-100 idenwarp">
+                                <div class="row h-100">
+                                    <div class="col-6 d-flex align-items-center">
+                                        <div class="basic-card basic-card-light d-flex align-items-center">
+                                            <div class="card-content">
+                                                <p class="card-text">
+                                                    Sumber Listrik:
+                                                </p>
+                                                <span class="card-title">{{ $profil->sumber_listrik }}</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-6 d-flex align-items-center">
-                                    <div class="basic-card basic-card-light d-flex align-items-center">
-                                        <div class="card-content">
-                                            <p class="card-text">
-                                                Jarak ke pusat daerah:
-                                            </p>
-                                            <span class="card-title">{{$profil->jarak_ke_pusat_daerah}}</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6 d-flex align-items-center">
-                                    <div class="basic-card basic-card-light d-flex align-items-center">
-                                        <div class="card-content">
-                                            <p class="card-text">
-                                                Tahun Berdiri:
-                                            </p>
-                                            <span class="card-title">{{$profil->tahun_berdiri}}</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6 d-flex align-items-center">
-                                    <div class="basic-card basic-card-light d-flex align-items-center">
-                                        <div class="card-content">
-                                            <p class="card-text">
-                                                Penerbit SK:
-                                            </p>
-                                            <span class="card-title">{{$profil->penerbit_SK}}</span>
+                                    <div class="col-6 d-flex align-items-center">
+                                        <div class="basic-card basic-card-light d-flex align-items-center">
+                                            <div class="card-content">
+                                                <p class="card-text">
+                                                    Akses Internet:
+                                                </p>
+                                                <span class="card-title">{{ $profil->akses_internet }}</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        @endforeach
-                        @foreach ($data as $profil)
-                        <div class="h-100 idenwarp">
-                            <div class="row h-100">
-                                <div class="col-6 d-flex align-items-center">
-                                    <div class="basic-card basic-card-light d-flex align-items-center">
-                                        <div class="card-content">
-                                            <p class="card-text">
-                                                SK pendirian sekolah:
-                                            </p>
-                                            <span class="card-title">{{$profil->sk_pendirian_sekolah}}</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6 d-flex align-items-center">
-                                    <div class="basic-card basic-card-light d-flex align-items-center">
-                                        <div class="card-content">
-                                            <p class="card-text">
-                                                Status Sekolah:
-                                            </p>
-                                            <span class="card-title">{{$profil->status_sekolah}}</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        @endforeach
-                        @foreach ($data as $profil)
-                        <div class="h-100 idenwarp">
-                            <div class="row h-100">
-                                <div class="col-6 d-flex align-items-center">
-                                    <div class="basic-card basic-card-light d-flex align-items-center">
-                                        <div class="card-content">
-                                            <p class="card-text">
-                                                Sumber Listrik:
-                                            </p>
-                                            <span class="card-title">{{$profil->sumber_listrik}}</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6 d-flex align-items-center">
-                                    <div class="basic-card basic-card-light d-flex align-items-center">
-                                        <div class="card-content">
-                                            <p class="card-text">
-                                                Akses Internet:
-                                            </p>
-                                            <span class="card-title">{{$profil->akses_internet}}</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6 d-flex align-items-center">
-                                    <div class="basic-card basic-card-light d-flex align-items-center">
-                                        <div class="card-content">
-                                            <p class="card-text">
-                                                Kurikulum:
-                                            </p>
-                                            <span class="card-title">{{$profil->kurikulum}}</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6 d-flex align-items-center">
-                                    <div class="basic-card basic-card-light d-flex align-items-center">
-                                        <div class="card-content">
-                                            <p class="card-text">
-                                                Status Bos:
-                                            </p>
-                                            <span class="card-title">{{$profil->status_bos}}</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>  
                         @endforeach
                     </div>
                 </div>

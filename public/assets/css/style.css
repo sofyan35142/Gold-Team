@@ -3039,11 +3039,12 @@ h3 {
 	font-size: 15px
 }
 .why-us .why-us-img {
-	background-image: url(../img/why-choose/2.png);
+	/* background-image: url(../img/why-choose/2.png); */
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 100%
+	height: 100%;
+    width: 100%;
 }
 .process-style-three {
 	background: #031888;

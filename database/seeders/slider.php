@@ -19,7 +19,6 @@ class slider extends Seeder
             'foto1' => 'slider-02.png',
             'foto2' => 'smk.jpg',
             'foto3' => '3.jpg',
-
         ]);
     }
 }
