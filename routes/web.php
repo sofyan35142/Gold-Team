@@ -134,7 +134,6 @@ Route::post('/insertstrukturorganisasi', [Admincontroller::class, 'insertstruktu
 Route::get('/index/editstrukturorganisasi/{id}', [Admincontroller::class, 'editstrukturorganisasi']);
 Route::post('/updatestrukturorganisasi/{id}', [Admincontroller::class, 'updatestrukturorganisasi']);
 Route::get('/index/deletestrukturorganisasi/{id}', [AdminController::class, 'deletestrukturorganisasi']);
-<<<<<<< HEAD
 //sekolah adiwiyata
 Route::get('/index/sekolahadiwiyata', [Admincontroller::class, 'sekolahadiwiyata']);
 Route::get('/index/addsekolahadiwiyata', [Admincontroller::class, 'addsekolahadiwiyata']);
@@ -142,7 +141,6 @@ Route::post('/insertsekolahadiwiyata', [Admincontroller::class, 'insertsekolahad
 Route::get('/index/editsekolahadiwiyata/{id}', [Admincontroller::class, 'editsekolahadiwiyata']);
 Route::post('/updatestrukturorganisasi/{id}', [Admincontroller::class, 'updatestrukturorganisasi']);
 Route::get('/index/deletestrukturorganisasi/{id}', [AdminController::class, 'deletestrukturorganisasi']);
-=======
 //Sejarah Singkat
 Route::get('/index/sejarahsingkat', [Admincontroller::class, 'sejarahsingkat'])->name('sejarahsingkat');
 Route::get('/index/addsejarahsingkat', [Admincontroller::class, 'addsejarahsingkat']);
@@ -150,7 +148,6 @@ Route::post('/insertsejarahsingkat', [Admincontroller::class, 'insertsejarahsing
 Route::get('/sejarahsingkat/edit/{id}', [Admincontroller::class, 'editviewsejarahsingkat']);
 Route::post('/updatesejarahsingkat/{id}', [Admincontroller::class, 'updatesejarahsingkat']);
 Route::get('/sejarahsingkat/delete/{id}', [Admincontroller::class, 'deletesejarahsingkat']);
->>>>>>> c621696fe8011080ab8f4e75a7c707b1a9c13a64
 // end profil sekolah-admin
 
 
@@ -286,3 +283,7 @@ Route::post('/updatejmllsp/{id}', [LSPController::class, 'updatejml']);
 //MODUL ADMIN
 Route::get('/index/modultkr', [ModulController::class, 'modultkr'])->name('modultkr');
 Route::post('/updatemodultkr/{id}', [ModulController::class, 'updatemodultkr']);
+
+
+Route::get('/index/modultei', [ModulController::class, 'modultei'])->name('modultei');
+Route::post('/updatemodultei/{id}', [ModulController::class, 'updatemodultei']);

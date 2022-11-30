@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Modultei;
 use App\Models\Modultkr;
 use Illuminate\Http\Request;
 
@@ -29,6 +30,25 @@ class ModulController extends Controller
         $data ->update($request->all());
 
         return redirect('index/modultkr')->with('success', 'Berhasil Di Update');
+    }
+
+    public function modultei()
+    {
+        $data = Modultei::where('id', '=', 1)->firstOrFail();
+        return view('Admin.modul.modultei', compact('data'));
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function updatemodultei(Request $request)
+    {
+        $data = Modultei::find($request->id);
+        $data->update($request->all());
+
+        return redirect('index/modultei')->with('success', 'Berhasil Di Update');
     }
     public function create()
     {

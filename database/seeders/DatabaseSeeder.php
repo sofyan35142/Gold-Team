@@ -20,21 +20,6 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->call([
-<<<<<<< HEAD
-            jurusan::class,
-            profilvisimisi::class,
-            strukturorganisasi::class,
-            dharma::class,
-            kepsek::class,
-            kakomli::class,
-            profilsekolah::class,
-            sekolahadiwiyata::class,
-            totalsiswa::class,
-            slider::class,
-            blog::class,
-            alumni::class,
-            guru::class
-=======
             alumni::class,
             blog::class,
             dharma::class,
@@ -55,8 +40,7 @@ class DatabaseSeeder extends Seeder
             totalsiswa::class,
             videoprofil::class,
             Visimisilsp::class,
-            
->>>>>>> c621696fe8011080ab8f4e75a7c707b1a9c13a64
+            Modultkr::class,
         ]);
     }
 }
