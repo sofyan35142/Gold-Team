@@ -142,7 +142,7 @@
                                         style="height: 28pc;"> <br>
                                     <center><b>{{ $kepsek->nama }}</b></center>
                                 </div>
-                                <div class="shape"><img src="fotoblog/1.png"alt="shape"></div>
+                                {{-- <div class="shape"><img src="fotoblog/1.png"alt="shape"></div> --}}
                             </div>
 
                         </div>
