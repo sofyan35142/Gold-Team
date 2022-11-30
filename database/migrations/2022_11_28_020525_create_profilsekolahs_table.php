@@ -14,6 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('profilsekolah', function (Blueprint $table) {
+            $table->id();
             $table->string('foto_sekolah');
             $table->string('nama_sekolah');
             $table->integer('npsn');

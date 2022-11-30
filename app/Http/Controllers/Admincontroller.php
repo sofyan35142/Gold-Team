@@ -4,41 +4,59 @@ namespace App\Http\Controllers;
 
 use App\Models\profilsekolah;
 use App\Models\profilvisimisi;
+<<<<<<< HEAD
+use App\Models\sekolahadiwiyata;
+=======
 use App\Models\sejarahsingkat;
+>>>>>>> c621696fe8011080ab8f4e75a7c707b1a9c13a64
 use App\Models\strukturorganisasi;
 use Illuminate\Http\Request;
 
 class Admincontroller extends Controller
 {
-    public function index(){
-        return view ('Admin.index');
+    public function index()
+    {
+        return view('Admin.index');
     }
     ///////////////////// START PROFIL LANDINGPAGE ADMIN ///////////////////////////
     //start profil
-    public function profil(){
+    public function profil()
+    {
         $data = profilsekolah::all();
-        return view ('admin.profil.profil.profil',compact('data'));
+        return view('admin.profil.profil.profil', compact('data'));
     }
-    public function addprofil(){
-        return view ('admin.profil.profil.addprofil');
+    public function addprofil()
+    {
+        return view('admin.profil.profil.addprofil');
     }
-    public function insertprofil(Request $request){
-        dd($request->all());
-        $data = profilsekolah::create($request->all());
-        if ($request->hasFile('foto_sekolah')) {
-            $request->file('foto_sekolah')->move('assets/img/visimisi/', $request->file('foto_sekolah')->getClientOriginalName());
-            $data->foto_sekolah = $request->file('foto_sekolah')->getClientOriginalName();
-            $data->save();
+    public function insertprofil(Request $request)
+    {
+        $dataprofilsekolah = profilsekolah::all();
+        if (is_null($dataprofilsekolah)) {
+            $data = profilsekolah::create($request->all());
+            if ($request->hasFile('foto_sekolah')) {
+                $request->file('foto_sekolah')->move('assets/img/fotoprofilsekolah/', $request->file('foto_sekolah')->getClientOriginalName());
+                $data->foto_sekolah = $request->file('foto_sekolah')->getClientOriginalName();
+                $data->save();
+            }
+        } else {
+            return redirect('/index/addprofil/');
         }
         // dd($data);
-        return redirect('/index/profil')->with('success','Data Berhasil Ditambahkan');
+        return redirect('/index/profil')->with('success', 'Data Berhasil Ditambahkan');
+    }
+    public function deleteprofil($id)
+    {
+        $profil = profilsekolah::find(1);
+        $profil->update(([$id => '-']));
+        return redirect("/index/profil")->with('success', 'Data Berhasil dihapus');
     }
     //end profil
     // start profilvisimisi-admin
     public function profilvisimisi()
     {
         $data = profilvisimisi::all();
-        return view('admin.profil.visimisi.visimisi',compact('data'));
+        return view('admin.profil.visimisi.visimisi', compact('data'));
     }
     public function addprofilvisimisi()
     {
@@ -54,13 +72,14 @@ class Admincontroller extends Controller
             $data->save();
         }
         // dd($data);
-        return redirect('/index/profil')->with('success','Data Berhasil Ditambahkan');
+        return redirect('/index/profil')->with('success', 'Data Berhasil Ditambahkan');
     }
-    public function editviewvisimisi($id){
+    public function editviewvisimisi($id)
+    {
         $data = profilvisimisi::find($id);
-        return view('Admin.profil.visimisi.editvisimisi',compact('data'));
+        return view('Admin.profil.visimisi.editvisimisi', compact('data'));
     }
-    public function editvisimisi(Request $request,$id)
+    public function editvisimisi(Request $request, $id)
     {
         $data = profilvisimisi::find($id);
         $data->update([
@@ -75,7 +94,8 @@ class Admincontroller extends Controller
         }
         return redirect('/index/profil')->with('success', 'Data Berhasil Di edit');
     }
-    public function deletevisimisi($id){
+    public function deletevisimisi($id)
+    {
         $data = profilvisimisi::find($id);
         $data->delete();
         return redirect('/index/profil')->with('success', 'Berhasil Di Hapus');
@@ -83,25 +103,28 @@ class Admincontroller extends Controller
     // end profilvisimisisekolah-admin
 
     // start profil/strukturorganisasi
-    public function strukturorganisasi(){
+    public function strukturorganisasi()
+    {
         $data = strukturorganisasi::all();
-        return view('admin.profil.strukturorganisasi.strukturorganisasi',compact('data'));
+        return view('admin.profil.strukturorganisasi.strukturorganisasi', compact('data'));
     }
-    public function addstrukturorganisasi(){
+    public function addstrukturorganisasi()
+    {
         return view('admin.profil.strukturorganisasi.addstrukturorganisasi');
     }
 
-    public function insertstrukturorganisasi(Request $request){
+    public function insertstrukturorganisasi(Request $request)
+    {
         $data = strukturorganisasi::create([
-          'judul' => $request->judul,
-          'tahun_ajaran' => $request->tahun_ajaran,
-            'foto_struktur' => $request->foto_struktur,
+            'judul' => $request->judul,
+            'tahun_ajaran' => $request->tahun_ajaran,
+            'foto_adiwiyata' => $request->foto_adiwiyata,
             'foto_sidestruktur' => $request->foto_sidestruktur,
         ]);
         // dd($data);
-        if ($request->hasFile('foto_struktur')) {
-            $request->file('foto_struktur')->move('struktur/', $request->file('foto_struktur')->getClientOriginalName());
-            $data->foto_struktur = $request->file('foto_struktur')->getClientOriginalName();
+        if ($request->hasFile('foto_adiwiyata')) {
+            $request->file('foto_adiwiyata')->move('struktur/', $request->file('foto_adiwiyata')->getClientOriginalName());
+            $data->foto_adiwiyata = $request->file('foto_adiwiyata')->getClientOriginalName();
             $data->save();
         }
         if ($request->hasFile('foto_sidestruktur')) {
@@ -112,7 +135,8 @@ class Admincontroller extends Controller
         return redirect()->route('strukturorganisasi')->with('success', 'Berhasil Di Tambahkan');
     }
 
-    public function editstrukturorganisasi($id){
+    public function editstrukturorganisasi($id)
+    {
         $data = strukturorganisasi::findorfail($id);
         return view('admin.profil.strukturorganisasi.editstrukturorganisasi', compact('data'));
     }
@@ -121,15 +145,15 @@ class Admincontroller extends Controller
 
         $data = strukturorganisasi::find($id);
         $data->update([
-          'judul' => $request->judul,
-          'tahun_ajaran' => $request->tahun_ajaran
-            // 'foto_struktur' => $request->foto_struktur,
+            'judul' => $request->judul,
+            'tahun_ajaran' => $request->tahun_ajaran
+            // 'foto_adiwiyata' => $request->foto_adiwiyata,
             // 'foto_sidestruktur' => $request->foto_sidestruktur,
         ]);
         // dd($data);
-        if ($request->hasFile('foto_struktur')) {
-            $request->file('foto_struktur')->move('struktur/', $request->file('foto_struktur')->getClientOriginalName());
-            $data->foto_struktur = $request->file('foto_struktur')->getClientOriginalName();
+        if ($request->hasFile('foto_adiwiyata')) {
+            $request->file('foto_adiwiyata')->move('struktur/', $request->file('foto_adiwiyata')->getClientOriginalName());
+            $data->foto_adiwiyata = $request->file('foto_adiwiyata')->getClientOriginalName();
             $data->save();
         }
         if ($request->hasFile('foto_sidestruktur')) {
@@ -147,6 +171,33 @@ class Admincontroller extends Controller
         return redirect()->route('strukturorganisasi')->with('success', 'Berhasil Di Hapus');
     }
     // end profil/strukturorganisasi
+<<<<<<< HEAD
+    // start profil/sekolahadiwiyata
+    public function sekolahadiwiyata()
+    {
+        $data = sekolahadiwiyata::all();
+        return view('Admin.profil.sekolah_adiwiyatpa.sekolahadiwiyata', compact('data'));
+    }
+    public function addsekolahadiwiyata()
+    {
+        return view('Admin.profil.sekolah_adiwiyata.addsekolahadiwiyata');
+    }
+    public function insertsekolahadiwiyata(Request $request)
+    {
+        // dd($request->all());
+        $data = sekolahadiwiyata::create($request->all());
+        if ($request->hasFile('foto_adiwiyata')) {
+            $request->file('foto_adiwiyata')->move('assets/img/', $request->file('foto_adiwiyata')->getClientOriginalName());
+            $data->foto_adiwiyata = $request->file('foto_adiwiyata')->getClientOriginalName();
+            $data->save();
+        }
+        return redirect('/index/sekolahadiwiyata')->with('success', 'data berhasil ditambahkan');
+    }
+    public function editsekolahadiwiyata(){
+        
+    }
+    // end profil/sekolahadiwiyata
+=======
 
     public function sejarahsingkat(){
         $data=sejarahsingkat::all();
@@ -201,5 +252,6 @@ class Admincontroller extends Controller
         return redirect()->route('sejarahsingkat')->with('success', 'Berhasil Di Hapus');
     }
 
+>>>>>>> c621696fe8011080ab8f4e75a7c707b1a9c13a64
     ///////////////////// END PROFIL LANDINGPAGE ADMIN ///////////////////////////
 }

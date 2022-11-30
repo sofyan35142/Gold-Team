@@ -137,6 +137,24 @@
                     <div class="col-lg-6 p-0">
                         <div class="about-img">
                             <div class="img-box5">
+<<<<<<< HEAD
+                                <div class="img-blog"><img class="fotokepsek" src="fotoblog/rudi.png"alt="about">
+                                </div>
+                                <div class="shape"><img src="fotoblog/1.png"alt="shape"></div>
+                            </div>
+                            {{-- <center><img class="img-blog" src="{{ asset('kepsek/' . $kepsek->foto) }}" alt="blog image"></center> <br> --}}
+                            <center><b>{{ $kepsek->nama }}</b></center>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-text">
+                            <div class="section-head">
+                                <h2>Sambutan Kepala Sekolah</h2>
+                                <p>{!! $kepsek->sambutan !!}</p>
+                            </div>
+                        </div>
+                    </div>
+=======
                                 <div class="img-blog"><img class="fotokepsek"
                                         src="{{ asset('kepsek/' . $kepsek->foto) }}"alt="about"
                                         style="height: 28pc;"> <br>
@@ -155,6 +173,7 @@
                             </div>
                         </div>
                     </div>
+>>>>>>> c621696fe8011080ab8f4e75a7c707b1a9c13a64
 
                 </div>
             @endforeach
