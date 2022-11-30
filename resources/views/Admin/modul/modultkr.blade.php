@@ -42,7 +42,7 @@
 
 <!-- Mirrored from pixinvent.com/demo/frest-clean-bootstrap-admin-dashboard-template/html/vertical-menu-template-semi-dark/tables-datatables-basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 15 Nov 2022 01:22:18 GMT -->
 @include('Admin.layoutadmin.head')
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <body>
 
   <!-- Layout wrapper -->
@@ -96,18 +96,31 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="card mb-4">
-                    <h5 class="card-header">Skema Terlisensi</h5>
-                    <div class="col-md-6 col-lg-4 mb-3">
-                      <div class="card h-100">
-                        <img class="card-img-top" src="../../assets/img/elements/2.jpg" alt="Card image cap" />
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">
-                            Some quick example text to build on the card title and make up the bulk of the card's content.
-                          </p>
-                          <a href="javascript:void(0)" class="btn btn-outline-primary">Go somewhere</a>
+                    <h5 class="card-header">Modul Produktif TKR</h5>
+                    <div class="card-body">
+                        <form action="/updatemodultkr/{{$data->id}}" method="POST" enctype="multipart/form-data">
+                                @csrf
+                        <input type="text" value="{{$data->id}}" name="id" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" hidden/>
+                        <div>
+                        <label for="defaultFormControlInput" class="form-label">Judul</label>
+                        <input type="text"  name="judul" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" value="{{ $data->judul }}"/>
                         </div>
-                      </div>
+                        <br/>
+
+                        
+                        <br/>
+
+                        <div>
+                        <label for="editor" class="form-label">Deskripsi</label>
+                        {{-- <input type="text" name="deskripsi" class="form-control" id="editor"  aria-describedby="defaultFormControlHelp" /> --}}
+                        <div class="card-body">
+                                <textarea name="deskripsi" id="editor">{!! $data->deskripsi !!}</textarea>
+                        </div>
+                        
+                        <br/>
+                        <button type="submit" class="btn rounded-pill btn-primary">Update</button>
+                        </form>
+
                     </div>
                     </div>
                 </div>
@@ -222,6 +235,7 @@
   <script src="../../assets1/js/tables-datatables-basic.js"></script>
   <script src="//cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.ckeditor.com/ckeditor5/35.3.1/classic/ckeditor.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
   <script>
       ClassicEditor
           .create(document.querySelector('#editor'))
@@ -234,6 +248,11 @@
     $(document).ready(function() {
         $('#jurusan').DataTable();
     });
+</script>
+<script>
+    @if(Session::get('success'))
+    toastr.success("{{ Session::get('success') }}")
+    @endif
 </script>
 
 <!-- Mirrored from pixinvent.com/demo/frest-clean-bootstrap-admin-dashboard-template/html/vertical-menu-template-semi-dark/tables-datatables-basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 15 Nov 2022 01:22:20 GMT -->

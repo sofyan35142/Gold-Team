@@ -217,7 +217,7 @@
                     <li class="menu-item">
                         <a href="javascript:void(0);" class="menu-link menu-toggle">
                             <i class='menu-icon tf-icons bx bx-check-shield'></i>
-                            <div data-i18n="Jurusan">Kompetensi Keahlian</div>
+                            <div data-i18n="Kompetensi Keahlian">Kompetensi Keahlian</div>
                         </a>
                         <ul class="menu-sub">
                             <li class="menu-item">
@@ -240,8 +240,55 @@
 
                     <li class="menu-item">
                         <a href="javascript:void(0);" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons bx bx-detail"></i>
+                            <div data-i18n="Modul Produktif">Modul Produktif</div>
+                        </a>
+
+                        <ul class="menu-sub">
+
+                            <li class="menu-item">
+                                <a href="layouts-collapsed-menu.html" class="menu-link">
+                                    <div data-i18n="Modul TKR">Modul TKR</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="layouts-without-navbar.html" class="menu-link">
+                                    <div data-i18n="Buku Reparasi Bengkel">Buku Reparasi Bengkel</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="layouts-content-navbar.html" class="menu-link">
+                                    <div data-i18n="Modul TEI">Modul TEI</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="layouts-content-navbar-with-sidebar.html" class="menu-link">
+                                    <div data-i18n="Modul RPL">Modul RPL</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="layouts-fluid.html" class="menu-link">
+                                    <div data-i18n="Artikel Ilmiah RPL">Artikel Ilmiah RPL</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="https://pixinvent.com/demo/frest-clean-bootstrap-admin-dashboard-template/html/horizontal-menu-template"
+                                    class="menu-link" target="_blank">
+                                    <div data-i18n="Modul TKI">Modul TKI</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="layouts-without-menu.html" class="menu-link">
+                                    <div data-i18n="Modul TAV">Modul TAV</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="javascript:void(0);" class="menu-link menu-toggle">
                             <i class="menu-icon tf-icons bx bx-file"></i>
-                            <div data-i18n="Data">LSP</div>
+                            <div data-i18n="LSP">LSP</div>
                         </a>
                         <ul class="menu-sub">
 

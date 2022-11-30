@@ -7,6 +7,7 @@ use App\Http\Controllers\LandingController;
 use App\Http\Controllers\DataController;
 use App\Http\Controllers\KakomliController;
 use App\Http\Controllers\LSPController;
+use App\Http\Controllers\ModulController;
 use App\Models\Beranda;
 use Illuminate\Routing\Route as RoutingRoute;
 use Illuminate\Support\Facades\Route;
@@ -254,7 +255,7 @@ Route::get('/kakomli/edit/{id}', [KakomliController::class, 'show']);
 Route::post('/kakomli/update/{id}', [KakomliController::class, 'update']);
 Route::get('/kakomli/deletekakomli/{id}', [KakomliController::class, 'destroy']);
 
-//LSP
+//LSP ADMIN
 Route::get('/index/lsp', [LSPController::class, 'indexlsp'])->name('indexlsp');
 Route::post('/updatelsp/{id}', [LSPController::class, 'edit']);
 
@@ -273,3 +274,8 @@ Route::post('/updateujikomlsp/{id}', [LSPController::class, 'updateujikom']);
 
 Route::get('/index/jmllsp', [LSPController::class, 'jml'])->name('jml');
 Route::post('/updatejmllsp/{id}', [LSPController::class, 'updatejml']);
+
+
+//MODUL ADMIN
+Route::get('/index/modultkr', [ModulController::class, 'modultkr'])->name('modultkr');
+Route::post('/updatemodultkr/{id}', [ModulController::class, 'updatemodultkr']);

@@ -20,24 +20,27 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->call([
-            jurusan::class,
-            profilvisimisi::class,
-            strukturorganisasi::class,
-            dharma::class,
-            kepsek::class,
-            kakomli::class,
-            profilsekolah::class,
-            totalsiswa::class,
-            slider::class,
-            blog::class,
             alumni::class,
-            guru::class,
+            blog::class,
+            dharma::class,
             ekstra::class,
-            videoprofil::class,
-            prestasi::class,
+            guru::class,
+            Jmlpemegang::class,
+            jurusan::class,
+            kakomli::class,
+            kepsek::class,
             LSP::class,
-            Visimisilsp::class,
+            prestasi::class,
+            profilsekolah::class,
+            profilvisimisi::class,
             Skematerlisensi::class,
+            slider::class,
+            strukturorganisasi::class,
+            Tempatujikom::class,
+            totalsiswa::class,
+            videoprofil::class,
+            Visimisilsp::class,
+            
         ]);
     }
 }

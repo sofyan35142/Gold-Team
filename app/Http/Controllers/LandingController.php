@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\alumni;
 use App\Models\Blog;
 use App\Models\Dharma;
-
+use App\Models\Modultkr;
 use App\Models\LSP;
 use App\Models\Visimisilsp;
 use App\Models\ekstra;
@@ -78,7 +78,8 @@ class LandingController extends Controller
     }
     public function modulproduktiftkr()
     {
-        return view("landingpage.jurusan.modulproduktiftkr");
+        $modultkr = Modultkr::where('id', '=', 1)->firstOrFail();
+        return view("landingpage.jurusan.modulproduktiftkr", compact('modultkr'));
     }
     public function reparasibengkel()
     {

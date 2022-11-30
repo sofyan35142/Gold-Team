@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Modul;
+use App\Models\Modultkr;
 use Illuminate\Http\Request;
 
 class ModulController extends Controller
@@ -12,9 +12,10 @@ class ModulController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function modultkr()
     {
-        //
+        $data = Modultkr::where('id', '=', 1)->firstOrFail();
+        return view('Admin.modul.modultkr', compact('data'));
     }
 
     /**
@@ -22,6 +23,13 @@ class ModulController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function updatemodultkr(Request $request)
+    {
+        $data = Modultkr::find($request->id);
+        $data ->update($request->all());
+
+        return redirect('index/modultkr')->with('success', 'Berhasil Di Update');
+    }
     public function create()
     {
         //
@@ -44,7 +52,7 @@ class ModulController extends Controller
      * @param  \App\Models\Modul  $modul
      * @return \Illuminate\Http\Response
      */
-    public function show(Modul $modul)
+    public function show(Modultkr $modul)
     {
         //
     }
@@ -55,7 +63,7 @@ class ModulController extends Controller
      * @param  \App\Models\Modul  $modul
      * @return \Illuminate\Http\Response
      */
-    public function edit(Modul $modul)
+    public function edit(Modultkr $modul)
     {
         //
     }
@@ -67,7 +75,7 @@ class ModulController extends Controller
      * @param  \App\Models\Modul  $modul
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Modul $modul)
+    public function update(Request $request, Modultkr $modul)
     {
         //
     }
@@ -78,7 +86,7 @@ class ModulController extends Controller
      * @param  \App\Models\Modul  $modul
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Modul $modul)
+    public function destroy(Modultkr $modul)
     {
         //
     }
