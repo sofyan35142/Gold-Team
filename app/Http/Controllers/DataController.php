@@ -30,12 +30,18 @@ class DataController extends Controller
             'judul' => $request->judul,
             'deskripsi' => $request->deskripsi,
             'nama' => $request->nama,
-            'foto' => $request->foto
+            'foto' => $request->foto,
+            'foto_pembina' => $request->foto_pembina
         ]);
         // dd($data);
         if ($request->hasFile('foto')) {
             $request->file('foto')->move('fotoekstra/', $request->file('foto')->getClientOriginalName());
             $data->foto = $request->file('foto')->getClientOriginalName();
+            $data->save();
+        }
+        if ($request->hasFile('foto_pembina')) {
+            $request->file('foto_pembina')->move('fotoekstra/', $request->file('foto_pembina')->getClientOriginalName());
+            $data->foto = $request->file('foto_pembina')->getClientOriginalName();
             $data->save();
         }
         return redirect()->route('ekstra')->with('success', 'Berhasil Di Tambahkan');
@@ -63,6 +69,11 @@ class DataController extends Controller
             $data->foto = $request->file('foto')->getClientOriginalName();
             $data->save();
         }
+        if ($request->hasFile('foto_pembina')) {
+                $request->file('foto_pembina')->move('fotoekstra/', $request->file('foto_pembina')->getClientOriginalName());
+                $data->foto = $request->file('foto_pembina')->getClientOriginalName();
+                $data->save();
+        }
 
         return redirect()->route('ekstra')->with('success', 'Berhasil Di Update');
     }
@@ -73,6 +84,8 @@ class DataController extends Controller
         $data->delete();
         return redirect()->route('ekstra')->with('success', 'Berhasil Di Hapus');
     }
+
+
 
 
 

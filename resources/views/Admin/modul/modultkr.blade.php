@@ -96,9 +96,9 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="card mb-4">
-                    <h5 class="card-header">Visi dan Misi LSP</h5>
+                    <h5 class="card-header">Modul Produktif TKR</h5>
                     <div class="card-body">
-                        <form action="/updatevisimisilsp/{{$data->id}}" method="POST" enctype="multipart/form-data">
+                        <form action="/updatemodultkr/{{$data->id}}" method="POST" enctype="multipart/form-data">
                                 @csrf
                         <input type="text" value="{{$data->id}}" name="id" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" hidden/>
                         <div>
@@ -116,16 +116,7 @@
                         <div class="card-body">
                                 <textarea name="deskripsi" id="editor">{!! $data->deskripsi !!}</textarea>
                         </div>
-                        <br/>
-                        <div>
                         
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Foto </label>
-                            <br/>
-                            <img class="img mb-3" src="{{ asset('lsp/' . $data->foto) }}" alt="" style="width: 250px;">
-                            <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto }}">
-                           
-                        </div>
                         <br/>
                         <button type="submit" class="btn rounded-pill btn-primary">Update</button>
                         </form>

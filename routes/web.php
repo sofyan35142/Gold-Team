@@ -7,6 +7,7 @@ use App\Http\Controllers\LandingController;
 use App\Http\Controllers\DataController;
 use App\Http\Controllers\KakomliController;
 use App\Http\Controllers\LSPController;
+use App\Http\Controllers\ModulController;
 use App\Models\Beranda;
 use Illuminate\Routing\Route as RoutingRoute;
 use Illuminate\Support\Facades\Route;
@@ -44,7 +45,7 @@ Route::get('/data/dharmaa', [LandingController::class, 'dharma']);
 Route::get('/data/datawalas', [LandingController::class, 'datawalas']);
 Route::get('/data/ekstraa', [LandingController::class, 'ekstra']);
 Route::get('/data/prestasi', [LandingController::class, 'prestasi']);
-Route::get('/ekstradetail', [LandingController::class, 'detailekstra']);
+Route::get('/ekstradetail/{id}', [LandingController::class, 'detailekstra']);
 Route::get('/prestasidetail', [LandingController::class, 'detailprestasi']);
 
 
@@ -133,6 +134,7 @@ Route::post('/insertstrukturorganisasi', [Admincontroller::class, 'insertstruktu
 Route::get('/index/editstrukturorganisasi/{id}', [Admincontroller::class, 'editstrukturorganisasi']);
 Route::post('/updatestrukturorganisasi/{id}', [Admincontroller::class, 'updatestrukturorganisasi']);
 Route::get('/index/deletestrukturorganisasi/{id}', [AdminController::class, 'deletestrukturorganisasi']);
+<<<<<<< HEAD
 //sekolah adiwiyata
 Route::get('/index/sekolahadiwiyata', [Admincontroller::class, 'sekolahadiwiyata']);
 Route::get('/index/addsekolahadiwiyata', [Admincontroller::class, 'addsekolahadiwiyata']);
@@ -140,6 +142,15 @@ Route::post('/insertsekolahadiwiyata', [Admincontroller::class, 'insertsekolahad
 Route::get('/index/editsekolahadiwiyata/{id}', [Admincontroller::class, 'editsekolahadiwiyata']);
 Route::post('/updatestrukturorganisasi/{id}', [Admincontroller::class, 'updatestrukturorganisasi']);
 Route::get('/index/deletestrukturorganisasi/{id}', [AdminController::class, 'deletestrukturorganisasi']);
+=======
+//Sejarah Singkat
+Route::get('/index/sejarahsingkat', [Admincontroller::class, 'sejarahsingkat'])->name('sejarahsingkat');
+Route::get('/index/addsejarahsingkat', [Admincontroller::class, 'addsejarahsingkat']);
+Route::post('/insertsejarahsingkat', [Admincontroller::class, 'insertsejarahsingkat']);
+Route::get('/sejarahsingkat/edit/{id}', [Admincontroller::class, 'editviewsejarahsingkat']);
+Route::post('/updatesejarahsingkat/{id}', [Admincontroller::class, 'updatesejarahsingkat']);
+Route::get('/sejarahsingkat/delete/{id}', [Admincontroller::class, 'deletesejarahsingkat']);
+>>>>>>> c621696fe8011080ab8f4e75a7c707b1a9c13a64
 // end profil sekolah-admin
 
 
@@ -198,6 +209,14 @@ Route::get('/sponsor/deletesponsor/{id}', [BerandaController::class, 'deletespon
 
 
 
+////////////////////-------------------------VIDEOPROFILE--------------////////////////////
+Route::get('/beranda/videoprofil', [BerandaController::class, 'videoprofil'])->name('videoprofil');
+Route::get('/beranda/editvideo/{id}', [BerandaController::class, 'editvideo']);
+Route::post('/beranda/updatevideo/{id}', [BerandaController::class, 'updatevideo']);
+Route::get('/videoprofil/deletevideo/{id}', [BerandaController::class, 'deletevideo']);
+
+
+
 
 ///////////////-----------------------DataAdmin-------------------------//////////////
 
@@ -243,10 +262,27 @@ Route::get('/kakomli/edit/{id}', [KakomliController::class, 'show']);
 Route::post('/kakomli/update/{id}', [KakomliController::class, 'update']);
 Route::get('/kakomli/deletekakomli/{id}', [KakomliController::class, 'destroy']);
 
-//LSP
+//LSP ADMIN
 Route::get('/index/lsp', [LSPController::class, 'indexlsp'])->name('indexlsp');
 Route::post('/updatelsp/{id}', [LSPController::class, 'edit']);
 
 
 Route::get('/index/visimisilsp', [LSPController::class, 'visimisilsp'])->name('visimisilsp');
 Route::post('/updatevisimisilsp/{id}', [LSPController::class, 'editlsp']);
+
+
+Route::get('/index/skemalsp', [LSPController::class, 'skemalsp'])->name('skemalsp');
+Route::post('/updateskemalsp/{id}', [LSPController::class, 'updateskemalsp']);
+
+
+Route::get('/index/ujikomlsp', [LSPController::class, 'ujikom'])->name('ujikom');
+Route::post('/updateujikomlsp/{id}', [LSPController::class, 'updateujikom']);
+
+
+Route::get('/index/jmllsp', [LSPController::class, 'jml'])->name('jml');
+Route::post('/updatejmllsp/{id}', [LSPController::class, 'updatejml']);
+
+
+//MODUL ADMIN
+Route::get('/index/modultkr', [ModulController::class, 'modultkr'])->name('modultkr');
+Route::post('/updatemodultkr/{id}', [ModulController::class, 'updatemodultkr']);

@@ -43,11 +43,11 @@
                         <form action="/insertekstra" method="POST" enctype="multipart/form-data">
                                 @csrf
                         <div>
-                        <label for="defaultFormControlInput" class="form-label">judul</label>
+                        <label for="defaultFormControlInput" class="form-label">Judul Ekstra</label>
                         <input type="text" name="judul" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" />
                         </div>
                         <div>
-                        <label for="defaultFormControlInput" class="form-label">nama</label>
+                        <label for="defaultFormControlInput" class="form-label">Nama Pembina</label>
                         <input type="text" name="nama" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" />
                         </div>
                         <br/>
@@ -65,6 +65,11 @@
                             <label for="exampleInputEmail1" class="form-label">Upload Foto Ekstra</label>
 
                             <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Upload Foto Pembina</label>
+
+                            <input type="file" name="foto_pembina" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>
                         <button type="submit" class="btn rounded-pill btn-primary">Submit</button>
                         </form>

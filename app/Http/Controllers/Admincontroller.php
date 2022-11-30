@@ -4,7 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Models\profilsekolah;
 use App\Models\profilvisimisi;
+<<<<<<< HEAD
 use App\Models\sekolahadiwiyata;
+=======
+use App\Models\sejarahsingkat;
+>>>>>>> c621696fe8011080ab8f4e75a7c707b1a9c13a64
 use App\Models\strukturorganisasi;
 use Illuminate\Http\Request;
 
@@ -167,6 +171,7 @@ class Admincontroller extends Controller
         return redirect()->route('strukturorganisasi')->with('success', 'Berhasil Di Hapus');
     }
     // end profil/strukturorganisasi
+<<<<<<< HEAD
     // start profil/sekolahadiwiyata
     public function sekolahadiwiyata()
     {
@@ -192,5 +197,61 @@ class Admincontroller extends Controller
         
     }
     // end profil/sekolahadiwiyata
+=======
+
+    public function sejarahsingkat(){
+        $data=sejarahsingkat::all();
+        return view('Admin.profil.sejarahsingkat.sejarahsingkat', compact('data'));
+    }
+    public function addsejarahsingkat(){
+        return view('Admin.profil.sejarahsingkat.addsejarahsingkat');
+    }
+    public function insertsejarahsingkat(Request $request)
+    {
+        $data = sejarahsingkat::create([
+            'judul' => $request->judul,
+            'isi_artikel' => $request->isi_artikel,
+            'judul_fotoside' => $request->judul_fotoside,
+            'foto_side' => $request->foto_side,
+        ]);
+        // dd($data);
+        if ($request->hasFile('foto-side')) {
+            $request->file('foto_side')->move('fotosejarah/', $request->file('foto_side')->getClientOriginalName());
+            $data->foto_side = $request->file('foto_side')->getClientOriginalName();
+            $data->save();
+        }
+        return redirect()->route('sejarahsingkat')->with('success', 'Berhasil Di Tambahkan');
+    }
+    public function editviewsejarahsingkat($id)
+    {
+        $data = sejarahsingkat::findorfail($id);
+        return view('Admin.profil.sejarahsingkat.editsejarahsingkat', compact('data'));
+    }
+    public function updatesejarahsingkat(Request $request, $id)
+    {
+
+        $data = sejarahsingkat::find($id);
+        $data->update([
+            'judul' => $request->judul,
+            'isi_artikel' => $request->isi_artikel,
+            'judul_fotoside' => $request->judul_fotoside
+        ]);
+        // dd($data);
+        if ($request->hasFile('foto_side')) {
+            $request->file('foto_side')->move('fotosejarah/', $request->file('foto_side')->getClientOriginalName());
+            $data->foto_side = $request->file('foto_side')->getClientOriginalName();
+            $data->save();
+        }
+        return redirect()->route('sejarahsingkat')->with('success', 'Berhasil Di Edit');
+    }
+
+    public function deletesejarahsingkat($id)
+    {
+        $data = sejarahsingkat::find($id);
+        $data->delete();
+        return redirect()->route('sejarahsingkat')->with('success', 'Berhasil Di Hapus');
+    }
+
+>>>>>>> c621696fe8011080ab8f4e75a7c707b1a9c13a64
     ///////////////////// END PROFIL LANDINGPAGE ADMIN ///////////////////////////
 }

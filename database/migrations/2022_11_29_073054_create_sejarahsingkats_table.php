@@ -13,13 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-         Schema::create('ekstras', function (Blueprint $table) {
+        Schema::create('sejarahsingkats', function (Blueprint $table) {
             $table->id();
             $table->string('judul');
-            $table->string('nama');
-            $table->text('deskripsi');
-            $table->string('foto');
-            $table->string('foto_pembina');
+            $table->text('isi_artikel');
+            $table->string('judul_fotoside');
+            $table->string('foto_side');
             $table->timestamps();
         });
     }
@@ -31,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('sejarahsingkats');
     }
 };

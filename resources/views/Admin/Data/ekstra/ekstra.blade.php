@@ -50,7 +50,8 @@
       <th scope="col">Judul</th>
       <th scope="col">Nama</th>
       <th  scope="col">Deskripsi</th>
-      <th scope="col">Foto</th>
+      <th  scope="col">Foto</th>
+      <th scope="col">Foto Pembina</th>
       <th scope="col">Aksi</th>
     </tr>
   </thead>
@@ -64,6 +65,9 @@
         <td style="word-break:break-word;">{!! $ekstra->deskripsi !!}</td>
         <td>
             <img src="{{ asset('fotoekstra/' . $ekstra->foto) }}" alt="" style="width: 80px; height:80px;">
+        </td>
+        <td>
+            <img src="{{ asset('fotoekstra/' . $ekstra->foto_pembina) }}" alt="" style="width: 80px; height:80px;">
         </td>
 
 

@@ -55,30 +55,24 @@
 
     <div class="service-details-area main-service-area pt-100 services-details-page">
         <div class="container">
+            @foreach ($detailekstra as $data)
+
+
             <div class="row">
                 <div class="col-lg-8">
-                    <img src="../ekstra/paskib.jpg" alt="service">
+                    <img src="{{ asset('fotoekstra/' . $data->foto) }}" alt="service">
                     <div class="service-details-post">
-                        <h3>PASKIBRAKA<span class="tkrfont"> (pasketsu)</span></h3>
-                        <p>Paskibraka adalah singkatan dari Pasukan Pengibar Bendera Pusaka yang di mana anggotanya bertugas melaksanakan pengibaran dan/atau penurunan duplikat sang saka merah putih pada upacara peringatan Hari Kemerdekaan Republik Indonesia di tingkat kota/kabupaten, provinsi, dan/atau nasional. Setelah melaksanakan tugasnya, mereka akan disebut sebagai Purna Paskibraka. <br>
-                            Dalam organisasi kepaskibrakaan, terdapat dua lambang, yang pertama adalah lambang Paskibraka/Paskibra yang bergambarkan dua pemuda/pemudi paskibraka menengok kekanan dengan seragam Pakaian Dinas Upacara (PDU) putih yang adalah lambang untuk anggota Paskibraka/Paskibra aktif yang sedang bertugas. Lambang ini dipasang di lengan sebelah kanan seragam PDU Paskibraka yang sedang bertugas.
-Sedangkan untuk Paskibraka yang telah melaksanakan tugasnya di tingkat Kota/Kabupaten, Provinsi dan Nasional, mereka berlambangkan Purna Paskibraka Indonesia (PPI) yang berlambangkan daun dan bunga teratai. <b>Penjelasan lambangnya sebagai berikut:</b>
-                        </p>
-<li>tiga helai daun yang tumbuh ke atas: artinya paskibraka harus belajar, bekerja, dan berbakti</li>
-<li>tiga helai daun yang tumbuh mendatar/samping: artinya seorang pakibra harus aktif, disiplin, dan bergembira.</li>
-
-<p>
-    Artinya adalah bahwa setiap anggota paskibraka memiliki jiwa yang sangat mulia. dan mengapa Lambang Anggota Paskibraka dilambangkan dengan Bunga Teratai. Karena Bunga Teratai tumbuh di lumpur dan berkembang diatas air yang bermakna bahwa anggota Paskibraka adalah pemuda dan pemudi yang tumbuh dari (Orang Biasa) tanah air yang sedang bermekar/berkembang dan membangun.
-</p>
+                        <h3>{{ $data->judul }}</h3>
+                        <p>{!! $data->deskripsi !!}</p>
 
                     </div>
                     <div class="service-details-post">
 
-                        <h3>Pembina Paskibra Sketsu</h3>
+                        <h3>Pembina</h3>
                         <div class="d-flex flex-row">
                             <div class="p-2"><img class="img-guru"
-                                    src="https://smkn1sukorejo.sch.id/wp-content/uploads/2022/06/IMG_20190502_113510-Mas-Chaiyi-scaled.jpg" />
-                            <b>M. Chaiyi</b>
+                                    src="{{ asset('fotoekstra/' . $data->foto_pembina) }}" style="height: 10pc" />
+                            <b>{{ $data->nama }}</b>
                             </div>
                         </div>
                     </div>
@@ -135,6 +129,7 @@ Sedangkan untuk Paskibraka yang telah melaksanakan tugasnya di tingkat Kota/Kabu
                     </div>
                 </div>
             </div>
+            @endforeach
         </div>
     </div>
 

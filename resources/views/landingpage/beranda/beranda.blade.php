@@ -137,6 +137,7 @@
                     <div class="col-lg-6 p-0">
                         <div class="about-img">
                             <div class="img-box5">
+<<<<<<< HEAD
                                 <div class="img-blog"><img class="fotokepsek" src="fotoblog/rudi.png"alt="about">
                                 </div>
                                 <div class="shape"><img src="fotoblog/1.png"alt="shape"></div>
@@ -153,6 +154,26 @@
                             </div>
                         </div>
                     </div>
+=======
+                                <div class="img-blog"><img class="fotokepsek"
+                                        src="{{ asset('kepsek/' . $kepsek->foto) }}"alt="about"
+                                        style="height: 28pc;"> <br>
+                                    <center><b>{{ $kepsek->nama }}</b></center>
+                                </div>
+                                <div class="shape"><img src="fotoblog/1.png"alt="shape"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-text">
+                            <div class="section-head">
+                                <h2>Sambutan Kepala Sekolah</h2>
+                                <p>{!! $kepsek->sambutan !!}</p>
+                            </div>
+                        </div>
+                    </div>
+>>>>>>> c621696fe8011080ab8f4e75a7c707b1a9c13a64
 
                 </div>
             @endforeach
@@ -162,10 +183,13 @@
 
     <div class="service-style-three pt-100 pb-70">
         <div class="container">
+            @foreach ($video as $profil)
+
+
             <div class="row align-items-center">
                 <div class="col-lg-6 p-0">
                     <div class="about-img">
-                        <img src="../guru/video.svg" alt="about image">
+                        <img src="{{ asset('videoprofil/' . $profil->foto) }}" alt="about image">
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -173,14 +197,9 @@
                         <div class="section-head">
                             <span><b>Bro, Nonton!</b></span>
                             <br>
-                            <h3> Video Profil Sketsu</h3>
+                            <h3>{{ $profil->judul }}</h3>
                             <br>
-                            <p>Video srofil sekolah memperkenalkan kepada kalian hal-hal berkaitan dengan Kejurusan,
-                                lingkungan sekolah , fasilitas umum sekolah, fasilitas pembelajaran (kelas,lab,dll),
-                                ruang belajar, kegiatan siswa, dan masih banyak lagi. <br>
-
-                                Biar kalian tidak penasaran apa saja yang ada di dalam SMK NEGERI 1 SUKOREJO, segera
-                                tonton video profilnya. Jangan Sampai Tidak Ditonton Nanti Menyesal.</p>
+                            <p>{!! $profil->deskripsi !!}</p>
                         </div>
                         <div class="theme-button text-left play-video">
                             <a href="#" class="btn btn-danger"><i class="fa-sharp fa-solid fa-play"></i>
@@ -204,6 +223,7 @@
                     </div>
                 </div>
             </div>
+             @endforeach
         </div>
     </div>
     <div class="counter-style-two pt-100 pb-70">

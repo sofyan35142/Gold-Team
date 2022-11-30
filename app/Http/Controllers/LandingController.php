@@ -5,20 +5,25 @@ namespace App\Http\Controllers;
 use App\Models\alumni;
 use App\Models\Blog;
 use App\Models\Dharma;
-
+use App\Models\Modultkr;
 use App\Models\LSP;
 use App\Models\Visimisilsp;
 use App\Models\ekstra;
 use App\Models\Guru;
+use App\Models\Jmlpemegang;
 use App\Models\Jurusan;
 use App\Models\kepsek;
 use App\Models\Kakomli;
+use App\Models\prestasi;
 use App\Models\profilsekolah;
 use Illuminate\Http\Request;
 use App\Models\profilvisimisi;
+use App\Models\Skematerlisensi;
 use App\Models\slider;
 use App\Models\sponsor;
+use App\Models\Tempatujikom;
 use App\Models\totalsiswa;
+use App\Models\videoprofil;
 
 class LandingController extends Controller
 {
@@ -30,7 +35,8 @@ class LandingController extends Controller
         $data=Blog::all();
         $datakepsek=kepsek::all();
         $total=totalsiswa::all();
-        return view("landingpage.beranda.beranda", compact('data','dataa','datakepsek','total','slider','sponsor'));
+        $video=videoprofil::all();
+        return view("landingpage.beranda.beranda", compact('data','dataa','datakepsek','total','slider','sponsor','video'));
     }
 
     public function create()
@@ -72,7 +78,8 @@ class LandingController extends Controller
     }
     public function modulproduktiftkr()
     {
-        return view("landingpage.jurusan.modulproduktiftkr");
+        $modultkr = Modultkr::where('id', '=', 1)->firstOrFail();
+        return view("landingpage.jurusan.modulproduktiftkr", compact('modultkr'));
     }
     public function reparasibengkel()
     {
@@ -110,13 +117,21 @@ class LandingController extends Controller
         $visi = Visimisilsp::where('id', '=', 1)->firstOrFail();
         return view("landingpage.lsp.visimisilsp", compact('visi'));
     }
+    public function skematerlisensi()
+    {
+        $skema = Skematerlisensi::where('id', '=', 1)->firstOrFail();
+        return view("landingpage.lsp.skematerlisensi", compact('skema'));
+    }
     public function tempatujikom()
     {
-        return view("landingpage.lsp.tempatujikom");
+        $ujikom = Tempatujikom::where('id', '=', 1)->firstOrFail();
+        
+        return view("landingpage.lsp.tempatujikom", compact('ujikom'));
     }
     public function jmlpemegangsertifikat()
     {
-        return view("landingpage.lsp.jmlpemegangsertifikat");
+        $jml = Jmlpemegang::where('id', '=', 1)->firstOrFail();
+        return view("landingpage.lsp.jmlpemegangsertifikat", compact('jml'));
     }
 
     //start profil Sekolah
@@ -234,10 +249,12 @@ class LandingController extends Controller
         return view('landingpage.Data.Ekstrakulikuler', compact('data'));
     }
     public function prestasi(){
-        return view('landingpage.Data.prestasi');
+        $prestasi=prestasi::all();
+        return view('landingpage.Data.prestasi', compact('prestasi'));
     }
-    public function detailekstra(){
-        return view('landingpage.Data.detailekstra');
+    public function detailekstra($id){
+        $detailekstra=ekstra::where('id',$id)->get();
+        return view('landingpage.Data.detailekstra', compact('detailekstra'));
     }
     public function detailprestasi(){
         return view('landingpage.Data.detailprestasi');
