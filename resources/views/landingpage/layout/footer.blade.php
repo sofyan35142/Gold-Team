@@ -150,10 +150,10 @@
                 <div class="footer-widget">
                     <div class="logo">
                         <a href="index.html">
-                            <img src="../assets/img/logo-2.png" alt="logo">
+                            <img src="../foto/footer.png" alt="logo">
                         </a>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, tur adipiscing elit, sed do eiusmod tempor contratc.</p>
+                    {{-- <p>Lorem ipsum dolor sit amet, tur adipiscing elit, sed do eiusmod tempor contratc.</p> --}}
                     <div class="email">
                         <form class="newsletter-form" data-bs-toggle="validator">
                             <input type="email" class="form-control" placeholder="Enter Your Email" name="EMAIL"
@@ -172,23 +172,23 @@
                     <ul>
                         <li>
                             <i class="icofont-simple-right"></i>
-                            <a href="service-details.html">Low cost</a>
+                            <a href="service-details.html">Peringatan Hari Guru</a>
                         </li>
                         <li>
                             <i class="icofont-simple-right"></i>
-                            <a href="service-details.html">Fastest Service</a>
+                            <a href="service-details.html">Branchmarking</a>
                         </li>
                         <li>
                             <i class="icofont-simple-right"></i>
-                            <a href="service-details.html">Professional Cleaning</a>
+                            <a href="service-details.html">Penemuan Lanjutan </a>
                         </li>
                         <li>
                             <i class="icofont-simple-right"></i>
-                            <a href="service-details.html">Home Cleaning</a>
+                            <a href="service-details.html">Penandatanganan MOU </a>
                         </li>
                         <li>
                             <i class="icofont-simple-right"></i>
-                            <a href="service-details.html">Office Cleaning</a>
+                            <a href="service-details.html">Lowongan Kerja BTPN</a>
                         </li>
                     </ul>
                 </div>
@@ -226,17 +226,17 @@
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="footer-widget">
-                    <h3>Find Us</h3>
-                    <p class="find-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed</p>
+                    <h3>Temukan Kami</h3>
+                    {{-- <p class="find-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed</p> --}}
                     <ul class="find-us">
                         <li>
                             <i class="icofont-location-pin"></i>
-                            28/A Street, New York City
+                            Jl. Sumbergareng, Krajan, Sukorejo, Kec. Sukorejo, Pasuruan, Jawa Timur 67161
                         </li>
                         <li>
                             <i class="icofont-phone"></i>
                             <a href="tel:+88 0123 456 789">
-                                +88 0123 456 789
+                                (0343) 7727315
                             </a>
                         </li>
                         <li>
@@ -244,7 +244,7 @@
                             <a
                                 href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#30595e565f70465943535f45431e535f5d">
                                 <span class="__cf_email__"
-                                    data-cfemail="a7cec9c1c8e7d1ced4c4c8d2d489c4c8ca">[email&#160;protected]</span>
+                                    data-cfemail="a7cec9c1c8e7d1ced4c4c8d2d489c4c8ca">smknsukorejo@yahoo.com</span>
                             </a>
                         </li>
                     </ul>
