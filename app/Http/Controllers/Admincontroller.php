@@ -190,7 +190,7 @@ class Admincontroller extends Controller
         return redirect('/index/sekolahadiwiyata')->with('success', 'data berhasil ditambahkan');
     }
     public function editsekolahadiwiyata(){
-        
+
     }
     // end profil/sekolahadiwiyata
 

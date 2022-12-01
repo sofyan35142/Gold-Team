@@ -48,6 +48,7 @@
     <tr>
       <th scope="col">No.</th>
       <th scope="col">Judul</th>
+      <th scope="col">Kategori</th>
       <th scope="col">Deskripsi</th>
       <th scope="col">Foto</th>
       <th scope="col">Aksi</th>
@@ -59,6 +60,7 @@
 <tr>
         <td>{{ $no }}</td>
         <td>{{ $blog->judul }}</td>
+        <td>{{  $blog->idblog->kategori }}</td>
         <td>{!! $blog->deskripsi !!}</td>
         <td>
             <img src="{{ asset('blog/' . $blog->foto) }}" alt="" style="width: 80px; height:80px;">

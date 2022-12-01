@@ -65,21 +65,21 @@
                             <div data-i18n="Dashboards">Dashboards</div>
                         </a>
                         <ul class="menu-sub">
-                            <li class="menu-item active">
-                                <a href="index.html" class="menu-link">
-                                    <div data-i18n="Analytics">Analytics</div>
+                            <li class="menu-item">
+                                <a href="/index" class="menu-link">
+                                    <div data-i18n="Index">Index</div>
                                 </a>
                             </li>
-                            <li class="menu-item">
+                            {{-- <li class="menu-item">
                                 <a href="dashboards-ecommerce.html" class="menu-link">
                                     <div data-i18n="eCommerce">eCommerce</div>
                                 </a>
-                            </li>
+                            </li> --}}
                         </ul>
                     </li>
 
                     <!-- Layouts -->
-                    <li class="menu-item">
+                    {{-- <li class="menu-item">
                         <a href="javascript:void(0);" class="menu-link menu-toggle">
                             <i class="menu-icon tf-icons bx bx-layout"></i>
                             <div data-i18n="Layouts">Layouts</div>
@@ -134,7 +134,7 @@
                                 </a>
                             </li>
                         </ul>
-                    </li>
+                    </li> --}}
 
                     <!-- Apps & Pages -->
                     <li class="menu-item">
@@ -156,6 +156,11 @@
                             <li class="menu-item">
                                 <a href="/beranda/blog" class="menu-link">
                                     <div data-i18n="blog">blog</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="/kategoriblog" class="menu-link">
+                                    <div data-i18n="Kategori">Kategori</div>
                                 </a>
                             </li>
                             <li class="menu-item">
@@ -337,7 +342,7 @@
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a href="pages-pricing.html" class="menu-link">
+                                <a href="/data/walas" class="menu-link">
                                     <div data-i18n="Walas">Walas</div>
                                 </a>
                             </li>

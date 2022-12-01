@@ -41,12 +41,12 @@
     <div class="blog-details-area blog-details-page-area pt-100">
         <div class="container">
             <div class="row">
+                @foreach ($detailprestasi as $prestasi)
                 <div class="col-lg-8">
-
                     <div class="blog-details-post">
                         <div class="blog-post-title">
                             <h3>
-                                LKBB TINGKAT KABUPATEN
+                                {{ $prestasi->nama_lomba }}
                             </h3>
                             <ul>
                                 <li>
@@ -55,14 +55,14 @@
                                 </li>
                                 <li>
                                     <i class="icofont-ui-user"></i>
-                                    <a href="#">John Doe</a>
+                                    <a href="#">{{ $prestasi->nama_pemenang }}</a>
                                 </li>
                             </ul>
                         </div>
-                        <p> Siswa SMK Telkom Malang gak cuma jago di bidang IT aja. Banyak prestasi di bidang non IT salah satu buktinya yaitu siswi yang berhasil meraih Juara 1 Baca Puisi oleh Diftahul Firdaus Zulfarinda. Meskipun pandemi, Mokleters tetap produktif dan berprestasi. Proud of you!!</p>
-                             <img src="../prestasi/paskib.jpeg" alt="service">
+                        <p>{!! $prestasi->deskripsi !!}</p>
+                             <img src="{{ asset('prestasi/' . $prestasi->foto) }}" alt="service">
                     </div>
-
+@endforeach
                     <div class="page-button">
                         <div class="row">
                             <div class="col-md-3">
@@ -86,64 +86,23 @@
                 </div>
                 <div class="col-lg-4 main-service-area blog-side-bar">
                     <div class="service-sidebar">
-                        <form class="search-form">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Search">
-                                <button type="submit" class="btn btn-primary">
-                                    <i class="icofont-search-1"></i>
-                                </button>
-                            </div>
-                        </form>
                         <div class="service-list">
-                            <p>Categories</p>
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        Toilet Cleaning
-                                        <i class="icofont-rounded-right"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Stay Hygienic
-                                        <i class="icofont-rounded-right"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        News
-                                        <i class="icofont-rounded-right"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Cleaning Floor
-                                        <i class="icofont-rounded-right"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Cleaning Kitchen
-                                        <i class="icofont-rounded-right"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Wash Home
-                                        <i class="icofont-rounded-right"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="tags">
-                            <p>Most Popular Tags</p>
-                            <a href="#">Enjoy</a>
-                            <a href="#">Clean</a>
-                            <a href="#">Hygienic</a>
-                            <a href="#">Time</a>
-                            <a href="#">Brush</a>
-                            <a href="#">Wash</a>
-                            <a href="#">Call</a>
+                            <p>Berita Terbaru</p>
+                            @foreach ($prestasiside as $prestasi)
+
+                            <div class="sidebar-post-inner">
+                                <a style="margin-bottom: 15px">
+                                    <div class="image-widget-post">
+                                        <img class="img-detailblog" src="{{ asset('prestasi/'. $prestasi->foto) }}" alt="">
+                                    </div>
+
+                                    <div class="info-widget-post">
+                                        <h5>{{ $prestasi->nama_lomba }}</h5>
+                                        <small>04 November 2022</small>
+                                    </div>
+                                </a>
+                            </div>
+                            @endforeach
                         </div>
                     </div>
                 </div>

@@ -37,7 +37,7 @@ Route::get('/keahlian', [LandingController::class, 'keahlian']);
 Route::get('/lokerbkk', [LandingController::class, 'lokerbkk']);
 Route::get('/agenda', [LandingController::class, 'agenda']);
 Route::get('/guruu', [LandingController::class, 'guru']);
-Route::get('/agendadetail', [LandingController::class, 'agendadetail']);
+Route::get('/blogdetail/{id}', [LandingController::class, 'blogdetail']);
 Route::get('/blogbanyak', [LandingController::class, 'blogbanyak']);
 
 //DATA
@@ -46,7 +46,7 @@ Route::get('/data/datawalas', [LandingController::class, 'datawalas']);
 Route::get('/data/ekstraa', [LandingController::class, 'ekstra']);
 Route::get('/data/prestasi', [LandingController::class, 'prestasi']);
 Route::get('/ekstradetail/{id}', [LandingController::class, 'detailekstra']);
-Route::get('/prestasidetail', [LandingController::class, 'detailprestasi']);
+Route::get('/prestasidetail/{id}', [LandingController::class, 'detailprestasi']);
 
 
 // ==ROUTE ALUMNI==//
@@ -242,6 +242,14 @@ Route::get('/data/editdharma/{id}', [DataController::class, 'editdharma']);
 Route::post('/data/updatedharma/{id}', [DataController::class, 'updatedharma']);
 Route::get('/data/deletedharma/{id}', [DataController::class, 'deletedharma']);
 
+//DATAWALAS
+Route::get('/data/walas', [DataController::class, 'walas'])->name('walas');
+Route::get('/data/tambahwalas', [DataController::class, 'tambahwalas']);
+Route::post('/insertwalas', [DataController::class, 'insertwalas']);
+Route::get('/data/editwalas/{id}', [DataController::class, 'editwalas']);
+Route::post('/data/updatewalas/{id}', [DataController::class, 'updatewalas']);
+Route::get('/data/deletewalas/{id}', [DataController::class, 'deletewalas']);
+
 
 //Prestasi
 Route::get('/data/prestasii', [DataController::class, 'prestasi'])->name('prestasi');
@@ -286,8 +294,21 @@ Route::get('/index/modultkr', [ModulController::class, 'modultkr'])->name('modul
 Route::post('/updatemodultkr/{id}', [ModulController::class, 'updatemodultkr']);
 
 
+<<<<<<< HEAD
+
+
+
+///////////////////////////////----------------Kategori Blog----------------/////////////////////////---------------------
+Route::get('/kategoriblog', [DataController::class, 'kategoriblog'])->name('kategoriblog');
+Route::get('/tambahkategoriblog', [DataController::class, 'tambahkategoriblog']);
+Route::post('/insertkategoriblog', [DataController::class, 'insertkategoriblog']);
+Route::get('/editkategoriblog/{id}', [DataController::class, 'editkategoriblog']);
+Route::post('/updatekategoriblog/{id}', [DataController::class, 'updatekategoriblog']);
+Route::get('/deletekategoriblog/{id}', [DataController::class, 'deletekategoriblog']);
+=======
 Route::get('/index/modultei', [ModulController::class, 'modultei'])->name('modultei');
 Route::post('/updatemodultei/{id}', [ModulController::class, 'updatemodultei']);
+<<<<<<< HEAD
 
 Route::get('/index/modul', [ModulController::class, 'modul'])->name('modul');;
 Route::get('/index/tambahmodul', [ModulController::class, 'create']);
@@ -308,3 +329,6 @@ Route::get('/reparasi/deletereparasi/{id}', [ModulController::class, 'destroyrep
 
 Route::get('/index/artikel', [ModulController::class, 'artikel'])->name('artikel');
 Route::post('/updateartikel/{id}', [ModulController::class, 'editartikel']);
+=======
+>>>>>>> cede505f4b0bac0c078ab8417cbd9e3abe53d8a1
+>>>>>>> e5ac8ba1d2b9757f6bac3d5f2d5428dd8d155eca

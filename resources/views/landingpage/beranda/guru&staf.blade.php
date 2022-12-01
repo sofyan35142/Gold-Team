@@ -19,14 +19,14 @@
             <div class="d-table-cell">
                 <div class="container">
                     <div class="team-title-text">
-                        <h2>Our Team Members</h2>
+                        <h2>Data Guru & Karyawan</h2>
                         <ul>
                             <li>
                                 <a href="index.html">Home</a>
                             </li>
                             <li>
                                 <i class="icofont-rounded-double-right"></i>
-                                Team Members
+                                Data Guru
                             </li>
                         </ul>
                     </div>
@@ -61,11 +61,6 @@
                                     </div>
                                 </div>
                             </div>
-                            {{-- <div class="team-social">
-                                <a href="#"><i class="icofont-facebook"></i></a>
-                                <a href="#"><i class="icofont-twitter"></i></a>
-                                <a href="#"><i class="icofont-instagram"></i></a>
-                            </div> --}}
                         </div>
                         <div class="team-text">
                             <h4>{{ $guru->nama }}</h4>
@@ -74,121 +69,6 @@
                     </div>
                 </div>
                 @endforeach
-
-
-                {{-- <div class="col-lg-3 col-md-6">
-                    <div class="team-card">
-                        <div class="team-img">
-                            <img class="imgguru" src="../guru/titik.jpg" alt="team member">
-                            <div class="team-social">
-                                <a href="#"><i class="icofont-facebook"></i></a>
-                                <a href="#"><i class="icofont-twitter"></i></a>
-                                <a href="#"><i class="icofont-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="team-text">
-                            <h4>TITIK CHOMZAH, <br> S.Pd</h4>
-                            <p> WAKA KURIKULUM</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-card">
-                        <div class="team-img">
-                            <img class="imgguru" src="../guru/asnah.jpg" alt="team member">
-                            <div class="team-social">
-                                <a href="#"><i class="icofont-facebook"></i></a>
-                                <a href="#"><i class="icofont-twitter"></i></a>
-                                <a href="#"><i class="icofont-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="team-text">
-                            <h4>ASNAH YUNIARTI, <br> S.Pd</h4>
-                            <p>WAKA SARANA DAN PRASARANA</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-card">
-                        <div class="team-img">
-                            <img class="imgguru" src="../guru/elly.jpg" alt="team member">
-                            <div class="team-social">
-                                <a href="#"><i class="icofont-facebook"></i></a>
-                                <a href="#"><i class="icofont-twitter"></i></a>
-                                <a href="#"><i class="icofont-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="team-text">
-                            <h4>ELLYA MAGHFIRLI, <br> S.Pd</h4>
-                            <p>WAKA KESISWAAN</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-card">
-                        <div class="team-img">
-                            <img class="imgguru" src="../guru/joko.jpg" alt="team member">
-                            <div class="team-social">
-                                <a href="#"><i class="icofont-facebook"></i></a>
-                                <a href="#"><i class="icofont-twitter"></i></a>
-                                <a href="#"><i class="icofont-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="team-text">
-                            <h4>JOKO SISWANTO, S.T., M.Pd</h4>
-                            <p>WAKA HUMAS DAN <br> HKI</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-card">
-                        <div class="team-img">
-                            <img class="imgguru" src="../guru/rohmad.jpg" alt="team member">
-                            <div class="team-social">
-                                <a href="#"><i class="icofont-facebook"></i></a>
-                                <a href="#"><i class="icofont-twitter"></i></a>
-                                <a href="#"><i class="icofont-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="team-text">
-                            <h4>ROHMAD MUNANDAR, S.Pd</h4>
-                            <p>KAKOMLI TEKNIK KENDARAAN RINGAN</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-card">
-                        <div class="team-img">
-                            <img class="imgguru" src="../guru/hanny.jpg" alt="team member">
-                            <div class="team-social">
-                                <a href="#"><i class="icofont-facebook"></i></a>
-                                <a href="#"><i class="icofont-twitter"></i></a>
-                                <a href="#"><i class="icofont-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="team-text">
-                            <h4>HANIK MUALLIFAH, <br> S.T</h4>
-                            <p>KAKOMLI TEKNIK KIMIA <br> INDUSTRI</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-card">
-                        <div class="team-img">
-                            <img class="imgguru" src="../guru/sofan.jpg" alt="team member">
-                            <div class="team-social">
-                                <a href="#"><i class="icofont-facebook"></i></a>
-                                <a href="#"><i class="icofont-twitter"></i></a>
-                                <a href="#"><i class="icofont-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="team-text">
-                            <h4>SOFAN DEDI PRINYATO, S.Pd., Gr</h4>
-                            <p>KAKOMLI TEKNIK ELEKTRONIKA INDUSTRI</p>
-                        </div>
-                    </div>
-                </div>
-            </div> --}}
             <nav>
                 <ul class="pagination  justify-content-center">
                     <li class="page-item disabled">

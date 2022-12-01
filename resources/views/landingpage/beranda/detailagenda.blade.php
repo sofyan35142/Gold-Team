@@ -42,11 +42,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
+                    @foreach ($data as $blog)
+
 
                     <div class="blog-details-post">
                         <div class="blog-post-title">
                             <h3>
-                                PENUTUPAN PEKAN P5 – UNJUK HASIL KEWIRAUSAHAAN & KREASI SENI
+                                {{ $blog->judul }}
                             </h3>
 
                             <ul>
@@ -56,30 +58,13 @@
                                 </li>
                                 <li>
                                     <i class="icofont-ui-user"></i>
-                                    <a href="#">John Doe</a>
+                                    <a href="#">{{ $blog->idblog->kategori }}</a>
                                 </li>
                             </ul>
 
-                            <img class="img-detail" src="../blog/detail1.png" alt="service">
+                            <img class="img-detail" src="{{ asset('blog/' . $blog->foto) }}" alt="service">
                         </div>
-                        <p> Pekan P5 (Projek Penguatan Profil Pelajar Pancasila) telah ditutup pada tanggal 27 Oktober
-                            2022 kemarin. Penutupan diisi dengan berbagai kegiatan diantaranya yaitu : <br>
-
-                            1.Unjuk hasil wirausaha <br>
-                            2.Kreasi seni <br>
-                            Para peserta didik SMK Negeri 1 Sukorejo saling berlomba memasarkan hasil wirausaha dalam
-                            kegiatan bazar yang diramaikan juga oleh Bapak Ibu Guru dan Bapak Kepala Sekolah. Beraneka
-                            macam jajanan dan minuman hasil kreativitas peserta didik dipamerkan dan dijual dalam bazar
-                            penutupan pekan P5. <br>
-
-                            Setelah puas mengisi perut, baik peserta didik maupun guru dapat langsung menyaksikan kreasi
-                            seni yang dibawakan oleh masing-masing perwakilan kelas. Berbagai jenis pertunjukan turut
-                            meramaikan serunya kegiatan penutupan P5 ini, mulai dari drama, dance hingga tarian
-                            tradisional. <br>
-
-                            Dengan ditutupnya pekan P5 bukan berarti Projek Penguatan Profil Pelajar Pancasila juga
-                            berakhir, namun dengan adanya perayaan ini diharap peserta didik dapat lebih mampu meresapi
-                            makna yang terkandung dalam program P5.</p>
+                        <p>{{ $blog->deskripsi }}</p>
                         <center>
                             <h3>Gallery</h3>
                         </center>
@@ -92,6 +77,7 @@
                             <div class="p-2"> <img src="../blog/detail5.png" alt=""> </div>
                         </div>
                     </div>
+                    @endforeach
                     <div class="page-button">
                         <div class="row">
                             <div class="col-md-3">
@@ -115,88 +101,41 @@
                 </div>
                 <div class="col-lg-4 main-service-area blog-side-bar">
                     <div class="service-sidebar">
+
+
+
                         <div class="service-list">
+
                             <p class="sidetitle">Kategori Berita</p>
+
                             <ul>
+
                                 <li class="hcard overflow-auto">
+                                     @foreach ($kategoriblog as $kategori)
                                     <a class="colorori mb-2" href="#">
                                         <i class="icofont-rounded-right iknrounded"></i>
-                                        Agenda Sekolah
+                                        {{ $kategori->kategori }}
                                     </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Informasi Sekolah
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Lowongan Kerja
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Kegiatan BKK
-                                    </a>
+                                     @endforeach
                                 </li>
                             </ul>
                         </div>
                         <div class="service-list">
                             <p>Blog Terbaru</p>
+                            @foreach( $blogside as $blogside)
+
                             <div class="sidebar-post-inner">
                                 <a style="margin-bottom: 15px">
                                     <div class="image-widget-post">
-                                        <img class="img-detailblog" src="../blog/musik.png" alt="">
+                                        <img class="{{ asset('blog/' . $blogside->foto) }}" src="../blog/musik.png" alt="">
                                     </div>
-
                                     <div class="info-widget-post">
-                                        <h5>Prestasi Mokleters Agustus - Oktober 2022</h5>
+                                        <h5>{{ $blogside->judul }}</h5>
                                         <small>04 November 2022</small>
                                     </div>
-
-                                </a>
-                                <a style="margin-bottom: 15px">
-                                    <div class="image-widget-post">
-                                        <img class="img-detailblog" src="../blog/musik.png" alt="">
-                                    </div>
-
-                                    <div class="info-widget-post">
-                                        <h5>Prestasi Mokleters Agustus - Oktober 2022</h5>
-                                        <small>04 November 2022</small>
-                                    </div>
-
-                                </a>
-                                <a style="margin-bottom: 15px">
-                                    <div class="image-widget-post">
-                                        <img class="img-detailblog" src="../blog/musik.png" alt="">
-                                    </div>
-
-                                    <div class="info-widget-post">
-                                        <h5>Prestasi Mokleters Agustus - Oktober 2022</h5>
-                                        <small>04 November 2022</small>
-                                    </div>
-
-                                </a>
-                                <a style="margin-bottom: 15px">
-                                    <div class="image-widget-post">
-                                        <img class="img-detailblog" src="../blog/musik.png" alt="">
-                                    </div>
-
-                                    <div class="info-widget-post">
-                                        <h5>Prestasi Mokleters Agustus - Oktober 2022</h5>
-                                        <small>04 November 2022</small>
-                                    </div>
-
-                                </a>
-                                <a style="margin-bottom: 15px">
-                                    <div class="image-widget-post">
-                                        <img class="img-detailblog" src="../blog/musik.png" alt="">
-                                    </div>
-
-                                    <div class="info-widget-post">
-                                        <h5>Prestasi Mokleters Agustus - Oktober 2022</h5>
-                                        <small>04 November 2022</small>
-                                    </div>
-
                                 </a>
                             </div>
+                            @endforeach
                         </div>
                     </div>
 

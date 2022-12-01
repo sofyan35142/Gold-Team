@@ -40,7 +40,14 @@ class DatabaseSeeder extends Seeder
             totalsiswa::class,
             videoprofil::class,
             Visimisilsp::class,
+<<<<<<< HEAD
             Modul::class,
+=======
+            Modultkr::class,
+            kategoriblog::class,
+            walas::class
+
+>>>>>>> e5ac8ba1d2b9757f6bac3d5f2d5428dd8d155eca
         ]);
     }
 }

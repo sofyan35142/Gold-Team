@@ -12,8 +12,6 @@
  -->
 <!-- beautify ignore:start -->
 <html lang="en" class="light-style layout-navbar-fixed layout-menu-fixed " dir="ltr" data-theme="theme-semi-dark" data-assets-path="../../assets1/" data-template="vertical-menu-template-semi-dark">
-
-
 <!-- Mirrored from pixinvent.com/demo/frest-clean-bootstrap-admin-dashboard-template/html/vertical-menu-template-semi-dark/tables-datatables-basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 15 Nov 2022 01:22:18 GMT -->
 @include('Admin.layoutadmin.head')
 
@@ -29,88 +27,71 @@
     <!-- Layout container -->
     <div class="layout-page">
 <!-- Navbar -->
-  @include("Admin.layoutadmin.navbar")
+  @include('Admin.layoutadmin.navbar')
 <!-- / Navbar -->
+
       <!-- Content wrapper -->
       <div class="content-wrapper">
+
         <!-- Content -->
+
           <div class="container-xxl flex-grow-1 container-p-y">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="card mb-4">
-                    <h5 class="card-header">Tambah Blog</h5>
-                    <div class="card-body">
-                        <form action="/insertblog" method="POST" enctype="multipart/form-data">
-                                @csrf
-                        <div>
-                        <label for="defaultFormControlInput" class="form-label">judul</label>
-                        <input type="text" name="judul" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" />
-                        </div>
-                        <br/>
-
-                        <div>
-                        <label for="editor" class="form-label">Deskripsi</label>
-                        {{-- <input type="text" name="deskripsi" class="form-control" id="editor"  aria-describedby="defaultFormControlHelp" /> --}}
-                        <div class="card-body">
-                                <textarea name="deskripsi" id="editor"></textarea>
-                            </div>
-                        </div>
-                        <br/>
-                         <div class="mb-3">
-                                      <label for="exampleInputEmail1" class="form-label">Kategori</label>
-                                      <select  class="form-select" aria-label="Default select example" name="kategori">
-                                        <option value=""></option>
-                                        @foreach ($data as $kategori)
-                                        <option value="{{ $kategori->id }}">{{ $kategori->kategori }}</option>
-                                        @endforeach
-                                        </select>
-                                    </div>
-
-
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Upload Foto Blog</label>
-
-                            <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        </div>
-                        <button type="submit" class="btn rounded-pill btn-primary">Submit</button>
-                        </form>
-
-                    </div>
-                    </div>
-                </div>
-            </div>
-
 
 <!-- DataTable with Buttons -->
 
+<div class="card mb-4">
+  <div class="card-datatable table-responsive pt-0">
+    <h5 class="card-header">Walas</h5>
+    <a href="/data/tambahwalas" type="button" class="btn rounded-pill btn-primary">Tambah</a>
+    <table class="table" id="ekstra">
+  <thead>
+    <tr>
+      <th scope="col">No.</th>
+      <th scope="col">Foto</th>
+      <th scope="col">Nama</th>
+      <th scope="col">Kelas</th>
+      <th scope="col">Laki-Laki</th>
+      <th scope="col">Perempuan</th>
+      <th scope="col">Jumlah</th>
+      <th scope="col">Aksi</th>
+    </tr>
+  </thead>
+  <tbody class="table-group-divider">
+    <?php $no = 1; ?>
+    @foreach ($data as $walas)
+<tr>
+        <td>{{ $no }}</td>
+        <td>
+            <img src="{{ asset('walas/' . $walas->foto) }}" alt="" style="width: 80px; height:80px;">
+        </td>
+        <td>{{ $walas->nama_walas }}</td>
+        <td>{{ $walas->kelas }}</td>
+        <td>{{ $walas->laki_laki }}</td>
+        <td>{{ $walas->perempuan }}</td>
+        <td>{{ $walas->jumlah }}</td>
+        <td>
+            <a href="/data/editwalas/{{ $walas->id }}" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></a>
+            <a href="#" class="btn btn-danger delete" data-id="{{ $walas->id }}" data-walas="{{ $walas->nama_walas }}"><i class="fa-solid fa-trash"></i></a>
+        </td>
+    </tr>
+
+
+  </tbody>
+   <?php $no++; ?>
+@endforeach
+</table>
+  </div>
+</div>
+<!-- Modal to add new record -->
 <!--/ DataTable with Buttons -->
-
-
-
 <!-- Complex Headers -->
-
 <!--/ Complex Headers -->
-
-
-
 <!-- Row grouping -->
-
 <!--/ Row grouping -->
-
-
-
 <!-- Multilingual -->
-
 <!--/ Multilingual -->
-
-
-
           </div>
           <!-- / Content -->
-
-
-
-
 <!-- Footer -->
 <footer class="content-footer footer bg-footer-theme">
   <div class="container-fluid d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
@@ -154,13 +135,6 @@
 
   </div>
   <!-- / Layout wrapper -->
-
-
-  <div class="buy-now">
-    <a href="https://1.envato.market/frest_admin" target="_blank" class="btn btn-danger btn-buy-now">Buy Now</a>
-  </div>
-
-
 
 
   <!-- Core JS -->
@@ -208,15 +182,42 @@
   <!-- Page JS -->
   <script src="../../assets1/js/tables-datatables-basic.js"></script>
   <script src="//cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.ckeditor.com/ckeditor5/35.3.1/classic/ckeditor.js"></script>
-  <script>
-    ClassicEditor
-        .create( document.querySelector('#editor') )
-        .catch( error => {
-          console.error(error);
-        });
-  </script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 </body>
+<script>
+    $('.delete').click(function() {
+        var walasid = $(this).attr('data-id');
+        var walas = $(this).attr('data-walas');
+        swal({
+                title: "Apakah kamu yakin?",
+                text: "Kamu akan menghapus walas " + walas + "",
+                icon: "warning",
+                buttons: true,
+                dangerMode: true,
+            })
+            .then((willDelete) => {
+                if (willDelete) {
+                    window.location = "/data/deletewalas/" + walasid + ""
+                    swal("Data berhasil dihapus", {
+                        icon: "success",
+                    });
+                } else {
+                    swal("Data tidak jadi dihapus");
+                }
+            });
+    });
+</script>
+<script>
+    $(document).ready(function() {
+        $('#ekstra').DataTable();
+    });
+</script>
+<script>
+    @if (Session::get('success'))
+        toastr.success("{{ Session::get('success') }}")
+    @endif
+</script>
 
 <!-- Mirrored from pixinvent.com/demo/frest-clean-bootstrap-admin-dashboard-template/html/vertical-menu-template-semi-dark/tables-datatables-basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 15 Nov 2022 01:22:20 GMT -->
 </html>
