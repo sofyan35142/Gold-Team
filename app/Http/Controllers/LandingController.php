@@ -6,6 +6,7 @@ use App\Models\alumni;
 use App\Models\Blog;
 use App\Models\Dharma;
 use App\Models\Modultkr;
+use App\Models\Modultei;
 use App\Models\LSP;
 use App\Models\Visimisilsp;
 use App\Models\ekstra;
@@ -85,11 +86,13 @@ class LandingController extends Controller
     }
     public function reparasibengkel()
     {
-        return view("landingpage.jurusan.reparasibengkel");
+        $data = Jurusan::all();
+        return view("landingpage.jurusan.reparasibengkel", compact('data'));
     }
     public function modulproduktiftei()
     {
-        return view("landingpage.jurusan.modulproduktiftei");
+        $modultei = Modultei::where('id', '=', 1)->firstOrFail();
+        return view("landingpage.jurusan.modulproduktiftei", compact('modultei'));
     }
     public function modulproduktifrpl()
     {

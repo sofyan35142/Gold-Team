@@ -56,11 +56,12 @@
     <div class="service-details-area main-service-area pt-100 services-details-page">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8">
+                <div class="col-lg-12">
                     {{-- <img src="foto/jurusan/TKR.JPG" alt="service"> --}}
                     <div class="service-details-post">
                         <h3>Buku Pedoman Reparasi Bengkel TKR</h3>
 
+                        
                         <div class="table table-bordered">
                             <table class="table">
                                 <thead>
@@ -115,67 +116,7 @@ Next
                 </div>
             </div>
         </div>
-        <div class="col-lg-4 main-service-area blog-side-bar">
-            <div class="service-sidebar">
-                <form class="search-form">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search">
-                        <button type="submit" class="btn btn-primary">
-                            <i class="icofont-search-1"></i>
-                        </button>
-                    </div>
-                </form>
-                <div class="service-list">
-                    <p>Categories</p>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                Toilet Cleaning
-                                <i class="icofont-rounded-right"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Stay Hygienic
-                                <i class="icofont-rounded-right"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                News
-                                <i class="icofont-rounded-right"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Cleaning Floor
-                                <i class="icofont-rounded-right"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Cleaning Kitchen
-                                <i class="icofont-rounded-right"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Wash Home
-                                <i class="icofont-rounded-right"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                {{-- <div class="ratio ratio-16x9">
-                            <iframe
-                                src="https://www.youtube.com/embed/cxtGfQh188A?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0"
-                                title="YouTube video" allowfullscreen></iframe>
-                        </div> --}}
-                <div class="discount-shapes">
-
-                </div>
-            </div>
-        </div>
+        
     </div>
     </div>
     </div>

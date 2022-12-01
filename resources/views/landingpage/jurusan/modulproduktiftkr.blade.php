@@ -60,7 +60,6 @@
                     <div class="service-details-post keymodul">
                        <h3>{{$modultkr->judul}}</h3>
                         {!!$modultkr->deskripsi!!}
-
                     </div>
 
                 </div>
