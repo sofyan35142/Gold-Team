@@ -3,7 +3,6 @@
 @include('landingpage.layout.head')
 
 <body>
-
     <div class="loader-content">
         <div class="d-table">
             <div class="d-table-cell">
@@ -58,21 +57,21 @@
             <div class="row">
                 <div class="col-lg-12">
                     {{-- <img src="foto/jurusan/TKR.JPG" alt="service"> --}}
-                    <div class="service-details-post">
+                    <div class="service-details-post keymodul">
                        <h3>{{$modultkr->judul}}</h3>
                         {!!$modultkr->deskripsi!!}
 
                     </div>
-                    
+
                 </div>
-                
+
             </div>
         </div>
     </div>
     </div>
 
 
-    
+
 
 
     @include('landingpage.layout.footer')

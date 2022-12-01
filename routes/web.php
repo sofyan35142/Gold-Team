@@ -37,7 +37,7 @@ Route::get('/keahlian', [LandingController::class, 'keahlian']);
 Route::get('/lokerbkk', [LandingController::class, 'lokerbkk']);
 Route::get('/agenda', [LandingController::class, 'agenda']);
 Route::get('/guruu', [LandingController::class, 'guru']);
-Route::get('/agendadetail', [LandingController::class, 'agendadetail']);
+Route::get('/blogdetail/{id}', [LandingController::class, 'blogdetail']);
 Route::get('/blogbanyak', [LandingController::class, 'blogbanyak']);
 
 //DATA
@@ -46,7 +46,7 @@ Route::get('/data/datawalas', [LandingController::class, 'datawalas']);
 Route::get('/data/ekstraa', [LandingController::class, 'ekstra']);
 Route::get('/data/prestasi', [LandingController::class, 'prestasi']);
 Route::get('/ekstradetail/{id}', [LandingController::class, 'detailekstra']);
-Route::get('/prestasidetail', [LandingController::class, 'detailprestasi']);
+Route::get('/prestasidetail/{id}', [LandingController::class, 'detailprestasi']);
 
 
 // ==ROUTE ALUMNI==//
@@ -134,7 +134,6 @@ Route::post('/insertstrukturorganisasi', [Admincontroller::class, 'insertstruktu
 Route::get('/index/editstrukturorganisasi/{id}', [Admincontroller::class, 'editstrukturorganisasi']);
 Route::post('/updatestrukturorganisasi/{id}', [Admincontroller::class, 'updatestrukturorganisasi']);
 Route::get('/index/deletestrukturorganisasi/{id}', [AdminController::class, 'deletestrukturorganisasi']);
-<<<<<<< HEAD
 //sekolah adiwiyata
 Route::get('/index/sekolahadiwiyata', [Admincontroller::class, 'sekolahadiwiyata']);
 Route::get('/index/addsekolahadiwiyata', [Admincontroller::class, 'addsekolahadiwiyata']);
@@ -142,7 +141,6 @@ Route::post('/insertsekolahadiwiyata', [Admincontroller::class, 'insertsekolahad
 Route::get('/index/editsekolahadiwiyata/{id}', [Admincontroller::class, 'editsekolahadiwiyata']);
 Route::post('/updatestrukturorganisasi/{id}', [Admincontroller::class, 'updatestrukturorganisasi']);
 Route::get('/index/deletestrukturorganisasi/{id}', [AdminController::class, 'deletestrukturorganisasi']);
-=======
 //Sejarah Singkat
 Route::get('/index/sejarahsingkat', [Admincontroller::class, 'sejarahsingkat'])->name('sejarahsingkat');
 Route::get('/index/addsejarahsingkat', [Admincontroller::class, 'addsejarahsingkat']);
@@ -150,7 +148,6 @@ Route::post('/insertsejarahsingkat', [Admincontroller::class, 'insertsejarahsing
 Route::get('/sejarahsingkat/edit/{id}', [Admincontroller::class, 'editviewsejarahsingkat']);
 Route::post('/updatesejarahsingkat/{id}', [Admincontroller::class, 'updatesejarahsingkat']);
 Route::get('/sejarahsingkat/delete/{id}', [Admincontroller::class, 'deletesejarahsingkat']);
->>>>>>> c621696fe8011080ab8f4e75a7c707b1a9c13a64
 // end profil sekolah-admin
 
 
@@ -244,6 +241,14 @@ Route::get('/data/editdharma/{id}', [DataController::class, 'editdharma']);
 Route::post('/data/updatedharma/{id}', [DataController::class, 'updatedharma']);
 Route::get('/data/deletedharma/{id}', [DataController::class, 'deletedharma']);
 
+//DATAWALAS
+Route::get('/data/walas', [DataController::class, 'walas'])->name('walas');
+Route::get('/data/tambahwalas', [DataController::class, 'tambahwalas']);
+Route::post('/insertwalas', [DataController::class, 'insertwalas']);
+Route::get('/data/editwalas/{id}', [DataController::class, 'editwalas']);
+Route::post('/data/updatewalas/{id}', [DataController::class, 'updatewalas']);
+Route::get('/data/deletewalas/{id}', [DataController::class, 'deletewalas']);
+
 
 //Prestasi
 Route::get('/data/prestasii', [DataController::class, 'prestasi'])->name('prestasi');
@@ -286,3 +291,15 @@ Route::post('/updatejmllsp/{id}', [LSPController::class, 'updatejml']);
 //MODUL ADMIN
 Route::get('/index/modultkr', [ModulController::class, 'modultkr'])->name('modultkr');
 Route::post('/updatemodultkr/{id}', [ModulController::class, 'updatemodultkr']);
+
+
+
+
+
+///////////////////////////////----------------Kategori Blog----------------/////////////////////////---------------------
+Route::get('/kategoriblog', [DataController::class, 'kategoriblog'])->name('kategoriblog');
+Route::get('/tambahkategoriblog', [DataController::class, 'tambahkategoriblog']);
+Route::post('/insertkategoriblog', [DataController::class, 'insertkategoriblog']);
+Route::get('/editkategoriblog/{id}', [DataController::class, 'editkategoriblog']);
+Route::post('/updatekategoriblog/{id}', [DataController::class, 'updatekategoriblog']);
+Route::get('/deletekategoriblog/{id}', [DataController::class, 'deletekategoriblog']);

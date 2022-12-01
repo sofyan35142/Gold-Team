@@ -38,40 +38,41 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="card mb-4">
-                    <h5 class="card-header">Tambah Blog</h5>
+                    <h5 class="card-header">Tambah Walas</h5>
                     <div class="card-body">
-                        <form action="/insertblog" method="POST" enctype="multipart/form-data">
+                        <form action="/insertwalas" method="POST" enctype="multipart/form-data">
                                 @csrf
-                        <div>
-                        <label for="defaultFormControlInput" class="form-label">judul</label>
-                        <input type="text" name="judul" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" />
-                        </div>
-                        <br/>
-
-                        <div>
-                        <label for="editor" class="form-label">Deskripsi</label>
-                        {{-- <input type="text" name="deskripsi" class="form-control" id="editor"  aria-describedby="defaultFormControlHelp" /> --}}
-                        <div class="card-body">
-                                <textarea name="deskripsi" id="editor"></textarea>
-                            </div>
-                        </div>
-                        <br/>
-                         <div class="mb-3">
-                                      <label for="exampleInputEmail1" class="form-label">Kategori</label>
-                                      <select  class="form-select" aria-label="Default select example" name="kategori">
-                                        <option value=""></option>
-                                        @foreach ($data as $kategori)
-                                        <option value="{{ $kategori->id }}">{{ $kategori->kategori }}</option>
-                                        @endforeach
-                                        </select>
-                                    </div>
-
-
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Upload Foto Blog</label>
+                                 <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Upload Foto Walas</label>
 
                             <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>
+                        <div>
+                        <label for="defaultFormControlInput" class="form-label">nama walas</label>
+                        <input type="text" name="nama_walas" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" />
+                        </div>
+                        <div>
+                        <label for="defaultFormControlInput" class="form-label">kelas</label>
+                        <input type="text" name="kelas" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" />
+                        </div>
+                        <br/>
+                        <div>
+                        <label for="defaultFormControlInput" class="form-label">laki-laki</label>
+                        <input type="number" name="laki_laki" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" />
+                        </div>
+                        <br/>
+                        <div>
+                        <label for="defaultFormControlInput" class="form-label">perempuan</label>
+                        <input type="number" name="perempuan" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" />
+                        </div>
+                        <div>
+                        <label for="defaultFormControlInput" class="form-label">jumlah</label>
+                        <input type="number" name="jumlah" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" />
+                        </div>
+                        <br/>
+                        <div>
+
+
                         <button type="submit" class="btn rounded-pill btn-primary">Submit</button>
                         </form>
 
@@ -107,10 +108,6 @@
 
           </div>
           <!-- / Content -->
-
-
-
-
 <!-- Footer -->
 <footer class="content-footer footer bg-footer-theme">
   <div class="container-fluid d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">

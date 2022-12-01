@@ -19,14 +19,14 @@
             <div class="d-table-cell">
                 <div class="container">
                     <div class="team-title-text">
-                        <h2>Our Team Members</h2>
+                        <h2>Data DharmaWanita</h2>
                         <ul>
                             <li>
                                 <a href="index.html">Home</a>
                             </li>
                             <li>
                                 <i class="icofont-rounded-double-right"></i>
-                                Team Members
+                                Data DharmaWanita
                             </li>
                         </ul>
                     </div>
@@ -76,14 +76,14 @@
 
 
                     <div class="carddharma">
-                        <input type="checkbox" id="card2" class="more">
+                        <input type="checkbox" id="{{ $dharma->id }}" class="more">
                         <div class="content">
                             <div class="front">
                                 <div class="team-card">
                                     <div class="team-img">
                                         <img class="imgguru" src="{{ asset('dharmawanita/' . $dharma->foto) }}" alt="team member">
                                         <div class="team-social">
-                                            <label for="card2" class="btn btn-dharma btn-lg btn-block w-100">Detail</label>
+                                            <label for="{{ $dharma->id }}" class="btn btn-dharma btn-lg btn-block w-100">Detail</label>
                                         </div>
                                     </div>
                                     <div class="team-text">
@@ -100,7 +100,7 @@
                                <b> TANGGAL LAHIR :</b> {{ $dharma->tgl_lahit }} <br>
                                 <b> ALAMAT : </b> {{ $dharma->alamat }}
                                 </span>
-                                <label for="card2" class="button return" aria-hidden="true">
+                                <label for="{{ $dharma->id }}" class="button return" aria-hidden="true">
                                     <i class="fas fa-arrow-left"></i>
                                 </label>
                             </div>

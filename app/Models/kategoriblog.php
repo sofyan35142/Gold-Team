@@ -2,18 +2,17 @@
 
 namespace App\Models;
 
+use App\Models\Blog as ModelsBlog;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Blog extends Model
+class kategoriblog extends Model
 {
     use HasFactory;
-    protected $primaryKey = "id";
     protected $guarded = [];
 
-
-    public function idblog()
+    public function blog()
     {
-        return $this->belongsTo(kategoriblog::class, 'kategori', 'id');
+        return $this->hasMany(blog::class);
     }
 }

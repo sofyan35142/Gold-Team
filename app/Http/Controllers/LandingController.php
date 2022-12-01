@@ -14,6 +14,7 @@ use App\Models\Jmlpemegang;
 use App\Models\Jurusan;
 use App\Models\kepsek;
 use App\Models\Kakomli;
+use App\Models\kategoriblog;
 use App\Models\prestasi;
 use App\Models\profilsekolah;
 use Illuminate\Http\Request;
@@ -24,6 +25,7 @@ use App\Models\sponsor;
 use App\Models\Tempatujikom;
 use App\Models\totalsiswa;
 use App\Models\videoprofil;
+use App\Models\walas;
 
 class LandingController extends Controller
 {
@@ -125,7 +127,7 @@ class LandingController extends Controller
     public function tempatujikom()
     {
         $ujikom = Tempatujikom::where('id', '=', 1)->firstOrFail();
-        
+
         return view("landingpage.lsp.tempatujikom", compact('ujikom'));
     }
     public function jmlpemegangsertifikat()
@@ -142,7 +144,7 @@ class LandingController extends Controller
     }
     public function visimisi()
     {
-        // $data =profilvisimisi::all();
+        $data =profilvisimisi::all();
         return view("landingpage.profile.visimisi",compact('data'));
     }
 
@@ -242,7 +244,8 @@ class LandingController extends Controller
         return view('landingpage.Data.dharmawanita', compact('data') );
     }
     public function datawalas(){
-        return view('landingpage.Data.datawalas');
+        $data=walas::all();
+        return view('landingpage.Data.datawalas', compact('data'));
     }
     public function ekstra(){
         $data=ekstra::all();
@@ -256,12 +259,19 @@ class LandingController extends Controller
         $detailekstra=ekstra::where('id',$id)->get();
         return view('landingpage.Data.detailekstra', compact('detailekstra'));
     }
-    public function detailprestasi(){
-        return view('landingpage.Data.detailprestasi');
+    public function detailprestasi($id){
+        $detailprestasi=prestasi::where('id',$id)->get();
+        $prestasiside=prestasi::latest()->get();
+        return view('landingpage.Data.detailprestasi', compact('detailprestasi', 'prestasiside'));
     }
 
-    public function agendadetail(){
-        return view('landingpage.beranda.detailagenda');
+    public function blogdetail($id){
+        $data=Blog::where('id',$id)->get();
+        $kategoriblog=kategoriblog::all();
+        $blogside=Blog::latest()->get();
+        // dd($blogside);
+        // dd($blogside);
+        return view('landingpage.beranda.detailagenda', compact('data', 'kategoriblog', 'blogside'));
     }
 
     public function blogbanyak(){

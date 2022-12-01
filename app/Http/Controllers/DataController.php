@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\Dharma;
 use App\Models\ekstra;
 use App\Models\Guru;
+use App\Models\kategoriblog;
 use App\Models\prestasi;
+use App\Models\walas;
 use Illuminate\Http\Request;
 
 class DataController extends Controller
@@ -290,4 +292,120 @@ class DataController extends Controller
         $data->delete();
         return redirect()->route('prestasi')->with('success', 'Berhasil Di Hapus');
     }
+
+
+
+
+
+
+    public function kategoriblog(){
+        $data=kategoriblog::all();
+        return view('Admin.beranda.kategoriblog.kategoriblog', compact('data'));
+    }
+    public function tambahkategoriblog(){
+        return view('Admin.beranda.kategoriblog.tambahkategoriblog');
+    }
+    public function insertkategoriblog(Request $request)
+    {
+        $data = kategoriblog::create([
+            'kategori' => $request->kategori,
+        ]);
+        // dd($data);
+        return redirect()->route('kategoriblog')->with('success', 'Berhasil Di Tambahkan');
+    }
+
+    public function editkategoriblog($id)
+    {
+        $data = kategoriblog::findorfail($id);
+        return view('Admin.beranda.kategoriblog.editkategoriblog', compact('data'));
+    }
+
+    public function updatekategoriblog(Request $request, $id)
+    {
+
+        $data = kategoriblog::find($id);
+        $data->update([
+            'kategori' => $request->kategori,
+        ]);
+
+        return redirect()->route('kategoriblog')->with('success', 'Berhasil Di Update');
+    }
+
+    public function deletekategoriblog($id)
+    {
+        $data = kategoriblog::find($id);
+        $data->delete();
+        return redirect()->route('kategoriblog')->with('success', 'Berhasil Di Hapus');
+    }
+
+
+
+    ////////////-------------WALASSSSSSSSSS-------------///////////////
+    public function walas()
+    {
+        $data = walas::all();
+        // dd($data);
+        return view('Admin.Data.datawalas.walas', compact('data'));
+    }
+
+    public function tambahwalas()
+    {
+        return view('Admin.Data.datawalas.tambahwalas');
+    }
+
+    public function insertwalas(Request $request)
+    {
+        $data = walas::create([
+            'foto' => $request->foto,
+            'nama_walas' => $request->nama_walas,
+            'kelas' => $request->kelas,
+            'laki_laki' => $request->laki_laki,
+            'perempuan' => $request->perempuan,
+            'jumlah' => $request->jumlah
+        ]);
+        // dd($data);
+        if ($request->hasFile('foto')) {
+            $request->file('foto')->move('walas/', $request->file('foto')->getClientOriginalName());
+            $data->foto = $request->file('foto')->getClientOriginalName();
+            $data->save();
+        }
+        return redirect()->route('walas')->with('success', 'Berhasil Di Tambahkan');
+    }
+
+    public function editwalas($id)
+    {
+        $data = walas::findorfail($id);
+        return view('Admin.Data.datawalas.editwalas', compact('data'));
+    }
+
+    public function updatewalas(Request $request, $id)
+    {
+
+        $data = walas::find($id);
+        $data->update([
+            'nama_walas' => $request->nama_walas,
+            'kelas' => $request->kelas,
+            'laki_laki' => $request->laki_laki,
+            'perempuan' => $request->perempuan,
+            'jumlah' => $request->jumlah
+            // 'foto' => $request->foto
+        ]);
+        // $data->update($request->all());
+        // dd($data);
+        if ($request->hasFile('foto')) {
+            $request->file('foto')->move('walas/', $request->file('foto')->getClientOriginalName());
+            $data->foto = $request->file('foto')->getClientOriginalName();
+            $data->save();
+        }
+
+        return redirect()->route('walas')->with('success', 'Berhasil Di Update');
+    }
+
+    public function deletewalas($id)
+    {
+        $data = walas::find($id);
+        $data->delete();
+        return redirect()->route('walas')->with('success', 'Berhasil Di Hapus');
+    }
+
 }

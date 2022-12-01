@@ -4,11 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\profilsekolah;
 use App\Models\profilvisimisi;
-<<<<<<< HEAD
 use App\Models\sekolahadiwiyata;
-=======
 use App\Models\sejarahsingkat;
->>>>>>> c621696fe8011080ab8f4e75a7c707b1a9c13a64
 use App\Models\strukturorganisasi;
 use Illuminate\Http\Request;
 
@@ -171,7 +168,6 @@ class Admincontroller extends Controller
         return redirect()->route('strukturorganisasi')->with('success', 'Berhasil Di Hapus');
     }
     // end profil/strukturorganisasi
-<<<<<<< HEAD
     // start profil/sekolahadiwiyata
     public function sekolahadiwiyata()
     {
@@ -194,10 +190,9 @@ class Admincontroller extends Controller
         return redirect('/index/sekolahadiwiyata')->with('success', 'data berhasil ditambahkan');
     }
     public function editsekolahadiwiyata(){
-        
+
     }
     // end profil/sekolahadiwiyata
-=======
 
     public function sejarahsingkat(){
         $data=sejarahsingkat::all();
@@ -252,6 +247,5 @@ class Admincontroller extends Controller
         return redirect()->route('sejarahsingkat')->with('success', 'Berhasil Di Hapus');
     }
 
->>>>>>> c621696fe8011080ab8f4e75a7c707b1a9c13a64
     ///////////////////// END PROFIL LANDINGPAGE ADMIN ///////////////////////////
 }

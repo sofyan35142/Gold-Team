@@ -61,6 +61,15 @@
                         {{-- <input type="text" name="deskripsi" class="form-control" id="editor"  aria-describedby="defaultFormControlHelp" /> --}}
                         </div>
                         <br/>
+<div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Kategori</label>
+                                        <select id='datahp' class="form-select" aria-label="Default select example" name="merk">
+                                          <option value="{{ $data->idblog->id }}">{{ $data->idblog->kategori }}</option>
+                                          @foreach ($data as $kategori)
+<option value="{{ $kategori->id }}">{{ $kategori->kategori }}</option>
+@endforeach
+                                          </select>
+                                      </div>
 
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Update Foto</label>
@@ -209,11 +218,11 @@
 
   <script src="https://cdn.ckeditor.com/ckeditor5/35.3.1/classic/ckeditor.js"></script>
   <script>
-    ClassicEditor
-        .create( document.querySelector('#editor') )
-        .catch( error => {
-          console.error(error);
-        });
+      ClassicEditor
+          .create(document.querySelector('#editor'))
+          .catch(error => {
+              console.error(error);
+          });
   </script>
 
 
@@ -221,5 +230,3 @@
 
 <!-- Mirrored from pixinvent.com/demo/frest-clean-bootstrap-admin-dashboard-template/html/vertical-menu-template-semi-dark/tables-datatables-basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 15 Nov 2022 01:22:20 GMT -->
 </html>
-
-

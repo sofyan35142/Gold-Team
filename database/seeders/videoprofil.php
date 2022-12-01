@@ -17,7 +17,7 @@ class videoprofil extends Seeder
     {
         DB::table('videoprofils')->insert([
             'Judul' => 'Video Profil Sketsu',
-            'link' => '1',
+            'link' => 'https://youtu.be/6mBozdxCg84',
             'deskripsi' => 'Video srofil sekolah memperkenalkan kepada kalian hal-hal berkaitan dengan Kejurusan, lingkungan sekolah , fasilitas umum sekolah, fasilitas pembelajaran (kelas,lab,dll), ruang belajar, kegiatan siswa, dan masih banyak lagi. Biar kalian tidak penasaran apa saja yang ada di dalam SMK NEGERI 1 SUKOREJO, segera tonton video profilnya. Jangan Sampai Tidak Ditonton Nanti Menyesal.',
             'foto' => 'video.png',
         ]);

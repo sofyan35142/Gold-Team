@@ -38,136 +38,34 @@
 
     <div class="team-section team-style-two team-style-three team-members pt-100 pb-70">
         <div class="container">
-            <div class="row">
+             <div class="row">
+                @foreach ($data as $walas)
                 <div class="col-lg-3 col-md-6">
                     <div class="team-card">
                         <div class="team-img">
-                            <img class="imgguru" src="../walas/amalia.jpg" alt="team member">
-                            <div class="team-social">
-                                <a href="#"><i class="icofont-facebook"></i></a>
-                                <a href="#"><i class="icofont-twitter"></i></a>
-                                <a href="#"><i class="icofont-instagram"></i></a>
+                            <img class="imgguru" src="{{ asset('walas/' . $walas->foto) }}" alt="team member">
+                            <div class="card">
+                                <div class="content">
+                                    <div class="front">
+                                        <img class="imgguru" src="{{ asset('walas/' . $walas->foto) }}" alt="team member">
+                                    </div>
+                                    <div class="back" style="color: black;">
+                                        Nama : {{ $walas->nama_walas }} <br>
+                                        Kelas : {{ $walas->kelas }} <br>
+                                        Laki-Laki : {{ $walas->laki_laki }} <br>
+                                        Perempuan : {{ $walas->perempuan }} <br>
+                                        Jumlah Siswa : {{ $walas->jumlah }} <br>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="team-text">
-                            <h4>RUDI TRISANTOSO, S.Pd, M.Pd</h4>
-                            <p>Kepala Sekolah</p>
+                            <h4>{{ $walas->nama_walas }}</h4>
+                            <p>{{ $walas->kelas }}</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-card">
-                        <div class="team-img">
-                            <img class="imgguru" src="../walas/ririk.jpg" alt="team member">
-                            <div class="team-social">
-                                <a href="#"><i class="icofont-facebook"></i></a>
-                                <a href="#"><i class="icofont-twitter"></i></a>
-                                <a href="#"><i class="icofont-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="team-text">
-                            <h4>TITIK CHOMZAH, <br> S.Pd</h4>
-                            <p>	WAKA KURIKULUM</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-card">
-                        <div class="team-img">
-                            <img class="imgguru" src="../walas/hendra.jpg" alt="team member">
-                            <div class="team-social">
-                                <a href="#"><i class="icofont-facebook"></i></a>
-                                <a href="#"><i class="icofont-twitter"></i></a>
-                                <a href="#"><i class="icofont-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="team-text">
-                            <h4>ASNAH YUNIARTI, <br> S.Pd</h4>
-                            <p>WAKA SARANA DAN PRASARANA</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-card">
-                        <div class="team-img">
-                            <img class="imgguru" src="../walas/nur.jpg" alt="team member">
-                            <div class="team-social">
-                                <a href="#"><i class="icofont-facebook"></i></a>
-                                <a href="#"><i class="icofont-twitter"></i></a>
-                                <a href="#"><i class="icofont-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="team-text">
-                            <h4>ELLYA MAGHFIRLI, <br> S.Pd</h4>
-                            <p>WAKA KESISWAAN</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-card">
-                        <div class="team-img">
-                            <img class="imgguru" src="../walas/hadi.jpg" alt="team member">
-                            <div class="team-social">
-                                <a href="#"><i class="icofont-facebook"></i></a>
-                                <a href="#"><i class="icofont-twitter"></i></a>
-                                <a href="#"><i class="icofont-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="team-text">
-                            <h4>JOKO SISWANTO, S.T., M.Pd</h4>
-                            <p>WAKA HUMAS DAN <br> HKI</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-card">
-                        <div class="team-img">
-                            <img class="imgguru" src="../walas/khuswatul.jpg" alt="team member">
-                            <div class="team-social">
-                                <a href="#"><i class="icofont-facebook"></i></a>
-                                <a href="#"><i class="icofont-twitter"></i></a>
-                                <a href="#"><i class="icofont-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="team-text">
-                            <h4>ROHMAD MUNANDAR, S.Pd</h4>
-                            <p>KAKOMLI TEKNIK KENDARAAN RINGAN</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-card">
-                        <div class="team-img">
-                            <img class="imgguru" src="../walas/munsif.jpg" alt="team member">
-                            <div class="team-social">
-                                <a href="#"><i class="icofont-facebook"></i></a>
-                                <a href="#"><i class="icofont-twitter"></i></a>
-                                <a href="#"><i class="icofont-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="team-text">
-                            <h4>M. Zuhal Munsif</h4>
-                            <b>	X TEI 1</b>
-                                <p> L : 19 P : 17 <b>Jumlah:36</b> </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-card">
-                        <div class="team-img">
-                            <img class="imgguru" src="../walas/lina.jpg" alt="team member">
-                            <div class="team-social">
-                                <a href="#"><i class="icofont-facebook"></i></a>
-                                <a href="#"><i class="icofont-twitter"></i></a>
-                                <a href="#"><i class="icofont-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="team-text">
-                            <h4>SOFAN DEDI PRINYATO, S.Pd., Gr</h4>
-                            <p>KAKOMLI TEKNIK ELEKTRONIKA INDUSTRI</p>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
             <nav>
                 <ul class="pagination  justify-content-center">
