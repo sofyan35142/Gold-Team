@@ -259,24 +259,23 @@
                     <div class="footer-social">
                         <ul>
                             <li>
-                                <a href="#"><i class="icofont-facebook"></i></a>
+                                <a href="https://www.facebook.com/pages/Smkn-1-Sukorejo/1644253285790355"><i class="icofont-facebook"></i></a>
                             </li>
-                            <li>
+                            {{-- <li>
                                 <a href="#"><i class="icofont-twitter"></i></a>
                             </li>
                             <li>
                                 <a href="#"><i class="icofont-linkedin"></i></a>
-                            </li>
+                            </li> --}}
                             <li>
-                                <a href="#"><i class="icofont-instagram"></i></a>
+                                <a href="https://instagram.com/sketsu_bisa?igshid=YmMyMTA2M2Y="><i class="icofont-instagram"></i></a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="copyright-text text-end">
-                        <p>&copy;2022 Viscous. All Rights Reserved By <a href="https://hibootstrap.com/"
-                                target="_blank">HiBootstrap</a></p>
+                        <p>&copy;2022 SMK Negeri 1 Sukorejo. By Good Team</p>
                     </div>
                 </div>
             </div>
