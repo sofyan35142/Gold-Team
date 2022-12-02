@@ -187,8 +187,13 @@
                         </a>
                         <ul class="menu-sub">
                             <li class="menu-item">
-                                <a href="/index/sejarahsingkat" class="menu-link">
-                                    <div data-i18n="sejarah singkat">sejarah singkat</div>
+                                <a href="/index/profil" class="menu-link">
+                                    <div data-i18n="Profile Sekolah">Profile Sekolah</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="/index/profilvisimisi" class="menu-link">
+                                    <div data-i18n="Profile Visi Misi">Profile Visi Misi</div>
                                 </a>
                             </li>
                             <li class="menu-item">
@@ -197,18 +202,13 @@
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a href="app-user-list.html" class="menu-link">
-                                    <div data-i18n="visimisi">visimisi</div>
+                                <a href="/index/sejarahsingkat" class="menu-link">
+                                    <div data-i18n="sejarah singkat">sejarah singkat</div>
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a href="app-user-list.html" class="menu-link">
-                                    <div data-i18n="visimisi">visimisi</div>
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="app-user-list.html" class="menu-link">
-                                    <div data-i18n="visimisi">visimisi</div>
+                                <a href="/index/sekolahadiwiyata" class="menu-link">
+                                    <div data-i18n="sekolahadiwiyata">sekolah adiwiata</div>
                                 </a>
                             </li>
                         </ul>

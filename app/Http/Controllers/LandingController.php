@@ -18,9 +18,13 @@ use App\Models\prestasi;
 use App\Models\profilsekolah;
 use Illuminate\Http\Request;
 use App\Models\profilvisimisi;
+use App\Models\sekolahadiwiyata;
+use App\Models\sekolahrujukan;
+use App\Models\sidestruktur;
 use App\Models\Skematerlisensi;
 use App\Models\slider;
 use App\Models\sponsor;
+use App\Models\strukturorganisasi;
 use App\Models\Tempatujikom;
 use App\Models\totalsiswa;
 use App\Models\videoprofil;
@@ -125,7 +129,7 @@ class LandingController extends Controller
     public function tempatujikom()
     {
         $ujikom = Tempatujikom::where('id', '=', 1)->firstOrFail();
-        
+
         return view("landingpage.lsp.tempatujikom", compact('ujikom'));
     }
     public function jmlpemegangsertifikat()
@@ -142,13 +146,15 @@ class LandingController extends Controller
     }
     public function visimisi()
     {
-        // $data =profilvisimisi::all();
+        $data =profilvisimisi::all();
         return view("landingpage.profile.visimisi",compact('data'));
     }
 
     public function strukturorganisasi()
     {
-        return view("landingpage.profile.strukturorganisasi");
+        $data = strukturorganisasi::find(1);
+        $dataside = sidestruktur::all();
+        return view("landingpage.profile.strukturorganisasi",compact('data','dataside'));
     }
     public function sejarahsingkat()
     {
@@ -156,11 +162,13 @@ class LandingController extends Controller
     }
     public function sekolahadiwiyata()
     {
-        return view("landingpage.profile.sekolahadiwiyata");
+        $adiwiyata = sekolahadiwiyata::find(1);
+        return view("landingpage.profile.sekolahadiwiyata",compact('adiwiyata'));
     }
     public function sekolahrujukan()
     {
-        return view("landingpage.profile.sekolahrujukan");
+        $data = sekolahrujukan::find(1);
+        return view("landingpage.profile.sekolahrujukan",compact('data'));
     }
     //end profil sekolah
 

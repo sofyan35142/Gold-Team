@@ -53,39 +53,8 @@
                                 Sekolah Rujukan
                             </h3>
                         </div>
-                        <img class="w-100" src="../assets/img/wssosialisasi.jpg" alt="service">
-                        <h6>Sekolah Adiwiyata dan Pendidikan Karakter</h6>
-                        <p>
-                            Pengembangan SMK rujukan sebagai upaya mendukung peningkatan mutu pembelajaran di SMK serta
-                            pemenuhan kebutuhan sarana prasarana pendidikan yang diperlukan dalam pelaksanaan kegiatan
-                            pembelajaran di SMK. Pengembangan Sekolah Rujukan (Program Peningkatan Pembelajaran) di SMK
-                            adalah agar sekolah mampu:
-                        </p>
-                        <p>
-                            1.Menyelaraskan kurikulum Kompetensi Keahlian yang lulusannya paling banyak dibutuhkan oleh
-                            DUDI pasangan di daerah setempat. Diharapkan Kompetensi Keahlian ini dapat menjadi
-                            Kompetensi Keahlian unggulan, sehingga dapat menjadi kebanggaan wilayah atau Kompetensi
-                            Keahlian Prioritas.
-                        </p>
-                        <p>
-                            2.Meningkatkan pengalaman kerja nyata guru di DUDI untuk digunakan sebagai acuan dan atau
-                            diterapkan dan dikembangkan di sekolah.
-                        </p>
-                        <p>
-                            3.Mengimplementasikan Gerakan Literasi di Sekolah (GLS).
-                        </p>
-                        <p>
-                            4.Mengembangkan Penguatan Pengembangan Karakter (PPK).
-                        </p>
-                        <p>
-                            5.Mengimplementasikan pembelajaran RI 4.0.
-                        </p>
-                        <p>
-                            6.Meningkatkan mutu penilaian.
-                        </p>
-                        <p>
-                            7.Menjadi acuan SMK lain dalam peningkatan mutu pembelajaran.
-                        </p>
+                        <img class="w-100" src="{{asset('/assets/img/' . $data->foto_head )}}" alt="service">
+                        {!! $data->isiartikel !!}
                     </div>
                 </div>
             </div>

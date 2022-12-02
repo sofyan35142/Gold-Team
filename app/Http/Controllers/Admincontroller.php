@@ -4,11 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Models\profilsekolah;
 use App\Models\profilvisimisi;
-<<<<<<< HEAD
 use App\Models\sekolahadiwiyata;
-=======
 use App\Models\sejarahsingkat;
->>>>>>> c621696fe8011080ab8f4e75a7c707b1a9c13a64
+use App\Models\sidestruktur;
 use App\Models\strukturorganisasi;
 use Illuminate\Http\Request;
 
@@ -25,8 +23,11 @@ class Admincontroller extends Controller
         $data = profilsekolah::all();
         return view('admin.profil.profil.profil', compact('data'));
     }
-    public function addprofil()
+    public function addprofil(Request $request,$profil)
     {
+        $data = profilsekolah::find(1);
+        $data->update(([$profil=>$request]));
+        // $profil->update(([$id => '-']));
         return view('admin.profil.profil.addprofil');
     }
     public function insertprofil(Request $request)
@@ -105,8 +106,9 @@ class Admincontroller extends Controller
     // start profil/strukturorganisasi
     public function strukturorganisasi()
     {
-        $data = strukturorganisasi::all();
-        return view('admin.profil.strukturorganisasi.strukturorganisasi', compact('data'));
+        $struktur = strukturorganisasi::find(1);
+        $datafotonama = sidestruktur::all();
+        return view('admin.profil.strukturorganisasi.strukturorganisasi', compact('struktur','datafotonama'));
     }
     public function addstrukturorganisasi()
     {
@@ -170,13 +172,17 @@ class Admincontroller extends Controller
         $data->delete();
         return redirect()->route('strukturorganisasi')->with('success', 'Berhasil Di Hapus');
     }
+    public function sidestrukturorganisasi()
+    {
+        $struktur = strukturorganisasi::find(1);
+        return view('Admin.profil.strukturorganisasi.addeditsidestruktur',compact('datanama','datafoto'));
+    }
     // end profil/strukturorganisasi
-<<<<<<< HEAD
     // start profil/sekolahadiwiyata
     public function sekolahadiwiyata()
     {
         $data = sekolahadiwiyata::all();
-        return view('Admin.profil.sekolah_adiwiyatpa.sekolahadiwiyata', compact('data'));
+        return view('Admin.profil.sekolah_adiwiyata.sekolahadiwiyata', compact('data'));
     }
     public function addsekolahadiwiyata()
     {
@@ -194,10 +200,9 @@ class Admincontroller extends Controller
         return redirect('/index/sekolahadiwiyata')->with('success', 'data berhasil ditambahkan');
     }
     public function editsekolahadiwiyata(){
-        
+
     }
     // end profil/sekolahadiwiyata
-=======
 
     public function sejarahsingkat(){
         $data=sejarahsingkat::all();
@@ -251,7 +256,20 @@ class Admincontroller extends Controller
         $data->delete();
         return redirect()->route('sejarahsingkat')->with('success', 'Berhasil Di Hapus');
     }
-
->>>>>>> c621696fe8011080ab8f4e75a7c707b1a9c13a64
+    //start sekolah rujukan
+    public function sekolahrujukan()
+    {
+        return view("admin.profil.sekolah_rujukan.sekolahrujukan");
+    }
+    public function addsekolahrujukan()
+    {
+        return view("admin.profil.sekolah_rujukan.addsekolahrujukan");
+    }
+    public function insertsekolahrujukan(Request $request)
+    {
+        dd($request->all());
+        return view("admin.profil.sekolah_rujukan.addsekolahrujukan");
+    }
+    //end sekolah rujukan
     ///////////////////// END PROFIL LANDINGPAGE ADMIN ///////////////////////////
 }

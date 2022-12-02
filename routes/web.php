@@ -116,7 +116,7 @@ Route::get('/jurusan/deletejurusan/{id}', [JurusanController::class, 'deletejuru
 // start profil sekolah-admin
 // profil
 Route::get('/index/profil', [Admincontroller::class, 'profil']);
-Route::get('/index/addprofil', [Admincontroller::class, 'addprofil']);
+Route::get('/index/tambahprofil/{profil}', [Admincontroller::class, 'addprofil']);
 Route::post('/insertprofil', [Admincontroller::class, 'insertprofil']);
 Route::get('/profil/delete/{id}', [Admincontroller::class, 'deleteprofil']);
 Route::get('/profil/edit/{id}', [Admincontroller::class, 'editviewvisimisi']);
@@ -134,7 +134,8 @@ Route::post('/insertstrukturorganisasi', [Admincontroller::class, 'insertstruktu
 Route::get('/index/editstrukturorganisasi/{id}', [Admincontroller::class, 'editstrukturorganisasi']);
 Route::post('/updatestrukturorganisasi/{id}', [Admincontroller::class, 'updatestrukturorganisasi']);
 Route::get('/index/deletestrukturorganisasi/{id}', [AdminController::class, 'deletestrukturorganisasi']);
-<<<<<<< HEAD
+Route::get('/index/addsidestrukturorganisasi', [AdminController::class, 'addsidestrukturorganisasi']);
+Route::post('/index/editsidestrukturorganisasi', [AdminController::class, 'editsidestrukturorganisasi']);
 //sekolah adiwiyata
 Route::get('/index/sekolahadiwiyata', [Admincontroller::class, 'sekolahadiwiyata']);
 Route::get('/index/addsekolahadiwiyata', [Admincontroller::class, 'addsekolahadiwiyata']);
@@ -142,15 +143,20 @@ Route::post('/insertsekolahadiwiyata', [Admincontroller::class, 'insertsekolahad
 Route::get('/index/editsekolahadiwiyata/{id}', [Admincontroller::class, 'editsekolahadiwiyata']);
 Route::post('/updatestrukturorganisasi/{id}', [Admincontroller::class, 'updatestrukturorganisasi']);
 Route::get('/index/deletestrukturorganisasi/{id}', [AdminController::class, 'deletestrukturorganisasi']);
-=======
 //Sejarah Singkat
-Route::get('/index/sejarahsingkat', [Admincontroller::class, 'sejarahsingkat'])->name('sejarahsingkat');
+Route::get('/index/sejarahsingkat', [Admincontroller::class, 'sejarahsingkat']);
 Route::get('/index/addsejarahsingkat', [Admincontroller::class, 'addsejarahsingkat']);
 Route::post('/insertsejarahsingkat', [Admincontroller::class, 'insertsejarahsingkat']);
 Route::get('/sejarahsingkat/edit/{id}', [Admincontroller::class, 'editviewsejarahsingkat']);
 Route::post('/updatesejarahsingkat/{id}', [Admincontroller::class, 'updatesejarahsingkat']);
 Route::get('/sejarahsingkat/delete/{id}', [Admincontroller::class, 'deletesejarahsingkat']);
->>>>>>> c621696fe8011080ab8f4e75a7c707b1a9c13a64
+//Sekolah Rujukan
+Route::get('/index/sekolahrujukan', [Admincontroller::class, 'sekolahrujukan']);
+Route::get('/index/addsekolahrujukan', [Admincontroller::class, 'addsekolahrujukan']);
+Route::post('/insertsekolahrujukan', [Admincontroller::class, 'insertsekolahrujukan']);
+Route::get('/sejarahsingkat/edit/{id}', [Admincontroller::class, 'editviewsejarahsingkat']);
+Route::post('/updatesejarahsingkat/{id}', [Admincontroller::class, 'updatesejarahsingkat']);
+Route::get('/sejarahsingkat/delete/{id}', [Admincontroller::class, 'deletesejarahsingkat']);
 // end profil sekolah-admin
 
 
