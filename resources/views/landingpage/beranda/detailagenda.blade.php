@@ -127,7 +127,7 @@
                             <div class="sidebar-post-inner">
                                 <a style="margin-bottom: 15px">
                                     <div class="image-widget-post">
-                                        <img class="{{ asset('blog/' . $blogside->foto) }}" src="../blog/musik.png" alt="">
+                                        <img class="" src="{{ asset('blog/' . $blogside->foto) }}" alt="">
                                     </div>
                                     <div class="info-widget-post">
                                         <h5>{{ $blogside->judul }}</h5>

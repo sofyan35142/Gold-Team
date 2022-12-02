@@ -226,7 +226,7 @@
 </div>
 <div class="modal fade" id="smallModal9" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-sm" role="document">
-        <form action="/index/tambahprofil/foto_sekolah" method="POST" enctype="multipart/form-data">
+        <form action="/index/tambahprofil/" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="modal-content">
                 <div class="modal-header">
