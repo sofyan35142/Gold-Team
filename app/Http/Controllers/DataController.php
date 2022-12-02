@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Guru;
+use App\Models\walas;
 use App\Models\Dharma;
 use App\Models\ekstra;
-use App\Models\Guru;
-use App\Models\kategoriblog;
+use Nette\Utils\Image;
 use App\Models\prestasi;
-use App\Models\walas;
+use App\Models\kategoriblog;
 use Illuminate\Http\Request;
 
 class DataController extends Controller

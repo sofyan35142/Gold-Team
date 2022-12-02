@@ -68,7 +68,7 @@
 
         <td>
             <a href="/beranda/edittotal/{{ $siswa->id }}" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></a>
-            <a href="#" class="btn btn-danger delete" data-id="{{ $siswa->id }}" data-siswa="{{ $siswa->nama }}"><i class="fa-solid fa-trash"></i></a>
+            {{-- <a href="#" class="btn btn-danger delete" data-id="{{ $siswa->id }}" data-siswa="{{ $siswa->nama }}"><i class="fa-solid fa-trash"></i></a> --}}
         </td>
     </tr>
 

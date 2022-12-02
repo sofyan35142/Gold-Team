@@ -2,19 +2,41 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
+use Illuminate\Support\Str;
+use App\Models\sidestruktur;
+use Illuminate\Http\Request;
 use App\Models\profilsekolah;
 use App\Models\profilvisimisi;
-use App\Models\sekolahadiwiyata;
 use App\Models\sejarahsingkat;
-<<<<<<< HEAD
-use App\Models\sidestruktur;
-=======
->>>>>>> dc66d1f117df2f89fa59f50e1312392f534d6649
+use App\Models\sekolahadiwiyata;
 use App\Models\strukturorganisasi;
-use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class Admincontroller extends Controller
 {
+
+
+    public function postlogin(Request $request)
+    {
+        // dd($request->all());
+        // $this->validate($request, [
+        //     'email' => 'required',
+        //     'password' => 'required'
+        // ], [
+        //     'email.required' => 'Email Wajib Diisi',
+        //     'password.required' => 'Password Wajib Diisi'
+        // ]);
+        if (Auth::attempt($request->only('email', 'password'))) {
+            return redirect('/benar');
+        }
+        return redirect('/salah')->with('salah', 'Email Atau Password Salah');
+    }
+    public function login(Request $request)
+    {
+        return view('Admin.login.login');
+    }
+
     public function index()
     {
         return view('Admin.index');
@@ -259,7 +281,6 @@ class Admincontroller extends Controller
         $data->delete();
         return redirect()->route('sejarahsingkat')->with('success', 'Berhasil Di Hapus');
     }
-<<<<<<< HEAD
     //start sekolah rujukan
     public function sekolahrujukan()
     {
@@ -275,8 +296,6 @@ class Admincontroller extends Controller
         return view("admin.profil.sekolah_rujukan.addsekolahrujukan");
     }
     //end sekolah rujukan
-=======
 
->>>>>>> dc66d1f117df2f89fa59f50e1312392f534d6649
     ///////////////////// END PROFIL LANDINGPAGE ADMIN ///////////////////////////
 }

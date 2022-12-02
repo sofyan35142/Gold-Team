@@ -103,6 +103,9 @@ Route::get('/jmlpemegangsertifikat', [LandingController::class, 'jmlpemegangsert
 
 
 //StartAdmin
+
+Route::get('/login', [Admincontroller::class, 'login'])->name('login');
+Route::post('/postlogin', [Admincontroller::class, 'postlogin']);
 Route::get('/index', [Admincontroller::class, 'index']);
 
 
@@ -335,3 +338,13 @@ Route::get('/reparasi/deletereparasi/{id}', [ModulController::class, 'destroyrep
 
 Route::get('/index/artikel', [ModulController::class, 'artikel'])->name('artikel');
 Route::post('/updateartikel/{id}', [ModulController::class, 'editartikel']);
+
+
+
+
+
+
+Route::get('/multipleupload', [DataController::class, 'index'])->name('uploads');
+Route::post('/save', [DataController::class, 'store']);
+// Route::get('/multipleuploads', '[Data])->name('uploads');
+// Route::post('/save', 'MultipleuploadsController@store')->name('uploads.store');
