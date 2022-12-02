@@ -21,13 +21,10 @@ use App\Models\prestasi;
 use App\Models\profilsekolah;
 use Illuminate\Http\Request;
 use App\Models\profilvisimisi;
-<<<<<<< HEAD
 use App\Models\sekolahadiwiyata;
 use App\Models\sekolahrujukan;
 use App\Models\sidestruktur;
-=======
 use App\Models\Reparasibengkel;
->>>>>>> dc66d1f117df2f89fa59f50e1312392f534d6649
 use App\Models\Skematerlisensi;
 use App\Models\slider;
 use App\Models\sponsor;
@@ -73,7 +70,7 @@ class LandingController extends Controller
     {
 
         $data = Modul::find($id);
-        
+
         return view("landingpage.jurusan.detailmodul", compact('data'));
     }
     public function tkr()

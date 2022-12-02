@@ -31,7 +31,7 @@ class DatabaseSeeder extends Seeder
             kepsek::class,
             LSP::class,
             prestasi::class,
-            profilsekolah::class,
+            // profilsekolah::class,
             profilvisimisi::class,
             Skematerlisensi::class,
             slider::class,
@@ -42,15 +42,12 @@ class DatabaseSeeder extends Seeder
             totalsiswa::class,
             videoprofil::class,
             Visimisilsp::class,
-<<<<<<< HEAD
-=======
             Modul::class,
             Artikel::class,
             kategoriblog::class,
             walas::class,
-            Reparasibengkel::class
->>>>>>> dc66d1f117df2f89fa59f50e1312392f534d6649
-
+            Reparasibengkel::class,
+            sidestruktur::class
         ]);
     }
 }

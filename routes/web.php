@@ -117,7 +117,7 @@ Route::get('/jurusan/deletejurusan/{id}', [JurusanController::class, 'deletejuru
 // start profil sekolah-admin
 // profil
 Route::get('/index/profil', [Admincontroller::class, 'profil']);
-Route::get('/index/tambahprofil/{profil}', [Admincontroller::class, 'addprofil']);
+Route::post('/index/tambahprofil/{profil}', [Admincontroller::class, 'addprofil']);
 Route::post('/insertprofil', [Admincontroller::class, 'insertprofil']);
 Route::get('/profil/delete/{id}', [Admincontroller::class, 'deleteprofil']);
 Route::get('/profil/edit/{id}', [Admincontroller::class, 'editviewvisimisi']);
@@ -135,11 +135,8 @@ Route::post('/insertstrukturorganisasi', [Admincontroller::class, 'insertstruktu
 Route::get('/index/editstrukturorganisasi/{id}', [Admincontroller::class, 'editstrukturorganisasi']);
 Route::post('/updatestrukturorganisasi/{id}', [Admincontroller::class, 'updatestrukturorganisasi']);
 Route::get('/index/deletestrukturorganisasi/{id}', [AdminController::class, 'deletestrukturorganisasi']);
-<<<<<<< HEAD
 Route::get('/index/addsidestrukturorganisasi', [AdminController::class, 'addsidestrukturorganisasi']);
 Route::post('/index/editsidestrukturorganisasi', [AdminController::class, 'editsidestrukturorganisasi']);
-=======
->>>>>>> dc66d1f117df2f89fa59f50e1312392f534d6649
 //sekolah adiwiyata
 Route::get('/index/sekolahadiwiyata', [Admincontroller::class, 'sekolahadiwiyata']);
 Route::get('/index/addsekolahadiwiyata', [Admincontroller::class, 'addsekolahadiwiyata']);
@@ -154,7 +151,6 @@ Route::post('/insertsejarahsingkat', [Admincontroller::class, 'insertsejarahsing
 Route::get('/sejarahsingkat/edit/{id}', [Admincontroller::class, 'editviewsejarahsingkat']);
 Route::post('/updatesejarahsingkat/{id}', [Admincontroller::class, 'updatesejarahsingkat']);
 Route::get('/sejarahsingkat/delete/{id}', [Admincontroller::class, 'deletesejarahsingkat']);
-<<<<<<< HEAD
 //Sekolah Rujukan
 Route::get('/index/sekolahrujukan', [Admincontroller::class, 'sekolahrujukan']);
 Route::get('/index/addsekolahrujukan', [Admincontroller::class, 'addsekolahrujukan']);
@@ -162,8 +158,6 @@ Route::post('/insertsekolahrujukan', [Admincontroller::class, 'insertsekolahruju
 Route::get('/sejarahsingkat/edit/{id}', [Admincontroller::class, 'editviewsejarahsingkat']);
 Route::post('/updatesejarahsingkat/{id}', [Admincontroller::class, 'updatesejarahsingkat']);
 Route::get('/sejarahsingkat/delete/{id}', [Admincontroller::class, 'deletesejarahsingkat']);
-=======
->>>>>>> dc66d1f117df2f89fa59f50e1312392f534d6649
 // end profil sekolah-admin
 
 
@@ -309,10 +303,6 @@ Route::get('/index/modultkr', [ModulController::class, 'modultkr'])->name('modul
 Route::post('/updatemodultkr/{id}', [ModulController::class, 'updatemodultkr']);
 
 
-<<<<<<< HEAD
-
-
-
 ///////////////////////////////----------------Kategori Blog----------------/////////////////////////---------------------
 Route::get('/kategoriblog', [DataController::class, 'kategoriblog'])->name('kategoriblog');
 Route::get('/tambahkategoriblog', [DataController::class, 'tambahkategoriblog']);
@@ -320,10 +310,9 @@ Route::post('/insertkategoriblog', [DataController::class, 'insertkategoriblog']
 Route::get('/editkategoriblog/{id}', [DataController::class, 'editkategoriblog']);
 Route::post('/updatekategoriblog/{id}', [DataController::class, 'updatekategoriblog']);
 Route::get('/deletekategoriblog/{id}', [DataController::class, 'deletekategoriblog']);
-=======
+
 Route::get('/index/modultei', [ModulController::class, 'modultei'])->name('modultei');
 Route::post('/updatemodultei/{id}', [ModulController::class, 'updatemodultei']);
-<<<<<<< HEAD
 
 Route::get('/index/modul', [ModulController::class, 'modul'])->name('modul');;
 Route::get('/index/tambahmodul', [ModulController::class, 'create']);
@@ -344,6 +333,3 @@ Route::get('/reparasi/deletereparasi/{id}', [ModulController::class, 'destroyrep
 
 Route::get('/index/artikel', [ModulController::class, 'artikel'])->name('artikel');
 Route::post('/updateartikel/{id}', [ModulController::class, 'editartikel']);
-=======
->>>>>>> cede505f4b0bac0c078ab8417cbd9e3abe53d8a1
->>>>>>> e5ac8ba1d2b9757f6bac3d5f2d5428dd8d155eca
