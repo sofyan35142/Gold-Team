@@ -43,7 +43,7 @@
                                                 <td>Foto Sekolah:</td>
                                                 <td>{{ $profil->foto_sekolah }}</td>
                                                 <td>
-                                                    <a href="/index/editstrukturorganisasi/{{ $profil->id }}"
+                                                    <a href="/index/tambahprofil/foto_sekolah"
                                                         class="btn btn-warning"><i
                                                             class="fa-solid fa-pen-to-square"></i></a>
                                                     <a href="#" class="btn btn-danger delete"

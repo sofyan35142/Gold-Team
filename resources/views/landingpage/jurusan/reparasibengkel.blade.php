@@ -37,10 +37,7 @@
                                 <i class="icofont-rounded-double-right"></i>
                                 <a href="/jurusan">Jurusan</a>
                             </li>
-                            <li>
-                                <i class="icofont-rounded-double-right"></i>
-                                <a href="/tkr">Teknik Kendaraan Ringan</a>
-                            </li>
+                            
                             <li>
                                 <i class="icofont-rounded-double-right"></i>
                                 Buku Pedoman Reparasi Bengkel TKR
@@ -58,40 +55,52 @@
             <div class="row">
                 <div class="col-lg-12">
                     {{-- <img src="foto/jurusan/TKR.JPG" alt="service"> --}}
-                    <div class="service-details-post">
-                        <h3>Buku Pedoman Reparasi Bengkel TKR</h3>
-
+                    
+                        <h3 class="text-center mb-5 text-black">Buku Pedoman Reparasi Bengkel TKR</h3>
+                        <div class="row justify-content-center">
+                            @foreach ($data as $reparasi)
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="team-section team-style-two team-style-three team-members pt-1000">
+                                        <div class="team-card">
+                                            <div class="team-img">
+                                                <div class="row">
+                                                    <div class="container">
+                                                        <img src="{{ asset('foto/' . $reparasi->foto) }}"
+                                                            alt="team member">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="team-text">
+                                                <h4 class="h4-css">{{$reparasi->namabuku}}</h4>
+                                                <p><a href="{{$reparasi->link}}">Lihat selengkapnya</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                            
+                                </div>
+                            @endforeach
                         
-                        <div class="table table-bordered">
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <td style="color: rgb(23, 3, 80); font-size: 20px;"><b>Nama Buku Pedoman</b>
-                                        </td>
-                                        <td style="color: rgb(23, 3, 80); font-size: 20px;"><b>Aksi</b></td>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td style="color: black;">New Step 1 Toyota</td>
-                                        <td style="color: black;"><a
-                                                href="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/New-Step-1-Toyota.pdf"><img
-                                                    class="img-key"
-                                                    src="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/54110747-stock-vector-manual-book-user-manual-icon-owner-s-manual-flat-vector-illustration-information-icon-with-a-spanner.jpg"
-                                                    width="10px" /> Download</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td style="color: black;">Toyota Seri 5-K</td>
-                                        <td style="color: black;"><a
-                                                href="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/Toyota-Seri-5-K.pdf"><img
-                                                    class="img-key"
-                                                    src="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/08/54110747-stock-vector-manual-book-user-manual-icon-owner-s-manual-flat-vector-illustration-information-icon-with-a-spanner.jpg"
-                                                    width="75px" /> Download</a></td>
-                                    </tr>
-
-                                </tbody>
-                            </table>
+                        {{-- <div class="col-lg-4 col-md-6">
+                            <div class="team-section team-style-two team-style-three team-members pt-1000">
+                                <div class="team-card">
+                                    <div class="team-img">
+                                        <div class="row">
+                                            <div class="container">
+                                                <img src="https://3.bp.blogspot.com/-dlkRB2pfZXs/V8U-w7xCFCI/AAAAAAAABjQ/O6ywuHewtpg7oJOEexbvcyrgA_gImHyAQCLcB/s1600/modul.jpg"
+                                                    alt="team member">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="team-text">
+                                        <h4 class="h4-css">Modul Produktif TAV</h4>
+                                        <p><a href="/modulproduktiftav">Lihat selengkapnya</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> --}}
                         </div>
+                        
+                        
 
 
                     </div>

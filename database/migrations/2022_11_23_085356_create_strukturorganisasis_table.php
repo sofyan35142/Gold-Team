@@ -18,7 +18,6 @@ return new class extends Migration
             $table->string('judul');
             $table->string('tahun_ajaran');
             $table->string('foto_struktur');
-            $table->string('foto_sidestruktur');
             $table->timestamps();
         });
     }

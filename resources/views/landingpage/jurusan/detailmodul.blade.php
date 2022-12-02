@@ -3,7 +3,6 @@
 @include('landingpage.layout.head')
 
 <body>
-
     <div class="loader-content">
         <div class="d-table">
             <div class="d-table-cell">
@@ -18,32 +17,20 @@
             </div>
         </div>
     </div>
-
-
     @include('landingpage.layout.header')
-
-
     <div class="service-title service-title-bg bg-3">
         <div class="d-table">
             <div class="d-table-cell">
                 <div class="container">
                     <div class="service-title-text">
-                        <h2>Artikel Ilmiah</h2>
+                        <h2>{{ $data->judul }}</h2>
                         <ul>
                             <li>
                                 <a href="/">Beranda</a>
                             </li>
                             <li>
                                 <i class="icofont-rounded-double-right"></i>
-                                <a href="/jurusan">Jurusan</a>
-                            </li>
-                            <li>
-                                <i class="icofont-rounded-double-right"></i>
-                                <a href="/detailjurusan/3">Rekayasa Perangkat Lunak</a>
-                            </li>
-                            <li>
-                                <i class="icofont-rounded-double-right"></i>
-                                Artikel Ilmiah
+                                {{ $data->judul }}
                             </li>
                         </ul>
                     </div>
@@ -51,59 +38,21 @@
             </div>
         </div>
     </div>
-
-
     <div class="service-details-area main-service-area pt-100 services-details-page">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8">
-                    {{-- <img src="foto/jurusan/TEI.JPG" alt="service"> --}}
-                    <div class="service-details-post">
-                        <h3>{{ $artikel->judul }}</h3>
-
-                        {!! $artikel->deskripsi !!}
-
-                        <button type="button" class="btn btn-primary"><a href="{{ $artikel->link }}"><img
-                                    class="img-dow" src="{{ asset('foto/' . $artikel->foto) }}" width="30px" /> <b
-                                    style="color:white; text-size: 18px;">Download</b></a></button>
-
+                <div class="col-lg-12">
+                    
+                    <div class="service-details-post keymodul">
+                        <h3 id="jurusan">{{ $data->judul }}</h3>
+                        <p id="deskirpsi">{!! $data->deskripsi !!}</p>
                     </div>
-                    {{-- <div class="page-button">
-<div class="row">
-<div class="col-md-3 col-sm-6">
-<div class="theme-button">
-<a href="#" class="default-btn">
-<i class="icofont-rounded-left"></i>
-Previous
-</a>
-</div>
-</div>
-<div class="col-md-3 col-sm-6 offset-md-6">
-<div class="theme-button">
-<a href="#" class="default-btn">
-Next
-<i class="icofont-rounded-right"></i>
-</a>
-</div>
-</div>
-</div>
-</div> --}}
+                    
                 </div>
-                <div class="col-lg-4 main-service-area blog-side-bar">
-                    <div class="service-details-post">
-                        <h3>Pengenalan Jurusan RPL</h3>
-                        <div class="ratio ratio-16x9">
-                            <iframe src="{{ $artikel->linkyoutube }}" title="YouTube video" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-
+                
             </div>
         </div>
     </div>
-    </div>
-
-
 
 
 

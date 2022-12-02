@@ -84,6 +84,7 @@ Route::get('/tei', [LandingController::class, 'tei']);
 Route::get('/rpl', [LandingController::class, 'rpl']);
 Route::get('/tki', [LandingController::class, 'tki']);
 Route::get('/tav', [LandingController::class, 'tav']);
+Route::get('/detailmodul/{id}', [LandingController::class, 'detailmodul']);
 Route::get('/modulproduktiftkr', [LandingController::class, 'modulproduktiftkr']);
 Route::get('/reparasibengkel', [LandingController::class, 'reparasibengkel']);
 Route::get('/modulproduktiftei', [LandingController::class, 'modulproduktiftei']);
@@ -116,7 +117,7 @@ Route::get('/jurusan/deletejurusan/{id}', [JurusanController::class, 'deletejuru
 // start profil sekolah-admin
 // profil
 Route::get('/index/profil', [Admincontroller::class, 'profil']);
-Route::get('/index/addprofil', [Admincontroller::class, 'addprofil']);
+Route::get('/index/tambahprofil/{profil}', [Admincontroller::class, 'addprofil']);
 Route::post('/insertprofil', [Admincontroller::class, 'insertprofil']);
 Route::get('/profil/delete/{id}', [Admincontroller::class, 'deleteprofil']);
 Route::get('/profil/edit/{id}', [Admincontroller::class, 'editviewvisimisi']);
@@ -134,6 +135,8 @@ Route::post('/insertstrukturorganisasi', [Admincontroller::class, 'insertstruktu
 Route::get('/index/editstrukturorganisasi/{id}', [Admincontroller::class, 'editstrukturorganisasi']);
 Route::post('/updatestrukturorganisasi/{id}', [Admincontroller::class, 'updatestrukturorganisasi']);
 Route::get('/index/deletestrukturorganisasi/{id}', [AdminController::class, 'deletestrukturorganisasi']);
+Route::get('/index/addsidestrukturorganisasi', [AdminController::class, 'addsidestrukturorganisasi']);
+Route::post('/index/editsidestrukturorganisasi', [AdminController::class, 'editsidestrukturorganisasi']);
 //sekolah adiwiyata
 Route::get('/index/sekolahadiwiyata', [Admincontroller::class, 'sekolahadiwiyata']);
 Route::get('/index/addsekolahadiwiyata', [Admincontroller::class, 'addsekolahadiwiyata']);
@@ -142,9 +145,16 @@ Route::get('/index/editsekolahadiwiyata/{id}', [Admincontroller::class, 'editsek
 Route::post('/updatestrukturorganisasi/{id}', [Admincontroller::class, 'updatestrukturorganisasi']);
 Route::get('/index/deletestrukturorganisasi/{id}', [AdminController::class, 'deletestrukturorganisasi']);
 //Sejarah Singkat
-Route::get('/index/sejarahsingkat', [Admincontroller::class, 'sejarahsingkat'])->name('sejarahsingkat');
+Route::get('/index/sejarahsingkat', [Admincontroller::class, 'sejarahsingkat']);
 Route::get('/index/addsejarahsingkat', [Admincontroller::class, 'addsejarahsingkat']);
 Route::post('/insertsejarahsingkat', [Admincontroller::class, 'insertsejarahsingkat']);
+Route::get('/sejarahsingkat/edit/{id}', [Admincontroller::class, 'editviewsejarahsingkat']);
+Route::post('/updatesejarahsingkat/{id}', [Admincontroller::class, 'updatesejarahsingkat']);
+Route::get('/sejarahsingkat/delete/{id}', [Admincontroller::class, 'deletesejarahsingkat']);
+//Sekolah Rujukan
+Route::get('/index/sekolahrujukan', [Admincontroller::class, 'sekolahrujukan']);
+Route::get('/index/addsekolahrujukan', [Admincontroller::class, 'addsekolahrujukan']);
+Route::post('/insertsekolahrujukan', [Admincontroller::class, 'insertsekolahrujukan']);
 Route::get('/sejarahsingkat/edit/{id}', [Admincontroller::class, 'editviewsejarahsingkat']);
 Route::post('/updatesejarahsingkat/{id}', [Admincontroller::class, 'updatesejarahsingkat']);
 Route::get('/sejarahsingkat/delete/{id}', [Admincontroller::class, 'deletesejarahsingkat']);
@@ -305,3 +315,23 @@ Route::post('/updatekategoriblog/{id}', [DataController::class, 'updatekategorib
 Route::get('/deletekategoriblog/{id}', [DataController::class, 'deletekategoriblog']);
 Route::get('/index/modultei', [ModulController::class, 'modultei'])->name('modultei');
 Route::post('/updatemodultei/{id}', [ModulController::class, 'updatemodultei']);
+
+Route::get('/index/modul', [ModulController::class, 'modul'])->name('modul');;
+Route::get('/index/tambahmodul', [ModulController::class, 'create']);
+Route::post('/insertmodul', [ModulController::class, 'store']);
+Route::get('/modul/edit/{id}', [ModulController::class, 'show']);
+Route::post('/modul/update/{id}', [ModulController::class, 'update']);
+Route::get('/modul/deletemodul/{id}', [ModulController::class, 'destroy']);
+
+
+Route::get('/index/reparasi', [ModulController::class, 'reparasi'])->name('reparasi');;
+Route::get('/index/tambahreparasi', [ModulController::class, 'createreparasi']);
+Route::post('/insertreparasi', [ModulController::class, 'storereparasi']);
+Route::get('/reparasi/edit/{id}', [ModulController::class, 'showreparasi']);
+Route::post('/reparasi/update/{id}', [ModulController::class, 'updatereparasi']);
+Route::get('/reparasi/deletereparasi/{id}', [ModulController::class, 'destroyreparasi']);
+
+
+
+Route::get('/index/artikel', [ModulController::class, 'artikel'])->name('artikel');
+Route::post('/updateartikel/{id}', [ModulController::class, 'editartikel']);

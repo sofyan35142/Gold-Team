@@ -18,8 +18,8 @@ class strukturorganisasi extends Seeder
         DB::table('strukturorganisasi')->insert([
             'judul' => 'STRUKTUR ORGANISASI SMK NEGERI 1 SUKOREJO',
             'tahun_ajaran' => 'TAHUN AJARAN 2021/2022',
+            'tahun_ajaran' => 'TAHUN AJARAN 2021/2022',
             'foto_struktur' => 'strukturorganisasi.jpg',
-            'foto_sidestruktur' => '["rudi.jpg","titik.jpg","ellya.jpg","asnah.jpg","joko.jpeg"]'
         ]);
     }
 }

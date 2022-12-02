@@ -1,9 +1,5 @@
 <!DOCTYPE html>
 <html lang="zxx">
-<!-- Mirrored from templates.hibootstrap.com/viscous/default/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Nov 2022 02:33:31 GMT -->
-
-<!-- Mirrored from previewthemes.com/enzio/home-1 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 Nov 2022 03:25:34 GMT -->
-<!-- Added by HTTrack -->
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 @include('landingpage.layout.head')
 
@@ -52,54 +48,25 @@
                             <h3>
                                 STRUKTUR ORGANISASI
                             </h3>
-                            <h4>SMK NEGERI 1 SUKOREJO</h4>
-                            <h7>TAHUN AJARAN 2021/2022</h7>
+                            <h4>{{ $data->judul }}</h4>
+                            <h7>{{$data->tahun_ajaran}}</h7>
                         </div>
-                        <img src="../assets/img/strukturorganisasi.jpg" alt="service">
+                        <img src="{{ asset('assets/img/' . $data->foto_struktur)}}" alt="service">
                     </div>
                 </div>
                 <div class="col-lg-4 main-service-area blog-side-bar border shadows mb-40px">
+                <h3 class="mt-3">Anggota Organisasi</h3>
                     <div class="row">
+                        @foreach ($dataside as $side)
                         <div class="col-lg-6 mt-3">
                             <div class="img-overlay">
-                                <img class="h-12pc w-100" src="../assets/img/so/rudi.jpg" alt="Avatar" class="img-overlay-image">
+                                <img class="h-12pc w-100" src="{{asset('assets/img/so/' . $side->foto_struktur)}}" alt="Avatar" class="img-overlay-image">
                                 <div class="overlay">
-                                    <div class="text">RUDI TRISANTOSO, S.Pd, M.Pd</div>
+                                    <div class="text">{{$side->nama}}</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 mt-3">
-                            <div class="img-overlay">
-                                <img class="h-12pc w-100" src="../assets/img/so/titik.jpg" alt="Avatar" class="img-overlay-image">
-                                <div class="overlay">
-                                    <div class="text">TITIK CHOMZAH, S.Pd</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 mt-3">
-                            <div class="img-overlay">
-                                <img class="h-12pc w-100" src="../assets/img/so/ellya.jpg" alt="Avatar" class="img-overlay-image">
-                                <div class="overlay">
-                                    <div class="text">ELLYA MAGHFIRLI, S.Pd</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 mt-3">
-                            <div class="img-overlay">
-                                <img class="h-12pc w-100" src="../assets/img/so/asnah.jpg" alt="Avatar" class="img-overlay-image">
-                                <div class="overlay">
-                                    <div class="text">ASNAH YUNIARTI, S.Pd</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 mt-3">
-                            <div class="img-overlay">
-                                <img class="h-12pc w-100" src="../assets/img/so/joko.jpeg" alt="Avatar" class="img-overlay-image">
-                                <div class="overlay">
-                                    <div class="text">JOKO SISWANTO, S.T., M.Pd</div>
-                                </div>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>

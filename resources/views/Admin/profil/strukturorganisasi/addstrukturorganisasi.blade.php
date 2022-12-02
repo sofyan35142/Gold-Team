@@ -56,14 +56,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- DataTable with Buttons -->
-                        <!--/ DataTable with Buttons -->
-                        <!-- Complex Headers -->
-                        <!--/ Complex Headers -->
-                        <!-- Row grouping -->
-                        <!--/ Row grouping -->
-                        <!-- Multilingual -->
-                        <!--/ Multilingual -->
                     </div>
                     <!-- / Content -->
                     <!-- Footer -->

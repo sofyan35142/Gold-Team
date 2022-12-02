@@ -4,8 +4,8 @@
                 <div class="app-brand demo ">
                     <a href="index.html" class="app-brand-link">
                         <span class="app-brand-logo demo">
-                            <svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1"
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <img width="26px" height="26px" viewBox="0 0 26 26" version="1.1"
+                                src="../foto/jurusan/smk.png" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <title>icon</title>
                                 <defs>
                                     <linearGradient x1="50%" y1="0%" x2="50%" y2="100%"
@@ -37,10 +37,10 @@
                                         </g>
                                     </g>
                                 </g>
-                            </svg>
+                            </img>
 
                         </span>
-                        <span class="app-brand-text demo menu-text fw-bold ms-2">Frest</span>
+                        <span class="app-brand-text demo menu-text fw-bold ms-2">Sketsu</span>
                     </a>
 
                     <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">
@@ -192,8 +192,13 @@
                         </a>
                         <ul class="menu-sub">
                             <li class="menu-item">
-                                <a href="/index/sejarahsingkat" class="menu-link">
-                                    <div data-i18n="sejarah singkat">sejarah singkat</div>
+                                <a href="/index/profil" class="menu-link">
+                                    <div data-i18n="Profile Sekolah">Profile Sekolah</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="/index/profilvisimisi" class="menu-link">
+                                    <div data-i18n="Profile Visi Misi">Profile Visi Misi</div>
                                 </a>
                             </li>
                             <li class="menu-item">
@@ -202,18 +207,13 @@
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a href="app-user-list.html" class="menu-link">
-                                    <div data-i18n="visimisi">visimisi</div>
+                                <a href="/index/sejarahsingkat" class="menu-link">
+                                    <div data-i18n="sejarah singkat">sejarah singkat</div>
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a href="app-user-list.html" class="menu-link">
-                                    <div data-i18n="visimisi">visimisi</div>
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="app-user-list.html" class="menu-link">
-                                    <div data-i18n="visimisi">visimisi</div>
+                                <a href="/index/sekolahadiwiyata" class="menu-link">
+                                    <div data-i18n="sekolahadiwiyata">sekolah adiwiata</div>
                                 </a>
                             </li>
                         </ul>
@@ -231,19 +231,19 @@
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a href="#" class="menu-link">
+                                <a href="/index/kakomli" class="menu-link">
                                     <div data-i18n="Kakomli">Kepala Kompetensi Keahlian</div>
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a href="#" class="menu-link">
+                                <a href="/index/modul" class="menu-link">
                                     <div data-i18n="Modul">Modul Produktif</div>
                                 </a>
                             </li>
                         </ul>
                     </li>
 
-                    <li class="menu-item">
+                    {{-- <li class="menu-item">
                         <a href="javascript:void(0);" class="menu-link menu-toggle">
                             <i class="menu-icon tf-icons bx bx-detail"></i>
                             <div data-i18n="Modul Produktif">Modul Produktif</div>
@@ -288,7 +288,7 @@
                                 </a>
                             </li>
                         </ul>
-                    </li>
+                    </li> --}}
 
                     <li class="menu-item">
                         <a href="javascript:void(0);" class="menu-link menu-toggle">

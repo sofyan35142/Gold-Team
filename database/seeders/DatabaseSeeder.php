@@ -36,13 +36,20 @@ class DatabaseSeeder extends Seeder
             Skematerlisensi::class,
             slider::class,
             strukturorganisasi::class,
+            sekolahadiwiyata::class,
+            sekolahrujukan::class,
             Tempatujikom::class,
             totalsiswa::class,
             videoprofil::class,
             Visimisilsp::class,
-            Modultkr::class,
+<<<<<<< HEAD
+=======
+            Modul::class,
+            Artikel::class,
             kategoriblog::class,
-            walas::class
+            walas::class,
+            Reparasibengkel::class
+>>>>>>> dc66d1f117df2f89fa59f50e1312392f534d6649
 
         ]);
     }

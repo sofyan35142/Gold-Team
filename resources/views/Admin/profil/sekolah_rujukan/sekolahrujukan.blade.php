@@ -24,8 +24,8 @@
                         <!-- DataTable with Buttons -->
                         <div class="card mb-4">
                             <div class="card-datatable table-responsive pt-0">
-                                <h5 class="card-header">Data Profil Struktur Organisasi</h5>
-                                <a href="/index/addstrukturorganisasi" type="button"
+                                <h5 class="card-header">Data Sekolah Rujukan</h5>
+                                <a href="" type="button"
                                     class="btn rounded-pill btn-primary">Tambah +</a>
                                 <table class="table" id="jurusan">
                                     <thead>
@@ -34,65 +34,18 @@
                                             <th scope="col">Judul</th>
                                             <th scope="col">tahun ajaran</th>
                                             <th scope="col">Foto Struktur</th>
-                                            {{-- <th scope="col">Foto Side Struktur</th>
-                                            <th scope="col">nama anggota Struktur</th> --}}
                                             <th scope="col">Aksi</th>
                                         </tr>
                                     </thead>
                                     <tbody class="table-group-divider">
                                         <?php $no = 1; ?>
-                                        <tr>
+                                        {{-- <tr>
                                             <td>{{ $no }}</td>
                                             <td>{{ $struktur->judul }}</td>
                                             <td>{{ $struktur->tahun_ajaran }}</td>
                                             <td>
-                                                <img src="{{asset("assets/img/" . $struktur->foto_struktur )}}"
-                                                alt="" style="width: 80px; height:80px;">
-                                            </td>
-                                            {{-- <td>
-                                                <img src="{{ asset('sidestruktur/' . $struktur->foto_sidestruktur) }}"
+                                                <img src="{{ asset('assets/img/' . $struktur->foto_struktur) }}"
                                                     alt="" style="width: 80px; height:80px;">
-                                            </td> --}}
-                                            {{-- <td>
-                                                <img src="{{ asset('sidestruktur/' . $struktur->foto_sidestruktur) }}"
-                                                    alt="" style="width: 80px; height:80px;">
-                                            </td> --}}
-                                            <td>
-                                                <a href="/index/editstrukturorganisasi/{{ $struktur->id }}"
-                                                    class="btn btn-warning"><i
-                                                        class="fa-solid fa-pen-to-square"></i></a>
-                                                <a href="#" class="btn btn-danger delete"
-                                                    data-id="{{ $struktur->id }}"
-                                                    data-struktur="{{ $struktur->judul }}"><i
-                                                        class="fa-solid fa-trash"></i></a>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="card mb-4">
-                            <div class="card-datatable table-responsive pt-0">
-                                <h5 class="card-header">Data side bar Profil Struktur Organisasi</h5>
-                                <a href="/index/sidestrukturorganisasi" type="button"
-                                    class="btn rounded-pill btn-primary">Tambah atau edit side struktur</a>
-                                <table class="table" id="sideso">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">No.</th>
-                                            <th scope="col">Nama</th>
-                                            <th scope="col">Foto</th>
-                                            <th scope="col">Aksi</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="table-group-divider">
-                                        @foreach ($datafotonama as $data )
-                                        <tr>
-                                            <td>{{ $no++ }}</td>
-                                            <td>{{ $data->nama }}</td>
-                                            <td>
-                                                <img src="{{asset("assets/img/so/" . $data->foto_struktur )}}"
-                                                alt="" style="width: 80px; height:80px;">
                                             </td>
                                             <td>
                                                 <a href="/index/editstrukturorganisasi/{{ $struktur->id }}"
@@ -103,8 +56,7 @@
                                                     data-struktur="{{ $struktur->judul }}"><i
                                                         class="fa-solid fa-trash"></i></a>
                                             </td>
-                                        </tr>
-                                        @endforeach
+                                        </tr> --}}
                                     </tbody>
                                 </table>
                             </div>

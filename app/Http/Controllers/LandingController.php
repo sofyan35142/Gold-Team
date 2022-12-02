@@ -3,9 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\alumni;
+use App\Models\Artikel;
 use App\Models\Blog;
 use App\Models\Dharma;
-use App\Models\Modultkr;
+use App\Models\Modul;
 use App\Models\Modultei;
 use App\Models\LSP;
 use App\Models\Visimisilsp;
@@ -20,9 +21,17 @@ use App\Models\prestasi;
 use App\Models\profilsekolah;
 use Illuminate\Http\Request;
 use App\Models\profilvisimisi;
+<<<<<<< HEAD
+use App\Models\sekolahadiwiyata;
+use App\Models\sekolahrujukan;
+use App\Models\sidestruktur;
+=======
+use App\Models\Reparasibengkel;
+>>>>>>> dc66d1f117df2f89fa59f50e1312392f534d6649
 use App\Models\Skematerlisensi;
 use App\Models\slider;
 use App\Models\sponsor;
+use App\Models\strukturorganisasi;
 use App\Models\Tempatujikom;
 use App\Models\totalsiswa;
 use App\Models\videoprofil;
@@ -57,7 +66,15 @@ class LandingController extends Controller
 
         $data = Jurusan::find($id);
         $kakomli = Kakomli::find($id);
-        return view("landingpage.jurusan.detailjurusan", compact('data', 'kakomli'));
+        $modul = Modul::where('id',$id)->get();
+        return view("landingpage.jurusan.detailjurusan", compact('data', 'kakomli', 'modul'));
+    }
+    public function detailmodul($id)
+    {
+
+        $data = Modul::find($id);
+        
+        return view("landingpage.jurusan.detailmodul", compact('data'));
     }
     public function tkr()
     {
@@ -81,12 +98,12 @@ class LandingController extends Controller
     }
     public function modulproduktiftkr()
     {
-        $modultkr = Modultkr::where('id', '=', 1)->firstOrFail();
+        $modultkr = Modul::where('id', '=', 1)->firstOrFail();
         return view("landingpage.jurusan.modulproduktiftkr", compact('modultkr'));
     }
     public function reparasibengkel()
     {
-        $data = Jurusan::all();
+        $data = Reparasibengkel::all();
         return view("landingpage.jurusan.reparasibengkel", compact('data'));
     }
     public function modulproduktiftei()
@@ -100,7 +117,8 @@ class LandingController extends Controller
     }
     public function artikelilmiah()
     {
-        return view("landingpage.jurusan.artikelilmiah");
+        $artikel = Artikel::where('id', '=', 1)->firstOrFail();
+        return view("landingpage.jurusan.artikelilmiah", compact('artikel'));
     }
     public function modulproduktiftki()
     {
@@ -153,7 +171,9 @@ class LandingController extends Controller
 
     public function strukturorganisasi()
     {
-        return view("landingpage.profile.strukturorganisasi");
+        $data = strukturorganisasi::find(1);
+        $dataside = sidestruktur::all();
+        return view("landingpage.profile.strukturorganisasi",compact('data','dataside'));
     }
     public function sejarahsingkat()
     {
@@ -161,11 +181,13 @@ class LandingController extends Controller
     }
     public function sekolahadiwiyata()
     {
-        return view("landingpage.profile.sekolahadiwiyata");
+        $adiwiyata = sekolahadiwiyata::find(1);
+        return view("landingpage.profile.sekolahadiwiyata",compact('adiwiyata'));
     }
     public function sekolahrujukan()
     {
-        return view("landingpage.profile.sekolahrujukan");
+        $data = sekolahrujukan::find(1);
+        return view("landingpage.profile.sekolahrujukan",compact('data'));
     }
     //end profil sekolah
 
