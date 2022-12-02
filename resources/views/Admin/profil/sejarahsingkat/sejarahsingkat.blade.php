@@ -24,7 +24,7 @@
                         <!-- DataTable with Buttons -->
                         <div class="card mb-4">
                             <div class="card-datatable table-responsive pt-0">
-                                <h5 class="card-header">Data </h5>
+                                <h5 class="card-header">Data sejarahsingkat</h5>
                                 <a href="/index/addsejarahsingkat" type="button"
                                     class="btn rounded-pill btn-primary">Tambah +</a>
                                 <table class="table" id="jurusan">

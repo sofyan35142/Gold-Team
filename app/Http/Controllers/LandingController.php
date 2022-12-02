@@ -70,7 +70,7 @@ class LandingController extends Controller
     {
 
         $data = Modul::find($id);
-        
+
         return view("landingpage.jurusan.detailmodul", compact('data'));
     }
     public function tkr()
