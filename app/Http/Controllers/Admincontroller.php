@@ -6,10 +6,7 @@ use App\Models\profilsekolah;
 use App\Models\profilvisimisi;
 use App\Models\sekolahadiwiyata;
 use App\Models\sejarahsingkat;
-<<<<<<< HEAD
 use App\Models\sidestruktur;
-=======
->>>>>>> dc66d1f117df2f89fa59f50e1312392f534d6649
 use App\Models\strukturorganisasi;
 use Illuminate\Http\Request;
 
@@ -259,7 +256,6 @@ class Admincontroller extends Controller
         $data->delete();
         return redirect()->route('sejarahsingkat')->with('success', 'Berhasil Di Hapus');
     }
-<<<<<<< HEAD
     //start sekolah rujukan
     public function sekolahrujukan()
     {
@@ -275,8 +271,6 @@ class Admincontroller extends Controller
         return view("admin.profil.sekolah_rujukan.addsekolahrujukan");
     }
     //end sekolah rujukan
-=======
 
->>>>>>> dc66d1f117df2f89fa59f50e1312392f534d6649
     ///////////////////// END PROFIL LANDINGPAGE ADMIN ///////////////////////////
 }
