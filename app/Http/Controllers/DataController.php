@@ -409,4 +409,48 @@ class DataController extends Controller
         return redirect()->route('walas')->with('success', 'Berhasil Di Hapus');
     }
 
+
+
+
+    public function index()
+    {
+        return view('landingpage.multiple');
+    }
+    public function store(Request $request)
+    {
+        dd($request->all());
+               $images = [];
+
+        if ($request->images){
+
+            foreach($request->images as $key => $image)
+
+            {
+
+                $imageName = time().rand(1,99).'.'.$image->extension();
+
+                $image->move(public_path('images'), $imageName);
+
+
+
+                $images[]['name'] = $imageName;
+
+            }
+
+        }
+
+        foreach ($images as $key => $image) {
+
+            Image::create($image);
+
+        }
+
+        return back()
+
+                ->with('success','You have successfully upload image.')
+
+                ->with('images', $images);
+
+    }
+
 }

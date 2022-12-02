@@ -212,7 +212,7 @@
 
                             </ul>
                         </li>
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <a href="#" class="nav-link dropdown-toggle">
                                 Alumni
                                 <i class="icofont-rounded-right"></i>
@@ -225,7 +225,7 @@
                                     <a href="/alumni/profilealumni" class="nav-link">Profil Alumni</a>
                                 </li>
                             </ul>
-                        </li>
+                        </li> --}}
                     </ul>
                     {{-- <div class="navbar-button">
                         <a href="testimonial.html">Get Quote</a>

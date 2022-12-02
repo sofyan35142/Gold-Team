@@ -42,6 +42,8 @@
     <link rel="stylesheet" href="../../assets1/vendor/libs/datatables-rowgroup-bs5/rowgroup.bootstrap5.css">
     <!-- Form Validation -->
     <link rel="stylesheet" href="../../assets1/vendor/libs/formvalidation/dist/css/formValidation.min.css" />
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
     <!-- Page CSS -->
 

@@ -9,7 +9,11 @@ use Illuminate\Http\Request;
 use App\Models\profilsekolah;
 use App\Models\profilvisimisi;
 use App\Models\sejarahsingkat;
+<<<<<<< HEAD
 use App\Models\sekolahadiwiyata;
+=======
+use App\Models\sidestruktur;
+>>>>>>> 2c74941bfcca4d5fe90bc98af6b166b8daf8791d
 use App\Models\strukturorganisasi;
 use Illuminate\Support\Facades\Auth;
 
@@ -50,10 +54,16 @@ class Admincontroller extends Controller
     }
     public function addprofil(Request $request,$profil)
     {
+        // dd($request->$profil);
         $data = profilsekolah::find(1);
-        $data->update(([$profil=>$request]));
+        $data->update(([$profil=>$request->$profil]));
+        if ($request->hasFile('foto_sekolah')) {
+            $request->file('foto_sekolah')->move('assets/img/fotoprofilsekolah/', $request->file('foto_sekolah')->getClientOriginalName());
+            $data->foto_sekolah = $request->file('foto_sekolah')->getClientOriginalName();
+            $data->save();
+        }
         // $profil->update(([$id => '-']));
-        return view('admin.profil.profil.addprofil');
+        return redirect('/index/profil')->with("success,Data berhasil diubah");
     }
     public function insertprofil(Request $request)
     {
@@ -238,19 +248,28 @@ class Admincontroller extends Controller
     }
     public function insertsejarahsingkat(Request $request)
     {
-        $data = sejarahsingkat::create([
-            'judul' => $request->judul,
-            'isi_artikel' => $request->isi_artikel,
-            'judul_fotoside' => $request->judul_fotoside,
-            'foto_side' => $request->foto_side,
-        ]);
-        // dd($data);
-        if ($request->hasFile('foto-side')) {
-            $request->file('foto_side')->move('fotosejarah/', $request->file('foto_side')->getClientOriginalName());
-            $data->foto_side = $request->file('foto_side')->getClientOriginalName();
-            $data->save();
+        // $data = sejarahsingkat::create([
+        //     'judul' => $request->judul,
+        //     'isi_artikel' => $request->isi_artikel,
+        //     'judul_fotoside' => $request->judul_fotoside,
+        // ]);
+        $files = [];
+        if($request->hasfile('foto_side')){
+            foreach($request->foto_side as $file){
+                $name = $file->getClientOriginalName();
+                $file->move(public_path('file'),$name);
+                $files[] = $name;
+            }
         }
-        return redirect()->route('sejarahsingkat')->with('success', 'Berhasil Di Tambahkan');
+        // $fotoside = implode(',',$files);
+        $file  = new sejarahsingkat();
+        $file->judul = $request->judul;
+        $file->isi_artikel = $request->isi_artikel;
+        $file->judul_fotoside = $request->judul_fotoside;
+        $file->foto_side = json_encode($files);
+        // dd($file->foto_side);
+        $file->save();
+        return redirect('/index/sejarahsingkat')->with('success', 'Berhasil Di Tambahkan');
     }
     public function editviewsejarahsingkat($id)
     {
@@ -296,6 +315,9 @@ class Admincontroller extends Controller
         return view("admin.profil.sekolah_rujukan.addsekolahrujukan");
     }
     //end sekolah rujukan
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2c74941bfcca4d5fe90bc98af6b166b8daf8791d
     ///////////////////// END PROFIL LANDINGPAGE ADMIN ///////////////////////////
 }

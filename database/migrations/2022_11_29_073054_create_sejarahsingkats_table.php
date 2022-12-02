@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('judul');
             $table->text('isi_artikel');
             $table->string('judul_fotoside');
-            $table->string('foto_side');
+            $table->string('foto_side')->nullable();
             $table->timestamps();
         });
     }

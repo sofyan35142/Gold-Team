@@ -120,7 +120,7 @@ Route::get('/jurusan/deletejurusan/{id}', [JurusanController::class, 'deletejuru
 // start profil sekolah-admin
 // profil
 Route::get('/index/profil', [Admincontroller::class, 'profil']);
-Route::get('/index/tambahprofil/{profil}', [Admincontroller::class, 'addprofil']);
+Route::post('/index/tambahprofil/{profil}', [Admincontroller::class, 'addprofil']);
 Route::post('/insertprofil', [Admincontroller::class, 'insertprofil']);
 Route::get('/profil/delete/{id}', [Admincontroller::class, 'deleteprofil']);
 Route::get('/profil/edit/{id}', [Admincontroller::class, 'editviewvisimisi']);
@@ -306,9 +306,12 @@ Route::get('/index/modultkr', [ModulController::class, 'modultkr'])->name('modul
 Route::post('/updatemodultkr/{id}', [ModulController::class, 'updatemodultkr']);
 
 
+<<<<<<< HEAD
+=======
 
 
 
+>>>>>>> 4685a335f774bdd984377f2e3a44f4f71e2e7591
 ///////////////////////////////----------------Kategori Blog----------------/////////////////////////---------------------
 Route::get('/kategoriblog', [DataController::class, 'kategoriblog'])->name('kategoriblog');
 Route::get('/tambahkategoriblog', [DataController::class, 'tambahkategoriblog']);
@@ -316,6 +319,10 @@ Route::post('/insertkategoriblog', [DataController::class, 'insertkategoriblog']
 Route::get('/editkategoriblog/{id}', [DataController::class, 'editkategoriblog']);
 Route::post('/updatekategoriblog/{id}', [DataController::class, 'updatekategoriblog']);
 Route::get('/deletekategoriblog/{id}', [DataController::class, 'deletekategoriblog']);
+<<<<<<< HEAD
+
+=======
+>>>>>>> 4685a335f774bdd984377f2e3a44f4f71e2e7591
 Route::get('/index/modultei', [ModulController::class, 'modultei'])->name('modultei');
 Route::post('/updatemodultei/{id}', [ModulController::class, 'updatemodultei']);
 

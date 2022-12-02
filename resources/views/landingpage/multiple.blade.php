@@ -1,78 +1,57 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Laravel 9 Multiple Image </title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
+  <title>Laravel Multiple File Upload Example</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 </head>
-
-<body>
+<body><br>
 <div class="container">
-    <div class="panel panel-primary">
-      <div class="panel-heading">
-        <h2>Laravel 9 Multiple Image Upload</h2>
+    @if (count($errors) > 0)
+      <div class="alert alert-danger">
+        <strong>Sorry !</strong> There were some problems with your input.<br><br>
+        <ul>
+          @foreach ($errors->all() as $error)
+              <li>{{ $error }}</li>
+          @endforeach
+        </ul>
       </div>
-      <div class="panel-body">
+      @endif
 
-        @if ($message = Session::get('success'))
-
-            <div class="alert alert-success alert-dismissible fade show" role="alert">
-
-              <strong>{{ $message }}</strong>
-
-              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-
-            </div>
-
-            @foreach(Session::get('images') as $image)
-
-                <img src="images/{{ $image['name'] }}" width="300px">
-
-            @endforeach
-
+        @if(session('success'))
+        <div class="alert alert-success">
+          {{ session('success') }}
+        </div>
         @endif
 
-        <form action="save" method="POST" enctype="multipart/form-data">
-
-            @csrf
-
-            <div class="mb-3">
-
-                <label class="form-label" for="inputImage">Select Images:</label>
-
-                <input
-
-                    type="file"
-
-                    name="images[]"
-
-                    id="inputImage"
-
-                    multiple
-
-                    class="form-control @error('images') is-invalid @enderror">
-
-
-
-                @error('images')
-
-                    <span class="text-danger">{{ $message }}</span>
-
-                @enderror
-
+<h3 class="jumbotron"><i class="glyphicon glyphicon-upload"></i> Laravel Multiple File Upload</h3>
+<form method="post" action="save" enctype="multipart/form-data">
+  {{csrf_field()}}
+        <div class="input-group control-group increment" >
+          <input type="file" name="filename[]" class="form-control">
+          <div class="input-group-btn">
+            <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-plus"></i>Add</button>
+          </div>
+        </div>
+        <div class="clone hide">
+          <div class="control-group input-group" style="margin-top:10px">
+            <input type="file" name="filename[]" class="form-control">
+            <div class="input-group-btn">
+              <button class="btn btn-danger" type="button"><i class="glyphicon glyphicon-remove"></i> Remove</button>
             </div>
-
-            <div class="mb-3">
-
-                <button type="submit" class="btn btn-success">Upload</button>
-
-            </div>
-        </form>
-
-      </div>
-
-    </div>
-
-</div>
-
+          </div>
+        </div>
+        <button type="submit" class="btn btn-info" style="margin-top:12px"><i class="glyphicon glyphicon-check"></i> Submit</button>
+  </form>
+<script type="text/javascript">
+    $(document).ready(function() {
+      $(".btn-success").click(function(){
+          var html = $(".clone").html();
+          $(".increment").after(html);
+      });
+      $("body").on("click",".btn-danger",function(){
+          $(this).parents(".control-group").remove();
+      });
+    });
+</script>
 </body>
+</html>

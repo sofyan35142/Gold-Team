@@ -422,3 +422,8 @@ h2 {
     z-index: 100;
     /* position: absolute !important    ; */
 }
+.sopyan{
+z-index: 2;
+margin-left: -67px !important;
+}
+

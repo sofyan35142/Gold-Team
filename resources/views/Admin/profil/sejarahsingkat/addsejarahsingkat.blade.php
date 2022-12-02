@@ -34,9 +34,8 @@
                                             </div>
                                             <div>
                                                 <label for="defaultFormControlInput" class="form-label">Isi Artikel</label>
-                                                <input type="text" name="isi_artikel" class="form-control"
-                                                    id="defaultFormControlInput"
-                                                    aria-describedby="defaultFormControlHelp" />
+                                                <textarea name="isi_artikel" id="editor"></textarea>
+
                                             </div>
                                             <div>
                                                 <label for="defaultFormControlInput" class="form-label">Judul Foto Side</label>
@@ -47,8 +46,7 @@
                                             <br />
                                                 <div class="mb-3">
                                                     <label for="exampleInputEmail1" class="form-label">Upload Foto</label>
-                                                    <input type="file" name="foto_side" class="form-control"
-                                                        id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                    <input type="file" name="foto_side[]" class="form-control" multiple>
                                                 </div>
                                                 <button type="submit"
                                                     class="btn rounded-pill btn-primary">Submit</button>
