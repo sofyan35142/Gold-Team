@@ -39,7 +39,7 @@
                             </li>
                             <li>
                                 <i class="icofont-rounded-double-right"></i>
-                                <a href="/rpl">Rekayasa Perangkat Lunak</a>
+                                <a href="/detailjurusan/3">Rekayasa Perangkat Lunak</a>
                             </li>
                             <li>
                                 <i class="icofont-rounded-double-right"></i>
@@ -59,50 +59,13 @@
                 <div class="col-lg-8">
                     {{-- <img src="foto/jurusan/TEI.JPG" alt="service"> --}}
                     <div class="service-details-post">
-                        <h3>Artikel Ilmiah</h3>
+                        <h3>{{ $artikel->judul }}</h3>
 
-                        <h2 class="text-align: center;" style="font-size: 20px;">PEMANFAATAN VMWARE WORKSTATION UNTUK
-                            MENINGKATKAN KEMAMPUAN PESERTA DIDIK KELAS X RPL DALAM MELAKUKAN PRAKTIKUM INSTALASI SISTEM
-                            OPERASI DI SMK NEGERI 1 SUKOREJO
-                        </h2>
-                        <p style="color: rgb(23, 3, 80); font-size: 17px; text-align: center;">Oleh: Arif Kurniawan</p>
-                        <p style="color: rgb(23, 3, 80); font-size: 17px; text-align: center;">NIM. 203153772637</p>
-                        <br />
-                        
-                        <h4 style="text-align: center;">ABSTRAK</h4>
-                        <br />
-                        <p>Penelitian ini bertujuan untuk: (1) mengetahui penggunaan VMware Workstation sebagai media
-                            pembelajaran guna meningkatkan kemampuan siswa dalam melakukan instalasi sistem operasi; (2)
-                            mengetahui kemampuan siswa dalam melakukan instalasi sistem operasi baik dalam aspek
-                            kognitif, afektif maupun psikomotorik, setelah menggunakan media pembelajaran VMware
-                            Workstation dalam pembelajaran.
-                            <br />
-                            <br />
-                            Penelitian ini merupakan jenis penelitian tindakan kelas yang menggunakan media pembelajaran
-                            VMware Workstation sebagai alat bantu untuk meningkatkan kemampuan siswa. Penelitian
-                            tindakan kelas ini dilakukan dengan 4 tahap yaitu perencanaan, tindakan, observasi dan
-                            refleksi. Sasaran penelitian ini adalah siswa kelas X RPL SMK Negeri 1 Sukorejo Pasuruan
-                            dengan jumlah 13 siswa. Penelitian dilaksanakan dengan sistematika 2 siklus, dimana tiap
-                            siklus. Variabel yang diteliti yaitu kemampuan siswa dalam melakukan instalasi sistem
-                            operasi baik dalam aspek kognitif, afektif maupun psikomotorik. Aspek kognitif diamati
-                            melalui hasil tes tertulis yang dilaksanakan tiap akhir siklus. Aspek afektif dan
-                            psikomotorik diamati melalui pengamatan menggunakan lembar observasi. Data dianalisis secara
-                            deskriptif dengan perhitungan sederhana.
-                            <br />
-                            <br />
-                            Hasil penelitian menunjukan: (1) rata-rata presentase ketuntasan aspek kognitif mengalami
-                            peningkatan sebesar 29,48% dari siklus I dengan rata-rata ketuntasan sebesar 53,85% dan
-                            siklus II sebesar 83,33%; (2) rata-rata aspek afektif mengalami peningkatan sebesar 10,26%
-                            dari siklus I dengan rata-rata 70,51% dan siklus II sebesar 80,77%; (3) rata-rata aspek
-                            psikomotorik mengalami peningkatan sebesar 8,76% dari siklus I dengan rata-rata 76,56% dan
-                            siklus II sebesar 85,32%. Berdasarkan hasil yang diperoleh, kemampuan siswa mengalami
-                            peningkatan baik dari aspek kognitif, afektif maupun psikomotorik, sehingga penggunaan media
-                            pembelajaran VMware Workstation sebagai upaya meningkatkan kemampuan siswa dalam melakukan
-                            instalasi sistem operasi berhasil.
+                        {!! $artikel->deskripsi !!}
 
-                            Kata kunci: media pembelajaran, VMware Workstation, sistem operasi
-                        </p>
-                        <button type="button" class="btn btn-primary"><a href="https://smkn1sukorejo.sch.id/wp-content/uploads/2020/11/Abstraksi-1.pdf"><img class="img-dow" src="https://storage.needpix.com/rsynced_images/download-1915753_1280.png" width="30px" /> <b style="color:white; text-size: 18px;">Download</b></a></button>
+                        <button type="button" class="btn btn-primary"><a href="{{ $artikel->link }}"><img
+                                    class="img-dow" src="{{ asset('foto/' . $artikel->foto) }}" width="30px" /> <b
+                                    style="color:white; text-size: 18px;">Download</b></a></button>
 
                     </div>
                     {{-- <div class="page-button">
@@ -127,128 +90,21 @@ Next
 </div> --}}
                 </div>
                 <div class="col-lg-4 main-service-area blog-side-bar">
-                    <div class="service-sidebar">
-                        <form class="search-form">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Search">
-                                <button type="submit" class="btn btn-primary">
-                                    <i class="icofont-search-1"></i>
-                                </button>
-                            </div>
-                        </form>
-                        <div class="service-list">
-                            <p class="sidetitle">Instansi Terkait</p>
-                            <ul>
-                                <li class="hcard overflow-auto">
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Cabang Dinas Pendidikan Wilayah Pasuruan
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Kementerian Pendidikan & Kebudayaan
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Direktorat PSMK
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Dinas Pendidikan Jatim
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Pemerintah Kabupaten Pasuruan
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Dinas Ketenagakerjaan Kabupaten Pasuruan
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Sistem Informasi Inovasi Sekolah
-                                    </a>
-                                </li>
-                            </ul>
-                            <p class="sidetitle">Potensi Sekitar</p>
-                            <ul>
-                                <li class="hcard overflow-auto">
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Kecamatan Sukorejo Kab.Pasuruan
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Kaboki-Pionir Ekspor Tas Rajut
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Taman Safari Indonesia 2
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Saygon Waterpark
-                                    </a>
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        Kebon Raya Purwodadi
-                                    </a>
-                                </li>
-                            </ul>
-                            <p class="sidetitle">Kategori</p>
-                            <ul>
-                                <li class="hcard overflow-auto border-0">
-                                    <a class="colorori mb-2 effecthover-s" href="#">
-                                        <i class="icofont-ui-folder iknrounded"></i>
-                                        Agenda Sekolah
-                                    </a>
-                                    <a class="colorori mb-2 effecthover-s" href="#">
-                                        <i class="icofont-ui-folder iknrounded"></i>
-                                        Artikel Guru
-                                    </a>
-                                    <a class="colorori mb-2 effecthover-s" href="#">
-                                        <i class="icofont-ui-folder iknrounded"></i>
-                                        Informasi Sekolah
-                                    </a>
-                                    <a class="colorori mb-2 effecthover-s" href="#">
-                                        <i class="icofont-ui-folder iknrounded"></i>
-                                        Kegiatan BKK
-                                    </a>
-                                    <a class="colorori mb-2 effecthover-s" href="#">
-                                        <i class="icofont-ui-folder iknrounded"></i>
-                                        Kegiatan Sekolah
-                                    </a>
-                                    <a class="colorori mb-2 effecthover-s" href="#">
-                                        <i class="icofont-ui-folder iknrounded"></i>
-                                        Lowongan Kerja
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        {{-- <div class="tags">
-                            <p>Most Popular Tags</p>
-                            <a href="#">Enjoy</a>
-                            <a href="#">Clean</a>
-                            <a href="#">Hygienic</a>
-                            <a href="#">Time</a>
-                            <a href="#">Brush</a>
-                            <a href="#">Wash</a>
-                            <a href="#">Call</a>
-                        </div> --}}
+                    <div class="service-details-post">
+                        <h3>Pengenalan Jurusan RPL</h3>
                         <div class="ratio ratio-16x9">
-                            <iframe
-                                src="https://www.youtube.com/embed/_3QdWBLnRlo?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0"
-                                title="YouTube video" allowfullscreen></iframe>
+                            <iframe src="{{ $artikel->linkyoutube }}" title="YouTube video" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
     </div>
 
 
-    
+
 
 
     @include('landingpage.layout.footer')

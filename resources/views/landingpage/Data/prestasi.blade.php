@@ -17,14 +17,14 @@
             <div class="d-table-cell">
                 <div class="container">
                     <div class="blog-title-text">
-                        <h2>Our Blogs</h2>
+                        <h2>Prestasi</h2>
                         <ul>
                             <li>
                                 <a href="index.html">Home</a>
                             </li>
                             <li>
                                 <i class="icofont-rounded-double-right"></i>
-                                Blogs
+                                Prestasi
                             </li>
                         </ul>
                     </div>
@@ -59,15 +59,19 @@
     <div class="main-blog-post">
         <div class="container">
             <div class="row">
+                @foreach ($prestasi as $prestasi)
                 <div class="col-lg-4 col-md-6">
+
+
+
                     <div class="blog-area">
                         <div class="blog-img">
-                            <a href="#">
-                                <img class="imgg" src="../prestasi/paskib.jpeg" alt="blog image">
+                            <a href="/prestasidetail/{{ $prestasi->id }}">
+                                <img class="imgg" src="{{ asset('prestasi/' . $prestasi->foto) }}" alt="blog image">
                             </a>
                         </div>
                         <div class="blog-text">
-                            <h4><a href="#">LKBB TINGKAT PASURUAN</a></h4>
+                            <h4><a href="/prestasidetail/{{ $prestasi->id }}">{{ $prestasi->nama_lomba }}</a></h4>
                             <ul>
                                 <li>
                                     <i class="icofont-calendar"></i>
@@ -75,24 +79,20 @@
                                 </li>
                                 <li>
                                     <i class="icofont-ui-user"></i>
-                                    <a href="#">CANDRA</a>
+                                    <a href="#">{{ $prestasi->nama_pemenang }}</a>
                                 </li>
                             </ul>
-                            <p class="overflow">Sketsu kembali menorehkan prestasi di tingkat
-                                            Nasional.
-                                            Prestasi kali ini sangat membanggakan karena mokleters berhasil memborong
-                                            juara 1, 2 & 3 bidang lomba desain UI pada Irestech Fun Competition yang
-                                            diselenggarakan oleh Universitas Brawijaya . Berikut adalah daftar nama
-                                            siswa yang berhasi meraih prestasi tersebut Juara 1 diraih oleh ananda
-                                            Ruqul.</p>
-                            <a href="#" class="blog-btn">
+                            <p class="overflow">{!! $prestasi->deskripsi !!}</p>
+                            <a href="/prestasidetail/{{ $prestasi->id }}" class="blog-btn">
                                 Read more
                                 <i class="icofont-rounded-right"></i>
                             </a>
                         </div>
                     </div>
+
                 </div>
-                <div class="col-lg-4 col-md-6">
+                @endforeach
+                {{-- <div class="col-lg-4 col-md-6">
                     <div class="blog-area">
                         <div class="blog-img">
                             <a href="/ekstradetail">
@@ -157,7 +157,7 @@
                             </a>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
             <nav>
                 <ul class="pagination  justify-content-center">

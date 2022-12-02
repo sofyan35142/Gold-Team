@@ -56,6 +56,16 @@
                             </div>
                         </div>
                         <br/>
+                         <div class="mb-3">
+                                      <label for="exampleInputEmail1" class="form-label">Kategori</label>
+                                      <select  class="form-select" aria-label="Default select example" name="kategori">
+                                        <option value=""></option>
+                                        @foreach ($data as $kategori)
+                                        <option value="{{ $kategori->id }}">{{ $kategori->kategori }}</option>
+                                        @endforeach
+                                        </select>
+                                    </div>
+
 
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Upload Foto Blog</label>

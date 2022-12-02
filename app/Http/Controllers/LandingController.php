@@ -3,9 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\alumni;
+use App\Models\Artikel;
 use App\Models\Blog;
 use App\Models\Dharma;
-use App\Models\Modultkr;
+use App\Models\Modul;
+use App\Models\Modultei;
 use App\Models\LSP;
 use App\Models\Visimisilsp;
 use App\Models\ekstra;
@@ -14,13 +16,18 @@ use App\Models\Jmlpemegang;
 use App\Models\Jurusan;
 use App\Models\kepsek;
 use App\Models\Kakomli;
+use App\Models\kategoriblog;
 use App\Models\prestasi;
 use App\Models\profilsekolah;
 use Illuminate\Http\Request;
 use App\Models\profilvisimisi;
+<<<<<<< HEAD
 use App\Models\sekolahadiwiyata;
 use App\Models\sekolahrujukan;
 use App\Models\sidestruktur;
+=======
+use App\Models\Reparasibengkel;
+>>>>>>> dc66d1f117df2f89fa59f50e1312392f534d6649
 use App\Models\Skematerlisensi;
 use App\Models\slider;
 use App\Models\sponsor;
@@ -28,6 +35,7 @@ use App\Models\strukturorganisasi;
 use App\Models\Tempatujikom;
 use App\Models\totalsiswa;
 use App\Models\videoprofil;
+use App\Models\walas;
 
 class LandingController extends Controller
 {
@@ -58,7 +66,15 @@ class LandingController extends Controller
 
         $data = Jurusan::find($id);
         $kakomli = Kakomli::find($id);
-        return view("landingpage.jurusan.detailjurusan", compact('data', 'kakomli'));
+        $modul = Modul::where('id',$id)->get();
+        return view("landingpage.jurusan.detailjurusan", compact('data', 'kakomli', 'modul'));
+    }
+    public function detailmodul($id)
+    {
+
+        $data = Modul::find($id);
+        
+        return view("landingpage.jurusan.detailmodul", compact('data'));
     }
     public function tkr()
     {
@@ -82,16 +98,18 @@ class LandingController extends Controller
     }
     public function modulproduktiftkr()
     {
-        $modultkr = Modultkr::where('id', '=', 1)->firstOrFail();
+        $modultkr = Modul::where('id', '=', 1)->firstOrFail();
         return view("landingpage.jurusan.modulproduktiftkr", compact('modultkr'));
     }
     public function reparasibengkel()
     {
-        return view("landingpage.jurusan.reparasibengkel");
+        $data = Reparasibengkel::all();
+        return view("landingpage.jurusan.reparasibengkel", compact('data'));
     }
     public function modulproduktiftei()
     {
-        return view("landingpage.jurusan.modulproduktiftei");
+        $modultei = Modultei::where('id', '=', 1)->firstOrFail();
+        return view("landingpage.jurusan.modulproduktiftei", compact('modultei'));
     }
     public function modulproduktifrpl()
     {
@@ -99,7 +117,8 @@ class LandingController extends Controller
     }
     public function artikelilmiah()
     {
-        return view("landingpage.jurusan.artikelilmiah");
+        $artikel = Artikel::where('id', '=', 1)->firstOrFail();
+        return view("landingpage.jurusan.artikelilmiah", compact('artikel'));
     }
     public function modulproduktiftki()
     {
@@ -250,7 +269,8 @@ class LandingController extends Controller
         return view('landingpage.Data.dharmawanita', compact('data') );
     }
     public function datawalas(){
-        return view('landingpage.Data.datawalas');
+        $data=walas::all();
+        return view('landingpage.Data.datawalas', compact('data'));
     }
     public function ekstra(){
         $data=ekstra::all();
@@ -264,12 +284,19 @@ class LandingController extends Controller
         $detailekstra=ekstra::where('id',$id)->get();
         return view('landingpage.Data.detailekstra', compact('detailekstra'));
     }
-    public function detailprestasi(){
-        return view('landingpage.Data.detailprestasi');
+    public function detailprestasi($id){
+        $detailprestasi=prestasi::where('id',$id)->get();
+        $prestasiside=prestasi::latest()->get();
+        return view('landingpage.Data.detailprestasi', compact('detailprestasi', 'prestasiside'));
     }
 
-    public function agendadetail(){
-        return view('landingpage.beranda.detailagenda');
+    public function blogdetail($id){
+        $data=Blog::where('id',$id)->get();
+        $kategoriblog=kategoriblog::all();
+        $blogside=Blog::latest()->get();
+        // dd($blogside);
+        // dd($blogside);
+        return view('landingpage.beranda.detailagenda', compact('data', 'kategoriblog', 'blogside'));
     }
 
     public function blogbanyak(){

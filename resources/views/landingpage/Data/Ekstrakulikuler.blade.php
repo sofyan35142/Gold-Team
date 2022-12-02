@@ -17,14 +17,14 @@
             <div class="d-table-cell">
                 <div class="container">
                     <div class="blog-title-text">
-                        <h2>Our Blogs</h2>
+                        <h2>Ekstrakurikuler</h2>
                         <ul>
                             <li>
                                 <a href="index.html">Home</a>
                             </li>
                             <li>
                                 <i class="icofont-rounded-double-right"></i>
-                                Blogs
+                                Ekstrakurikuler
                             </li>
                         </ul>
                     </div>

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\alumni;
 use App\Models\Blog;
+use App\Models\kategoriblog;
 use App\Models\kepsek;
 use App\Models\slider;
 use App\Models\sponsor;
@@ -15,12 +16,13 @@ class BerandaController extends Controller
 {
     public function viewblog(){
 
-        $data=Blog::all();
+        $data=Blog::with('idblog')->get();
         return view('Admin.beranda.blog.blog', compact('data'));
     }
 
     public function tambahblog(){
-        return view('Admin.beranda.blog.tambahblog');
+        $data=kategoriblog::all();
+        return view('Admin.beranda.blog.tambahblog', compact('data'));
     }
 
      public function insertblog(Request $request)
@@ -29,6 +31,7 @@ class BerandaController extends Controller
 
             'judul' => $request->judul,
             'deskripsi' => $request->deskripsi,
+            'kategori' => $request->kategori,
             'foto' => $request->foto
         ]);
         // dd($data);

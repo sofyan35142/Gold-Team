@@ -41,10 +41,12 @@
     height: 30pc;">
         <div class="container-fluid h-100">
             <div class="row h-100">
+                @foreach($data as $profil)
                 <div class="col-lg-6 p-0 h-100">
-                    <div class="why-us-img" style="background-image: url('http://127.0.0.1:8000/assets/img/fotoprofilsekolah/fotosekolah.jpg')">
+                    <div class="why-us-img" style="background-image: url({{ asset('assets/img/fotoprofilsekolah/' . $profil->foto_sekolah ) }})">
                     </div>
                 </div>
+                @endforeach
                 <div class="col-lg-6">
                     <div class="why-us-text h-100 owl-carousel owl-theme" id="owl-demo">
                         @foreach ($data as $profil)

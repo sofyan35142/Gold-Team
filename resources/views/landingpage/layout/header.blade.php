@@ -62,7 +62,7 @@
                             <a href="/" class="nav-link">Beranda</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link dropdown-toggle">
+                            <a href="/profil" class="nav-link dropdown-toggle">
                                 Profil
                                 <i class="icofont-rounded-right"></i>
                             </a>
@@ -95,7 +95,7 @@
 
                                     <ul class="dropdown-menu dropside">
                                         <li class="nav-item"><a
-                                                href="/modulproduktiftkr">Modul
+                                                href="/detailmodul/1">Modul
                                                 Produktif TKR</a></li>
                                         <li class="nav-item"><a
                                                 href="/reparasibengkel">Buku
@@ -106,7 +106,7 @@
                                     <a href="/detailjurusan/2" class="nav-link">Teknik Elektronika Industri (TEI)</a>
                                     <ul class="dropdown-menu dropside">
                                         <li class="nav-item"><a
-                                                href="/modulproduktiftei">Modul
+                                                href="/detailmodul/2">Modul
                                                 Produktif TEI</a></li>
                                     </ul>
                                 </li>
@@ -114,7 +114,7 @@
                                     <a href="/detailjurusan/3" class="nav-link">Rekayasa Perangkat Lunak (RPL)</a>
                                     <ul class="dropdown-menu dropside">
                                         <li class="nav-item"><a
-                                                href="/modulproduktifrpl">Modul
+                                                href="/detailmodul/3">Modul
                                                 Produktif RPL</a></li>
                                         <li class="nav-item"><a
                                                 href="/artikelilmiah">Artikel
@@ -125,7 +125,7 @@
                                     <a href="/detailjurusan/4" class="nav-link">Teknik Kimia Industri (TKI)</a>
                                     <ul class="dropdown-menu dropside">
                                         <li class="nav-item"><a
-                                                href="/modulproduktiftki">Modul
+                                                href="/detailmodul/4">Modul
                                                 Produktif TKI</a></li>
                                     </ul>
                                 </li>
@@ -133,14 +133,14 @@
                                     <a href="/detailjurusan/5" class="nav-link">Teknik Audio Video (TAV)</a>
                                     <ul class="dropdown-menu dropside">
                                         <li class="nav-item"><a
-                                                href="/modulproduktiftav">Modul
+                                                href="/detailmodul/5">Modul
                                                 Produktif TAV</a></li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="blog.html" class="nav-link dropdown-toggle">
+                            <a href="#" class="nav-link dropdown-toggle">
                                 Data
                                 <i class="icofont-rounded-right"></i>
                             </a>
@@ -227,9 +227,9 @@
                             </ul>
                         </li>
                     </ul>
-                    <div class="navbar-button">
+                    {{-- <div class="navbar-button">
                         <a href="testimonial.html">Get Quote</a>
-                    </div>
+                    </div> --}}
                 </div>
             </nav>
         </div>

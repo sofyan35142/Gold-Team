@@ -137,30 +137,12 @@
                     <div class="col-lg-6 p-0">
                         <div class="about-img">
                             <div class="img-box5">
-<<<<<<< HEAD
-                                <div class="img-blog"><img class="fotokepsek" src="fotoblog/rudi.png"alt="about">
-                                </div>
-                                <div class="shape"><img src="fotoblog/1.png"alt="shape"></div>
-                            </div>
-                            {{-- <center><img class="img-blog" src="{{ asset('kepsek/' . $kepsek->foto) }}" alt="blog image"></center> <br> --}}
-                            <center><b>{{ $kepsek->nama }}</b></center>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="about-text">
-                            <div class="section-head">
-                                <h2>Sambutan Kepala Sekolah</h2>
-                                <p>{!! $kepsek->sambutan !!}</p>
-                            </div>
-                        </div>
-                    </div>
-=======
                                 <div class="img-blog"><img class="fotokepsek"
                                         src="{{ asset('kepsek/' . $kepsek->foto) }}"alt="about"
                                         style="height: 28pc;"> <br>
                                     <center><b>{{ $kepsek->nama }}</b></center>
                                 </div>
-                                <div class="shape"><img src="fotoblog/1.png"alt="shape"></div>
+                                {{-- <div class="shape"><img src="fotoblog/1.png"alt="shape"></div> --}}
                             </div>
 
                         </div>
@@ -173,7 +155,6 @@
                             </div>
                         </div>
                     </div>
->>>>>>> c621696fe8011080ab8f4e75a7c707b1a9c13a64
 
                 </div>
             @endforeach
@@ -280,16 +261,16 @@
                             <h4><a href="#" class="overflow1">{{ $blog->judul }}</a></h4>
                             <ul>
                                 <li>
-                                    <i class="icofont-calendar"></i>
-                                    20 Feb 2021
+                                   <i class="fa-solid fa-calendar-days"></i>
+                                    {{ $blog->created_at }}
                                 </li>
                                 <li>
-                                    <i class="icofont-ui-user"></i>
-                                    <a href="#">John Doe</a>
+                                    <i class="fa-solid fa-tags"></i>
+                                    <a href="#">{{ $blog->idblog->kategori }}</a>
                                 </li>
                             </ul>
                             <p class="overflow">{!! $blog->deskripsi !!}</p>
-                            <a href="blog-details.html" class="blog-btn">
+                            <a href="/blogdetail/{{$blog->id}}" class="blog-btn">
                                 Read more
                                 <i class="icofont-rounded-right"></i>
                             </a>
@@ -345,22 +326,18 @@
     <script>
         // Hide all item in .carousel-item initially
         $(".carousel-item *").addClass("d-none");
-
         // Animate the first slide
         setTimeout(function() {
             $(".carousel-item.active *")
                 .removeClass("d-none")
                 .addClass("animated");
         }, 1000);
-
         // Animate after the slider changes
         $("#mainBanner").on("slid.bs.carousel", function(e) {
             // Add .d-none to previous shown slide
             $(".carousel-item *").addClass("d-none");
-
             // Element for new slide
             var c = e["relatedTarget"];
-
             // After 0.7 sec slide changes, then make the animation for new slide
             setTimeout(function() {
                 $(c)

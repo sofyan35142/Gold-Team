@@ -4,8 +4,8 @@
                 <div class="app-brand demo ">
                     <a href="index.html" class="app-brand-link">
                         <span class="app-brand-logo demo">
-                            <svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1"
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <img width="26px" height="26px" viewBox="0 0 26 26" version="1.1"
+                                src="../foto/jurusan/smk.png" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <title>icon</title>
                                 <defs>
                                     <linearGradient x1="50%" y1="0%" x2="50%" y2="100%"
@@ -37,10 +37,10 @@
                                         </g>
                                     </g>
                                 </g>
-                            </svg>
+                            </img>
 
                         </span>
-                        <span class="app-brand-text demo menu-text fw-bold ms-2">Frest</span>
+                        <span class="app-brand-text demo menu-text fw-bold ms-2">Sketsu</span>
                     </a>
 
                     <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">
@@ -65,21 +65,21 @@
                             <div data-i18n="Dashboards">Dashboards</div>
                         </a>
                         <ul class="menu-sub">
-                            <li class="menu-item active">
-                                <a href="index.html" class="menu-link">
-                                    <div data-i18n="Analytics">Analytics</div>
+                            <li class="menu-item">
+                                <a href="/index" class="menu-link">
+                                    <div data-i18n="Index">Index</div>
                                 </a>
                             </li>
-                            <li class="menu-item">
+                            {{-- <li class="menu-item">
                                 <a href="dashboards-ecommerce.html" class="menu-link">
                                     <div data-i18n="eCommerce">eCommerce</div>
                                 </a>
-                            </li>
+                            </li> --}}
                         </ul>
                     </li>
 
                     <!-- Layouts -->
-                    <li class="menu-item">
+                    {{-- <li class="menu-item">
                         <a href="javascript:void(0);" class="menu-link menu-toggle">
                             <i class="menu-icon tf-icons bx bx-layout"></i>
                             <div data-i18n="Layouts">Layouts</div>
@@ -134,7 +134,7 @@
                                 </a>
                             </li>
                         </ul>
-                    </li>
+                    </li> --}}
 
                     <!-- Apps & Pages -->
                     <li class="menu-item">
@@ -156,6 +156,11 @@
                             <li class="menu-item">
                                 <a href="/beranda/blog" class="menu-link">
                                     <div data-i18n="blog">blog</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="/kategoriblog" class="menu-link">
+                                    <div data-i18n="Kategori">Kategori</div>
                                 </a>
                             </li>
                             <li class="menu-item">
@@ -226,19 +231,19 @@
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a href="#" class="menu-link">
+                                <a href="/index/kakomli" class="menu-link">
                                     <div data-i18n="Kakomli">Kepala Kompetensi Keahlian</div>
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a href="#" class="menu-link">
+                                <a href="/index/modul" class="menu-link">
                                     <div data-i18n="Modul">Modul Produktif</div>
                                 </a>
                             </li>
                         </ul>
                     </li>
 
-                    <li class="menu-item">
+                    {{-- <li class="menu-item">
                         <a href="javascript:void(0);" class="menu-link menu-toggle">
                             <i class="menu-icon tf-icons bx bx-detail"></i>
                             <div data-i18n="Modul Produktif">Modul Produktif</div>
@@ -283,7 +288,7 @@
                                 </a>
                             </li>
                         </ul>
-                    </li>
+                    </li> --}}
 
                     <li class="menu-item">
                         <a href="javascript:void(0);" class="menu-link menu-toggle">
@@ -337,7 +342,7 @@
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a href="pages-pricing.html" class="menu-link">
+                                <a href="/data/walas" class="menu-link">
                                     <div data-i18n="Walas">Walas</div>
                                 </a>
                             </li>

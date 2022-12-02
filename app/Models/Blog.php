@@ -10,4 +10,10 @@ class Blog extends Model
     use HasFactory;
     protected $primaryKey = "id";
     protected $guarded = [];
+
+
+    public function idblog()
+    {
+        return $this->belongsTo(kategoriblog::class, 'kategori', 'id');
+    }
 }

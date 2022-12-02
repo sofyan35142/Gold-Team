@@ -157,17 +157,37 @@
                     </div> --}}
                     <div class="team-section team-style-two team-style-three team-members pt-1000">
                         <div class="team-card">
+                            @foreach ($modul as $modul)
+                                
+                            
                             <div class="team-img">
                                 <div class="row">
                                     <div class="container">
-                                        <img src="https://3.bp.blogspot.com/-dlkRB2pfZXs/V8U-w7xCFCI/AAAAAAAABjQ/O6ywuHewtpg7oJOEexbvcyrgA_gImHyAQCLcB/s1600/modul.jpg"
+                                        <img src="{{ asset('foto/' . $modul->foto) }}"
                                             alt="team member">
                                     </div>
                                 </div>
                             </div>
                             <div class="team-text">
-                                <h4 class="h4-css">Modul Produktif TKR</h4>
-                                <p><a href="/modulproduktiftkr">Lihat selengkapnya</a></p>
+                                <h4 class="h4-css">{{$modul->judul}}</h4>
+                                <p><a href="/detailmodul/{{$modul->id}}">Lihat selengkapnya</a></p>
+                            </div>
+                            @endforeach
+                        </div>
+                    </div>
+                    <div class="team-section team-style-two team-style-three team-members pt-1000">
+                        <div class="team-card">
+                            <div class="team-img">
+                                <div class="row">
+                                    <div class="container">
+                                        <img src="../../foto/buku.jpg"
+                                            alt="team member">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-text">
+                                <h4 class="h4-css">Buku Reparasi Bengkel</h4>
+                                <p><a href="/reparasibengkel">Lihat selengkapnya</a></p>
                             </div>
                         </div>
                     </div>
@@ -176,14 +196,14 @@
                             <div class="team-img">
                                 <div class="row">
                                     <div class="container">
-                                        <img src="https://img.inews.co.id/media/620/files/inews_new/2022/10/07/unsur_buku_nonfiksi.jpg"
+                                        <img src="../../foto/book.png"
                                             alt="team member">
                                     </div>
                                 </div>
                             </div>
                             <div class="team-text">
-                                <h4 class="h4-css">Buku Reparasi Bengkel</h4>
-                                <p><a href="/reparasi bengkel">Lihat selengkapnya</a></p>
+                                <h4 class="h4-css">Artikel Ilmiah RPL</h4>
+                                <p><a href="/artikelilmiah">Lihat selengkapnya</a></p>
                             </div>
                         </div>
                     </div>
