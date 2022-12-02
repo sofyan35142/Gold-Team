@@ -89,13 +89,11 @@
                         <div class="service-list">
                             <p>Berita Terbaru</p>
                             @foreach ($prestasiside as $prestasi)
-
                             <div class="sidebar-post-inner">
                                 <a style="margin-bottom: 15px">
                                     <div class="image-widget-post">
                                         <img class="img-detailblog" src="{{ asset('prestasi/'. $prestasi->foto) }}" alt="">
                                     </div>
-
                                     <div class="info-widget-post">
                                         <h5>{{ $prestasi->nama_lomba }}</h5>
                                         <small>04 November 2022</small>

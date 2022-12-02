@@ -293,7 +293,6 @@ Route::get('/index/modultkr', [ModulController::class, 'modultkr'])->name('modul
 Route::post('/updatemodultkr/{id}', [ModulController::class, 'updatemodultkr']);
 
 
-<<<<<<< HEAD
 
 
 
@@ -304,7 +303,5 @@ Route::post('/insertkategoriblog', [DataController::class, 'insertkategoriblog']
 Route::get('/editkategoriblog/{id}', [DataController::class, 'editkategoriblog']);
 Route::post('/updatekategoriblog/{id}', [DataController::class, 'updatekategoriblog']);
 Route::get('/deletekategoriblog/{id}', [DataController::class, 'deletekategoriblog']);
-=======
 Route::get('/index/modultei', [ModulController::class, 'modultei'])->name('modultei');
 Route::post('/updatemodultei/{id}', [ModulController::class, 'updatemodultei']);
->>>>>>> cede505f4b0bac0c078ab8417cbd9e3abe53d8a1
