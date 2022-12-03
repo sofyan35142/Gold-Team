@@ -240,6 +240,16 @@
                                     <div data-i18n="Modul">Modul Produktif</div>
                                 </a>
                             </li>
+                            <li class="menu-item">
+                                <a href="/index/reparasi" class="menu-link">
+                                    <div data-i18n="Buku Reparasi Bengkel">Buku Reparasi Bengkel</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="/index/artikel" class="menu-link">
+                                    <div data-i18n="Artikel Ilmiah">Artikel Ilmiah</div>
+                                </a>
+                            </li>
                         </ul>
                     </li>
 

@@ -41,13 +41,27 @@
     <div class="service-details-area main-service-area pt-100 services-details-page">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-8">
                     
                     <div class="service-details-post keymodul">
+                        
                         <h3 id="jurusan">{{ $data->judul }}</h3>
                         <p id="deskirpsi">{!! $data->deskripsi !!}</p>
                     </div>
                     
+                </div>
+
+                <div class="col-lg-4 main-service-area blog-side-bar">
+                    <div class="service-details-post">
+                        <h3>{{$data->judulsidebar1}}</h3>
+                        <div class="ratio ratio-16x9">
+                            <iframe src="{{$data->linksidebar1}}" title="YouTube video" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="service-details-post">
+                        <h3>{{$data->judulsidebar2}}</h3>
+                        <img src="{{ asset('foto/jurusan/' . $data->fotosidebar2) }}" alt="service">
+                    </div>
                 </div>
                 
             </div>
