@@ -31,7 +31,7 @@ class DatabaseSeeder extends Seeder
             kepsek::class,
             LSP::class,
             prestasi::class,
-            // profilsekolah::class,
+            profilsekolah::class,
             profilvisimisi::class,
             Skematerlisensi::class,
             slider::class,
