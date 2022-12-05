@@ -78,12 +78,23 @@ class ModulController extends Controller
             'judul' => $request->judul,
             'deskripsi' => $request->deskripsi,
             'foto' => $request->foto,
+            'judulsidebar1' => $request->judulsidebar1,
+            'linksidebar1' => $request->linksidebar1,
+            'judulsidebar2' => $request->judulsidebar2,
+            'fotosidebar2' => $request->fotosidebar2,
+            
             
         ]);
         // dd($data);
         if ($request->hasFile('foto')) {
             $request->file('foto')->move('foto/', $request->file('foto')->getClientOriginalName());
             $data->foto = $request->file('foto')->getClientOriginalName();
+            $data->save();
+        }
+        
+        if ($request->hasFile('fotosidebar2')) {
+            $request->file('fotosidebar2')->move('foto/jurusan/', $request->file('fotosidebar2')->getClientOriginalName());
+            $data->foto = $request->file('fotosidebar2')->getClientOriginalName();
             $data->save();
         }
         
@@ -134,6 +145,10 @@ class ModulController extends Controller
                 'foto' => $namafoto,
                 'judul' => $request->judul,
                 'deskripsi' => $request->deskripsi,
+                'judulsidebar1' => $request->judulsidebar1,
+                'linksidebar1' => $request->linksidebar1,
+                'judulsidebar2' => $request->judulsidebar2,
+                'fotosidebar2' => $request->fotosidebar2,
             ]);
        
         } else {
@@ -141,6 +156,10 @@ class ModulController extends Controller
                 //'foto' => request->foto
                 'judul' => $request->judul,
                 'deskripsi' => $request->deskripsi,
+                'judulsidebar1' => $request->judulsidebar1,
+                'linksidebar1' => $request->linksidebar1,
+                'judulsidebar2' => $request->judulsidebar2,
+                'fotosidebar2' => $request->fotosidebar2,
 
             ]);
         }
