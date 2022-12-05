@@ -52,6 +52,7 @@
       <th  scope="col">Deskripsi</th>
       <th  scope="col">Foto</th>
       <th scope="col">Foto Pembina</th>
+      <th scope="col">Foto Kegiatan</th>
       <th scope="col">Aksi</th>
     </tr>
   </thead>
@@ -68,6 +69,11 @@
         </td>
         <td>
             <img src="{{ asset('fotoekstra/' . $ekstra->foto_pembina) }}" alt="" style="width: 80px; height:80px;">
+        </td>
+        <td>
+            @foreach(json_decode($ekstra->foto_kegiatan) as $foto)
+            <img src="{{ asset('foto_kegiatan/' . $foto) }}" alt="" style="width: 80px; height:80px;">
+            @endforeach
         </td>
 
 

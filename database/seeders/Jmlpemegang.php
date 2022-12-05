@@ -1,10 +1,10 @@
-`<?php
+<?php
 
 namespace Database\Seeders;
 
+use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
-use Illuminate\Database\Seeder;
 
 class Jmlpemegang extends Seeder
 {

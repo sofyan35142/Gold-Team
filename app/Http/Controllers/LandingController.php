@@ -279,6 +279,8 @@ class LandingController extends Controller
     }
     public function detailekstra($id){
         $detailekstra=ekstra::where('id',$id)->get();
+        // $detailekstra=ekstra::find($id);
+        // dd($detailekstra);
         return view('landingpage.Data.detailekstra', compact('detailekstra'));
     }
     public function detailprestasi($id){

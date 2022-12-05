@@ -9,11 +9,7 @@ use Illuminate\Http\Request;
 use App\Models\profilsekolah;
 use App\Models\profilvisimisi;
 use App\Models\sejarahsingkat;
-<<<<<<< HEAD
 use App\Models\sekolahadiwiyata;
-=======
-use App\Models\sidestruktur;
->>>>>>> 2c74941bfcca4d5fe90bc98af6b166b8daf8791d
 use App\Models\strukturorganisasi;
 use Illuminate\Support\Facades\Auth;
 
@@ -315,9 +311,5 @@ class Admincontroller extends Controller
         return view("admin.profil.sekolah_rujukan.addsekolahrujukan");
     }
     //end sekolah rujukan
-<<<<<<< HEAD
-
-=======
->>>>>>> 2c74941bfcca4d5fe90bc98af6b166b8daf8791d
     ///////////////////// END PROFIL LANDINGPAGE ADMIN ///////////////////////////
 }

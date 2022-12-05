@@ -184,7 +184,7 @@
                         </div>
                         <div class="theme-button text-left play-video">
                             <a href="#" class="btn btn-danger"><i class="fa-sharp fa-solid fa-play"></i>
-                                BISA DIPLAY </a>
+                                PLAY </a>
                         </div>
                         <div class="video-popup modalyosop">
                             <div class="modal-contentyosop">

@@ -76,15 +76,16 @@
                             </div>
                         </div>
                     </div>
-
+@endforeach
                 </div>
                 <div class="col-lg-4 main-service-area blog-side-bar">
+                     @foreach($detailekstra as $foto)
                     <div class="team-section team-style-two team-style-three team-members pt-1000">
                         <div class="team-card">
                             <div class="team-img">
                                 <div class="row">
                                     <div class="container">
-                                        <img class="img-detailekstra" src="../ekstra/detailpaskib1.jpeg"
+                                        <img class="img-detailekstra" src="{{ asset('foto_kegiatan/' . $foto->foto_kegiatan) }}"
                                             alt="team member">
                                     </div>
                                 </div>
