@@ -1,72 +1,23 @@
 <!DOCTYPE html>
-<!-- =========================================================
-* Frest - Bootstrap Admin Template | v1.0.0
-==============================================================
-
-* Product Page: https://1.envato.market/frest_admin
-* Created by: PIXINVENT
-* License: You must have a valid license purchased in order to legally use the theme for your project.
-* Copyright PIXINVENT (https://pixinvent.com)
-
-=========================================================
- -->
-<!-- beautify ignore:start -->
 <html lang="en" class="light-style layout-navbar-fixed layout-menu-fixed " dir="ltr" data-theme="theme-semi-dark" data-assets-path="../../assets1/" data-template="vertical-menu-template-semi-dark">
 <!-- Mirrored from pixinvent.com/demo/frest-clean-bootstrap-admin-dashboard-template/html/vertical-menu-template-semi-dark/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 15 Nov 2022 01:20:23 GMT -->
-@include("Admin.layoutadmin.head")
-
+@include('Admin.layoutadmin.head')
 <body>
-
     <!-- Layout wrapper -->
     <div class="layout-wrapper layout-content-navbar  ">
         <div class="layout-container">
-
-
-
-
-
-
-
             <!-- Menu -->
-
-            @include("Admin.layoutadmin.sidebar")
+            @include('Admin.layoutadmin.sidebar')
             <!-- / Menu -->
-
-
-
             <!-- Layout container -->
             <div class="layout-page">
-
-
-
-
-
                 <!-- Navbar -->
-
-
-
-
-
-
-
-
-                @include("Admin.layoutadmin.navbar")
-
-
-
+                @include('Admin.layoutadmin.navbar')
                 <!-- / Navbar -->
-
-
-
                 <!-- Content wrapper -->
                 <div class="content-wrapper">
-
                     <!-- Content -->
-
                     <div class="container-xxl flex-grow-1 container-p-y">
-
-
-
                         <div class="row">
                             <!-- Website Analytics-->
                             <div class="col-lg-6 col-md-12 mb-4">
@@ -649,7 +600,7 @@
 
 
                     <!-- Footer -->
-                    @include("Admin.layoutadmin.footer")
+                    @include('Admin.layoutadmin.footer')
                     <!-- / Footer -->
 
 
@@ -705,11 +656,6 @@
 
     <!-- Page JS -->
     <script src="../../assets1/js/dashboards-analytics.js"></script>
-    
-    
 </body>
-
-
 <!-- Mirrored from pixinvent.com/demo/frest-clean-bootstrap-admin-dashboard-template/html/vertical-menu-template-semi-dark/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 15 Nov 2022 01:20:25 GMT -->
-
 </html>

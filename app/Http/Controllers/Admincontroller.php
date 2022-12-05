@@ -2,13 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\sidestruktur;
+use Illuminate\Http\Request;
 use App\Models\profilsekolah;
 use App\Models\profilvisimisi;
-use App\Models\sekolahadiwiyata;
 use App\Models\sejarahsingkat;
-use App\Models\sidestruktur;
+use App\Models\sekolahrujukan;
+use App\Models\sekolahadiwiyata;
 use App\Models\strukturorganisasi;
-use Illuminate\Http\Request;
 
 class Admincontroller extends Controller
 {
@@ -17,7 +18,7 @@ class Admincontroller extends Controller
         return view('Admin.index');
     }
     ///////////////////// START PROFIL LANDINGPAGE ADMIN ///////////////////////////
-    //start profil
+    //start profileditsekolahrujukan
     public function profil()
     {
         $data = profilsekolah::all();
@@ -34,7 +35,7 @@ class Admincontroller extends Controller
             $data->save();
         }
         // $profil->update(([$id => '-']));
-        return redirect('/index/profil')->with("success,Data berhasil diubah");
+        return redirect('/index/profil')->with("success","Data berhasil diubah");
     }
     public function insertprofil(Request $request)
     {
@@ -274,16 +275,37 @@ class Admincontroller extends Controller
     //start sekolah rujukan
     public function sekolahrujukan()
     {
-        return view("admin.profil.sekolah_rujukan.sekolahrujukan");
+        $data = sekolahrujukan::find(1);
+        return view("admin.profil.sekolah_rujukan.sekolahrujukan",compact('data'));
     }
-    public function addsekolahrujukan()
+    public function editviewsekolahrujukan()
     {
-        return view("admin.profil.sekolah_rujukan.addsekolahrujukan");
+        $data = sekolahrujukan::find(1);
+        return view("admin.profil.sekolah_rujukan.editsekolahrujukan",compact('data'));
     }
-    public function insertsekolahrujukan(Request $request)
+    public function editsekolahrujukan(Request $request)
     {
-        dd($request->all());
-        return view("admin.profil.sekolah_rujukan.addsekolahrujukan");
+        // dd($request->all());
+        $data = sekolahrujukan::find(1);
+        $data->update([
+            'isiartikel'=>$request->isiartikel,
+        ]);
+        if ($request->hasFile('foto_head')) {
+            $request->file('foto_head')->move('assets/img/', $request->file('foto_head')->getClientOriginalName());
+            $data->foto_head = $request->file('foto_head')->getClientOriginalName();
+            $data->save();
+        }
+        return redirect("/index/sekolahrujukan")->with('success','data berhasil diubah');
+    }
+    public function resetsekolahrujukan()
+    {
+        // dd($request->all());
+        $data = sekolahrujukan::find(1);
+        $data->update([
+            'foto_head'=>'-',
+            'isiartikel'=>'-',
+        ]);
+        return redirect("/index/sekolahrujukan")->with('success','data berhasil direset');
     }
     //end sekolah rujukan
 

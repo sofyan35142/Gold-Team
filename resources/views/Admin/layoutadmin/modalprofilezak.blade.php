@@ -574,7 +574,7 @@
                     <div class="row">
                         <div class="col mb-3">
                             <label for="nameSmall" class="form-label">Status Bos</label>
-                            <input type="file" id="nameSmall" class="form-control" placeholder="Enter Name"
+                            <input type="text" value="{{$profil->status_bos}}" id="nameSmall" class="form-control" placeholder="Enter Name"
                                 name="status_bos">
                         </div>
                     </div>
@@ -602,7 +602,7 @@
                     <div class="row">
                         <div class="col mb-3">
                             <label for="nameSmall" class="form-label">Sumber Listrik</label>
-                            <input type="file" id="nameSmall" class="form-control" placeholder="Enter Name"
+                            <input type="text" value="{{$profil->sumber_listrik}}" id="nameSmall" class="form-control" placeholder="Enter Name"
                                 name="sumber_listrik">
                         </div>
                     </div>

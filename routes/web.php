@@ -153,11 +153,12 @@ Route::post('/updatesejarahsingkat/{id}', [Admincontroller::class, 'updatesejara
 Route::get('/sejarahsingkat/delete/{id}', [Admincontroller::class, 'deletesejarahsingkat']);
 //Sekolah Rujukan
 Route::get('/index/sekolahrujukan', [Admincontroller::class, 'sekolahrujukan']);
-Route::get('/index/addsekolahrujukan', [Admincontroller::class, 'addsekolahrujukan']);
-Route::post('/insertsekolahrujukan', [Admincontroller::class, 'insertsekolahrujukan']);
-Route::get('/sejarahsingkat/edit/{id}', [Admincontroller::class, 'editviewsejarahsingkat']);
-Route::post('/updatesejarahsingkat/{id}', [Admincontroller::class, 'updatesejarahsingkat']);
-Route::get('/sejarahsingkat/delete/{id}', [Admincontroller::class, 'deletesejarahsingkat']);
+Route::get('/index/editsekolahrujukan', [Admincontroller::class, 'editviewsekolahrujukan']);
+Route::post('/editsekolahrujukan', [Admincontroller::class, 'editsekolahrujukan']);
+Route::get('/index/resetsekolahrujukan', [Admincontroller::class, 'resetsekolahrujukan']);
+// Route::get('/sejarahsingkat/edit/{id}', [Admincontroller::class, 'editviewsejarahsingkat']);
+// Route::post('/updatesejarahsingkat/{id}', [Admincontroller::class, 'updatesejarahsingkat']);
+// Route::get('/sejarahsingkat/delete/{id}', [Admincontroller::class, 'deletesejarahsingkat']);
 // end profil sekolah-admin
 
 

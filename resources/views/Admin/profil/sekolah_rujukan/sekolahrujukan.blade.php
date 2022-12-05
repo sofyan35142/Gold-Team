@@ -25,38 +25,38 @@
                         <div class="card mb-4">
                             <div class="card-datatable table-responsive pt-0">
                                 <h5 class="card-header">Data Sekolah Rujukan</h5>
-                                <a href="" type="button"
-                                    class="btn rounded-pill btn-primary">Tambah +</a>
+                                {{-- <a href="" type="button"
+                                    class="btn rounded-pill btn-primary">Tambah +</a> --}}
                                 <table class="table" id="jurusan">
                                     <thead>
                                         <tr>
                                             <th scope="col">No.</th>
                                             <th scope="col">Judul</th>
-                                            <th scope="col">tahun ajaran</th>
-                                            <th scope="col">Foto Struktur</th>
-                                            <th scope="col">Aksi</th>
+                                            <th scope="col">Deskripsi</th>
+                                            <th scope="col">Foto</th>
+                                            <th scope="col">Data</th>
                                         </tr>
                                     </thead>
                                     <tbody class="table-group-divider">
                                         <?php $no = 1; ?>
-                                        {{-- <tr>
+                                        <tr>
                                             <td>{{ $no }}</td>
-                                            <td>{{ $struktur->judul }}</td>
-                                            <td>{{ $struktur->tahun_ajaran }}</td>
+                                            <td>Sekolah Rujukan</td>
+                                            <td>{!! $data->isiartikel !!}</td>
                                             <td>
-                                                <img src="{{ asset('assets/img/' . $struktur->foto_struktur) }}"
-                                                    alt="" style="width: 80px; height:80px;">
+                                                <img src="{{ asset('assets/img/' . $data->foto_head) }}"
+                                                alt="" style="width: 80px; height:80px;">
                                             </td>
                                             <td>
-                                                <a href="/index/editstrukturorganisasi/{{ $struktur->id }}"
+                                                <a href="/index/editsekolahrujukan"
                                                     class="btn btn-warning"><i
                                                         class="fa-solid fa-pen-to-square"></i></a>
                                                 <a href="#" class="btn btn-danger delete"
-                                                    data-id="{{ $struktur->id }}"
-                                                    data-struktur="{{ $struktur->judul }}"><i
+                                                    data-id="{{ $data->id }}"
+                                                    data-struktur="{{ $data->judul }}"><i
                                                         class="fa-solid fa-trash"></i></a>
                                             </td>
-                                        </tr> --}}
+                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
@@ -153,19 +153,19 @@
 
         swal({
                 title: "Apakah kamu yakin?",
-                text: "Kamu akan menghapus struktur data ini",
+                text: "Kamu akan mengubah ke setelan default?",
                 icon: "warning",
                 buttons: true,
                 dangerMode: true,
             })
             .then((willDelete) => {
                 if (willDelete) {
-                    window.location = "/index/deletestrukturorganisasi/" + strukturid + ""
-                    swal("Data berhasil dihapus", {
+                    window.location = "/index/resetsekolahrujukan"
+                    swal("Data Berhasil di Ubah Ke setelan Default", {
                         icon: "success",
                     });
                 } else {
-                    swal("Data tidak jadi dihapus");
+                    swal("Data Tidak Jadi Direset");
                 }
             });
     });

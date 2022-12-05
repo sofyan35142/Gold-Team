@@ -480,7 +480,7 @@
 
     <!-- Page JS -->
     <script src="../../assets1/js/tables-datatables-basic.js"></script>
-    <script src="//cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+    {{-- <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script> --}}
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 </body>
@@ -518,5 +518,4 @@
         toastr.success("{{ Session::get('success') }}")
     @endif
 </script>
-
 </html>

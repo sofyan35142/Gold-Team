@@ -36,7 +36,7 @@
     <link rel="stylesheet" href="../../assets1/vendor/libs/datatables-checkboxes-jquery/datatables.checkboxes.css">
     <link rel="stylesheet" href="../../assets1/vendor/libs/datatables-buttons-bs5/buttons.bootstrap5.css">
     <link rel="stylesheet" href="../../assets1/vendor/libs/flatpickr/flatpickr.css" />
-    <link rel="stylesheet" href="../../assets/vendor/libs/toastr/toastr.css" />
+    {{-- <link rel="stylesheet" href="../../assets/vendor/libs/toastr/toastr.css" /> --}}
     <link rel="stylesheet" href="../../assets/vendor/libs/animate-css/animate.css" />
     <!-- Row Group CSS -->
     <link rel="stylesheet" href="../../assets1/vendor/libs/datatables-rowgroup-bs5/rowgroup.bootstrap5.css">
@@ -67,6 +67,6 @@
     </script>
     <!-- Custom notification for demo -->
     <!-- beautify ignore:end -->
-    <link rel="stylesheet" href="//cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
+    {{-- <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css"> --}}
 
 </head>

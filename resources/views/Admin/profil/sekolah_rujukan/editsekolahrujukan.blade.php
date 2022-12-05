@@ -22,23 +22,22 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="card mb-4">
-                                    <h5 class="card-header">Isi Data Sekolah Rujukan</h5>
+                                    <h5 class="card-header">Edit Data Sekolah Rujukan</h5>
                                     <div class="card-body">
-                                        <form action="/insertsekolahrujukan" method="POST"
+                                        <form action="/editsekolahrujukan" method="POST"
                                             enctype="multipart/form-data">
                                             @csrf
                                             <div class="mb-3">
+                                                <img src="{{asset("assets/img/" . $data->foto_head)}}" alt="" height="250px" width="250px">
                                                 <label for="exampleInputEmail1" class="form-label">Foto Atas</label>
-                                                <input type="file" name="foto_head" class="form-control"
+                                                <input type="file" name="foto_head" class="form-control mt-3"
                                                     id="exampleInputEmail1" aria-describedby="emailHelp">
                                             </div>
                                             <div>
                                                 <label for="editor" class="form-label">Deskripsi</label>
-                                                <div class="card-body">
-                                                    <textarea name="isiartikel" id="editor"></textarea>
-                                                </div>
+                                                    <textarea name="isiartikel" id="editor">{!! $data->isiartikel !!}</textarea>
                                                 <button type="submit"
-                                                    class="btn rounded-pill btn-primary">Submit</button>
+                                                    class="btn rounded-pill btn-primary mt-3">Submit</button>
                                         </form>
                                     </div>
                                 </div>

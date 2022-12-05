@@ -198,12 +198,12 @@
                             </li>
                             <li class="menu-item">
                                 <a href="/index/profilvisimisi" class="menu-link">
-                                    <div data-i18n="Profile Visi Misi">Profile Visi Misi</div>
+                                    <div data-i18n="Visi Misi">Visi Misi</div>
                                 </a>
                             </li>
                             <li class="menu-item">
                                 <a href="/index/strukturorganisasi" class="menu-link">
-                                    <div data-i18n="struktur">struktur</div>
+                                    <div data-i18n="struktur">Struktur Organisasi</div>
                                 </a>
                             </li>
                             <li class="menu-item">
@@ -213,7 +213,12 @@
                             </li>
                             <li class="menu-item">
                                 <a href="/index/sekolahadiwiyata" class="menu-link">
-                                    <div data-i18n="sekolahadiwiyata">sekolah adiwiata</div>
+                                    <div data-i18n="Sekolah Adiwiyata">Sekolah Adiwiyata</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="/index/sekolahrujukan" class="menu-link">
+                                    <div data-i18n="Sekolah Rujukan">sekolah Rujukan</div>
                                 </a>
                             </li>
                         </ul>
