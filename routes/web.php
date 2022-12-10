@@ -135,7 +135,9 @@ Route::post('/insertstrukturorganisasi', [Admincontroller::class, 'insertstruktu
 Route::get('/index/editstrukturorganisasi/{id}', [Admincontroller::class, 'editstrukturorganisasi']);
 Route::post('/updatestrukturorganisasi/{id}', [Admincontroller::class, 'updatestrukturorganisasi']);
 Route::get('/index/deletestrukturorganisasi/{id}', [AdminController::class, 'deletestrukturorganisasi']);
+    //Anggota Struktur Organisasi
 Route::get('/index/addsidestrukturorganisasi', [AdminController::class, 'addsidestrukturorganisasi']);
+Route::post('/insertmemberstrukturorganisasi', [AdminController::class, 'insertmemberstrukturorganisasi']);
 Route::post('/index/editsidestrukturorganisasi', [AdminController::class, 'editsidestrukturorganisasi']);
 //sekolah adiwiyata
 Route::get('/index/sekolahadiwiyata', [Admincontroller::class, 'sekolahadiwiyata']);

@@ -21,8 +21,8 @@ class Admincontroller extends Controller
     //start profileditsekolahrujukan
     public function profil()
     {
-        $data = profilsekolah::all();
-        return view('admin.profil.profil.profil', compact('data'));
+        $profil = profilsekolah::find(1);
+        return view('admin.profil.profil.profil', compact('profil'));
     }
     public function addprofil(Request $request,$profil)
     {
@@ -63,7 +63,8 @@ class Admincontroller extends Controller
     // start profilvisimisi-admin
     public function profilvisimisi()
     {
-        $data = profilvisimisi::all();
+        $data = profilvisimisi::find(1);
+        // $data
         return view('admin.profil.visimisi.visimisi', compact('data'));
     }
     public function addprofilvisimisi()
@@ -184,6 +185,10 @@ class Admincontroller extends Controller
         $struktur = strukturorganisasi::find(1);
         return view('Admin.profil.strukturorganisasi.addeditsidestruktur',compact('datanama','datafoto'));
     }
+        //sub side struktur organisasi
+    public function addsidestrukturorganisasi(){
+
+    }
     // end profil/strukturorganisasi
     // start profil/sekolahadiwiyata
     public function sekolahadiwiyata()
@@ -212,8 +217,10 @@ class Admincontroller extends Controller
     // end profil/sekolahadiwiyata
 
     public function sejarahsingkat(){
-        $data=sejarahsingkat::all();
-        return view('Admin.profil.sejarahsingkat.sejarahsingkat', compact('data'));
+        $sejarah = sejarahsingkat::find(1);
+        $fotoside = explode(',',$sejarah->foto_side);
+        // dd($fotoside);
+        return view('Admin.profil.sejarahsingkat.sejarahsingkat', compact('sejarah','fotoside'));
     }
     public function addsejarahsingkat(){
         return view('Admin.profil.sejarahsingkat.addsejarahsingkat');
@@ -225,6 +232,7 @@ class Admincontroller extends Controller
         //     'isi_artikel' => $request->isi_artikel,
         //     'judul_fotoside' => $request->judul_fotoside,
         // ]);
+        dd($request->all());
         $files = [];
         if($request->hasfile('foto_side')){
             foreach($request->foto_side as $file){

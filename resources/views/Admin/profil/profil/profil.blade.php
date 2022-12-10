@@ -37,364 +37,339 @@
                                         </tr>
                                     </thead>
                                     <tbody class="table-group-divider">
-                                        @foreach ($data as $profil)
-                                            <tr>
-                                                <td>1</td>
-                                                <td>Foto Sekolah:</td>
-                                                <td>{{ $profil->foto_sekolah }}</td>
-                                                <td>
-                                                    <a href="#" class="btn btn-warning" data-bs-toggle="modal"
-                                                        data-bs-target="#smallModal1"><i
-                                                            class="fa-solid fa-pen-to-square"></i></a>
-                                                    <a href="#" class="btn btn-danger delete"
-                                                        data-id="foto_sekolah" data-profil="Foto Sekolah"><i
-                                                            class="fa-solid fa-trash"></i></a>
-                                                    @include('Admin.layoutadmin.modalprofilezak')
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>2</td>
-                                                <td>Nama Sekolah:</td>
-                                                <td>{{ $profil->nama_sekolah }}</td>
-                                                <td>
-                                                    <a href="#" data-bs-toggle="modal"
-                                                        data-bs-target="#smallModal2"
-                                                        class="btn btn-warning"><i
-                                                            class="fa-solid fa-pen-to-square"></i></a>
-                                                    <a href="#" class="btn btn-danger delete"
-                                                        data-id="nama_sekolah" data-profil="Nama Sekolah"><i
-                                                            class="fa-solid fa-trash"></i></a>
-                                                            @include('Admin.layoutadmin.modalprofilezak')
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>3</td>
-                                                <td>Nomor Pokok Sekolah Nasional (NPSN) :</td>
-                                                <td>{{ $profil->npsn }}</td>
-                                                <td>
-                                                    <a href="#" data-bs-toggle="modal"
-                                                    data-bs-target="#smallModal3"
-                                                        class="btn btn-warning"><i
-                                                            class="fa-solid fa-pen-to-square"></i></a>
-                                                    <a href="#" class="btn btn-danger delete" data-id="npsn"
-                                                        data-profil="NPSN"><i class="fa-solid fa-trash"></i></a>
-                                                        @include('Admin.layoutadmin.modalprofilezak')
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Foto Sekolah:</td>
+                                            <td>{{ $profil->foto_sekolah }}</td>
+                                            <td>
+                                                <a href="#" class="btn btn-warning" data-bs-toggle="modal"
+                                                    data-bs-target="#smallModal1"><i
+                                                        class="fa-solid fa-pen-to-square"></i></a>
+                                                <a href="#" class="btn btn-danger delete" data-id="foto_sekolah"
+                                                    data-profil="Foto Sekolah"><i class="fa-solid fa-trash"></i></a>
+                                                @include('Admin.layoutadmin.modalprofilezak')
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Nama Sekolah:</td>
+                                            <td>{{ $profil->nama_sekolah }}</td>
+                                            <td>
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#smallModal2"
+                                                    class="btn btn-warning"><i
+                                                        class="fa-solid fa-pen-to-square"></i></a>
+                                                <a href="#" class="btn btn-danger delete" data-id="nama_sekolah"
+                                                    data-profil="Nama Sekolah"><i class="fa-solid fa-trash"></i></a>
+                                                @include('Admin.layoutadmin.modalprofilezak')
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Nomor Pokok Sekolah Nasional (NPSN) :</td>
+                                            <td>{{ $profil->npsn }}</td>
+                                            <td>
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#smallModal3"
+                                                    class="btn btn-warning"><i
+                                                        class="fa-solid fa-pen-to-square"></i></a>
+                                                <a href="#" class="btn btn-danger delete" data-id="npsn"
+                                                    data-profil="NPSN"><i class="fa-solid fa-trash"></i></a>
+                                                @include('Admin.layoutadmin.modalprofilezak')
 
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>4</td>
-                                                <td>Desa:</td>
-                                                <td>{{ $profil->desa }}</td>
-                                                <td>
-                                                    <a href="#" data-bs-toggle="modal"
-                                                    data-bs-target="#smallModal4"
-                                                        class="btn btn-warning"><i
-                                                            class="fa-solid fa-pen-to-square"></i></a>
-                                                    <a href="#" class="btn btn-danger delete" data-id="desa"
-                                                        data-profil="Desa"><i class="fa-solid fa-trash"></i></a>
-                                                        @include('Admin.layoutadmin.modalprofilezak')
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Desa:</td>
+                                            <td>{{ $profil->desa }}</td>
+                                            <td>
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#smallModal4"
+                                                    class="btn btn-warning"><i
+                                                        class="fa-solid fa-pen-to-square"></i></a>
+                                                <a href="#" class="btn btn-danger delete" data-id="desa"
+                                                    data-profil="Desa"><i class="fa-solid fa-trash"></i></a>
+                                                @include('Admin.layoutadmin.modalprofilezak')
 
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>5</td>
-                                                <td>Kecamatan:</td>
-                                                <td>{{ $profil->kecamatan }}</td>
-                                                <td>
-                                                    <a href="" data-bs-toggle="modal"
-                                                    data-bs-target="#smallModal5"
-                                                        class="btn btn-warning"><i
-                                                            class="fa-solid fa-pen-to-square"></i></a>
-                                                    <a href="#" class="btn btn-danger delete" data-id="kecamatan"
-                                                        data-profil="kecamatan"><i class="fa-solid fa-trash"></i></a>
-                                                        @include('Admin.layoutadmin.modalprofilezak')
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>Kecamatan:</td>
+                                            <td>{{ $profil->kecamatan }}</td>
+                                            <td>
+                                                <a href="" data-bs-toggle="modal" data-bs-target="#smallModal5"
+                                                    class="btn btn-warning"><i
+                                                        class="fa-solid fa-pen-to-square"></i></a>
+                                                <a href="#" class="btn btn-danger delete" data-id="kecamatan"
+                                                    data-profil="kecamatan"><i class="fa-solid fa-trash"></i></a>
+                                                @include('Admin.layoutadmin.modalprofilezak')
 
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>6</td>
-                                                <td>Daerah:</td>
-                                                <td>{{ $profil->daerah }}</td>
-                                                <td>
-                                                    <a href="#" data-bs-toggle="modal"
-                                                    data-bs-target="#smallModal6"
-                                                        class="btn btn-warning"><i
-                                                            class="fa-solid fa-pen-to-square"></i></a>
-                                                    <a href="#" class="btn btn-danger delete"
-                                                        data-id="{{ $profil->id }}" data-profil="daerah"><i
-                                                            class="fa-solid fa-trash"></i></a>
-                                                            @include('Admin.layoutadmin.modalprofilezak')
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>Daerah:</td>
+                                            <td>{{ $profil->daerah }}</td>
+                                            <td>
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#smallModal6"
+                                                    class="btn btn-warning"><i
+                                                        class="fa-solid fa-pen-to-square"></i></a>
+                                                <a href="#" class="btn btn-danger delete"
+                                                    data-id="{{ $profil->id }}" data-profil="daerah"><i
+                                                        class="fa-solid fa-trash"></i></a>
+                                                @include('Admin.layoutadmin.modalprofilezak')
 
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>7</td>
-                                                <td>Provinsi:</td>
-                                                <td>{{ $profil->provinsi }}</td>
-                                                <td>
-                                                    <a href="" data-bs-toggle="modal"
-                                                    data-bs-target="#smallModal7"
-                                                        class="btn btn-warning"><i
-                                                            class="fa-solid fa-pen-to-square"></i></a>
-                                                    <a href="#" class="btn btn-danger delete"
-                                                        data-id="{{ $profil->id }}" data-profil="provinsi"><i
-                                                            class="fa-solid fa-trash"></i></a>
-                                                            @include('Admin.layoutadmin.modalprofilezak')
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>Provinsi:</td>
+                                            <td>{{ $profil->provinsi }}</td>
+                                            <td>
+                                                <a href="" data-bs-toggle="modal" data-bs-target="#smallModal7"
+                                                    class="btn btn-warning"><i
+                                                        class="fa-solid fa-pen-to-square"></i></a>
+                                                <a href="#" class="btn btn-danger delete"
+                                                    data-id="{{ $profil->id }}" data-profil="provinsi"><i
+                                                        class="fa-solid fa-trash"></i></a>
+                                                @include('Admin.layoutadmin.modalprofilezak')
 
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>8</td>
-                                                <td>Kode Pos:</td>
-                                                <td>{{ $profil->kode_pos }}</td>
-                                                <td>
-                                                    <a href="" data-bs-toggle="modal"
-                                                    data-bs-target="#smallModal8"
-                                                        class="btn btn-warning"><i
-                                                            class="fa-solid fa-pen-to-square"></i></a>
-                                                    <a href="#" class="btn btn-danger delete"
-                                                        data-id="{{ $profil->id }}" data-profil="kode pos"><i
-                                                            class="fa-solid fa-trash"></i></a>
-                                                            @include('Admin.layoutadmin.modalprofilezak')
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td>Kode Pos:</td>
+                                            <td>{{ $profil->kode_pos }}</td>
+                                            <td>
+                                                <a href="" data-bs-toggle="modal" data-bs-target="#smallModal8"
+                                                    class="btn btn-warning"><i
+                                                        class="fa-solid fa-pen-to-square"></i></a>
+                                                <a href="#" class="btn btn-danger delete"
+                                                    data-id="{{ $profil->id }}" data-profil="kode pos"><i
+                                                        class="fa-solid fa-trash"></i></a>
+                                                @include('Admin.layoutadmin.modalprofilezak')
 
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>9</td>
-                                                <td>Alamat:</td>
-                                                <td>{{ $profil->alamat }}</td>
-                                                <td>
-                                                    <a href="" data-bs-toggle="modal"
-                                                    data-bs-target="#smallModal9"
-                                                        class="btn btn-warning"><i
-                                                            class="fa-solid fa-pen-to-square"></i></a>
-                                                    <a href="#" class="btn btn-danger delete"
-                                                        data-id="{{ $profil->id }}" data-profil="alamat"><i
-                                                            class="fa-solid fa-trash"></i></a>
-                                                            @include('Admin.layoutadmin.modalprofilezak')
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Alamat:</td>
+                                            <td>{{ $profil->alamat }}</td>
+                                            <td>
+                                                <a href="" data-bs-toggle="modal"
+                                                    data-bs-target="#smallModal9" class="btn btn-warning"><i
+                                                        class="fa-solid fa-pen-to-square"></i></a>
+                                                <a href="#" class="btn btn-danger delete"
+                                                    data-id="{{ $profil->id }}" data-profil="alamat"><i
+                                                        class="fa-solid fa-trash"></i></a>
+                                                @include('Admin.layoutadmin.modalprofilezak')
 
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>10</td>
-                                                <td>No Telepon:</td>
-                                                <td>{{ $profil->no_telp }}</td>
-                                                <td>
-                                                    <a href="" data-bs-toggle="modal"
-                                                    data-bs-target="#smallModal10"
-                                                        class="btn btn-warning"><i
-                                                            class="fa-solid fa-pen-to-square"></i></a>
-                                                    <a href="#" class="btn btn-danger delete"
-                                                        data-id="{{ $profil->id }}" data-profil="No telepon"><i
-                                                            class="fa-solid fa-trash"></i></a>
-                                                            @include('Admin.layoutadmin.modalprofilezak')
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>10</td>
+                                            <td>No Telepon:</td>
+                                            <td>{{ $profil->no_telp }}</td>
+                                            <td>
+                                                <a href="" data-bs-toggle="modal"
+                                                    data-bs-target="#smallModal10" class="btn btn-warning"><i
+                                                        class="fa-solid fa-pen-to-square"></i></a>
+                                                <a href="#" class="btn btn-danger delete"
+                                                    data-id="{{ $profil->id }}" data-profil="No telepon"><i
+                                                        class="fa-solid fa-trash"></i></a>
+                                                @include('Admin.layoutadmin.modalprofilezak')
 
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>11</td>
-                                                <td>Email :</td>
-                                                <td>{{ $profil->email }}</td>
-                                                <td>
-                                                    <a href="#" data-bs-toggle="modal"
-                                                    data-bs-target="#smallModal11"
-                                                        class="btn btn-warning"><i
-                                                            class="fa-solid fa-pen-to-square"></i></a>
-                                                    <a href="#" class="btn btn-danger delete"
-                                                        data-id="{{ $profil->id }}" data-profil="Email"><i
-                                                            class="fa-solid fa-trash"></i></a>
-                                                            @include('Admin.layoutadmin.modalprofilezak')
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>11</td>
+                                            <td>Email :</td>
+                                            <td>{{ $profil->email }}</td>
+                                            <td>
+                                                <a href="#" data-bs-toggle="modal"
+                                                    data-bs-target="#smallModal11" class="btn btn-warning"><i
+                                                        class="fa-solid fa-pen-to-square"></i></a>
+                                                <a href="#" class="btn btn-danger delete"
+                                                    data-id="{{ $profil->id }}" data-profil="Email"><i
+                                                        class="fa-solid fa-trash"></i></a>
+                                                @include('Admin.layoutadmin.modalprofilezak')
 
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>12</td>
-                                                <td>Kegiatan Pembelajaran:</td>
-                                                <td>{{ $profil->kegiatan_pembelajaran }}</td>
-                                                <td>
-                                                    <a href="#" data-bs-toggle="modal"
-                                                    data-bs-target="#smallModal12"
-                                                        class="btn btn-warning"><i
-                                                            class="fa-solid fa-pen-to-square"></i></a>
-                                                    <a href="#" class="btn btn-danger delete"
-                                                        data-id="{{ $profil->id }}"
-                                                        data-profil="Kegiatan Pembelajaran"><i
-                                                            class="fa-solid fa-trash"></i></a>
-                                                            @include('Admin.layoutadmin.modalprofilezak')
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>12</td>
+                                            <td>Kegiatan Pembelajaran:</td>
+                                            <td>{{ $profil->kegiatan_pembelajaran }}</td>
+                                            <td>
+                                                <a href="#" data-bs-toggle="modal"
+                                                    data-bs-target="#smallModal12" class="btn btn-warning"><i
+                                                        class="fa-solid fa-pen-to-square"></i></a>
+                                                <a href="#" class="btn btn-danger delete"
+                                                    data-id="{{ $profil->id }}"
+                                                    data-profil="Kegiatan Pembelajaran"><i
+                                                        class="fa-solid fa-trash"></i></a>
+                                                @include('Admin.layoutadmin.modalprofilezak')
 
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>13</td>
-                                                <td>Waktu Penyelenggaraan:</td>
-                                                <td>{{ $profil->waktu_penyelenggaraan }}</td>
-                                                <td>
-                                                    <a href="" data-bs-toggle="modal"
-                                                    data-bs-target="#smallModal13"
-                                                        class="btn btn-warning"><i
-                                                            class="fa-solid fa-pen-to-square"></i></a>
-                                                    <a href="#" class="btn btn-danger delete"
-                                                        data-id="{{ $profil->id }}"
-                                                        data-profil="{{ $profil->judul }}"><i
-                                                            class="fa-solid fa-trash"></i></a>
-                                                            @include('Admin.layoutadmin.modalprofilezak')
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>13</td>
+                                            <td>Waktu Penyelenggaraan:</td>
+                                            <td>{{ $profil->waktu_penyelenggaraan }}</td>
+                                            <td>
+                                                <a href="" data-bs-toggle="modal"
+                                                    data-bs-target="#smallModal13" class="btn btn-warning"><i
+                                                        class="fa-solid fa-pen-to-square"></i></a>
+                                                <a href="#" class="btn btn-danger delete"
+                                                    data-id="{{ $profil->id }}"
+                                                    data-profil="{{ $profil->judul }}"><i
+                                                        class="fa-solid fa-trash"></i></a>
+                                                @include('Admin.layoutadmin.modalprofilezak')
 
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>14</td>
-                                                <td>Jarak Ke Pusat Kecamatan:</td>
-                                                <td>{{ $profil->jarak_ke_pusat_kecamatan }}</td>
-                                                <td>
-                                                    <a href="#" data-bs-toggle="modal"
-                                                    data-bs-target="#smallModal14"
-                                                        class="btn btn-warning"><i
-                                                            class="fa-solid fa-pen-to-square"></i></a>
-                                                    <a href="#" class="btn btn-danger delete"
-                                                        data-id="{{ $profil->id }}"
-                                                        data-profil="{{ $profil->judul }}"><i
-                                                            class="fa-solid fa-trash"></i></a>
-                                                            @include('Admin.layoutadmin.modalprofilezak')
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>14</td>
+                                            <td>Jarak Ke Pusat Kecamatan:</td>
+                                            <td>{{ $profil->jarak_ke_pusat_kecamatan }}</td>
+                                            <td>
+                                                <a href="#" data-bs-toggle="modal"
+                                                    data-bs-target="#smallModal14" class="btn btn-warning"><i
+                                                        class="fa-solid fa-pen-to-square"></i></a>
+                                                <a href="#" class="btn btn-danger delete"
+                                                    data-id="{{ $profil->id }}"
+                                                    data-profil="{{ $profil->judul }}"><i
+                                                        class="fa-solid fa-trash"></i></a>
+                                                @include('Admin.layoutadmin.modalprofilezak')
 
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>15</td>
-                                                <td>Jarak Ke Pusat Daerah:</td>
-                                                <td>{{ $profil->jarak_ke_pusat_daerah }}</td>
-                                                <td>
-                                                    <a href="" data-bs-toggle="modal"
-                                                    data-bs-target="#smallModal15"
-                                                        class="btn btn-warning"><i
-                                                            class="fa-solid fa-pen-to-square"></i></a>
-                                                    <a href="#" class="btn btn-danger delete"
-                                                        data-id="{{ $profil->id }}"
-                                                        data-profil="{{ $profil->judul }}"><i
-                                                            class="fa-solid fa-trash"></i></a>
-                                                            @include('Admin.layoutadmin.modalprofilezak')
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>15</td>
+                                            <td>Jarak Ke Pusat Daerah:</td>
+                                            <td>{{ $profil->jarak_ke_pusat_daerah }}</td>
+                                            <td>
+                                                <a href="" data-bs-toggle="modal"
+                                                    data-bs-target="#smallModal15" class="btn btn-warning"><i
+                                                        class="fa-solid fa-pen-to-square"></i></a>
+                                                <a href="#" class="btn btn-danger delete"
+                                                    data-id="{{ $profil->id }}"
+                                                    data-profil="{{ $profil->judul }}"><i
+                                                        class="fa-solid fa-trash"></i></a>
+                                                @include('Admin.layoutadmin.modalprofilezak')
 
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>16</td>
-                                                <td>Tahun Berdiri:</td>
-                                                <td>{{ $profil->tahun_berdiri }}</td>
-                                                <td>
-                                                    <a href="#" data-bs-toggle="modal"
-                                                    data-bs-target="#smallModal16"
-                                                        class="btn btn-warning"><i
-                                                            class="fa-solid fa-pen-to-square"></i></a>
-                                                    <a href="#" class="btn btn-danger delete"
-                                                        data-id="{{ $profil->id }}"
-                                                        data-profil="{{ $profil->judul }}"><i
-                                                            class="fa-solid fa-trash"></i></a>
-                                                            @include('Admin.layoutadmin.modalprofilezak')
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>16</td>
+                                            <td>Tahun Berdiri:</td>
+                                            <td>{{ $profil->tahun_berdiri }}</td>
+                                            <td>
+                                                <a href="#" data-bs-toggle="modal"
+                                                    data-bs-target="#smallModal16" class="btn btn-warning"><i
+                                                        class="fa-solid fa-pen-to-square"></i></a>
+                                                <a href="#" class="btn btn-danger delete"
+                                                    data-id="{{ $profil->id }}"
+                                                    data-profil="{{ $profil->judul }}"><i
+                                                        class="fa-solid fa-trash"></i></a>
+                                                @include('Admin.layoutadmin.modalprofilezak')
 
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>17</td>
-                                                <td>penerbit_SK:</td>
-                                                <td>{{ $profil->penerbit_SK }}</td>
-                                                <td>
-                                                    <a href="" data-bs-toggle="modal"
-                                                    data-bs-target="#smallModal17"
-                                                        class="btn btn-warning"><i
-                                                            class="fa-solid fa-pen-to-square"></i></a>
-                                                    <a href="#" class="btn btn-danger delete"
-                                                        data-id="{{ $profil->id }}"
-                                                        data-profil="{{ $profil->judul }}"><i
-                                                            class="fa-solid fa-trash"></i></a>
-                                                            @include('Admin.layoutadmin.modalprofilezak')
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>17</td>
+                                            <td>penerbit_SK:</td>
+                                            <td>{{ $profil->penerbit_SK }}</td>
+                                            <td>
+                                                <a href="" data-bs-toggle="modal"
+                                                    data-bs-target="#smallModal17" class="btn btn-warning"><i
+                                                        class="fa-solid fa-pen-to-square"></i></a>
+                                                <a href="#" class="btn btn-danger delete"
+                                                    data-id="{{ $profil->id }}"
+                                                    data-profil="{{ $profil->judul }}"><i
+                                                        class="fa-solid fa-trash"></i></a>
+                                                @include('Admin.layoutadmin.modalprofilezak')
 
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>18</td>
-                                                <td>SK Pendirian Sekolah:</td>
-                                                <td>{{ $profil->sk_pendirian_sekolah }}</td>
-                                                <td>
-                                                    <a href="" data-bs-toggle="modal"
-                                                    data-bs-target="#smallModal18"
-                                                        class="btn btn-warning"><i
-                                                            class="fa-solid fa-pen-to-square"></i></a>
-                                                    <a href="#" class="btn btn-danger delete"
-                                                        data-id="{{ $profil->id }}"
-                                                        data-profil="{{ $profil->judul }}"><i
-                                                            class="fa-solid fa-trash"></i></a>
-                                                            @include('Admin.layoutadmin.modalprofilezak')
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>18</td>
+                                            <td>SK Pendirian Sekolah:</td>
+                                            <td>{{ $profil->sk_pendirian_sekolah }}</td>
+                                            <td>
+                                                <a href="" data-bs-toggle="modal"
+                                                    data-bs-target="#smallModal18" class="btn btn-warning"><i
+                                                        class="fa-solid fa-pen-to-square"></i></a>
+                                                <a href="#" class="btn btn-danger delete"
+                                                    data-id="{{ $profil->id }}"
+                                                    data-profil="{{ $profil->judul }}"><i
+                                                        class="fa-solid fa-trash"></i></a>
+                                                @include('Admin.layoutadmin.modalprofilezak')
 
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>19</td>
-                                                <td>Status Sekolah</td>
-                                                <td>{{ $profil->status_sekolah }}</td>
-                                                <td>
-                                                    <a href="" data-bs-toggle="modal"
-                                                    data-bs-target="#smallModal19"
-                                                        class="btn btn-warning"><i
-                                                            class="fa-solid fa-pen-to-square"></i></a>
-                                                    <a href="#" class="btn btn-danger delete"
-                                                        data-id="{{ $profil->id }}"
-                                                        data-profil="{{ $profil->judul }}"><i
-                                                            class="fa-solid fa-trash"></i></a>
-                                                            @include('Admin.layoutadmin.modalprofilezak')
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>19</td>
+                                            <td>Status Sekolah</td>
+                                            <td>{{ $profil->status_sekolah }}</td>
+                                            <td>
+                                                <a href="" data-bs-toggle="modal"
+                                                    data-bs-target="#smallModal19" class="btn btn-warning"><i
+                                                        class="fa-solid fa-pen-to-square"></i></a>
+                                                <a href="#" class="btn btn-danger delete"
+                                                    data-id="{{ $profil->id }}"
+                                                    data-profil="{{ $profil->judul }}"><i
+                                                        class="fa-solid fa-trash"></i></a>
+                                                @include('Admin.layoutadmin.modalprofilezak')
 
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>20</td>
-                                                <td>Kurikulum:</td>
-                                                <td>{{ $profil->kurikulum }}</td>
-                                                <td>
-                                                    <a href="" data-bs-toggle="modal"
-                                                    data-bs-target="#smallModal20"
-                                                        class="btn btn-warning"><i
-                                                            class="fa-solid fa-pen-to-square"></i></a>
-                                                    <a href="#" class="btn btn-danger delete"
-                                                        data-id="{{ $profil->id }}"
-                                                        data-profil="{{ $profil->judul }}"><i
-                                                            class="fa-solid fa-trash"></i></a>
-                                                            @include('Admin.layoutadmin.modalprofilezak')
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>20</td>
+                                            <td>Kurikulum:</td>
+                                            <td>{{ $profil->kurikulum }}</td>
+                                            <td>
+                                                <a href="" data-bs-toggle="modal"
+                                                    data-bs-target="#smallModal20" class="btn btn-warning"><i
+                                                        class="fa-solid fa-pen-to-square"></i></a>
+                                                <a href="#" class="btn btn-danger delete"
+                                                    data-id="{{ $profil->id }}"
+                                                    data-profil="{{ $profil->judul }}"><i
+                                                        class="fa-solid fa-trash"></i></a>
+                                                @include('Admin.layoutadmin.modalprofilezak')
 
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>21</td>
-                                                <td>Sumber Listrik:</td>
-                                                <td>{{ $profil->sumber_listrik }}</td>
-                                                <td>
-                                                    <a href="#" data-bs-toggle="modal"
-                                                    data-bs-target="#smallModal21"
-                                                        class="btn btn-warning"><i
-                                                            class="fa-solid fa-pen-to-square"></i></a>
-                                                    <a href="#" class="btn btn-danger delete"
-                                                        data-id="{{ $profil->id }}"
-                                                        data-profil="{{ $profil->judul }}"><i
-                                                            class="fa-solid fa-trash"></i></a>
-                                                            @include('Admin.layoutadmin.modalprofilezak')
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>21</td>
+                                            <td>Sumber Listrik:</td>
+                                            <td>{{ $profil->sumber_listrik }}</td>
+                                            <td>
+                                                <a href="#" data-bs-toggle="modal"
+                                                    data-bs-target="#smallModal21" class="btn btn-warning"><i
+                                                        class="fa-solid fa-pen-to-square"></i></a>
+                                                <a href="#" class="btn btn-danger delete"
+                                                    data-id="{{ $profil->id }}"
+                                                    data-profil="{{ $profil->judul }}"><i
+                                                        class="fa-solid fa-trash"></i></a>
+                                                @include('Admin.layoutadmin.modalprofilezak')
 
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>22</td>
-                                                <td>Akses Internet:</td>
-                                                <td>{{ $profil->akses_internet }}</td>
-                                                <td>
-                                                    <a href="#" data-bs-toggle="modal"
-                                                    data-bs-target="#smallModal22"
-                                                        class="btn btn-warning"><i
-                                                            class="fa-solid fa-pen-to-square"></i></a>
-                                                    <a href="#" class="btn btn-danger delete"
-                                                        data-id="{{ $profil->id }}"
-                                                        data-profil="{{ $profil->judul }}"><i
-                                                            class="fa-solid fa-trash"></i></a>
-                                                            @include('Admin.layoutadmin.modalprofilezak')
-                                                </td>
-                                            </tr>
-                                        @endforeach
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>22</td>
+                                            <td>Akses Internet:</td>
+                                            <td>{{ $profil->akses_internet }}</td>
+                                            <td>
+                                                <a href="#" data-bs-toggle="modal"
+                                                    data-bs-target="#smallModal22" class="btn btn-warning"><i
+                                                        class="fa-solid fa-pen-to-square"></i></a>
+                                                <a href="#" class="btn btn-danger delete"
+                                                    data-id="{{ $profil->id }}"
+                                                    data-profil="{{ $profil->judul }}"><i
+                                                        class="fa-solid fa-trash"></i></a>
+                                                @include('Admin.layoutadmin.modalprofilezak')
+                                            </td>
+                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
@@ -518,4 +493,5 @@
         toastr.success("{{ Session::get('success') }}")
     @endif
 </script>
+
 </html>

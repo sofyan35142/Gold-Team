@@ -25,8 +25,12 @@
                         <div class="card mb-4">
                             <div class="card-datatable table-responsive pt-0">
                                 <h5 class="card-header">Data Profil Visi Misi</h5>
-                                <a href="/index/addprofilvisimisi" type="button"
-                                    class="btn rounded-pill btn-primary">Tambah +</a>
+                                @if (is_null($data))
+                                    <a href="/index/addprofilvisimisi" type="button"
+                                        class="btn rounded-pill btn-primary">Tambah +</a>
+                                @else
+                                    <h6>Kosongkan Data Untuk Menambahkan</h6>
+                                @endif
                                 <table class="table" id="jurusan">
                                     <thead>
                                         <tr>
@@ -39,26 +43,24 @@
                                     </thead>
                                     <tbody class="table-group-divider">
                                         <?php $no = 1; ?>
-                                        @foreach ($data as $visimisi)
                                             <tr>
                                                 <td>{{ $no }}</td>
-                                                <td>{{ $visimisi->visimisi}}</td>
-                                                <td>{!! $visimisi->descvisimisiprofil !!}</td>
+                                                <td>{{ $data->visimisi ? $data->visimisi:'-';  }}</td>
+                                                <td>{!! $data->descvisimisiprofil !!}</td>
                                                 <td>
-                                                    <img src="{{ asset('../assets/img/visimisi/' . $visimisi->foto_side) }}" alt=""
-                                                        style="width: 80px; height:80px;">
+                                                    <img src="{{ asset('../assets/img/visimisi/' . $data->foto_side) }}"
+                                                        alt="" style="width: 80px; height:80px;">
                                                 </td>
                                                 <td>
-                                                    <a href="/visimisi/edit/{{ $visimisi->id }}"
+                                                    <a href="/visimisi/edit/{{ $data->id }}"
                                                         class="btn btn-warning"><i
                                                             class="fa-solid fa-pen-to-square"></i></a>
                                                     <a href="#" class="btn btn-danger delete"
-                                                        data-id="{{ $visimisi->id }}"
-                                                        data-jurusan="{{ $visimisi->visimisi }}"><i
+                                                        data-id="{{ $data->id }}"
+                                                        data-jurusan="{{ $data->visimisi }}"><i
                                                             class="fa-solid fa-trash"></i></a>
                                                 </td>
                                             </tr>
-                                            @endforeach
                                     </tbody>
                                     <?php $no++; ?>
                                 </table>
@@ -164,7 +166,7 @@
 
         swal({
                 title: "Apakah kamu yakin?",
-                text: "Kamu akan menghapus jurusan data ini" ,
+                text: "Kamu akan menghapus jurusan data ini",
                 icon: "warning",
                 buttons: true,
                 dangerMode: true,
