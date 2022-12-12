@@ -120,10 +120,26 @@
                         <div>
                         
                         <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Foto </label>
+                            <label for="exampleInputEmail1" class="form-label">Foto Slide 1</label>
                             <br/>
                             <img class="img mb-3" src="{{ asset('lsp/' . $data->foto) }}" alt="" style="width: 250px;">
                             <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto }}">
+                           
+                        </div>
+                        <br/>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Foto Slide 2</label>
+                            <br/>
+                            <img class="img mb-3" src="{{ asset('lsp/' . $data->foto1) }}" alt="" style="width: 250px;">
+                            <input type="file" name="foto1" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto1 }}">
+                           
+                        </div>
+                        <br/>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Foto Slide 3</label>
+                            <br/>
+                            <img class="img mb-3" src="{{ asset('lsp/' . $data->foto2) }}" alt="" style="width: 250px;">
+                            <input type="file" name="foto2" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto2 }}">
                            
                         </div>
                         <br/>

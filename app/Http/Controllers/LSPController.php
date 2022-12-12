@@ -201,6 +201,26 @@ class LSPController extends Controller
                 'judul' => $request->judul,
                 'deskripsi' => $request->deskripsi,
             ]);
+        }
+        $data = Skematerlisensi::find($request->id);
+        if ($request->hasFile('foto1')) {
+            $request->file('foto1')->move('lsp/', $request->file('foto1')->getClientOriginalName());
+            $namafoto1 = $request->file('foto1')->getClientOriginalName();
+            $data->update([
+                'foto1' => $namafoto1,
+                'judul' => $request->judul,
+                'deskripsi' => $request->deskripsi,
+            ]);
+        }
+        $data = Skematerlisensi::find($request->id);
+        if ($request->hasFile('foto2')) {
+            $request->file('foto2')->move('lsp/', $request->file('foto2')->getClientOriginalName());
+            $namafoto = $request->file('foto2')->getClientOriginalName();
+            $data->update([
+                'foto' => $namafoto,
+                'judul' => $request->judul,
+                'deskripsi' => $request->deskripsi,
+            ]);
         } else {
             $data->update([
                 //'foto' => request->foto

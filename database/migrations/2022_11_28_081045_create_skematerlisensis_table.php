@@ -18,6 +18,8 @@ return new class extends Migration
             $table->string('judul');
             $table->text('deskripsi');
             $table->string('foto');
+            $table->string('foto1')->nullable();
+            $table->string('foto2')->nullable();
             $table->timestamps();
         });
     }
