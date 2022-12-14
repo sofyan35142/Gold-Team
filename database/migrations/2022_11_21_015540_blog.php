@@ -19,6 +19,7 @@ return new class extends Migration
             $table->text('deskripsi');
             $table->string('kategori');
             $table->string('foto');
+            $table->string('foto_kegiatan');
             $table->timestamps();
         });
     }

@@ -27,19 +27,41 @@ class BerandaController extends Controller
 
      public function insertblog(Request $request)
     {
-        $data = Blog::create([
+        // $data = Blog::create([
 
-            'judul' => $request->judul,
-            'deskripsi' => $request->deskripsi,
-            'kategori' => $request->kategori,
-            'foto' => $request->foto
-        ]);
-        // dd($data);
+        //     'judul' => $request->judul,
+        //     'deskripsi' => $request->deskripsi,
+        //     'kategori' => $request->kategori,
+        //     'foto' => $request->foto
+        // ]);
+        // // dd($data);
+        // if ($request->hasFile('foto')) {
+        //     $request->file('foto')->move('blog/', $request->file('foto')->getClientOriginalName());
+        //     $data->foto = $request->file('foto')->getClientOriginalName();
+        //     $data->save();
+        // }
+        $files = [];
+        if ($request->hasfile('foto_kegiatan')) {
+            foreach ($request->foto_kegiatan as $file) {
+                $name = $file->getClientOriginalName();
+                $file->move(public_path('fotokegiatan/'), $name);
+                $files[] = $name;
+            }
+        }
+        // $fotoside = implode(',',$files);
+        $file  = new Blog();
+        $file->judul = $request->judul;
+        $file->deskripsi = $request->deskripsi;
+        $file->kategori = $request->kategori;
+        $file->foto = $request->foto;
+        $file->foto_kegiatan =implode(',', $files);
         if ($request->hasFile('foto')) {
             $request->file('foto')->move('blog/', $request->file('foto')->getClientOriginalName());
-            $data->foto = $request->file('foto')->getClientOriginalName();
-            $data->save();
+            $file->foto = $request->file('foto')->getClientOriginalName();
+            $file->save();
         }
+        // dd($file->foto_kegiatan );
+        $file->save();
         return redirect()->route('viewblog')->with('success', 'Berhasil Di Tambahkan');
     }
 

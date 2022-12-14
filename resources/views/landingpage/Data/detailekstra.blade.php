@@ -55,19 +55,14 @@
 
     <div class="service-details-area main-service-area pt-100 services-details-page">
         <div class="container">
-            @foreach ($detailekstra as $data)
-
-
             <div class="row">
                 <div class="col-lg-8">
                     <img src="{{ asset('fotoekstra/' . $data->foto) }}" alt="service">
-                    <div class="service-details-post">
+                    <div class="service-details-post detail">
                         <h3>{{ $data->judul }}</h3>
                         <p>{!! $data->deskripsi !!}</p>
-
                     </div>
                     <div class="service-details-post">
-
                         <h3>Pembina</h3>
                         <div class="d-flex flex-row">
                             <div class="p-2"><img class="img-guru"
@@ -76,35 +71,43 @@
                             </div>
                         </div>
                     </div>
-@endforeach
                 </div>
-                <div class="col-lg-4 main-service-area blog-side-bar">
-                     @foreach($detailekstra as $foto)
-                    <div class="team-section team-style-two team-style-three team-members pt-1000">
+                 @foreach($foto as $fotok)
+                <div class="col-lg-4 main-service-area blog-side-bar border shadows mb-40px h-fc py-3">
+                    <div class="service-sidebar">
+                        <center><b>Foto Kegiatan</b></center> <br>
+                        <img class="imgvisi" src="{{ asset('foto_kegiatan/' . $fotok) }}" alt="service">
+                    </div>
+                </div>
+                @endforeach
+                {{-- <div class="col-lg-4 main-service-area blog-side-bar"> --}}
+                    {{-- <div class="team-section team-style-two team-style-three team-members pt-1000">
                         <div class="team-card">
                             <div class="team-img">
                                 <div class="row">
                                     <div class="container">
-                                        <img class="img-detailekstra" src="{{ asset('foto_kegiatan/' . $foto->foto_kegiatan) }}"
+                                        <img class="img-detailekstra" src="{{ asset('foto_kegiatan/' . $fotok) }}"
                                             alt="team member">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="team-section team-style-two team-style-three team-members pt-1000">
+                    </div> --}}
+                    {{-- <div class="team-section team-style-two team-style-three team-members pt-1000">
+                        <div class="service-sidebar">
+                       <center> <b>Foto Kegiatan</b></center> <br>
                         <div class="team-card">
                             <div class="team-img">
                                 <div class="row">
                                     <div class="container">
-                                        <img  src="../ekstra/detailpaskib2.jpeg"
+                                        <img  src="{{ asset('foto_kegiatan/' . $fotok) }}"
                                             alt="team member">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="team-section team-style-two team-style-three team-members pt-1000">
+                    </div> --}}
+                    {{-- <div class="team-section team-style-two team-style-three team-members pt-1000">
                         <div class="team-card">
                             <div class="team-img">
                                 <div class="row">
@@ -127,10 +130,9 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            @endforeach
+                    </div> --}}
+                {{-- </div> --}}
+            {{-- </div> --}}
         </div>
     </div>
 

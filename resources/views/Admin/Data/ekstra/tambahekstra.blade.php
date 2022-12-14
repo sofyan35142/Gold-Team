@@ -126,7 +126,7 @@
           </div>
           <!-- / Content -->
 <!-- Footer -->
-@include("Admin.layoutadmin.footer")
+@include('Admin.layoutadmin.footer')
 <!-- / Footer -->
 
 

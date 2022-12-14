@@ -42,13 +42,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
-                    @foreach ($data as $blog)
-
-
-                    <div class="blog-details-post">
+                    <div class="blog-details-post detail">
                         <div class="blog-post-title">
                             <h3>
-                                {{ $blog->judul }}
+                                {{ $data->judul }}
                             </h3>
 
                             <ul>
@@ -58,26 +55,27 @@
                                 </li>
                                 <li>
                                     <i class="icofont-ui-user"></i>
-                                    <a href="#">{{ $blog->idblog->kategori }}</a>
+                                    <a href="#">{{ $data->idblog->kategori }}</a>
                                 </li>
                             </ul>
 
-                            <img class="img-detail" src="{{ asset('blog/' . $blog->foto) }}" alt="service">
+                            <img class="img-detail" src="{{ asset('blog/' . $data->foto) }}" alt="service">
+                            <p>{!! $data->deskripsi !!}</p>
                         </div>
-                        <p>{{ $blog->deskripsi }}</p>
                         <center>
                             <h3>Gallery</h3>
                         </center>
+                        @foreach ($foto as $kegiatan)
                         <div class="d-flex flex-row">
-                            <div class="p-2"> <img src="../blog/detail2.png" alt=""> </div>
-                            <div class="p-2"> <img src="../blog/detail3.png" alt=""> </div>
+                            <div class="p-2"> <img class="imgdetaill" src="{{ asset('fotokegiatan/' . $kegiatan) }}" alt=""> </div>
+                            {{-- <div class="p-2"> <img src="{{ asset('fotokegiatan/' . $kegiatan) }}" alt=""> </div> --}}
+                            {{-- <div class="p-2"> <img src="../blog/detail3.png" alt=""> </div>
                         </div>
                         <div class="d-flex flex-row">
-                            <div class="p-2"> <img src="../blog/detail4.png" alt=""> </div>
-                            <div class="p-2"> <img src="../blog/detail5.png" alt=""> </div>
+                            <div class="p-2"> <img src="../blog/detail5.png" alt=""> </div> --}}
                         </div>
+                        @endforeach
                     </div>
-                    @endforeach
                     <div class="page-button">
                         <div class="row">
                             <div class="col-md-3">

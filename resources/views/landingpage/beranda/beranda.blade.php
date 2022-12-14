@@ -56,9 +56,92 @@
                 </a>
             @endforeach
         </div>
-
     </div>
+    <section>
+        <div class="container reveal">
+            <h2>Kenapa Harus Sketsu...?</h2>
+            <center>
+                <p>Alasan kenapa kalian semua harus bergabung dengan SMK NEGERI 1 SUKOREJO</p>
+            </center> <br>
+            <div class="text-container">
 
+                <div>
+                    <div class="icon-block">
+
+                        <div class=" bg-color-2 icon-block-img m-0 text-warning">
+                            <i class="fas fa-school"></i>
+                        </div>
+
+                        <div class="icon-block-info mr-3">
+
+                            <h3>Lingkungan Nyaman</h3>
+                            <p>
+                                Berada dilingkungan Aman, Nyaman, dan Kondusif.
+                            </p>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div>
+            <div class="text-container">
+
+                <div>
+                    <div class="icon-block">
+
+                        <div class=" bg-color-2 icon-block-img m-0 text-warning">
+                            <i class="fas fa-school"></i>
+                        </div>
+
+                        <div class="icon-block-info mr-3">
+
+                            <h3>Lingkungan Nyaman</h3>
+                            <p>
+                                Berada dilingkungan Aman, Nyaman, dan Kondusif.
+                            </p>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div>
+                    <div class="icon-block ">
+
+                        <div class="bg-color-1 icon-block-img m-0 text-info">
+                            <i class="fa-solid fa-laptop"></i>
+                        </div>
+
+                        <div class="icon-block-info me-3">
+
+                            <h3>Fasilitas Lengkap</h3>
+                            <p>
+                                Menunjang Pembelajaran Dengan Kualitas Terbaik.
+                            </p>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="icon-block">
+
+                        <div class=" bg-color-7 icon-block-img m-0 text-info">
+                            <i class="fa-solid fa-chalkboard-user"></i>
+                        </div>
+
+                        <div class="icon-block-info mr-3">
+
+                            <h3>Pengajar Kompeten</h3>
+                            <p>
+                                Guru yang up-to-date dengan perkembangan industri.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <div class="service-style-three pt-100 pb-70">
         <div class="container">
             <div class="section-head text-center">
@@ -131,7 +214,8 @@
     </div>
 
     <section class="about-style-two about-style-three pt-100 pb-70">
-        <div class="container-fluid">
+        <div class="container reveal">
+        {{-- <div class="container-fluid"> --}}
             @foreach ($datakepsek as $kepsek)
                 <div class="row align-items-center">
                     <div class="col-lg-6 p-0">
@@ -165,51 +249,49 @@
     <div class="service-style-three pt-100 pb-70">
         <div class="container">
             @foreach ($video as $profil)
-
-
-            <div class="row align-items-center">
-                <div class="col-lg-6 p-0">
-                    <div class="about-img">
-                        <img src="{{ asset('videoprofil/' . $profil->foto) }}" alt="about image">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 p-0">
+                        <div class="about-img">
+                            <img src="{{ asset('videoprofil/' . $profil->foto) }}" alt="about image">
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="about-text">
-                        <div class="section-head">
-                            <span><b>Bro, Nonton!</b></span>
-                            <br>
-                            <h3>{{ $profil->judul }}</h3>
-                            <br>
-                            <p>{!! $profil->deskripsi !!}</p>
-                        </div>
-                        <div class="theme-button text-left play-video">
-                            <a href="#" class="btn btn-danger"><i class="fa-sharp fa-solid fa-play"></i>
-                                PLAY </a>
-                        </div>
-                        <div class="video-popup modalyosop">
-                            <div class="modal-contentyosop">
-                                <span class="close-modal">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
-                                        <path
-                                            d="M28.5 9.6l-2.1-2.1-8.4 8.4-8.4-8.4-2.1 2.1 8.4 8.4-8.4 8.4 2.1 2.1 8.4-8.4 8.4 8.4 2.1-2.1-8.4-8.4z"
-                                            style="fill: #FFF;" />
-                                    </svg>
-                                </span>
-                                <div class="video-container">
-                                    <!-- Enter the video ID into the data-id attribute -->
-                                    <div id="player" data-id="DGIXT7ce3vQ"></div>
+                    <div class="col-lg-6">
+                        <div class="about-text">
+                            <div class="section-head">
+                                <span><b>Bro, Nonton!</b></span>
+                                <br>
+                                <h3>{{ $profil->judul }}</h3>
+                                <br>
+                                <p>{!! $profil->deskripsi !!}</p>
+                            </div>
+                            <div class="theme-button text-left play-video">
+                                <a href="#" class="btn btn-danger"><i class="fa-sharp fa-solid fa-play"></i>
+                                    PLAY </a>
+                            </div>
+                            <div class="video-popup modalyosop">
+                                <div class="modal-contentyosop">
+                                    <span class="close-modal">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+                                            <path
+                                                d="M28.5 9.6l-2.1-2.1-8.4 8.4-8.4-8.4-2.1 2.1 8.4 8.4-8.4 8.4 2.1 2.1 8.4-8.4 8.4 8.4 2.1-2.1-8.4-8.4z"
+                                                style="fill: #FFF;" />
+                                        </svg>
+                                    </span>
+                                    <div class="video-container">
+                                        <!-- Enter the video ID into the data-id attribute -->
+                                        <div id="player" data-id="DGIXT7ce3vQ"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-             @endforeach
+            @endforeach
         </div>
     </div>
     <div class="counter-style-two pt-100 pb-70">
         @foreach ($total as $siswa)
-            <div class="container">
+            <div class="container reveal">
                 <h2 class="text-center">{{ $siswa->judul }}</h2>
                 <div class="row">
                     <div class="col-md-3 col-5">
@@ -248,10 +330,14 @@
         <div class="container">
             <div class="section-head text-center">
                 <h2>Berita & Blog Terbaru</h2>
+                {{-- <button><a href="/blogbanyak">Blog</a></button> --}}
             </div>
+
+
             <div class="blog-slider owl-carousel owl-theme">
                 @foreach ($data as $blog)
-                    <div class="blog-area">
+                    <div class="blog-area yosopelipsis">
+
                         <div class="blog-img">
                             <a href="#">
                                 <img class="img-blog" src="{{ asset('blog/' . $blog->foto) }}" alt="blog image">
@@ -261,7 +347,7 @@
                             <h4><a href="#" class="overflow1">{{ $blog->judul }}</a></h4>
                             <ul>
                                 <li>
-                                   <i class="fa-solid fa-calendar-days"></i>
+                                    <i class="fa-solid fa-calendar-days"></i>
                                     {{ $blog->created_at }}
                                 </li>
                                 <li>
@@ -270,7 +356,7 @@
                                 </li>
                             </ul>
                             <p class="overflow">{!! $blog->deskripsi !!}</p>
-                            <a href="/blogdetail/{{$blog->id}}" class="blog-btn">
+                            <a href="/blogdetail/{{ $blog->id }}" class="blog-btn">
                                 Read more
                                 <i class="icofont-rounded-right"></i>
                             </a>
@@ -283,7 +369,7 @@
 
     <div class="testimonial-section testimonial-bg ptb-100">
         <div class="testimonial-area">
-            <div class="container">
+            <div class="container reveal">
                 <div class="row">
                     <div class="col-lg-12 offset-lg-0 col-md-10 offset-md-1 col-sm-10 offset-sm-1">
                         <div class="row">
@@ -347,6 +433,25 @@
                 console.log("c");
             }, 1000);
         });
+    </script>
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                } else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", reveal);
     </script>
 </body>
 {{-- push --}}

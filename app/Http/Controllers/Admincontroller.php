@@ -311,9 +311,5 @@ class Admincontroller extends Controller
         return view("admin.profil.sekolah_rujukan.addsekolahrujukan");
     }
     //end sekolah rujukan
-<<<<<<< HEAD
-
-=======
->>>>>>> 2c74941bfcca4d5fe90bc98af6b166b8daf8791d
     ///////////////////// END PROFIL LANDINGPAGE ADMIN ///////////////////////////
 }

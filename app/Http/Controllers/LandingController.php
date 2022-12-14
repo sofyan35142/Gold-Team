@@ -257,7 +257,8 @@ class LandingController extends Controller
         return view("landingpage.alumni.testialumni");
     }
         public function profilealumni(){
-        return view('landingpage.alumni.profilealumni');
+        $data=alumni::all();
+        return view('landingpage.alumni.profilealumni', compact('data'));
     }
 
     //Data
@@ -278,10 +279,10 @@ class LandingController extends Controller
         return view('landingpage.Data.prestasi', compact('prestasi'));
     }
     public function detailekstra($id){
-        $detailekstra=ekstra::where('id',$id)->get();
-        // $detailekstra=ekstra::find($id);
-        // dd($detailekstra);
-        return view('landingpage.Data.detailekstra', compact('detailekstra'));
+        $data = ekstra::find($id);
+        $foto = explode(',', $data->foto_kegiatan);
+        // dd($foto);
+        return view('landingpage.Data.detailekstra', compact('data', 'foto'));
     }
     public function detailprestasi($id){
         $detailprestasi=prestasi::where('id',$id)->get();
@@ -290,15 +291,17 @@ class LandingController extends Controller
     }
 
     public function blogdetail($id){
-        $data=Blog::where('id',$id)->get();
+        $data=Blog::find($id);
+        $foto = explode(',', $data->foto_kegiatan);
         $kategoriblog=kategoriblog::all();
         $blogside=Blog::latest()->get();
         // dd($blogside);
         // dd($blogside);
-        return view('landingpage.beranda.detailagenda', compact('data', 'kategoriblog', 'blogside'));
+        return view('landingpage.beranda.detailagenda', compact('data','foto', 'kategoriblog', 'blogside'));
     }
 
     public function blogbanyak(){
-        return view ('landingpage.beranda.bloglebihbanyak');
+        $data = Blog::all();
+        return view('landingpage.beranda.blogbanyak', compact('data'));
     }
 }

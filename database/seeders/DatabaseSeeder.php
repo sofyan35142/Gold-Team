@@ -21,7 +21,7 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([
             alumni::class,
-            blog::class,
+            // blog::class,
             dharma::class,
             ekstra::class,
             guru::class,
@@ -33,7 +33,7 @@ class DatabaseSeeder extends Seeder
             prestasi::class,
             // profilsekolah::class,
             profilvisimisi::class,
-            Skematerlisensi::class,
+            // Skematerlisensi::class,
             slider::class,
             strukturorganisasi::class,
             sekolahadiwiyata::class,
@@ -45,14 +45,9 @@ class DatabaseSeeder extends Seeder
             Modul::class,
             Artikel::class,
             kategoriblog::class,
-            walas::class,
-<<<<<<< HEAD
-            Reparasibengkel::class
-
-=======
+            // walas::class,
             Reparasibengkel::class,
             sidestruktur::class
->>>>>>> 2c74941bfcca4d5fe90bc98af6b166b8daf8791d
         ]);
     }
 }

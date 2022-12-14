@@ -17,7 +17,7 @@ class DataController extends Controller
     {
 
         $data = ekstra::all();
-        // dd($data);
+
         return view('Admin.Data.ekstra.ekstra', compact('data'));
     }
 
@@ -40,7 +40,7 @@ class DataController extends Controller
         if ($request->hasfile('foto_kegiatan')) {
             foreach ($request->foto_kegiatan as $file) {
                 $name = $file->getClientOriginalName();
-                $file->move(public_path('foto_kegiatan'), $name);
+                $file->move(public_path('foto_kegiatan/'), $name);
                 $files[] = $name;
             }
         }
@@ -50,9 +50,9 @@ class DataController extends Controller
         $file->nama = $request->nama;
         $file->deskripsi = $request->deskripsi;
         $file->foto = $request->foto;
-        $file->foto_pembina  = $request->foto_pembina    ;
-        $file->foto_kegiatan = json_encode($files);
-        if ($request->hasFile('foto_pembina')) {
+        $file->foto_pembina  = $request->foto_pembina;    ;
+        $file->foto_kegiatan =implode(',', $files);
+            if ($request->hasFile('foto_pembina')) {
             $request->file('foto_pembina')->move('fotoekstra/', $request->file('foto_pembina')->getClientOriginalName());
             $file->foto_pembina = $request->file('foto_pembina')->getClientOriginalName();
             $file->save();
