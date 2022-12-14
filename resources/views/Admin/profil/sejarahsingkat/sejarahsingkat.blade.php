@@ -34,22 +34,20 @@
                                             <th scope="col">Judul</th>
                                             <th scope="col">Isi Artikel</th>
                                             <th scope="col">Judul Foto Side</th>
-                                            <th scope="col">Foto </th>
                                             <th scope="col">Aksi</th>
                                         </tr>
                                     </thead>
                                     <tbody class="table-group-divider">
                                         <?php $no = 1; ?>
-                                        @foreach ($data as $sejarah)
                                             <tr>
                                                 <td>{{ $no }}</td>
                                                 <td>{{ $sejarah->judul }}</td>
-                                                <td>{{ $sejarah->isi_artikel }}</td>
+                                                <td>{!! $sejarah->isi_artikel !!}</td>
                                                 <td>{{ $sejarah->judul_fotoside }}</td>
-                                                <td>
+                                                {{-- <td>
                                                     <img src="{{ asset('fotosejarah/' . $sejarah->foto_side) }}" alt=""
                                                         style="width: 80px; height:80px;">
-                                                </td>
+                                                </td> --}}
                                                 <td>
                                                     <a href="/sejarahsingkat/edit/{{ $sejarah->id }}"
                                                         class="btn btn-warning"><i
@@ -57,6 +55,40 @@
                                                     <a href="#" class="btn btn-danger delete"
                                                         data-id="{{ $sejarah->id }}"
                                                         data-sejarah="{{ $sejarah->judul }}"><i
+                                                            class="fa-solid fa-trash"></i></a>
+                                                </td>
+                                            </tr>
+                                    </tbody>
+                                    <?php $no++; ?>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-datatable table-responsive pt-0">
+                                <h5 class="card-header">Daftar Foto Side</h5>
+                                <a href="/index/addsejarahsingkat" type="button"
+                                    class="btn rounded-pill btn-primary">Tambah +</a>
+                                <table class="table" id="sidefoto">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">No.</th>
+                                            <th scope="col">Foto</th>
+                                            <th scope="col">Aksi</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="table-group-divider">
+                                        <?php $no = 1; ?>
+                                        @foreach ($fotoside as $data)
+                                            <tr>
+                                                <td>{{ $no }}</td>
+                                                <td><img src="{{asset("assets/img/side sejarah/" . $data)}}" alt="" width="100px" height="100px"></td>
+                                                <td>
+                                                    <a href="/sejarahsingkat/edit/{{ $data }}"
+                                                        class="btn btn-warning"><i
+                                                            class="fa-solid fa-pen-to-square"></i></a>
+                                                    <a href="#" class="btn btn-danger delete"
+                                                        data-id="{{ $data }}"
+                                                        data-sejarah="{{ $data }}"><i
                                                             class="fa-solid fa-trash"></i></a>
                                                 </td>
                                             </tr>
@@ -179,11 +211,13 @@
     $(document).ready(function() {
         $('#jurusan').DataTable();
     });
+    $(document).ready(function() {
+        $('#sidefoto').DataTable();
+    });
 </script>
 <script>
     @if (Session::get('success'))
         toastr.success("{{ Session::get('success') }}")
     @endif
 </script>
-
 </html>

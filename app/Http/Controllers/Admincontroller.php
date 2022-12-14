@@ -12,6 +12,7 @@ use App\Models\sejarahsingkat;
 use App\Models\sekolahadiwiyata;
 use App\Models\strukturorganisasi;
 use Illuminate\Support\Facades\Auth;
+use App\Models\sekolahrujukan;
 
 class Admincontroller extends Controller
 {
@@ -42,11 +43,11 @@ class Admincontroller extends Controller
         return view('Admin.index');
     }
     ///////////////////// START PROFIL LANDINGPAGE ADMIN ///////////////////////////
-    //start profil
+    //start profileditsekolahrujukan
     public function profil()
     {
-        $data = profilsekolah::all();
-        return view('admin.profil.profil.profil', compact('data'));
+        $profil = profilsekolah::find(1);
+        return view('admin.profil.profil.profil', compact('profil'));
     }
     public function addprofil(Request $request,$profil)
     {
@@ -59,7 +60,7 @@ class Admincontroller extends Controller
             $data->save();
         }
         // $profil->update(([$id => '-']));
-        return redirect('/index/profil')->with("success,Data berhasil diubah");
+        return redirect('/index/profil')->with("success","Data berhasil diubah");
     }
     public function insertprofil(Request $request)
     {
@@ -87,7 +88,8 @@ class Admincontroller extends Controller
     // start profilvisimisi-admin
     public function profilvisimisi()
     {
-        $data = profilvisimisi::all();
+        $data = profilvisimisi::find(1);
+        // $data
         return view('admin.profil.visimisi.visimisi', compact('data'));
     }
     public function addprofilvisimisi()
@@ -208,6 +210,10 @@ class Admincontroller extends Controller
         $struktur = strukturorganisasi::find(1);
         return view('Admin.profil.strukturorganisasi.addeditsidestruktur',compact('datanama','datafoto'));
     }
+        //sub side struktur organisasi
+    public function addsidestrukturorganisasi(){
+
+    }
     // end profil/strukturorganisasi
     // start profil/sekolahadiwiyata
     public function sekolahadiwiyata()
@@ -236,8 +242,10 @@ class Admincontroller extends Controller
     // end profil/sekolahadiwiyata
 
     public function sejarahsingkat(){
-        $data=sejarahsingkat::all();
-        return view('Admin.profil.sejarahsingkat.sejarahsingkat', compact('data'));
+        $sejarah = sejarahsingkat::find(1);
+        $fotoside = explode(',',$sejarah->foto_side);
+        // dd($fotoside);
+        return view('Admin.profil.sejarahsingkat.sejarahsingkat', compact('sejarah','fotoside'));
     }
     public function addsejarahsingkat(){
         return view('Admin.profil.sejarahsingkat.addsejarahsingkat');
@@ -249,6 +257,7 @@ class Admincontroller extends Controller
         //     'isi_artikel' => $request->isi_artikel,
         //     'judul_fotoside' => $request->judul_fotoside,
         // ]);
+        dd($request->all());
         $files = [];
         if($request->hasfile('foto_side')){
             foreach($request->foto_side as $file){
@@ -299,16 +308,37 @@ class Admincontroller extends Controller
     //start sekolah rujukan
     public function sekolahrujukan()
     {
-        return view("admin.profil.sekolah_rujukan.sekolahrujukan");
+        $data = sekolahrujukan::find(1);
+        return view("admin.profil.sekolah_rujukan.sekolahrujukan",compact('data'));
     }
-    public function addsekolahrujukan()
+    public function editviewsekolahrujukan()
     {
-        return view("admin.profil.sekolah_rujukan.addsekolahrujukan");
+        $data = sekolahrujukan::find(1);
+        return view("admin.profil.sekolah_rujukan.editsekolahrujukan",compact('data'));
     }
-    public function insertsekolahrujukan(Request $request)
+    public function editsekolahrujukan(Request $request)
     {
-        dd($request->all());
-        return view("admin.profil.sekolah_rujukan.addsekolahrujukan");
+        // dd($request->all());
+        $data = sekolahrujukan::find(1);
+        $data->update([
+            'isiartikel'=>$request->isiartikel,
+        ]);
+        if ($request->hasFile('foto_head')) {
+            $request->file('foto_head')->move('assets/img/', $request->file('foto_head')->getClientOriginalName());
+            $data->foto_head = $request->file('foto_head')->getClientOriginalName();
+            $data->save();
+        }
+        return redirect("/index/sekolahrujukan")->with('success','data berhasil diubah');
+    }
+    public function resetsekolahrujukan()
+    {
+        // dd($request->all());
+        $data = sekolahrujukan::find(1);
+        $data->update([
+            'foto_head'=>'-',
+            'isiartikel'=>'-',
+        ]);
+        return redirect("/index/sekolahrujukan")->with('success','data berhasil direset');
     }
     //end sekolah rujukan
     ///////////////////// END PROFIL LANDINGPAGE ADMIN ///////////////////////////

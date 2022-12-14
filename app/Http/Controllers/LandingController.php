@@ -17,6 +17,7 @@ use App\Models\Jurusan;
 use App\Models\kepsek;
 use App\Models\Kakomli;
 use App\Models\kategoriblog;
+use App\Models\Layananortu;
 use App\Models\prestasi;
 use App\Models\profilsekolah;
 use Illuminate\Http\Request;
@@ -125,6 +126,28 @@ class LandingController extends Controller
     {
         return view("landingpage.jurusan.modulproduktiftav");
     }
+
+    //layanan ortu
+    public function layananortu()
+    {
+        $layor = Layananortu::with('jurusan');
+        $data = Layananortu::all();
+        $datajurusan = Jurusan::all();
+        
+        return view("landingpage.layananortu.layananortu", compact('layor', 'data', 'datajurusan'));
+    }
+    public function storelayor(Request $request)
+    {
+        $this->validate($request, [
+            'id_jurusan' => 'required|not_in:0',
+            
+        ]);
+        $data = Layananortu::create($request->all());
+        // dd($data);
+        
+        return redirect()->route('layananortu')->with('info', 'Saran anda berhasil dikirim!.');
+    }
+    //end layanan rotu
 
     ////LSP////
     public function lsp()
