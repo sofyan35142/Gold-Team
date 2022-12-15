@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="light-style layout-navbar-fixed layout-menu-fixed " dir="ltr" data-theme="theme-semi-dark"
-    data-assets-path="../../assets1/" data-template="vertical-menu-template-semi-dark">
+    data-assets-path="http://127.0.0.1:8000/assets1/" data-template="vertical-menu-template-semi-dark">
 @include('Admin.layoutadmin.head')
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css"
     integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g=="
@@ -39,25 +39,25 @@
                                     </thead>
                                     <tbody class="table-group-divider">
                                         <?php $no = 1; ?>
-                                            <tr>
-                                                <td>{{ $no }}</td>
-                                                <td>{{ $sejarah->judul }}</td>
-                                                <td>{!! $sejarah->isi_artikel !!}</td>
-                                                <td>{{ $sejarah->judul_fotoside }}</td>
-                                                {{-- <td>
+                                        <tr>
+                                            <td>{{ $no }}</td>
+                                            <td>{{ $sejarah->judul }}</td>
+                                            <td>{!! $sejarah->isi_artikel !!}</td>
+                                            <td>{{ $sejarah->judul_fotoside }}</td>
+                                            {{-- <td>
                                                     <img src="{{ asset('fotosejarah/' . $sejarah->foto_side) }}" alt=""
                                                         style="width: 80px; height:80px;">
                                                 </td> --}}
-                                                <td>
-                                                    <a href="/sejarahsingkat/edit/{{ $sejarah->id }}"
-                                                        class="btn btn-warning"><i
-                                                            class="fa-solid fa-pen-to-square"></i></a>
-                                                    <a href="#" class="btn btn-danger delete"
-                                                        data-id="{{ $sejarah->id }}"
-                                                        data-sejarah="{{ $sejarah->judul }}"><i
-                                                            class="fa-solid fa-trash"></i></a>
-                                                </td>
-                                            </tr>
+                                            <td>
+                                                <a href="/sejarahsingkat/edit/{{ $sejarah->id }}"
+                                                    class="btn btn-warning"><i
+                                                        class="fa-solid fa-pen-to-square"></i></a>
+                                                <a href="#" class="btn btn-danger delete"
+                                                    data-id="{{ $sejarah->id }}"
+                                                    data-sejarah="{{ $sejarah->judul }}"><i
+                                                        class="fa-solid fa-trash"></i></a>
+                                            </td>
+                                        </tr>
                                     </tbody>
                                     <?php $no++; ?>
                                 </table>
@@ -66,7 +66,7 @@
                         <div class="card mb-4">
                             <div class="card-datatable table-responsive pt-0">
                                 <h5 class="card-header">Daftar Foto Side</h5>
-                                <a href="/index/addsejarahsingkat" type="button"
+                                <a href="/index/addsidesejarahsingkat" type="button"
                                     class="btn rounded-pill btn-primary">Tambah +</a>
                                 <table class="table" id="sidefoto">
                                     <thead>
@@ -77,21 +77,58 @@
                                         </tr>
                                     </thead>
                                     <tbody class="table-group-divider">
-                                        <?php $no = 1; ?>
-                                        @foreach ($fotoside as $data)
+                                        <?php $no = 0;
+                                        $idarray = -1; ?>
+                                        @foreach (json_decode($sejarah->foto_side) as $data)
+                                            <?php $no++;
+                                            $idarray++; ?>
                                             <tr>
                                                 <td>{{ $no }}</td>
-                                                <td><img src="{{asset("assets/img/side sejarah/" . $data)}}" alt="" width="100px" height="100px"></td>
+                                                <td><img src="{{ asset('assets/img/side sejarah/' . $data) }}"
+                                                        alt="" width="100px" height="100px"></td>
                                                 <td>
-                                                    <a href="/sejarahsingkat/edit/{{ $data }}"
-                                                        class="btn btn-warning"><i
-                                                            class="fa-solid fa-pen-to-square"></i></a>
+                                                    <button class="btn btn-warning" data-bs-toggle="modal"
+                                                        data-bs-target="#smallModal{{ $no }}"><i
+                                                            class="fa-solid fa-pen-to-square"></i></button>
                                                     <a href="#" class="btn btn-danger delete"
                                                         data-id="{{ $data }}"
                                                         data-sejarah="{{ $data }}"><i
                                                             class="fa-solid fa-trash"></i></a>
                                                 </td>
                                             </tr>
+                                            <div class="modal fade" id="smallModal{{ $no }}" tabindex="-1"
+                                                aria-hidden="true">
+                                                <div class="modal-dialog modal-sm" role="document">
+                                                    <form action="/editsidesejarah/{{$idarray}}" method="POST" enctype="multipart/form-data">
+                                                        @csrf
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalLabel2">Edit Foto
+                                                                Side
+                                                            </h5>
+                                                            <button type="button" class="btn-close"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <div class="row">
+                                                                <div class="col mb-3">
+                                                                    <img class="mb-3" src="{{ asset('assets/img/side sejarah/' . $data) }}"
+                                                                        alt="" width="100px" height="100px">
+                                                                    <input type="file" name="foto_side" id="nameSmall"
+                                                                        class="form-control" placeholder="Enter Name">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-label-secondary"
+                                                                data-bs-dismiss="modal">Close</button>
+                                                            <button type="submit" class="btn btn-primary">Save
+                                                                changes</button>
+                                                        </div>
+                                                    </div>
+                                                    </form>
+                                                </div>
+                                            </div>
                                         @endforeach
                                     </tbody>
                                     <?php $no++; ?>
@@ -142,43 +179,43 @@
     </div>
     <!-- Core JS -->
     <!-- build:js assets1/vendor/js/core.js -->
-    <script src="../../assets1/vendor/libs/jquery/jquery.js"></script>
-    <script src="../../assets1/vendor/libs/popper/popper.js"></script>
-    <script src="../../assets1/vendor/js/bootstrap.js"></script>
-    <script src="../../assets1/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
-    <script src="../../assets1/vendor/libs/hammer/hammer.js"></script>
-    <script src="../../assets1/vendor/libs/i18n/i18n.js"></script>
-    <script src="../../assets1/vendor/libs/typeahead-js/typeahead.js"></script>
-    <script src="../../assets1/vendor/js/menu.js"></script>
+    <script src="http://127.0.0.1:8000/assets1/vendor/libs/jquery/jquery.js"></script>
+    <script src="http://127.0.0.1:8000/assets1/vendor/libs/popper/popper.js"></script>
+    <script src="http://127.0.0.1:8000/assets1/vendor/js/bootstrap.js"></script>
+    <script src="http://127.0.0.1:8000/assets1/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="http://127.0.0.1:8000/assets1/vendor/libs/hammer/hammer.js"></script>
+    <script src="http://127.0.0.1:8000/assets1/vendor/libs/i18n/i18n.js"></script>
+    <script src="http://127.0.0.1:8000/assets1/vendor/libs/typeahead-js/typeahead.js"></script>
+    <script src="http://127.0.0.1:8000/assets1/vendor/js/menu.js"></script>
     <!-- endbuild -->
     <!-- Vendors JS -->
-    <script src="../../assets1/vendor/libs/datatables/jquery.dataTables.js"></script>
-    <script src="../../assets1/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
-    <script src="../../assets1/vendor/libs/datatables-responsive/datatables.responsive.js"></script>
-    <script src="../../assets1/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.js"></script>
-    <script src="../../assets1/vendor/libs/datatables-checkboxes-jquery/datatables.checkboxes.js"></script>
-    <script src="../../assets1/vendor/libs/datatables-buttons/datatables-buttons.js"></script>
-    <script src="../../assets1/vendor/libs/datatables-buttons-bs5/buttons.bootstrap5.js"></script>
-    <script src="../../assets1/vendor/libs/jszip/jszip.js"></script>
-    <script src="../../assets1/vendor/libs/pdfmake/pdfmake.js"></script>
-    <script src="../../assets1/vendor/libs/datatables-buttons/buttons.html5.js"></script>
-    <script src="../../assets1/vendor/libs/datatables-buttons/buttons.print.js"></script>
+    <script src="http://127.0.0.1:8000/assets1/vendor/libs/datatables/jquery.dataTables.js"></script>
+    <script src="http://127.0.0.1:8000/assets1/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
+    <script src="http://127.0.0.1:8000/assets1/vendor/libs/datatables-responsive/datatables.responsive.js"></script>
+    <script src="http://127.0.0.1:8000/assets1/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.js"></script>
+    <script src="http://127.0.0.1:8000/assets1/vendor/libs/datatables-checkboxes-jquery/datatables.checkboxes.js"></script>
+    <script src="http://127.0.0.1:8000/assets1/vendor/libs/datatables-buttons/datatables-buttons.js"></script>
+    <script src="http://127.0.0.1:8000/assets1/vendor/libs/datatables-buttons-bs5/buttons.bootstrap5.js"></script>
+    <script src="http://127.0.0.1:8000/assets1/vendor/libs/jszip/jszip.js"></script>
+    <script src="http://127.0.0.1:8000/assets1/vendor/libs/pdfmake/pdfmake.js"></script>
+    <script src="http://127.0.0.1:8000/assets1/vendor/libs/datatables-buttons/buttons.html5.js"></script>
+    <script src="http://127.0.0.1:8000/assets1/vendor/libs/datatables-buttons/buttons.print.js"></script>
     <!-- Flat Picker -->
-    <script src="../../assets1/vendor/libs/moment/moment.js"></script>
-    <script src="../../assets1/vendor/libs/flatpickr/flatpickr.js"></script>
+    <script src="http://127.0.0.1:8000/assets1/vendor/libs/moment/moment.js"></script>
+    <script src="http://127.0.0.1:8000/assets1/vendor/libs/flatpickr/flatpickr.js"></script>
     <!-- Row Group JS -->
-    <script src="../../assets1/vendor/libs/datatables-rowgroup/datatables.rowgroup.js"></script>
-    <script src="../../assets1/vendor/libs/datatables-rowgroup-bs5/rowgroup.bootstrap5.js"></script>
+    <script src="http://127.0.0.1:8000/assets1/vendor/libs/datatables-rowgroup/datatables.rowgroup.js"></script>
+    <script src="http://127.0.0.1:8000/assets1/vendor/libs/datatables-rowgroup-bs5/rowgroup.bootstrap5.js"></script>
     <!-- Form Validation -->
-    <script src="../../assets1/vendor/libs/formvalidation/dist/js/FormValidation.min.js"></script>
-    <script src="../../assets1/vendor/libs/formvalidation/dist/js/plugins/Bootstrap5.min.js"></script>
-    <script src="../../assets1/vendor/libs/formvalidation/dist/js/plugins/AutoFocus.min.js"></script>
+    <script src="http://127.0.0.1:8000/assets1/vendor/libs/formvalidation/dist/js/FormValidation.min.js"></script>
+    <script src="http://127.0.0.1:8000/assets1/vendor/libs/formvalidation/dist/js/plugins/Bootstrap5.min.js"></script>
+    <script src="http://127.0.0.1:8000/assets1/vendor/libs/formvalidation/dist/js/plugins/AutoFocus.min.js"></script>
 
     <!-- Main JS -->
-    <script src="../../assets1/js/main.js"></script>
+    <script src="http://127.0.0.1:8000/assets1/js/main.js"></script>
 
     <!-- Page JS -->
-    <script src="../../assets1/js/tables-datatables-basic.js"></script>
+    <script src="http://127.0.0.1:8000/assets1/js/tables-datatables-basic.js"></script>
     <script src="//cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
@@ -220,4 +257,5 @@
         toastr.success("{{ Session::get('success') }}")
     @endif
 </script>
+
 </html>

@@ -69,7 +69,7 @@ Route::get('/BKK', [LandingController::class, 'BKK']);
 Route::get('/BKK/visimisi-bkk', [LandingController::class, 'visimisi_bkk']);
 Route::get('/BKK/strukturorganisasi-bkk', [LandingController::class, 'strukturorganisasi_bkk']);
 Route::get('/BKK/kegiatan-bkk', [LandingController::class, 'kegiatan_bkk']);
-Route::get('/BKK/detail-kegiatan-bkk', [LandingController::class, 'detail_kegiatan_bkk']);
+Route::get('/BKK/detail-kegiatan-bkk/{id}', [LandingController::class, 'detail_kegiatan_bkk']);
 Route::get('/BKK/kewirausahaan-bkk', [LandingController::class, 'kewirausahaan_bkk']);
 Route::get('/BKK/lowongan-kerja', [LandingController::class, 'lowongan_kerja']);
 Route::get('/BKK/detail-lowongan', [LandingController::class, 'detail_lowongan']);
@@ -137,7 +137,7 @@ Route::get('/visimisi/delete/{id}', [Admincontroller::class, 'deletevisimisi']);
 Route::get('/visimisi/edit/{id}', [Admincontroller::class, 'editviewvisimisi']);
 Route::post('/editvisimisi/{id}', [Admincontroller::class, 'editvisimisi']);
 // struktur organisasi
-Route::get('/index/strukturorganisasi', [Admincontroller::class, 'strukturorganisasi'])->name('strukturorganisasi');
+Route::get('/index/strukturorganisasi', [Admincontroller::class, 'strukturorganisasi']);
 Route::get('/index/addstrukturorganisasi', [Admincontroller::class, 'addstrukturorganisasi']);
 Route::post('/insertstrukturorganisasi', [Admincontroller::class, 'insertstrukturorganisasi']);
 Route::get('/index/editstrukturorganisasi/{id}', [Admincontroller::class, 'editstrukturorganisasi']);
@@ -158,9 +158,13 @@ Route::get('/index/deletestrukturorganisasi/{id}', [AdminController::class, 'del
 Route::get('/index/sejarahsingkat', [Admincontroller::class, 'sejarahsingkat']);
 Route::get('/index/addsejarahsingkat', [Admincontroller::class, 'addsejarahsingkat']);
 Route::post('/insertsejarahsingkat', [Admincontroller::class, 'insertsejarahsingkat']);
-Route::get('/sejarahsingkat/edit/{id}', [Admincontroller::class, 'editviewsejarahsingkat']);
+Route::get('/sejarahsingkat/edit', [Admincontroller::class, 'editviewsejarahsingkat']);
 Route::post('/updatesejarahsingkat/{id}', [Admincontroller::class, 'updatesejarahsingkat']);
 Route::get('/sejarahsingkat/delete/{id}', [Admincontroller::class, 'deletesejarahsingkat']);
+    //side sejarah singkat
+Route::get('/index/addsidesejarahsingkat', [Admincontroller::class, 'sidesejarahsingkat']);
+Route::post('/insertsidesejarah', [Admincontroller::class, 'insertsidesejarah']);
+Route::post('/editsidesejarah/{idarray}', [Admincontroller::class, 'editsidesejarah']);
 //Sekolah Rujukan
 Route::get('/index/sekolahrujukan', [Admincontroller::class, 'sekolahrujukan']);
 Route::get('/index/editsekolahrujukan', [Admincontroller::class, 'editviewsekolahrujukan']);
@@ -171,7 +175,28 @@ Route::get('/index/resetsekolahrujukan', [Admincontroller::class, 'resetsekolahr
 // Route::get('/sejarahsingkat/delete/{id}', [Admincontroller::class, 'deletesejarahsingkat']);
 // end profil sekolah-admin
 
+//======================= Start Bkk ==================//
+//visi misi
+Route::get('/index/visimisibkk', [Admincontroller::class, 'visimisibkk']);
+Route::get('/index/editvisimisibkk', [Admincontroller::class, 'editvisimisibkk']);
+Route::post('/editupdatevisimisibkk', [Admincontroller::class, 'editupdatevisimisibkk']);
+Route::get('/deletevisimisibkk', [Admincontroller::class, 'deletevisimisibkk']);
 
+//struktur
+Route::get('/index/sobkk', [Admincontroller::class, 'sobkk']);
+Route::get('/index/editsobkk', [Admincontroller::class, 'editviewsobkk']);
+Route::post('/editupdatesobkk', [Admincontroller::class, 'editupdatesobkk']);
+    //sidesobkk
+Route::get('/index/sidesobkk', [Admincontroller::class, 'sidesobkk']);
+Route::post('/editupdatesidesobkk', [Admincontroller::class, 'editupdatesidesobkk']);
+
+//kegiatan BKK
+Route::get('/index/kegiatan-bkk', [Admincontroller::class, 'kegiatan_bkk']);
+Route::get('/index/add_kegiatan', [Admincontroller::class, 'addkegiatan']);
+Route::post('/insertkegiatanbkk', [Admincontroller::class, 'insertkegiatanbkk']);
+Route::get('/index/editviewkegiatanbkk/{id}', [Admincontroller::class, 'viewkegiatanbkk']);
+Route::post('/editkegiatanbkk/{id}', [Admincontroller::class, 'editkegiatanbkk']);
+//======================= End Bkk ==================//
 
 ////////////-------------ADMIN BERANDA------------/////////////////
 

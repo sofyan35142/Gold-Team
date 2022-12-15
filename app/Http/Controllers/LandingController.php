@@ -2,38 +2,42 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\alumni;
-use App\Models\Artikel;
-use App\Models\Blog;
-use App\Models\Dharma;
-use App\Models\Modul;
-use App\Models\Modultei;
 use App\Models\LSP;
-use App\Models\Visimisilsp;
-use App\Models\ekstra;
+use App\Models\Blog;
 use App\Models\Guru;
-use App\Models\Jmlpemegang;
-use App\Models\Jurusan;
+use App\Models\Modul;
+use App\Models\walas;
+use App\Models\alumni;
+use App\Models\Dharma;
+use App\Models\ekstra;
 use App\Models\kepsek;
+use App\Models\slider;
+use App\Models\Artikel;
+use App\Models\Jurusan;
 use App\Models\Kakomli;
+use App\Models\sponsor;
+use App\Models\Modultei;
 use App\Models\kategoriblog;
 use App\Models\Layananortu;
 use App\Models\prestasi;
-use App\Models\profilsekolah;
-use Illuminate\Http\Request;
-use App\Models\profilvisimisi;
-use App\Models\sekolahadiwiyata;
-use App\Models\sekolahrujukan;
+use App\Models\totalsiswa;
+use App\Models\Jmlpemegang;
+use App\Models\videoprofil;
+use App\Models\visimisibkk;
+use App\Models\Visimisilsp;
+use App\Models\kegiatanbkk;
 use App\Models\sidestruktur;
+use App\Models\Tempatujikom;
+use Illuminate\Http\Request;
+use App\Models\profilsekolah;
+use App\Models\profilvisimisi;
+use App\Models\sejarahsingkat;
+use App\Models\sekolahrujukan;
 use App\Models\Reparasibengkel;
 use App\Models\Skematerlisensi;
-use App\Models\slider;
-use App\Models\sponsor;
+use App\Models\sekolahadiwiyata;
+use App\Models\strukturbkk;
 use App\Models\strukturorganisasi;
-use App\Models\Tempatujikom;
-use App\Models\totalsiswa;
-use App\Models\videoprofil;
-use App\Models\walas;
 
 class LandingController extends Controller
 {
@@ -198,7 +202,9 @@ class LandingController extends Controller
     }
     public function sejarahsingkat()
     {
-        return view("landingpage.profile.sejarahsingkat");
+        $data = sejarahsingkat::find(1);
+        $fotoside = json_decode($data->foto_side);
+        return view("landingpage.profile.sejarahsingkat",compact('data','fotoside'));
     }
     public function sekolahadiwiyata()
     {
@@ -239,19 +245,26 @@ class LandingController extends Controller
     }
     public function visimisi_bkk()
     {
-        return view("landingpage.BKK.visimisi_bkk");
+        $datavisimisibkk = visimisibkk::find(1);
+        return view("landingpage.BKK.visimisi_bkk",compact('datavisimisibkk'));
     }
     public function strukturorganisasi_bkk()
     {
-        return view("landingpage.BKK.strukturorganisasi_bkk");
+        $data = strukturbkk::find(1);
+        $nama = explode('+',$data->nama_member);
+        $foto = explode(',',$data->foto_member);
+        // dd($nama);
+        return view("landingpage.BKK.strukturorganisasi_bkk",compact('data','nama','foto'));
     }
     public function kegiatan_bkk()
     {
-        return view("landingpage.BKK.kegiatan_bkk");
+        $kegiatan = kegiatanbkk::all();
+        return view("landingpage.BKK.kegiatan_bkk",compact('kegiatan'));
     }
-    public function detail_kegiatan_bkk()
+    public function detail_kegiatan_bkk($id)
     {
-        return view("landingpage.BKK.detail.kegiatan_bkk");
+        $data = kegiatanbkk::find($id);
+        return view("landingpage.BKK.detail.kegiatan_bkk",compact("data"));
     }
     public function kewirausahaan_bkk()
     {

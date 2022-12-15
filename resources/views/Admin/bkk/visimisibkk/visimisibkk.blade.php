@@ -2,9 +2,11 @@
 <html lang="en" class="light-style layout-navbar-fixed layout-menu-fixed " dir="ltr" data-theme="theme-semi-dark"
     data-assets-path="../../assets1/" data-template="vertical-menu-template-semi-dark">
 @include('Admin.layoutadmin.head')
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css"
+    integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <body>
-    <!-- Layout wrapper -->
     <div class="layout-wrapper layout-content-navbar  ">
         <div class="layout-container">
             <!-- Menu -->
@@ -19,50 +21,44 @@
                 <div class="content-wrapper">
                     <!-- Content -->
                     <div class="container-xxl flex-grow-1 container-p-y">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="card mb-4">
-                                    <h5 class="card-header">Tambah Sejarah SIngkat</h5>
-                                    <div class="card-body">
-                                        <form action="/updatesejarahsingkat/{{$data->id}}" method="POST" enctype="multipart/form-data">
-                                            @csrf
-                                            <div>
-                                                <label for="defaultFormControlInput" class="form-label">judul</label>
-                                                <input value="{{$data->judul}}" type="text" name="judul" class="form-control"
-                                                    id="defaultFormControlInput"
-                                                    aria-describedby="defaultFormControlHelp" />
-                                            </div>
-                                            <div>
-                                                <label for="defaultFormControlInput" class="form-label">Isi Artikel</label>
-                                                <textarea name="isi_artikel" id="editor">{!! $data->isi_artikel !!}</textarea>
-
-                                            </div>
-                                            <div>
-                                                <label for="defaultFormControlInput" class="form-label">Judul Foto Side</label>
-                                                <input value="{{$data->judul_fotoside}}" type="text" name="judul_fotoside" class="form-control"
-                                                    id="defaultFormControlInput"
-                                                    aria-describedby="defaultFormControlHelp" />
-                                            </div>
-                                            <br />
-                                                <div class="mb-3">
-                                                    <label for="exampleInputEmail1" class="form-label">Upload Foto</label>
-                                                    <input type="file" name="foto_side[]" class="form-control" multiple>
-                                                </div>
-                                                <button type="submit"
-                                                    class="btn rounded-pill btn-primary">Submit</button>
-                                        </form>
-                                    </div>
-                                </div>
+                        <!-- DataTable with Buttons -->
+                        <div class="card mb-4">
+                            <div class="card-datatable table-responsive pt-0">
+                                <h5 class="card-header">Data Profil Visi Misi BKK</h5>
+                                <a href="/index/addprofilvisimisi" type="button"
+                                    class="btn rounded-pill btn-primary">Tambah +</a>
+                                <table class="table" id="jurusan">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">No.</th>
+                                            <th scope="col">Visi</th>
+                                            <th scope="col">Misi</th>
+                                            <th scope="col">Foto</th>
+                                            <th scope="col">Aksi</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="table-group-divider">
+                                        <?php $no = 1; ?>
+                                        <tr>
+                                            <td>{{ $no }}</td>
+                                            <td>{!! $data->visi ? $data->visi : '-' !!}</td>
+                                            <td>{!! $data->misi !!}</td>
+                                            <td>
+                                                <img src="{{ asset('assets/img/' . $data->ruanganbkk) }}" alt="foto ruangan bkk"
+                                                    style="width: 80px; height:80px;">
+                                            </td>
+                                            <td>
+                                                <a href="/index/editvisimisibkk" class="btn btn-warning"><i
+                                                        class="fa-solid fa-pen-to-square"></i></a>
+                                                <a href="#" class="btn btn-danger delete"
+                                                    data-id="{{ $data->id }}" data-jurusan="{{ $data->visi }}"><i
+                                                        class="fa-solid fa-trash"></i></a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
-                        <!-- DataTable with Buttons -->
-                        <!--/ DataTable with Buttons -->
-                        <!-- Complex Headers -->
-                        <!--/ Complex Headers -->
-                        <!-- Row grouping -->
-                        <!--/ Row grouping -->
-                        <!-- Multilingual -->
-                        <!--/ Multilingual -->
                     </div>
                     <!-- / Content -->
                     <!-- Footer -->
@@ -143,19 +139,42 @@
     <!-- Page JS -->
     <script src="../../assets1/js/tables-datatables-basic.js"></script>
     <script src="//cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.ckeditor.com/ckeditor5/35.3.1/classic/ckeditor.js"></script>
-    <script>
-        ClassicEditor
-            .create(document.querySelector('#editor'))
-            .catch(error => {
-                console.error(error);
-            });
-    </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 </body>
+<script>
+    $('.delete').click(function() {
+        var jurusanid = $(this).attr('data-id');
+        var jurusan = $(this).attr('data-jurusan');
+
+        swal({
+                title: "Apakah kamu yakin?",
+                text: "Kamu akan mereset data ini",
+                icon: "warning",
+                buttons: true,
+                dangerMode: true,
+            })
+            .then((willDelete) => {
+                if (willDelete) {
+                    window.location = "/deletevisimisibkk"
+                    swal("Data berhasil direset", {
+                        icon: "success",
+                    });
+                } else {
+                    swal("Data tidak jadi direset");
+                }
+            });
+    });
+</script>
 <script>
     $(document).ready(function() {
         $('#jurusan').DataTable();
     });
+</script>
+<script>
+    @if (Session::get('success'))
+        toastr.success("{{ Session::get('success') }}")
+    @endif
 </script>
 
 </html>

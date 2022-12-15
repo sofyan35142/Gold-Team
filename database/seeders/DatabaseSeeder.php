@@ -47,6 +47,7 @@ class DatabaseSeeder extends Seeder
             kategoriblog::class,
             // walas::class,
             Reparasibengkel::class,
+            strukturbkk::class,
             sidestruktur::class
         ]);
     }

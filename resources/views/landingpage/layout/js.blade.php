@@ -1,23 +1,23 @@
-<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-<script src="../assets/js/jquery.min.js"></script>
+<script data-cfasync="false" src="http://127.0.0.1:8000/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script src="http://127.0.0.1:8000/assets/js/jquery.min.js"></script>
 
-<script src="../assets/js/bootstrap.bundle.min.js"></script>
+<script src="http://127.0.0.1:8000/assets/js/bootstrap.bundle.min.js"></script>
 
-<script src="../assets/js/owl.carousel.min.js"></script>
+<script src="http://127.0.0.1:8000/assets/js/owl.carousel.min.js"></script>
 
-<script src="../assets/js/slick.min.js"></script>
+<script src="http://127.0.0.1:8000/assets/js/slick.min.js"></script>
 
-<script src="../assets/js/jquery.magnific-popup.min.js"></script>
+<script src="http://127.0.0.1:8000/assets/js/jquery.magnific-popup.min.js"></script>
 
-<script src="../assets/js/meanmenu.js"></script>
+<script src="http://127.0.0.1:8000/assets/js/meanmenu.js"></script>
 
-<script src="../assets/js/jquery.ajaxchimp.min.js"></script>
+<script src="http://127.0.0.1:8000/assets/js/jquery.ajaxchimp.min.js"></script>
 
-<script src="../assets/js/form-validator.min.js"></script>
+<script src="http://127.0.0.1:8000/assets/js/form-validator.min.js"></script>
 
-<script src="../assets/js/contact-form-script.js"></script>
+<script src="http://127.0.0.1:8000/assets/js/contact-form-script.js"></script>
 
-<script src="../assets/js/custom.js"></script>
+<script src="http://127.0.0.1:8000/assets/js/custom.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
 

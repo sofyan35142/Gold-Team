@@ -44,17 +44,17 @@
 <div class="navbar-area">
     <div class="mobile-nav">
         <a href="index.html" class="logo">
-            <img src="../assets/img/logo.png" class="main-logo" alt="logo" />
-            <img src="../assets/img/logo-2.png" class="white-logo" alt="logo" />
+            <img src="http://127.0.0.1:8000/assets/img/logo.png" class="main-logo" alt="logo" />
+            <img src="http://127.0.0.1:8000/assets/img/logo-2.png" class="white-logo" alt="logo" />
         </a>
     </div>
     <div class="main-nav">
         <div class="container">
             <nav class="navbar navbar-expand-md navbar-light">
                 <a class="navbar-brand" href="index.html">
-                    <img src="../foto/header1.png"
+                    <img src="http://127.0.0.1:8000/foto/header1.png"
                         class="main-logo" alt="logo" />
-                    <img src="../assets/img/logo-2.png" class="white-logo" alt="logo" />
+                    <img src="http://127.0.0.1:8000/assets/img/logo-2.png" class="white-logo" alt="logo" />
                 </a>
                 <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto">

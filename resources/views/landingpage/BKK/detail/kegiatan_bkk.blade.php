@@ -53,8 +53,7 @@
                 <div class="blog-details-post">
                     <div class="blog-post-title">
                         <h3>
-                            WORKSHOP TRACER STUDY DAN PROGRAM KESIAPAN KERJA BEKERJA SAMA DENGAN DINAS TENAGA KERJA
-                            KABUPATEN PASURUAN
+                            {{$data->judul}}
                         </h3>
                         <ul>
                             <li>
@@ -68,15 +67,16 @@
                         </ul>
                     </div>
                     <div class="row">
+                        @foreach (json_decode($data->foto) as $foto)
                         <div class="col-lg-6 col-md-6">
                             <div class="recent-items">
                                 <div class="recent-img">
-                                    <img src="../assets/img/detailbkk/detailbkk1.jpg" alt="project image"
+                                    <img src="{{ asset("assets/img/detailbkk/" . $foto)}}" alt="project image"
                                         height="466">
                                     <div class="recent-hover">
                                         <div class="d-table">
                                             <div class="d-table-cell">
-                                                <a href="../assets/img/detailbkk/detailbkk1.jpg" class="popup-gallery">
+                                                <a href="{{ asset("assets/img/detailbkk/" . $foto)}}" class="popup-gallery">
                                                     <i class="icofont-eye-alt"></i>
                                                 </a>
                                             </div>
@@ -85,74 +85,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-6">
-                            <div class="recent-items">
-                                <div class="recent-img">
-                                    <img src="../assets/img/detailbkk/detailbkk2.jpg" alt="project image"
-                                        height="466">
-                                    <div class="recent-hover">
-                                        <div class="d-table">
-                                            <div class="d-table-cell">
-                                                <a href="../assets/img/detailbkk/detailbkk2.jpg" class="popup-gallery">
-                                                    <i class="icofont-eye-alt"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6">
-                            <div class="recent-items">
-                                <div class="recent-img">
-                                    <img src="../assets/img/detailbkk/detailbkk3.jpg" alt="project image"
-                                        height="466">
-                                    <div class="recent-hover">
-                                        <div class="d-table">
-                                            <div class="d-table-cell">
-                                                <a href="../assets/img/detailbkk/detailbkk3.jpg" class="popup-gallery">
-                                                    <i class="icofont-eye-alt"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6">
-                            <div class="recent-items">
-                                <div class="recent-img">
-                                    <img src="../assets/img/detailbkk/detailbkk4.jpg" alt="project image"
-                                        height="466">
-                                    <div class="recent-hover">
-                                        <div class="d-table">
-                                            <div class="d-table-cell">
-                                                <a href="../assets/img/detailbkk/detailbkk4.jpg" class="popup-gallery">
-                                                    <i class="icofont-eye-alt"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6">
-                            <div class="recent-items">
-                                <div class="recent-img">
-                                    <img src="../assets/img/detailbkk/detailbkk5.jpg" alt="project image"
-                                        height="466">
-                                    <div class="recent-hover">
-                                        <div class="d-table">
-                                            <div class="d-table-cell">
-                                                <a href="https://www.youtube.com/embed/EvXEDf4hBxU" class="popup-gallery">
-                                                    <i class="icofont-eye-alt"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>

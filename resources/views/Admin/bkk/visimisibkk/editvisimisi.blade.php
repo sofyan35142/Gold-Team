@@ -22,47 +22,32 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="card mb-4">
-                                    <h5 class="card-header">Tambah Sejarah SIngkat</h5>
+                                    <h5 class="card-header">Tambah Profil Visi Misi</h5>
                                     <div class="card-body">
-                                        <form action="/updatesejarahsingkat/{{$data->id}}" method="POST" enctype="multipart/form-data">
+                                        <form action="/editupdatevisimisibkk" method="POST" enctype="multipart/form-data">
                                             @csrf
-                                            <div>
-                                                <label for="defaultFormControlInput" class="form-label">judul</label>
-                                                <input value="{{$data->judul}}" type="text" name="judul" class="form-control"
-                                                    id="defaultFormControlInput"
-                                                    aria-describedby="defaultFormControlHelp" />
+                                            <div class="mb-3">
+                                                <label for="defaultFormControlInput" class="form-label">Visi</label>
+                                                <textarea name="visi" id="editor">{!! $data->visi !!}</textarea>
                                             </div>
-                                            <div>
-                                                <label for="defaultFormControlInput" class="form-label">Isi Artikel</label>
-                                                <textarea name="isi_artikel" id="editor">{!! $data->isi_artikel !!}</textarea>
-
+                                            <div class="mb-3">
+                                                <label for="editor" class="form-label">Misi</label>
+                                                <textarea name="misi" id="editor2">{!! $data->misi !!}</textarea>
                                             </div>
-                                            <div>
-                                                <label for="defaultFormControlInput" class="form-label">Judul Foto Side</label>
-                                                <input value="{{$data->judul_fotoside}}" type="text" name="judul_fotoside" class="form-control"
-                                                    id="defaultFormControlInput"
-                                                    aria-describedby="defaultFormControlHelp" />
+                                            <div class="mb-3">
+                                                <img src="{{ asset('assets/img/' . $data->ruanganbkk) }}"
+                                                    alt="" style="width: 200px; height:200px;">
+                                                <label for="exampleInputEmail1" class="form-label">Upload Foto Side
+                                                    visi Misi BKK</label>
+                                                <input type="file" name="ruanganbkk" class="form-control"
+                                                    id="exampleInputEmail1" aria-describedby="emailHelp">
                                             </div>
-                                            <br />
-                                                <div class="mb-3">
-                                                    <label for="exampleInputEmail1" class="form-label">Upload Foto</label>
-                                                    <input type="file" name="foto_side[]" class="form-control" multiple>
-                                                </div>
-                                                <button type="submit"
-                                                    class="btn rounded-pill btn-primary">Submit</button>
+                                            <button type="submit" class="btn rounded-pill btn-primary">Submit</button>
                                         </form>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- DataTable with Buttons -->
-                        <!--/ DataTable with Buttons -->
-                        <!-- Complex Headers -->
-                        <!--/ Complex Headers -->
-                        <!-- Row grouping -->
-                        <!--/ Row grouping -->
-                        <!-- Multilingual -->
-                        <!--/ Multilingual -->
                     </div>
                     <!-- / Content -->
                     <!-- Footer -->
@@ -147,6 +132,12 @@
     <script>
         ClassicEditor
             .create(document.querySelector('#editor'))
+            .catch(error => {
+                console.error(error);
+            });
+
+        ClassicEditor
+            .create(document.querySelector('#editor2'))
             .catch(error => {
                 console.error(error);
             });
