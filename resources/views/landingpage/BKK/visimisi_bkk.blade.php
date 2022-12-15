@@ -50,7 +50,7 @@
             <div class="row">
                 <div class="col-lg-8">
                     {{-- <img src="foto/jurusan/RPL.JPG" alt="service"> --}}
-                    <div class="service-details-post">
+                    <div class="service-details-post listitemzak">
                         <div class="blog-post-title">
                             <h3>
                                 Visi Dan Misi BKK
@@ -58,32 +58,17 @@
                         </div>
                         {{-- <img class="mb-3 w-100" src="" alt="service"> --}}
                         <h3>Visi :</h3>
-                        <ul>
-                            <li class="listitemzak">Terwujudnya Tingkat Keterserapan Tamatan Yang Tinggi Baik Di Dunia
-                                Industri Maupun Wirausaha.</li>
-                        </ul>
+                        {!! $datavisimisibkk->visi !!}
                         <h3>Misi :</h3>
-                        <ul>
-                            <li class="listitemzak"><i class="icofont-rounded-right"></i>Mengadakan pelatihan softskill,
-                                kesiapan kerja, dan enterpreneur serta finansial literasi baik dari pihak internal
-                                maupun eksternal</li>
-                            <li class="listitemzak"><i class="icofont-rounded-right"></i>Melakukan kerjasama yang
-                                intensif dengan manajemen sekolah, BK, dan alumni.</li>
-                            <li class="listitemzak"><i class="icofont-rounded-right"></i>Menjalin kerjasama yang baik
-                                dengan IDUKA dan UMKM.</li>
-                            <li class="listitemzak"><i class="icofont-rounded-right"></i>Melakukan maping rencana
-                                peserta didik dan tracer study.</li>
-                            <li class="listitemzak"><i class="icofont-rounded-right"></i>Menyediakan berbagai informasi
-                                peluang kerja dan wirausaha melalui platform digital.</li>
-                            <li class="listitemzak"><i class="icofont-rounded-right"></i>Menjalin komunikasi yang baik
-                                dengan Dinas Tenaga Kerja, Dinas Perindustrian, BLK dan APINDO.</li>
-                        </ul>
+                        {!! $datavisimisibkk->misi !!}
                     </div>
                 </div>
                 <div class="col-lg-4 main-service-area blog-side-bar border shadows mb-40px h-fc py-3">
                     <div class="service-sidebar">
                         <h6>Ruangan BKK</h6>
-                        <img class="imgvisi" src="../assets/img/ruangbkk.png" alt="service">
+                        {{-- <img class="imgvisi" src="../assets/img/ruangbkk.png" alt="service"> --}}
+                        <img class="imgvisi" src="{{ asset('assets/img/' . $datavisimisibkk->ruanganbkk) }}"
+                            alt="service">
                     </div>
                 </div>
             </div>
@@ -96,6 +81,14 @@
         <i class="icofont-scroll-long-up"></i>
     </div>
     @include('landingpage.layout.js')
+    <script>
+        let a = document.getElement("li");
+        a[0].classList.add("mystyle");
+        // $(document).ready(function() {
+        //     $('.owl-stage-outer, .owl-stage, .owl-item').addClass('h-100')
+        //     $('.owl-dots').addClass('owltik')
+        // })
+    </script>
 </body>
 
 </html>

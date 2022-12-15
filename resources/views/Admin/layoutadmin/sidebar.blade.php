@@ -368,7 +368,30 @@
                             </li>
                             <li class="menu-item">
                                 <a href="/data/prestasii" class="menu-link">
-                                    <div data-i18n="Prestasi">Prestasi</div>
+                                    <div data-i18n="Pxrestasi">Prestasi</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="javascript:void(0);" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons bx bx-dock-top"></i>
+                            <div data-i18n="Bursa Kerja Khusus(BKK)">Bursa Kerja Khusus(BKK)</div>
+                        </a>
+                        <ul class="menu-sub">
+                            <li class="menu-item">
+                                <a href="/index/vis imisibkk" class="menu-link">
+                                    <div data-i18n="Visi Misi BKK">Visi Misi BKK</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="/index/sobkk" class="menu-link">
+                                    <div data-i18n="Struktur Organisasi">Struktur Organisasi</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="/index/kegiatan-bkk" class="menu-link">
+                                    <div data-i18n="Kegiatan BKK">Kegiatan BKK</div>
                                 </a>
                             </li>
                         </ul>
