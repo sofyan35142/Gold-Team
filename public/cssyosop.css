@@ -578,6 +578,69 @@ body .icon-block .icon-block-info h3 {
   color: #1C3547;
 }
 
+.service-box2 {
+  text-align: center;
+}
+@media only screen and (max-width: 767px) {
+  .service-box2 {
+    margin-bottom: 30px;
+  }
+}
+.service-box2 .service-box-icon {
+  margin-bottom: 18px;
+}
+.service-box2 .service-box-icon a {
+  border-radius: 50%;
+  height: 90px;
+  width: 90px;
+  display: block;
+  background: #eeeeee;
+  line-height: 100px;
+  margin: 0 auto;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.service-box2 .service-box-icon a i {
+  color: #002147;
+  font-size: 36px;
+}
+.service-box2 h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+.service-box2 h3 a {
+  color: #002147;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.service-box2 h3 a:hover {
+  color: #fdc800;
+}
+.service-box2 p {
+  width: 80%;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 991px) {
+  .service-box2 p {
+    width: 100%;
+  }
+}
+.service-box2:hover .service-box-icon a {
+  background: #fdc800;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
 /* button{
   outline:0;
   font-size:1em;

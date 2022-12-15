@@ -72,24 +72,23 @@
                             <input type="file" name="foto_pembina" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>
 
- <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Upload Foto Ekstra</label>
-                                 <div class="input-group control-group increment" >
-
-          <input type="file" name="foto_kegiatan[]" class="form-control">
-          <div class="input-group-btn">
-            <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-plus"></i>Add</button>
-          </div>
-        </div>
-        <div class="clone hide">
-          <div class="control-group input-group" style="margin-top:10px">
-            <input type="file" name="foto_kegiatan[]" class="form-control">
-            <div class="input-group-btn">
-              <button class="btn btn-danger" type="button"><i class="glyphicon glyphicon-remove"></i> Remove</button>
-            </div>
-          </div>
-        </div>
- </div>
+                          <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Upload Foto Ekstra</label>
+                                    <div class="input-group control-group increment" >
+                                    <input type="file" name="foto_kegiatan[]" class="form-control">
+                                    <div class="input-group-btn">
+                                      <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-plus"></i>Add</button>
+                                    </div>
+                                  </div>
+                                  <div class="clone hide">
+                                    <div class="control-group input-group" style="margin-top:10px">
+                                      <input type="file" name="foto_kegiatan[]" class="form-control">
+                                      <div class="input-group-btn">
+                                        <button class="btn btn-danger" type="button"><i class="glyphicon glyphicon-remove"></i> Remove</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                          </div>
                         <button type="submit" class="btn rounded-pill btn-primary">Submit</button>
                         </form>
 

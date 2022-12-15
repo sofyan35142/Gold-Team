@@ -6,6 +6,7 @@ use App\Http\Controllers\JurusanController;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\DataController;
 use App\Http\Controllers\KakomliController;
+use App\Http\Controllers\kirimemailController;
 use App\Http\Controllers\LSPController;
 use App\Http\Controllers\ModulController;
 use App\Models\Beranda;
@@ -352,3 +353,6 @@ Route::get('/multipleupload', [DataController::class, 'index'])->name('uploads')
 Route::post('/save', [DataController::class, 'store']);
 // Route::get('/multipleuploads', '[Data])->name('uploads');
 // Route::post('/save', 'MultipleuploadsController@store')->name('uploads.store');
+
+
+Route::get('/email', [kirimemailController::class, 'index']);

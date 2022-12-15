@@ -37,6 +37,7 @@ use App\Models\walas;
 
 class LandingController extends Controller
 {
+
     public function beranda()
     {
         $sponsor=sponsor::all();
@@ -133,18 +134,18 @@ class LandingController extends Controller
         $layor = Layananortu::with('jurusan');
         $data = Layananortu::all();
         $datajurusan = Jurusan::all();
-        
+
         return view("landingpage.layananortu.layananortu", compact('layor', 'data', 'datajurusan'));
     }
     public function storelayor(Request $request)
     {
         $this->validate($request, [
             'id_jurusan' => 'required|not_in:0',
-            
+
         ]);
         $data = Layananortu::create($request->all());
         // dd($data);
-        
+
         return redirect()->route('layananortu')->with('info', 'Saran anda berhasil dikirim!.');
     }
     //end layanan rotu
@@ -284,7 +285,7 @@ class LandingController extends Controller
         return view('landingpage.alumni.profilealumni', compact('data'));
     }
 
-    //Data
+    // Data
         public function dharma(){
             $data=Dharma::all();
         return view('landingpage.Data.dharmawanita', compact('data') );
@@ -294,7 +295,8 @@ class LandingController extends Controller
         return view('landingpage.Data.datawalas', compact('data'));
     }
     public function ekstra(){
-        $data=ekstra::all();
+        $data=ekstra::paginate(3);
+        // dd($data);
         return view('landingpage.Data.Ekstrakulikuler', compact('data'));
     }
     public function prestasi(){

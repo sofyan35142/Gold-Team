@@ -78,8 +78,30 @@
                             <label for="exampleInputEmail1" class="form-label">Update Foto Pembina</label>
                             <br/>
                             <img class="img mb-3" src="{{ asset('fotoekstra/' . $data->foto_pembina) }}" alt="" style="width: 100px;">
-                            <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto }}">
-                            <i style="float: left;font-size: 11px;color: red">Abaikan jika tidak merubah foto</i>
+                            <input type="file" name="foto_pembina" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto_pembina }}">
+                            {{-- <i style="float: left;font-size: 11px;color: red">Abaikan jika tidak merubah foto</i> --}}
+                        </div>
+<br>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Upload Foto Kegiatan</label>
+                            <?php $fotoke = explode(',',$data->foto_kegiatan)  ?>
+                            @foreach ($fotoke as $foto)
+                            <div class="input-group control-group increment" >
+                                  <img class="img mb-3" src="{{ asset('foto_kegiatan/' . $foto) }}" alt="" style="width: 100px;">
+                                  <input type="file" name="foto_kegiatan[]" class="form-control" value="{{ $data->foto }}">
+                                  @endforeach
+                                  <div class="input-group-btn">
+                                      <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-plus"></i>Add</button>
+                                    </div>
+                                  </div>
+                                <div class="clone hide">
+                                  <div class="control-group input-group" style="margin-top:10px">
+                                    <input type="file" name="foto_kegiatan[]" class="form-control">
+                                    <div class="input-group-btn">
+                                      <button class="btn btn-danger" type="button"><i class="glyphicon glyphicon-remove"></i> Remove</button>
+                                    </div>
+                                  </div>
+                                </div>
                         </div>
                         <button type="submit" class="btn rounded-pill btn-primary">Submit</button>
                         </form>
@@ -121,7 +143,7 @@
 
 
 <!-- Footer -->
-@include("Admin.layoutadmin.footer")
+@include('Admin.layoutadmin.footer')
 <!-- / Footer -->
 
 
@@ -201,11 +223,22 @@
 
   <script src="https://cdn.ckeditor.com/ckeditor5/35.3.1/classic/ckeditor.js"></script>
   <script>
-    ClassicEditor
-        .create( document.querySelector('#editor') )
-        .catch( error => {
-          console.error(error);
-        });
+      ClassicEditor
+          .create(document.querySelector('#editor'))
+          .catch(error => {
+              console.error(error);
+          });
+  </script>
+  <script type="text/javascript">
+      $(document).ready(function() {
+          $(".btn-success").click(function() {
+              var html = $(".clone").html();
+              $(".increment").after(html);
+          });
+          $("body").on("click", ".btn-danger", function() {
+              $(this).parents(".control-group").remove();
+          });
+      });
   </script>
 
 
@@ -213,5 +246,3 @@
 
 <!-- Mirrored from pixinvent.com/demo/frest-clean-bootstrap-admin-dashboard-template/html/vertical-menu-template-semi-dark/tables-datatables-basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 15 Nov 2022 01:22:20 GMT -->
 </html>
-
-

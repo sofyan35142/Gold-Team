@@ -44,15 +44,16 @@ class DataController extends Controller
                 $files[] = $name;
             }
         }
+        // dd($files);
         // $fotoside = implode(',',$files);
         $file  = new ekstra();
         $file->judul = $request->judul;
         $file->nama = $request->nama;
         $file->deskripsi = $request->deskripsi;
         $file->foto = $request->foto;
-        $file->foto_pembina  = $request->foto_pembina;    ;
+        $file->foto_pembina  = $request->foto_pembina;
         $file->foto_kegiatan =implode(',', $files);
-            if ($request->hasFile('foto_pembina')) {
+        if ($request->hasFile('foto_pembina')) {
             $request->file('foto_pembina')->move('fotoekstra/', $request->file('foto_pembina')->getClientOriginalName());
             $file->foto_pembina = $request->file('foto_pembina')->getClientOriginalName();
             $file->save();
@@ -80,21 +81,39 @@ class DataController extends Controller
         $data->update([
             'judul' => $request->judul,
             'deskripsi' => $request->deskripsi,
-            'nama' => $request->nama
+            'nama' => $request->nama,
         ]);
+        // dd($data);
         // $data->update($request->all());
+        // dd($request->all);
         // dd($data);
         if ($request->hasFile('foto')) {
+            dd($request->file('foto'));
             $request->file('foto')->move('fotoekstra/', $request->file('foto')->getClientOriginalName());
             $data->foto = $request->file('foto')->getClientOriginalName();
             $data->save();
         }
         if ($request->hasFile('foto_pembina')) {
-                $request->file('foto_pembina')->move('fotoekstra/', $request->file('foto_pembina')->getClientOriginalName());
-                $data->foto = $request->file('foto_pembina')->getClientOriginalName();
-                $data->save();
+            $request->file('foto_pembina')->move('fotoekstra/', $request->file('foto_pembina')->getClientOriginalName());
+            $data->foto_pembina = $request->file('foto_pembina')->getClientOriginalName();
+            $data->save();
         }
-
+        // if ($request->hasFile('foto_kegiatan')) {
+        //     $request->file('foto_kegiatan')->move('fotoekstra/', $request->file('foto_kegiatan')->getClientOriginalName());
+        //     $data->foto_kegiatan = $request->file('foto_kegiatan')->getClientOriginalName();
+        //     $data->save();
+        // }
+        $file = [];
+        if ($request->hasfile('foto_kegiatan')) {
+            foreach ($request->foto_kegiatan as $file) {
+                $name = $file->getClientOriginalName();
+                $file->move(public_path('foto_kegiatan/'), $name);
+                $file[] = $name;
+                $file->save();
+            }
+        }
+        // $data->save();
+        // dd($dataa);
         return redirect()->route('ekstra')->with('success', 'Berhasil Di Update');
     }
 

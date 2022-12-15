@@ -95,9 +95,9 @@
 
                         <div class="icon-block-info mr-3">
 
-                            <h3>Lingkungan Nyaman</h3>
+                            <h3>Lulusan Berkualitas</h3>
                             <p>
-                                Berada dilingkungan Aman, Nyaman, dan Kondusif.
+                               Kami Mencetak lulusan berkualitas sesuai kebutuhan industri dengan program teaching factory.
                             </p>
 
                         </div>
