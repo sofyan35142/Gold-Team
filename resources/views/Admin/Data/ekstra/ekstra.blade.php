@@ -59,7 +59,7 @@
   <tbody class="table-group-divider">
     <?php $no = 1;?>
     @foreach ($data as $ekstra)
-    <?php $fotoside = explode(',',$ekstra->foto_kegiatan)  ?>
+
 <tr>
         <td>{{ $no }}</td>
         <td>{{ $ekstra->judul }}</td>
@@ -70,11 +70,11 @@
         </td>
         <td>
             <img src="{{ asset('fotoekstra/' . $ekstra->foto_pembina) }}" alt="" style="width: 80px; height:80px;">
-        </td>
+          </td>
         <td>
-            @foreach($fotoside as $foto)
-            <img src="{{ asset('foto_kegiatan/' . $foto) }}" alt="" style="width: 80px; height:80px;">
-            @endforeach
+           @foreach (json_decode($ekstra->foto_kegiatan) as $foto)
+          <img class="mx-1 my-1" src="{{ asset("foto_kegiatan/" . $foto ) }}" alt="" width="100px" height="100px">
+          @endforeach
         </td>
 
 

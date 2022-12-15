@@ -82,27 +82,16 @@
                             {{-- <i style="float: left;font-size: 11px;color: red">Abaikan jika tidak merubah foto</i> --}}
                         </div>
 <br>
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Upload Foto Kegiatan</label>
-                            <?php $fotoke = explode(',',$data->foto_kegiatan)  ?>
-                            @foreach ($fotoke as $foto)
-                            <div class="input-group control-group increment" >
-                                  <img class="img mb-3" src="{{ asset('foto_kegiatan/' . $foto) }}" alt="" style="width: 100px;">
-                                  <input type="file" name="foto_kegiatan[]" class="form-control" value="{{ $data->foto }}">
-                                  @endforeach
-                                  <div class="input-group-btn">
-                                      <button class="btn btn-success" type="button"><i class="glyphicon glyphicon-plus"></i>Add</button>
-                                    </div>
-                                  </div>
-                                <div class="clone hide">
-                                  <div class="control-group input-group" style="margin-top:10px">
-                                    <input type="file" name="foto_kegiatan[]" class="form-control">
-                                    <div class="input-group-btn">
-                                      <button class="btn btn-danger" type="button"><i class="glyphicon glyphicon-remove"></i> Remove</button>
-                                    </div>
-                                  </div>
-                                </div>
-                        </div>
+ <label for="defaultFormControlInput" class="form-label mb-3">Foto kegiatan</label>
+                                            <div class="mb-3 row">
+                                  <?php $key = 0 ?>
+                                                @foreach (json_decode($data->foto_kegiatan) as $foto)
+                                                <div class="col-4">
+                                                    <img  src="{{ asset("foto_kegiatan/" .$foto ) }}" alt="" width="100px" class="my-3">
+                                                    <input type="file" name="foto_kegiatan[{{$key++}}]" class="form-control w-75"
+                                                        id="defaultFormControlInput" aria-describedby="defaultFormControlHelp" value="{{$data->foto_krgiatan}}"/>
+                                                </div>
+                                                @endforeach
                         <button type="submit" class="btn rounded-pill btn-primary">Submit</button>
                         </form>
 

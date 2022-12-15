@@ -73,7 +73,7 @@
                         </div>
 
                           <div class="mb-3">
-                                    <label for="exampleInputEmail1" class="form-label">Upload Foto Ekstra</label>
+                                    <label for="exampleInputEmail1" class="form-label">Upload Foto Kegiatan</label>
                                     <div class="input-group control-group increment" >
                                     <input type="file" name="foto_kegiatan[]" class="form-control">
                                     <div class="input-group-btn">
