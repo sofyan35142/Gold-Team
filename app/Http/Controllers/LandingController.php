@@ -15,8 +15,13 @@ use App\Models\slider;
 use App\Models\Artikel;
 use App\Models\Jurusan;
 use App\Models\Kakomli;
+<<<<<<< HEAD
 use App\Models\sponsor;
 use App\Models\Modultei;
+=======
+use App\Models\kategoriblog;
+use App\Models\Layananortu;
+>>>>>>> 2ea2caffb65585acbb4e9132d4cb23ef2e1dfd3a
 use App\Models\prestasi;
 use App\Models\totalsiswa;
 use App\Models\Jmlpemegang;
@@ -129,6 +134,28 @@ class LandingController extends Controller
     {
         return view("landingpage.jurusan.modulproduktiftav");
     }
+
+    //layanan ortu
+    public function layananortu()
+    {
+        $layor = Layananortu::with('jurusan');
+        $data = Layananortu::all();
+        $datajurusan = Jurusan::all();
+        
+        return view("landingpage.layananortu.layananortu", compact('layor', 'data', 'datajurusan'));
+    }
+    public function storelayor(Request $request)
+    {
+        $this->validate($request, [
+            'id_jurusan' => 'required|not_in:0',
+            
+        ]);
+        $data = Layananortu::create($request->all());
+        // dd($data);
+        
+        return redirect()->route('layananortu')->with('info', 'Saran anda berhasil dikirim!.');
+    }
+    //end layanan rotu
 
     ////LSP////
     public function lsp()

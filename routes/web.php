@@ -93,6 +93,10 @@ Route::get('/artikelilmiah', [LandingController::class, 'artikelilmiah']);
 Route::get('/modulproduktiftki', [LandingController::class, 'modulproduktiftki']);
 Route::get('/modulproduktiftav', [LandingController::class, 'modulproduktiftav']);
 
+//layananortu
+Route::get('/layananortu',[LandingController::class, 'layananortu'])->name('layananortu');
+Route::post('/insertlayor', [LandingController::class, 'storelayor']);
+
 
 //LSP
 Route::get('/llsp', [LandingController::class, 'lsp']);
