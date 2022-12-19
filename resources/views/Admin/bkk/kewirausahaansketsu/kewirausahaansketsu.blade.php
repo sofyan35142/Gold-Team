@@ -24,56 +24,84 @@
                         <!-- DataTable with Buttons -->
                         <div class="card mb-4">
                             <div class="card-datatable table-responsive pt-0">
-                                <h5 class="card-header">Data Profil Visi Misi</h5>
-                                @if (is_null($data))
-                                    <a href="/index/addprofilvisimisi" type="button"
-                                        class="btn rounded-pill btn-primary">Tambah +</a>
-                                @else
-                                    <h6>Kosongkan Data Untuk Menambahkan</h6>
-                                @endif
-                                <table class="table" id="jurusan">
+                                <h5 class="card-header">Data Alumni Kewirausahaan Sketsu</h5>
+                                <a href="/index/addalumnikbkk" type="button" class="btn rounded-pill btn-primary">Tambah
+                                    +</a>
+                                <table class="table" id="table1">
                                     <thead>
                                         <tr>
-                                            <th scope="col">No.</th>
-                                            <th scope="col">Visi Misi</th>
-                                            <th scope="col">Deskripsi</th>
+                                            <th scope="col" style="width:75px">No.</th>
                                             <th scope="col">Foto</th>
-                                            <th scope="col">Aksi</th>
+                                            <th scope="col" style="width: 145px">Aksi</th>
                                         </tr>
                                     </thead>
                                     <tbody class="table-group-divider">
-                                        <?php $no = 1; ?>
+                                        <?php $no = 0; $key= -1; ?>
+                                        @foreach (json_decode($data->wirausahaalumni) as $usahaalumni)
                                             <tr>
-                                                <td>{{ $no }}</td>
-                                                <td>{{ $data->visimisi ? $data->visimisi : '-';  }}</td>
-                                                <td>{!! $data->descvisimisiprofil !!}</td>
+                                                @php
+                                                $no++;
+                                                $key++;
+                                                // echo($key);
+                                                @endphp
+                                                <td>{{$no}}</td>
+                                                <td class="text-center"><img src="{{ asset('assets/img/kewirausahaansketsu/'.$usahaalumni) }}" alt="" srcset="" style="width: 35pc;"></td>
                                                 <td>
-                                                    <img src="{{ asset('../assets/img/visimisi/' . $data->foto_side) }}"
-                                                        alt="" style="width: 80px; height:80px;">
-                                                </td>
-                                                <td>
-                                                    <a href="/visimisi/edit/{{ $data->id }}"
+                                                    <a href="/index/editviewkegiatanbkk/{{$key}}"
                                                         class="btn btn-warning"><i
                                                             class="fa-solid fa-pen-to-square"></i></a>
                                                     <a href="#" class="btn btn-danger delete"
-                                                        data-id="{{ $data->id }}"
-                                                        data-jurusan="{{ $data->visimisi }}"><i
+                                                        data-id="{{ $key }}"
+                                                        data-kegiatan="Foto No.{{$no}}"><i
                                                             class="fa-solid fa-trash"></i></a>
                                                 </td>
                                             </tr>
+                                        @endforeach
                                     </tbody>
-                                    <?php $no++; ?>
                                 </table>
                             </div>
                         </div>
-                        <!-- Modal to add new record -->
-                        <!--/ DataTable with Buttons -->
-                        <!-- Complex Headers -->
-                        <!--/ Complex Headers -->
-                        <!-- Row grouping -->
-                        <!--/ Row grouping -->
-                        <!-- Multilingual -->
-                        <!--/ Multilingual -->
+                        <div class="card mb-4">
+                            <div class="card-datatable table-responsive pt-0">
+                                <h5 class="card-header">Data Peserta Didik Kewirausahaan Sketsu</h5>
+                                <a href="/index/add_kegiatan" type="button" class="btn rounded-pill btn-primary">Tambah
+                                    +</a>
+                                <table class="table" id="table2">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" style="width:75px">No.</th>
+                                            <th scope="col">Foto</th>
+                                            <th scope="col" style="width: 145px">Aksi</th>
+                                        </tr>
+                                    </thead>
+                                    {{-- <tbody class="table-group-divider">
+                                        <?php $no = 1; ?>
+                                        @foreach ($data as $kegiatan)
+                                            <tr>
+                                                <td>{{ $no++ }}</td>
+                                                <td>{{ $kegiatan->judul }}</td>
+                                                <td style="width: 23pc">
+                                                    @foreach (json_decode($kegiatan->foto) as $foto)
+                                                        <img class="mx-1 my-1"
+                                                            src="{{ asset('assets/img/detailbkk/' . $foto) }}"
+                                                            alt="" width="100px" height="100px">
+                                                    @endforeach
+                                                </td>
+                                                <td>
+                                                    <a href="/index/editviewkegiatanbkk/{{ $kegiatan->id }}"
+                                                        class="btn btn-warning"><i
+                                                            class="fa-solid fa-pen-to-square"></i></a>
+                                                    <a href="#" class="btn btn-danger delete"
+                                                        data-id="{{ $kegiatan->id }}"
+                                                        data-kegiatan="{{ $kegiatan->judul }}"><i
+                                                            class="fa-solid fa-trash"></i></a>
+                                                </td>
+                                            </tr>
+                                        @endforeach
+                                    </tbody> --}}
+                                </table>
+                            </div>
+                        </div>
                     </div>
                     <!-- / Content -->
                     <!-- Footer -->
@@ -116,64 +144,23 @@
     <div class="buy-now">
         <a href="https://1.envato.market/frest_admin" target="_blank" class="btn btn-danger btn-buy-now">Buy Now</a>
     </div>
-    <!-- Core JS -->
-    <!-- build:js assets1/vendor/js/core.js -->
-    <script src="../../assets1/vendor/libs/jquery/jquery.js"></script>
-    <script src="../../assets1/vendor/libs/popper/popper.js"></script>
-    <script src="../../assets1/vendor/js/bootstrap.js"></script>
-    <script src="../../assets1/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
-    <script src="../../assets1/vendor/libs/hammer/hammer.js"></script>
-    <script src="../../assets1/vendor/libs/i18n/i18n.js"></script>
-    <script src="../../assets1/vendor/libs/typeahead-js/typeahead.js"></script>
-    <script src="../../assets1/vendor/js/menu.js"></script>
-    <!-- endbuild -->
-    <!-- Vendors JS -->
-    <script src="../../assets1/vendor/libs/datatables/jquery.dataTables.js"></script>
-    <script src="../../assets1/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
-    <script src="../../assets1/vendor/libs/datatables-responsive/datatables.responsive.js"></script>
-    <script src="../../assets1/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.js"></script>
-    <script src="../../assets1/vendor/libs/datatables-checkboxes-jquery/datatables.checkboxes.js"></script>
-    <script src="../../assets1/vendor/libs/datatables-buttons/datatables-buttons.js"></script>
-    <script src="../../assets1/vendor/libs/datatables-buttons-bs5/buttons.bootstrap5.js"></script>
-    <script src="../../assets1/vendor/libs/jszip/jszip.js"></script>
-    <script src="../../assets1/vendor/libs/pdfmake/pdfmake.js"></script>
-    <script src="../../assets1/vendor/libs/datatables-buttons/buttons.html5.js"></script>
-    <script src="../../assets1/vendor/libs/datatables-buttons/buttons.print.js"></script>
-    <!-- Flat Picker -->
-    <script src="../../assets1/vendor/libs/moment/moment.js"></script>
-    <script src="../../assets1/vendor/libs/flatpickr/flatpickr.js"></script>
-    <!-- Row Group JS -->
-    <script src="../../assets1/vendor/libs/datatables-rowgroup/datatables.rowgroup.js"></script>
-    <script src="../../assets1/vendor/libs/datatables-rowgroup-bs5/rowgroup.bootstrap5.js"></script>
-    <!-- Form Validation -->
-    <script src="../../assets1/vendor/libs/formvalidation/dist/js/FormValidation.min.js"></script>
-    <script src="../../assets1/vendor/libs/formvalidation/dist/js/plugins/Bootstrap5.min.js"></script>
-    <script src="../../assets1/vendor/libs/formvalidation/dist/js/plugins/AutoFocus.min.js"></script>
-
-    <!-- Main JS -->
-    <script src="../../assets1/js/main.js"></script>
-
-    <!-- Page JS -->
-    <script src="../../assets1/js/tables-datatables-basic.js"></script>
-    <script src="//cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    @include('Admin.layoutadmin.jsadmin')
 </body>
 <script>
     $('.delete').click(function() {
         var jurusanid = $(this).attr('data-id');
-        var jurusan = $(this).attr('data-jurusan');
+        var jurusan = $(this).attr('data-kegiatan');
 
         swal({
                 title: "Apakah kamu yakin?",
-                text: "Kamu akan menghapus jurusan data ini",
+                text: "Kamu akan menghapus data " + jurusan,
                 icon: "warning",
                 buttons: true,
                 dangerMode: true,
             })
             .then((willDelete) => {
                 if (willDelete) {
-                    window.location = "/visimisi/delete/" + jurusanid + ""
+                    window.location = "/deletekegiatanbkk/" + jurusanid + ""
                     swal("Data berhasil dihapus", {
                         icon: "success",
                     });
@@ -185,7 +172,10 @@
 </script>
 <script>
     $(document).ready(function() {
-        $('#jurusan').DataTable();
+        $('#table1').DataTable();
+    });
+    $(document).ready(function() {
+        $('#table2').DataTable();
     });
 </script>
 <script>

@@ -15,13 +15,9 @@ use App\Models\slider;
 use App\Models\Artikel;
 use App\Models\Jurusan;
 use App\Models\Kakomli;
-<<<<<<< HEAD
 use App\Models\sponsor;
 use App\Models\Modultei;
-=======
-use App\Models\kategoriblog;
 use App\Models\Layananortu;
->>>>>>> 2ea2caffb65585acbb4e9132d4cb23ef2e1dfd3a
 use App\Models\prestasi;
 use App\Models\totalsiswa;
 use App\Models\Jmlpemegang;
@@ -30,6 +26,7 @@ use App\Models\visimisibkk;
 use App\Models\Visimisilsp;
 use App\Models\kategoriblog;
 use App\Models\kegiatanbkk;
+use App\Models\kewirausahaansketsu;
 use App\Models\sidestruktur;
 use App\Models\Tempatujikom;
 use Illuminate\Http\Request;
@@ -141,18 +138,18 @@ class LandingController extends Controller
         $layor = Layananortu::with('jurusan');
         $data = Layananortu::all();
         $datajurusan = Jurusan::all();
-        
+
         return view("landingpage.layananortu.layananortu", compact('layor', 'data', 'datajurusan'));
     }
     public function storelayor(Request $request)
     {
         $this->validate($request, [
             'id_jurusan' => 'required|not_in:0',
-            
+
         ]);
         $data = Layananortu::create($request->all());
         // dd($data);
-        
+
         return redirect()->route('layananortu')->with('info', 'Saran anda berhasil dikirim!.');
     }
     //end layanan rotu
@@ -254,14 +251,14 @@ class LandingController extends Controller
     public function strukturorganisasi_bkk()
     {
         $data = strukturbkk::find(1);
-        $nama = explode('+',$data->nama_member);
-        $foto = explode(',',$data->foto_member);
+        $nama = json_decode($data->nama_member);
+        $foto = json_decode($data->foto_member);
         // dd($nama);
         return view("landingpage.BKK.strukturorganisasi_bkk",compact('data','nama','foto'));
     }
     public function kegiatan_bkk()
     {
-        $kegiatan = kegiatanbkk::all();
+        $kegiatan = kegiatanbkk::paginate(6);
         return view("landingpage.BKK.kegiatan_bkk",compact('kegiatan'));
     }
     public function detail_kegiatan_bkk($id)
@@ -271,7 +268,8 @@ class LandingController extends Controller
     }
     public function kewirausahaan_bkk()
     {
-        return view("landingpage.BKK.kewirausahaan_bkk");
+        $data = kewirausahaansketsu::all()->first();
+        return view("landingpage.BKK.kewirausahaan_bkk",compact("data"));
     }
     public function lowongan_kerja()
     {

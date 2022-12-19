@@ -35,7 +35,7 @@
         </div>
     </div>
     <div class="section-head text-center mt-5">
-        <h2>Profil Sekolah<span>SMKN 3 SUKOREJO</span></h2>
+        <h2>Profil Sekolah<span>SMKN 1 SUKOREJO</span></h2>
     </div>
     <section class="why-us" style="
     height: 30pc;">

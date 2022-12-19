@@ -185,6 +185,7 @@ Route::post('/editupdatesobkk', [Admincontroller::class, 'editupdatesobkk']);
     //sidesobkk
 Route::get('/index/sidesobkk', [Admincontroller::class, 'sidesobkk']);
 Route::post('/editupdatesidesobkk', [Admincontroller::class, 'editupdatesidesobkk']);
+Route::post('/oneupdatesidesobkk/{key}', [Admincontroller::class, 'oneupdatesidesobkk']);
 
 //kegiatan BKK
 Route::get('/index/kegiatan-bkk', [Admincontroller::class, 'kegiatan_bkk']);
@@ -192,6 +193,12 @@ Route::get('/index/add_kegiatan', [Admincontroller::class, 'addkegiatan']);
 Route::post('/insertkegiatanbkk', [Admincontroller::class, 'insertkegiatanbkk']);
 Route::get('/index/editviewkegiatanbkk/{id}', [Admincontroller::class, 'viewkegiatanbkk']);
 Route::post('/editkegiatanbkk/{id}', [Admincontroller::class, 'editkegiatanbkk']);
+Route::get('/deletekegiatanbkk/{id}', [Admincontroller::class, 'deletekegiatanbkk']);
+
+//Kewirausahaan Sketsu
+Route::get('/index/kewirausahaan-sketsu', [Admincontroller::class, 'kewirausahaansketsu']);
+Route::get('/index/addalumnikbkk', [Admincontroller::class, 'addalumnikbkk']);
+Route::post('/insertalumnibkk', [Admincontroller::class, 'insertalumnikbkk']);
 //======================= End Bkk ==================//
 
 ////////////-------------ADMIN BERANDA------------/////////////////
