@@ -60,7 +60,7 @@
                                       <label for="exampleInputEmail1" class="form-label">Kategori</label>
                                       <select  class="form-select" aria-label="Default select example" name="kategori">
                                         <option value=""></option>
-                                        @foreach ($data as $kategori)
+                                        @foreach ($relasi as $kategori)
 <option value="{{ $kategori->id }}">{{ $kategori->kategori }}</option>
 @endforeach
                                         </select>
@@ -73,7 +73,7 @@
                             <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>
                         <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Upload Foto Ekstra</label>
+                            <label for="exampleInputEmail1" class="form-label">Upload Foto Kegiatan</label>
                                  <div class="input-group control-group increment" >
 
           <input type="file" name="foto_kegiatan[]" class="form-control">
@@ -216,16 +216,16 @@
           });
   </script>
     <script type="text/javascript">
-      $(document).ready(function() {
-          $(".btn-success").click(function() {
-              var html = $(".clone").html();
-              $(".increment").after(html);
-          });
-          $("body").on("click", ".btn-danger", function() {
-              $(this).parents(".control-group").remove();
-          });
-      });
-  </script>
+        $(document).ready(function() {
+            $(".btn-success").click(function() {
+                var html = $(".clone").html();
+                $(".increment").after(html);
+            });
+            $("body").on("click", ".btn-danger", function() {
+                $(this).parents(".control-group").remove();
+            });
+        });
+    </script>
 </body>
 
 <!-- Mirrored from pixinvent.com/demo/frest-clean-bootstrap-admin-dashboard-template/html/vertical-menu-template-semi-dark/tables-datatables-basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 15 Nov 2022 01:22:20 GMT -->

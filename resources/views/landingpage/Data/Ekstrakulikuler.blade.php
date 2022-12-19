@@ -95,17 +95,17 @@
                  @endforeach
             </div>
             {{-- {{ $data->links() }} --}}
-            <ul class="pagination pagination-rouded justify-content-center my-5">
+            {{-- <ul class="pagination pagination-rouded justify-content-center my-5"> --}}
                 {{-- <li><a href="{{ $data->previosPageUrl() }}" class="mr-1"><<</a></li> --}}
-                @for($i = 0; $i< (ceil($data->total()/$data->perPage())); $i++)
+                {{-- @for($i = 0; $i< (ceil($data->total()/$data->perPage())); $i++)
                 <li><a href="?page={{ ($i + 1) }}" class="{{ ($data->currentPage() == ($i + 1)) ? 'bg-secondary' : 'bg-default' }}" fg-white mr-1 active>{{ ($i + 1) }}</a></li>
-                @endfor
+                @endfor --}}
                 {{-- <li><a href="{{ $data->nextPageUrl() }}" class="">>></a></li> --}}
-            </ul>
+            {{-- </ul>
 
             <ul class="pagination pagination-rouded justify-content-center my-5">
                 {{ $data->links() }}
-            </ul>
+            </ul> --}}
             {{-- <nav>
                 <ul class="pagination  justify-content-center">
                     <li class="page-item disabled">

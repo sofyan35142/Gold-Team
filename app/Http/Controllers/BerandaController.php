@@ -6,6 +6,7 @@ use App\Models\alumni;
 use App\Models\Blog;
 use App\Models\kategoriblog;
 use App\Models\kepsek;
+use App\Models\keunggulan;
 use App\Models\slider;
 use App\Models\sponsor;
 use App\Models\totalsiswa;
@@ -21,8 +22,10 @@ class BerandaController extends Controller
     }
 
     public function tambahblog(){
-        $data=kategoriblog::all();
-        return view('Admin.beranda.blog.tambahblog', compact('data'));
+        // $data=Blog::all();
+        $relasi=kategoriblog::all();
+
+        return view('Admin.beranda.blog.tambahblog', compact( 'relasi'));
     }
 
      public function insertblog(Request $request)
@@ -48,44 +51,66 @@ class BerandaController extends Controller
                 $files[] = $name;
             }
         }
+        // dd($files);
         // $fotoside = implode(',',$files);
-        $file  = new Blog();
+        $file  = new blog();
         $file->judul = $request->judul;
         $file->deskripsi = $request->deskripsi;
         $file->kategori = $request->kategori;
         $file->foto = $request->foto;
-        $file->foto_kegiatan =implode(',', $files);
+        $file->foto_kegiatan = json_encode($files);
         if ($request->hasFile('foto')) {
             $request->file('foto')->move('blog/', $request->file('foto')->getClientOriginalName());
             $file->foto = $request->file('foto')->getClientOriginalName();
             $file->save();
         }
+        // dd($file);
         // dd($file->foto_kegiatan );
         $file->save();
         return redirect()->route('viewblog')->with('success', 'Berhasil Di Tambahkan');
     }
 
     public function editblog($id){
-         $data = Blog::findorfail($id);
-        return view('Admin.beranda.blog.editblog', compact('data'));
+        $data = Blog::findorfail($id);
+        $relasi = kategoriblog::all();
+        return view('Admin.beranda.blog.editblog', compact('data', 'relasi'));
     }
 
      public function updateblog(Request $request, $id)
     {
-
-        $data = Blog::find($id);
+        // dd($request->all());
+        $data = Blog::findorfail($id);
         $data->update([
-            'judul'=> $request->judul,
-            'deskripsi'=> $request->deskripsi,
+            "judul" => $request->judul,
+            "deskripsi" => $request->deskripsi,
+            "kategori" => $request->kategori,
         ]);
-        // $data->update($request->all());
-        // dd($data);
-        if($request->hasFile('foto')){
+        if ($request->hasFile('foto')) {
+            // dd($request->file('foto'));
             $request->file('foto')->move('blog/', $request->file('foto')->getClientOriginalName());
             $data->foto = $request->file('foto')->getClientOriginalName();
             $data->save();
         }
-
+        if ($request->hasfile('foto_kegiatan')) {
+        $keyarray1 =  array_keys($request->foto_kegiatan);
+        $foto = [];
+        // dd($keyarray1);
+        // $hasil = array_combine($tes,$foto);
+        $i = 0;
+            foreach ($request->foto_kegiatan as $file) {
+                $name = $file->getClientOriginalName();
+                $file->move(public_path('fotokegiatan/'), $name);
+                $foto[$keyarray1[$i]] = $name;
+                $i++;
+            }
+            $fotoin = json_decode($data->foto_kegiatan);
+            // dd($foto);
+            foreach ($keyarray1 as $key) {
+                $fotoin[$key] = $foto[$key];
+            }
+            $data->foto_kegiatan = $fotoin;
+        }
+        $data->save();
         return redirect()->route('viewblog')->with('success', 'Berhasil Di Update');
     }
 
@@ -369,6 +394,34 @@ class BerandaController extends Controller
         $data = videoprofil::find($id);
         $data->delete();
         return redirect()->route('videoprofil')->with('success', 'Berhasil Di Hapus');
+    }
+
+
+
+//////////////////////------------------KEUNGGULANNNNNNNNN----------------////////////////
+    public function keunggulan(){
+        $data = keunggulan::all();
+        return view('Admin.beranda.keunggulan.keunggulan', compact('data'));
+    }
+
+    public function editkeunggulan($id){
+        $data = keunggulan::findOrFail($id);
+        return view('Admin.beranda.keunggulan.editkeunggulan', compact('data'));
+    }
+
+    public function updatekeunggulan(Request $request,$id){
+        $data = keunggulan::find($id);
+        $data->update([
+            'judul' => $request->judul,
+            'deskripsi' => $request->deskripsi,
+        ]);
+        if ($request->hasFile('foto')) {
+            $request->file('foto')->move('keunggulan/', $request->file('foto')->getClientOriginalName());
+            $data->foto = $request->file('foto')->getClientOriginalName();
+            $data->save();
+        }
+        // dd($data);
+        return redirect()->route('keunggulan')->with('success', 'berhasil diupdate');
     }
 
 }

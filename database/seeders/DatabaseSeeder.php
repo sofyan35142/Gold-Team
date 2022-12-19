@@ -48,7 +48,8 @@ class DatabaseSeeder extends Seeder
             // walas::class,
             Reparasibengkel::class,
             strukturbkk::class,
-            sidestruktur::class
+            sidestruktur::class,
+            keunggulan::class
         ]);
     }
 }

@@ -179,6 +179,11 @@
                                 </a>
                             </li>
                             <li class="menu-item">
+                                <a href="/beranda/keunggulan" class="menu-link">
+                                    <div data-i18n="Keunggulan">Keunggulan</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
                                 <a href="/beranda/videoprofil" class="menu-link">
                                     <div data-i18n="Video Profil">Video Profil</div>
                                 </a>

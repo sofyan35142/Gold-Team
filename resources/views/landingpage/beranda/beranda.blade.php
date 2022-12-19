@@ -64,81 +64,63 @@
                 <p>Alasan kenapa kalian semua harus bergabung dengan SMK NEGERI 1 SUKOREJO</p>
             </center> <br>
             <div class="text-container">
+                @foreach ($keunggulan as $data)
 
                 <div>
                     <div class="icon-block">
-
-                        <div class=" bg-color-2 icon-block-img m-0 text-warning">
-                            <i class="fas fa-school"></i>
+                        <div class=" bg-color-1 icon-block-img m-0 text-info">
+                            {{-- <i class="fas fa-school"></i> --}}
+                            <img src="{{ asset('keunggulan/' . $data->foto) }}" alt="">
                         </div>
-
                         <div class="icon-block-info mr-3">
-
-                            <h3>Lingkungan Nyaman</h3>
+                            <h3>{{ $data->judul }}</h3>
                             <p>
-                                Berada dilingkungan Aman, Nyaman, dan Kondusif.
+                               {!! $data->deskripsi !!}
                             </p>
-
                         </div>
                     </div>
-
                 </div>
-                <div>
-            <div class="text-container">
-
-                <div>
-                    <div class="icon-block">
-
-                        <div class=" bg-color-2 icon-block-img m-0 text-warning">
-                            <i class="fas fa-school"></i>
-                        </div>
-
-                        <div class="icon-block-info mr-3">
-
-                            <h3>Lulusan Berkualitas</h3>
-                            <p>
-                               Kami Mencetak lulusan berkualitas sesuai kebutuhan industri dengan program teaching factory.
-                            </p>
-
-                        </div>
-                    </div>
-
-                </div>
-                <div>
+                @endforeach
+                {{-- <div>
                     <div class="icon-block ">
-
                         <div class="bg-color-1 icon-block-img m-0 text-info">
                             <i class="fa-solid fa-laptop"></i>
                         </div>
-
-                        <div class="icon-block-info me-3">
-
+                        <div class="icon-block-info mr-3">
                             <h3>Fasilitas Lengkap</h3>
                             <p>
                                 Menunjang Pembelajaran Dengan Kualitas Terbaik.
                             </p>
-
-
                         </div>
                     </div>
                 </div>
                 <div>
                     <div class="icon-block">
-
+                        <div class=" bg-color-2 icon-block-img m-0 text-warning">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <div class="icon-block-info mr-3">
+                            <h3>Lulusan Berkualitas</h3>
+                            <p>
+                                Kami Mencetak lulusan berkualitas sesuai kebutuhan industri dengan program teaching
+                                factory.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="icon-block">
                         <div class=" bg-color-7 icon-block-img m-0 text-info">
                             <i class="fa-solid fa-chalkboard-user"></i>
                         </div>
-
                         <div class="icon-block-info mr-3">
-
                             <h3>Pengajar Kompeten</h3>
                             <p>
                                 Guru yang up-to-date dengan perkembangan industri.
                             </p>
-
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </section>
@@ -215,7 +197,7 @@
 
     <section class="about-style-two about-style-three pt-100 pb-70">
         <div class="container reveal">
-        {{-- <div class="container-fluid"> --}}
+            {{-- <div class="container-fluid"> --}}
             @foreach ($datakepsek as $kepsek)
                 <div class="row align-items-center">
                     <div class="col-lg-6 p-0">
@@ -335,28 +317,28 @@
 
 
             <div class="blog-slider owl-carousel owl-theme">
-                @foreach ($data as $blog)
+                @foreach ($blog as $data)
                     <div class="blog-area yosopelipsis">
 
                         <div class="blog-img">
                             <a href="#">
-                                <img class="img-blog" src="{{ asset('blog/' . $blog->foto) }}" alt="blog image">
+                                <img class="img-blog" src="{{ asset('blog/' . $data->foto) }}" alt="blog image">
                             </a>
                         </div>
                         <div class="blog-text">
-                            <h4><a href="#" class="overflow1">{{ $blog->judul }}</a></h4>
+                            <h4><a href="#" class="overflow1">{{ $data->judul }}</a></h4>
                             <ul>
                                 <li>
                                     <i class="fa-solid fa-calendar-days"></i>
-                                    {{ $blog->created_at }}
+                                    {{ $data->created_at }}
                                 </li>
                                 <li>
                                     <i class="fa-solid fa-tags"></i>
-                                    <a href="#">{{ $blog->idblog->kategori }}</a>
+                                    <a href="#">{{ $data->idblog->kategori }}</a>
                                 </li>
                             </ul>
-                            <p class="overflow">{!! $blog->deskripsi !!}</p>
-                            <a href="/blogdetail/{{ $blog->id }}" class="blog-btn">
+                            <p class="overflow">{!! $data->deskripsi !!}</p>
+                            <a href="/blogdetail/{{ $data->id }}" class="blog-btn">
                                 Read more
                                 <i class="icofont-rounded-right"></i>
                             </a>
@@ -375,9 +357,9 @@
                         <div class="row">
                             <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2">
                                 <div class="testimonial-image-slider slider-nav text-center">
-                                    @foreach ($dataa as $alumni)
+                                    @foreach ($alumni as $data)
                                         <div class="sin-testiImage">
-                                            <img class="img-blog" src="{{ asset('fotoalumni/' . $alumni->foto) }}"
+                                            <img class="img-blog" src="{{ asset('fotoalumni/' . $data->foto) }}"
                                                 alt="blog image">
                                         </div>
                                     @endforeach
@@ -385,11 +367,11 @@
                             </div>
                         </div>
                         <div class="testimonial-text-slider slider-for text-center">
-                            @foreach ($dataa as $alumni)
+                            @foreach ($alumni as $data)
                                 <div class="sin-testiText">
-                                    <h2>{{ $alumni->nama }}</h2>
-                                    <span>{{ $alumni->pekerjaan }}</span>
-                                    <p style="word-break: break-all;">{!! $alumni->deskripsi !!}</p>
+                                    <h2>{{ $data->nama }}</h2>
+                                    <span>{{ $data->pekerjaan }}</span>
+                                    <p style="word-break: break-all;">{!! $data->deskripsi !!}</p>
                                 </div>
                             @endforeach
                         </div>

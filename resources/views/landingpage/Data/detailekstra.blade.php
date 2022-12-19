@@ -57,29 +57,29 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
-                    <img src="{{ asset('fotoekstra/' . $data->foto) }}" alt="service">
+                    <img src="{{ asset('fotoekstra/' . $detailekstra->foto) }}" alt="service">
                     <div class="service-details-post detail">
-                        <h3>{{ $data->judul }}</h3>
-                        <p>{!! $data->deskripsi !!}</p>
+                        <h3>{{ $detailekstra->judul }}</h3>
+                        <p>{!! $detailekstra->deskripsi !!}</p>
                     </div>
                     <div class="service-details-post">
                         <h3>Pembina</h3>
                         <div class="d-flex flex-row">
                             <div class="p-2"><img class="img-guru"
-                                    src="{{ asset('fotoekstra/' . $data->foto_pembina) }}" style="height: 10pc" />
-                            <b>{{ $data->nama }}</b>
+                                    src="{{ asset('fotoekstra/' . $detailekstra->foto_pembina) }}" style="height: 10pc" />
+                            <b>{{ $detailekstra->nama }}</b>
                             </div>
                         </div>
                     </div>
                 </div>
-                 @foreach($foto as $fotok)
+                 {{-- @foreach($foto as $fotok)
                 <div class="col-lg-4 main-service-area blog-side-bar border shadows mb-40px h-fc py-3">
                     <div class="service-sidebar">
                         <center><b>Foto Kegiatan</b></center> <br>
                         <img class="imgvisi" src="{{ asset('foto_kegiatan/' . $fotok) }}" alt="service">
                     </div>
                 </div>
-                @endforeach
+                @endforeach --}}
                 {{-- <div class="col-lg-4 main-service-area blog-side-bar"> --}}
                     {{-- <div class="team-section team-style-two team-style-three team-members pt-1000">
                         <div class="team-card">

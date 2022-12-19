@@ -67,11 +67,10 @@
         <td>
             <img src="{{ asset('blog/' . $blog->foto) }}" alt="" style="width: 80px; height:80px;">
         </td>
-<td>
-            @foreach($fotoside as $foto)
-            <img src="{{ asset('fotokegiatan/' . $foto) }}" alt="" style="width: 80px; height:80px;">
-            @endforeach
-        </td>
+        <td>
+ @foreach (json_decode($blog->foto_kegiatan) as $foto)
+          <img class="mx-1 my-1" src="{{ asset("fotokegiatan/" . $foto ) }}" alt="" width="80px" height="80px">
+          @endforeach
 
         <td>
             <a href="/beranda/editblog/{{ $blog->id }}" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></a>

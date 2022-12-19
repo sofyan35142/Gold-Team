@@ -83,6 +83,17 @@ class DataController extends Controller
             "nama" => $request->nama,
             "deskripsi" => $request->deskripsi,
         ]);
+        if ($request->hasFile('foto')) {
+            // dd($request->file('foto'));
+            $request->file('foto')->move('fotoekstra/', $request->file('foto')->getClientOriginalName());
+            $data->foto = $request->file('foto')->getClientOriginalName();
+            $data->save();
+        }
+        if ($request->hasFile('foto_pembina')) {
+            $request->file('foto_pembina')->move('fotoekstra/', $request->file('foto_pembina')->getClientOriginalName());
+            $data->foto_pembina = $request->file('foto_pembina')->getClientOriginalName();
+            $data->save();
+        }
         $keyarray1 =  array_keys($request->foto_kegiatan);
         $foto = [];
         // dd($keyarray1);
@@ -95,24 +106,13 @@ class DataController extends Controller
                 $foto[$keyarray1[$i]] = $name;
                 $i++;
             }
+            $fotoin = json_decode($data->foto_kegiatan);
+            // dd($foto);
+            foreach ($keyarray1 as $key) {
+                $fotoin[$key] = $foto[$key];
+            }
+            $data->foto_kegiatan = $fotoin;
         }
-        if ($request->hasFile('foto')) {
-            // dd($request->file('foto'));
-            $request->file('foto')->move('fotoekstra/', $request->file('foto')->getClientOriginalName());
-            $data->foto = $request->file('foto')->getClientOriginalName();
-            $data->save();
-        }
-        if ($request->hasFile('foto_pembina')) {
-            $request->file('foto_pembina')->move('fotoekstra/', $request->file('foto_pembina')->getClientOriginalName());
-            $data->foto_pembina = $request->file('foto_pembina')->getClientOriginalName();
-            $data->save();
-        }
-        $fotoin = json_decode($data->foto_kegiatan);
-        // dd($foto);
-        foreach ($keyarray1 as $key) {
-            $fotoin[$key] = $foto[$key];
-        }
-        $data->foto_kegiatan = $fotoin;
         $data->save();
         return redirect()->route('ekstra')->with('success', 'Berhasil Di Update');
     }

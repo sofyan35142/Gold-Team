@@ -218,10 +218,19 @@ Route::get('/blog/deleteblog/{id}', [BerandaController::class, 'deleteblog']);
 
 
 ////////////////----------SAMBUTAN KEPALA SEKOLAH-------------//////////////////////
+Route::get('/beranda/keunggulan', [BerandaController::class, 'keunggulan'])->name('keunggulan');
+Route::get('/beranda/editkeunggulan/{id}', [BerandaController::class, 'editkeunggulan']);
+Route::post('/beranda/updatekeunggulan/{id}', [BerandaController::class, 'updatekeunggulan']);
+Route::get('/keunggulan/deletekeunggulan/{id}', [BerandaController::class, 'deletekeunggulan']);
+
+
+
+//////////////////----------------------KEUNGGULAN SKETSU-------------////////////////////
 Route::get('/beranda/sambutankepsek', [BerandaController::class, 'sambutankepsek'])->name('sambutankepsek');
 Route::get('/beranda/editsambutan/{id}', [BerandaController::class, 'editsambutan']);
 Route::post('/beranda/updatesambutan/{id}', [BerandaController::class, 'updatesambutan']);
-Route::get('/sambutan/deletesambutan/{id}', [BerandaController::class, 'deletesambutan']);
+
+
 
 
 
@@ -374,10 +383,10 @@ Route::post('/updateartikel/{id}', [ModulController::class, 'editartikel']);
 
 
 
-Route::get('/multipleupload', [DataController::class, 'index'])->name('uploads');
-Route::post('/save', [DataController::class, 'store']);
+// Route::get('/multipleupload', [DataController::class, 'index'])->name('uploads');
+// Route::post('/save', [DataController::class, 'store']);
 // Route::get('/multipleuploads', '[Data])->name('uploads');
 // Route::post('/save', 'MultipleuploadsController@store')->name('uploads.store');
 
 
-Route::get('/email', [kirimemailController::class, 'index']);
+// Route::get('/email', [kirimemailController::class, 'index']);

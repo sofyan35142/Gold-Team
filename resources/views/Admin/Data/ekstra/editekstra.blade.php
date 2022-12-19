@@ -87,9 +87,9 @@
                                   <?php $key = 0 ?>
                                                 @foreach (json_decode($data->foto_kegiatan) as $foto)
                                                 <div class="col-4">
-                                                    <img  src="{{ asset("foto_kegiatan/" .$foto ) }}" alt="" width="100px" class="my-3">
+                                                    <img  src="{{ asset("foto_kegiatan/" .$foto ) }}" alt="" width="100px" height="100px" class="my-3">
                                                     <input type="file" name="foto_kegiatan[{{$key++}}]" class="form-control w-75"
-                                                        id="defaultFormControlInput" aria-describedby="defaultFormControlHelp" value="{{$data->foto_krgiatan}}"/>
+                                                        id="defaultFormControlInput" aria-describedby="defaultFormControlHelp" value="{{$data->foto_kegiatan}}"/>
                                                 </div>
                                                 @endforeach
                         <button type="submit" class="btn rounded-pill btn-primary">Submit</button>

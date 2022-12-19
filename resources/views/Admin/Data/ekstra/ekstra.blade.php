@@ -73,7 +73,7 @@
           </td>
         <td>
            @foreach (json_decode($ekstra->foto_kegiatan) as $foto)
-          <img class="mx-1 my-1" src="{{ asset("foto_kegiatan/" . $foto ) }}" alt="" width="100px" height="100px">
+          <img class="mx-1 my-1" src="{{ asset("foto_kegiatan/" . $foto ) }}" alt="" width="80px" height="80px">
           @endforeach
         </td>
 
