@@ -26,7 +26,11 @@ use App\Models\visimisibkk;
 use App\Models\Visimisilsp;
 use App\Models\kategoriblog;
 use App\Models\kegiatanbkk;
+<<<<<<< HEAD
 use App\Models\keunggulan;
+=======
+use App\Models\kewirausahaansketsu;
+>>>>>>> f629c2da7737c3647c25c887e393f1727ad4d088
 use App\Models\sidestruktur;
 use App\Models\Tempatujikom;
 use Illuminate\Http\Request;
@@ -147,6 +151,10 @@ class LandingController extends Controller
         $layor = Layananortu::with('jurusan');
         $data = Layananortu::all();
         $datajurusan = Jurusan::all();
+<<<<<<< HEAD
+=======
+
+>>>>>>> f629c2da7737c3647c25c887e393f1727ad4d088
         return view("landingpage.layananortu.layananortu", compact('layor', 'data', 'datajurusan'));
     }
     public function storelayor(Request $request)
@@ -277,16 +285,21 @@ class LandingController extends Controller
     {
         $sponsor = sponsor::all();
         $data = strukturbkk::find(1);
-        $nama = explode('+',$data->nama_member);
-        $foto = explode(',',$data->foto_member);
+        $nama = json_decode($data->nama_member);
+        $foto = json_decode($data->foto_member);
         // dd($nama);
         return view("landingpage.BKK.strukturorganisasi_bkk",compact('data','nama','foto', 'sponsor'));
     }
     public function kegiatan_bkk()
     {
+<<<<<<< HEAD
         $sponsor = sponsor::all();
         $kegiatan = kegiatanbkk::all();
         return view("landingpage.BKK.kegiatan_bkk",compact('kegiatan', 'sponsor'));
+=======
+        $kegiatan = kegiatanbkk::paginate(6);
+        return view("landingpage.BKK.kegiatan_bkk",compact('kegiatan'));
+>>>>>>> f629c2da7737c3647c25c887e393f1727ad4d088
     }
     public function detail_kegiatan_bkk($id)
     {
@@ -296,8 +309,13 @@ class LandingController extends Controller
     }
     public function kewirausahaan_bkk()
     {
+<<<<<<< HEAD
         $sponsor = sponsor::all();
         return view("landingpage.BKK.kewirausahaan_bkk", compact('sponsor'));
+=======
+        $data = kewirausahaansketsu::all()->first();
+        return view("landingpage.BKK.kewirausahaan_bkk",compact("data"));
+>>>>>>> f629c2da7737c3647c25c887e393f1727ad4d088
     }
     public function lowongan_kerja()
     {

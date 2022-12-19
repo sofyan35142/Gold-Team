@@ -59,8 +59,8 @@
                         <div class="card mb-4">
                             <div class="card-datatable table-responsive pt-0">
                                 <h5 class="card-header">Data anggota struktur bkk </h5>
-                                <a href="/index/sidesobkk" type="button"
-                                    class="btn rounded-pill btn-primary">Tambah +</a>
+                                <a href="/index/sidesobkk" type="button" class="btn rounded-pill btn-primary">Tambah
+                                    +</a>
                                 <table class="table" id="jurusan">
                                     <thead>
                                         <tr>
@@ -71,23 +71,69 @@
                                         </tr>
                                     </thead>
                                     <tbody class="table-group-divider">
-                                        <?php $no = 1;
-                                        $id = 0; ?>
+                                        <?php $no = 1; $id = -1; ?>
                                         @foreach ($foto as $img)
+                                            @php
+                                                $id++;
+                                            @endphp
                                             <tr>
                                                 <td>{{ $no++ }}</td>
                                                 <td><img src="{{ asset('assets/img/so/' . $img) }}" alt="struktur"
                                                         width="100px" height="100px"></td>
-                                                <td>{{ $nama[$id++] }}</td>
+                                                <td>{{ $nama[$id] }}</td>
                                                 <td>
-                                                    <a href="/index/editvisimisibkk" class="btn btn-warning"><i
-                                                            class="fa-solid fa-pen-to-square"></i></a>
+                                                    <button class="btn btn-warning" data-bs-toggle="modal"
+                                                        data-bs-target="#smallModal{{ $id }}"><i
+                                                            class="fa-solid fa-pen-to-square"></i></button>
                                                     <a href="#" class="btn btn-danger delete"
                                                         data-id="{{ $data->id }}"
                                                         data-jurusan="{{ $data->visi }}"><i
                                                             class="fa-solid fa-trash"></i></a>
                                                 </td>
                                             </tr>
+                                            <div class="modal fade" id="smallModal{{ $id }}" tabindex="-1"
+                                                aria-hidden="true">
+                                                <div class="modal-dialog modal-sm" role="document">
+                                                    <form action="/oneupdatesidesobkk/{{ $id }}"
+                                                        method="POST" enctype="multipart/form-data">
+                                                        @csrf
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLabel2">
+                                                                </h5>
+                                                                <button type="button" class="btn-close"
+                                                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div class="row">
+                                                                    <div class="mb-3">
+                                                                        <label class="mb-1" for="">Nama Anggota :</label>
+                                                                        <input type="text" name="nama"
+                                                                            id="nameSmall" class="form-control"
+                                                                            placeholder="Enter Name" value="{{$nama[$id]}}">
+                                                                    </div>
+                                                                    <label for="">Foto Anggota :</label>
+                                                                    <div class="mt-1">
+                                                                        <img class="mb-3"
+                                                                            src="{{ asset('assets/img/so/' . $img) }}"
+                                                                            alt="" width="100px"
+                                                                            height="100px">
+                                                                        <input type="file" name="foto"
+                                                                            id="nameSmall" class="form-control"
+                                                                            placeholder="Enter Name">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-label-secondary"
+                                                                    data-bs-dismiss="modal">Close</button>
+                                                                <button type="submit" class="btn btn-primary">Save
+                                                                    changes</button>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
                                         @endforeach
                                     </tbody>
                                 </table>

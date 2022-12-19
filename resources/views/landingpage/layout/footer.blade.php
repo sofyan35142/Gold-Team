@@ -18,7 +18,7 @@
                 <div class="footer-widget">
                     <div class="logo">
                         <a href="index.html">
-                            <img src="../foto/footer.png" alt="logo">
+                            <img src="https://127.0.0.1:8000/foto/footer.png" alt="logo">
                         </a>
                     </div>
                     {{-- <p>Lorem ipsum dolor sit amet, tur adipiscing elit, sed do eiusmod tempor contratc.</p> --}}
@@ -36,28 +36,25 @@
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="footer-widget pl-40">
-                    <h3>Pos-pos Terbaru</h3>
+                    <h3>Menu</h3>
                     <ul>
                         <li>
                             <i class="icofont-simple-right"></i>
-                            <a href="service-details.html">Peringatan Hari Guru</a>
+                            <a href="/">Beranda</a>
                         </li>
                         <li>
                             <i class="icofont-simple-right"></i>
-                            <a href="service-details.html">Branchmarking</a>
+                            <a href="/profil">Tentang Kami</a>
                         </li>
                         <li>
                             <i class="icofont-simple-right"></i>
-                            <a href="service-details.html">Penemuan Lanjutan </a>
+                            <a href="/jurusan">Profil Jurusan </a>
                         </li>
                         <li>
                             <i class="icofont-simple-right"></i>
-                            <a href="service-details.html">Penandatanganan MOU </a>
+                            <a href="/layananortu">Layanan Orang Tua </a>
                         </li>
-                        <li>
-                            <i class="icofont-simple-right"></i>
-                            <a href="service-details.html">Lowongan Kerja BTPN</a>
-                        </li>
+                        
                     </ul>
                 </div>
             </div>
@@ -67,28 +64,23 @@
                     <ul>
                         <li>
                             <i class="icofont-simple-right"></i>
-                            <a href="index.html">Agenda Sekolah</a>
+                            <a href="/data/ekstraa">Ekstrakurikuler</a>
+                        </li>
+                        
+                        <li>
+                            <i class="icofont-simple-right"></i>
+                            <a href="/BKK/kegiatan-bkk">Kegiatan BKK</a>
+                        </li>
+                        
+                        <li>
+                            <i class="icofont-simple-right"></i>
+                            <a href="/BKK/lowongan-kerja">Lowongan Kerja</a>
                         </li>
                         <li>
                             <i class="icofont-simple-right"></i>
-                            <a href="about.html">Informasi Sekolah</a>
+                            <a href="/alumni/testimoni">Testimoni Alumni</a>
                         </li>
-                        <li>
-                            <i class="icofont-simple-right"></i>
-                            <a href="blog.html">Kegiatan BKK</a>
-                        </li>
-                        <li>
-                            <i class="icofont-simple-right"></i>
-                            <a href="team.html">Kegiatan Sekolah</a>
-                        </li>
-                        <li>
-                            <i class="icofont-simple-right"></i>
-                            <a href="testimonial.html">Lowongan Kerja</a>
-                        </li>
-                        <li>
-                            <i class="icofont-simple-right"></i>
-                            <a href="testimonial.html">Artikel Guru</a>
-                        </li>
+                       
                     </ul>
                 </div>
             </div>

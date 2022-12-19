@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use Illuminate\Support\Str;
 use App\Models\kegiatanbkk;
+use App\Models\kewirausahaansketsu;
 use App\Models\strukturbkk;
 use App\Models\visimisibkk;
 use App\Models\sidestruktur;
@@ -49,7 +50,7 @@ class Admincontroller extends Controller
     //start profileditsekolahrujukan
     public function profil()
     {
-        $profil = profilsekolah::find(1);
+        $profil = profilsekolah::all()->first();
         return view('admin.profil.profil.profil', compact('profil'));
     }
     public function addprofil(Request $request, $profil)
@@ -91,7 +92,7 @@ class Admincontroller extends Controller
     // start profilvisimisi-admin
     public function profilvisimisi()
     {
-        $data = profilvisimisi::find(1);
+        $data = profilvisimisi::all()->last();
         // $data
         return view('admin.profil.visimisi.visimisi', compact('data'));
     }
@@ -296,7 +297,7 @@ class Admincontroller extends Controller
         $file->judul_fotoside = $request->judul_fotoside;
         $file->foto_side = json_encode($files);
         $file->save();
-        dd($file);
+        // dd($file);
         return redirect()->route('sejarahsingkat')->with('success', 'Berhasil Di Edit');
     }
 
@@ -306,7 +307,7 @@ class Admincontroller extends Controller
         $data->delete();
         return redirect()->route('sejarahsingkat')->with('success', 'Berhasil Di Hapus');
     }
-            //side sejarah
+    //side sejarah
     public function sidesejarahsingkat()
     {
         return view('Admin.profil.sejarahsingkat.addsidesejarahsingkat');
@@ -329,7 +330,7 @@ class Admincontroller extends Controller
         // dd($model);
         return redirect('/index/sejarahsingkat')->with("success", "data foto side berhasil ditambahkan");
     }
-    public function editsidesejarah(Request $request,$idarray)
+    public function editsidesejarah(Request $request, $idarray)
     {
         $data = sejarahsingkat::find(1);
         if ($request->hasFile('foto_side')) {
@@ -341,7 +342,7 @@ class Admincontroller extends Controller
             $data->save();
         }
         // dd($data);
-        return redirect('/index/sejarahsingkat')->with("success","data berhasil diedit");
+        return redirect('/index/sejarahsingkat')->with("success", "data berhasil diedit");
     }
     //end sejarah singkat
     //start sekolah rujukan
@@ -424,9 +425,11 @@ class Admincontroller extends Controller
     //start sobkk
     public function sobkk()
     {
-        $data = strukturbkk::find(1);
-        $foto = explode(',', $data->foto_member);
-        $nama = explode('+', $data->nama_member);
+        $data = strukturbkk::all()->first();
+        // dd($
+        $foto = json_decode($data->foto_member);
+        $nama = json_decode($data->nama_member);
+        // dd($foto);
         return view("Admin.bkk.strukturbkk.strukturbkk", compact("data", "foto", "nama"));
     }
     public function editviewsobkk()
@@ -441,6 +444,7 @@ class Admincontroller extends Controller
     }
     public function editupdatesobkk(Request $request)
     {
+        dd($request->all());
         $data = strukturbkk::find(1);
         $data->update([
             'isi_artikel' => $request->isi_artikel,
@@ -458,16 +462,16 @@ class Admincontroller extends Controller
     public function sidesobkk()
     {
 
-        $tes1 = ["detailbkk1.jpg", "detailbkk2.jpg", "detailbkk3.jpg", "detailbkk4.jpg", "detailbkk5.jpg"];
-        $tes2 = json_encode($tes1);
-        dd($tes2);
+        // $tes1 = ["detailbkk1.jpg", "detailbkk2.jpg", "detailbkk3.jpg", "detailbkk4.jpg", "detailbkk5.jpg"];
+        // $tes2 = json_encode($tes1);
+        // dd($tes2);
         return view("Admin.bkk.strukturbkk.sidestruktursobkk");
     }
     public function editupdatesidesobkk(Request $request)
     {
         $data = strukturbkk::find(1);
-        $foto = explode(',', $data->foto_member);
-        $nama = explode('+', $data->nama_member);
+        $foto = json_decode($data->foto_member);
+        $nama = json_decode($data->nama_member);
         $files = [];
         if ($request->hasfile('foto_member')) {
             foreach ($request->foto_member as $file) {
@@ -477,11 +481,30 @@ class Admincontroller extends Controller
             }
         }
         $foto_up = array_merge($foto, $files);
-        $data->foto_member = implode(',', $foto_up);
+        $data->foto_member = json_encode($foto_up);
         $nama_up = array_merge($nama, $request->nama_member);
-        $data->nama_member = implode('+', $nama_up);
+        $data->nama_member = json_encode($nama_up);
         $data->save();
         return redirect('/index/sobkk')->with("success", "angggota berhasil ditambagkan");
+    }
+    public function oneupdatesidesobkk(Request $request, $key)
+    {
+        $data = strukturbkk::get()->first();
+        $nama = json_decode($data->nama_member);
+        $foto = json_decode($data->foto_member);
+        $fotoup = $foto[$key];
+        if ($request->hasFile('foto')) {
+            $request->file('foto')->move('assets/img/so/', $request->file('foto')->getClientOriginalName());
+            $fotoup = $request->file('foto')->getClientOriginalName();
+        }
+        $nama[$key] = $request->nama;
+        $foto[$key] = $fotoup;
+        $data->nama_member = json_encode($nama);
+        $data->foto_member = json_encode($foto);
+        // dd($data->nama_member);
+        $data->save();
+        // dd($data);
+        return redirect("/index/sobkk")->with("success", "data berhasil di upadte");
     }
     //end sobkk
 
@@ -514,37 +537,78 @@ class Admincontroller extends Controller
         // dd($model);
         return redirect("/index/kegiatan-bkk")->with("success", "Data Berhasil Ditambahkan");
     }
-    public function viewkegiatanbkk($id){
+    public function viewkegiatanbkk($id)
+    {
         $data = kegiatanbkk::findorfail($id);
-        return view("Admin.bkk.kegiatan_bkk.viewkegiatanbkk",compact("data"));
+        return view("Admin.bkk.kegiatan_bkk.viewkegiatanbkk", compact("data"));
     }
-    public function editkegiatanbkk(Request $request,$id){
+    public function editkegiatanbkk(Request $request, $id)
+    {
         // dd($request->foto);
         $data = kegiatanbkk::findorfail($id);
         $data->update([
             "judul" => $request->judul,
         ]);
-        $keyarray1 =  array_keys($request->foto);
-        $foto = [];
-        // $hasil = array_combine($tes,$foto);
-        $i = 0;
-        if($request->hasfile('foto')){
+
+        if ($request->hasfile('foto')) {
+            $keyarray1 =  array_keys($request->foto);
+            $foto = [];
+            // $hasil = array_combine($tes,$foto);
+            $i = 0;
             foreach ($request->foto as $file) {
                 $name = $file->getClientOriginalName();
                 $file->move(public_path('assets/img/detailbkk/'), $name);
                 $foto[$keyarray1[$i]] = $name;
                 $i++;
             }
+            $fotoin = json_decode($data->foto);
+            // dd($foto);
+            foreach ($keyarray1 as $key) {
+                $fotoin[$key] = $foto[$key];
+            }
+            $data->foto = $fotoin;
+            $data->save();
         }
-        $fotoin =json_decode($data->foto);
-        // dd($foto);
-        foreach($keyarray1 as $key){
-            $fotoin[$key] = $foto[$key];
-        }
-        $data->foto = $fotoin;
-        $data->save();
         return redirect("/index/kegiatan-bkk");
     }
+    public function deletekegiatanbkk($id){
+        $data = kegiatanbkk::findorfail($id);
+        $data->delete();
+        return redirect("/index/kegiatan-bkk")->with("success","Data Berhasil dihapus");
+    }
     //end kegiatan bkk
+    //start kewirausahaan bkk
+    public function kewirausahaansketsu(){
+        $data = kewirausahaansketsu::all()->first();
+        return view("Admin.bkk.kewirausahaansketsu.kewirausahaansketsu",compact("data"));
+    }
+    public function addalumnikbkk(){
+
+        return view("Admin.bkk.kewirausahaansketsu.addalumnikbkk");
+    }
+    public function insertalumnikbkk(request $request){
+        $model = kewirausahaansketsu::all()->first();
+        // dd($data);
+        $files = [];
+        if ($request->hasfile('foto')) {
+            foreach ($request->foto as $file) {
+                $name = $file->getClientOriginalName();
+                $file->move(public_path('/assets/img/kewirausahaansketsu/'), $name);
+                $files[] = $name;
+            }
+        }
+        if(is_null($model)){
+        $model  = new kewirausahaansketsu;
+        $model->wirausahaalumni = json_encode($files);
+        // $model->wirausahapesertadidik = "";
+        $model->save();
+        }
+        // $fotoside = implode(',',$files);
+        // $model  = kewirausahaansketsu::all()->first();
+        $model->wirausahaalumni = json_encode($files);
+        $model->save();
+        return redirect("/index/kewirausahaan-sketsu")->with("success","data berhasil ditambahkan");
+    }
+    //end kewirausahaan bkk
     ///////////////////// END BKK LANDINGPAGE ADMIN ///////////////////////////
 }
