@@ -21,6 +21,7 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([
             alumni::class,
+            Bimbingankarir::class,
             blog::class,
             dharma::class,
             ekstra::class,

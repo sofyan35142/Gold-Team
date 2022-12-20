@@ -14,6 +14,7 @@ use App\Models\sejarahsingkat;
 use App\Models\sekolahrujukan;
 use App\Models\sekolahadiwiyata;
 use App\Models\strukturorganisasi;
+use App\Models\Bimbingankarir;
 
 class Admincontroller extends Controller
 {
@@ -553,6 +554,69 @@ class Admincontroller extends Controller
         return redirect("/index/kegiatan-bkk")->with("success","Data Berhasil dihapus");
     }
     //end kegiatan bkk
+
+
+    //start bimbingan karir
+    public function bimbingan_bkk()
+    {
+        $data = Bimbingankarir::all();
+        return view("Admin.bkk.bimbingan_karir.bimbingan", compact("data"));
+    }
+    public function addbimbingan()
+    {
+        return view("Admin.bkk.bimbingan_karir.addbimbingan");
+    }
+    public function insertbimbingan(Request $request)
+    {
+        $data = Bimbingankarir::create([
+            'judul' => $request->judul,
+            'link' => $request->link,
+            'foto' => $request->foto
+        ]);
+        // dd($data);
+        if ($request->hasFile('foto')) {
+            $request->file('foto')->move('foto/', $request->file('foto')->getClientOriginalName());
+            $data->foto = $request->file('foto')->getClientOriginalName();
+            $data->save();
+        }
+        return redirect("/index/bimbingan-karir")->with("success", "Data Berhasil Ditambahkan");
+    }
+    public function viewbimbingan($id)
+    {
+        $data = Bimbingankarir::findorfail($id);
+        return view("Admin.bkk.bimbingan_karir.updatebimbingan", compact("data"));
+    }
+    public function editbimbingan(Request $request, $id)
+    {
+        $data = Bimbingankarir::find($id);
+        if ($request->hasFile('foto')) {
+            $request->file('foto')->move('foto/', $request->file('foto')->getClientOriginalName());
+            $namafoto = $request->file('foto')->getClientOriginalName();
+            $data->update([
+                'foto' => $namafoto,
+                'judul' => $request->judul,
+                'link' => $request->link,
+                
+            ]);
+        } else {
+            $data->update([
+                //'foto' => request->foto
+                'judul' => $request->judul,
+                'link' => $request->link,
+                
+                ]);
+            }
+        return redirect("/index/bimbingan-karir");
+    }
+    public function deletebimbingan($id)
+    {
+        $data = Bimbingankarir::findorfail($id);
+        $data->delete();
+        return redirect("/index/bimbingan-karir")->with("success", "Data Berhasil dihapus");
+    }
+    //end kegiatan bkk
+
+
     //start kewirausahaan bkk
     public function kewirausahaansketsu(){
         $data = kewirausahaansketsu::all()->first();

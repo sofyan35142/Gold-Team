@@ -31,8 +31,13 @@
                         <h2>Perusahaan Mitra</h2>
                         <ul>
                             <li>
-                                <a href="/">Perusahaan Mitra</a>
+                                <a href="/BKK">Bursa Kerja Khusus</a>
                             </li>
+                            <li>
+                                <i class="icofont-rounded-double-right"></i>
+                                Perusahaan Mitra
+                            </li>
+                            
                         </ul>
                     </div>
                 </div>

@@ -29,7 +29,7 @@
                         <h2>Bursa Kerja Khusus</h2>
                         <ul>
                             <li>
-                                <a href="/">Bursa Kerja Khusus</a>
+                                <a href="/BKK">Bursa Kerja Khusus</a>
                             </li>
                         </ul>
                     </div>

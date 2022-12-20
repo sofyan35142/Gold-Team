@@ -52,14 +52,17 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="row">
+                        @foreach ($data as $biker)
                         <div class="col-lg-4 col-md-6">
-                            <div class="service-item">
-                                <img class="img-bkk" src="../foto/wasap.png" alt="">
+                            
+                               <div class="service-item">
+                                
+                                <img class="img-bkk" src="{{ asset('foto/' . $biker->foto) }}" alt="">
 
-                                <h3>FORUM TANYA JAWAB BIMBINGAN KERJA</h3>
+                                <h3>{{$biker->judul}}</h3>
                                 
                                 <div class="theme-button">
-                                    <a href="/tkr" class="default-btn">Selengkapnya</a>
+                                    <a href="{{$biker->link}}" class="default-btn">Lihat</a>
                                 </div>
                                 <div class="service-shape">
                                     <img src="../assets/img/service/shapes/service-pattern-6.png" alt="shape">
@@ -68,9 +71,11 @@
                                     <img src="../assets/img/service/shapes/service-pattern-9.png" alt="shape">
                                     <img src="../assets/img/service/shapes/service-pattern-10.png" alt="shape">
                                 </div>
-                            </div>
+                            </div>                                
+                            
                         </div>
-                        <div class="col-lg-4 col-md-6">
+                        @endforeach
+                        {{-- <div class="col-lg-4 col-md-6">
                             <div class="service-item">
                                 <img class="img-bkk" src="../guru/bkk.png" alt="">
                                 <h3>APLIKASI BURSA KERJA KHUSUS</h3>
@@ -239,7 +244,7 @@
                                     <img src="../assets/img/service/shapes/service-pattern-10.png" alt="shape">
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
 
                     </div>
                 </div>
