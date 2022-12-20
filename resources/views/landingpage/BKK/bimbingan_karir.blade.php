@@ -29,15 +29,15 @@
                         <h2>Kegiatan BKK</h2>
                         <ul>
                             <li>
-                                <a href="/">Bursa Kerja Khusus</a>
+                                <a href="/">Beranda</a>
                             </li>
                             <li>
                                 <i class="icofont-rounded-double-right"></i>
-                                <a href="/jurusan">Kegiatan BKK</a>
+                                <a href="/BKK">Bursa Kerja Khusus</a>
                             </li>
                             <li>
                                 <i class="icofont-rounded-double-right"></i>
-                                <a href="/jurusan">Sosialisasi Penyesuaian Budaya Kerja dari PT. Astra Daihatsu</a>
+                                Bimbingan Karir
                             </li>
                         </ul>
                     </div>
@@ -54,10 +54,10 @@
                     <div class="row">
                         <div class="col-lg-4 col-md-6">
                             <div class="service-item">
-                                <img class="img-key" src="../guru/bkk.png" alt="">
+                                <img class="img-bkk" src="../foto/wasap.png" alt="">
 
-                                <h3>KEPUASAN ORANG TUA / WALI</h3>
-                                <p>Saran dan masukan dari Bapak & Ibu Wali murid sangat kami perlukan dalam upaya peningkatan kinerja dan pelayanan Tim BKK, maka dari itu besar harapan kami agar Orang Tua / Wali bersedia mengisi link dibawah ini sebagai bahan evaluasi kami.</p>
+                                <h3>FORUM TANYA JAWAB BIMBINGAN KERJA</h3>
+                                
                                 <div class="theme-button">
                                     <a href="/tkr" class="default-btn">Selengkapnya</a>
                                 </div>
@@ -72,10 +72,9 @@
                         </div>
                         <div class="col-lg-4 col-md-6">
                             <div class="service-item">
-                                <img class="img-key" src="foto/jurusan/tei.png" alt="">
-                                <h3>Teknik Elektronika Industri</h3>
-                                <p>Teknik Elektronik Industri (TEI) adalah bidang yang fokus mempelajari tentang
-                                    komponen listrik serta berbagai macam peralatan semi konduktor...</p>
+                                <img class="img-bkk" src="../guru/bkk.png" alt="">
+                                <h3>APLIKASI BURSA KERJA KHUSUS</h3>
+                                
                                 <div class="theme-button">
                                     <a href="/tei" class="default-btn">Selengkapnya</a>
                                 </div>
@@ -90,10 +89,9 @@
                         </div>
                         <div class="col-lg-4 col-md-6">
                             <div class="service-item">
-                                <img class="img-key" src="foto/jurusan/rpl.png" alt="">
-                                <h3>Rekayasa Perangkat Lunak</h3>
-                                <p>Program Keahlian Rekayasa Perangkat Lunak (RPL) adalah salah satu kompetensi keahlian
-                                    dalam bidang Teknologi Komputer dan Informatika yang secara...</p>
+                                <img class="img-bkk" src="../guru/bkk.png" alt="">
+                                <h3>MEDIA SOSIAL BURSA KERJA KHUSUS</h3>
+                                
                                 <div class="theme-button">
                                     <a href="/rpl" class="default-btn">Selengkapnya</a>
                                 </div>
@@ -108,10 +106,9 @@
                         </div>
                         <div class="col-lg-4 col-md-6">
                             <div class="service-item">
-                                <img class="img-key" src="foto/jurusan/tki.png" alt="">
-                                <h3>Teknik Kimia Industri</h3>
-                                <p>Program keahlian yang mempelajasi pemprosesan bahan mentah menjadi berupa barang
-                                    setengah jadi ataupun barang jadi (produk)...</p>
+                                <img class="img-bkk" src="../foto/alumni.jpg" alt="">
+                                <h3>TESTIMONI ALUMNI SMKN 1 SUKOREJO</h3>
+                               
                                 <div class="theme-button">
                                     <a href="/tki" class="default-btn">Selengkapnya</a>
                                 </div>
@@ -126,10 +123,111 @@
                         </div>
                         <div class="col-lg-4 col-md-6">
                             <div class="service-item">
-                                <img class="img-key" src="foto/jurusan/tav.png" alt="">
-                                <h3>Teknik Audio Video</h3>
-                                <p>Jurusan Teknik Audio Video (TAV), merupakan salah satu diantara lima jurusan yang ada
-                                    di SMKN 1 Sukorejo yang mendidik dan membekali...</p>
+                                <img class="img-bkk" src="../foto/ortu1.png" alt="">
+                                <h3>SURVEY KEPUASAN ORANG TUA</h3>
+                                
+                                <div class="theme-button">
+                                    <a href="/tav" class="default-btn">Selengkapnya</a>
+                                </div>
+                                <div class="service-shape">
+                                    <img src="../assets/img/service/shapes/service-pattern-6.png" alt="shape">
+                                    <img src="../assets/img/service/shapes/service-pattern-7.png" alt="shape">
+                                    <img src="../assets/img/service/shapes/service-pattern-8.png" alt="shape">
+                                    <img src="../assets/img/service/shapes/service-pattern-9.png" alt="shape">
+                                    <img src="../assets/img/service/shapes/service-pattern-10.png" alt="shape">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item">
+                                <img class="img-bkk" src="../foto/lamaran.png" alt="">
+                                <h3>CONTOH SURAT LAMARAN PEKERJAAN</h3>
+                                
+                                <div class="theme-button">
+                                    <a href="/tav" class="default-btn">Selengkapnya</a>
+                                </div>
+                                <div class="service-shape">
+                                    <img src="../assets/img/service/shapes/service-pattern-6.png" alt="shape">
+                                    <img src="../assets/img/service/shapes/service-pattern-7.png" alt="shape">
+                                    <img src="../assets/img/service/shapes/service-pattern-8.png" alt="shape">
+                                    <img src="../assets/img/service/shapes/service-pattern-9.png" alt="shape">
+                                    <img src="../assets/img/service/shapes/service-pattern-10.png" alt="shape">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item">
+                                <img class="img-bkk" src="../foto/cv.png" alt="">
+                                <h3>CONTOH CURRICULUM VITAE</h3>
+                                
+                                <div class="theme-button">
+                                    <a href="/tav" class="default-btn">Selengkapnya</a>
+                                </div>
+                                <div class="service-shape">
+                                    <img src="../assets/img/service/shapes/service-pattern-6.png" alt="shape">
+                                    <img src="../assets/img/service/shapes/service-pattern-7.png" alt="shape">
+                                    <img src="../assets/img/service/shapes/service-pattern-8.png" alt="shape">
+                                    <img src="../assets/img/service/shapes/service-pattern-9.png" alt="shape">
+                                    <img src="../assets/img/service/shapes/service-pattern-10.png" alt="shape">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item">
+                                <img class="img-bkk" src="../foto/wawan.jpg" alt="">
+                                <h3>TIPS DAN TRIK BERWAWANCARA</h3>
+                                
+                                <div class="theme-button">
+                                    <a href="/tav" class="default-btn">Selengkapnya</a>
+                                </div>
+                                <div class="service-shape">
+                                    <img src="../assets/img/service/shapes/service-pattern-6.png" alt="shape">
+                                    <img src="../assets/img/service/shapes/service-pattern-7.png" alt="shape">
+                                    <img src="../assets/img/service/shapes/service-pattern-8.png" alt="shape">
+                                    <img src="../assets/img/service/shapes/service-pattern-9.png" alt="shape">
+                                    <img src="../assets/img/service/shapes/service-pattern-10.png" alt="shape">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item">
+                                <img class="img-bkk" src="../foto/wira1.png" alt="">
+                                <h3>TATA CARA MEMBUKA USAHA BARU</h3>
+                                
+                                <div class="theme-button">
+                                    <a href="/tav" class="default-btn">Selengkapnya</a>
+                                </div>
+                                <div class="service-shape">
+                                    <img src="../assets/img/service/shapes/service-pattern-6.png" alt="shape">
+                                    <img src="../assets/img/service/shapes/service-pattern-7.png" alt="shape">
+                                    <img src="../assets/img/service/shapes/service-pattern-8.png" alt="shape">
+                                    <img src="../assets/img/service/shapes/service-pattern-9.png" alt="shape">
+                                    <img src="../assets/img/service/shapes/service-pattern-10.png" alt="shape">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item">
+                                <img class="img-bkk" src="../foto/images.jfif" alt="">
+                                <h3>PROSEDUR PENDIRIAN USAHA</h3>
+                                
+                                <div class="theme-button">
+                                    <a href="/tav" class="default-btn">Selengkapnya</a>
+                                </div>
+                                <div class="service-shape">
+                                    <img src="../assets/img/service/shapes/service-pattern-6.png" alt="shape">
+                                    <img src="../assets/img/service/shapes/service-pattern-7.png" alt="shape">
+                                    <img src="../assets/img/service/shapes/service-pattern-8.png" alt="shape">
+                                    <img src="../assets/img/service/shapes/service-pattern-9.png" alt="shape">
+                                    <img src="../assets/img/service/shapes/service-pattern-10.png" alt="shape">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item">
+                                <img class="img-bkk" src="../foto/kuliah.png" alt="">
+                                <h3>FORUM TANYA JAWAB BERKULIAH</h3>
+                                
                                 <div class="theme-button">
                                     <a href="/tav" class="default-btn">Selengkapnya</a>
                                 </div>

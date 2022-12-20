@@ -40,6 +40,7 @@ use App\Models\Skematerlisensi;
 use App\Models\sekolahadiwiyata;
 use App\Models\strukturbkk;
 use App\Models\strukturorganisasi;
+use App\Models\Sosmed;
 
 class LandingController extends Controller
 {
@@ -52,7 +53,8 @@ class LandingController extends Controller
         $datakepsek=kepsek::all();
         $total=totalsiswa::all();
         $video=videoprofil::all();
-        return view("landingpage.beranda.beranda", compact('data','dataa','datakepsek','total','slider','sponsor','video'));
+        $sosmed=Sosmed::all();
+        return view("landingpage.beranda.beranda", compact('data','dataa','datakepsek','total','slider','sponsor','video', 'sosmed'));
     }
 
     public function create()
@@ -62,23 +64,25 @@ class LandingController extends Controller
 
     public function jurusan()
     {
+        
         $data = Jurusan::all();
-        return view("landingpage.jurusan.jurusan", compact('data'));
+        $sosmed=Sosmed::all();
+        return view("landingpage.jurusan.jurusan", compact('data', 'sosmed'));
     }
     public function detailjurusan($id)
     {
-
+        $sosmed = Sosmed::all();
         $data = Jurusan::find($id);
         $kakomli = Kakomli::find($id);
         $modul = Modul::where('id',$id)->get();
-        return view("landingpage.jurusan.detailjurusan", compact('data', 'kakomli', 'modul'));
+        return view("landingpage.jurusan.detailjurusan", compact('data', 'kakomli', 'modul', 'sosmed'));
     }
     public function detailmodul($id)
     {
 
         $data = Modul::find($id);
-
-        return view("landingpage.jurusan.detailmodul", compact('data'));
+        $sosmed = Sosmed::all();
+        return view("landingpage.jurusan.detailmodul", compact('data', 'sosmed'));
     }
     public function tkr()
     {
@@ -108,7 +112,8 @@ class LandingController extends Controller
     public function reparasibengkel()
     {
         $data = Reparasibengkel::all();
-        return view("landingpage.jurusan.reparasibengkel", compact('data'));
+        $sosmed = Sosmed::all();
+        return view("landingpage.jurusan.reparasibengkel", compact('data', 'sosmed'));
     }
     public function modulproduktiftei()
     {
@@ -122,7 +127,8 @@ class LandingController extends Controller
     public function artikelilmiah()
     {
         $artikel = Artikel::where('id', '=', 1)->firstOrFail();
-        return view("landingpage.jurusan.artikelilmiah", compact('artikel'));
+        $sosmed = Sosmed::all();
+        return view("landingpage.jurusan.artikelilmiah", compact('artikel', 'sosmed'));
     }
     public function modulproduktiftki()
     {
@@ -139,8 +145,13 @@ class LandingController extends Controller
         $layor = Layananortu::with('jurusan');
         $data = Layananortu::all();
         $datajurusan = Jurusan::all();
+<<<<<<< HEAD
+        $sosmed = Sosmed::all();
+        return view("landingpage.layananortu.layananortu", compact('layor', 'data', 'datajurusan', 'sosmed'));
+=======
 
         return view("landingpage.layananortu.layananortu", compact('layor', 'data', 'datajurusan'));
+>>>>>>> f629c2da7737c3647c25c887e393f1727ad4d088
     }
     public function storelayor(Request $request)
     {
@@ -149,6 +160,7 @@ class LandingController extends Controller
 
         ]);
         $data = Layananortu::create($request->all());
+        
         // dd($data);
 
         return redirect()->route('layananortu')->with('info', 'Saran anda berhasil dikirim!.');
@@ -158,185 +170,238 @@ class LandingController extends Controller
     ////LSP////
     public function lsp()
     {
+        $sosmed = Sosmed::all();
         $data = LSP::where('id', '=', 1)->firstOrFail();
-        return view("landingpage.lsp.lsp", compact('data'));
+        return view("landingpage.lsp.lsp", compact('data', 'sosmed'));
     }
     public function visimisilsp()
     {
+        $sosmed = Sosmed::all();        
         $visi = Visimisilsp::where('id', '=', 1)->firstOrFail();
-        return view("landingpage.lsp.visimisilsp", compact('visi'));
+        return view("landingpage.lsp.visimisilsp", compact('visi', 'sosmed'));
     }
     public function skematerlisensi()
     {
+        $sosmed = Sosmed::all();
         $skema = Skematerlisensi::where('id', '=', 1)->firstOrFail();
-        return view("landingpage.lsp.skematerlisensi", compact('skema'));
+        return view("landingpage.lsp.skematerlisensi", compact('skema', 'sosmed'));
     }
     public function tempatujikom()
     {
         $ujikom = Tempatujikom::where('id', '=', 1)->firstOrFail();
-
-        return view("landingpage.lsp.tempatujikom", compact('ujikom'));
+        $sosmed = Sosmed::all();
+        return view("landingpage.lsp.tempatujikom", compact('ujikom', 'sosmed'));
     }
     public function jmlpemegangsertifikat()
     {
         $jml = Jmlpemegang::where('id', '=', 1)->firstOrFail();
-        return view("landingpage.lsp.jmlpemegangsertifikat", compact('jml'));
+        $sosmed = Sosmed::all();
+        return view("landingpage.lsp.jmlpemegangsertifikat", compact('jml', 'sosmed'));
     }
 
     //start profil Sekolah
     public function profil()
     {
         $data = profilsekolah::all();
-        return view("landingpage.profile.profil",compact('data'));
+        $sosmed = Sosmed::all();
+        return view("landingpage.profile.profil",compact('data', 'sosmed'));
     }
     public function visimisi()
     {
+        $sosmed = Sosmed::all();
         $data =profilvisimisi::all();
-        return view("landingpage.profile.visimisi",compact('data'));
+        return view("landingpage.profile.visimisi",compact('data', 'sosmed'));
     }
 
     public function strukturorganisasi()
     {
         $data = strukturorganisasi::find(1);
         $dataside = sidestruktur::all();
-        return view("landingpage.profile.strukturorganisasi",compact('data','dataside'));
+        $sosmed = Sosmed::all();
+        return view("landingpage.profile.strukturorganisasi",compact('data','dataside', 'sosmed'));
     }
     public function sejarahsingkat()
     {
         $data = sejarahsingkat::find(1);
         $fotoside = json_decode($data->foto_side);
-        return view("landingpage.profile.sejarahsingkat",compact('data','fotoside'));
+        $sosmed = Sosmed::all();
+        return view("landingpage.profile.sejarahsingkat",compact('data','fotoside', 'sosmed'));
     }
     public function sekolahadiwiyata()
     {
         $adiwiyata = sekolahadiwiyata::find(1);
-        return view("landingpage.profile.sekolahadiwiyata",compact('adiwiyata'));
+        $sosmed = Sosmed::all();
+        return view("landingpage.profile.sekolahadiwiyata",compact('adiwiyata', 'sosmed'));
     }
     public function sekolahrujukan()
     {
         $data = sekolahrujukan::find(1);
-        return view("landingpage.profile.sekolahrujukan",compact('data'));
+        $sosmed = Sosmed::all();
+        return view("landingpage.profile.sekolahrujukan",compact('data', 'sosmed'));
     }
     //end profil sekolah
 
     public function guru()
     {
         $data=Guru::all();
-        return view("landingpage.beranda.guru&staf", compact('data'));
+        $sosmed = Sosmed::all();
+        return view("landingpage.beranda.guru&staf", compact('data', 'sosmed'));
     }
 
     public function keahlian()
     {
-        return view("landingpage.beranda.keahlian");
+        $sosmed = Sosmed::all();
+        return view("landingpage.beranda.keahlian", compact('sosmed'));
     }
     public function lokerbkk()
     {
-        return view("landingpage.beranda.lokerbkk");
+        $sosmed = Sosmed::all();
+        return view("landingpage.beranda.lokerbkk", compact('data'));
     }
     public function agenda()
     {
-        return view("landingpage.beranda.agenda");
+        $sosmed = Sosmed::all();
+        return view("landingpage.beranda.agenda", compact('data'));
     }
 
 
     //start bkk
     public function bkk()
     {
-        return view("landingpage.BKK.bkk");
+        $sosmed = Sosmed::all();
+        return view("landingpage.BKK.bkk", compact('sosmed'));
     }
     public function visimisi_bkk()
     {
         $datavisimisibkk = visimisibkk::find(1);
-        return view("landingpage.BKK.visimisi_bkk",compact('datavisimisibkk'));
+        $sosmed = Sosmed::all();
+        return view("landingpage.BKK.visimisi_bkk",compact('datavisimisibkk', 'sosmed'));
     }
     public function strukturorganisasi_bkk()
     {
         $data = strukturbkk::find(1);
+<<<<<<< HEAD
+        $nama = explode('+',$data->nama_member);
+        $foto = explode(',',$data->foto_member);
+        $sosmed = Sosmed::all();
+=======
         $nama = json_decode($data->nama_member);
         $foto = json_decode($data->foto_member);
+>>>>>>> f629c2da7737c3647c25c887e393f1727ad4d088
         // dd($nama);
-        return view("landingpage.BKK.strukturorganisasi_bkk",compact('data','nama','foto'));
+        return view("landingpage.BKK.strukturorganisasi_bkk",compact('data','nama','foto', 'sosmed'));
     }
     public function kegiatan_bkk()
     {
+<<<<<<< HEAD
+        $kegiatan = kegiatanbkk::all();
+        $sosmed = Sosmed::all();
+        return view("landingpage.BKK.kegiatan_bkk",compact('kegiatan', 'sosmed'));
+=======
         $kegiatan = kegiatanbkk::paginate(6);
         return view("landingpage.BKK.kegiatan_bkk",compact('kegiatan'));
+>>>>>>> f629c2da7737c3647c25c887e393f1727ad4d088
     }
     public function detail_kegiatan_bkk($id)
     {
         $data = kegiatanbkk::find($id);
-        return view("landingpage.BKK.detail.kegiatan_bkk",compact("data"));
+        $sosmed = Sosmed::all();
+        return view("landingpage.BKK.detail.kegiatan_bkk",compact("data", "sosmed"));
     }
     public function kewirausahaan_bkk()
     {
+<<<<<<< HEAD
+        $sosmed = Sosmed::all();
+        return view("landingpage.BKK.kewirausahaan_bkk", compact('sosmed'));
+=======
         $data = kewirausahaansketsu::all()->first();
         return view("landingpage.BKK.kewirausahaan_bkk",compact("data"));
+>>>>>>> f629c2da7737c3647c25c887e393f1727ad4d088
     }
     public function lowongan_kerja()
     {
+<<<<<<< HEAD
         $data = lowongankerja::paginate(6)->sortByDesc("id");
         return view("landingpage.BKK.lowongan_kerja",compact("data"));
+=======
+        $sosmed = Sosmed::all();
+        return view("landingpage.BKK.lowongan_kerja", compact('sosmed'));
+>>>>>>> 1b25ed6f97ec5eec5bba24418b4f3f240b1ff3d2
     }
     public function detail_lowongan()
     {
-        return view("landingpage.BKK.detail.detaillowongan");
+        $sosmed = Sosmed::all();
+        return view("landingpage.BKK.detail.detaillowongan", compact('sosmed'));
     }
     public function bimbingan_karir()
     {
-        return view("landingpage.BKK.bimbingan_karir");
+        $sosmed = Sosmed::all();
+        return view("landingpage.BKK.bimbingan_karir", compact('sosmed'));
     }
     public function perusahaan_mitra()
     {
-        return view("landingpage.BKK.perusahaan_mitra");
+        $sosmed = Sosmed::all();
+        return view("landingpage.BKK.perusahaan_mitra", compact('sosmed'));
     }
     //end BKK
 
     //Alumni
     public function testimonialumni()
     {
-        return view("landingpage.alumni.testialumni");
+        $sosmed = Sosmed::all();
+        return view("landingpage.alumni.testialumni", compact('sosmed'));
     }
-        public function profilealumni(){
-        return view('landingpage.alumni.profilealumni');
+    public function profilealumni()
+    {
+        $sosmed = Sosmed::all();
+        return view('landingpage.alumni.profilealumni', compact('sosmed'));
     }
 
     //Data
         public function dharma(){
             $data=Dharma::all();
-        return view('landingpage.Data.dharmawanita', compact('data') );
+        $sosmed = Sosmed::all();
+        return view('landingpage.Data.dharmawanita', compact('data', 'sosmed') );
     }
     public function datawalas(){
         $data=walas::all();
-        return view('landingpage.Data.datawalas', compact('data'));
+        $sosmed = Sosmed::all();
+        return view('landingpage.Data.datawalas', compact('data', 'sosmed'));
     }
     public function ekstra(){
         $data=ekstra::all();
-        return view('landingpage.Data.Ekstrakulikuler', compact('data'));
+        $sosmed = Sosmed::all();
+        return view('landingpage.Data.Ekstrakulikuler', compact('data', 'sosmed'));
     }
     public function prestasi(){
         $prestasi=prestasi::all();
-        return view('landingpage.Data.prestasi', compact('prestasi'));
+        $sosmed = Sosmed::all();
+        return view('landingpage.Data.prestasi', compact('prestasi', 'sosmed'));
     }
     public function detailekstra($id){
         $detailekstra=ekstra::where('id',$id)->get();
-        return view('landingpage.Data.detailekstra', compact('detailekstra'));
+        $sosmed = Sosmed::all();
+        return view('landingpage.Data.detailekstra', compact('detailekstra', 'sosmed'));
     }
     public function detailprestasi($id){
         $detailprestasi=prestasi::where('id',$id)->get();
         $prestasiside=prestasi::latest()->get();
-        return view('landingpage.Data.detailprestasi', compact('detailprestasi', 'prestasiside'));
+        $sosmed = Sosmed::all();
+        return view('landingpage.Data.detailprestasi', compact('detailprestasi', 'prestasiside', 'sosmed'));
     }
 
     public function blogdetail($id){
         $data=Blog::where('id',$id)->get();
         $kategoriblog=kategoriblog::all();
         $blogside=Blog::latest()->get();
+        $sosmed = Sosmed::all();
         // dd($blogside);
         // dd($blogside);
-        return view('landingpage.beranda.detailagenda', compact('data', 'kategoriblog', 'blogside'));
+        return view('landingpage.beranda.detailagenda', compact('data', 'kategoriblog', 'blogside', 'sosmed'));
     }
 
     public function blogbanyak(){
-        return view ('landingpage.beranda.bloglebihbanyak');
+        $sosmed = Sosmed::all();
+        return view ('landingpage.beranda.bloglebihbanyak', compact('sosmed'));
     }
 }
