@@ -5,6 +5,7 @@ use App\Http\Controllers\BerandaController;
 use App\Http\Controllers\JurusanController;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\DataController;
+use App\Http\Controllers\SosmedController;
 use App\Http\Controllers\KakomliController;
 use App\Http\Controllers\LSPController;
 use App\Http\Controllers\ModulController;
@@ -308,6 +309,14 @@ Route::post('/insertkakomli', [KakomliController::class, 'store']);
 Route::get('/kakomli/edit/{id}', [KakomliController::class, 'show']);
 Route::post('/kakomli/update/{id}', [KakomliController::class, 'update']);
 Route::get('/kakomli/deletekakomli/{id}', [KakomliController::class, 'destroy']);
+
+//SosialMedia
+Route::get('/index/sosmed', [SosmedController::class, 'sosmed'])->name('Sosmed');;
+Route::get('/index/tambahsosmed', [SosmedController::class, 'create']);
+Route::post('/insertsosmed', [SosmedController::class, 'store']);
+Route::get('/sosmed/edit/{id}', [SosmedController::class, 'show']);
+Route::post('/sosmed/update/{id}', [SosmedController::class, 'update']);
+Route::get('/sosmed/deletesosmed/{id}', [SosmedController::class, 'destroy']);
 
 //LSP ADMIN
 Route::get('/index/lsp', [LSPController::class, 'indexlsp'])->name('indexlsp');

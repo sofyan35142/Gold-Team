@@ -250,18 +250,19 @@
                 <div class="col-lg-6">
                     <div class="footer-social">
                         <ul>
-                            <li>
-                                <a href="https://www.facebook.com/pages/Smkn-1-Sukorejo/1644253285790355"><i class="icofont-facebook"></i></a>
-                            </li>
+                            @foreach ($sosmed as $sos)
+                             <li>
+                                <a href="{{$sos->link}}"><i class="{{$sos->script_logo}}"></i></a>
+                            </li>   
+                            @endforeach
+                            
                             {{-- <li>
                                 <a href="#"><i class="icofont-twitter"></i></a>
                             </li>
                             <li>
                                 <a href="#"><i class="icofont-linkedin"></i></a>
                             </li> --}}
-                            <li>
-                                <a href="https://instagram.com/sketsu_bisa?igshid=YmMyMTA2M2Y="><i class="icofont-instagram"></i></a>
-                            </li>
+                            
                         </ul>
                     </div>
                 </div>

@@ -22,18 +22,12 @@
             <div class="col-md-4">
                 <div class="header-social text-end">
                     <ul>
-                        <li>
-                            <a href="#"><i class="icofont-facebook"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="icofont-twitter"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="icofont-linkedin"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="icofont-instagram"></i></a>
-                        </li>
+                         @foreach ($sosmed as $sos)
+                             <li>
+                                <a href="{{$sos->link}}"><i class="{{$sos->script_logo}}"></i></a>
+                            </li>   
+                         @endforeach
+                        
                     </ul>
                 </div>
             </div>
