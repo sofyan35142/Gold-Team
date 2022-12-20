@@ -22,23 +22,11 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="card mb-4">
-                                    <h5 class="card-header">Tambah Kegiatan BKK</h5>
+                                    <h5 class="card-header">Tambah Foto Kewirausahaan alumni</h5>
                                     <div class="card-body">
-                                        <form action="/insertkegiatanbkk" method="POST"
+                                        <form action="/insertalumnibkk" method="POST"
                                             enctype="multipart/form-data">
                                             @csrf
-                                            <div class="mb-3">
-                                                <label for="defaultFormControlInput" class="form-label">judul</label>
-                                                <input type="text" name="judul" class="form-control"
-                                                    id="defaultFormControlInput"
-                                                    aria-describedby="defaultFormControlHelp" />
-                                            </div>
-                                            {{-- <div class="mb-3">
-                                                <label for="defaultFormControlInput" class="form-label">judul</label>
-                                                <input type="text" name="foto" class="form-control"
-                                                    id="defaultFormControlInput"
-                                                    aria-describedby="defaultFormControlHelp" />
-                                            </div> --}}
                                             <div class="mb-3">
                                                 <div class="upload__box">
                                                     <div class="upload__btn-box">

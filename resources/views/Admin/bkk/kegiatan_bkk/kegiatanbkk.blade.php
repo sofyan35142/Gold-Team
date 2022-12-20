@@ -40,7 +40,7 @@
                                         <?php $no = 1; ?>
                                         @foreach ($data as $kegiatan)
                                             <tr>
-                                                <td>{{ $no }}</td>
+                                                <td>{{ $no++ }}</td>
                                                 <td>{{$kegiatan->judul}}</td>
                                                 <td style="width: 23pc">
                                                     @foreach (json_decode($kegiatan->foto) as $foto)
@@ -52,7 +52,7 @@
                                                             class="fa-solid fa-pen-to-square"></i></a>
                                                     <a href="#" class="btn btn-danger delete"
                                                         data-id="{{ $kegiatan->id }}"
-                                                        data-jurusan="{{ $kegiatan->judul }}"><i
+                                                        data-kegiatan="{{ $kegiatan->judul }}"><i
                                                             class="fa-solid fa-trash"></i></a>
                                                 </td>
                                             </tr>
@@ -108,23 +108,23 @@
 <script>
     $('.delete').click(function() {
         var jurusanid = $(this).attr('data-id');
-        var jurusan = $(this).attr('data-jurusan');
+        var jurusan = $(this).attr('data-kegiatan');
 
         swal({
                 title: "Apakah kamu yakin?",
-                text: "Kamu akan mereset data ini",
+                text: "Kamu akan menghapus data " + jurusan,
                 icon: "warning",
                 buttons: true,
                 dangerMode: true,
             })
             .then((willDelete) => {
                 if (willDelete) {
-                    window.location = "/deletevisimisibkk"
-                    swal("Data berhasil direset", {
+                    window.location = "/deletekegiatanbkk/" + jurusanid +""
+                    swal("Data berhasil dihapus", {
                         icon: "success",
                     });
                 } else {
-                    swal("Data tidak jadi direset");
+                    swal("Data tidak jadi dihapus");
                 }
             });
     });

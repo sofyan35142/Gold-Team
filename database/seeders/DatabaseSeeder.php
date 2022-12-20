@@ -28,7 +28,7 @@ class DatabaseSeeder extends Seeder
             Jmlpemegang::class,
             jurusan::class,
             kakomli::class,
-            kepsek::class,
+            // kepsek::class,
             LSP::class,
             prestasi::class,
             profilsekolah::class,
@@ -48,7 +48,9 @@ class DatabaseSeeder extends Seeder
             walas::class,
             Reparasibengkel::class,
             strukturbkk::class,
-            sidestruktur::class
+            sidestruktur::class,
+            sejarahsingkat::class,
+            visimisibkk::class,
         ]);
     }
 }

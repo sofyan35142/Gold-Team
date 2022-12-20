@@ -43,20 +43,21 @@
             </div>
         </div>
     </div>
-
-    <div class="recent-style-two pt-100 pb-70">
-        <div class="container">
-            <div class="row">
-                <h3>WIRAUSAHA SUKSES
-                    ALUMNI SMKN 1 SUKOREJO</h3>
-                <div class="col-lg-4 col-md-6">
+    <div class="container pt-100 pb-70">
+        <h3>WIRAUSAHA SUKSES ALUMNI SMKN 1 SUKOREJO</h3>
+        <div class="carousel slide multi-item-carousel recent-style-two" id="theCarousel2">
+            <div class="carousel-inner row w-100 mx-auto">
+                @foreach (json_decode($data->wirausahaalumni) as $usahaalumni)
+                <div id="alumniusaha" class="carousel-item col-md-4">
                     <div class="recent-items">
                         <div class="recent-img">
-                            <img src="../assets/img/kewirausahaansketsu/kewirausahaansketsu2.jpg" alt="project image" height="466">
+                            <img src="{{asset("assets/img/kewirausahaansketsu/".$usahaalumni)}}" height="466"
+                                alt="project image">
                             <div class="recent-hover">
                                 <div class="d-table">
                                     <div class="d-table-cell">
-                                        <a href="../assets/img/kewirausahaansketsu/kewirausahaansketsu2.jpg" class="popup-gallery">
+                                        <a href="{{asset("assets/img/kewirausahaansketsu/".$usahaalumni)}}"
+                                            height="466" class="popup-gallery">
                                             <i class="icofont-eye-alt"></i>
                                         </a>
                                     </div>
@@ -65,14 +66,30 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                @endforeach
+            </div>
+            <a class="carousel-control-prev" href="#theCarousel2" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#theCarousel2" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <h3>WIRAUSAHA KELAS PESERTA DIDIK SMKN 1 SUKOREJO</h3>
+        <div class="carousel slide multi-item-carousel recent-style-two" id="theCarousel">
+            <div class="carousel-inner row w-100 mx-auto">
+                <div class="carousel-item active col-md-4">
                     <div class="recent-items">
                         <div class="recent-img">
-                            <img src="../assets/img/kewirausahaansketsu2.jpg" height="466" alt="project image">
+                            <img src="/assets/img/kewirausahaansketsu/kewirausahaansketsu5.jpg" height="466"
+                                alt="project image">
                             <div class="recent-hover">
                                 <div class="d-table">
                                     <div class="d-table-cell">
-                                        <a href="../assets/img/kewirausahaansketsu2.jpg" width="768" height="466" class="popup-gallery">
+                                        <a href="/assets/img/kewirausahaansketsu/kewirausahaansketsu5.jpg"
+                                            height="466" class="popup-gallery">
                                             <i class="icofont-eye-alt"></i>
                                         </a>
                                     </div>
@@ -81,14 +98,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="carousel-item col-md-4">
                     <div class="recent-items">
                         <div class="recent-img">
-                            <img src="../assets/img/kewirausahaansketsu/kewirausahaansketsu1.jpg" alt="project image" height="466">
+                            <img src="/assets/img/kewirausahaansketsu/kewirausahaansketsu6.jpg" height="466"
+                                alt="project image">
                             <div class="recent-hover">
                                 <div class="d-table">
                                     <div class="d-table-cell">
-                                        <a href="../assets/img/kewirausahaansketsu/kewirausahaansketsu1.jpg" class="popup-gallery">
+                                        <a href="/assets/img/kewirausahaansketsu/kewirausahaansketsu6.jpg"
+                                            height="466" class="popup-gallery">
                                             <i class="icofont-eye-alt"></i>
                                         </a>
                                     </div>
@@ -97,14 +116,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="carousel-item col-md-4">
                     <div class="recent-items">
                         <div class="recent-img">
-                            <img src="../assets/img/recent-work/4.png" alt="project image">
+                            <img src="/assets/img/kewirausahaansketsu/kewirausahaansketsu7.jpg" height="466"
+                                alt="project image">
                             <div class="recent-hover">
                                 <div class="d-table">
                                     <div class="d-table-cell">
-                                        <a href="../assets/img/recent-work/4.png" class="popup-gallery">
+                                        <a href="/assets/img/kewirausahaansketsu/kewirausahaansketsu7.jpg"
+                                            height="466" class="popup-gallery">
                                             <i class="icofont-eye-alt"></i>
                                         </a>
                                     </div>
@@ -113,14 +134,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="carousel-item col-md-4">
                     <div class="recent-items">
                         <div class="recent-img">
-                            <img src="../assets/img/recent-work/5.png" alt="project image">
+                            <img src="/assets/img/kewirausahaansketsu/kewirausahaansketsu8.jpg" height="466"
+                                alt="project image">
                             <div class="recent-hover">
                                 <div class="d-table">
                                     <div class="d-table-cell">
-                                        <a href="../assets/img/recent-work/5.png" class="popup-gallery">
+                                        <a href="/assets/img/kewirausahaansketsu/kewirausahaansketsu8.jpg"
+                                            height="466" class="popup-gallery">
                                             <i class="icofont-eye-alt"></i>
                                         </a>
                                     </div>
@@ -129,14 +152,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="carousel-item col-md-4">
                     <div class="recent-items">
                         <div class="recent-img">
-                            <img src="../assets/img/recent-work/11.png" alt="project image">
+                            <img src="/assets/img/kewirausahaansketsu/kewirausahaansketsu9.jpg" height="466"
+                                alt="project image">
                             <div class="recent-hover">
                                 <div class="d-table">
                                     <div class="d-table-cell">
-                                        <a href="../assets/img/recent-work/11.png" class="popup-gallery">
+                                        <a href="/assets/img/kewirausahaansketsu/kewirausahaansketsu9.jpg"
+                                            height="466" class="popup-gallery">
                                             <i class="icofont-eye-alt"></i>
                                         </a>
                                     </div>
@@ -145,95 +170,16 @@
                         </div>
                     </div>
                 </div>
-                <h3>WIRAUSAHA KELAS PESERTA DIDIK SMKN 1 SUKOREJO</h3>
-                <div class="col-lg-4 col-md-6">
+                <div class="carousel-item col-md-4">
                     <div class="recent-items">
                         <div class="recent-img">
-                            <img src="../assets/img/kewirausahaansketsu4.jpg" alt="project image" height="466">
+                            <img src="/assets/img/kewirausahaansketsu/kewirausahaansketsu5.jpg" height="466"
+                                alt="project image">
                             <div class="recent-hover">
                                 <div class="d-table">
                                     <div class="d-table-cell">
-                                        <a href="../assets/img/kewirausahaansketsu4.jpg" class="popup-gallery">
-                                            <i class="icofont-eye-alt"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="recent-items">
-                        <div class="recent-img">
-                            <img src="../assets/img/kewirausahaansketsu5.jpg" height="466" alt="project image">
-                            <div class="recent-hover">
-                                <div class="d-table">
-                                    <div class="d-table-cell">
-                                        <a href="../assets/img/kewirausahaansketsu5.jpg" width="768" height="466" class="popup-gallery">
-                                            <i class="icofont-eye-alt"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="recent-items">
-                        <div class="recent-img">
-                            <img src="../assets/img/kewirausahaan9.jpg" alt="project image" height="466">
-                            <div class="recent-hover">
-                                <div class="d-table">
-                                    <div class="d-table-cell">
-                                        <a href="../assets/img/kewirausahaan9.jpg" class="popup-gallery">
-                                            <i class="icofont-eye-alt"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="recent-items">
-                        <div class="recent-img">
-                            <img src="/assets/img/kewirausahaansketsu6.jpg" height="466" alt="project image">
-                            <div class="recent-hover">
-                                <div class="d-table">
-                                    <div class="d-table-cell">
-                                        <a href="/assets/img/kewirausahaansketsu6.jpg" height="466" class="popup-gallery">
-                                            <i class="icofont-eye-alt"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="recent-items">
-                        <div class="recent-img">
-                            <img src="../assets/img/kewirausahaansketsu7.jpg" height="466" alt="project image">
-                            <div class="recent-hover">
-                                <div class="d-table">
-                                    <div class="d-table-cell">
-                                        <a href="../assets/img/kewirausahaansketsu7.jpg" height="466" class="popup-gallery">
-                                            <i class="icofont-eye-alt"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="recent-items">
-                        <div class="recent-img">
-                            <img src="/assets/img/kewirausahaansketsu8.jpg" height="466" alt="project image">
-                            <div class="recent-hover">
-                                <div class="d-table">
-                                    <div class="d-table-cell">
-                                        <a href="/assets/img/kewirausahaansketsu8.jpg" height="466" class="popup-gallery">
+                                        <a href="/assets/img/kewirausahaansketsu/kewirausahaansketsu5.jpg"
+                                            height="466" class="popup-gallery">
                                             <i class="icofont-eye-alt"></i>
                                         </a>
                                     </div>
@@ -243,6 +189,14 @@
                     </div>
                 </div>
             </div>
+            <a class="carousel-control-prev" href="#theCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#theCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
     </div>
     @include('landingpage.layout.footer')
@@ -252,6 +206,27 @@
         <i class="icofont-scroll-long-up"></i>
     </div>
     @include('landingpage.layout.js')
+    <script>
+        $( "#alumniusaha").first().addClass( "active" );
+        // Developed at agap2
+        // Based on:
+        // http://www.codeply.com/go/s3I9ivCBYH/multi-carousel-single-slide-bootstrap-4
+
+        $('.multi-item-carousel').on('slide.bs.carousel', function(e) {
+            let $e = $(e.relatedTarget),
+                itemsPerSlide = 3,
+                totalItems = $('.carousel-item', this).length,
+                $itemsContainer = $('.carousel-inner', this),
+                it = itemsPerSlide - (totalItems - $e.index());
+            if (it > 0) {
+                for (var i = 0; i < it; i++) {
+                    $('.carousel-item', this).eq(e.direction == "left" ? i : 0).
+                    // append slides to the end/beginning
+                    appendTo($itemsContainer);
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>
