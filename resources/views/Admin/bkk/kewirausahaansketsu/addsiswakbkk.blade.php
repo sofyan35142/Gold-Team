@@ -2,7 +2,6 @@
 <html lang="en" class="light-style layout-navbar-fixed layout-menu-fixed " dir="ltr" data-theme="theme-semi-dark"
     data-assets-path="../../assets1/" data-template="vertical-menu-template-semi-dark">
 @include('Admin.layoutadmin.head')
-
 <body>
     <!-- Layout wrapper -->
     <div class="layout-wrapper layout-content-navbar  ">
@@ -22,17 +21,18 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="card mb-4">
-                                    <h5 class="card-header">Tambah foto wirausaha peserta didik</h5>
+                                    <h5 class="card-header">Tambah Foto Kewirausahaan Siswa sketsu</h5>
                                     <div class="card-body">
-                                        <form action="/insertsiswakbkk" method="POST" enctype="multipart/form-data">
+                                        <form action="/insertsiswakbkk" method="POST"
+                                            enctype="multipart/form-data">
                                             @csrf
                                             <div class="mb-3">
                                                 <div class="upload__box">
                                                     <div class="upload__btn-box">
                                                         <label class="upload__btn">
                                                             <p class="mb-0">Upload images</p>
-                                                            <input name="foto[]" type="file" multiple=""
-                                                                data-max_length="20" class="upload__inputfile">
+                                                            <input name="foto[]" type="file" multiple="" data-max_length="20"
+                                                                class="upload__inputfile">
                                                         </label>
                                                     </div>
                                                     <div class="upload__img-wrap"></div>
@@ -47,7 +47,29 @@
                     </div>
                     <!-- / Content -->
                     <!-- Footer -->
-                    @include("Admin.layoutadmin.footer")
+                    <footer class="content-footer footer bg-footer-theme">
+                        <div
+                            class="container-fluid d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
+                            <div class="mb-2 mb-md-0">
+                                ©
+                                <script>
+                                    document.write(new Date().getFullYear())
+                                </script>
+                                , made with ❤️ by <a href="https://pixinvent.com/" target="_blank"
+                                    class="footer-link fw-semibold">PIXINVENT</a>
+                            </div>
+                            <div>
+                                <a href="https://themeforest.net/licenses/standard" class="footer-link me-4"
+                                    target="_blank">License</a>
+                                <a href="https://1.envato.market/pixinvent_portfolio" target="_blank"
+                                    class="footer-link me-4">More Themes</a>
+                                <a href="https://pixinvent.com/demo/frest-clean-bootstrap-admin-dashboard-template/documentation-bs5/"
+                                    target="_blank" class="footer-link me-4">Documentation</a>
+                                <a href="https://pixinvent.ticksy.com/" target="_blank"
+                                    class="footer-link d-none d-sm-inline-block">Support</a>
+                            </div>
+                        </div>
+                    </footer>
                     <!-- / Footer -->
                     <div class="content-backdrop fade"></div>
                 </div>
@@ -138,5 +160,4 @@
         }
     </script>
 </body>
-
 </html>

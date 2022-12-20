@@ -64,7 +64,7 @@
                                 </li>
                                 <li>
                                     <i class="icofont-ui-user"></i>
-                                    <a href="#">John Doe</a>
+                                    <a href="#">Admin Sketsu</a>
                                 </li>
                             </ul>
                         </div>
@@ -77,6 +77,7 @@
                             paling akhir tanggal 19 Agustus 2022 Pukul 09.00 WIB</p>
                     </div>
                 </div>
+                {{-- sideright --}}
                 <div class="col-lg-4 main-service-area blog-side-bar border shadows mb-40px h-fc py-3">
                     <div class="service-sidebar">
                         <label>Lowongan Kerja Terbaru</label>

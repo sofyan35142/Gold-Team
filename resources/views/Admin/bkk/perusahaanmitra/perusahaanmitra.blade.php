@@ -24,88 +24,73 @@
                         <!-- DataTable with Buttons -->
                         <div class="card mb-4">
                             <div class="card-datatable table-responsive pt-0">
-                                <h5 class="card-header">Data Alumni Kewirausahaan Sketsu</h5>
-                                <a href="/index/addalumnikbkk" type="button"
-                                    class="btn rounded-pill btn-primary">Tambah
+                                <h5 class="card-header">DAFTAR MOU NAMA PERUSAHAAN MITRA SMKN 1 SUKOREJO</h5>
+                                <a href="/index/addpt" type="button" class="btn rounded-pill btn-primary">Tambah
                                     +</a>
                                 <table class="table" id="table1">
                                     <thead>
                                         <tr>
-                                            <th scope="col" style="width:75px">No.</th>
-                                            <th scope="col">Foto</th>
-                                            <th scope="col" style="width: 145px">Aksi</th>
+                                            <th scope="col">No.</th>
+                                            <th scope="col">Nama Perusahaan</th>
+                                            <th scope="col">Alamat</th>
+                                            <th scope="col">no perusahaan</th>
+                                            <th scope="col">Masa Berlaku</th>
+                                            <th scope="col">Aksi</th>
                                         </tr>
                                     </thead>
-                                    @if (is_null($data))
-                                    @else
-                                        <tbody class="table-group-divider">
-                                            <?php $no = 0;
-                                            $key = -1; ?>
-                                            @foreach (json_decode($data->wirausahaalumni) as $usahaalumni)
-                                                <tr>
-                                                    @php
-                                                        $no++;
-                                                        $key++;
-                                                        // echo($key);
-                                                    @endphp
-                                                    <td>{{ $no }}</td>
-                                                    <td class="text-center"><img
-                                                            src="{{ asset('assets/img/kewirausahaansketsu/' . $usahaalumni) }}"
-                                                            alt="" srcset="" style="width: 35pc;"></td>
-                                                    <td>
-                                                        <a href="/index/editviewkegiatanbkk/{{ $key }}"
-                                                            class="btn btn-warning"><i
-                                                                class="fa-solid fa-pen-to-square"></i></a>
-                                                        <a href="#" class="btn btn-danger delete"
-                                                            data-id="{{ $key }}"
-                                                            data-kegiatan="Foto No.{{ $no }}"><i
-                                                                class="fa-solid fa-trash"></i></a>
-                                                    </td>
-                                                </tr>
-                                            @endforeach
-                                        </tbody>
-                                    @endif
+                                    <tbody class="table-group-divider">
+                                        <?php $no = 1; ?>
+                                        {{-- <tr>
+                                            <td>{{ $no }}</td>
+                                            <td><img class="h-12pc w-100"
+                                                    src="{{ asset('assets/img/' . $data->foto_struktur) }}"
+                                                    alt="struktur"></td>
+                                            <td>{!! $data->isi_artikel !!}</td>
+                                            <td>
+                                                <a href="/index/editsobkk" class="btn btn-warning"><i
+                                                        class="fa-solid fa-pen-to-square"></i></a>
+                                                <a href="#" class="btn btn-danger delete"
+                                                    data-id="{{ $data->id }}" data-jurusan="{{ $data->visi }}"><i
+                                                        class="fa-solid fa-trash"></i></a>
+                                            </td>
+                                        </tr> --}}
+                                    </tbody>
                                 </table>
                             </div>
                         </div>
                         <div class="card mb-4">
                             <div class="card-datatable table-responsive pt-0">
-                                <h5 class="card-header">Data Peserta Didik Kewirausahaan Sketsu</h5>
-                                <a href="/index/add_kegiatan" type="button" class="btn rounded-pill btn-primary">Tambah
+                                <h5 class="card-header"></h5>
+                                <a href="/index/addumkm" type="button" class="btn rounded-pill btn-primary">Tambah
                                     +</a>
                                 <table class="table" id="table2">
                                     <thead>
                                         <tr>
-                                            <th scope="col" style="width:75px">No.</th>
-                                            <th scope="col">Foto</th>
-                                            <th scope="col" style="width: 145px">Aksi</th>
+                                            <th scope="col">No.</th>
+                                            <th scope="col">Nama Perusahaan</th>
+                                            <th scope="col">Alamat</th>
+                                            <th scope="col">no perusahaan</th>
+                                            <th scope="col">Masa Berlaku</th>
+                                            <th scope="col">Aksi</th>
                                         </tr>
                                     </thead>
-                                    {{-- <tbody class="table-group-divider">
-                                    <?php $no = 1; ?>
-                                    @foreach ($data as $kegiatan)
-                                        <tr>
-                                            <td>{{ $no++ }}</td>
-                                            <td>{{ $kegiatan->judul }}</td>
-                                            <td style="width: 23pc">
-                                                @foreach (json_decode($kegiatan->foto) as $foto)
-                                                    <img class="mx-1 my-1"
-                                                        src="{{ asset('assets/img/detailbkk/' . $foto) }}"
-                                                        alt="" width="100px" height="100px">
-                                                @endforeach
-                                            </td>
+                                    <tbody class="table-group-divider">
+                                        <?php $no = 1; ?>
+                                        {{-- <tr>
+                                            <td>{{ $no }}</td>
+                                            <td><img class="h-12pc w-100"
+                                                    src="{{ asset('assets/img/' . $data->foto_struktur) }}"
+                                                    alt="struktur"></td>
+                                            <td>{!! $data->isi_artikel !!}</td>
                                             <td>
-                                                <a href="/index/editviewkegiatanbkk/{{ $kegiatan->id }}"
-                                                    class="btn btn-warning"><i
+                                                <a href="/index/editsobkk" class="btn btn-warning"><i
                                                         class="fa-solid fa-pen-to-square"></i></a>
                                                 <a href="#" class="btn btn-danger delete"
-                                                    data-id="{{ $kegiatan->id }}"
-                                                    data-kegiatan="{{ $kegiatan->judul }}"><i
+                                                    data-id="{{ $data->id }}" data-jurusan="{{ $data->visi }}"><i
                                                         class="fa-solid fa-trash"></i></a>
                                             </td>
-                                        </tr>
-                                    @endforeach
-                                </tbody> --}}
+                                        </tr> --}}
+                                    </tbody>
                                 </table>
                             </div>
                         </div>
@@ -151,28 +136,29 @@
     <div class="buy-now">
         <a href="https://1.envato.market/frest_admin" target="_blank" class="btn btn-danger btn-buy-now">Buy Now</a>
     </div>
+    <!-- Core JS -->
     @include('Admin.layoutadmin.jsadmin')
 </body>
 <script>
     $('.delete').click(function() {
         var jurusanid = $(this).attr('data-id');
-        var jurusan = $(this).attr('data-kegiatan');
+        var jurusan = $(this).attr('data-jurusan');
 
         swal({
                 title: "Apakah kamu yakin?",
-                text: "Kamu akan menghapus data " + jurusan,
+                text: "Kamu akan mereset data ini",
                 icon: "warning",
                 buttons: true,
                 dangerMode: true,
             })
             .then((willDelete) => {
                 if (willDelete) {
-                    window.location = "/deletekegiatanbkk/" + jurusanid + ""
-                    swal("Data berhasil dihapus", {
+                    window.location = "/deletevisimisibkk"
+                    swal("Data berhasil direset", {
                         icon: "success",
                     });
                 } else {
-                    swal("Data tidak jadi dihapus");
+                    swal("Data tidak jadi direset");
                 }
             });
     });

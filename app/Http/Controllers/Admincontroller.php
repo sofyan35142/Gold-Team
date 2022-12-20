@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\kegiatanbkk;
 use App\Models\kewirausahaansketsu;
+use App\Models\lowongankerja;
 use App\Models\strukturbkk;
 use App\Models\visimisibkk;
 use App\Models\sidestruktur;
@@ -493,6 +494,7 @@ class Admincontroller extends Controller
     }
     public function addkegiatan()
     {
+
         return view("Admin.bkk.kegiatan_bkk.addkegiatan");
     }
     public function insertkegiatanbkk(Request $request)
@@ -548,10 +550,11 @@ class Admincontroller extends Controller
         }
         return redirect("/index/kegiatan-bkk");
     }
-    public function deletekegiatanbkk($id){
+    public function deletekegiatanbkk($id)
+    {
         $data = kegiatanbkk::findorfail($id);
         $data->delete();
-        return redirect("/index/kegiatan-bkk")->with("success","Data Berhasil dihapus");
+        return redirect("/index/kegiatan-bkk")->with("success", "Data Berhasil dihapus");
     }
     //end kegiatan bkk
 
@@ -618,37 +621,105 @@ class Admincontroller extends Controller
 
 
     //start kewirausahaan bkk
-    public function kewirausahaansketsu(){
+    public function kewirausahaansketsu()
+    {
         $data = kewirausahaansketsu::all()->first();
-        return view("Admin.bkk.kewirausahaansketsu.kewirausahaansketsu",compact("data"));
+        // dd($data);
+        return view("Admin.bkk.kewirausahaansketsu.kewirausahaansketsu", compact("data"));
     }
-    public function addalumnikbkk(){
-
+    public function addalumnikbkk()
+    {
+        // $tes1 = [];
+        // $tes = ["a","b"];
+        // $gab = array_merge($tes1,$tes);
+        // dd($gab);
         return view("Admin.bkk.kewirausahaansketsu.addalumnikbkk");
     }
-    public function insertalumnikbkk(request $request){
+    public function insertalumnikbkk(request $request)
+    {
         $model = kewirausahaansketsu::all()->first();
         // dd($data);
         $files = [];
         if ($request->hasfile('foto')) {
             foreach ($request->foto as $file) {
                 $name = $file->getClientOriginalName();
-                $file->move(public_path('/assets/img/kewirausahaansketsu/'), $name);
+                $file->move(public_path('assets/img/kewirausahaansketsu/'), $name);
                 $files[] = $name;
             }
         }
-        if(is_null($model)){
-        $model  = new kewirausahaansketsu;
-        $model->wirausahaalumni = json_encode($files);
-        // $model->wirausahapesertadidik = "";
-        $model->save();
+        if (is_null($model)) {
+            $model  = new kewirausahaansketsu;
+            $model->wirausahaalumni = json_encode($files);
+            $model->wirausahapesertadidik = '[]';
+            $model->save();
+        } else {
+            $old = json_decode($model->wirausahaalumni);
+            $add = array_merge($old, $files);
+            $model->wirausahaalumni = json_encode($add);
+            $model->save();
+        }
+        return redirect("/index/kewirausahaan-sketsu")->with("success", "data berhasil ditambahkan");
+    }
+    public function addsiswakbkk()
+    {
+        return view("Admin.bkk.kewirausahaansketsu.addsiswakbkk");
+    }
+    public function insertsiswakbkk(Request $request)
+    {
+        $model = kewirausahaansketsu::all()->first();
+        // dd($data);
+        $files = [];
+        if ($request->hasfile('foto')) {
+            foreach ($request->foto as $file) {
+                $name = $file->getClientOriginalName();
+                $file->move(public_path('assets/img/kewirausahaansketsu/'), $name);
+                $files[] = $name;
+            }
+        }
+        if (is_null($model)) {
+            $model  = new kewirausahaansketsu;
+            $model->wirausahapesertadidik = json_encode($files);
+            $model->wirausahaalumni = '[]';
+            $model->save();
+        }else{
+            $old = json_decode($model->wirausahapesertadidik);
+            $add = array_merge($old, $files);
+            $model->wirausahapesertadidik = json_encode($add);
+            $model->save();
         }
         // $fotoside = implode(',',$files);
-        // $model  = kewirausahaansketsu::all()->first();
-        $model->wirausahaalumni = json_encode($files);
-        $model->save();
-        return redirect("/index/kewirausahaan-sketsu")->with("success","data berhasil ditambahkan");
+        return redirect("/index/kewirausahaan-sketsu")->with("success", "data berhasil ditambahkan");
     }
     //end kewirausahaan bkk
+
+    //start lowongan_kerja
+    public function lowongan_kerja(){
+        $lowongan = lowongankerja::all();
+        return view("Admin.bkk.lowongankerja.lowongankerja",compact("lowongan"));
+    }
+    public function addlowongan_kerja(){
+        return view("Admin.bkk.lowongankerja.addlowongankerja");
+    }
+    public function insertlowongankerja(request $request){
+        // dd($request->all());
+        $data = lowongankerja::create($request->all());
+        if ($request->hasFile('foto')) {
+            $request->file('foto')->move('assets/img/lowongankerja/', $request->file('foto')->getClientOriginalName());
+            $data->foto = $request->file('foto')->getClientOriginalName();
+            $data->save();
+        }
+        // dd($data);
+        return redirect("/index/lowongankerja");
+    }
+    //end lowongan_kerja
+
+    //start perusahaan-mitra
+    public function perusahaanmitra(){
+        return view("Admin.bkk.perusahaanmitra.perusahaanmitra");
+    }
+    public function addpt(){
+        return view("Admin.bkk.perusahaanmitra.perusahaanmitra");
+    }
+    //end perusahaan mitra
     ///////////////////// END BKK LANDINGPAGE ADMIN ///////////////////////////
 }
