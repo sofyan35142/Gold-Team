@@ -378,7 +378,7 @@
             </a>
             <ul class="menu-sub">
                 <li class="menu-item">
-                    <a href="/index/vis imisibkk" class="menu-link">
+                    <a href="/index/visimisibkk" class="menu-link">
                         <div data-i18n="Visi Misi BKK">Visi Misi BKK</div>
                     </a>
                 </li>
@@ -395,6 +395,16 @@
                 <li class="menu-item">
                     <a href="/index/kewirausahaan-sketsu" class="menu-link">
                         <div data-i18n="Kewirausahaan Sketsu">Kewirausahaan Sketsu</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="/index/lowongankerja" class="menu-link">
+                        <div data-i18n="Lowongan Kerja">Lowongan Kerja</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="/index/perusahaanmitra" class="menu-link">
+                        <div data-i18n="Perusahaan Mitra">Perusahaan Mitra</div>
                     </a>
                 </li>
             </ul>

@@ -2,7 +2,6 @@
 <html lang="en" class="light-style layout-navbar-fixed layout-menu-fixed " dir="ltr" data-theme="theme-semi-dark"
     data-assets-path="../../assets1/" data-template="vertical-menu-template-semi-dark">
 @include('Admin.layoutadmin.head')
-
 <body>
     <!-- Layout wrapper -->
     <div class="layout-wrapper layout-content-navbar  ">
@@ -22,17 +21,18 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="card mb-4">
-                                    <h5 class="card-header">Tambah foto wirausaha peserta didik</h5>
+                                    <h5 class="card-header">Tambah Foto Kewirausahaan Siswa sketsu</h5>
                                     <div class="card-body">
-                                        <form action="/insertsiswakbkk" method="POST" enctype="multipart/form-data">
+                                        <form action="/insertsiswakbkk" method="POST"
+                                            enctype="multipart/form-data">
                                             @csrf
                                             <div class="mb-3">
                                                 <div class="upload__box">
                                                     <div class="upload__btn-box">
                                                         <label class="upload__btn">
                                                             <p class="mb-0">Upload images</p>
-                                                            <input name="foto[]" type="file" multiple=""
-                                                                data-max_length="20" class="upload__inputfile">
+                                                            <input name="foto[]" type="file" multiple="" data-max_length="20"
+                                                                class="upload__inputfile">
                                                         </label>
                                                     </div>
                                                     <div class="upload__img-wrap"></div>
@@ -160,5 +160,4 @@
         }
     </script>
 </body>
-
 </html>

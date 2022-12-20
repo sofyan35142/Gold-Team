@@ -27,6 +27,7 @@ use App\Models\Visimisilsp;
 use App\Models\kategoriblog;
 use App\Models\kegiatanbkk;
 use App\Models\kewirausahaansketsu;
+use App\Models\lowongankerja;
 use App\Models\sidestruktur;
 use App\Models\Tempatujikom;
 use Illuminate\Http\Request;
@@ -273,7 +274,8 @@ class LandingController extends Controller
     }
     public function lowongan_kerja()
     {
-        return view("landingpage.BKK.lowongan_kerja");
+        $data = lowongankerja::paginate(6)->sortByDesc("id");
+        return view("landingpage.BKK.lowongan_kerja",compact("data"));
     }
     public function detail_lowongan()
     {

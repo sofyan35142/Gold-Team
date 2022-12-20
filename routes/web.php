@@ -199,6 +199,18 @@ Route::get('/deletekegiatanbkk/{id}', [Admincontroller::class, 'deletekegiatanbk
 Route::get('/index/kewirausahaan-sketsu', [Admincontroller::class, 'kewirausahaansketsu']);
 Route::get('/index/addalumnikbkk', [Admincontroller::class, 'addalumnikbkk']);
 Route::post('/insertalumnibkk', [Admincontroller::class, 'insertalumnikbkk']);
+Route::get('/index/addsiswakbkk', [Admincontroller::class, 'addsiswakbkk']);
+Route::post('/insertsiswakbkk', [Admincontroller::class, 'insertsiswakbkk']);
+//lowongan kerja
+Route::get('/index/lowongankerja', [Admincontroller::class, 'lowongan_kerja']);
+Route::get('/index/addlowongankerja', [Admincontroller::class, 'addlowongan_kerja']);
+Route::post('/insertlowongankerja', [Admincontroller::class, 'insertlowongankerja']);
+
+//perusahaan mitra
+Route::get('/index/perusahaanmitra', [Admincontroller::class, 'perusahaanmitra']);
+Route::get('/index/addpt', [Admincontroller::class, 'addpt']);
+Route::get('/index/addumkm', [Admincontroller::class, 'addumkm']);
+
 //======================= End Bkk ==================//
 
 ////////////-------------ADMIN BERANDA------------/////////////////
