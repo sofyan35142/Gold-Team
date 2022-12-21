@@ -31,11 +31,11 @@
                         <h2>Kewirausahaan Sketsu</h2>
                         <ul>
                             <li>
-                                <a href="/">Bursa Kerja Khusus</a>
+                                <a href="/BKK">Bursa Kerja Khusus</a>
                             </li>
                             <li>
                                 <i class="icofont-rounded-double-right"></i>
-                                <a href="/jurusan">Kewirausahaan Sketsu</a>
+                                Kewirausahaan Sketsu
                             </li>
                         </ul>
                     </div>

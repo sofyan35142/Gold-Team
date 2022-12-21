@@ -196,6 +196,14 @@ Route::get('/index/editviewkegiatanbkk/{id}', [Admincontroller::class, 'viewkegi
 Route::post('/editkegiatanbkk/{id}', [Admincontroller::class, 'editkegiatanbkk']);
 Route::get('/deletekegiatanbkk/{id}', [Admincontroller::class, 'deletekegiatanbkk']);
 
+//bimbingan BKK
+Route::get('/index/bimbingan-karir', [Admincontroller::class, 'bimbingan_bkk']);
+Route::get('/index/add_bimbingan', [Admincontroller::class, 'addbimbingan']);
+Route::post('/insertbimbingan', [Admincontroller::class, 'insertbimbingan']);
+Route::get('/index/editviewbimbingan/{id}', [Admincontroller::class, 'viewbimbingan']);
+Route::post('/editbimbingan/{id}', [Admincontroller::class, 'editbimbingan']);
+Route::get('/deletebimbingan/{id}', [Admincontroller::class, 'deletebimbingan']);
+
 //Kewirausahaan Sketsu
 Route::get('/index/kewirausahaan-sketsu', [Admincontroller::class, 'kewirausahaansketsu']);
 Route::get('/index/addalumnikbkk', [Admincontroller::class, 'addalumnikbkk']);

@@ -31,11 +31,11 @@
                         <h2>Lowongan Kerja</h2>
                         <ul>
                             <li>
-                                <a href="/">Bursa Kerja Khusus</a>
+                                <a href="/BKK">Bursa Kerja Khusus</a>
                             </li>
                             <li>
                                 <i class="icofont-rounded-double-right"></i>
-                                <a href="/jurusan">Lowongan Kerja</a>
+                                Lowongan Kerja
                             </li>
                         </ul>
                     </div>

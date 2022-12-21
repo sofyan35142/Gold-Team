@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\LSP;
 use App\Models\Blog;
+use App\Models\Bimbingankarir;
 use App\Models\Guru;
 use App\Models\Modul;
 use App\Models\walas;
@@ -313,8 +314,9 @@ class LandingController extends Controller
     }
     public function bimbingan_karir()
     {
+        $data = Bimbingankarir::all();
         $sosmed = Sosmed::all();
-        return view("landingpage.BKK.bimbingan_karir", compact('sosmed'));
+        return view("landingpage.BKK.bimbingan_karir", compact('sosmed', 'data'));
     }
     public function perusahaan_mitra()
     {

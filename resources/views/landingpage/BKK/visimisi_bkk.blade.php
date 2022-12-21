@@ -31,11 +31,11 @@
                         <h2>Visi Dan Misi BKK</h2>
                         <ul>
                             <li>
-                                <a href="/">Bursa Kerja Khusus</a>
+                                <a href="/BKK">Bursa Kerja Khusus</a>
                             </li>
                             <li>
                                 <i class="icofont-rounded-double-right"></i>
-                                <a href="/jurusan">Visi Dan Misi BKK</a>
+                                Visi Dan Misi BKK
                             </li>
                         </ul>
                     </div>
