@@ -647,6 +647,13 @@ class Admincontroller extends Controller
         // dd($data);
         return redirect("/index/lowongankerja");
     }
+    public function showlowongankerja($id){
+        $data = lowongankerja::findorfail($id);
+        return view("Admin.bkk.lowongankerja.editlowongankerja",compact("data"));
+        // $data->update([
+
+        // ]);
+    }
     //end lowongan_kerja
 
     //start perusahaan-mitra

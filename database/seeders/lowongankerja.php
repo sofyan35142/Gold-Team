@@ -79,12 +79,12 @@ class lowongankerja extends Seeder
             'status' => 'selesai',
             'foto' => 'lowongan2.jpg',
         ]);
-        DB::table('lowongankerja')->insert([
-            'judul' => '',
-            'deskripsi' => '',
-            'status' => '',
-            'foto' => '',
-        ]);
+        // DB::table('lowongankerja')->insert([
+        //     'judul' => '',
+        //     'deskripsi' => '',
+        //     'status' => '',
+        //     'foto' => '',
+        // ]);
         DB::table('lowongankerja')->insert([
             'judul' => 'LOWONGAN KERJA CIMORY DAIRY LAND
             PRIGEN',
