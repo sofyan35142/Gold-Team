@@ -52,6 +52,7 @@ class DatabaseSeeder extends Seeder
             sidestruktur::class,
             sejarahsingkat::class,
             visimisibkk::class,
+            lowongankerja::class,
         ]);
     }
 }

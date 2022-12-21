@@ -304,7 +304,8 @@ class LandingController extends Controller
     }
     public function lowongan_kerja()
     {
-        $data = lowongankerja::paginate(6)->sortByDesc("id");
+        // $data = lowongankerja::paginate(6)->sortByDesc("id");
+        $data = lowongankerja::latest("id")->paginate(6);
         $sosmed = Sosmed::all();
         return view("landingpage.BKK.lowongan_kerja",compact("data","sosmed"));
     }
@@ -388,3 +389,4 @@ class LandingController extends Controller
 
     
 }
+

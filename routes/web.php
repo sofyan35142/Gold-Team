@@ -214,6 +214,7 @@ Route::post('/insertsiswakbkk', [Admincontroller::class, 'insertsiswakbkk']);
 Route::get('/index/lowongankerja', [Admincontroller::class, 'lowongan_kerja']);
 Route::get('/index/addlowongankerja', [Admincontroller::class, 'addlowongan_kerja']);
 Route::post('/insertlowongankerja', [Admincontroller::class, 'insertlowongankerja']);
+Route::get('/index/showlowongankerja/{id}', [Admincontroller::class, 'showlowongankerja']);
 
 //perusahaan mitra
 Route::get('/index/perusahaanmitra', [Admincontroller::class, 'perusahaanmitra']);
