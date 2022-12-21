@@ -220,6 +220,10 @@ Route::get('/index/perusahaanmitra', [Admincontroller::class, 'perusahaanmitra']
 Route::get('/index/addpt', [Admincontroller::class, 'addpt']);
 Route::get('/index/addumkm', [Admincontroller::class, 'addumkm']);
 
+//BKK DEFINITION
+Route::get('/index/bkk', [AdminController::class, 'indexbkk'])->name('bkk');
+Route::post('/updatebkk/{id}', [AdminController::class, 'edit']);
+
 //======================= End Bkk ==================//
 
 ////////////-------------ADMIN BERANDA------------/////////////////
