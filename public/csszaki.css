@@ -922,3 +922,17 @@ p {
         visibility: visible;
     }
 }
+
+.btn-check:checked+.btn-secondary{
+    color: #fff !important;
+    background-color: #5a8dee !important;
+    border-color: #596d83 !important;
+}
+
+.lowongan p:first-of-type {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}

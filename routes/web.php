@@ -5,6 +5,7 @@ use App\Http\Controllers\BerandaController;
 use App\Http\Controllers\JurusanController;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\DataController;
+use App\Http\Controllers\SosmedController;
 use App\Http\Controllers\KakomliController;
 use App\Http\Controllers\kirimemailController;
 use App\Http\Controllers\LSPController;
@@ -68,11 +69,12 @@ Route::get('/profil/sekolahrujukan', [LandingController::class, 'sekolahrujukan'
 Route::get('/BKK', [LandingController::class, 'BKK']);
 Route::get('/BKK/visimisi-bkk', [LandingController::class, 'visimisi_bkk']);
 Route::get('/BKK/strukturorganisasi-bkk', [LandingController::class, 'strukturorganisasi_bkk']);
-Route::get('/BKK/kegiatan-bkk', [LandingController::class, 'kegiatan_bkk']);
+Route::get('/BKK/kegiatan-bkk', [LandingController::class, 'kegiatan
+_bkk']);
 Route::get('/BKK/detail-kegiatan-bkk/{id}', [LandingController::class, 'detail_kegiatan_bkk']);
 Route::get('/BKK/kewirausahaan-bkk', [LandingController::class, 'kewirausahaan_bkk']);
 Route::get('/BKK/lowongan-kerja', [LandingController::class, 'lowongan_kerja']);
-Route::get('/BKK/detail-lowongan', [LandingController::class, 'detail_lowongan']);
+Route::get('/BKK/detail-lowongan/{id}', [LandingController::class, 'detail_lowongan']);
 Route::get('/BKK/bimbingan-karir', [LandingController::class, 'bimbingan_karir']);
 Route::get('/BKK/perusahaan-mitra', [LandingController::class, 'perusahaan_mitra']);
 // end bkk
@@ -200,10 +202,37 @@ Route::get('/index/editviewkegiatanbkk/{id}', [Admincontroller::class, 'viewkegi
 Route::post('/editkegiatanbkk/{id}', [Admincontroller::class, 'editkegiatanbkk']);
 Route::get('/deletekegiatanbkk/{id}', [Admincontroller::class, 'deletekegiatanbkk']);
 
+//bimbingan BKK
+Route::get('/index/bimbingan-karir', [Admincontroller::class, 'bimbingan_bkk']);
+Route::get('/index/add_bimbingan', [Admincontroller::class, 'addbimbingan']);
+Route::post('/insertbimbingan', [Admincontroller::class, 'insertbimbingan']);
+Route::get('/index/editviewbimbingan/{id}', [Admincontroller::class, 'viewbimbingan']);
+Route::post('/editbimbingan/{id}', [Admincontroller::class, 'editbimbingan']);
+Route::get('/deletebimbingan/{id}', [Admincontroller::class, 'deletebimbingan']);
+
 //Kewirausahaan Sketsu
 Route::get('/index/kewirausahaan-sketsu', [Admincontroller::class, 'kewirausahaansketsu']);
 Route::get('/index/addalumnikbkk', [Admincontroller::class, 'addalumnikbkk']);
 Route::post('/insertalumnibkk', [Admincontroller::class, 'insertalumnikbkk']);
+Route::get('/index/addsiswakbkk', [Admincontroller::class, 'addsiswakbkk']);
+Route::post('/insertsiswakbkk', [Admincontroller::class, 'insertsiswakbkk']);
+//lowongan kerja
+Route::get('/index/lowongankerja', [Admincontroller::class, 'lowongan_kerja']);
+Route::get('/index/addlowongankerja', [Admincontroller::class, 'addlowongan_kerja']);
+Route::post('/insertlowongankerja', [Admincontroller::class, 'insertlowongankerja']);
+Route::get('/index/showlowongankerja/{id}', [Admincontroller::class, 'showlowongankerja']);
+
+//perusahaan mitra
+Route::get('/index/perusahaanmitra', [Admincontroller::class, 'perusahaanmitra']);
+Route::get('/index/addpt', [Admincontroller::class, 'addpt']);
+Route::post('/insertperusahaanmitra', [Admincontroller::class, 'insertperusahaanmitra']);
+Route::get('/index/addumkm', [Admincontroller::class, 'addumkm']);
+Route::post('/insertumkmpasangan', [Admincontroller::class, 'insertumkmpasangan']);
+
+//BKK DEFINITION
+Route::get('/index/bkk', [AdminController::class, 'indexbkk'])->name('bkk');
+Route::post('/updatebkk/{id}', [AdminController::class, 'edit']);
+
 //======================= End Bkk ==================//
 
 ////////////-------------ADMIN BERANDA------------/////////////////
@@ -329,6 +358,14 @@ Route::post('/insertkakomli', [KakomliController::class, 'store']);
 Route::get('/kakomli/edit/{id}', [KakomliController::class, 'show']);
 Route::post('/kakomli/update/{id}', [KakomliController::class, 'update']);
 Route::get('/kakomli/deletekakomli/{id}', [KakomliController::class, 'destroy']);
+
+//SosialMedia
+Route::get('/index/sosmed', [SosmedController::class, 'sosmed'])->name('Sosmed');;
+Route::get('/index/tambahsosmed', [SosmedController::class, 'create']);
+Route::post('/insertsosmed', [SosmedController::class, 'store']);
+Route::get('/sosmed/edit/{id}', [SosmedController::class, 'show']);
+Route::post('/sosmed/update/{id}', [SosmedController::class, 'update']);
+Route::get('/sosmed/deletesosmed/{id}', [SosmedController::class, 'destroy']);
 
 //LSP ADMIN
 Route::get('/index/lsp', [LSPController::class, 'indexlsp'])->name('indexlsp');

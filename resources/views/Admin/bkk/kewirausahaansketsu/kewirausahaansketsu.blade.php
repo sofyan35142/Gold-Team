@@ -25,7 +25,8 @@
                         <div class="card mb-4">
                             <div class="card-datatable table-responsive pt-0">
                                 <h5 class="card-header">Data Alumni Kewirausahaan Sketsu</h5>
-                                <a href="/index/addalumnikbkk" type="button" class="btn rounded-pill btn-primary">Tambah
+                                <a href="/index/addalumnikbkk" type="button"
+                                    class="btn rounded-pill btn-primary">Tambah
                                     +</a>
                                 <table class="table" id="table1">
                                     <thead>
@@ -35,29 +36,35 @@
                                             <th scope="col" style="width: 145px">Aksi</th>
                                         </tr>
                                     </thead>
-                                    <tbody class="table-group-divider">
-                                        <?php $no = 0; $key= -1; ?>
-                                        @foreach (json_decode($data->wirausahaalumni) as $usahaalumni)
-                                            <tr>
-                                                @php
-                                                $no++;
-                                                $key++;
-                                                // echo($key);
-                                                @endphp
-                                                <td>{{$no}}</td>
-                                                <td class="text-center"><img src="{{ asset('assets/img/kewirausahaansketsu/'.$usahaalumni) }}" alt="" srcset="" style="width: 35pc;"></td>
-                                                <td>
-                                                    <a href="/index/editviewkegiatanbkk/{{$key}}"
-                                                        class="btn btn-warning"><i
-                                                            class="fa-solid fa-pen-to-square"></i></a>
-                                                    <a href="#" class="btn btn-danger delete"
-                                                        data-id="{{ $key }}"
-                                                        data-kegiatan="Foto No.{{$no}}"><i
-                                                            class="fa-solid fa-trash"></i></a>
-                                                </td>
-                                            </tr>
-                                        @endforeach
-                                    </tbody>
+                                    @if (is_null($data))
+                                    @else
+                                        <tbody class="table-group-divider">
+                                            <?php $no = 0;
+                                            $key = -1; ?>
+                                            @foreach (json_decode($data->wirausahaalumni) as $usahaalumni)
+                                                <tr>
+                                                    @php
+                                                        $no++;
+                                                        $key++;
+                                                        // echo($key);
+                                                    @endphp
+                                                    <td>{{ $no }}</td>
+                                                    <td class="text-center"><img
+                                                            src="{{ asset('assets/img/kewirausahaansketsu/' . $usahaalumni) }}"
+                                                            alt="" srcset="" style="width: 35pc;"></td>
+                                                    <td>
+                                                        <a href="/index/editviewkegiatanbkk/{{ $key }}"
+                                                            class="btn btn-warning"><i
+                                                                class="fa-solid fa-pen-to-square"></i></a>
+                                                        <a href="#" class="btn btn-danger delete"
+                                                            data-id="{{ $key }}"
+                                                            data-kegiatan="Foto No.{{ $no }}"><i
+                                                                class="fa-solid fa-trash"></i></a>
+                                                    </td>
+                                                </tr>
+                                            @endforeach
+                                        </tbody>
+                                    @endif
                                 </table>
                             </div>
                         </div>
@@ -66,40 +73,44 @@
                                 <h5 class="card-header">Data Peserta Didik Kewirausahaan Sketsu</h5>
                                 <a href="/index/add_kegiatan" type="button" class="btn rounded-pill btn-primary">Tambah
                                     +</a>
-                                <table class="table" id="table2">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col" style="width:75px">No.</th>
-                                            <th scope="col">Foto</th>
-                                            <th scope="col" style="width: 145px">Aksi</th>
-                                        </tr>
-                                    </thead>
-                                    {{-- <tbody class="table-group-divider">
-                                        <?php $no = 1; ?>
-                                        @foreach ($data as $kegiatan)
+                                    <table class="table" id="table2">
+                                        <thead>
                                             <tr>
-                                                <td>{{ $no++ }}</td>
-                                                <td>{{ $kegiatan->judul }}</td>
-                                                <td style="width: 23pc">
-                                                    @foreach (json_decode($kegiatan->foto) as $foto)
-                                                        <img class="mx-1 my-1"
-                                                            src="{{ asset('assets/img/detailbkk/' . $foto) }}"
-                                                            alt="" width="100px" height="100px">
-                                                    @endforeach
-                                                </td>
-                                                <td>
-                                                    <a href="/index/editviewkegiatanbkk/{{ $kegiatan->id }}"
-                                                        class="btn btn-warning"><i
-                                                            class="fa-solid fa-pen-to-square"></i></a>
-                                                    <a href="#" class="btn btn-danger delete"
-                                                        data-id="{{ $kegiatan->id }}"
-                                                        data-kegiatan="{{ $kegiatan->judul }}"><i
-                                                            class="fa-solid fa-trash"></i></a>
-                                                </td>
+                                                <th scope="col" style="width:75px">No.</th>
+                                                <th scope="col">Foto</th>
+                                                <th scope="col" style="width: 145px">Aksi</th>
                                             </tr>
-                                        @endforeach
-                                    </tbody> --}}
-                                </table>
+                                        </thead>
+                                        @if (is_null($data))
+                                        @else
+                                            <tbody class="table-group-divider">
+                                                <?php $no = 0;
+                                                $key = -1; ?>
+                                                @foreach (json_decode($data->wirausahapesertadidik) as $usahaalumni)
+                                                    <tr>
+                                                        @php
+                                                            $no++;
+                                                            $key++;
+                                                            // echo($key);
+                                                        @endphp
+                                                        <td>{{ $no }}</td>
+                                                        <td class="text-center"><img
+                                                                src="{{ asset('assets/img/kewirausahaansketsu/' . $usahaalumni) }}"
+                                                                alt="" srcset="" style="width: 35pc;"></td>
+                                                        <td>
+                                                            <a href="/index/editviewkegiatanbkk/{{ $key }}"
+                                                                class="btn btn-warning"><i
+                                                                    class="fa-solid fa-pen-to-square"></i></a>
+                                                            <a href="#" class="btn btn-danger delete"
+                                                                data-id="{{ $key }}"
+                                                                data-kegiatan="Foto No.{{ $no }}"><i
+                                                                    class="fa-solid fa-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                @endforeach
+                                            </tbody>
+                                        @endif
+                                    </table>
                             </div>
                         </div>
                     </div>

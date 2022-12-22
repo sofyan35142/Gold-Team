@@ -18,12 +18,15 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([
             alumni::class,
+            Bimbingankarir::class,
+            BKK::class,
             blog::class,
             dharma::class,
             ekstra::class,
             guru::class,
             Jmlpemegang::class,
             jurusan::class,
+            kegiatan_bkk::class,
             kakomli::class,
             kepsek::class,
             LSP::class,
@@ -32,6 +35,7 @@ class DatabaseSeeder extends Seeder
             profilvisimisi::class,
             // Skematerlisensi::class,
             slider::class,
+            Sosmed::class,
             strukturorganisasi::class,
             sekolahadiwiyata::class,
             sekolahrujukan::class,
@@ -46,7 +50,9 @@ class DatabaseSeeder extends Seeder
             Reparasibengkel::class,
             strukturbkk::class,
             sidestruktur::class,
-            // sejarahsingkat::class,
+            sejarahsingkat::class,
+            visimisibkk::class,
+            lowongankerja::class,
             keunggulan::class
         ]);
     }

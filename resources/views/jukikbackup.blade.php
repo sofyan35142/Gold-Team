@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="col-sm-6 col-12">
     <div class="row">
         <div class="col-12 mb-4">
@@ -479,3 +480,5 @@
         </div>
     </div>
 </div>
+=======
+>>>>>>> 39d0754306eb23f1f9cbeaabf30565b1393d30a1

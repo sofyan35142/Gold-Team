@@ -73,7 +73,7 @@
 
 <div class="card mb-4">
   <div class="card-datatable table-responsive pt-0">
-    <h5 class="card-header">Data Kakomli</h5>
+    <h5 class="card-header">Data Modul Produktif</h5>
     <a href="/index/tambahmodul" type="button" class="btn rounded-pill btn-primary">Tambah</a>
     <table class="table" id="modul">
   <thead>

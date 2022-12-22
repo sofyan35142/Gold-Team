@@ -52,7 +52,7 @@
                         </li>
                         <li>
                             <i class="icofont-simple-right"></i>
-                            <a href="/layananortu">Layanan Orang Tua </a>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSexD6fbqWjwBFmWGlba5YDwJvEUa5G1YURe5h58jqNfPWmeuw/viewform">Layanan Orang Tua </a>
                         </li>
 
                     </ul>
@@ -118,20 +118,22 @@
                 <div class="col-lg-6">
                     <div class="footer-social">
                         <ul>
-                            <li>
-                                <a href="https://www.facebook.com/pages/Smkn-1-Sukorejo/1644253285790355"><i
-                                        class="icofont-facebook"></i></a>
+                            @foreach ($sosmed as $sos)
+                             <li>
+                                <a href="{{$sos->link}}"><i class="{{$sos->script_logo}}"></i></a>
                             </li>
+                            @endforeach
+
                             {{-- <li>
                                 <a href="#"><i class="icofont-twitter"></i></a>
                             </li>
                             <li>
                                 <a href="#"><i class="icofont-linkedin"></i></a>
                             </li> --}}
-                            <li>
+                            {{-- <li>
                                 <a href="https://instagram.com/sketsu_bisa?igshid=YmMyMTA2M2Y="><i
                                         class="icofont-instagram"></i></a>
-                            </li>
+                            </li> --}}
                         </ul>
                     </div>
                 </div>
