@@ -31,11 +31,11 @@
                                                 <img src="{{asset("assets/img/" . $data->foto_head)}}" alt="" height="250px" width="250px">
                                                 <label for="exampleInputEmail1" class="form-label">Foto Atas</label>
                                                 <input type="file" name="foto_head" class="form-control mt-3"
-                                                    id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                    id="exampleInputEmail1" aria-describedby="emailHelp" required>
                                             </div>
                                             <div>
                                                 <label for="editor" class="form-label">Deskripsi</label>
-                                                    <textarea name="isiartikel" id="editor">{!! $data->isiartikel !!}</textarea>
+                                                    <textarea required name="isiartikel" id="editor">{!! $data->isiartikel !!}</textarea>
                                                 <button type="submit"
                                                     class="btn rounded-pill btn-primary mt-3">Submit</button>
                                         </form>

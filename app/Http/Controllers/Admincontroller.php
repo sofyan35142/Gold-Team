@@ -424,7 +424,7 @@ class Admincontroller extends Controller
     }
     public function editviewsekolahrujukan()
     {
-        $data = sekolahrujukan::find(1);
+        $data = sekolahrujukan::all()->first();
         return view("admin.profil.sekolah_rujukan.editsekolahrujukan", compact('data'));
     }
     public function editsekolahrujukan(Request $request)
@@ -884,6 +884,11 @@ class Admincontroller extends Controller
         $data = umkm_pasangan::find($id);
         $data->update($request->all());
         return redirect("/index/perusahaanmitra")->with("success","Data Berhasil Di Edit");
+    }
+    public function deleteumkm($id){
+        $data = umkm_pasangan::findorfail($id);
+        $data->delete();
+        return redirect("/index/perusahaanmitra")->with("success","Data Berhasil Dihapus");
     }
     //end perusahaan mitra
 

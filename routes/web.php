@@ -240,6 +240,7 @@ Route::get('/index/addumkm', [Admincontroller::class, 'addumkm']);
 Route::post('/insertumkmpasangan', [Admincontroller::class, 'insertumkmpasangan']);
 Route::get('/index/showumkm/{id}', [Admincontroller::class, 'showumkm']);
 Route::post('/editshowumkm/{id}', [Admincontroller::class, 'editshowumkm']);
+Route::get('/deleteumkm/{id}', [Admincontroller::class, 'deleteumkm']);
 //BKK DEFINITION
 Route::get('/index/bkk', [AdminController::class, 'indexbkk'])->name('bkk');
 Route::post('/updatebkk/{id}', [AdminController::class, 'edit']);

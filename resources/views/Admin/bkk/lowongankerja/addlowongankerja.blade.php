@@ -36,27 +36,27 @@
                                             @csrf
                                             <div>
                                                 <label for="defaultFormControlInput" class="form-label">judul</label>
-                                                <input type="text" name="judul" class="form-control"
+                                                <input required type="text" name="judul" class="form-control"
                                                     id="defaultFormControlInput"
                                                     aria-describedby="defaultFormControlHelp" />
                                             </div>
                                             <div class="mb-3">
                                                 <label for="defaultFormControlInput"
                                                     class="form-label">Deskripsi</label>
-                                                <textarea name="deskripsi" id="editor"></textarea>
+                                                <textarea required name="deskripsi" id="editor"></textarea>
                                             </div>
                                             <label for="defaultFormControlInput" class="form-label">Status</label>
                                             <div class="mb-3">
-                                                <input type="radio" class="btn-check" name="status" id="option"
+                                                <input required type="radio" class="btn-check" name="status" id="option"
                                                     autocomplete="off" value="masih ada">
                                                 <label class="btn btn-secondary" for="option">Masih ada</label>
-                                                <input type="radio" class="btn-check" name="status" id="option2"
+                                                <input required type="radio" class="btn-check" name="status" id="option2"
                                                     autocomplete="off" value="selesai">
                                                 <label class="btn btn-secondary" for="option2">Selesai</label>
                                             </div>
                                             <div class="mb-3">
                                                 <label for="exampleInputEmail1" class="form-label">Upload Foto</label>
-                                                <input type="file" name="foto" class="form-control" multiple>
+                                                <input required type="file" name="foto" class="form-control" multiple>
                                             </div>
                                             <button type="submit" class="btn rounded-pill btn-primary">Submit</button>
                                         </form>

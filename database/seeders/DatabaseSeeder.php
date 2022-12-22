@@ -43,7 +43,7 @@ class DatabaseSeeder extends Seeder
             totalsiswa::class,
             videoprofil::class,
             Visimisilsp::class,
-            Modul::class,
+            // Modul::class,
             Artikel::class,
             kategoriblog::class,
             walas::class,

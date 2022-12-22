@@ -45,16 +45,16 @@
                                             <td>{!! $data->isiartikel !!}</td>
                                             <td>
                                                 <img src="{{ asset('assets/img/' . $data->foto_head) }}"
-                                                alt="" style="width: 80px; height:80px;">
+                                                alt="" style="width: 250px; height: 250px;">
                                             </td>
                                             <td>
                                                 <a href="/index/editsekolahrujukan"
                                                     class="btn btn-warning"><i
                                                         class="fa-solid fa-pen-to-square"></i></a>
-                                                <a href="#" class="btn btn-danger delete"
+                                                {{-- <a href="#" class="btn btn-danger delete"
                                                     data-id="{{ $data->id }}"
                                                     data-struktur="{{ $data->judul }}"><i
-                                                        class="fa-solid fa-trash"></i></a>
+                                                        class="fa-solid fa-trash"></i></a> --}}
                                             </td>
                                         </tr>
                                     </tbody>

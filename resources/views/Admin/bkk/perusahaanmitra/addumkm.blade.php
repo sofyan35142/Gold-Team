@@ -36,25 +36,25 @@
                                             @csrf
                                             <div class="mb-3">
                                                 <label for="defaultFormControlInput" class="form-label">Nama UMKM:</label>
-                                                <input type="text" name="nama_umkm" class="form-control"
+                                                <input required type="text" name="nama_umkm" class="form-control"
                                                     id="defaultFormControlInput"
                                                     aria-describedby="defaultFormControlHelp" />
                                             </div>
                                             <div class="mb-3">
                                                 <label for="defaultFormControlInput" class="form-label">Bidang :</label>
-                                                <input type="text" name="bidang" class="form-control"
+                                                <input required type="text" name="bidang" class="form-control"
                                                     id="defaultFormControlInput"
                                                     aria-describedby="defaultFormControlHelp" />
                                             </div>
                                             <div class="mb-3">
                                                 <label for="defaultFormControlInput" class="form-label">Alamat :</label>
-                                                <input type="text" name="alamat" class="form-control"
+                                                <input required type="text" name="alamat" class="form-control"
                                                     id="defaultFormControlInput"
                                                     aria-describedby="defaultFormControlHelp" />
                                             </div>
                                             <div class="mb-3">
                                                 <label for="defaultFormControlInput" class="form-label">Pemilik :</label>
-                                                <input type="text" name="pemilik" class="form-control"
+                                                <input required type="text" name="pemilik" class="form-control"
                                                     id="defaultFormControlInput"
                                                     aria-describedby="defaultFormControlHelp" />
                                             </div>

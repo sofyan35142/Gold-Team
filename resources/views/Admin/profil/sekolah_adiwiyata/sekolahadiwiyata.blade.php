@@ -43,11 +43,11 @@
                                             <tr>
                                                 <td>{{ $no }}</td>
                                                 <td>{{ $adiwiyata->judul}}</td>
-                                                <td>{!! $adiwiyata->deskripsi !!}</td>
                                                 <td>
                                                     <img src="{{ asset('../assets/img/' . $adiwiyata->foto_adiwiyata) }}" alt=""
-                                                        style="width: 80px; height:80px;">
+                                                    style="width: 351px; height:244px;">
                                                 </td>
+                                                <td>{!! $adiwiyata->deskripsi !!}</td>
                                                 <td>
                                                     <a href="/visimisi/edit/{{ $adiwiyata->id }}"
                                                         class="btn btn-warning"><i

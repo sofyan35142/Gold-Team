@@ -95,7 +95,7 @@
                                         <tr>
                                             <td>1</td>
                                             <td>Foto Sekolah:</td>
-                                            <td>{{ $profil->foto_sekolah }}</td>
+                                            <td><img width="250px" src="{{asset("assets/img/fotoprofilsekolah/".$profil->foto_sekolah)}}" alt=""></td>
                                             <td>
                                                 <a href="#" class="btn btn-warning" data-bs-toggle="modal"
                                                     data-bs-target="#smallModal1"><i

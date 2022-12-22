@@ -33,13 +33,14 @@
                                                             <label>Nama :</label>
                                                             <input type="text" name="nama_member[]"
                                                                 class="form-control" id="exampleInputEmail1"
-                                                                aria-describedby="emailHelp">
+                                                                aria-describedby="emailHelp" required>
                                                         </div>
                                                         <div class="col-lg-6">
                                                             <label>Foto Anggota :</label>
+                                                            <i style="color:red;">Masukkan Foto Ukuran 160px x 200px</i>
                                                             <input type="file" name="foto_member[]"
                                                                 class="form-control" id="exampleInputEmail1"
-                                                                aria-describedby="emailHelp">
+                                                                aria-describedby="emailHelp" required>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -137,7 +138,7 @@
                                                             id="exampleInputEmail1" aria-describedby="emailHelp">\
                                                     </div>\
                                                     <div class="col-lg-6">\
-                                                        <label>Foto Anggota :</label>\
+                                                        <label>Foto Anggota :</label>\<i style="color:red;">Masukkan Foto Ukuran 160px x 200px</i>\
                                                         <input type="file" name="foto_member[]" class="form-control"\
                                                             id="exampleInputEmail1" aria-describedby="emailHelp">\
                                                     </div>\

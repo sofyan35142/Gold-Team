@@ -51,7 +51,7 @@
                                                 <a href="/index/showaddpt/{{$data->id}}" class="btn btn-warning"><i
                                                         class="fa-solid fa-pen-to-square"></i></a>
                                                 <a href="#" class="btn btn-danger delete"
-                                                    data-id="{{ $data->id }}" data-jurusan="{{ $data->visi }}"><i
+                                                    data-id="{{ $data->id }}" data-jurusan="{{ $data->dudi }}"><i
                                                         class="fa-solid fa-trash"></i></a>
                                             </td>
                                         </tr>
@@ -89,8 +89,8 @@
                                             <td>
                                                 <a href="/index/showumkm/{{$data->id}}" class="btn btn-warning"><i
                                                         class="fa-solid fa-pen-to-square"></i></a>
-                                                <a href="#" class="btn btn-danger delete"
-                                                    data-id="{{ $data->id }}" data-jurusan="{{ $data->visi }}"><i
+                                                <a href="#" class="btn btn-danger delete2"
+                                                    data-id="{{ $data->id }}" data-jurusan="{{ $data->nama_umkm }}"><i
                                                         class="fa-solid fa-trash"></i></a>
                                             </td>
                                         </tr>
@@ -151,14 +151,38 @@
 
         swal({
                 title: "Apakah kamu yakin?",
-                text: "Kamu akan mereset data ini",
+                text: "Kamu akan menghapus data "+ jurusan,
                 icon: "warning",
                 buttons: true,
                 dangerMode: true,
             })
             .then((willDelete) => {
                 if (willDelete) {
-                    window.location = "/deletevisimisibkk"
+                    window.location = "/deletemitra/" +jurusanid + ""
+                    swal("Data berhasil direset", {
+                        icon: "success",
+                    });
+                } else {
+                    swal("Data tidak jadi direset");
+                }
+            });
+    });
+</script>
+<script>
+    $('.delete2').click(function() {
+        var jurusanid = $(this).attr('data-id');
+        var jurusan = $(this).attr('data-jurusan');
+
+        swal({
+                title: "Apakah kamu yakin?",
+                text: "Kamu akan menghapus data "+jurusan,
+                icon: "warning",
+                buttons: true,
+                dangerMode: true,
+            })
+            .then((willDelete) => {
+                if (willDelete) {
+                    window.location = "/deleteumkm/" +jurusanid + ""
                     swal("Data berhasil direset", {
                         icon: "success",
                     });

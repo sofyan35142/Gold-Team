@@ -23,6 +23,12 @@
                             <div class="col-md-12">
                                 <div class="card mb-4">
                                     <h5 class="card-header">Tambah foto wirausaha peserta didik</h5>
+                                    <i
+                                        style="    font-size: 17px;
+                                    color: red;
+                                    margin-left: 50px;
+                                }">Masukkan
+                                        Ukuran foto 350px x 470px</i>
                                     <div class="card-body">
                                         <form action="/insertsiswakbkk" method="POST" enctype="multipart/form-data">
                                             @csrf
@@ -47,7 +53,7 @@
                     </div>
                     <!-- / Content -->
                     <!-- Footer -->
-                    @include("Admin.layoutadmin.footer")
+                    @include('Admin.layoutadmin.footer')
                     <!-- / Footer -->
                     <div class="content-backdrop fade"></div>
                 </div>
