@@ -1,7 +1,5 @@
 <?php
-
 namespace App\Http\Controllers;
-
 use App\Models\LSP;
 use App\Models\BKK;
 use App\Models\Blog;
