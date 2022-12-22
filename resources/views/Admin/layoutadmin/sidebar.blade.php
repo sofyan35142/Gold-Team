@@ -397,6 +397,16 @@
                         <div data-i18n="Kewirausahaan Sketsu">Kewirausahaan Sketsu</div>
                     </a>
                 </li>
+                <li class="menu-item">
+                    <a href="/index/lowongankerja" class="menu-link">
+                        <div data-i18n="Lowongan Kerja">Lowongan Kerja</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="/index/perusahaanmitra" class="menu-link">
+                        <div data-i18n="Perusahaan Mitra">Perusahaan Mitra</div>
+                    </a>
+                </li>
             </ul>
         </li>
         <li class="menu-item">

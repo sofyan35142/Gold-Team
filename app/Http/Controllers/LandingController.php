@@ -29,6 +29,7 @@ use App\Models\kategoriblog;
 use App\Models\kegiatanbkk;
 use App\Models\kewirausahaansketsu;
 use App\Models\lowongankerja;
+use App\Models\perusahaan_mitra;
 use App\Models\sidestruktur;
 use App\Models\Tempatujikom;
 use Illuminate\Http\Request;
@@ -42,6 +43,7 @@ use App\Models\sekolahadiwiyata;
 use App\Models\strukturbkk;
 use App\Models\strukturorganisasi;
 use App\Models\Sosmed;
+use App\Models\umkm_pasangan;
 
 class LandingController extends Controller
 {
@@ -298,19 +300,23 @@ class LandingController extends Controller
     {
         $sosmed = Sosmed::all();
         $data = kewirausahaansketsu::all()->first();
+        $p = json_decode($data->wirausahapesertadidik);
+        // dd($p);
         return view("landingpage.BKK.kewirausahaan_bkk",compact("data",'sosmed'));
     }
     public function lowongan_kerja()
     {
         // $data = lowongankerja::paginate(6)->sortByDesc("id");
-        $data = lowongankerja::latest("id")->paginate(6);
+        $data = lowongankerja::paginate(6);
         $sosmed = Sosmed::all();
         return view("landingpage.BKK.lowongan_kerja",compact("data","sosmed"));
     }
-    public function detail_lowongan()
+    public function detail_lowongan($id)
     {
         $sosmed = Sosmed::all();
-        return view("landingpage.BKK.detail.detaillowongan", compact('sosmed'));
+        $data =  lowongankerja::find($id);
+        $lowongan = lowongankerja::latest("id")->limit(10)->get();
+        return view("landingpage.BKK.detail.detaillowongan", compact('sosmed','data','lowongan'));
     }
     public function bimbingan_karir()
     {
@@ -321,7 +327,9 @@ class LandingController extends Controller
     public function perusahaan_mitra()
     {
         $sosmed = Sosmed::all();
-        return view("landingpage.BKK.perusahaan_mitra", compact('sosmed'));
+        $data = perusahaan_mitra::paginate(3);
+        $data2 = umkm_pasangan::paginate(3);
+        return view("landingpage.BKK.perusahaan_mitra", compact('sosmed','data','data2'));
     }
     //end BKK
 
@@ -385,4 +393,3 @@ class LandingController extends Controller
         return view ('landingpage.beranda.bloglebihbanyak', compact('sosmed'));
     }
 }
-

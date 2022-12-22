@@ -43,7 +43,7 @@
                                         <?php $no = 1; ?>
                                         @foreach ($lowongan as $data)
                                             <tr>
-                                                <td>{{ $no }}</td>
+                                                <td>{{ $no++ }}</td>
                                                 <td
                                                     style="
                                             width: 26pc;

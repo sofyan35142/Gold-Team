@@ -48,10 +48,10 @@
                                             <label for="defaultFormControlInput" class="form-label">Status</label>
                                             <div class="mb-3">
                                                 <input type="radio" class="btn-check" name="status" id="option"
-                                                    autocomplete="off">
+                                                    autocomplete="off" value="masih ada">
                                                 <label class="btn btn-secondary" for="option">Masih ada</label>
                                                 <input type="radio" class="btn-check" name="status" id="option2"
-                                                    autocomplete="off">
+                                                    autocomplete="off" value="selesai">
                                                 <label class="btn btn-secondary" for="option2">Selesai</label>
                                             </div>
                                             <div class="mb-3">

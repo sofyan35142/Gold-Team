@@ -20,6 +20,7 @@ class lowongankerja extends Seeder
             'deskripsi' => '<p>Kabar gembira bagi para pencari ker#ja. PT Indomarco Prismatama, beroperasi sebagai Indomaret, adalah jaringan pengecer waralaba di Indonesia. Kembali membuka kesempatan kerja untuk lulusanSMK.</p><p>Bagi alumni SMK Negeri 1 Sukorejo yang berminat dapat segera mendaftarkan diri <a href="http://127.0.0.1:8000/BKK/detail-lowongan#">DISINI.</a> Berkas lamaran kerja dikumpulkan di Ruang BKK SMKN 1 Sukorejo paling akhir tanggal 19 Agustus 2022 Pukul 09.00 WIB</p>',
             'status' => 'masih ada',
             'foto' => 'lowongan5.jpg',
+            'created_at' => now(),
         ]);
 
         DB::table('lowongankerja')->insert([
@@ -35,6 +36,7 @@ class lowongankerja extends Seeder
             Pukul : 10.00 WIB</p>',
             'status' => 'masih ada',
             'foto' => 'lowongan1.jpg',
+            'created_at' => now(),
         ]);
 
         DB::table('lowongankerja')->insert([
@@ -56,6 +58,7 @@ class lowongankerja extends Seeder
             10. Berpenampilan Menarik</p>',
             'status' => 'selesai',
             'foto' => 'lowongan6.jpg',
+            'created_at' => now(),
         ]);
         DB::table('lowongankerja')->insert([
             'judul' => 'LOWONGAN KERJA – PT. SHINWA NONWOVENS
@@ -78,13 +81,14 @@ class lowongankerja extends Seeder
             8. Sanggup bekerja sistem Shift</p>',
             'status' => 'selesai',
             'foto' => 'lowongan2.jpg',
+            'created_at' => now(),
         ]);
         // DB::table('lowongankerja')->insert([
         //     'judul' => '',
         //     'deskripsi' => '',
         //     'status' => '',
         //     'foto' => '',
-        // ]);
+        //     'created_anow()]);
         DB::table('lowongankerja')->insert([
             'judul' => 'LOWONGAN KERJA CIMORY DAIRY LAND
             PRIGEN',
@@ -109,6 +113,7 @@ class lowongankerja extends Seeder
             Fotokopi KTP</p>',
             'status' => 'masih ada',
             'foto' => 'lowongan3.jpg',
+            'created_at' => now(),
         ]);
         DB::table('lowongankerja')->insert([
             'judul' => 'LOWONGAN KERJA PT. JATIM AUTOCOMP
@@ -124,6 +129,7 @@ class lowongankerja extends Seeder
         </p>',
             'status' => 'selesai',
             'foto' => 'lowongan4.jpg',
+            'created_at' => now(),
         ]);
     }
 }
