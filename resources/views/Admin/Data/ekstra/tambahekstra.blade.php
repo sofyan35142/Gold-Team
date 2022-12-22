@@ -44,11 +44,11 @@
                                 @csrf
                         <div>
                         <label for="defaultFormControlInput" class="form-label">Judul Ekstra</label>
-                        <input type="text" name="judul" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" />
+                        <input type="text" name="judul" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" required/>
                         </div>
                         <div>
                         <label for="defaultFormControlInput" class="form-label">Nama Pembina</label>
-                        <input type="text" name="nama" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" />
+                        <input type="text" name="nama" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" required/>
                         </div>
                         <br/>
 
@@ -64,12 +64,14 @@
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Upload Foto Ekstra</label>
 
-                            <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                            <i style="float: left;font-size: 11px;color: red">Foto harus berukuran 315px x 350px</i> <br>
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Upload Foto Pembina</label>
 
-                            <input type="file" name="foto_pembina" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <input type="file" name="foto_pembina" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                            <i style="float: left;font-size: 11px;color: red">Foto harus berukuran 159px x 198px</i> <br>
                         </div>
 
                           <div class="mb-3">
@@ -77,9 +79,10 @@
                                     <div class="input-group control-group increment" >
                                     <input type="file" name="foto_kegiatan[]" class="form-control">
                                     <div class="input-group-btn">
-                                      <button class="btn btn-success" type="button" style="margin-left: -67px"><i class="glyphicon glyphicon-plus"></i>Add</button>
+                                        <button class="btn btn-success" type="button" style="margin-left: -67px"><i class="glyphicon glyphicon-plus"></i>Add</button>
                                     </div>
-                                  </div>
+                                </div>
+                                <i style="float: left;font-size: 11px;color: red">Foto harus berukuran 232px x 348px</i> <br>
                                   <div class="clone hide">
                                     <div class="control-group input-group" style="margin-top:10px">
                                       <input type="file" name="foto_kegiatan[]" class="form-control">

@@ -44,7 +44,7 @@
                                 @csrf
                         <div>
                         <label for="defaultFormControlInput" class="form-label">kategori</label>
-                        <input type="text" name="kategori" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" />
+                        <input type="text" name="kategori" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" required>
                         </div>
                         <button type="submit" class="btn rounded-pill btn-primary">Submit</button>
                         </form>

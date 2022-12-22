@@ -43,32 +43,33 @@
                         <form action="/insertdharma" method="POST" enctype="multipart/form-data">
                                 @csrf
                                  <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Upload Foto Ekstra</label>
+                            <label for="exampleInputEmail1" class="form-label">Upload Foto Dharma</label>
 
-                            <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" accept="image/png,jpg,jpeg,jfif,webp" required>
+                            <i style="float: left;font-size: 11px;color: red">Foto harus berukuran 255px x 300px</i> <br>
                         </div>
                         <div>
                         <label for="defaultFormControlInput" class="form-label">nama</label>
-                        <input type="text" name="nama" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" />
+                        <input type="text" name="nama" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" required/>
                         </div>
                         <div>
                         <label for="defaultFormControlInput" class="form-label">jabatan</label>
-                        <input type="text" name="jabatan" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" />
+                        <input type="text" name="jabatan" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" required/>
                         </div>
                         <br/>
                         <div>
                         <label for="defaultFormControlInput" class="form-label">tempat_lahir</label>
-                        <input type="text" name="tempat_lahir" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" />
+                        <input type="text" name="tempat_lahir" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" required/>
                         </div>
                         <br/>
                         <div>
                         <label for="defaultFormControlInput" class="form-label">tgl_lahir</label>
-                        <input type="date" name="tgl_lahir" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" />
+                        <input type="date" name="tgl_lahir" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" required/>
                         </div>
                         <br/>
                         <div>
                         <label for="defaultFormControlInput" class="form-label">alamat</label>
-                        <textarea name="alamat" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp"></textarea>
+                        <textarea name="alamat" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" required></textarea>
                         </div>
                         <br/>
                         <div>

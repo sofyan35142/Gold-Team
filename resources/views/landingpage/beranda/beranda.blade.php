@@ -181,7 +181,7 @@
                     <h3>Loker dari BKK</h3>
                     <p>Lowongan Pekerjaan dari BKK.</p>
                     <div class="theme-button">
-                        <a href="/lokerbkk" class="default-btn">Selengkapnya</a>
+                        <a href="/BKK/lowongan-kerja" class="default-btn">Selengkapnya</a>
                     </div>
                     <div class="service-shape">
                         <img src="assets/img/service/shapes/service-pattern-6.png" alt="shape">

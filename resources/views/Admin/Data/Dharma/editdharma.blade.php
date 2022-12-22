@@ -71,12 +71,12 @@
                             <br/>
                             <div>
                             <label for="defaultFormControlInput" class="form-label">tgl_lahir</label>
-                            <input type="date" name="tgl_lahir" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp"  />
+                            <input type="date" name="tgl_lahir" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" value="{{ $data->tgl_lahir }}"  />
                             </div>
                             <br/>
                             <div>
                             <label for="defaultFormControlInput" class="form-label">alamat</label>
-                            <textarea name="alamat" class="form-control" id="defaultFormControlInput" aria-describedby="defaultFormControlHelp"></textarea>
+                            <textarea name="alamat" class="form-control" id="defaultFormControlInput" aria-describedby="defaultFormControlHelp"> {{ $data->alamat }}</textarea>
                             </div>
                             <br/>
                             <div>

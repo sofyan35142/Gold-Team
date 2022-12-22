@@ -18,7 +18,7 @@
                 <div class="footer-widget">
                     <div class="logo">
                         <a href="index.html">
-                            <img src="https://127.0.0.1:8000/foto/footer.png" alt="logo">
+                            <img src="foto/sketsu.png" alt="logo">
                         </a>
                     </div>
                     {{-- <p>Lorem ipsum dolor sit amet, tur adipiscing elit, sed do eiusmod tempor contratc.</p> --}}

@@ -76,7 +76,7 @@
                             <br/>
                             <img class="img mb-3" src="{{ asset('blog/' . $data->foto) }}" alt="" style="width: 100px;">
                             <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto }}">
-                            {{-- <i style="float: left;font-size: 11px;color: red">Abaikan jika tidak merubah foto</i> --}}
+                            <i style="float: left;font-size: 11px;color: red">Foto harus berukuran 350px x 353px</i>
                         </div>
                         <label for="defaultFormControlInput" class="form-label mb-3">Foto kegiatan</label>
                                             <div class="mb-3 row">
@@ -86,6 +86,7 @@
                                                     <img  src="{{ asset('fotokegiatan/' . $foto) }}" alt="" width="100px" height="100px" class="my-3">
                                                     <input type="file" name="foto_kegiatan[{{ $key++ }}]" class="form-control w-75"
                                                         id="defaultFormControlInput" aria-describedby="defaultFormControlHelp"  />
+                                                        <i style="float: left;font-size: 11px;color: red">Foto harus berukuran 430px x 664px</i>
                                                 </div>
 @endforeach
                         <button type="submit" class="btn rounded-pill btn-primary">Submit</button>

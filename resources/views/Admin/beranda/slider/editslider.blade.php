@@ -52,21 +52,21 @@
                             <br/>
                             <img class="img mb-3" src="{{ asset('slider/' . $data->foto1) }}" alt="" style="width: 100px;">
                             <input type="file" name="foto1" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto }}">
-                            <i style="float: left;font-size: 11px;color: red">x 43pc</i>
+                            <i style="float: left;font-size: 11px;color: red">foto harus berukuran 1920px x 951px</i>
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Update Foto2</label>
                             <br/>
                             <img class="img mb-3" src="{{ asset('slider/' . $data->foto2) }}" alt="" style="width: 100px;">
                             <input type="file" name="foto2" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto }}">
-                            <i style="float: left;font-size: 11px;color: red">x 43pc</i>
+                            <i style="float: left;font-size: 11px;color: red">foto harus berukuran 1920px x 951px</i>
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Update Foto3</label>
                             <br/>
                             <img class="img mb-3" src="{{ asset('slider/' . $data->foto3) }}" alt="" style="width: 100px;">
                             <input type="file" name="foto3" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto }}">
-                            <i style="float: left;font-size: 11px;color: red">x 43pc</i>
+                            <i style="float: left;font-size: 11px;color: red">foto harus berukuran 1920px x 951px</i>
                         </div>
                         <button type="submit" class="btn rounded-pill btn-primary">Submit</button>
                         </form>

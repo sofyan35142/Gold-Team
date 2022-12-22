@@ -57,8 +57,8 @@
                     <div class="service-details-post">
                         <h3>Pembina</h3>
                         <div class="d-flex flex-row">
-                            <div class="p-2"><img class="img-guru"
-                                    src="{{ asset('fotoekstra/' . $detailekstra->foto_pembina) }}" style="height: 10pc" />
+                            <div class="p-2"><img class="img-detailguru"
+                                    src="{{ asset('fotoekstra/' . $detailekstra->foto_pembina) }}" />
                             <b>{{ $detailekstra->nama }}</b>
                             </div>
                         </div>
