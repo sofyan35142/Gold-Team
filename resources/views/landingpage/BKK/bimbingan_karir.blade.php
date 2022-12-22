@@ -54,15 +54,15 @@
                     <div class="row">
                         @foreach ($data as $biker)
                         <div class="col-lg-4 col-md-6">
-                            
+
                                <div class="service-item">
-                                
+
                                 <img class="img-bkk" src="{{ asset('foto/' . $biker->foto) }}" alt="">
 
                                 <h3>{{$biker->judul}}</h3>
-                                
+
                                 <div class="theme-button">
-                                    <a href="{{$biker->link}}" class="default-btn">Lihat</a>
+                                    <a target="_blank" href="{{$biker->link}}" class="default-btn">Lihat</a>
                                 </div>
                                 <div class="service-shape">
                                     <img src="../assets/img/service/shapes/service-pattern-6.png" alt="shape">
@@ -71,15 +71,15 @@
                                     <img src="../assets/img/service/shapes/service-pattern-9.png" alt="shape">
                                     <img src="../assets/img/service/shapes/service-pattern-10.png" alt="shape">
                                 </div>
-                            </div>                                
-                            
+                            </div>
+
                         </div>
                         @endforeach
                         {{-- <div class="col-lg-4 col-md-6">
                             <div class="service-item">
                                 <img class="img-bkk" src="../guru/bkk.png" alt="">
                                 <h3>APLIKASI BURSA KERJA KHUSUS</h3>
-                                
+
                                 <div class="theme-button">
                                     <a href="/tei" class="default-btn">Selengkapnya</a>
                                 </div>
@@ -96,7 +96,7 @@
                             <div class="service-item">
                                 <img class="img-bkk" src="../guru/bkk.png" alt="">
                                 <h3>MEDIA SOSIAL BURSA KERJA KHUSUS</h3>
-                                
+
                                 <div class="theme-button">
                                     <a href="/rpl" class="default-btn">Selengkapnya</a>
                                 </div>
@@ -113,7 +113,7 @@
                             <div class="service-item">
                                 <img class="img-bkk" src="../foto/alumni.jpg" alt="">
                                 <h3>TESTIMONI ALUMNI SMKN 1 SUKOREJO</h3>
-                               
+
                                 <div class="theme-button">
                                     <a href="/tki" class="default-btn">Selengkapnya</a>
                                 </div>
@@ -130,7 +130,7 @@
                             <div class="service-item">
                                 <img class="img-bkk" src="../foto/ortu1.png" alt="">
                                 <h3>SURVEY KEPUASAN ORANG TUA</h3>
-                                
+
                                 <div class="theme-button">
                                     <a href="/tav" class="default-btn">Selengkapnya</a>
                                 </div>
@@ -147,7 +147,7 @@
                             <div class="service-item">
                                 <img class="img-bkk" src="../foto/lamaran.png" alt="">
                                 <h3>CONTOH SURAT LAMARAN PEKERJAAN</h3>
-                                
+
                                 <div class="theme-button">
                                     <a href="/tav" class="default-btn">Selengkapnya</a>
                                 </div>
@@ -164,7 +164,7 @@
                             <div class="service-item">
                                 <img class="img-bkk" src="../foto/cv.png" alt="">
                                 <h3>CONTOH CURRICULUM VITAE</h3>
-                                
+
                                 <div class="theme-button">
                                     <a href="/tav" class="default-btn">Selengkapnya</a>
                                 </div>
@@ -181,7 +181,7 @@
                             <div class="service-item">
                                 <img class="img-bkk" src="../foto/wawan.jpg" alt="">
                                 <h3>TIPS DAN TRIK BERWAWANCARA</h3>
-                                
+
                                 <div class="theme-button">
                                     <a href="/tav" class="default-btn">Selengkapnya</a>
                                 </div>
@@ -198,7 +198,7 @@
                             <div class="service-item">
                                 <img class="img-bkk" src="../foto/wira1.png" alt="">
                                 <h3>TATA CARA MEMBUKA USAHA BARU</h3>
-                                
+
                                 <div class="theme-button">
                                     <a href="/tav" class="default-btn">Selengkapnya</a>
                                 </div>
@@ -215,7 +215,7 @@
                             <div class="service-item">
                                 <img class="img-bkk" src="../foto/images.jfif" alt="">
                                 <h3>PROSEDUR PENDIRIAN USAHA</h3>
-                                
+
                                 <div class="theme-button">
                                     <a href="/tav" class="default-btn">Selengkapnya</a>
                                 </div>
@@ -232,7 +232,7 @@
                             <div class="service-item">
                                 <img class="img-bkk" src="../foto/kuliah.png" alt="">
                                 <h3>FORUM TANYA JAWAB BERKULIAH</h3>
-                                
+
                                 <div class="theme-button">
                                     <a href="/tav" class="default-btn">Selengkapnya</a>
                                 </div>

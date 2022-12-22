@@ -18,6 +18,8 @@ class BerandaController extends Controller
     public function viewblog(){
 
         $data=Blog::with('idblog')->get();
+        // $tes = json_decode($data->foto_kegiatan);
+        // dd($tes);
         return view('Admin.beranda.blog.blog', compact('data'));
     }
 
@@ -271,20 +273,20 @@ class BerandaController extends Controller
         // $data->update($request->all());
         // dd($data);
         if ($request->hasFile('foto1')) {
-            $request->file('foto1')->move('fotoalumni/', $request->file('foto1')->getClientOriginalName());
-            $data->foto = $request->file('foto1')->getClientOriginalName();
+            $request->file('foto1')->move('slider/', $request->file('foto1')->getClientOriginalName());
+            $data->foto1 = $request->file('foto1')->getClientOriginalName();
             $data->save();
         }
 
         if ($request->hasFile('foto2')) {
-            $request->file('foto2')->move('fotoalumni/', $request->file('foto2')->getClientOriginalName());
-            $data->foto = $request->file('foto2')->getClientOriginalName();
+            $request->file('foto2')->move('slider/', $request->file('foto2')->getClientOriginalName());
+            $data->foto2 = $request->file('foto2')->getClientOriginalName();
             $data->save();
         }
 
         if ($request->hasFile('foto3')) {
-            $request->file('foto3')->move('fotoalumni/', $request->file('foto3')->getClientOriginalName());
-            $data->foto = $request->file('foto3')->getClientOriginalName();
+            $request->file('foto3')->move('slider/', $request->file('foto3')->getClientOriginalName());
+            $data->foto3 = $request->file('foto3')->getClientOriginalName();
             $data->save();
         }
 

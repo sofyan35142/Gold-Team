@@ -28,22 +28,14 @@
             <div class="d-table-cell">
                 <div class="container">
                     <div class="service-title-text">
-                        <h2>Paskibra SMKN 1 sukorejo</h2>
+                        <h2>EKSTRAKURIKULER</h2>
                         <ul>
                             <li>
-                                <a href="/">Beranda</a>
+                                <a href="#">Data</a>
                             </li>
                             <li>
                                 <i class="icofont-rounded-double-right"></i>
-                                <a href="/jurusan">Data</a>
-                            </li>
-                            <li>
-                                <i class="icofont-rounded-double-right"></i>
-                                Ekstra
-                            </li>
-                            <li>
-                                <i class="icofont-rounded-double-right"></i>
-                                Detailekstra
+                                Detail EKSTRAKURIKULER
                             </li>
                         </ul>
                     </div>

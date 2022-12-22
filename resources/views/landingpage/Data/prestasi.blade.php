@@ -12,19 +12,19 @@
     @include('landingpage.layout.header')
 
 
-    <div class="blog-title blog-title-bg">
+     <div class="service-title service-title-bg bg-3">
         <div class="d-table">
             <div class="d-table-cell">
                 <div class="container">
-                    <div class="blog-title-text">
-                        <h2>Prestasi</h2>
+                    <div class="service-title-text">
+                        <h2>PRESTASI</h2>
                         <ul>
                             <li>
-                                <a href="index.html">Home</a>
+                                <a href="/data/prestasi">DATA</a>
                             </li>
                             <li>
                                 <i class="icofont-rounded-double-right"></i>
-                                Prestasi
+                                PRESTASI
                             </li>
                         </ul>
                     </div>
@@ -60,7 +60,7 @@
     <div class="main-blog-post">
         <div class="container">
             <div class="row">
-                @foreach ($data as $prestasi)
+                @foreach ($dataa as $prestasi)
                 <div class="col-lg-4 col-md-6">
 
 

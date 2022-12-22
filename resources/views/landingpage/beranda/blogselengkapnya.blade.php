@@ -100,7 +100,7 @@
         <div class="main-blog-post">
             <div class="container">
                 <div class="row">
-                    @foreach ($data as $blog)
+                    @foreach ($dataa as $blog)
                         <div class="col-lg-4 col-md-6">
 
 

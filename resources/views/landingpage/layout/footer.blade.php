@@ -4,7 +4,7 @@
     <div class="logo-slide-track">
         @foreach ($sponsor as $kerjasama)
         <div class="slideyosop">
-            <img height="100px" width="100px" src="{{ asset('sponsor/' . $kerjasama->foto) }}"
+            <img height="80px" width="210px" src="{{ asset('sponsor/' . $kerjasama->foto) }}"
             alt="" />
         </div>
         @endforeach

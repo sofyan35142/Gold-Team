@@ -53,12 +53,9 @@ class DatabaseSeeder extends Seeder
             sejarahsingkat::class,
             visimisibkk::class,
             lowongankerja::class,
-<<<<<<< HEAD
             lowongankerja::class,
-=======
             perusahaan_mitra::class,
             umkm_pasangan::class,
->>>>>>> 097029ef2913d09ee27a73043582d19937ba84bd
             keunggulan::class
         ]);
     }
