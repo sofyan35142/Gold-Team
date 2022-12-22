@@ -71,7 +71,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="card mb-4">
-                    <h5 class="card-header">Edit Kakomli</h5>
+                    <h5 class="card-header">Edit Bimbingan Karir</h5>
                     <div class="card-body">
                         <form action="/editbimbingan/{{ $data->id }}" method="POST" enctype="multipart/form-data">
                                 @csrf
