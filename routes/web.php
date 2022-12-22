@@ -72,7 +72,7 @@ Route::get('/BKK/strukturorganisasi-bkk', [LandingController::class, 'strukturor
 Route::get('/BKK/kegiatan-bkk', [LandingController::class, 'kegiatan_bkk']);
 Route::get('/BKK/detail-kegiatan-bkk/{id}', [LandingController::class, 'detail_kegiatan_bkk']);
 Route::get('/BKK/kewirausahaan-bkk', [LandingController::class, 'kewirausahaan_bkk']);
-Route::get('/BKK/lowongan-kerja', [LandingController::class, 'lowongan_kerja']);
+Route::get('/BKK/lowongan-kerja', [LandingController::class, 'lowongan_kerja'])->name('lowongan-kerja');
 Route::get('/BKK/detail-lowongan/{id}', [LandingController::class, 'detail_lowongan']);
 Route::get('/BKK/bimbingan-karir', [LandingController::class, 'bimbingan_karir']);
 Route::get('/BKK/perusahaan-mitra', [LandingController::class, 'perusahaan_mitra']);

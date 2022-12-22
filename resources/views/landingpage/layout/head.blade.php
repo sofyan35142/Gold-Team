@@ -29,10 +29,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="http://127.0.0.1:8000/csszaki.css" />
-    <link rel="stylesheet" href="http://127.0.0.1:8000/scsszaki.css" />
-
     <link rel="stylesheet" href="http://127.0.0.1:8000/csskeysha.css" />
+    <link rel="stylesheet" href="http://127.0.0.1:8000/scsszaki.css" />
+    @if(!Route::is('lowongan-kerja'))
     <link rel="stylesheet" href="http://127.0.0.1:8000/cssyosop.css" />
+    @endif
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
     <title>SMKN 1 SUKOREJO - BISA SUKSES</title>
