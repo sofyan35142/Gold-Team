@@ -350,6 +350,11 @@
                     </a>
                 </li>
                 <li class="menu-item">
+                    <a href="/index/bimbingan-karir" class="menu-link">
+                        <div data-i18n="Bimbingan Karir">Bimbingan Karir</div>
+                    </a>
+                </li>
+                <li class="menu-item">
                     <a href="/index/perusahaanmitra" class="menu-link">
                         <div data-i18n="Perusahaan Mitra">Perusahaan Mitra</div>
                     </a>

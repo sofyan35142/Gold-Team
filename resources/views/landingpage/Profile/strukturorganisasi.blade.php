@@ -55,7 +55,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 main-service-area blog-side-bar border shadows mb-40px">
-                <h3 class="mt-3">Anggota Organisasi</h3>
+                <h3 class="mt-3 text-center">Anggota Organisasi</h3>
                     <div class="row">
                         @foreach ($dataside as $side)
                         <div class="col-lg-6 mt-3">
