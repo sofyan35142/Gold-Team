@@ -60,7 +60,7 @@ class LandingController extends Controller
         $video=videoprofil::all();
         $keunggulan=keunggulan::all();
         $sosmed=Sosmed::all();
-        return view("landingpage.beranda.beranda", compact('data','dataa','datakepsek','total','slider','sponsor','video', 'sosmed','keunggulan'));
+        return view("landingpage.beranda.beranda", compact('datakepsek','total','slider','sponsor','video', 'sosmed','keunggulan','blog','alumni'));
     }
 
     public function create()

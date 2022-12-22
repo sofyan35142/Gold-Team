@@ -1,5 +1,5 @@
 
-<div class="logo-slider mb-4">
+<div class="logo-slider mb-4 mt-4">
     <center><h1><b>KERJASAMA</b></h1></center>
     <div class="logo-slide-track">
         @foreach ($sponsor as $kerjasama)
