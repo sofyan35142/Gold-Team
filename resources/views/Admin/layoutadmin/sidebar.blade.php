@@ -76,98 +76,98 @@
             </ul>
         </li>
 
-                    <!-- Apps & Pages -->
-                    <li class="menu-item">
-                        <a href="javascript:void(0);" class="menu-link menu-toggle">
-                            <i class='menu-icon tf-icons bx bx-food-menu'></i>
-                            <div data-i18n="Beranda">Beranda</div>
-                        </a>
-                        <ul class="menu-sub">
-                            <li class="menu-item">
-                                <a href="/beranda/slider" class="menu-link">
-                                    <div data-i18n="Slider">Slider</div>
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="/beranda/totalsiswa" class="menu-link">
-                                    <div data-i18n="total siswa">total siswa</div>
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="/beranda/blog" class="menu-link">
-                                    <div data-i18n="blog">blog</div>
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="/kategoriblog" class="menu-link">
-                                    <div data-i18n="Kategori">Kategori</div>
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="/beranda/alumni" class="menu-link">
-                                    <div data-i18n="alumni">alumni</div>
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="/beranda/sambutankepsek" class="menu-link">
-                                    <div data-i18n="sambutan kepsek">sambutan kepsek</div>
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="/beranda/sponsor" class="menu-link">
-                                    <div data-i18n="Sponsor">Sponsor</div>
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="/beranda/keunggulan" class="menu-link">
-                                    <div data-i18n="Keunggulan">Keunggulan</div>
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="/beranda/videoprofil" class="menu-link">
-                                    <div data-i18n="Video Profil">Video Profil</div>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu-item">
-                        <a href="javascript:void(0);" class="menu-link menu-toggle">
-                            <i class="menu-icon tf-icons bx bx-user"></i>
-                            <div data-i18n="Profile">Profile</div>
-                        </a>
-                        <ul class="menu-sub">
-                            <li class="menu-item">
-                                <a href="/index/profil" class="menu-link">
-                                    <div data-i18n="Profile Sekolah">Profile Sekolah</div>
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="/index/profilvisimisi" class="menu-link">
-                                    <div data-i18n="Visi Misi">Visi Misi</div>
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="/index/strukturorganisasi" class="menu-link">
-                                    <div data-i18n="struktur">Struktur Organisasi</div>
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="/index/sejarahsingkat" class="menu-link">
-                                    <div data-i18n="sejarah singkat">sejarah singkat</div>
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="/index/sekolahadiwiyata" class="menu-link">
-                                    <div data-i18n="Sekolah Adiwiyata">Sekolah Adiwiyata</div>
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="/index/sekolahrujukan" class="menu-link">
-                                    <div data-i18n="Sekolah Rujukan">sekolah Rujukan</div>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
+        <!-- Apps & Pages -->
+        <li class="menu-item">
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class='menu-icon tf-icons bx bx-food-menu'></i>
+                <div data-i18n="Beranda">Beranda</div>
+            </a>
+            <ul class="menu-sub">
+                <li class="menu-item">
+                    <a href="/beranda/slider" class="menu-link">
+                        <div data-i18n="Slider">Slider</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="/beranda/totalsiswa" class="menu-link">
+                        <div data-i18n="total siswa">total siswa</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="/beranda/blog" class="menu-link">
+                        <div data-i18n="blog">blog</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="/kategoriblog" class="menu-link">
+                        <div data-i18n="Kategori">Kategori</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="/beranda/alumni" class="menu-link">
+                        <div data-i18n="alumni">alumni</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="/beranda/sambutankepsek" class="menu-link">
+                        <div data-i18n="sambutan kepsek">sambutan kepsek</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="/beranda/sponsor" class="menu-link">
+                        <div data-i18n="Sponsor">Sponsor</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="/beranda/keunggulan" class="menu-link">
+                        <div data-i18n="Keunggulan">Keunggulan</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="/beranda/videoprofil" class="menu-link">
+                        <div data-i18n="Video Profil">Video Profil</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="menu-item">
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-user"></i>
+                <div data-i18n="Profile">Profile</div>
+            </a>
+            <ul class="menu-sub">
+                <li class="menu-item">
+                    <a href="/index/profil" class="menu-link">
+                        <div data-i18n="Profile Sekolah">Profile Sekolah</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="/index/profilvisimisi" class="menu-link">
+                        <div data-i18n="Visi Misi">Visi Misi</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="/index/strukturorganisasi" class="menu-link">
+                        <div data-i18n="struktur">Struktur Organisasi</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="/index/sejarahsingkat" class="menu-link">
+                        <div data-i18n="sejarah singkat">sejarah singkat</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="/index/sekolahadiwiyata" class="menu-link">
+                        <div data-i18n="Sekolah Adiwiyata">Sekolah Adiwiyata</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="/index/sekolahrujukan" class="menu-link">
+                        <div data-i18n="Sekolah Rujukan">sekolah Rujukan</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
 
         <li class="menu-item">
             <a href="javascript:void(0);" class="menu-link menu-toggle">
@@ -347,6 +347,11 @@
                 <li class="menu-item">
                     <a href="/index/lowongankerja" class="menu-link">
                         <div data-i18n="Lowongan Kerja">Lowongan Kerja</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="/index/bimbingan-karir" class="menu-link">
+                        <div data-i18n="Bimbingan Karir">Bimbingan Karir</div>
                     </a>
                 </li>
                 <li class="menu-item">

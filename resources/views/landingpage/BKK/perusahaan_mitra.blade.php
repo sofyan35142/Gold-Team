@@ -18,11 +18,7 @@
             </div>
         </div>
     </div>
-
-
     @include('landingpage.layout.header')
-
-
     <div class="service-title service-title-bg bg-3">
         <div class="d-table">
             <div class="d-table-cell">
@@ -46,7 +42,7 @@
     </div>
     <section class="pricing-section pt-100 pb-70 main-blog-post">
         <div class="container">
-            <div class="section-head m-0 mw-100">
+            <div class="section-head m-0 mw-100 mb-3">
                 <h2 class="text-start">Perusaaan <span>Mitra</span></h2>
                 <p>Saran dan masukan dari IDUKA sangat kami perlukan dalam upaya peningkatan kinerja Tim BKK dan
                     kompetensi Lulusan, maka dari itu besar harapan kami agar para IDUKA bersedia mengisi link dibawah
@@ -56,7 +52,7 @@
                         Link Kepuasan Pelanggan
                     </a></p>
             </div>
-            <div class="row">
+            <div class="row mb-3">
                 <h3 class="text-center">DAFTAR MOU NAMA PERUSAHAAN MITRA
                     SMKN 1 SUKOREJO</h3>
                 @forelse ($data as $row)
@@ -83,7 +79,7 @@
                 @empty
                 @endforelse
             </div>
-            <div class="row">
+            <div class="row mb-3">
                 <h3 class="text-center">DAFTAR MOU NAMA UMKM PASANGAN
                     SMKN 1 SUKOREJO</h3>
                 @foreach ($data2 as $row)
@@ -109,7 +105,7 @@
                     </div>
                 @endforeach
             </div>
-            {{ $data->links('vendor.pagination.bootstrap-4') }}
+            {{ $data->links('vendor.pagination.bimbingan') }}
             <div class="service-details-post shadow cardkbkk">
                 <h3>Ketua BKK</h3>
                 <div class="d-flex flex-row">

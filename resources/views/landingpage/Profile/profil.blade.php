@@ -151,7 +151,7 @@
                                                 <p class="card-text">
                                                     Jarak ke pusat kecamatan:
                                                 </p>
-                                                <span class="card-title">{{ $profil->jarak_ke_pusat_kecamatan }}</span>
+                                                <span class="card-title">{{ $profil->jarak_ke_pusat_kecamatan }} KM</span>
                                             </div>
                                         </div>
                                     </div>
@@ -161,7 +161,7 @@
                                                 <p class="card-text">
                                                     Jarak ke pusat daerah:
                                                 </p>
-                                                <span class="card-title">{{ $profil->jarak_ke_pusat_daerah }}</span>
+                                                <span class="card-title">{{ $profil->jarak_ke_pusat_daerah }} KM</span>
                                             </div>
                                         </div>
                                     </div>
