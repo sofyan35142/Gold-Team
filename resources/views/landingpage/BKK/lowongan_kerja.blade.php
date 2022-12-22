@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="zxx">
 @include('landingpage.layout.head')
-
+{{-- ffhfhfhg --}}
 <body>
 
     <div class="loader-content">

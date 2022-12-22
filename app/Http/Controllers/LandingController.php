@@ -220,7 +220,7 @@ class LandingController extends Controller
     }
     public function sejarahsingkat()
     {
-        $data = sejarahsingkat::find(1);
+        $data = sejarahsingkat::all()->first();
         $fotoside = json_decode($data->foto_side);
         $sosmed = Sosmed::all();
         return view("landingpage.profile.sejarahsingkat",compact('data','fotoside', 'sosmed'));
@@ -395,5 +395,5 @@ class LandingController extends Controller
         return view ('landingpage.beranda.bloglebihbanyak', compact('sosmed'));
     }
 
-    
+
 }
