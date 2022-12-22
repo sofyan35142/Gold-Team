@@ -120,7 +120,7 @@
                             <br/>
                             <img class="img mb-3" src="{{ asset('foto/' . $data->foto) }}" alt="" style="width: 100px;">
                             <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto }}">
-                            <i style="float: left;font-size: 11px;color: red">Abaikan jika tidak merubah foto</i>
+                            <i style="float: left;font-size: 11px;color: red">Ukuran Foto Harus 1063px x 1299px</i>
                         </div>
                         <div class="mb-3">
                           <br/>
@@ -128,7 +128,7 @@
                             <br/>
                             <img class="img mb-3" src="{{ asset('foto/jurusan/' . $data->produktif) }}" alt="" style="width: 150px;">
                             <input type="file" name="produktif" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->produktif }}">
-                            <i style="float: left;font-size: 11px;color: red">Abaikan jika tidak merubah foto</i>
+                            <i style="float: left;font-size: 11px;color: red">Ukuran Foto Harus 4592px x 2548px</i>
                         </div>
                         <button type="submit" class="btn rounded-pill btn-primary">Submit</button>
                         </form>

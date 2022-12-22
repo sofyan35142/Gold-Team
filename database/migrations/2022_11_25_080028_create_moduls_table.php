@@ -18,6 +18,10 @@ return new class extends Migration
             $table->string('judul');
             $table->text('deskripsi');
             $table->string('foto');
+            $table->string('judulsidebar1');
+            $table->string('linksidebar1');
+            $table->string('judulsidebar2');
+            $table->string('fotosidebar2');
             $table->timestamps();
         });
     }
