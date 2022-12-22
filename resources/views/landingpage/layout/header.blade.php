@@ -224,6 +224,9 @@
                                 <li class="nav-item">
                                     <a href="/alumni/profilealumni" class="nav-link">Profil Alumni</a>
                                 </li>
+                                <li class="nav-item">
+                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeWsmECSRWrxLI766NLusaeIuar7bqwvLYs0pSfzJ-mrDaUzA/viewform" class="nav-link">Form Testimoni Alumni</a>
+                                </li>
                             </ul>
                         </li>
                     </ul>

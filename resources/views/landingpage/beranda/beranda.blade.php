@@ -132,11 +132,11 @@
             </div>
             <div class="service-slider owl-carousel owl-theme">
                 <div class="service-item">
-                    <i class="flaticon-spray"></i>
+                    <i class="fa-solid fa-chalkboard-user"></i>
                     <h3>Guru Dan Staf</h3>
                     <p>Biodata Guru Dan Karyawan</p>
                     <div class="theme-button">
-                        <a href="/guruu" class="default-btn">Read More</a>
+                        <a href="/guruu" class="default-btn">Selengkapnya</a>
                     </div>
                     <div class="service-shape">
                         <img src="assets/img/service/shapes/service-pattern-6.png" alt="shape">
@@ -147,11 +147,11 @@
                     </div>
                 </div>
                 <div class="service-item">
-                    <i class="flaticon-clean-house"></i>
+                    <i class="fa-solid fa-laptop"></i>
                     <h3>Program Keahlian</h3>
                     <p>Pengenalan Kompetensi Keahlian</p>
                     <div class="theme-button">
-                        <a href="/jurusan" class="default-btn">Read More</a>
+                        <a href="/jurusan" class="default-btn">Selengkapnya</a>
                     </div>
                     <div class="service-shape">
                         <img src="assets/img/service/shapes/service-pattern-6.png" alt="shape">
@@ -162,11 +162,11 @@
                     </div>
                 </div>
                 <div class="service-item">
-                    <i class="flaticon-wiper"></i>
+                    <i class="fa-solid fa-school"></i>
                     <h3>Agenda Sekolah</h3>
                     <p>Kegiatan-kegiatan Sekolah.</p>
                     <div class="theme-button">
-                        <a href="service-details.html" class="default-btn">Read More</a>
+                        <a href="/blogselengkapnya" class="default-btn">Selengkapnya</a>
                     </div>
                     <div class="service-shape">
                         <img src="assets/img/service/shapes/service-pattern-6.png" alt="shape">
@@ -177,11 +177,11 @@
                     </div>
                 </div>
                 <div class="service-item">
-                    <i class="flaticon-spray"></i>
+                    <i class="fa-solid fa-user-tie"></i>
                     <h3>Loker dari BKK</h3>
                     <p>Lowongan Pekerjaan dari BKK.</p>
                     <div class="theme-button">
-                        <a href="service-details.html" class="default-btn">Read More</a>
+                        <a href="/lokerbkk" class="default-btn">Selengkapnya</a>
                     </div>
                     <div class="service-shape">
                         <img src="assets/img/service/shapes/service-pattern-6.png" alt="shape">
@@ -312,9 +312,12 @@
         <div class="container">
             <div class="section-head text-center">
                 <h2>Berita & Blog Terbaru</h2>
-                {{-- <button><a href="/blogbanyak">Blog</a></button> --}}
             </div>
-
+            <div class="price-card-area">
+              <div class="plan-btn">
+                <a href="/blogselengkapnya">Blog Lebih Banyak <i class="fa-regular fa-paper-plane"></i> </a>
+              </div>
+            </div>
 
             <div class="blog-slider owl-carousel owl-theme">
                 @foreach ($blog as $data)
@@ -339,7 +342,7 @@
                             </ul>
                             <p class="overflow">{!! $data->deskripsi !!}</p>
                             <a href="/blogdetail/{{ $data->id }}" class="blog-btn">
-                                Read more
+                                Selengkapnya
                                 <i class="icofont-rounded-right"></i>
                             </a>
                         </div>

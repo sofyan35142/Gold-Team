@@ -44,12 +44,13 @@
                     <div class="search-bar">
                         <form>
                             <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Search|">
+                                 <input name="judul" type="text" class="form-control" placeholder="Name"
+                                value="{{ isset($_GET['judul']) ? $_GET['judul'] : '' }}">
                             </div>
+                            <button>
+                                <i class="icofont-search-1"></i>
+                            </button>
                         </form>
-                        <button>
-                            <i class="icofont-search-1"></i>
-                        </button>
                     </div>
                 </div>
             </div>
@@ -85,7 +86,7 @@
                             </ul>
                             <span class="overflow">{!! $ekstra->deskripsi !!}</span>
                             <a href="/ekstradetail/{{ $ekstra->id }}" class="blog-btn">
-                                Read more
+                                Selengkapnya
                                 <i class="icofont-rounded-right"></i>
                             </a>
                         </div>
@@ -93,43 +94,8 @@
 
                 </div>
                  @endforeach
-            </div>
-            {{-- {{ $data->links() }} --}}
-            {{-- <ul class="pagination pagination-rouded justify-content-center my-5"> --}}
-                {{-- <li><a href="{{ $data->previosPageUrl() }}" class="mr-1"><<</a></li> --}}
-                {{-- @for($i = 0; $i< (ceil($data->total()/$data->perPage())); $i++)
-                <li><a href="?page={{ ($i + 1) }}" class="{{ ($data->currentPage() == ($i + 1)) ? 'bg-secondary' : 'bg-default' }}" fg-white mr-1 active>{{ ($i + 1) }}</a></li>
-                @endfor --}}
-                {{-- <li><a href="{{ $data->nextPageUrl() }}" class="">>></a></li> --}}
-            {{-- </ul>
-
-            <ul class="pagination pagination-rouded justify-content-center my-5">
-                {{ $data->links() }}
-            </ul> --}}
-            {{-- <nav>
-                <ul class="pagination  justify-content-center">
-                    <li class="page-item disabled">
-                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
-                            <i class="icofont-rounded-left"></i>
-                        </a>
-                    </li>
-                    <li class="page-item">
-                        <a class="page-link" href="#">1</a>
-                    </li>
-                    <li class="page-item" aria-current="page">
-                        <a class="page-link active" href="#">2</a>
-                    </li>
-                    <li class="page-item">
-                        <a class="page-link" href="#">3</a>
-                    </li>
-                    <li class="page-item">
-                        <a class="page-link" href="#">
-                            <i class="icofont-rounded-right"></i>
-                        </a>
-                    </li>
-                </ul>
-            </nav> --}}
         </div>
+         {{ $dataa->links('vendor.pagination.bootstrap-4') }}
     </div>
 
 

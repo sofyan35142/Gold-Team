@@ -94,12 +94,12 @@ class DataController extends Controller
             $data->foto_pembina = $request->file('foto_pembina')->getClientOriginalName();
             $data->save();
         }
+        if ($request->hasfile('foto_kegiatan')) {
         $keyarray1 =  array_keys($request->foto_kegiatan);
         $foto = [];
         // dd($keyarray1);
         // $hasil = array_combine($tes,$foto);
         $i = 0;
-        if ($request->hasfile('foto_kegiatan')) {
             foreach ($request->foto_kegiatan as $file) {
                 $name = $file->getClientOriginalName();
                 $file->move(public_path('foto_kegiatan/'), $name);
@@ -112,8 +112,8 @@ class DataController extends Controller
                 $fotoin[$key] = $foto[$key];
             }
             $data->foto_kegiatan = $fotoin;
+            $data->save();
         }
-        $data->save();
         return redirect()->route('ekstra')->with('success', 'Berhasil Di Update');
     }
 

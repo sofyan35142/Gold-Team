@@ -72,17 +72,24 @@
                         </div>
                     </div>
                 </div>
-                 {{-- @foreach($foto as $fotok)
-                <div class="col-lg-4 main-service-area blog-side-bar border shadows mb-40px h-fc py-3">
-                    <div class="service-sidebar">
-                        <center><b>Foto Kegiatan</b></center> <br>
-                        <img class="imgvisi" src="{{ asset('foto_kegiatan/' . $fotok) }}" alt="service">
+                <div class="col-lg-4 main-service-area blog-side-bar border shadows mb-40px py-3" style="height: 63pc;overflow:auto">
+                    <div class="service-sidebar h-fc">
+                        <center><h3><b>Foto Kegiatan</b></h3></center> <br>
+                        <img class="imgvisi mb-2 hovchange" data-imageb="../foto/header.JPG" src="../foto/header.JPG" alt="service">
+                        <div class="border side-sejarah" style="height: 254px;
+                        margin-bottom: 0.5rem;">
+                        </div>
+                        @foreach ($foto as $fotok)
+                        <img class="imgvisi mb-2" src="{{asset("blog/" . $fotok)}}" alt="service">
+                        @endforeach
                     </div>
                 </div>
-                @endforeach --}}
+            </div>
+        </div>
+    </div>
                 {{-- <div class="col-lg-4 main-service-area blog-side-bar"> --}}
                     {{-- <div class="team-section team-style-two team-style-three team-members pt-1000">
-                        <div class="team-card">
+                       <div class="team-card">
                             <div class="team-img">
                                 <div class="row">
                                     <div class="container">

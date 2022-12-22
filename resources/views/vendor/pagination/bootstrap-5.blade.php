@@ -1,11 +1,7 @@
 @if ($paginator->hasPages())
     <nav class="d-flex justify-items-center justify-content-between">
         <div class="d-flex justify-content-between flex-fill d-sm-none">
-<<<<<<< HEAD
-            <ul class="pagination">
-=======
             <ul class="pagination justify-content-center">
->>>>>>> f629c2da7737c3647c25c887e393f1727ad4d088
                 {{-- Previous Page Link --}}
                 @if ($paginator->onFirstPage())
                     <li class="page-item disabled" aria-disabled="true">
@@ -90,8 +86,6 @@
         </div>
     </nav>
 @endif
-<<<<<<< HEAD
-=======
 <nav>
     <ul class="pagination  justify-content-center">
         <li class="page-item disabled">
@@ -115,4 +109,3 @@
         </li>
     </ul>
 </nav>
->>>>>>> f629c2da7737c3647c25c887e393f1727ad4d088

@@ -18,22 +18,22 @@ class keunggulan extends Seeder
         DB::table('keunggulans')->insert([
             'judul' => 'Lingkungan Nyaman',
             'deskripsi' => 'Berada dilingkungan Aman, Nyaman, dan Kondusif.',
-            'foto' => 'paskib.jpg',
+            'foto' => 'scholl.png',
         ]);
         DB::table('keunggulans')->insert([
             'judul' => 'Fasilitas Lengkap',
             'deskripsi' => 'Kami Memiliki Fasilitas Sarana yang Lengkap untuk Menunjang proses pembelajaran.',
-            'foto' => 'paskib.jpg',
+            'foto' => 'laptop.png',
         ]);
         DB::table('keunggulans')->insert([
             'judul' => 'Lulusan Berkualitas',
             'deskripsi' => 'Kami Mencetak lulusan berkualitas sesuai kebutuhan industri dengan program teaching factory.',
-            'foto' => 'paskib.jpg',
+            'foto' => 'graduation.png',
         ]);
         DB::table('keunggulans')->insert([
             'judul' => 'Pengajar Kopenten',
             'deskripsi' => 'Guru yang up-to-date dengan perkembangan industri.',
-            'foto' => 'paskib.jpg',
+            'foto' => 'guru.png',
         ]);
     }
 }

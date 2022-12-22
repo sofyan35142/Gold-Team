@@ -39,7 +39,7 @@ Route::get('/lokerbkk', [LandingController::class, 'lokerbkk']);
 Route::get('/agenda', [LandingController::class, 'agenda']);
 Route::get('/guruu', [LandingController::class, 'guru']);
 Route::get('/blogdetail/{id}', [LandingController::class, 'blogdetail']);
-Route::get('/blogbanyak', [LandingController::class, 'blogbanyak']);
+Route::get('/blogselengkapnya', [LandingController::class, 'blogselengkapnya']);
 
 //DATA
 Route::get('/data/dharmaa', [LandingController::class, 'dharma']);
@@ -110,6 +110,7 @@ Route::get('/jmlpemegangsertifikat', [LandingController::class, 'jmlpemegangsert
 //StartAdmin
 
 Route::get('/login', [Admincontroller::class, 'login'])->name('login');
+Route::get('/gantipass', [Admincontroller::class, 'gantipass'])->name('gantipass');
 Route::post('/postlogin', [Admincontroller::class, 'postlogin']);
 Route::get('/index', [Admincontroller::class, 'index']);
 
@@ -389,6 +390,7 @@ Route::post('/updateartikel/{id}', [ModulController::class, 'editartikel']);
 
 
 
+// Route::get('/tes', [ModulController::class, 'tes'])->name('tes');
 
 // Route::get('/multipleupload', [DataController::class, 'index'])->name('uploads');
 // Route::post('/save', [DataController::class, 'store']);

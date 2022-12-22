@@ -2,6 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Blog;
+use App\Models\Dharma;
+use App\Models\ekstra;
+use App\Models\Guru;
+use App\Models\Jurusan;
 use App\Models\User;
 use Illuminate\Support\Str;
 use App\Models\kegiatanbkk;
@@ -17,6 +22,8 @@ use App\Models\sekolahadiwiyata;
 use App\Models\strukturorganisasi;
 use Illuminate\Support\Facades\Auth;
 use App\Models\sekolahrujukan;
+use App\Models\sponsor;
+use App\Models\walas;
 
 class Admincontroller extends Controller
 {
@@ -25,26 +32,38 @@ class Admincontroller extends Controller
     public function postlogin(Request $request)
     {
         // dd($request->all());
-        // $this->validate($request, [
-        //     'email' => 'required',
-        //     'password' => 'required'
-        // ], [
-        //     'email.required' => 'Email Wajib Diisi',
-        //     'password.required' => 'Password Wajib Diisi'
-        // ]);
+        $this->validate($request, [
+            'email' => 'required',
+            'password' => 'required'
+        ], [
+            'email.required' => 'Email Wajib Diisi',
+            'password.required' => 'Password Wajib Diisi'
+        ]);
         if (Auth::attempt($request->only('email', 'password'))) {
-            return redirect('/benar');
+            return redirect('/index');
         }
-        return redirect('/salah')->with('salah', 'Email Atau Password Salah');
+        return redirect('/login')->with('salah', 'Email Atau Password Salah');
     }
     public function login(Request $request)
     {
         return view('Admin.login.login');
     }
 
+    public function gantipass(){
+        return view('Admin.profile.gantipass');
+    }
+
     public function index()
     {
-        return view('Admin.index');
+        $jurusan = Jurusan::count();
+        $guru = Guru::count();
+        $walas = walas::count();
+        $dharma = Dharma::count();
+        $ekstra = ekstra::count();
+        $sponsor = sponsor::count();
+        $blog = Blog::count();
+
+        return view('Admin.index', compact('jurusan', 'guru', 'walas', 'dharma', 'ekstra','sponsor','blog'));
     }
     ///////////////////// START PROFIL LANDINGPAGE ADMIN ///////////////////////////
     //start profileditsekolahrujukan

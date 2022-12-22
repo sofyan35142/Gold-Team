@@ -874,7 +874,7 @@ h3 {
 }
 .price-card-area {
 	text-align: center;
-	border: 1px solid #c3ccff;
+	/* border: 1px solid #c3ccff; */
 	border-radius: 5px;
 	-webkit-transition: .6s;
 	transition: .6s;

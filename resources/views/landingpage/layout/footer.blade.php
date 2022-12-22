@@ -54,7 +54,7 @@
                             <i class="icofont-simple-right"></i>
                             <a href="/layananortu">Layanan Orang Tua </a>
                         </li>
-                        
+
                     </ul>
                 </div>
             </div>
@@ -66,12 +66,12 @@
                             <i class="icofont-simple-right"></i>
                             <a href="/data/ekstraa">Ekstrakurikuler</a>
                         </li>
-                        
+
                         <li>
                             <i class="icofont-simple-right"></i>
                             <a href="/BKK/kegiatan-bkk">Kegiatan BKK</a>
                         </li>
-                        
+
                         <li>
                             <i class="icofont-simple-right"></i>
                             <a href="/BKK/lowongan-kerja">Lowongan Kerja</a>
@@ -80,7 +80,7 @@
                             <i class="icofont-simple-right"></i>
                             <a href="/alumni/testimoni">Testimoni Alumni</a>
                         </li>
-                       
+
                     </ul>
                 </div>
             </div>
@@ -143,4 +143,6 @@
             </div>
         </div>
     </div>
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div style="display: none !important" class="elfsight-app-f3a706da-b581-4af7-9b10-e84b26128d4e"></div>
 </footer>

@@ -26,11 +26,8 @@ use App\Models\visimisibkk;
 use App\Models\Visimisilsp;
 use App\Models\kategoriblog;
 use App\Models\kegiatanbkk;
-<<<<<<< HEAD
 use App\Models\keunggulan;
-=======
 use App\Models\kewirausahaansketsu;
->>>>>>> f629c2da7737c3647c25c887e393f1727ad4d088
 use App\Models\sidestruktur;
 use App\Models\Tempatujikom;
 use Illuminate\Http\Request;
@@ -51,7 +48,7 @@ class LandingController extends Controller
         $sponsor=sponsor::all();
         $slider=slider::all();
         $alumni=alumni::all();
-        $blog=Blog::all();
+        $blog=Blog::latest()->limit(3)->get();
         $datakepsek=kepsek::all();
         $total=totalsiswa::all();
         $video=videoprofil::all();
@@ -151,10 +148,6 @@ class LandingController extends Controller
         $layor = Layananortu::with('jurusan');
         $data = Layananortu::all();
         $datajurusan = Jurusan::all();
-<<<<<<< HEAD
-=======
-
->>>>>>> f629c2da7737c3647c25c887e393f1727ad4d088
         return view("landingpage.layananortu.layananortu", compact('layor', 'data', 'datajurusan'));
     }
     public function storelayor(Request $request)
@@ -247,9 +240,10 @@ class LandingController extends Controller
 
     public function guru()
     {
+        $dataa =Guru::paginate(6);
         $sponsor = sponsor::all();
         $data=Guru::all();
-        return view("landingpage.beranda.guru&staf", compact('data', 'sponsor'));
+        return view("landingpage.beranda.guru&staf", compact('data', 'sponsor','dataa'));
     }
 
     public function keahlian()
@@ -292,14 +286,10 @@ class LandingController extends Controller
     }
     public function kegiatan_bkk()
     {
-<<<<<<< HEAD
         $sponsor = sponsor::all();
         $kegiatan = kegiatanbkk::all();
-        return view("landingpage.BKK.kegiatan_bkk",compact('kegiatan', 'sponsor'));
-=======
         $kegiatan = kegiatanbkk::paginate(6);
-        return view("landingpage.BKK.kegiatan_bkk",compact('kegiatan'));
->>>>>>> f629c2da7737c3647c25c887e393f1727ad4d088
+        return view("landingpage.BKK.kegiatan_bkk",compact('kegiatan', 'sponsor'));
     }
     public function detail_kegiatan_bkk($id)
     {
@@ -309,13 +299,9 @@ class LandingController extends Controller
     }
     public function kewirausahaan_bkk()
     {
-<<<<<<< HEAD
         $sponsor = sponsor::all();
-        return view("landingpage.BKK.kewirausahaan_bkk", compact('sponsor'));
-=======
         $data = kewirausahaansketsu::all()->first();
-        return view("landingpage.BKK.kewirausahaan_bkk",compact("data"));
->>>>>>> f629c2da7737c3647c25c887e393f1727ad4d088
+        return view("landingpage.BKK.kewirausahaan_bkk", compact('sponsor', 'data'));
     }
     public function lowongan_kerja()
     {
@@ -352,69 +338,87 @@ class LandingController extends Controller
 
     //Data
         public function dharma(){
+        $dataa = Dharma::paginate(6);
         $sponsor = sponsor::all();
             $data=Dharma::all();
-        return view('landingpage.Data.dharmawanita', compact('data', 'sponsor') );
+        return view('landingpage.Data.dharmawanita', compact('data', 'sponsor', 'dataa'));
     }
     public function datawalas(){
+        $dataa = walas::paginate(6);
         $sponsor = sponsor::all();
         $data=walas::all();
-        return view('landingpage.Data.datawalas', compact('data', 'sponsor'));
+        return view('landingpage.Data.datawalas', compact('data', 'sponsor', 'dataa'));
     }
-    public function ekstra(){
+    public function ekstra(Request $request){
         $sponsor = sponsor::all();
         $data=ekstra::all();
-        return view('landingpage.Data.Ekstrakulikuler', compact('data', 'sponsor'));
+        $dataa =ekstra::paginate(3);
+        $keyword = $request->keyword;
+        $data = ekstra::query();
+        if ($request->filled('judul')) {
+            $data->where('judul', 'LIKE', '%' . $request->judul . '%');
+        }
+        $data = $data->get();
+        return view('landingpage.Data.Ekstrakulikuler', compact('data', 'sponsor','keyword','dataa'));
     }
-    public function prestasi(){
+    public function prestasi(Request $request){
+        $dataa = prestasi::paginate(6);
         $sponsor = sponsor::all();
-        $prestasi=prestasi::all();
-        return view('landingpage.Data.prestasi', compact('prestasi', 'sponsor'));
+        $data=prestasi::all();
+        $data = prestasi::query();
+        if ($request->filled('nama_lomba')) {
+            $data->where('nama_lomba', 'LIKE', '%' . $request->nama_lomba . '%');
+        }
+        $data = $data->get();
+        return view('landingpage.Data.prestasi', compact('sponsor', 'dataa','data'));
     }
     public function detailekstra($id){
         $sponsor = sponsor::all();
         $detailekstra=ekstra::find($id);
-        return view('landingpage.Data.detailekstra', compact('detailekstra', 'sponsor'));
+        $foto = json_decode($detailekstra->foto_kegiatan);
+        return view('landingpage.Data.detailekstra', compact('detailekstra', 'sponsor','foto'));
     }
     public function detailprestasi($id){
         $sponsor = sponsor::all();
-        $detailprestasi=prestasi::where('id',$id)->get();
-        $prestasiside=prestasi::latest()->get();
-        return view('landingpage.Data.detailprestasi', compact('detailprestasi', 'prestasiside', 'sponsor'));
+        $detailprestasi=prestasi::find($id);
+        $min = prestasi::all()->first();
+        $max = prestasi::all()->last();
+        $previous = prestasi::where('id', '<', $detailprestasi->id)->max('id');
+        $next = prestasi::where('id', '>', $detailprestasi->id)->min('id');
+        $prestasiside=prestasi::latest()->limit(3)->get();
+        return view('landingpage.Data.detailprestasi', compact('detailprestasi', 'prestasiside', 'sponsor', 'next', 'previous','min','max'))->with('previous', $previous)->with('next', $next);
     }
 
     public function blogdetail($id){
         $sponsor = sponsor::all();
-        $data=Blog::where('id',$id)->get();
+        $data=Blog::find($id);
+        $min=Blog::all()->first();
+        $max=Blog::all()->last();
+        $previous = Blog::where('id', '<', $data->id)->max('id');
+        $next = Blog::where('id', '>', $data->id)->min('id');
         $kategoriblog=kategoriblog::all();
-        $blogside=Blog::latest()->get();
+        $blogside=Blog::latest()->limit(3)->get();
+        $foto = json_decode($data->foto_kegiatan);
         // dd($blogside);
         // dd($blogside);
-        return view('landingpage.beranda.detailagenda', compact('data', 'kategoriblog', 'blogside', 'sponsor'));
+        // dd($min->id);
+        return view('landingpage.beranda.detailagenda', compact('data', 'kategoriblog', 'blogside', 'sponsor', 'foto','previous','next','min','max'))->with('previous', $previous)->with('next', $next);
     }
-
-    public function blogbanyak(Request $request){
-        // $data=Blog::all();
-
+    public function blogselengkapnya(Request $request){
         $sponsor = sponsor::all();
         $kategori = kategoriblog::all();
-
+        $dataa=Blog::all();
+        $dataa = Blog::paginate(6);
         $join = Blog::join('idblog', 'blogs.kategori', '=', 'idblog.id')->select('blogs.*', 'kategoriblogs.kategori');
         $keyword = $request->keyword;
-
         $data = Blog::query();
-
         if ($request->filled('judul')) {
             $data->where('judul', 'LIKE', '%' . $request->judul . '%');
         }
         if ($request->filled('kategori')) {
             $data->where('kategori', '=', $request->kategori);
         }
-
-        $data=Blog::all();
-
-
-        return view ('landingpage.beranda.blogbanyak', compact('data','keyword','kategori', 'sponsor'));
+        $data = $data->get();
+        return view('landingpage.beranda.blogselengkapnya', compact('sponsor', 'kategori', 'data', 'join' , 'keyword','dataa'));
     }
-
 }

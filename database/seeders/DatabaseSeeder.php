@@ -3,9 +3,6 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
-
-
-
 use Database\Seeders\LSP;
 use Database\Seeders\kakomli;
 use Illuminate\Database\Seeder;
@@ -21,14 +18,14 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([
             alumni::class,
-            // blog::class,
+            blog::class,
             dharma::class,
             ekstra::class,
             guru::class,
             Jmlpemegang::class,
             jurusan::class,
             kakomli::class,
-            // kepsek::class,
+            kepsek::class,
             LSP::class,
             prestasi::class,
             profilsekolah::class,
@@ -45,16 +42,12 @@ class DatabaseSeeder extends Seeder
             Modul::class,
             Artikel::class,
             kategoriblog::class,
-            // walas::class,
+            walas::class,
             Reparasibengkel::class,
             strukturbkk::class,
             sidestruktur::class,
-<<<<<<< HEAD
+            // sejarahsingkat::class,
             keunggulan::class
-=======
-            sejarahsingkat::class,
-            visimisibkk::class,
->>>>>>> f629c2da7737c3647c25c887e393f1727ad4d088
         ]);
     }
 }

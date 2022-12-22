@@ -51,7 +51,7 @@
                             <ul>
                                 <li>
                                     <i class="icofont-calendar"></i>
-                                    20 Feb 2021
+                                    {{ $data->created_at }}
                                 </li>
                                 <li>
                                     <i class="icofont-ui-user"></i>
@@ -66,73 +66,69 @@
                             <h3>Gallery</h3>
                         </center>
                         @foreach ($foto as $kegiatan)
-                        <div class="d-flex flex-row">
-                            <div class="p-2"> <img class="imgdetaill" src="{{ asset('fotokegiatan/' . $kegiatan) }}" alt=""> </div>
-                            {{-- <div class="p-2"> <img src="{{ asset('fotokegiatan/' . $kegiatan) }}" alt=""> </div> --}}
-                            {{-- <div class="p-2"> <img src="../blog/detail3.png" alt=""> </div>
-                        </div>
-                        <div class="d-flex flex-row">
-                            <div class="p-2"> <img src="../blog/detail5.png" alt=""> </div> --}}
-                        </div>
+                            <div class="d-flex flex-row">
+                                <div class="p-2"> <img class="imgdetaill"
+                                        src="{{ asset('fotokegiatan/' . $kegiatan) }}" alt=""> </div>
+                            </div>
                         @endforeach
                     </div>
                     <div class="page-button">
                         <div class="row">
                             <div class="col-md-3">
-                                <div class="theme-button">
-                                    <a href="#" class="default-btn">
-                                        <i class="icofont-rounded-left"></i>
-                                        Previous Post
-                                    </a>
-                                </div>
+                                @if ($min->id == $data->id)
+                                @else
+                                    <div class="theme-button">
+                                        <a href="{{ URL::to('blogdetail/' . $previous) }}" class="default-btn">
+                                            <i class="icofont-rounded-left"></i>
+                                            Previous Post
+                                        </a>
+                                    </div>
+                                @endif
                             </div>
                             <div class="col-md-3 offset-md-6">
-                                <div class="theme-button">
-                                    <a href="#" class="default-btn">
-                                        Next Post
-                                        <i class="icofont-rounded-right"></i>
-                                    </a>
-                                </div>
+                                @if ($max->id == $data->id)
+                                @else
+                                    <div class="theme-button">
+                                        <a href="{{ URL::to('blogdetail/' . $next) }}" class="default-btn">
+                                            Next Post
+                                            <i class="icofont-rounded-right"></i>
+                                        </a>
+                                    </div>
+                                @endif
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 main-service-area blog-side-bar">
                     <div class="service-sidebar">
-
-
-
                         <div class="service-list">
-
                             <p class="sidetitle">Kategori Berita</p>
-
                             <ul>
-
                                 <li class="hcard overflow-auto">
-                                     @foreach ($kategoriblog as $kategori)
-                                    <a class="colorori mb-2" href="#">
-                                        <i class="icofont-rounded-right iknrounded"></i>
-                                        {{ $kategori->kategori }}
-                                    </a>
-                                     @endforeach
+                                    @foreach ($kategoriblog as $kategori)
+                                        <a class="colorori mb-2" href="#">
+                                            <i class="icofont-rounded-right iknrounded"></i>
+                                            {{ $kategori->kategori }}
+                                        </a>
+                                    @endforeach
                                 </li>
                             </ul>
                         </div>
                         <div class="service-list">
                             <p>Blog Terbaru</p>
-                            @foreach( $blogside as $blogside)
-
-                            <div class="sidebar-post-inner">
-                                <a style="margin-bottom: 15px">
-                                    <div class="image-widget-post">
-                                        <img class="" src="{{ asset('blog/' . $blogside->foto) }}" alt="">
-                                    </div>
-                                    <div class="info-widget-post">
-                                        <h5>{{ $blogside->judul }}</h5>
-                                        <small>04 November 2022</small>
-                                    </div>
-                                </a>
-                            </div>
+                            @foreach ($blogside as $blogside)
+                                <div class="sidebar-post-inner">
+                                    <a href="/blogdetail/{{ $blogside->id }}" style="margin-bottom: 15px">
+                                        <div class="image-widget-post">
+                                            <img class="" src="{{ asset('blog/' . $blogside->foto) }}"
+                                                alt="">
+                                        </div>
+                                        <div class="info-widget-post">
+                                            <h5>{{ $blogside->judul }}</h5>
+                                            <small>04 November 2022</small>
+                                        </div>
+                                    </a>
+                                </div>
                             @endforeach
                         </div>
                     </div>
