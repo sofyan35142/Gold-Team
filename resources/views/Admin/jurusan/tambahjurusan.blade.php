@@ -102,7 +102,7 @@
                                 @csrf
                         <div>
                         <label for="defaultFormControlInput" class="form-label">Jurusan</label>
-                        <input type="text" name="jurusan" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" />
+                        <input type="text" name="jurusan" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" required/>
                         </div>
                         <br/>
 
@@ -110,19 +110,19 @@
                         <label for="editor" class="form-label">Deskripsi</label>
                         {{-- <input type="text" name="deskripsi" class="form-control" id="editor"  aria-describedby="defaultFormControlHelp" /> --}}
                         <div class="card-body">
-                                <textarea name="deskripsi" id="editor"></textarea>
+                                <textarea name="deskripsi" id="editor" required></textarea>
                         </div>
                         <br/>
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Upload Logo Jurusan</label>
 
-                            <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
                             <i style="float: left;font-size: 11px;color: red">Ukuran Foto Harus 1063px x 1299px</i>
                           </div>
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Upload Foto Kegiatan Jurusan</label>
 
-                            <input type="file" name="produktif" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <input type="file" name="produktif" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
                             <i style="float: left;font-size: 11px;color: red">Ukuran Foto Harus 4592px x 2584px</i>
                           </div>
                         <button type="submit" class="btn rounded-pill btn-primary">Submit</button>

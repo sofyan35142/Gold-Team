@@ -102,19 +102,19 @@
                                 @csrf
                         <div>
                         <label for="defaultFormControlInput" class="form-label">Script logo</label>
-                        <input type="text" name="script_logo" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" />
+                        <input type="text" name="script_logo" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" required/>
                         </div>
                         <br/>
 
                         <div>
                         <label for="defaultFormControlInput" class="form-label">Jenis Sosial Media</label>
-                        <input type="text" name="jenis_sosmed" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" />
+                        <input type="text" name="jenis_sosmed" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" required/>
                         </div>
                         <br/>
 
                         <div>
                         <label for="defaultFormControlInput" class="form-label">Link Sosial Media</label>
-                        <input type="text" name="link" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" />
+                        <input type="text" name="link" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" required/>
                         </div>
                         <br/>
 

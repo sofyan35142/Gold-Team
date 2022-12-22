@@ -41,6 +41,7 @@ class KakomliController extends Controller
      */
     public function store(Request $request)
     {
+        
         $data = Kakomli::create([
             'nama_guru' => $request->nama_guru,
             'id_jurusan' => $request->id_jurusan,

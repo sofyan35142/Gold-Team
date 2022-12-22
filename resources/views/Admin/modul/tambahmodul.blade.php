@@ -102,7 +102,7 @@
                                 @csrf
                         <div>
                         <label for="defaultFormControlInput" class="form-label">Judul Modul</label>
-                        <input type="text" name="judul" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" />
+                        <input type="text" name="judul" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" required/>
                         </div>
                         <br/>
 
@@ -110,13 +110,13 @@
                         <label for="editor" class="form-label">Deskripsi</label>
                         {{-- <input type="text" name="deskripsi" class="form-control" id="editor"  aria-describedby="defaultFormControlHelp" /> --}}
                         <div class="card-body">
-                                <textarea name="deskripsi" id="editor"></textarea>
+                                <textarea name="deskripsi" id="editor" required></textarea>
                         </div>
                         <br/>
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Upload Foto Modul</label>
 
-                            <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
                         </div>
                         <button type="submit" class="btn rounded-pill btn-primary">Submit</button>
                         </form>

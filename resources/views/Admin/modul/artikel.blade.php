@@ -74,10 +74,10 @@
                     <div class="card-body">
                         <form action="/updateartikel/{{$data->id}}" method="POST" enctype="multipart/form-data">
                                 @csrf
-                        <input type="text" value="{{$data->id}}" name="id" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" hidden/>
+                        <input type="text" value="{{$data->id}}" name="id" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" hidden required/>
                         <div>
                         <label for="defaultFormControlInput" class="form-label">Judul</label>
-                        <input type="text"  name="judul" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" value="{{ $data->judul }}"/>
+                        <input type="text"  name="judul" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" value="{{ $data->judul }}" required/>
                         </div>
                         <br/>
 
@@ -88,18 +88,18 @@
                         <label for="editor" class="form-label">Deskripsi</label>
                         {{-- <input type="text" name="deskripsi" class="form-control" id="editor"  aria-describedby="defaultFormControlHelp" /> --}}
                         <div class="card-body">
-                                <textarea name="deskripsi" id="editor">{!! $data->deskripsi !!}</textarea>
+                                <textarea name="deskripsi" id="editor" required>{!! $data->deskripsi !!}</textarea>
                         </div>
                         <br/>
                         <div>
                             <div>
                         <label for="defaultFormControlInput" class="form-label">Link Download</label>
-                        <input type="text"  name="link" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" value="{{ $data->link }}"/>
+                        <input type="text"  name="link" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" value="{{ $data->link }}" required/>
                         </div>
                         <br/>
                         <div>
                         <label for="defaultFormControlInput" class="form-label">Link Youtube</label>
-                        <input type="text"  name="linkyoutube" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" value="{{ $data->linkyoutube }}"/>
+                        <input type="text"  name="linkyoutube" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" value="{{ $data->linkyoutube }}" required/>
                         </div>
                         <br/>
                         
@@ -107,7 +107,7 @@
                             <label for="exampleInputEmail1" class="form-label">Foto </label>
                             <br/>
                             <img class="img mb-3" src="{{ asset('foto/' . $data->foto) }}" alt="" style="width: 250px;">
-                            <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto }}">
+                            <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto }}" required>
                            
                         </div>
                         <br/>
