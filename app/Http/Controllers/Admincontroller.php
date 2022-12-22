@@ -827,10 +827,6 @@ class Admincontroller extends Controller
             $request->file('foto1')->move('foto/', $request->file('foto1')->getClientOriginalName());
             $data->foto1 = $request->file('foto1')->getClientOriginalName();
             $data->save();
-<<<<<<< HEAD
-=======
-
->>>>>>> 5bed46b9d99e40351a37481d1cb60c1cd15a97fa
         }
         if ($request->hasFile('foto2')) {
             $request->file('foto2')->move('foto/', $request->file('foto2')->getClientOriginalName());

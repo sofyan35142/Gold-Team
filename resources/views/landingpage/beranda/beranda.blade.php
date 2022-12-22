@@ -261,7 +261,7 @@
                                     </span>
                                     <div class="video-container">
                                         <!-- Enter the video ID into the data-id attribute -->
-                                        <div id="player" data-id="DGIXT7ce3vQ"></div>
+                                        <div id="player" data-id="{{ $profil->link }}"></div>
                                     </div>
                                 </div>
                             </div>
@@ -313,7 +313,7 @@
             <div class="section-head text-center">
                 <h2>Berita & Blog Terbaru</h2>
             </div>
-            <div class="price-card-area">
+            <div class="price-card-area" style="border: none">
               <div class="plan-btn">
                 <a href="/blogselengkapnya">Blog Lebih Banyak <i class="fa-regular fa-paper-plane"></i> </a>
               </div>

@@ -14,19 +14,19 @@
 
 
 
-    <div class="team-title team-title-bg">
+    <div class="service-title service-title-bg bg-3">
         <div class="d-table">
             <div class="d-table-cell">
                 <div class="container">
-                    <div class="team-title-text">
-                        <h2>Our Team Members</h2>
+                    <div class="service-title-text">
+                        <h2>Data Walas</h2>
                         <ul>
                             <li>
-                                <a href="index.html">Home</a>
+                                <a href="/data/datawalas">Data</a>
                             </li>
                             <li>
                                 <i class="icofont-rounded-double-right"></i>
-                                Team Members
+                                Walas
                             </li>
                         </ul>
                     </div>

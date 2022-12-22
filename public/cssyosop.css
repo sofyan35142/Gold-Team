@@ -727,3 +727,12 @@ body .icon-block .icon-block-info h3 {
   margin: 0px;
   cursor: pointer;
 }
+
+price-card-area {
+    text-align: center !important;
+    border: -1px solid #c3ccff !important;
+    border-radius: 5px !important;
+    -webkit-transition: .6s !important;
+    transition: .6s !important;
+    margin-bottom: 30px !important;
+}

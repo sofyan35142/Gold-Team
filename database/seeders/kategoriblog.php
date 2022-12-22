@@ -22,5 +22,8 @@ class kategoriblog extends Seeder
         DB::table('kategoriblogs')->insert([
             'kategori' => 'berita sekolah',
         ]);
+        DB::table('kategoriblogs')->insert([
+            'kategori' => 'adiwiyata',
+        ]);
     }
 }

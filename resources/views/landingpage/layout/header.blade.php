@@ -25,9 +25,9 @@
                          @foreach ($sosmed as $sos)
                              <li>
                                 <a href="{{$sos->link}}"><i class="{{$sos->script_logo}}"></i></a>
-                            </li>   
+                            </li>
                          @endforeach
-                        
+
                     </ul>
                 </div>
             </div>
@@ -212,9 +212,9 @@
                                 <i class="icofont-rounded-right"></i>
                             </a>
                             <ul class="dropdown-menu">
-                                <li class="nav-item">
+                                {{-- <li class="nav-item">
                                     <a href="/alumni/testimoni" class="nav-link">Testimoni Alumni</a>
-                                </li>
+                                </li> --}}
                                 <li class="nav-item">
                                     <a href="/alumni/profilealumni" class="nav-link">Profil Alumni</a>
                                 </li>
