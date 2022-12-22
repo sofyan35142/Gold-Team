@@ -141,7 +141,7 @@ Route::get('/visimisi/edit/{id}', [Admincontroller::class, 'editviewvisimisi']);
 Route::post('/editvisimisi/{id}', [Admincontroller::class, 'editvisimisi']);
 // struktur organisasi
 Route::get('/index/strukturorganisasi', [Admincontroller::class, 'strukturorganisasi']);
-Route::get('/index/addstrukturorganisasi', [Admincontroller::class, 'addstrukturorganisasi']);
+// Route::get('/index/addstrukturorganisasi', [Admincontroller::class, 'addstrukturorganisasi']);
 Route::post('/insertstrukturorganisasi', [Admincontroller::class, 'insertstrukturorganisasi']);
 Route::get('/index/editstrukturorganisasi/{id}', [Admincontroller::class, 'editstrukturorganisasi']);
 Route::post('/updatestrukturorganisasi/{id}', [Admincontroller::class, 'updatestrukturorganisasi']);
@@ -149,7 +149,9 @@ Route::get('/index/deletestrukturorganisasi/{id}', [AdminController::class, 'del
     //Anggota Struktur Organisasi
 Route::get('/index/addsidestrukturorganisasi', [AdminController::class, 'addsidestrukturorganisasi']);
 Route::post('/insertmemberstrukturorganisasi', [AdminController::class, 'insertmemberstrukturorganisasi']);
-Route::post('/index/editsidestrukturorganisasi', [AdminController::class, 'editsidestrukturorganisasi']);
+Route::get('/index/viewstrukturorganisasi/{id}', [AdminController::class, 'viewstrukturorganisasi']);
+Route::post('/editsidestrukturorganisasi/{id}', [AdminController::class, 'editsidestrukturorganisasi']);
+Route::get('/deletestruktur/{id}', [AdminController::class, 'deletestruktur']);
 //sekolah adiwiyata
 Route::get('/index/sekolahadiwiyata', [Admincontroller::class, 'sekolahadiwiyata']);
 Route::get('/index/addsekolahadiwiyata', [Admincontroller::class, 'addsekolahadiwiyata']);
@@ -168,6 +170,7 @@ Route::get('/sejarahsingkat/delete/{id}', [Admincontroller::class, 'deletesejara
 Route::get('/index/addsidesejarahsingkat', [Admincontroller::class, 'sidesejarahsingkat']);
 Route::post('/insertsidesejarah', [Admincontroller::class, 'insertsidesejarah']);
 Route::post('/editsidesejarah/{idarray}', [Admincontroller::class, 'editsidesejarah']);
+Route::get('/sidesejarahdelete/{idarray}', [Admincontroller::class, 'deletesidesejarah']);
 //Sekolah Rujukan
 Route::get('/index/sekolahrujukan', [Admincontroller::class, 'sekolahrujukan']);
 Route::get('/index/editsekolahrujukan', [Admincontroller::class, 'editviewsekolahrujukan']);
@@ -221,14 +224,22 @@ Route::get('/index/lowongankerja', [Admincontroller::class, 'lowongan_kerja']);
 Route::get('/index/addlowongankerja', [Admincontroller::class, 'addlowongan_kerja']);
 Route::post('/insertlowongankerja', [Admincontroller::class, 'insertlowongankerja']);
 Route::get('/index/showlowongankerja/{id}', [Admincontroller::class, 'showlowongankerja']);
+Route::post('/editlowongankerja/{id}', [Admincontroller::class, 'editlowongankerja']);
+Route::get('/deletelowongan/{id}', [Admincontroller::class, 'deletelowongan']);
 
 //perusahaan mitra
 Route::get('/index/perusahaanmitra', [Admincontroller::class, 'perusahaanmitra']);
 Route::get('/index/addpt', [Admincontroller::class, 'addpt']);
 Route::post('/insertperusahaanmitra', [Admincontroller::class, 'insertperusahaanmitra']);
+Route::get('/index/showaddpt/{id}', [Admincontroller::class, 'showaddpt']);
+Route::post('/editperusahaanmitra/{id}', [Admincontroller::class, 'editperusahaanmitra']);
+Route::get('/deletemitra/{id}', [Admincontroller::class, 'deletemitra']);
+
+Route::post('/insertperusahaanmitra', [Admincontroller::class, 'insertperusahaanmitra']);
 Route::get('/index/addumkm', [Admincontroller::class, 'addumkm']);
 Route::post('/insertumkmpasangan', [Admincontroller::class, 'insertumkmpasangan']);
-
+Route::get('/index/showumkm/{id}', [Admincontroller::class, 'showumkm']);
+Route::post('/editshowumkm/{id}', [Admincontroller::class, 'editshowumkm']);
 //BKK DEFINITION
 Route::get('/index/bkk', [AdminController::class, 'indexbkk'])->name('bkk');
 Route::post('/updatebkk/{id}', [AdminController::class, 'edit']);

@@ -25,8 +25,8 @@
                         <div class="card mb-4">
                             <div class="card-datatable table-responsive pt-0">
                                 <h5 class="card-header">Data Profil Visi Misi BKK</h5>
-                                <a href="/index/addprofilvisimisi" type="button"
-                                    class="btn rounded-pill btn-primary">Tambah +</a>
+                                {{-- <a href="/index/addprofilvisimisi" type="button"
+                                    class="btn rounded-pill btn-primary">Tambah +</a> --}}
                                 <table class="table" id="jurusan">
                                     <thead>
                                         <tr>
@@ -50,9 +50,9 @@
                                             <td>
                                                 <a href="/index/editvisimisibkk" class="btn btn-warning"><i
                                                         class="fa-solid fa-pen-to-square"></i></a>
-                                                <a href="#" class="btn btn-danger delete"
+                                                {{-- <a href="#" class="btn btn-danger delete"
                                                     data-id="{{ $data->id }}" data-jurusan="{{ $data->visi }}"><i
-                                                        class="fa-solid fa-trash"></i></a>
+                                                        class="fa-solid fa-trash"></i></a> --}}
                                             </td>
                                         </tr>
                                     </tbody>

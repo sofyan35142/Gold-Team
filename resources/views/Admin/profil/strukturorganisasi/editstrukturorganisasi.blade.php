@@ -44,25 +44,11 @@
                                             </div>
                                             <br />
                                             <div class="mb-3">
-                                                <label for="exampleInputEmail1" class="form-label">Update Foto
-                                                    Struktur</label>
+                                                <label class="mb-3" for="exampleInputEmail1" class="form-label">Update struktur</label>
                                                 <br />
                                                 <img class="img mb-3"
-                                                    src="{{ asset('struktur/' . $data->foto_struktur) }}" alt=""
-                                                    style="width: 100px;">
-                                                <input type="file" name="foto" class="form-control"
-                                                    id="exampleInputEmail1" aria-describedby="emailHelp"
-                                                    value="{{ $data->foto_struktur }}">
-                                                {{-- <i style="float: left;font-size: 11px;color: red">Abaikan jika tidak merubah foto</i> --}}
-                                            </div>
-                                            <br />
-                                            <div class="mb-3">
-                                                <label for="exampleInputEmail1" class="form-label">Update Foto Side
-                                                    Struktur</label>
-                                                <br />
-                                                <img class="img mb-3"
-                                                    src="{{ asset('sidestruktur/' . $data->foto_sidestruktur) }}"
-                                                    alt="" style="width: 100px;">
+                                                    src="{{ asset('/assets/img/' . $data->foto_struktur) }}"
+                                                    alt="" style="width: 500px;">
                                                 <input type="file" name="foto" class="form-control"
                                                     id="exampleInputEmail1" aria-describedby="emailHelp"
                                                     value="{{ $data->foto_sidestruktur }}">

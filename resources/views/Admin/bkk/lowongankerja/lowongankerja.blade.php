@@ -56,11 +56,11 @@
                                                 <td>{!! $data->deskripsi !!}</td>
                                                 <td>{{$data->status}}</td>
                                                 <td>
-                                                    <a href="/index/editsobkk" class="btn btn-warning"><i
+                                                    <a href="/index/showlowongankerja/{{$data->id}}" class="btn btn-warning"><i
                                                             class="fa-solid fa-pen-to-square"></i></a>
                                                     <a href="#" class="btn btn-danger delete"
                                                         data-id="{{ $data->id }}"
-                                                        data-jurusan="{{ $data->visi }}"><i
+                                                        data-jurusan="{{ $data->judul }}"><i
                                                             class="fa-solid fa-trash"></i></a>
                                                 </td>
                                             </tr>
@@ -128,7 +128,7 @@
             })
             .then((willDelete) => {
                 if (willDelete) {
-                    window.location = "/deletevisimisibkk"
+                    window.location = "/deletelowongan/" + jurusanid +""
                     swal("Data berhasil direset", {
                         icon: "success",
                     });
