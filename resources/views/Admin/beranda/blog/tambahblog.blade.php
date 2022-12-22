@@ -45,6 +45,9 @@
                         <div>
                         <label for="defaultFormControlInput" class="form-label">judul</label>
                         <input type="text" name="judul" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" />
+                        @error('judul')
+                        <div class="text-danger">{{ $message }}</div>
+                        @enderror
                         </div>
                         <br/>
 
@@ -54,6 +57,9 @@
                         <div class="card-body">
                                 <textarea name="deskripsi" id="editor"></textarea>
                             </div>
+                            @error('deskripsi')
+                            <div class="text-danger">{{ $message }}</div>
+                            @enderror
                         </div>
                         <br/>
                          <div class="mb-3">
@@ -71,6 +77,10 @@
                             <label for="exampleInputEmail1" class="form-label">Upload Foto Blog</label>
 
                             <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <i style="float: left;font-size: 11px;color: red">Foto harus berukuran 350px x 353px</i> <br>
+                            @error('foto')
+                            <div class="text-danger">{{ $message }}</div>
+                            @enderror
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Upload Foto Kegiatan</label>
@@ -79,8 +89,13 @@
           <input type="file" name="foto_kegiatan[]" class="form-control">
           <div class="input-group-btn">
             <button class="btn btn-success" type="button" style="margin-left: -67px"><i class="glyphicon glyphicon-plus"></i>Add</button>
+
           </div>
         </div>
+        <i style="float: left;font-size: 11px;color: red">Foto harus berukuran 430px x 664px</i> <br>
+         {{-- @error('foto_kegiatan')
+                            <div class="text-danger">{{ $message }}</div>
+                            @enderror --}}
         <div class="clone hide">
           <div class="control-group input-group" style="margin-top:10px">
             <input type="file" name="foto_kegiatan[]" class="form-control">

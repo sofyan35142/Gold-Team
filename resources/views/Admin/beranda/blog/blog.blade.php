@@ -43,7 +43,7 @@
   <div class="card-datatable table-responsive pt-0">
     <h5 class="card-header">Blog</h5>
     <a href="/beranda/tambahblog" type="button" class="btn rounded-pill btn-primary">Tambah</a>
-    <table class="table">
+    <table class="table" id="blogg">
   <thead>
     <tr>
       <th scope="col">No.</th>
@@ -215,7 +215,7 @@
 </script>
 <script>
     $(document).ready(function() {
-        $('#blog').DataTable();
+        $('#blogg').DataTable();
     });
 </script>
 <script>

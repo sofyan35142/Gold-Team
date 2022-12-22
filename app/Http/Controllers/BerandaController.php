@@ -45,6 +45,22 @@ class BerandaController extends Controller
         //     $data->foto = $request->file('foto')->getClientOriginalName();
         //     $data->save();
         // }
+        $this->validate($request, [
+            'judul' => 'required|',
+            'deskripsi' => 'required|',
+            'kategori' => 'required|',
+            'foto' => 'required|mimes:png,jpg,jpeg,jfif,webp',
+            // 'foto_kegiatan' => 'required|mimes:png,jpg,jpeg,jfif,webp',
+        ], [
+            'judul.required' => 'judul harus diisi',
+            'deskripsi.required' => 'deskripsi harus diisi',
+            'kategori.required' => 'kategori harus diisi',
+            'foto.required' => 'foto blog harus diisi',
+            'foto.mimes' => 'format foto harus png,jpg,jpeg,jfif,webp',
+            // 'foto_kegiatan.required' => 'foto kegiatan harus diisi',
+            // 'foto_kegiatan.mimes' => 'format foto harus png,jpg,jpeg,jfif,webp'
+        ]);
+
         $files = [];
         if ($request->hasfile('foto_kegiatan')) {
             foreach ($request->foto_kegiatan as $file) {
@@ -338,13 +354,13 @@ class BerandaController extends Controller
     public function updatesponsor(Request $request, $id)
     {
 
-        $data = Blog::find($id);
+        $data = sponsor::find($id);
         $data->update([
         ]);
         // $data->update($request->all());
         // dd($data);
         if ($request->hasFile('foto')) {
-            $request->file('foto')->move('blog/', $request->file('foto')->getClientOriginalName());
+            $request->file('foto')->move('sponsor/', $request->file('foto')->getClientOriginalName());
             $data->foto = $request->file('foto')->getClientOriginalName();
             $data->save();
         }

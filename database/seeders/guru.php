@@ -17,10 +17,10 @@ class guru extends Seeder
     {
         DB::table('gurus')->insert([
             'nama' => 'RUDI TRISANTOSO, S.Pd, M.Pd',
-            'nip' => '19710124 199512 1 001',
+            'nip' => '197101241995121001',
             'tempat_lahir' => 'Pasuruan	',
-            'tgl_lahir' => '24-Jan-1971',
-            'tmt_awal' => '16-Jan-2019',
+            'tgl_lahir' => '	2022-12-29',
+            'tmt_awal' => '	2022-12-29',
             'status' => 'PNS',
             'gol_ruangan' => 'IV/b – Pembina Tingkat I',
             'jabatan' => 'KEPALA SEKOLAH',
@@ -28,10 +28,10 @@ class guru extends Seeder
         ]);
         DB::table('gurus')->insert([
             'nama' => 'ASNAH YUNIARTI, S.Pd',
-            'nip' => '19730806 200604 2 012',
+            'nip' => '197308062006042012',
             'tempat_lahir' => 'Pasuruan	',
-            'tgl_lahir' => '06-Ags-1973',
-            'tmt_awal' => '02-Jan-2007',
+            'tgl_lahir' => '	2022-12-29',
+            'tmt_awal' => '	2022-12-29',
             'status' => 'PNS',
             'gol_ruangan' => 'III/d',
             'jabatan' => 'WAKA SARANA DAN PRASARANA',
@@ -39,10 +39,10 @@ class guru extends Seeder
         ]);
         DB::table('gurus')->insert([
             'nama' => 'ELLYA MAGHFIRLI, S.Pd',
-            'nip' => '19730709 199803 2 007',
+            'nip' => '197307091998032007',
             'tempat_lahir' => 'Malang',
-            'tgl_lahir' => '09-Jul-1973',
-            'tmt_awal' => '01-Jan-2005',
+            'tgl_lahir' => '	2022-12-29',
+            'tmt_awal' => '	2022-12-29',
             'status' => 'PNS',
             'gol_ruangan' => 'IV/a',
             'jabatan' => 'WAKA KESISWAAN',

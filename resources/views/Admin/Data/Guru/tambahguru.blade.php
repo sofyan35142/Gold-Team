@@ -47,63 +47,64 @@
           <!-- Date Picker-->
           <div class="col-md-12 col-12 mb-4">
             <label for="flatpickr-date" class="form-label">Nama</label>
-            <input type="text" name="nama" class="form-control"  id="flatpickr-date" />
+            <input type="text" name="nama" class="form-control"  id="flatpickr-date" required/>
           </div>
           <!-- /Date Picker -->
 
  <!-- Datetime Picker-->
           <div class="col-md-12 col-12 mb-4">
             <label for="flatpickr-datetime" class="form-label">Nip</label>
-            <input type="number" name="nip" class="form-control" id="flatpickr-datetime" />
+            <input type="number" name="nip" class="form-control" id="flatpickr-datetime" required/>
           </div>
           <!-- /Datetime Picker-->
 
           <!-- Time Picker-->
           <div class="col-md-6 col-12 mb-4">
             <label for="flatpickr-time" class="form-label">Jabatan</label>
-            <input type="text" name="jabatan" class="form-control" id="flatpickr-time" />
+            <input type="text" name="jabatan" class="form-control" id="flatpickr-time" required/>
           </div>
           <!-- /Time Picker -->
 
           <!-- Multiple Dates Picker-->
           <div class="col-md-6 col-12 mb-4">
             <label for="flatpickr-multi" class="form-label">Tempat Lahir</label>
-            <input type="text" name="tempat_lahir" class="form-control" id="flatpickr-multi" />
+            <input type="text" name="tempat_lahir" class="form-control" id="flatpickr-multi" required/>
           </div>
           <!-- /Multiple Dates Picker-->
 
           <!-- Range Picker-->
           <div class="col-md-6 col-12 mb-4">
             <label for="flatpickr-range" class="form-label">Tanggal Lahir</label>
-            <input type="date" name="tgl_lahir" class="form-control" id="flatpickr-range" />
+            <input type="date" name="tgl_lahir" class="form-control" id="flatpickr-range" required/>
           </div>
           <!-- /Range Picker-->
 
           <!-- Human Friendly Date Picker-->
           <div class="col-md-6 col-12 mb-4">
             <label for="flatpickr-human-friendly" class="form-label">TMT Awal</label>
-            <input type="date" name="tmt_awal" class="form-control" id="flatpickr-human-friendly" />
+            <input type="date" name="tmt_awal" class="form-control" id="flatpickr-human-friendly" required/>
           </div>
           <!-- /Human Friendly Date Picker-->
 
           <!-- Disabled Range-->
           <div class="col-md-6 col-12 mb-md-0 mb-4">
             <label for="flatpickr-disabled-range" class="form-label">Status</label>
-            <input type="text" name="status" class="form-control" id="flatpickr-disabled-range" />
+            <input type="text" name="status" class="form-control" id="flatpickr-disabled-range" required/>
           </div>
           <!-- /Disabled Range-->
 
           <!-- Inline Picker-->
           <div class="col-md-6 col-12">
             <label for="flatpickr-inline" class="form-label">Golongan Ruangan</label>
-            <input type="text" name="gol_ruangan" class="form-control mb-1" id="flatpickr-inline" />
+            <input type="text" name="gol_ruangan" class="form-control mb-1" id="flatpickr-inline" required/>
           </div>
           <!-- /Inline Picker-->
 <br>
           <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Upload Foto Guru</label>
 
-                            <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  accept="image/png,jpg,jpeg,jfif,webp" required>
+                        <i style="float: left;font-size: 11px;color: red">Foto harus berukuran 255px x 300px</i> <br>
                         </div>
         <button type="submit" class="btn btn-primary">Simpan</button>
                     </from>

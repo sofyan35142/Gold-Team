@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Blog;
 use App\Models\Dharma;
 use App\Models\ekstra;
 use App\Models\Guru;
@@ -370,13 +371,15 @@ class DataController extends Controller
 
     public function deletekategoriblog($id)
     {
+        $count = Blog::where('kategori', $id)->count();
+        if ($count > 0) {
+            return back()->with('error', 'Kategori Sedang Digunakan');
+        }
         $data = kategoriblog::find($id);
         $data->delete();
+        // dd($data);
         return redirect()->route('kategoriblog')->with('success', 'Berhasil Di Hapus');
     }
-
-
-
     ////////////-------------WALASSSSSSSSSS-------------///////////////
     public function walas()
     {

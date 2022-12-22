@@ -72,14 +72,14 @@
                             <br/>
                             <img class="img mb-3" src="{{ asset('fotoekstra/' . $data->foto) }}" alt="" style="width: 100px;">
                             <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto }}">
-                            {{-- <i style="float: left;font-size: 11px;color: red">Abaikan jika tidak merubah foto</i> --}}
+                            <i style="float: left;font-size: 11px;color: red">Foto harus berukuran 315px x 350px</i> <br>
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Update Foto Pembina</label>
                             <br/>
                             <img class="img mb-3" src="{{ asset('fotoekstra/' . $data->foto_pembina) }}" alt="" style="width: 100px;">
                             <input type="file" name="foto_pembina" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto_pembina }}">
-                            {{-- <i style="float: left;font-size: 11px;color: red">Abaikan jika tidak merubah foto</i> --}}
+                             <i style="float: left;font-size: 11px;color: red">Foto harus berukuran 159px x 198px</i> <br>
                         </div>
 <br>
  <label for="defaultFormControlInput" class="form-label mb-3">Foto kegiatan</label>
@@ -90,6 +90,7 @@
                                                     <img  src="{{ asset("foto_kegiatan/" .$foto ) }}" alt="" width="100px" height="100px" class="my-3">
                                                     <input type="file" name="foto_kegiatan[{{$key++}}]" class="form-control w-75"
                                                         id="defaultFormControlInput" aria-describedby="defaultFormControlHelp" value="{{$data->foto_kegiatan}}"/>
+                                                        <i style="float: left;font-size: 11px;color: red">Foto harus berukuran 232px x 348px</i> <br>
                                                 </div>
                                                 @endforeach
                         <button type="submit" class="btn rounded-pill btn-primary">Submit</button>

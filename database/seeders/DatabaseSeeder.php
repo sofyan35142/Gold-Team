@@ -56,7 +56,9 @@ class DatabaseSeeder extends Seeder
             lowongankerja::class,
             perusahaan_mitra::class,
             umkm_pasangan::class,
-            keunggulan::class
+            keunggulan::class,
+            sponsor::class
+            
         ]);
     }
 }

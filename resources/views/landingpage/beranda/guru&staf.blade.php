@@ -14,19 +14,19 @@
 
 
 
-    <div class="team-title team-title-bg">
+    <div class="service-title service-title-bg bg-3">
         <div class="d-table">
             <div class="d-table-cell">
                 <div class="container">
-                    <div class="team-title-text">
-                        <h2>Data DharmaWanita</h2>
+                    <div class="service-title-text">
+                        <h2>DATA GURU & KARYAWAN</h2>
                         <ul>
                             <li>
-                                <a href="index.html">Home</a>
+                                <a href="/guruu">Data</a>
                             </li>
                             <li>
                                 <i class="icofont-rounded-double-right"></i>
-                                Data DharmaWanita
+                                GURU & KARYAWAN
                             </li>
                         </ul>
                     </div>
@@ -74,8 +74,9 @@
                             </div>
                         </div>
                     </div>
-                @endforeach
-            </div>
+                    @endforeach
+                </div>
+        </div>
             {{ $dataa->links('vendor.pagination.bootstrap-4') }}
         </div>
     </div>

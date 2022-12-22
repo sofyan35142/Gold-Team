@@ -61,7 +61,7 @@
 
         <td>
             <a href="/editkategoriblog/{{ $kategori->id }}" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></a>
-            <a href="#" class="btn btn-danger delete" data-id="{{ $kategori->id }}" data-alumni="{{ $kategori->nama }}"><i class="fa-solid fa-trash"></i></a>
+            <a href="#" class="btn btn-danger delete" data-id="{{ $kategori->id }}" data-kategori="{{ $kategori->kategori }}"><i class="fa-solid fa-trash"></i></a>
         </td>
     </tr>
 
@@ -208,6 +208,11 @@
 <script>
     @if (Session::get('success'))
     toastr.success("{{ Session::get('success') }}")
+    @endif
+</script>
+<script>
+    @if (Session::get('error'))
+    toastr.error("{{ Session::get('error') }}")
     @endif
 </script>
 
