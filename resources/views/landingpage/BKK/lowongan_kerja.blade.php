@@ -59,7 +59,7 @@
                             <ul>
                                 <li>
                                     <i class="icofont-calendar"></i>
-                                    20 Feb 2021
+                                    {{showdate($lowongan->created_at,'d F Y')}}
                                 </li>
                                 <li>
                                     <i class="icofont-ui-user"></i>
@@ -75,7 +75,11 @@
                                 <i class="icofont-rounded-right"></i>
                             </a>
                             <small class="text-muted float-right">Status:<span
-                                    class="dangerspan badge">{{$lowongan->status}}</span></small>
+                                    class="<?php if ($lowongan->status == "masih ada") {
+                                        echo("secondspan");
+                                    }else {
+                                        echo("dangerspan");
+                                    } ?> badge">{{$lowongan->status}}</span></small>
                         </div>
                     </div>
                 </div>

@@ -37,14 +37,14 @@
                                 <i class="icofont-rounded-double-right"></i>
                                 Perusahaan Mitra
                             </li>
-                            
+
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <section class="pricing-section pt-100 pb-70">
+    <section class="pricing-section pt-100 pb-70 main-blog-post">
         <div class="container">
             <div class="section-head m-0 mw-100">
                 <h2 class="text-start">Perusaaan <span>Mitra</span></h2>
@@ -59,134 +59,58 @@
             <div class="row">
                 <h3 class="text-center">DAFTAR MOU NAMA PERUSAHAAN MITRA
                     SMKN 1 SUKOREJO</h3>
-                <div class="col-lg-4 col-md-6">
-                    <div class="price-card-area">
-                        <div class="price-head-text">
-                            <h5 class="text-white"><span>PT.</span>Ramagloria Sakti Tekstil Industri</h5>
-                        </div>
-                        <div class="plan-features pl-1">
-                            <ul>
-                                <li>
-                                    Alamat : Jl. Embong Trengguli No 22 Kaliasin, Genteng, Kota Surabaya
-                                </li>
-                                <li>
-                                    Nomor : 421.5/045.051.09.4/2017
-                                </li>
-                                <li>
-                                    Masa Berlaku (tahun) : 5 tahun
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="price-card-area">
-                        <div class="price-head-text">
-                            <h5 class="text-white"><span>PT.</span>Ramagloria Sakti Tekstil Industri</h5>
-                        </div>
-                        <div class="plan-features pl-1">
-                            <ul>
-                                <li>
-                                    Alamat : Jl. Embong Trengguli No 22 Kaliasin, Genteng, Kota Surabaya
-                                </li>
-                                <li>
-                                    Nomor : 421.5/045.051.09.4/2017
-                                </li>
-                                <li>
-                                    Masa Berlaku (tahun) : 5 tahun
-                                </li>
-                            </ul>
+                @forelse ($data as $row)
+                    <div class="col-lg-4 col-md-6">
+                        <div class="price-card-area">
+                            <div class="price-head-text">
+                                <h5 class="text-white">{{ $row->dudi }}</h5>
+                            </div>
+                            <div class="plan-features pl-1">
+                                <ul>
+                                    <li>
+                                        Alamat : {{ $row->alamat }}
+                                    </li>
+                                    <li>
+                                        Nomor : {{ $row->nomor }}
+                                    </li>
+                                    <li>
+                                        Masa Berlaku (tahun) : {{ $row->masa_berlaku }} tahun
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="price-card-area">
-                        <div class="price-head-text">
-                            <h5 class="text-white"><span>PT.</span>Ramagloria Sakti Tekstil Industri</h5>
-                        </div>
-                        <div class="plan-features pl-1">
-                            <ul>
-                                <li>
-                                    Alamat : Jl. Embong Trengguli No 22 Kaliasin, Genteng, Kota Surabaya
-                                </li>
-                                <li>
-                                    Nomor : 421.5/045.051.09.4/2017
-                                </li>
-                                <li>
-                                    Masa Berlaku (tahun) : 5 tahun
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                @empty
+                @endforelse
             </div>
             <div class="row">
                 <h3 class="text-center">DAFTAR MOU NAMA UMKM PASANGAN
                     SMKN 1 SUKOREJO</h3>
-                <div class="col-lg-4 col-md-6">
-                    <div class="price-card-area">
-                        <div class="price-head-text">
-                            <h5 class="text-white">UKM SUKOREJO SMART
-                                UD GADING MAS</h5>
-                        </div>
-                        <div class="plan-features pl-1">
-                            <ul>
-                                <li class="h-40">
-                                    Bidang UMKM : Produk Makanan
-                                </li>
-                                <li>
-                                    Alamat : Karangsono, Sukorejo
-                                </li>
-                                <li>
-                                    Pemilik : Joe Biden
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="price-card-area">
-                        <div class="price-head-text">
-                            <h5 class="text-white"><span>PT.</span>Ramagloria Sakti Tekstil Industri</h5>
-                        </div>
-                        <div class="plan-features pl-1">
-                            <ul>
-                                <li>
-                                    Alamat : Jl. Embong Trengguli No 22 Kaliasin, Genteng, Kota Surabaya
-                                </li>
-                                <li>
-                                    Nomor : 421.5/045.051.09.4/2017
-                                </li>
-                                <li>
-                                    Masa Berlaku (tahun) : 5 tahun
-                                </li>
-                            </ul>
+                @foreach ($data2 as $row)
+                    <div class="col-lg-4 col-md-6">
+                        <div class="price-card-area">
+                            <div class="price-head-text">
+                                <h5 class="text-white">{{ $row->nama_umkm }}</h5>
+                            </div>
+                            <div class="plan-features pl-1">
+                                <ul>
+                                    <li>
+                                        Bidang UMKM : {{ $row->bidang }}
+                                    </li>
+                                    <li class="h-40">
+                                        Alamat : {{ $row->alamat }}
+                                    </li>
+                                    <li>
+                                        Pemilik : {{ $row->pemilik }}
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="price-card-area">
-                        <div class="price-head-text">
-                            <h5 class="text-white"><span>PT.</span>Ramagloria Sakti Tekstil Industri</h5>
-                        </div>
-                        <div class="plan-features pl-1">
-                            <ul>
-                                <li>
-                                    Alamat : Jl. Embong Trengguli No 22 Kaliasin, Genteng, Kota Surabaya
-                                </li>
-                                <li>
-                                    Nomor : 421.5/045.051.09.4/2017
-                                </li>
-                                <li>
-                                    Masa Berlaku (tahun) : 5 tahun
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
+            {{ $data->links('vendor.pagination.bootstrap-4') }}
             <div class="service-details-post shadow cardkbkk">
-
                 <h3>Ketua BKK</h3>
                 <div class="d-flex flex-row">
                     <div class="p-2"><img class="img-guru"

@@ -40,12 +40,13 @@
                                     </thead>
                                     <tbody class="table-group-divider">
                                         <?php $no = 1; ?>
-                                        {{-- <tr>
-                                            <td>{{ $no }}</td>
-                                            <td><img class="h-12pc w-100"
-                                                    src="{{ asset('assets/img/' . $data->foto_struktur) }}"
-                                                    alt="struktur"></td>
-                                            <td>{!! $data->isi_artikel !!}</td>
+                                        @foreach ($perusahaan as $data)
+                                        <tr>
+                                            <td>{{ $no++ }}</td>
+                                            <td>{{$data->dudi}}</td>
+                                            <td>{{$data->alamat}}</td>
+                                            <td>{{$data->nomor}}</td>
+                                            <td>{{$data->masa_berlaku}}</td>
                                             <td>
                                                 <a href="/index/editsobkk" class="btn btn-warning"><i
                                                         class="fa-solid fa-pen-to-square"></i></a>
@@ -53,35 +54,38 @@
                                                     data-id="{{ $data->id }}" data-jurusan="{{ $data->visi }}"><i
                                                         class="fa-solid fa-trash"></i></a>
                                             </td>
-                                        </tr> --}}
+                                        </tr>
+                                    @endforeach
                                     </tbody>
                                 </table>
                             </div>
                         </div>
                         <div class="card mb-4">
                             <div class="card-datatable table-responsive pt-0">
-                                <h5 class="card-header"></h5>
+                                <h5 class="card-header">DAFTAR MOU NAMA UMKM PASANGAN
+                                    SMKN 1 SUKOREJO</h5>
                                 <a href="/index/addumkm" type="button" class="btn rounded-pill btn-primary">Tambah
                                     +</a>
                                 <table class="table" id="table2">
                                     <thead>
                                         <tr>
                                             <th scope="col">No.</th>
-                                            <th scope="col">Nama Perusahaan</th>
+                                            <th scope="col">Nama UMKM</th>
                                             <th scope="col">Alamat</th>
-                                            <th scope="col">no perusahaan</th>
-                                            <th scope="col">Masa Berlaku</th>
+                                            <th scope="col">Bidang</th>
+                                            <th scope="col">Pemilik</th>
                                             <th scope="col">Aksi</th>
                                         </tr>
                                     </thead>
                                     <tbody class="table-group-divider">
                                         <?php $no = 1; ?>
-                                        {{-- <tr>
-                                            <td>{{ $no }}</td>
-                                            <td><img class="h-12pc w-100"
-                                                    src="{{ asset('assets/img/' . $data->foto_struktur) }}"
-                                                    alt="struktur"></td>
-                                            <td>{!! $data->isi_artikel !!}</td>
+                                    @foreach ($umkmpasangan as $data)
+                                        <tr>
+                                            <td>{{ $no++ }}</td>
+                                            <td>{{$data->nama_umkm}}</td>
+                                            <td>{{$data->bidang}}</td>
+                                            <td>{{$data->alamat}}</td>
+                                            <td>{{$data->pemilik}}</td>
                                             <td>
                                                 <a href="/index/editsobkk" class="btn btn-warning"><i
                                                         class="fa-solid fa-pen-to-square"></i></a>
@@ -89,7 +93,8 @@
                                                     data-id="{{ $data->id }}" data-jurusan="{{ $data->visi }}"><i
                                                         class="fa-solid fa-trash"></i></a>
                                             </td>
-                                        </tr> --}}
+                                        </tr>
+                                    @endforeach
                                     </tbody>
                                 </table>
                             </div>

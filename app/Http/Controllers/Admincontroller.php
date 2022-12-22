@@ -17,7 +17,9 @@ use App\Models\sekolahrujukan;
 use App\Models\sekolahadiwiyata;
 use App\Models\strukturorganisasi;
 use App\Models\Bimbingankarir;
-
+use App\Models\perusahaan_mitra;
+use App\Models\umkm_pasangan;
+use Illuminate\Support\Carbon;
 class Admincontroller extends Controller
 {
     public function index()
@@ -28,6 +30,9 @@ class Admincontroller extends Controller
     //start profileditsekolahrujukan
     public function profil()
     {
+        $tes1 = ['1','2','3'];
+        $tes = count($tes1);
+        dd($tes);
         $profil = profilsekolah::all()->first();
         return view('admin.profil.profil.profil', compact('profil'));
     }
@@ -600,14 +605,14 @@ class Admincontroller extends Controller
                 'foto' => $namafoto,
                 'judul' => $request->judul,
                 'link' => $request->link,
-                
+
             ]);
         } else {
             $data->update([
                 //'foto' => request->foto
                 'judul' => $request->judul,
                 'link' => $request->link,
-                
+
                 ]);
             }
         return redirect("/index/bimbingan-karir");
@@ -723,10 +728,23 @@ class Admincontroller extends Controller
 
     //start perusahaan-mitra
     public function perusahaanmitra(){
-        return view("Admin.bkk.perusahaanmitra.perusahaanmitra");
+        $perusahaan = perusahaan_mitra::all();
+        $umkmpasangan = umkm_pasangan::get();
+        return view("Admin.bkk.perusahaanmitra.perusahaanmitra",compact("perusahaan","umkmpasangan"));
     }
     public function addpt(){
-        return view("Admin.bkk.perusahaanmitra.perusahaanmitra");
+        return view("Admin.bkk.perusahaanmitra.addpt");
+    }
+    public function insertperusahaanmitra(Request $request){
+        $data = perusahaan_mitra::create($request->all());
+        return redirect("/index/perusahaanmitra")->with("success","data berhasil ditambahkan");
+    }
+    public function addumkm(){
+        return view("Admin.bkk.perusahaanmitra.addumkm");
+    }
+    public function insertumkmpasangan(Request $request){
+        $data = umkm_pasangan::create($request->all());
+        return redirect("/index/perusahaanmitra")->with("success","data berhasil ditambahkan");
     }
     //end perusahaan mitra
 

@@ -68,11 +68,12 @@ Route::get('/profil/sekolahrujukan', [LandingController::class, 'sekolahrujukan'
 Route::get('/BKK', [LandingController::class, 'BKK']);
 Route::get('/BKK/visimisi-bkk', [LandingController::class, 'visimisi_bkk']);
 Route::get('/BKK/strukturorganisasi-bkk', [LandingController::class, 'strukturorganisasi_bkk']);
-Route::get('/BKK/kegiatan-bkk', [LandingController::class, 'kegiatan_bkk']);
+Route::get('/BKK/kegiatan-bkk', [LandingController::class, 'kegiatan
+_bkk']);
 Route::get('/BKK/detail-kegiatan-bkk/{id}', [LandingController::class, 'detail_kegiatan_bkk']);
 Route::get('/BKK/kewirausahaan-bkk', [LandingController::class, 'kewirausahaan_bkk']);
 Route::get('/BKK/lowongan-kerja', [LandingController::class, 'lowongan_kerja']);
-Route::get('/BKK/detail-lowongan', [LandingController::class, 'detail_lowongan']);
+Route::get('/BKK/detail-lowongan/{id}', [LandingController::class, 'detail_lowongan']);
 Route::get('/BKK/bimbingan-karir', [LandingController::class, 'bimbingan_karir']);
 Route::get('/BKK/perusahaan-mitra', [LandingController::class, 'perusahaan_mitra']);
 // end bkk
@@ -219,7 +220,9 @@ Route::get('/index/showlowongankerja/{id}', [Admincontroller::class, 'showlowong
 //perusahaan mitra
 Route::get('/index/perusahaanmitra', [Admincontroller::class, 'perusahaanmitra']);
 Route::get('/index/addpt', [Admincontroller::class, 'addpt']);
+Route::post('/insertperusahaanmitra', [Admincontroller::class, 'insertperusahaanmitra']);
 Route::get('/index/addumkm', [Admincontroller::class, 'addumkm']);
+Route::post('/insertumkmpasangan', [Admincontroller::class, 'insertumkmpasangan']);
 
 //BKK DEFINITION
 Route::get('/index/bkk', [AdminController::class, 'indexbkk'])->name('bkk');
