@@ -184,7 +184,7 @@
                         </li>
                         <li>
                             <i class="icofont-simple-right"></i>
-                            <a href="/layananortu">Layanan Orang Tua </a>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSexD6fbqWjwBFmWGlba5YDwJvEUa5G1YURe5h58jqNfPWmeuw/viewform">Layanan Orang Tua </a>
                         </li>
                         
                     </ul>

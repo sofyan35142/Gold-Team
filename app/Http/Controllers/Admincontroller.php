@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\BKK;
 use App\Models\kegiatanbkk;
 use App\Models\kewirausahaansketsu;
 use App\Models\lowongankerja;
@@ -746,5 +747,75 @@ class Admincontroller extends Controller
         return redirect("/index/perusahaanmitra")->with("success","data berhasil ditambahkan");
     }
     //end perusahaan mitra
+
+    //start bkk definition
+    public function indexbkk()
+    {
+        $data = BKK::where('id', '=', 1)->firstOrFail();
+        return view('Admin.bkk.bkk', compact('data'));
+    }
+
+
+    public function edit(Request $request)
+    {
+        // dd($request->all());
+        $data = BKK::get()->first();
+        // dd($data);
+        $data->update([
+            // 'foto1' => $namafoto,
+            'judul' => $request->judul,
+            'sub_judul1' => $request->sub_judul1,
+            'deskripsi' => $request->deskripsi,
+            'sub_judul2' => $request->sub_judul2,
+            'judul_sidebar' => $request->judul_sidebar,
+        ]);
+        if ($request->hasFile('foto1')) {
+            $request->file('foto1')->move('foto/', $request->file('foto1')->getClientOriginalName());
+            $data->foto1 = $request->file('foto1')->getClientOriginalName();
+            $data->save();
+            
+        }
+        if ($request->hasFile('foto2')) {
+            $request->file('foto2')->move('foto/', $request->file('foto2')->getClientOriginalName());
+            $data->foto2 = $request->file('foto2')->getClientOriginalName();
+            $data->save();
+        }
+        if ($request->hasFile('foto3')) {
+            $request->file('foto3')->move('foto/', $request->file('foto3')->getClientOriginalName());
+            $data->foto3 = $request->file('foto3')->getClientOriginalName();
+            $data->save();
+        }
+        if ($request->hasFile('foto4')) {
+            $request->file('foto4')->move('foto/', $request->file('foto4')->getClientOriginalName());
+            $data->foto4 = $request->file('foto4')->getClientOriginalName();
+            $data->save();
+        }
+        if ($request->hasFile('foto5')) {
+            $request->file('foto5')->move('foto/', $request->file('foto5')->getClientOriginalName());
+            $data->foto5 = $request->file('foto5')->getClientOriginalName();
+            $data->save();
+        }
+        if ($request->hasFile('foto6')) {
+            $request->file('foto6')->move('foto/', $request->file('foto6')->getClientOriginalName());
+            $data->foto6 = $request->file('foto6')->getClientOriginalName();
+            $data->save();
+        }
+        // dd($data);
+         else {
+            $data->update([
+                //'foto' = request->foto
+                'judul' => $request->judul,
+                'sub_judul1' => $request->sub_judul1,
+                'deskripsi' => $request->deskripsi,
+                'sub_judul2' => $request->sub_judul2,
+                'judul_sidebar' => $request->judul_sidebar,
+
+            ]);
+        }
+        // $data->update($request->all());
+        return redirect('index/bkk')->with('success', 'Berhasil Di Update');
+    }
+
+    //end bkk definition
     ///////////////////// END BKK LANDINGPAGE ADMIN ///////////////////////////
 }

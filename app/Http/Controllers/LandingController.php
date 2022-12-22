@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\LSP;
+use App\Models\BKK;
 use App\Models\Blog;
 use App\Models\Bimbingankarir;
 use App\Models\Guru;
@@ -265,8 +266,9 @@ class LandingController extends Controller
     //start bkk
     public function bkk()
     {
+        $data = BKK::where('id', '=', 1)->firstOrFail();
         $sosmed = Sosmed::all();
-        return view("landingpage.BKK.bkk", compact('sosmed'));
+        return view("landingpage.BKK.bkk", compact('data', 'sosmed'));
     }
     public function visimisi_bkk()
     {
@@ -392,4 +394,6 @@ class LandingController extends Controller
         $sosmed = Sosmed::all();
         return view ('landingpage.beranda.bloglebihbanyak', compact('sosmed'));
     }
+
+    
 }

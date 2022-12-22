@@ -70,9 +70,9 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="card mb-4">
-                    <h5 class="card-header">Lembaga Sertifikasi Profesi (LSP)</h5>
+                    <h5 class="card-header">BURSA KERJA KHUSUS (BKK)</h5>
                     <div class="card-body">
-                        <form action="/updatelsp/{{$data->id}}" method="POST" enctype="multipart/form-data">
+                        <form action="/updatebkk/{{$data->id}}" method="POST" enctype="multipart/form-data">
                                 @csrf
                         <input type="text" value="{{$data->id}}" name="id" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" hidden/>
                         <div>
@@ -81,7 +81,19 @@
                         </div>
                         <br/>
 
+                        <div>
+                        <label for="defaultFormControlInput" class="form-label">Sub Judul 1</label>
+                        <input type="text"  name="sub_judul1" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" value="{{ $data->sub_judul1 }}"/>
+                        </div>
+                        <br/>                        
                         
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Foto Logo BKK</label>
+                            <br/>
+                            <img class="img mb-3" src="{{ asset('foto/' . $data->foto1) }}" alt="" style="width: 250px;">
+                            <input type="file" name="foto1" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto1 }}">
+                           
+                        </div>
                         <br/>
 
                         <div>
@@ -91,37 +103,64 @@
                                 <textarea name="deskripsi" id="editor">{!! $data->deskripsi !!}</textarea>
                         </div>
                         <br/>
+
+                        <div>
+                        <label for="defaultFormControlInput" class="form-label">Sub Judul 2</label>
+                        <input type="text"  name="sub_judul2" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" value="{{ $data->sub_judul1 }}"/>
+                        </div>
+                        <br/>
+
                         <div>
                         
                         <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Foto Papan Nama</label>
+                            <label for="exampleInputEmail1" class="form-label">Foto Gedung BKK</label>
                             <br/>
-                            <img class="img mb-3" src="{{ asset('lsp/' . $data->papannama) }}" alt="" style="width: 250px;">
-                            <input type="file" name="papannama" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->papannama }}">
+                            <img class="img mb-3" src="{{ asset('foto/' . $data->foto2) }}" alt="" style="width: 250px;">
+                            <input type="file" name="foto2" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto2 }}">
                            
                         </div>
                         <br/>
                         <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Foto Kantor</label>
+                            <label for="exampleInputEmail1" class="form-label"></label>
                             <br/>
-                            <img class="img mb-3" src="{{ asset('lsp/' . $data->kantor) }}" alt="" style="width: 250px;">
-                            <input type="file" name="kantor" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->kantor }}">
+                            <img class="img mb-3" src="{{ asset('foto/' . $data->foto3) }}" alt="" style="width: 250px;">
+                            <input type="file" name="foto3" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto3 }}">
                            
                         </div>
                         <br/>
                         <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Foto Denah Lokasi</label>
+                            <label for="exampleInputEmail1" class="form-label"></label>
                             <br/>
-                            <img class="img mb-3" src="{{ asset('lsp/' . $data->denah) }}" alt="" style="width: 250px;">
-                            <input type="file" name="denah" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->denah }}">
+                            <img class="img mb-3" src="{{ asset('foto/' . $data->foto4) }}" alt="" style="width: 250px;">
+                            <input type="file" name="foto4" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto4 }}">
                             
                         </div>
                         <br/>
-                        <div>
-                        <label for="defaultFormControlInput" class="form-label">LINK BNSP</label>
-                        <input type="text" name="link" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" value="{{ $data->link }}"/>
+
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label"></label>
+                            <br/>
+                            <img class="img mb-3" src="{{ asset('foto/' . $data->foto5) }}" alt="" style="width: 250px;">
+                            <input type="file" name="foto5" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto5 }}">
+                            
                         </div>
                         <br/>
+
+                        <div>
+                        <label for="defaultFormControlInput" class="form-label">Judul Sidebar</label>
+                        <input type="text"  name="judul_sidebar" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" value="{{ $data->judul_sidebar }}"/>
+                        </div>
+                        <br/>
+                        
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Foto Sidebar</label>
+                            <br/>
+                            <img class="img mb-3" src="{{ asset('foto/' . $data->foto6) }}" alt="" style="width: 250px;">
+                            <input type="file" name="foto6" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto6 }}">
+                            
+                        </div>
+                        <br/>
+
                         <button type="submit" class="btn rounded-pill btn-primary">Update</button>
                         </form>
 

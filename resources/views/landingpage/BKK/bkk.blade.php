@@ -45,37 +45,27 @@
                         <div class="blog-details-post bkk-konten-container">
                             <div class="blog-post-title">
                                 <h3>
-                                    Bursa Kerja Khusus
+                                    {{$data->judul}}
                                 </h3>
                             </div>
-                            <h5 class="text-center">Motto Dan Logo<br> Bursa Kerja Khusus</h5>
-                            <img class="img-logo rounded mx-auto d-block" src="../assets/img/bkk/logobkk.png" alt="service">
+                            <h5 class="text-center">{{$data->sub_judul1}}</h5>
+                            <img class="img-logo rounded mx-auto d-block" src="{{ asset('foto/' . $data->foto1) }}" alt="service">
                             {{-- $data bkk --}}
-                            <strong>MAKNA LOGO :</strong>
-                            <ol>
-                                <li>Gambar gigi roda berwarna biru melambangkan hubungan kerjasama antara BKK dengan
-                                    IDUKA, Management sekolah, alumni dan instansi terkait yang penuh energi, kuat dan
-                                    semangat</li>
-                                <li>
-                                    Gambar siswa meraih bintang melambangkan upaya BKK dalam mewujudkan mimpi Penerus
-                                    Negeri yang berbudi luhur dan bertakwa kepada Tuhan Yang Maha Esa
-                                </li>
-                                <li>
-                                    Gambar bola dunia berwarna orange melambangkan bahwa lulusan memiliki daya saing
-                                    tinggi di era revolusi industri 4.0
-                                </li>
-                            </ol>
+                            {!! $data->deskripsi !!}
                             {{-- end data bkk --}}
-                            <h5 class="text-center">Gedung dan Ruang Kerja<br>Tim Bursa Kerja Khusus (BKK)</h5>
+                            <h5 class="text-center">{{$data->sub_judul2}}</h5>
                             <div class="row">
                                 <div class="col-lg-6 mb-3">
-                                    <img class="w-100" src="../assets/img/bkk/gedungbkk1.png" alt="service">
+                                    <img class="w-100" src="{{ asset('foto/' . $data->foto2) }}" alt="service">
                                 </div>
                                 <div class="col-lg-6 mb-3">
-                                    <img class="w-100" src="../assets/img/bkk/gedungbkk2.png" alt="service">
+                                    <img class="w-100" src="{{ asset('foto/' . $data->foto3) }}" alt="service">
                                 </div>
                                 <div class="col-lg-6 mb-3">
-                                    <img class="w-100" src="../assets/img/bkk/gedungbkk3.png" alt="service">
+                                    <img class="w-100" src="{{ asset('foto/' . $data->foto4) }}" alt="service">
+                                </div>
+                                <div class="col-lg-6 mb-3">
+                                    <img class="w-100" src="{{ asset('foto/' . $data->foto5) }}" alt="service">
                                 </div>
                             </div>
                         </div>
@@ -83,7 +73,8 @@
                 </div>
                 <div class="col-lg-4 main-service-area blog-side-bar">
                     <div class="service-details-post">
-                        <img src="../assets/img/bkk/bkk.jpg" alt="logo lsp">
+                        <h4 class="h4-css">{{$data->judul}}</h4>
+                        <img src="{{ asset('foto/' . $data->foto6) }}" alt="logo lsp">
                     </div>
                 </div>
             </div>
