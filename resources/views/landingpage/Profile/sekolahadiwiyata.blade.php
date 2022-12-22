@@ -58,110 +58,38 @@
                     </div>
                 </div>
                 <div class="col-lg-4 main-service-area blog-side-bar scrollblg">
+                @foreach($data as $key)
+
+                {{-- @php
+                    $key = App\Models\Blog::where('kategori', '3')->get();
+                @endphp --}}
+
                     <div class="blog-area p-10px">
                         <div class="blog-img">
                             <a href="blog-details.html">
-                                <img src="../assets/img/blog/1.png" alt="blog image">
+                                <img src="{{ asset('blog/'. $key->foto) }}" alt="blog image">
                             </a>
                         </div>
-                        <div class="blog-text">
-                            <h4><a href="blog-details.html">How to cleanroom yourself</a></h4>
+                        <div class="blog-text sideelipis">
+                            <h4><a href="blog-details.html">{{ $key->judul }}</a></h4>
                             <ul>
                                 <li>
                                     <i class="icofont-calendar"></i>
-                                    20 Feb 2021
+                                    {{showdate($key->created_at,'d F Y') }}
                                 </li>
                                 <li>
                                     <i class="icofont-ui-user"></i>
                                     <a href="#">John Doe</a>
                                 </li>
                             </ul>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor contratc
-                                ut labore et dolore magna aliqua, sed do eiusmod.</p>
+                            <p>{!! $key->deskripsi !!}</p>
                             <a href="blog-details.html" class="blog-btn">
                                 Read more
                                 <i class="icofont-rounded-right"></i>
                             </a>
                         </div>
                     </div>
-                    <div class="blog-area p-10px">
-                        <div class="blog-img">
-                            <a href="blog-details.html">
-                                <img src="../assets/img/blog/1.png" alt="blog image">
-                            </a>
-                        </div>
-                        <div class="blog-text">
-                            <h4><a href="blog-details.html">How to cleanroom yourself</a></h4>
-                            <ul>
-                                <li>
-                                    <i class="icofont-calendar"></i>
-                                    20 Feb 2021
-                                </li>
-                                <li>
-                                    <i class="icofont-ui-user"></i>
-                                    <a href="#">John Doe</a>
-                                </li>
-                            </ul>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor contratc
-                                ut labore et dolore magna aliqua, sed do eiusmod.</p>
-                            <a href="blog-details.html" class="blog-btn">
-                                Read more
-                                <i class="icofont-rounded-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="blog-area p-10px">
-                        <div class="blog-img">
-                            <a href="blog-details.html">
-                                <img src="../assets/img/blog/1.png" alt="blog image">
-                            </a>
-                        </div>
-                        <div class="blog-text">
-                            <h4><a href="blog-details.html">How to cleanroom yourself</a></h4>
-                            <ul>
-                                <li>
-                                    <i class="icofont-calendar"></i>
-                                    20 Feb 2021
-                                </li>
-                                <li>
-                                    <i class="icofont-ui-user"></i>
-                                    <a href="#">John Doe</a>
-                                </li>
-                            </ul>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor contratc
-                                ut labore et dolore magna aliqua, sed do eiusmod.</p>
-                            <a href="blog-details.html" class="blog-btn">
-                                Read more
-                                <i class="icofont-rounded-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="blog-area p-10px">
-                        <div class="blog-img">
-                            <a href="blog-details.html">
-                                <img src="../assets/img/blog/1.png" alt="blog image">
-                            </a>
-                        </div>
-                        <div class="blog-text">
-                            <h4><a href="blog-details.html">How to cleanroom yourself</a></h4>
-                            <ul>
-                                <li>
-                                    <i class="icofont-calendar"></i>
-                                    20 Feb 2021
-                                </li>
-                                <li>
-                                    <i class="icofont-ui-user"></i>
-                                    <a href="#">John Doe</a>
-                                </li>
-                            </ul>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor contratc
-                                ut labore et dolore magna aliqua, sed do eiusmod.</p>
-                            <a href="blog-details.html" class="blog-btn">
-                                Read more
-                                <i class="icofont-rounded-right"></i>
-                            </a>
-                        </div>
-                    </div>
+                @endforeach
                 </div>
             </div>
         </div>

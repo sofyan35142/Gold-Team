@@ -66,6 +66,7 @@
                             <label for="exampleInputEmail1" class="form-label">Upload Foto Alumni</label>
 
                             <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+<i style="float: left;font-size: 11px;color: red">Foto Harus 310px x 415px</i>
                         </div>
                         <button type="submit" class="btn rounded-pill btn-primary">Submit</button>
                         </form>

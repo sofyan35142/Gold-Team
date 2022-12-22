@@ -12,19 +12,19 @@
     @include('landingpage.layout.header')
 
 
-    <div class="blog-title blog-title-bg">
+     <div class="service-title service-title-bg bg-3">
         <div class="d-table">
             <div class="d-table-cell">
                 <div class="container">
-                    <div class="blog-title-text">
-                        <h2>Ekstrakurikuler</h2>
+                    <div class="service-title-text">
+                        <h2>EKSTRAKURIKULER</h2>
                         <ul>
                             <li>
-                                <a href="index.html">Home</a>
+                                <a href="/ekstraa">Data</a>
                             </li>
                             <li>
                                 <i class="icofont-rounded-double-right"></i>
-                                Ekstrakurikuler
+                                EKSTRAKURIKULER
                             </li>
                         </ul>
                     </div>
@@ -60,13 +60,9 @@
     <div class="main-blog-post">
         <div class="container">
             <div class="row">
-                 @foreach ($data as $ekstra)
+                 @foreach ($dataa as $ekstra)
                 <div class="col-lg-4 col-md-6">
-
-
                     <div class="blog-area">
-
-
                         <div class="blog-img">
                             <a href="#">
                                 <img class="imgg" src="{{ asset('fotoekstra/' . $ekstra->foto) }}" alt="blog image">

@@ -101,7 +101,7 @@
                 </div>
                 <div class="col-lg-4 main-service-area blog-side-bar">
                     <div class="service-sidebar">
-                        <div class="service-list">
+                        {{-- <div class="service-list">
                             <p class="sidetitle">Kategori Berita</p>
                             <ul>
                                 <li class="hcard overflow-auto">
@@ -113,7 +113,7 @@
                                     @endforeach
                                 </li>
                             </ul>
-                        </div>
+                        </div> --}}
                         <div class="service-list">
                             <p>Blog Terbaru</p>
                             @foreach ($blogside as $blogside)
