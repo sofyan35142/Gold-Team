@@ -3,9 +3,6 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
-
-
-
 use Database\Seeders\LSP;
 use Database\Seeders\kakomli;
 use Illuminate\Database\Seeder;
@@ -31,12 +28,12 @@ class DatabaseSeeder extends Seeder
             jurusan::class,
             kegiatan_bkk::class,
             kakomli::class,
-            // kepsek::class,
+            kepsek::class,
             LSP::class,
             prestasi::class,
             profilsekolah::class,
             profilvisimisi::class,
-            Skematerlisensi::class,
+            // Skematerlisensi::class,
             slider::class,
             Sosmed::class,
             strukturorganisasi::class,
@@ -56,6 +53,9 @@ class DatabaseSeeder extends Seeder
             sejarahsingkat::class,
             visimisibkk::class,
             lowongankerja::class,
+            perusahaan_mitra::class,
+            umkm_pasangan::class,
+            keunggulan::class
         ]);
     }
 }

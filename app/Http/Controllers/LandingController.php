@@ -58,7 +58,7 @@ class LandingController extends Controller
         $total=totalsiswa::all();
         $video=videoprofil::all();
         $sosmed=Sosmed::all();
-        return view("landingpage.beranda.beranda", compact('data','dataa','datakepsek','total','slider','sponsor','video', 'sosmed'));
+        return view("landingpage.beranda.beranda", compact('datakepsek','total','slider','sponsor','video', 'sosmed','keunggulan','blog','alumni'));
     }
 
     public function data()
@@ -222,7 +222,7 @@ class LandingController extends Controller
     }
     public function sejarahsingkat()
     {
-        $data = sejarahsingkat::find(1);
+        $data = sejarahsingkat::all()->first();
         $fotoside = json_decode($data->foto_side);
         $sosmed = Sosmed::all();
         return view("landingpage.profile.sejarahsingkat",compact('data','fotoside', 'sosmed'));
@@ -313,14 +313,16 @@ class LandingController extends Controller
         // $data = lowongankerja::paginate(6)->sortByDesc("id");
         $data = lowongankerja::paginate(6);
         $sosmed = Sosmed::all();
-        return view("landingpage.BKK.lowongan_kerja",compact("data","sosmed"));
+        $sponsor = sponsor::all();
+        return view("landingpage.BKK.lowongan_kerja",compact("data","sosmed","sponsor"));
     }
     public function detail_lowongan($id)
     {
         $sosmed = Sosmed::all();
         $data =  lowongankerja::find($id);
         $lowongan = lowongankerja::latest("id")->limit(10)->get();
-        return view("landingpage.BKK.detail.detaillowongan", compact('sosmed','data','lowongan'));
+        $sponsor = sponsor::all();
+        return view("landingpage.BKK.detail.detaillowongan", compact('sosmed','data','lowongan','sponsor'));
     }
     public function bimbingan_karir()
     {
@@ -397,5 +399,5 @@ class LandingController extends Controller
         return view ('landingpage.beranda.bloglebihbanyak', compact('sosmed'));
     }
 
-    
+
 }

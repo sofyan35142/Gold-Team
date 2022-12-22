@@ -17,6 +17,7 @@ class DataController extends Controller
     {
 
         $data = ekstra::all();
+
         return view('Admin.Data.ekstra.ekstra', compact('data'));
     }
 
@@ -27,25 +28,44 @@ class DataController extends Controller
 
     public function insertekstra(Request $request)
     {
-        $data = ekstra::create([
+        // $data = ekstra::create([
 
-            'judul' => $request->judul,
-            'deskripsi' => $request->deskripsi,
-            'nama' => $request->nama,
-            'foto' => $request->foto,
-            'foto_pembina' => $request->foto_pembina
-        ]);
-        // dd($data);
-        if ($request->hasFile('foto')) {
-            $request->file('foto')->move('fotoekstra/', $request->file('foto')->getClientOriginalName());
-            $data->foto = $request->file('foto')->getClientOriginalName();
-            $data->save();
+        //     'judul' => $request->judul,
+        //     'deskripsi' => $request->deskripsi,
+        //     'nama' => $request->nama,
+        //     'foto' => $request->foto,
+        //     'foto_pembina' => $request->foto_pembina
+        // ]);
+        $files = [];
+        if ($request->hasfile('foto_kegiatan')) {
+            foreach ($request->foto_kegiatan as $file) {
+                $name = $file->getClientOriginalName();
+                $file->move(public_path('foto_kegiatan/'), $name);
+                $files[] = $name;
+            }
         }
+        // dd($files);
+        // $fotoside = implode(',',$files);
+        $file  = new ekstra();
+        $file->judul = $request->judul;
+        $file->nama = $request->nama;
+        $file->deskripsi = $request->deskripsi;
+        $file->foto = $request->foto;
+        $file->foto_pembina  = $request->foto_pembina;
+        $file->foto_kegiatan = json_encode($files);
         if ($request->hasFile('foto_pembina')) {
             $request->file('foto_pembina')->move('fotoekstra/', $request->file('foto_pembina')->getClientOriginalName());
-            $data->foto = $request->file('foto_pembina')->getClientOriginalName();
-            $data->save();
+            $file->foto_pembina = $request->file('foto_pembina')->getClientOriginalName();
+            $file->save();
         }
+        if ($request->hasFile('foto')) {
+            $request->file('foto')->move('fotoekstra/', $request->file('foto')->getClientOriginalName());
+            $file->foto = $request->file('foto')->getClientOriginalName();
+            $file->save();
+        }
+        // dd($file);
+        // dd($file->foto_kegiatan );
+        $file->save();
         return redirect()->route('ekstra')->with('success', 'Berhasil Di Tambahkan');
     }
 
@@ -57,26 +77,43 @@ class DataController extends Controller
 
     public function updateekstra(Request $request, $id)
     {
-
-        $data = ekstra::find($id);
+        $data = ekstra::findorfail($id);
         $data->update([
-            'judul' => $request->judul,
-            'deskripsi' => $request->deskripsi,
-            'nama' => $request->nama
+            "judul" => $request->judul,
+            "nama" => $request->nama,
+            "deskripsi" => $request->deskripsi,
         ]);
-        // $data->update($request->all());
-        // dd($data);
         if ($request->hasFile('foto')) {
+            // dd($request->file('foto'));
             $request->file('foto')->move('fotoekstra/', $request->file('foto')->getClientOriginalName());
             $data->foto = $request->file('foto')->getClientOriginalName();
             $data->save();
         }
         if ($request->hasFile('foto_pembina')) {
-                $request->file('foto_pembina')->move('fotoekstra/', $request->file('foto_pembina')->getClientOriginalName());
-                $data->foto = $request->file('foto_pembina')->getClientOriginalName();
-                $data->save();
+            $request->file('foto_pembina')->move('fotoekstra/', $request->file('foto_pembina')->getClientOriginalName());
+            $data->foto_pembina = $request->file('foto_pembina')->getClientOriginalName();
+            $data->save();
         }
-
+        if ($request->hasfile('foto_kegiatan')) {
+        $keyarray1 =  array_keys($request->foto_kegiatan);
+        $foto = [];
+        // dd($keyarray1);
+        // $hasil = array_combine($tes,$foto);
+        $i = 0;
+            foreach ($request->foto_kegiatan as $file) {
+                $name = $file->getClientOriginalName();
+                $file->move(public_path('foto_kegiatan/'), $name);
+                $foto[$keyarray1[$i]] = $name;
+                $i++;
+            }
+            $fotoin = json_decode($data->foto_kegiatan);
+            // dd($foto);
+            foreach ($keyarray1 as $key) {
+                $fotoin[$key] = $foto[$key];
+            }
+            $data->foto_kegiatan = $fotoin;
+            $data->save();
+        }
         return redirect()->route('ekstra')->with('success', 'Berhasil Di Update');
     }
 

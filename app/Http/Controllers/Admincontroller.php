@@ -2,6 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Blog;
+use App\Models\Dharma;
+use App\Models\ekstra;
+use App\Models\Guru;
+use App\Models\Jurusan;
+use App\Models\User;
+use Illuminate\Support\Str;
 use App\Models\BKK;
 use App\Models\kegiatanbkk;
 use App\Models\kewirausahaansketsu;
@@ -13,24 +20,63 @@ use Illuminate\Http\Request;
 use App\Models\profilsekolah;
 use App\Models\profilvisimisi;
 use App\Models\sejarahsingkat;
-use App\Models\sekolahrujukan;
 use App\Models\sekolahadiwiyata;
 use App\Models\strukturorganisasi;
+use Illuminate\Support\Facades\Auth;
+use App\Models\sekolahrujukan;
+use App\Models\sponsor;
+use App\Models\walas;
+
 use App\Models\Bimbingankarir;
 use App\Models\perusahaan_mitra;
 use App\Models\umkm_pasangan;
 use Illuminate\Support\Carbon;
+
 class Admincontroller extends Controller
 {
+
+
+    public function postlogin(Request $request)
+    {
+        // dd($request->all());
+        $this->validate($request, [
+            'email' => 'required',
+            'password' => 'required'
+        ], [
+            'email.required' => 'Email Wajib Diisi',
+            'password.required' => 'Password Wajib Diisi'
+        ]);
+        if (Auth::attempt($request->only('email', 'password'))) {
+            return redirect('/index');
+        }
+        return redirect('/login')->with('salah', 'Email Atau Password Salah');
+    }
+    public function login(Request $request)
+    {
+        return view('Admin.login.login');
+    }
+
+    public function gantipass(){
+        return view('Admin.profile.gantipass');
+    }
+
     public function index()
     {
-        return view('Admin.index');
+        $jurusan = Jurusan::count();
+        $guru = Guru::count();
+        $walas = walas::count();
+        $dharma = Dharma::count();
+        $ekstra = ekstra::count();
+        $sponsor = sponsor::count();
+        $blog = Blog::count();
+
+        return view('Admin.index', compact('jurusan', 'guru', 'walas', 'dharma', 'ekstra','sponsor','blog'));
     }
     ///////////////////// START PROFIL LANDINGPAGE ADMIN ///////////////////////////
     //start profileditsekolahrujukan
     public function profil()
     {
-        $tes1 = ['1','2','3'];
+        $tes1 = ['1', '2', '3'];
         $tes = count($tes1);
         dd($tes);
         $profil = profilsekolah::all()->first();
@@ -364,7 +410,6 @@ class Admincontroller extends Controller
         return redirect("/index/sekolahrujukan")->with('success', 'data berhasil direset');
     }
     //end sekolah rujukan
-
     ///////////////////// END PROFIL LANDINGPAGE ADMIN ///////////////////////////
 
     ///////////////////// START BKK LANDINGPAGE ADMIN ///////////////////////////
@@ -613,8 +658,8 @@ class Admincontroller extends Controller
                 'judul' => $request->judul,
                 'link' => $request->link,
 
-                ]);
-            }
+            ]);
+        }
         return redirect("/index/bimbingan-karir");
     }
     public function deletebimbingan($id)
@@ -687,7 +732,7 @@ class Admincontroller extends Controller
             $model->wirausahapesertadidik = json_encode($files);
             $model->wirausahaalumni = '[]';
             $model->save();
-        }else{
+        } else {
             $old = json_decode($model->wirausahapesertadidik);
             $add = array_merge($old, $files);
             $model->wirausahapesertadidik = json_encode($add);
@@ -699,14 +744,17 @@ class Admincontroller extends Controller
     //end kewirausahaan bkk
 
     //start lowongan_kerja
-    public function lowongan_kerja(){
+    public function lowongan_kerja()
+    {
         $lowongan = lowongankerja::all();
-        return view("Admin.bkk.lowongankerja.lowongankerja",compact("lowongan"));
+        return view("Admin.bkk.lowongankerja.lowongankerja", compact("lowongan"));
     }
-    public function addlowongan_kerja(){
+    public function addlowongan_kerja()
+    {
         return view("Admin.bkk.lowongankerja.addlowongankerja");
     }
-    public function insertlowongankerja(request $request){
+    public function insertlowongankerja(request $request)
+    {
         // dd($request->all());
         $data = lowongankerja::create($request->all());
         if ($request->hasFile('foto')) {
@@ -717,9 +765,10 @@ class Admincontroller extends Controller
         // dd($data);
         return redirect("/index/lowongankerja");
     }
-    public function showlowongankerja($id){
+    public function showlowongankerja($id)
+    {
         $data = lowongankerja::findorfail($id);
-        return view("Admin.bkk.lowongankerja.editlowongankerja",compact("data"));
+        return view("Admin.bkk.lowongankerja.editlowongankerja", compact("data"));
         // $data->update([
 
         // ]);
@@ -727,24 +776,29 @@ class Admincontroller extends Controller
     //end lowongan_kerja
 
     //start perusahaan-mitra
-    public function perusahaanmitra(){
+    public function perusahaanmitra()
+    {
         $perusahaan = perusahaan_mitra::all();
         $umkmpasangan = umkm_pasangan::get();
-        return view("Admin.bkk.perusahaanmitra.perusahaanmitra",compact("perusahaan","umkmpasangan"));
+        return view("Admin.bkk.perusahaanmitra.perusahaanmitra", compact("perusahaan", "umkmpasangan"));
     }
-    public function addpt(){
+    public function addpt()
+    {
         return view("Admin.bkk.perusahaanmitra.addpt");
     }
-    public function insertperusahaanmitra(Request $request){
+    public function insertperusahaanmitra(Request $request)
+    {
         $data = perusahaan_mitra::create($request->all());
-        return redirect("/index/perusahaanmitra")->with("success","data berhasil ditambahkan");
+        return redirect("/index/perusahaanmitra")->with("success", "data berhasil ditambahkan");
     }
-    public function addumkm(){
+    public function addumkm()
+    {
         return view("Admin.bkk.perusahaanmitra.addumkm");
     }
-    public function insertumkmpasangan(Request $request){
+    public function insertumkmpasangan(Request $request)
+    {
         $data = umkm_pasangan::create($request->all());
-        return redirect("/index/perusahaanmitra")->with("success","data berhasil ditambahkan");
+        return redirect("/index/perusahaanmitra")->with("success", "data berhasil ditambahkan");
     }
     //end perusahaan mitra
 
@@ -773,7 +827,10 @@ class Admincontroller extends Controller
             $request->file('foto1')->move('foto/', $request->file('foto1')->getClientOriginalName());
             $data->foto1 = $request->file('foto1')->getClientOriginalName();
             $data->save();
-            
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5bed46b9d99e40351a37481d1cb60c1cd15a97fa
         }
         if ($request->hasFile('foto2')) {
             $request->file('foto2')->move('foto/', $request->file('foto2')->getClientOriginalName());
@@ -801,7 +858,7 @@ class Admincontroller extends Controller
             $data->save();
         }
         // dd($data);
-         else {
+        else {
             $data->update([
                 //'foto' = request->foto
                 'judul' => $request->judul,

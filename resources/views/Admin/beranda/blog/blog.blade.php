@@ -43,7 +43,7 @@
   <div class="card-datatable table-responsive pt-0">
     <h5 class="card-header">Blog</h5>
     <a href="/beranda/tambahblog" type="button" class="btn rounded-pill btn-primary">Tambah</a>
-    <table class="table" id="blog">
+    <table class="table">
   <thead>
     <tr>
       <th scope="col">No.</th>
@@ -51,21 +51,26 @@
       <th scope="col">Kategori</th>
       <th scope="col">Deskripsi</th>
       <th scope="col">Foto</th>
+      <th scope="col">Foto Kegiatan</th>
       <th scope="col">Aksi</th>
     </tr>
   </thead>
   <tbody class="table-group-divider">
     <?php $no = 1; ?>
     @foreach ($data as $blog)
+    <?php $fotoside = explode(',',$blog->foto_kegiatan)  ?>
 <tr>
         <td>{{ $no }}</td>
         <td>{{ $blog->judul }}</td>
         <td>{{  $blog->idblog->kategori }}</td>
-        <td>{!! $blog->deskripsi !!}</td>
+        <td style="word-break: break-all;">{!! $blog->deskripsi !!}</td>
         <td>
             <img src="{{ asset('blog/' . $blog->foto) }}" alt="" style="width: 80px; height:80px;">
         </td>
-
+        <td>
+ @foreach (json_decode($blog->foto_kegiatan) as $foto)
+          <img class="mx-1 my-1" src="{{ asset("fotokegiatan/" . $foto ) }}" alt="" width="80px" height="80px">
+          @endforeach
 
         <td>
             <a href="/beranda/editblog/{{ $blog->id }}" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></a>

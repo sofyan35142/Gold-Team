@@ -61,11 +61,11 @@
                         {{-- <input type="text" name="deskripsi" class="form-control" id="editor"  aria-describedby="defaultFormControlHelp" /> --}}
                         </div>
                         <br/>
-<div class="mb-3">
-                                        <label for="exampleInputEmail1" class="form-label">Kategori</label>
-                                        <select id='datahp' class="form-select" aria-label="Default select example" name="merk">
-                                          <option value="{{ $data->idblog->id }}">{{ $data->idblog->kategori }}</option>
-                                          @foreach ($data as $kategori)
+                            <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Kategori</label>
+                            <select class="form-select" aria-label="Default select example" name="kategori">
+                            <option value="{{ $data->idblog->id }}">{{ $data->idblog->kategori }}</option>
+                            @foreach ($relasi as $kategori)
 <option value="{{ $kategori->id }}">{{ $kategori->kategori }}</option>
 @endforeach
                                           </select>
@@ -76,8 +76,18 @@
                             <br/>
                             <img class="img mb-3" src="{{ asset('blog/' . $data->foto) }}" alt="" style="width: 100px;">
                             <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto }}">
-                            <i style="float: left;font-size: 11px;color: red">Abaikan jika tidak merubah foto</i>
+                            {{-- <i style="float: left;font-size: 11px;color: red">Abaikan jika tidak merubah foto</i> --}}
                         </div>
+                        <label for="defaultFormControlInput" class="form-label mb-3">Foto kegiatan</label>
+                                            <div class="mb-3 row">
+                                  <?php $key = 0; ?>
+                                                @foreach (json_decode($data->foto_kegiatan) as $foto)
+<div class="col-4">
+                                                    <img  src="{{ asset('fotokegiatan/' . $foto) }}" alt="" width="100px" height="100px" class="my-3">
+                                                    <input type="file" name="foto_kegiatan[{{ $key++ }}]" class="form-control w-75"
+                                                        id="defaultFormControlInput" aria-describedby="defaultFormControlHelp"  />
+                                                </div>
+@endforeach
                         <button type="submit" class="btn rounded-pill btn-primary">Submit</button>
                         </form>
 
@@ -118,7 +128,7 @@
 
 
 <!-- Footer -->
-@include("Admin.layoutadmin.footer")
+@include('Admin.layoutadmin.footer')
 <!-- / Footer -->
 
 

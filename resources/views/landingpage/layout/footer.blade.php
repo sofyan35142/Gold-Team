@@ -1,147 +1,15 @@
- <div class="logo-slider">
-        <div class="logo-slide-track">
-            <div class="slideyosop">
-                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/4Rivers.png"
-                    alt="" />
-            </div>
-            <div class="slideyosop">
-                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/AVT.png"
-                    alt="" />
-            </div>
-            <div class="slideyosop">
-                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/CareerSource.png"
-                    alt="" />
-            </div>
-            <div class="slideyosop">
-                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/CFEC.png"
-                    alt="" />
-            </div>
-            <div class="slideyosop">
-                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/CityofOrlando.png"
-                    alt="" />
-            </div>
-            <div class="slideyosop">
-                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/CommunityCoordinatedCare.png"
-                    alt="" />
-            </div>
-            <div class="slideyosop">
-                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/DentalSociety.png"
-                    alt="" />
-            </div>
-            <div class="slideyosop">
-                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/DrPhillips.png"
-                    alt="" />
-            </div>
-            <div class="slideyosop">
-                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/Ferran.png"
-                    alt="" />
-            </div>
-            <div class="slideyosop">
-                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/FloridaADA.png"
-                    alt="" />
-            </div>
-            <div class="slideyosop">
-                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/FloridaHospital.png"
-                    alt="" />
-            </div>
-            <div class="slideyosop">
-                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/Goodwill.png"
-                    alt="" />
-            </div>
-            <div class="slideyosop">
-                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/HarvardJolly.png"
-                    alt="" />
-            </div>
-            <div class="slideyosop">
-                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/HiltonOrlando.png"
-                    alt="" />
-            </div>
-            <div class="slideyosop">
-                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/IndraSystems.png"
-                    alt="" />
-            </div>
-            <div class="slideyosop">
-                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/JobsPartnership.png"
-                    alt="" />
-            </div>
-            <div class="slideyosop">
-                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/Kenworth.png"
-                    alt="" />
-            </div>
-            <div class="slideyosop">
-                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/L3.png"
-                    alt="" />
-            </div>
-            <div class="slideyosop">
-                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/Lockheed.png"
-                    alt="" />
-            </div>
-            <div class="slideyosop">
-                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/MACF.png"
-                    alt="" />
-            </div>
-            <div class="slideyosop">
-                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/Marriott.png"
-                    alt="" />
-            </div>
-            <div class="slideyosop">
-                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/Mitsubishi.png"
-                    alt="" />
-            </div>
-            <div class="slideyosop">
-                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/NCS.png"
-                    alt="" />
-            </div>
-            <div class="slideyosop">
-                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/Northrop.png"
-                    alt="" />
-            </div>
-            <div class="slideyosop">
-                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/OrangeCountyFarmBureau.png"
-                    alt="" />
-            </div>
-            <div class="slideyosop">
-                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/OrlandoHealth.png"
-                    alt="" />
-            </div>
-            <div class="slideyosop">
-                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/ProImageSolutions.png"
-                    alt="" />
-            </div>
-            <div class="slideyosop">
-                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/PublicAllies.png"
-                    alt="" />
-            </div>
-            <div class="slideyosop">
-                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/SeaWorld.png"
-                    alt="" />
-            </div>
-            <div class="slideyosop">
-                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/SecondHarvest.png"
-                    alt="" />
-            </div>
-            <div class="slideyosop">
-                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/UF.png"
-                    alt="" />
-            </div>
-            <div class="slideyosop">
-                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/Universal.png"
-                    alt="" />
-            </div>
-            <div class="slideyosop">
-                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/UP.png"
-                    alt="" />
-            </div>
-            <div class="slideyosop">
-                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/WaltDisney.png"
-                    alt="" />
-            </div>
-            <div class="slideyosop">
-                <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/Wyndham.png"
-                    alt="" />
-            </div>
+
+<div class="logo-slider mb-4 mt-4">
+    <center><h1><b>KERJASAMA</b></h1></center>
+    <div class="logo-slide-track">
+        @foreach ($sponsor as $kerjasama)
+        <div class="slideyosop">
+            <img height="100px" width="100px" src="{{ asset('sponsor/' . $kerjasama->foto) }}"
+            alt="" />
         </div>
+        @endforeach
     </div>
+</div>
 
 <footer class="footer-area footer-style-two pt-100">
     <div class="container">
@@ -186,7 +54,7 @@
                             <i class="icofont-simple-right"></i>
                             <a href="https://docs.google.com/forms/d/e/1FAIpQLSexD6fbqWjwBFmWGlba5YDwJvEUa5G1YURe5h58jqNfPWmeuw/viewform">Layanan Orang Tua </a>
                         </li>
-                        
+
                     </ul>
                 </div>
             </div>
@@ -198,12 +66,12 @@
                             <i class="icofont-simple-right"></i>
                             <a href="/data/ekstraa">Ekstrakurikuler</a>
                         </li>
-                        
+
                         <li>
                             <i class="icofont-simple-right"></i>
                             <a href="/BKK/kegiatan-bkk">Kegiatan BKK</a>
                         </li>
-                        
+
                         <li>
                             <i class="icofont-simple-right"></i>
                             <a href="/BKK/lowongan-kerja">Lowongan Kerja</a>
@@ -212,7 +80,7 @@
                             <i class="icofont-simple-right"></i>
                             <a href="/alumni/testimoni">Testimoni Alumni</a>
                         </li>
-                       
+
                     </ul>
                 </div>
             </div>
@@ -253,16 +121,19 @@
                             @foreach ($sosmed as $sos)
                              <li>
                                 <a href="{{$sos->link}}"><i class="{{$sos->script_logo}}"></i></a>
-                            </li>   
+                            </li>
                             @endforeach
-                            
+
                             {{-- <li>
                                 <a href="#"><i class="icofont-twitter"></i></a>
                             </li>
                             <li>
                                 <a href="#"><i class="icofont-linkedin"></i></a>
                             </li> --}}
-                            
+                            {{-- <li>
+                                <a href="https://instagram.com/sketsu_bisa?igshid=YmMyMTA2M2Y="><i
+                                        class="icofont-instagram"></i></a>
+                            </li> --}}
                         </ul>
                     </div>
                 </div>
@@ -274,4 +145,6 @@
             </div>
         </div>
     </div>
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div style="display: none !important" class="elfsight-app-f3a706da-b581-4af7-9b10-e84b26128d4e"></div>
 </footer>

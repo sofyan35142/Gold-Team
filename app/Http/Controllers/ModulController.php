@@ -14,12 +14,15 @@ class ModulController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function tes(){
+        return view('landingpage.test');
+    }
     public function modul()
     {
         $data = Modul::all();
         return view('Admin.modul.modul', compact('data'));
     }
-    
+
 
     /**
      * Show the form for creating a new resource.
@@ -82,8 +85,8 @@ class ModulController extends Controller
             'linksidebar1' => $request->linksidebar1,
             'judulsidebar2' => $request->judulsidebar2,
             'fotosidebar2' => $request->fotosidebar2,
-            
-            
+
+
         ]);
         // dd($data);
         if ($request->hasFile('foto')) {
@@ -91,13 +94,13 @@ class ModulController extends Controller
             $data->foto = $request->file('foto')->getClientOriginalName();
             $data->save();
         }
-        
+
         if ($request->hasFile('fotosidebar2')) {
             $request->file('fotosidebar2')->move('foto/jurusan/', $request->file('fotosidebar2')->getClientOriginalName());
             $data->foto = $request->file('fotosidebar2')->getClientOriginalName();
             $data->save();
         }
-        
+
         return redirect()->route('modul')->with('success', 'Berhasil Di Tambahkan');
     }
 
@@ -150,7 +153,7 @@ class ModulController extends Controller
                 'judulsidebar2' => $request->judulsidebar2,
                 'fotosidebar2' => $request->fotosidebar2,
             ]);
-       
+
         } else {
             $data->update([
                 //'foto' => request->foto
@@ -262,7 +265,7 @@ class ModulController extends Controller
         $data = Artikel::where('id', '=', 1)->firstOrFail();
         return view('Admin.modul.artikel', compact('data'));
     }
-    
+
     public function editartikel(Request $request)
     {
         $data = Artikel::find($request->id);

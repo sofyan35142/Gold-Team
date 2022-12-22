@@ -78,9 +78,20 @@
                             <label for="exampleInputEmail1" class="form-label">Update Foto Pembina</label>
                             <br/>
                             <img class="img mb-3" src="{{ asset('fotoekstra/' . $data->foto_pembina) }}" alt="" style="width: 100px;">
-                            <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto }}">
-                            <i style="float: left;font-size: 11px;color: red">Abaikan jika tidak merubah foto</i>
+                            <input type="file" name="foto_pembina" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto_pembina }}">
+                            {{-- <i style="float: left;font-size: 11px;color: red">Abaikan jika tidak merubah foto</i> --}}
                         </div>
+<br>
+ <label for="defaultFormControlInput" class="form-label mb-3">Foto kegiatan</label>
+                                            <div class="mb-3 row">
+                                  <?php $key = 0 ?>
+                                                @foreach (json_decode($data->foto_kegiatan) as $foto)
+                                                <div class="col-4">
+                                                    <img  src="{{ asset("foto_kegiatan/" .$foto ) }}" alt="" width="100px" height="100px" class="my-3">
+                                                    <input type="file" name="foto_kegiatan[{{$key++}}]" class="form-control w-75"
+                                                        id="defaultFormControlInput" aria-describedby="defaultFormControlHelp" value="{{$data->foto_kegiatan}}"/>
+                                                </div>
+                                                @endforeach
                         <button type="submit" class="btn rounded-pill btn-primary">Submit</button>
                         </form>
 
@@ -121,7 +132,7 @@
 
 
 <!-- Footer -->
-@include("Admin.layoutadmin.footer")
+@include('Admin.layoutadmin.footer')
 <!-- / Footer -->
 
 
@@ -201,11 +212,22 @@
 
   <script src="https://cdn.ckeditor.com/ckeditor5/35.3.1/classic/ckeditor.js"></script>
   <script>
-    ClassicEditor
-        .create( document.querySelector('#editor') )
-        .catch( error => {
-          console.error(error);
-        });
+      ClassicEditor
+          .create(document.querySelector('#editor'))
+          .catch(error => {
+              console.error(error);
+          });
+  </script>
+  <script type="text/javascript">
+      $(document).ready(function() {
+          $(".btn-success").click(function() {
+              var html = $(".clone").html();
+              $(".increment").after(html);
+          });
+          $("body").on("click", ".btn-danger", function() {
+              $(this).parents(".control-group").remove();
+          });
+      });
   </script>
 
 
@@ -213,5 +235,3 @@
 
 <!-- Mirrored from pixinvent.com/demo/frest-clean-bootstrap-admin-dashboard-template/html/vertical-menu-template-semi-dark/tables-datatables-basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 15 Nov 2022 01:22:20 GMT -->
 </html>
-
-
