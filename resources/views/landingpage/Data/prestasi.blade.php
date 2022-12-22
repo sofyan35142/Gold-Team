@@ -44,12 +44,13 @@
                     <div class="search-bar">
                         <form>
                             <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Search|">
+                                <input name="nama_lomba" type="text" class="form-control" placeholder="Name"
+                                value="{{ isset($_GET['nama_lomba']) ? $_GET['nama_lomba'] : '' }}">
                             </div>
+                            <button>
+                                <i class="icofont-search-1"></i>
+                            </button>
                         </form>
-                        <button>
-                            <i class="icofont-search-1"></i>
-                        </button>
                     </div>
                 </div>
             </div>
@@ -59,7 +60,7 @@
     <div class="main-blog-post">
         <div class="container">
             <div class="row">
-                @foreach ($prestasi as $prestasi)
+                @foreach ($data as $prestasi)
                 <div class="col-lg-4 col-md-6">
 
 
@@ -84,7 +85,7 @@
                             </ul>
                             <p class="overflow">{!! $prestasi->deskripsi !!}</p>
                             <a href="/prestasidetail/{{ $prestasi->id }}" class="blog-btn">
-                                Read more
+                                Selengkapnya
                                 <i class="icofont-rounded-right"></i>
                             </a>
                         </div>
@@ -159,29 +160,7 @@
                     </div>
                 </div> --}}
             </div>
-            <nav>
-                <ul class="pagination  justify-content-center">
-                    <li class="page-item disabled">
-                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
-                            <i class="icofont-rounded-left"></i>
-                        </a>
-                    </li>
-                    <li class="page-item">
-                        <a class="page-link" href="#">1</a>
-                    </li>
-                    <li class="page-item" aria-current="page">
-                        <a class="page-link active" href="#">2</a>
-                    </li>
-                    <li class="page-item">
-                        <a class="page-link" href="#">3</a>
-                    </li>
-                    <li class="page-item">
-                        <a class="page-link" href="#">
-                            <i class="icofont-rounded-right"></i>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+           {{ $dataa->links('vendor.pagination.bootstrap-4') }}
         </div>
     </div>
 

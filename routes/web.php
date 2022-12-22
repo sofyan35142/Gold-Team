@@ -7,6 +7,7 @@ use App\Http\Controllers\LandingController;
 use App\Http\Controllers\DataController;
 use App\Http\Controllers\SosmedController;
 use App\Http\Controllers\KakomliController;
+use App\Http\Controllers\kirimemailController;
 use App\Http\Controllers\LSPController;
 use App\Http\Controllers\ModulController;
 use App\Models\Beranda;
@@ -39,7 +40,7 @@ Route::get('/lokerbkk', [LandingController::class, 'lokerbkk']);
 Route::get('/agenda', [LandingController::class, 'agenda']);
 Route::get('/guruu', [LandingController::class, 'guru']);
 Route::get('/blogdetail/{id}', [LandingController::class, 'blogdetail']);
-Route::get('/blogbanyak', [LandingController::class, 'blogbanyak']);
+Route::get('/blogselengkapnya', [LandingController::class, 'blogselengkapnya']);
 
 //DATA
 Route::get('/data/dharmaa', [LandingController::class, 'dharma']);
@@ -109,6 +110,10 @@ Route::get('/jmlpemegangsertifikat', [LandingController::class, 'jmlpemegangsert
 
 
 //StartAdmin
+
+Route::get('/login', [Admincontroller::class, 'login'])->name('login');
+Route::get('/gantipass', [Admincontroller::class, 'gantipass'])->name('gantipass');
+Route::post('/postlogin', [Admincontroller::class, 'postlogin']);
 Route::get('/index', [Admincontroller::class, 'index']);
 
 
@@ -250,10 +255,19 @@ Route::get('/blog/deleteblog/{id}', [BerandaController::class, 'deleteblog']);
 
 
 ////////////////----------SAMBUTAN KEPALA SEKOLAH-------------//////////////////////
+Route::get('/beranda/keunggulan', [BerandaController::class, 'keunggulan'])->name('keunggulan');
+Route::get('/beranda/editkeunggulan/{id}', [BerandaController::class, 'editkeunggulan']);
+Route::post('/beranda/updatekeunggulan/{id}', [BerandaController::class, 'updatekeunggulan']);
+Route::get('/keunggulan/deletekeunggulan/{id}', [BerandaController::class, 'deletekeunggulan']);
+
+
+
+//////////////////----------------------KEUNGGULAN SKETSU-------------////////////////////
 Route::get('/beranda/sambutankepsek', [BerandaController::class, 'sambutankepsek'])->name('sambutankepsek');
 Route::get('/beranda/editsambutan/{id}', [BerandaController::class, 'editsambutan']);
 Route::post('/beranda/updatesambutan/{id}', [BerandaController::class, 'updatesambutan']);
-Route::get('/sambutan/deletesambutan/{id}', [BerandaController::class, 'deletesambutan']);
+
+
 
 
 
@@ -386,7 +400,6 @@ Route::post('/insertkategoriblog', [DataController::class, 'insertkategoriblog']
 Route::get('/editkategoriblog/{id}', [DataController::class, 'editkategoriblog']);
 Route::post('/updatekategoriblog/{id}', [DataController::class, 'updatekategoriblog']);
 Route::get('/deletekategoriblog/{id}', [DataController::class, 'deletekategoriblog']);
-
 Route::get('/index/modultei', [ModulController::class, 'modultei'])->name('modultei');
 Route::post('/updatemodultei/{id}', [ModulController::class, 'updatemodultei']);
 
@@ -409,3 +422,17 @@ Route::get('/reparasi/deletereparasi/{id}', [ModulController::class, 'destroyrep
 
 Route::get('/index/artikel', [ModulController::class, 'artikel'])->name('artikel');
 Route::post('/updateartikel/{id}', [ModulController::class, 'editartikel']);
+
+
+
+
+
+// Route::get('/tes', [ModulController::class, 'tes'])->name('tes');
+
+// Route::get('/multipleupload', [DataController::class, 'index'])->name('uploads');
+// Route::post('/save', [DataController::class, 'store']);
+// Route::get('/multipleuploads', '[Data])->name('uploads');
+// Route::post('/save', 'MultipleuploadsController@store')->name('uploads.store');
+
+
+// Route::get('/email', [kirimemailController::class, 'index']);

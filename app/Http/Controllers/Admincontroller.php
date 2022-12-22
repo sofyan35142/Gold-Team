@@ -2,6 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Blog;
+use App\Models\Dharma;
+use App\Models\ekstra;
+use App\Models\Guru;
+use App\Models\Jurusan;
+use App\Models\User;
+use Illuminate\Support\Str;
 use App\Models\BKK;
 use App\Models\kegiatanbkk;
 use App\Models\kewirausahaansketsu;
@@ -13,9 +20,13 @@ use Illuminate\Http\Request;
 use App\Models\profilsekolah;
 use App\Models\profilvisimisi;
 use App\Models\sejarahsingkat;
-use App\Models\sekolahrujukan;
 use App\Models\sekolahadiwiyata;
 use App\Models\strukturorganisasi;
+use Illuminate\Support\Facades\Auth;
+use App\Models\sekolahrujukan;
+use App\Models\sponsor;
+use App\Models\walas;
+
 use App\Models\Bimbingankarir;
 use App\Models\perusahaan_mitra;
 use App\Models\umkm_pasangan;
@@ -23,9 +34,43 @@ use Illuminate\Support\Carbon;
 
 class Admincontroller extends Controller
 {
+
+
+    public function postlogin(Request $request)
+    {
+        // dd($request->all());
+        $this->validate($request, [
+            'email' => 'required',
+            'password' => 'required'
+        ], [
+            'email.required' => 'Email Wajib Diisi',
+            'password.required' => 'Password Wajib Diisi'
+        ]);
+        if (Auth::attempt($request->only('email', 'password'))) {
+            return redirect('/index');
+        }
+        return redirect('/login')->with('salah', 'Email Atau Password Salah');
+    }
+    public function login(Request $request)
+    {
+        return view('Admin.login.login');
+    }
+
+    public function gantipass(){
+        return view('Admin.profile.gantipass');
+    }
+
     public function index()
     {
-        return view('Admin.index');
+        $jurusan = Jurusan::count();
+        $guru = Guru::count();
+        $walas = walas::count();
+        $dharma = Dharma::count();
+        $ekstra = ekstra::count();
+        $sponsor = sponsor::count();
+        $blog = Blog::count();
+
+        return view('Admin.index', compact('jurusan', 'guru', 'walas', 'dharma', 'ekstra','sponsor','blog'));
     }
     ///////////////////// START PROFIL LANDINGPAGE ADMIN ///////////////////////////
     //start profileditsekolahrujukan
@@ -365,7 +410,6 @@ class Admincontroller extends Controller
         return redirect("/index/sekolahrujukan")->with('success', 'data berhasil direset');
     }
     //end sekolah rujukan
-
     ///////////////////// END PROFIL LANDINGPAGE ADMIN ///////////////////////////
 
     ///////////////////// START BKK LANDINGPAGE ADMIN ///////////////////////////
@@ -783,6 +827,10 @@ class Admincontroller extends Controller
             $request->file('foto1')->move('foto/', $request->file('foto1')->getClientOriginalName());
             $data->foto1 = $request->file('foto1')->getClientOriginalName();
             $data->save();
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5bed46b9d99e40351a37481d1cb60c1cd15a97fa
         }
         if ($request->hasFile('foto2')) {
             $request->file('foto2')->move('foto/', $request->file('foto2')->getClientOriginalName());

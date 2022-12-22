@@ -55,55 +55,66 @@
 
     <div class="service-details-area main-service-area pt-100 services-details-page">
         <div class="container">
-            @foreach ($detailekstra as $data)
-
-
             <div class="row">
                 <div class="col-lg-8">
-                    <img src="{{ asset('fotoekstra/' . $data->foto) }}" alt="service">
-                    <div class="service-details-post">
-                        <h3>{{ $data->judul }}</h3>
-                        <p>{!! $data->deskripsi !!}</p>
-
+                    <img src="{{ asset('fotoekstra/' . $detailekstra->foto) }}" alt="service">
+                    <div class="service-details-post detail">
+                        <h3>{{ $detailekstra->judul }}</h3>
+                        <p>{!! $detailekstra->deskripsi !!}</p>
                     </div>
                     <div class="service-details-post">
-
                         <h3>Pembina</h3>
                         <div class="d-flex flex-row">
                             <div class="p-2"><img class="img-guru"
-                                    src="{{ asset('fotoekstra/' . $data->foto_pembina) }}" style="height: 10pc" />
-                            <b>{{ $data->nama }}</b>
+                                    src="{{ asset('fotoekstra/' . $detailekstra->foto_pembina) }}" style="height: 10pc" />
+                            <b>{{ $detailekstra->nama }}</b>
                             </div>
                         </div>
                     </div>
-
                 </div>
-                <div class="col-lg-4 main-service-area blog-side-bar">
-                    <div class="team-section team-style-two team-style-three team-members pt-1000">
-                        <div class="team-card">
+                <div class="col-lg-4 main-service-area blog-side-bar border shadows mb-40px py-3" style="height: 63pc;overflow:auto">
+                    <div class="service-sidebar h-fc">
+                        <center><h3><b>Foto Kegiatan</b></h3></center> <br>
+                        <img class="imgvisi mb-2 hovchange" data-imageb="../foto/header.JPG" src="../foto/header.JPG" alt="service">
+                        <div class="border side-sejarah" style="height: 254px;
+                        margin-bottom: 0.5rem;">
+                        </div>
+                        @foreach ($foto as $fotok)
+                        <img class="imgvisi mb-2" src="{{asset("blog/" . $fotok)}}" alt="service">
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                {{-- <div class="col-lg-4 main-service-area blog-side-bar"> --}}
+                    {{-- <div class="team-section team-style-two team-style-three team-members pt-1000">
+                       <div class="team-card">
                             <div class="team-img">
                                 <div class="row">
                                     <div class="container">
-                                        <img class="img-detailekstra" src="../ekstra/detailpaskib1.jpeg"
+                                        <img class="img-detailekstra" src="{{ asset('foto_kegiatan/' . $fotok) }}"
                                             alt="team member">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="team-section team-style-two team-style-three team-members pt-1000">
+                    </div> --}}
+                    {{-- <div class="team-section team-style-two team-style-three team-members pt-1000">
+                        <div class="service-sidebar">
+                       <center> <b>Foto Kegiatan</b></center> <br>
                         <div class="team-card">
                             <div class="team-img">
                                 <div class="row">
                                     <div class="container">
-                                        <img  src="../ekstra/detailpaskib2.jpeg"
+                                        <img  src="{{ asset('foto_kegiatan/' . $fotok) }}"
                                             alt="team member">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="team-section team-style-two team-style-three team-members pt-1000">
+                    </div> --}}
+                    {{-- <div class="team-section team-style-two team-style-three team-members pt-1000">
                         <div class="team-card">
                             <div class="team-img">
                                 <div class="row">
@@ -126,10 +137,9 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            @endforeach
+                    </div> --}}
+                {{-- </div> --}}
+            {{-- </div> --}}
         </div>
     </div>
 

@@ -52,12 +52,14 @@
       <th  scope="col">Deskripsi</th>
       <th  scope="col">Foto</th>
       <th scope="col">Foto Pembina</th>
+      <th scope="col">Foto Kegiatan</th>
       <th scope="col">Aksi</th>
     </tr>
   </thead>
   <tbody class="table-group-divider">
-    <?php $no = 1; ?>
+    <?php $no = 1;?>
     @foreach ($data as $ekstra)
+
 <tr>
         <td>{{ $no }}</td>
         <td>{{ $ekstra->judul }}</td>
@@ -68,6 +70,11 @@
         </td>
         <td>
             <img src="{{ asset('fotoekstra/' . $ekstra->foto_pembina) }}" alt="" style="width: 80px; height:80px;">
+          </td>
+        <td>
+           @foreach (json_decode($ekstra->foto_kegiatan) as $foto)
+          <img class="mx-1 my-1" src="{{ asset("foto_kegiatan/" . $foto ) }}" alt="" width="80px" height="80px">
+          @endforeach
         </td>
 
 
