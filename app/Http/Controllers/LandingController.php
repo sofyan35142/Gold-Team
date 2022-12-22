@@ -61,9 +61,11 @@ class LandingController extends Controller
         return view("landingpage.beranda.beranda", compact('data','dataa','datakepsek','total','slider','sponsor','video', 'sosmed'));
     }
 
-    public function create()
+    public function data()
     {
-        //
+        $sponsor= sponsor::all();
+        $sosmed = sosmed::all();
+        return view('landingpage.Data.data',compact('sponsor','sosmed'));
     }
 
     public function jurusan()

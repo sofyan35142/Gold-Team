@@ -42,6 +42,7 @@ Route::get('/blogdetail/{id}', [LandingController::class, 'blogdetail']);
 Route::get('/blogbanyak', [LandingController::class, 'blogbanyak']);
 
 //DATA
+Route::get('/data', [LandingController::class, 'data']);
 Route::get('/data/dharmaa', [LandingController::class, 'dharma']);
 Route::get('/data/datawalas', [LandingController::class, 'datawalas']);
 Route::get('/data/ekstraa', [LandingController::class, 'ekstra']);
