@@ -1,7 +1,5 @@
 <?php
-
 namespace App\Http\Controllers;
-
 use App\Models\LSP;
 use App\Models\BKK;
 use App\Models\Blog;
@@ -234,7 +232,7 @@ class LandingController extends Controller
     public function strukturorganisasi()
     {
         $sponsor = sponsor::all();
-        $data = strukturorganisasi::find(1);
+        $data = strukturorganisasi::all()->first();
         $dataside = sidestruktur::all();
         $sosmed = Sosmed::all();
         return view("landingpage.profile.strukturorganisasi", compact('data', 'dataside', 'sosmed', 'sponsor'));

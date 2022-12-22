@@ -130,7 +130,8 @@
                             <label for="exampleInputEmail1" class="form-label">Upload Foto Kakomli</label>
 
                             <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        </div>
+                            <i style="float: left;font-size: 11px;color: red">Ukuran Foto Harus 215px x 261px</i>
+                          </div>
                         <button type="submit" class="btn rounded-pill btn-primary">Submit</button>
                         </form>
 

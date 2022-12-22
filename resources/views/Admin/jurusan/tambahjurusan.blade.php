@@ -117,12 +117,14 @@
                             <label for="exampleInputEmail1" class="form-label">Upload Logo Jurusan</label>
 
                             <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        </div>
+                            <i style="float: left;font-size: 11px;color: red">Ukuran Foto Harus 1063px x 1299px</i>
+                          </div>
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Upload Foto Kegiatan Jurusan</label>
 
                             <input type="file" name="produktif" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        </div>
+                            <i style="float: left;font-size: 11px;color: red">Ukuran Foto Harus 4592px x 2584px</i>
+                          </div>
                         <button type="submit" class="btn rounded-pill btn-primary">Submit</button>
                         </form>
 

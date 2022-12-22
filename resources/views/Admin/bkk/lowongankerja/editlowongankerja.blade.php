@@ -31,7 +31,7 @@
                                 <div class="card mb-4">
                                     <h5 class="card-header">Edit Lowongan Kerja</h5>
                                     <div class="card-body">
-                                        <form action="/insertlowongankerja" method="POST"
+                                        <form action="/editlowongankerja/{{$data->id}}" method="POST"
                                             enctype="multipart/form-data">
                                             @csrf
                                             <div>
@@ -59,7 +59,7 @@
                                                 <label class="btn btn-secondary" for="option2">Selesai</label>
                                             </div>
                                             <div class="mb-3">
-                                                <img src="{{asset('assets/img/lowongankerja/' . $data->foto)}}" alt="">
+                                                <img width="250px" height="250px" src="{{asset('assets/img/lowongankerja/' . $data->foto)}}" alt="">
                                                 <label for="exampleInputEmail1" class="form-label">Upload Foto</label>
                                                 <input type="file" name="foto" class="form-control" multiple>
                                             </div>
