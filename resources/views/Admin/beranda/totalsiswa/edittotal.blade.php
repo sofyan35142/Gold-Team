@@ -50,23 +50,23 @@
                         <div>
                         <label for="defaultFormControlInput" class="form-label">judul</label>
                         <input type="text" name="judul" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" value="{{ $data->judul }}"/>
-                        </div>
+                        </div> <br>
                         <div>
                         <label for="defaultFormControlInput" class="form-label">laki-laki</label>
-                        <input type="number" name="laki_laki" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" value="{{ $data->laki_laki }}"/>
-                        </div>
+                        <input type="number" name="laki_laki" class="form-control" id="laki_laki"  aria-describedby="defaultFormControlHelp" value="{{ $data->laki_laki }}"/>
+                        </div> <br>
                         <div>
                         <label for="defaultFormControlInput" class="form-label">perempuan</label>
-                        <input type="number" name="perempuan" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" value="{{ $data->perempuan }}"/>
-                        </div>
+                        <input type="number" name="perempuan" class="form-control" id="perempuan"  aria-describedby="defaultFormControlHelp" value="{{ $data->perempuan }}"/>
+                        </div> <br>
                         <div>
                         <label for="defaultFormControlInput" class="form-label">total siswa</label>
-                        <input type="number" name="total_siswa" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" value="{{ $data->total_siswa }}"/>
-                        </div>
+                        <input type="number" name="total_siswa" class="form-control" readonly id="jumlah"  aria-describedby="defaultFormControlHelp" value="{{ $data->total_siswa }}"/>
+                        </div> <br>
                         <div>
                         <label for="defaultFormControlInput" class="form-label">guru</label>
                         <input type="number" name="guru" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" value="{{ $data->guru }}"/>
-                        </div>
+                        </div> <br>
                         <br/>
                         <button type="submit" class="btn rounded-pill btn-primary">Submit</button>
                         </form>
@@ -194,7 +194,17 @@
           console.error(error);
         });
   </script>
-
+ <script>
+        $("#perempuan").change(function(){
+        var jml = $(this).val();
+        var harga = $("#laki_laki").val();
+        // alert(jml);
+        let laki_laki = parseInt(harga);
+        let perempuan = parseInt(jml);
+        var total = laki_laki+perempuan;
+        $("#jumlah").val(total);
+    })
+    </script>
 
 </body>
 

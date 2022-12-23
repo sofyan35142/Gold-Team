@@ -59,16 +59,16 @@
                         <br/>
                         <div>
                         <label for="defaultFormControlInput" class="form-label">laki-laki</label>
-                        <input type="number" name="laki_laki" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" required/>
+                        <input type="number" name="laki_laki" class="form-control" id="laki_laki"  aria-describedby="defaultFormControlHelp" required/>
                         </div>
                         <br/>
                         <div>
                         <label for="defaultFormControlInput" class="form-label">perempuan</label>
-                        <input type="number" name="perempuan" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" required/>
+                        <input type="number" name="perempuan" class="form-control" id="perempuan"  aria-describedby="defaultFormControlHelp" required/>
                         </div>
                         <div>
                         <label for="defaultFormControlInput" class="form-label">jumlah</label>
-                        <input type="number" name="jumlah" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" required/>
+                        <input type="number" name="jumlah" class="form-control" id="jumlah"  aria-describedby="defaultFormControlHelp" readonly/>
                         </div>
                         <br/>
                         <div>
@@ -194,7 +194,25 @@
           console.error(error);
         });
   </script>
+   <script>
+        $("#perempuan").change(function(){
+        var jml = $(this).val();
+        var harga = $("#laki_laki").val();
+        // alert(jml);
+        let laki_laki = parseInt(harga);
+        let perempuan = parseInt(jml);
+        var total = laki_laki+perempuan;
+        $("#jumlah").val(total);
+    })
+    </script>
+    {{-- <script>
+        function jumlahkan(){
+            var a1 = document.getElementById('laki_laki').value;
+            var a2 = document.getElementById('perempuan').value;
+            alert(a1+a2);
+        }
+    </script> --}}
 </body>
 
-<!-- Mirrored from pixinvent.com/demo/frest-clean-bootstrap-admin-dashboard-template/html/vertical-menu-template-semi-dark/tables-datatables-basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 15 Nov 2022 01:22:20 GMT -->
-</html>
+{{-- // <!-- Mirrored from pixinvent.com/demo/frest-clean-bootstrap-admin-dashboard-template/html/vertical-menu-template-semi-dark/tables-datatables-basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 15 Nov 2022 01:22:20 GMT --> --}}
+{{-- // </html> --}}

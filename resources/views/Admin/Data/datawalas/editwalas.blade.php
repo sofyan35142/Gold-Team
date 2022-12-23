@@ -66,17 +66,17 @@
                         <br/>
                         <div>
                         <label for="defaultFormControlInput" class="form-label">laki-laki</label>
-                        <input type="number" name="laki_laki" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" value="{{ $data->laki_laki }}"/>
+                        <input type="number" name="laki_laki" class="form-control" id="laki_laki"  aria-describedby="defaultFormControlHelp" value="{{ $data->laki_laki }}"/>
                         </div>
                         <br/>
                         <div>
                         <label for="defaultFormControlInput" class="form-label">perempuan</label>
-                        <input type="number" name="perempuan" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" value="{{ $data->perempuan }}"  />
+                        <input type="number" name="perempuan" class="form-control" id="perempuan"  aria-describedby="defaultFormControlHelp" value="{{ $data->perempuan }}"  />
                         </div>
                         <br/>
                         <div>
                         <label for="defaultFormControlInput" class="form-label">jumlah</label>
-                         <input type="number" name="jumlah" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp"  value="{{ $data->jumlah }}" />
+                         <input type="number" name="jumlah" class="form-control" id="jumlah" readonly aria-describedby="defaultFormControlHelp"  value="{{ $data->jumlah }}" />
                         </div>
                         <br/>
                         <div>
@@ -206,7 +206,17 @@
               console.error(error);
           });
   </script>
-
+ <script>
+        $("#perempuan").change(function(){
+        var jml = $(this).val();
+        var harga = $("#laki_laki").val();
+        // alert(jml);
+        let laki_laki = parseInt(harga);
+        let perempuan = parseInt(jml);
+        var total = laki_laki+perempuan;
+        $("#jumlah").val(total);
+    })
+    </script>
 
 </body>
 
