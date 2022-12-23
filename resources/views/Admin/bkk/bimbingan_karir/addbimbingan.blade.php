@@ -104,19 +104,20 @@
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Upload Foto Ikon</label>
 
-                            <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                            <i style="float: left;font-size: 11px;color: red">Ukuran foto harus 416px x 416px</i>
                         </div>
                         <br/>
 
                         <div>
                         <label for="defaultFormControlInput" class="form-label">Judul</label>
-                        <input type="text" name="judul" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" />
+                        <input type="text" name="judul" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" required/>
                         </div>
                         <br/>
 
                         <div>
                         <label for="defaultFormControlInput" class="form-label">Link</label>
-                        <input type="text" name="link" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" />
+                        <input type="text" name="link" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" required/>
                         </div>
                         <br/>
 

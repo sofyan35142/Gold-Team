@@ -102,14 +102,14 @@
                                 @csrf
                         <div>
                         <label for="defaultFormControlInput" class="form-label">Nama Guru</label>
-                        <input type="text" name="nama_guru" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" />
+                        <input type="text" name="nama_guru" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" required/>
                         </div>
                         <br/>
 
                         <div>
                         <label for="exampleInputEmail1" class="form-label">Jurusan</label>
                                 
-                            <select class="form-control" name="id_jurusan" aria-label="Default select example">
+                            <select class="form-control" name="id_jurusan" aria-label="Default select example" required>
 
                             <option value="0" selected>Pilih Jurusan</option>
                             @foreach ($datajurusan as $dj)
@@ -123,15 +123,17 @@
                         <label for="editor" class="form-label">Deskripsi</label>
                         {{-- <input type="text" name="deskripsi" class="form-control" id="editor"  aria-describedby="defaultFormControlHelp" /> --}}
                         <div class="card-body">
-                                <textarea name="deskripsi" id="editor"></textarea>
+                                <textarea name="deskripsi" id="editor" required></textarea>
                         </div>
                         <br/>
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Upload Foto Kakomli</label>
 
-                            <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                            
                             <i style="float: left;font-size: 11px;color: red">Ukuran Foto Harus 215px x 261px</i>
-                          </div>
+                            
+                        </div>
                         <button type="submit" class="btn rounded-pill btn-primary">Submit</button>
                         </form>
 
@@ -139,7 +141,8 @@
                     </div>
                 </div>
             </div>
-
+          </div>
+      </div>
 
 <!-- DataTable with Buttons -->
 
@@ -167,7 +170,6 @@
 
           </div>
           <!-- / Content -->
-
 
 
 

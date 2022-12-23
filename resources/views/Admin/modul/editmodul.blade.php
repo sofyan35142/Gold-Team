@@ -78,7 +78,7 @@
 
                         <div>
                         <label for="defaultFormControlInput" class="form-label">Judul Modul</label>
-                        <input type="text" name="judul" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" value="{{ $data->judul }}"/>
+                        <input type="text" name="judul" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" value="{{ $data->judul }}" required/>
                         </div>
                         
                         <br/>
@@ -86,7 +86,7 @@
                         <div>
                         <label for="editor" class="form-label">Deskripsi</label>
                         <div class="card-body">
-                                <textarea name="deskripsi" id="editor" >{!! $data->deskripsi !!}</textarea>
+                                <textarea name="deskripsi" id="editor" required>{!! $data->deskripsi !!}</textarea>
                             </div>
                         {{-- <input type="text" name="deskripsi" class="form-control" id="editor"  aria-describedby="defaultFormControlHelp" /> --}}
                         </div>
@@ -96,7 +96,7 @@
                             <label for="exampleInputEmail1" class="form-label">Update Foto</label>
                             <br/>
                             <img class="img mb-3" src="{{ asset('foto/' . $data->foto) }}" alt="" style="width: 100px;">
-                            <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto }}">
+                            <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto }}" required>
                             <i style="float: left;font-size: 11px;color: red">Abaikan jika tidak merubah foto</i>
                         </div>
                         <br/>

@@ -77,13 +77,13 @@
 
                         <div>
                         <label for="defaultFormControlInput" class="form-label">Nama Buku</label>
-                        <input type="text" name="namabuku" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" value="{{ $data->namabuku }}"/>
+                        <input type="text" name="namabuku" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" value="{{ $data->namabuku }}" required/>
                         </div>
                         
                         <br/>
                         <div>
                         <label for="defaultFormControlInput" class="form-label">Link Download</label>
-                        <input type="text" name="link" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" value="{{ $data->link }}"/>
+                        <input type="text" name="link" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" value="{{ $data->link }}" required/>
                         </div>
                         
                         <br/>
@@ -93,7 +93,7 @@
                             <label for="exampleInputEmail1" class="form-label">Update Foto</label>
                             <br/>
                             <img class="img mb-3" src="{{ asset('foto/' . $data->foto) }}" alt="" style="width: 100px;">
-                            <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto }}">
+                            <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto }}" required>
                             <i style="float: left;font-size: 11px;color: red">Abaikan jika tidak merubah foto</i>
                         </div>
                         <br/>
