@@ -783,6 +783,23 @@ class Admincontroller extends Controller
         // $fotoside = implode(',',$files);
         return redirect("/index/kewirausahaan-sketsu")->with("success", "data berhasil ditambahkan");
     }
+    public function deletepeserta($key)
+    {
+        $data = kewirausahaansketsu::all()->first();
+        $fotopeserta = json_decode($data->wirausahapesertadidik);
+        unset($fotopeserta[$key]);
+        $data->wirausahapesertadidik = $fotopeserta;
+        $data->save();
+        return redirect("/index/kewirausahaan-sketsu")->with("success","Data Berhasil dihapus");
+    }
+    public function deletealumni($key){
+        $data = kewirausahaansketsu::all()->first();
+        $fotoalumni = json_decode($data->wirausahaalumni);
+        unset($fotoalumni[$key]);
+        $data->wirausahaalumni = $fotoalumni;
+        $data->save();
+        return redirect("/index/kewirausahaan-sketsu")->with("success","Data Berhasil dihapus");
+    }
     //end kewirausahaan bkk
 
     //start lowongan_kerja

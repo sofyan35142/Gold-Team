@@ -53,10 +53,10 @@
                                                             src="{{ asset('assets/img/kewirausahaansketsu/' . $usahaalumni) }}"
                                                             alt="" srcset="" style="width: 35pc;"></td>
                                                     <td>
-                                                        <a href="/index/editviewkegiatanbkk/{{ $key }}"
+                                                        {{-- <a href="/index/editviewkegiatanbkk/{{ $key }}"
                                                             class="btn btn-warning"><i
-                                                                class="fa-solid fa-pen-to-square"></i></a>
-                                                        <a href="#" class="btn btn-danger delete"
+                                                                class="fa-solid fa-pen-to-square"></i></a> --}}
+                                                        <a href="#" class="btn btn-danger deletealumni"
                                                             data-id="{{ $key }}"
                                                             data-kegiatan="Foto No.{{ $no }}"><i
                                                                 class="fa-solid fa-trash"></i></a>
@@ -98,10 +98,10 @@
                                                                 src="{{ asset('assets/img/kewirausahaansketsu/' . $usahaalumni) }}"
                                                                 alt="" srcset="" style="width: 35pc;"></td>
                                                         <td>
-                                                            <a href="/index/editviewkegiatanbkk/{{ $key }}"
+                                                            {{-- <a href="/index/editviewkegiatanbkk/{{ $key }}"
                                                                 class="btn btn-warning"><i
-                                                                    class="fa-solid fa-pen-to-square"></i></a>
-                                                            <a href="#" class="btn btn-danger delete"
+                                                                    class="fa-solid fa-pen-to-square"></i></a> --}}
+                                                            <a href="#" class="btn btn-danger deletepeserta"
                                                                 data-id="{{ $key }}"
                                                                 data-kegiatan="Foto No.{{ $no }}"><i
                                                                     class="fa-solid fa-trash"></i></a>
@@ -158,20 +158,44 @@
     @include('Admin.layoutadmin.jsadmin')
 </body>
 <script>
-    $('.delete').click(function() {
+    $('.deletealumni').click(function() {
         var jurusanid = $(this).attr('data-id');
         var jurusan = $(this).attr('data-kegiatan');
 
         swal({
                 title: "Apakah kamu yakin?",
-                text: "Kamu akan menghapus data " + jurusan,
+                text: "Kamu akan menghapus alumni "+jurusan,
                 icon: "warning",
                 buttons: true,
                 dangerMode: true,
             })
             .then((willDelete) => {
                 if (willDelete) {
-                    window.location = "/deletekegiatanbkk/" + jurusanid + ""
+                    window.location = "/deletealumni/" + jurusanid + ""
+                    swal("Data berhasil dihapus", {
+                        icon: "success",
+                    });
+                } else {
+                    swal("Data tidak jadi dihapus");
+                }
+            });
+    });
+</script>
+<script>
+    $('.deletepeserta').click(function() {
+        var jurusanid = $(this).attr('data-id');
+        var jurusan = $(this).attr('data-kegiatan');
+
+        swal({
+                title: "Apakah kamu yakin?",
+                text: "Kamu akan menghapus peserta didik " + jurusan,
+                icon: "warning",
+                buttons: true,
+                dangerMode: true,
+            })
+            .then((willDelete) => {
+                if (willDelete) {
+                    window.location = "/deletepeserta/" + jurusanid + ""
                     swal("Data berhasil dihapus", {
                         icon: "success",
                     });
