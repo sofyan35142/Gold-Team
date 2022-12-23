@@ -931,7 +931,8 @@ p {
         .active.carousel-item-left
         + .carousel-item-next.carousel-item-left,
     .multi-item-carousel
-        .carousel-item-next.carousel-item-left
+        .carousel-item-next.
+        carousel-item-left
         + .carousel-item,
     .multi-item-carousel
         .carousel-item-next.carousel-item-left

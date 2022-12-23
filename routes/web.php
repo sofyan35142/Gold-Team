@@ -219,6 +219,8 @@ Route::get('/index/addalumnikbkk', [Admincontroller::class, 'addalumnikbkk']);
 Route::post('/insertalumnibkk', [Admincontroller::class, 'insertalumnikbkk']);
 Route::get('/index/addsiswakbkk', [Admincontroller::class, 'addsiswakbkk']);
 Route::post('/insertsiswakbkk', [Admincontroller::class, 'insertsiswakbkk']);
+Route::get('/deletepeserta/{key}', [Admincontroller::class, 'deletepeserta']);
+Route::get('/deletealumni/{key}', [Admincontroller::class, 'deletealumni']);
 //lowongan kerja
 Route::get('/index/lowongankerja', [Admincontroller::class, 'lowongan_kerja']);
 Route::get('/index/addlowongankerja', [Admincontroller::class, 'addlowongan_kerja']);
