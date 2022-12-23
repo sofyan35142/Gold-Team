@@ -97,7 +97,7 @@
                                <b> NAMA : </b> {{ $dharma->nama }} <br>
                                <b> JABATAN : </b> {{ $dharma->jabatan }} <br>
                                <b> TEMPAT LAHIR : </b> {{ $dharma->tempat_lahir }} <br>
-                               <b> TANGGAL LAHIR :</b> {{ $dharma->tgl_lahit }} <br>
+                               <b> TANGGAL LAHIR :</b> {{ $dharma->tgl_lahir }} <br>
                                 <b> ALAMAT : </b> {{ $dharma->alamat }}
                                 </span>
                                 <label for="{{ $dharma->id }}" class="button return" aria-hidden="true">

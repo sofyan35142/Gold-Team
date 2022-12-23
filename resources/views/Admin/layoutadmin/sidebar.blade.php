@@ -313,7 +313,7 @@
                 </li>
                 <li class="menu-item">
                     <a href="/data/prestasii" class="menu-link">
-                        <div data-i18n="Pxrestasi">Prestasi</div>
+                        <div data-i18n="Prestasi">Prestasi</div>
                     </a>
                 </li>
             </ul>

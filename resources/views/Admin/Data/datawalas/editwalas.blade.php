@@ -53,7 +53,7 @@
         <br/>
         <img class="img mb-3" src="{{ asset('walas/' . $data->foto) }}" alt="" style="width: 100px;">
         <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto }}">
-        <i style="float: left;font-size: 11px;color: red">Abaikan jika tidak merubah foto</i>
+        <i style="float: left;font-size: 11px;color: red">Foto harus berukuran 255px x 300px</i> <br>
         </div>
         <br>
                         <label for="defaultFormControlInput" class="form-label">nama walas</label>

@@ -67,7 +67,7 @@
                             <br/>
                             <img class="img mb-3" src="{{ asset('kepsek/' . $data->foto) }}" alt="" style="width: 100px;">
                             <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto }}">
-                            <i style="float: left;font-size: 11px;color: red">Abaikan jika tidak merubah foto</i>
+                            <i style="float: left;font-size: 11px;color: red">Foto Harus Berukuran 450px x 340px</i>
                         </div>
                         <button type="submit" class="btn rounded-pill btn-primary">Submit</button>
                         </form>

@@ -44,10 +44,6 @@
                                                     aria-describedby="defaultFormControlHelp" />
                                             </div>
                                             <br />
-                                                <div class="mb-3">
-                                                    <label for="exampleInputEmail1" class="form-label">Upload Foto</label>
-                                                    <input type="file" name="foto_side[]" class="form-control" multiple>
-                                                </div>
                                                 <button type="submit"
                                                     class="btn rounded-pill btn-primary">Submit</button>
                                         </form>

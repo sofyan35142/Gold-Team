@@ -49,16 +49,16 @@
                                                 <td>{!! $data->descvisimisiprofil !!}</td>
                                                 <td>
                                                     <img src="{{ asset('../assets/img/visimisi/' . $data->foto_side) }}"
-                                                        alt="" style="width: 80px; height:80px;">
+                                                        alt="" style="width: 250px; height:250px;">
                                                 </td>
                                                 <td>
                                                     <a href="/visimisi/edit/{{ $data->id }}"
                                                         class="btn btn-warning"><i
                                                             class="fa-solid fa-pen-to-square"></i></a>
-                                                    <a href="#" class="btn btn-danger delete"
+                                                    {{-- <a href="#" class="btn btn-danger delete"
                                                         data-id="{{ $data->id }}"
                                                         data-jurusan="{{ $data->visimisi }}"><i
-                                                            class="fa-solid fa-trash"></i></a>
+                                                            class="fa-solid fa-trash"></i></a> --}}
                                                 </td>
                                             </tr>
                                     </tbody>

@@ -43,7 +43,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="card mb-4">
-                    <h5 class="card-header">Edit alumni</h5>
+                    <h5 class="card-header">Edit Keunggulan</h5>
                     <div class="card-body">
                         <form action="/beranda/updatekeunggulan/{{ $data->id }}" method="POST" enctype="multipart/form-data">
                                 @csrf
@@ -66,7 +66,7 @@
                             <br/>
                             <img class="img mb-3" src="{{ asset('keunggulan/' . $data->foto) }}" alt="" style="width: 100px;">
                             <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto }}">
-                            <i style="float: left;font-size: 11px;color: red">Abaikan jika tidak merubah foto</i>
+                            <i style="float: left;font-size: 11px;color: red">Foto Harus Berukuran 39px x 53px</i>
                         </div>
                         <button type="submit" class="btn rounded-pill btn-primary">Submit</button>
                         </form>

@@ -1,11 +1,66 @@
 <!DOCTYPE html>
 <html lang="en" class="light-style layout-navbar-fixed layout-menu-fixed " dir="ltr" data-theme="theme-semi-dark"
     data-assets-path="http://127.0.0.1:8000/assets1/" data-template="vertical-menu-template-semi-dark">
-@include('Admin.layoutadmin.head')
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css"
-    integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
+        <title>Modals - UI elements | Frest - Bootstrap Admin Template</title>
+
+        <meta name="description" content="Start your development with a Dashboard for Bootstrap 5" />
+        <meta name="keywords" content="dashboard, bootstrap 5 dashboard, bootstrap 5 admin, bootstrap 5 design, bootstrap 5">
+        <!-- Canonical SEO -->
+        <link rel="canonical" href="https://1.envato.market/frest_admin">
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="https://pixinvent.com/demo/frest-clean-bootstrap-admin-dashboard-template/assets/img/favicon/favicon.ico" />
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com/">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet">
+
+        <!-- Icons -->
+        <link rel="stylesheet" href="../../assets1/vendor/fonts/boxicons.css" />
+        <link rel="stylesheet" href="../../assets1/vendor/fonts/fontawesome.css" />
+        <link rel="stylesheet" href="../../assets1/vendor/fonts/flag-icons.css" />
+
+        <!-- Core CSS -->
+        <link rel="stylesheet" href="../../assets1/vendor/css/rtl/core.css" class="template-customizer-core-css" />
+        <link rel="stylesheet" href="../../assets1/vendor/css/rtl/theme-semi-dark.css" class="template-customizer-theme-css" />
+        <link rel="stylesheet" href="../../assets1/css/demo.css" />
+
+        <!-- Vendors CSS -->
+        <link rel="stylesheet" href="../../assets1/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+        <link rel="stylesheet" href="../../assets1/vendor/libs/typeahead-js/typeahead.css" />
+        <link rel="stylesheet" href="../../assets1/vendor/libs/animate-css/animate.css">
+
+        <!-- Page CSS -->
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
+        <!-- Helpers -->
+        <script src="../../assets1/vendor/js/helpers.js"></script>
+
+        <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+        <!--? Template customizer: To hide customizer set displayCustomizer value false in config.js.  -->
+        <script src="../../assets1/vendor/js/template-customizer.js"></script>
+        <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+        <script src="../../assets1/js/config.js"></script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async="async" src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', 'GA_MEASUREMENT_ID');
+        </script>
+        <!-- Custom notification for demo -->
+        <!-- beautify ignore:end -->
+
+    </head>
 <body>
     <div class="layout-wrapper layout-content-navbar  ">
         <div class="layout-container">
@@ -25,8 +80,8 @@
                         <div class="card mb-4">
                             <div class="card-datatable table-responsive pt-0">
                                 <h5 class="card-header">Data sejarahsingkat</h5>
-                                <a href="/index/addsejarahsingkat" type="button"
-                                    class="btn rounded-pill btn-primary">Tambah +</a>
+                                {{-- <a href="/index/addsejarahsingkat" type="button"
+                                    class="btn rounded-pill btn-primary">Tambah +</a> --}}
                                 <table class="table" id="jurusan">
                                     <thead>
                                         <tr>
@@ -49,13 +104,13 @@
                                                         style="width: 80px; height:80px;">
                                                 </td> --}}
                                             <td>
-                                                <a href="/sejarahsingkat/edit/{{ $sejarah->id }}"
+                                                <a href="/sejarahsingkat/edit"
                                                     class="btn btn-warning"><i
                                                         class="fa-solid fa-pen-to-square"></i></a>
-                                                <a href="#" class="btn btn-danger delete"
+                                                {{-- <a href="#" class="btn btn-danger delete"
                                                     data-id="{{ $sejarah->id }}"
                                                     data-sejarah="{{ $sejarah->judul }}"><i
-                                                        class="fa-solid fa-trash"></i></a>
+                                                        class="fa-solid fa-trash"></i></a> --}}
                                             </td>
                                         </tr>
                                     </tbody>
@@ -91,7 +146,7 @@
                                                         data-bs-target="#smallModal{{ $no }}"><i
                                                             class="fa-solid fa-pen-to-square"></i></button>
                                                     <a href="#" class="btn btn-danger delete"
-                                                        data-id="{{ $data }}"
+                                                        data-id="{{ $idarray }}"
                                                         data-sejarah="{{ $data }}"><i
                                                             class="fa-solid fa-trash"></i></a>
                                                 </td>
@@ -179,46 +234,46 @@
     </div>
     <!-- Core JS -->
     <!-- build:js assets1/vendor/js/core.js -->
-    <script src="http://127.0.0.1:8000/assets1/vendor/libs/jquery/jquery.js"></script>
-    <script src="http://127.0.0.1:8000/assets1/vendor/libs/popper/popper.js"></script>
-    <script src="http://127.0.0.1:8000/assets1/vendor/js/bootstrap.js"></script>
-    <script src="http://127.0.0.1:8000/assets1/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
-    <script src="http://127.0.0.1:8000/assets1/vendor/libs/hammer/hammer.js"></script>
-    <script src="http://127.0.0.1:8000/assets1/vendor/libs/i18n/i18n.js"></script>
-    <script src="http://127.0.0.1:8000/assets1/vendor/libs/typeahead-js/typeahead.js"></script>
-    <script src="http://127.0.0.1:8000/assets1/vendor/js/menu.js"></script>
+    <script src="../../assets1/vendor/libs/jquery/jquery.js"></script>
+    <script src="../../assets1/vendor/libs/popper/popper.js"></script>
+    <script src="../../assets1/vendor/js/bootstrap.js"></script>
+    <script src="../../assets1/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="../../assets1/vendor/libs/hammer/hammer.js"></script>
+    <script src="../../assets1/vendor/libs/i18n/i18n.js"></script>
+    <script src="../../assets1/vendor/libs/typeahead-js/typeahead.js"></script>
+    <script src="../../assets1/vendor/js/menu.js"></script>
     <!-- endbuild -->
     <!-- Vendors JS -->
-    <script src="http://127.0.0.1:8000/assets1/vendor/libs/datatables/jquery.dataTables.js"></script>
-    <script src="http://127.0.0.1:8000/assets1/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
-    <script src="http://127.0.0.1:8000/assets1/vendor/libs/datatables-responsive/datatables.responsive.js"></script>
-    <script src="http://127.0.0.1:8000/assets1/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.js"></script>
-    <script src="http://127.0.0.1:8000/assets1/vendor/libs/datatables-checkboxes-jquery/datatables.checkboxes.js"></script>
-    <script src="http://127.0.0.1:8000/assets1/vendor/libs/datatables-buttons/datatables-buttons.js"></script>
-    <script src="http://127.0.0.1:8000/assets1/vendor/libs/datatables-buttons-bs5/buttons.bootstrap5.js"></script>
-    <script src="http://127.0.0.1:8000/assets1/vendor/libs/jszip/jszip.js"></script>
-    <script src="http://127.0.0.1:8000/assets1/vendor/libs/pdfmake/pdfmake.js"></script>
-    <script src="http://127.0.0.1:8000/assets1/vendor/libs/datatables-buttons/buttons.html5.js"></script>
-    <script src="http://127.0.0.1:8000/assets1/vendor/libs/datatables-buttons/buttons.print.js"></script>
+    <script src="../../assets1/vendor/libs/datatables/jquery.dataTables.js"></script>
+    <script src="../../assets1/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
+    <script src="../../assets1/vendor/libs/datatables-responsive/datatables.responsive.js"></script>
+    <script src="../../assets1/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.js"></script>
+    <script src="../../assets1/vendor/libs/datatables-checkboxes-jquery/datatables.checkboxes.js"></script>
+    <script src="../../assets1/vendor/libs/datatables-buttons/datatables-buttons.js"></script>
+    <script src="../../assets1/vendor/libs/datatables-buttons-bs5/buttons.bootstrap5.js"></script>
+    <script src="../../assets1/vendor/libs/jszip/jszip.js"></script>
+    <script src="../../assets1/vendor/libs/pdfmake/pdfmake.js"></script>
+    <script src="../../assets1/vendor/libs/datatables-buttons/buttons.html5.js"></script>
+    <script src="../../assets1/vendor/libs/datatables-buttons/buttons.print.js"></script>
     <!-- Flat Picker -->
-    <script src="http://127.0.0.1:8000/assets1/vendor/libs/moment/moment.js"></script>
-    <script src="http://127.0.0.1:8000/assets1/vendor/libs/flatpickr/flatpickr.js"></script>
+    <script src="../../assets1/vendor/libs/moment/moment.js"></script>
+    <script src="../../assets1/vendor/libs/flatpickr/flatpickr.js"></script>
     <!-- Row Group JS -->
-    <script src="http://127.0.0.1:8000/assets1/vendor/libs/datatables-rowgroup/datatables.rowgroup.js"></script>
-    <script src="http://127.0.0.1:8000/assets1/vendor/libs/datatables-rowgroup-bs5/rowgroup.bootstrap5.js"></script>
+    <script src="../../assets1/vendor/libs/datatables-rowgroup/datatables.rowgroup.js"></script>
+    <script src="../../assets1/vendor/libs/datatables-rowgroup-bs5/rowgroup.bootstrap5.js"></script>
     <!-- Form Validation -->
-    <script src="http://127.0.0.1:8000/assets1/vendor/libs/formvalidation/dist/js/FormValidation.min.js"></script>
-    <script src="http://127.0.0.1:8000/assets1/vendor/libs/formvalidation/dist/js/plugins/Bootstrap5.min.js"></script>
-    <script src="http://127.0.0.1:8000/assets1/vendor/libs/formvalidation/dist/js/plugins/AutoFocus.min.js"></script>
+    <script src="../../assets1/vendor/libs/formvalidation/dist/js/FormValidation.min.js"></script>
+    <script src="../../assets1/vendor/libs/formvalidation/dist/js/plugins/Bootstrap5.min.js"></script>
+    <script src="../../assets1/vendor/libs/formvalidation/dist/js/plugins/AutoFocus.min.js"></script>
 
     <!-- Main JS -->
-    <script src="http://127.0.0.1:8000/assets1/js/main.js"></script>
+    <script src="../../assets1/js/main.js"></script>
 
     <!-- Page JS -->
-    <script src="http://127.0.0.1:8000/assets1/js/tables-datatables-basic.js"></script>
+    <script src="../../assets1/js/tables-datatables-basic.js"></script>
     <script src="//cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script> --}}
 </body>
 <script>
     $('.delete').click(function() {
@@ -234,7 +289,7 @@
             })
             .then((willDelete) => {
                 if (willDelete) {
-                    window.location = "/sejarahsingkat/delete/" + sejarahid + ""
+                    window.location = "/sidesejarahdelete/" + sejarahid + ""
                     swal("Data berhasil dihapus", {
                         icon: "success",
                     });

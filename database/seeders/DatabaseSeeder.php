@@ -43,7 +43,7 @@ class DatabaseSeeder extends Seeder
             totalsiswa::class,
             videoprofil::class,
             Visimisilsp::class,
-            Modul::class,
+            // Modul::class,
             Artikel::class,
             kategoriblog::class,
             walas::class,
@@ -56,7 +56,9 @@ class DatabaseSeeder extends Seeder
             lowongankerja::class,
             perusahaan_mitra::class,
             umkm_pasangan::class,
-            keunggulan::class
+            keunggulan::class,
+            sponsor::class
+            
         ]);
     }
 }

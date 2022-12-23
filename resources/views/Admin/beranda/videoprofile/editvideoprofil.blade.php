@@ -53,7 +53,7 @@
                         </div>
                         <br/>
                         <div>
-                        <label for="defaultFormControlInput" class="form-label">link Youtube</label>
+                        <label for="defaultFormControlInput" class="form-label">link Youtube(ID EMBED)</label>
                         <input type="text" name="link" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" value="{{ $data->link }}"/>
                         </div>
                         <br/>
@@ -72,7 +72,7 @@
                             <br/>
                             <img class="img mb-3" src="{{ asset('videoprofil/' . $data->foto) }}" alt="" style="width: 100px;">
                             <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto }}">
-                            {{-- <i style="float: left;font-size: 11px;color: red">Abaikan jika tidak merubah foto</i> --}}
+                            <i style="float: left;font-size: 11px;color: red">Foto Harus Berukuran 500px x 500px</i>
                         </div>
                         <button type="submit" class="btn rounded-pill btn-primary">Submit</button>
                         </form>

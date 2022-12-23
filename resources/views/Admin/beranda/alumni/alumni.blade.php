@@ -41,7 +41,7 @@
 
 <div class="card mb-4">
   <div class="card-datatable table-responsive pt-0">
-    <h5 class="card-header">Blog</h5>
+    <h5 class="card-header">Alumni</h5>
     <a href="/beranda/tambahalumni" type="button" class="btn rounded-pill btn-primary">Tambah</a>
     <table class="table" id="blog">
   <thead>

@@ -25,8 +25,8 @@
                         <div class="card mb-4">
                             <div class="card-datatable table-responsive pt-0">
                                 <h5 class="card-header">Data Profil Struktur Organisasi</h5>
-                                <a href="/index/addstrukturorganisasi" type="button"
-                                    class="btn rounded-pill btn-primary">Tambah +</a>
+                                {{-- <a href="/index/addstrukturorganisasi" type="button"
+                                    class="btn rounded-pill btn-primary">Tambah +</a> --}}
                                 <table class="table" id="jurusan">
                                     <thead>
                                         <tr>
@@ -61,10 +61,10 @@
                                                 <a href="/index/editstrukturorganisasi/{{ $struktur->id }}"
                                                     class="btn btn-warning"><i
                                                         class="fa-solid fa-pen-to-square"></i></a>
-                                                <a href="#" class="btn btn-danger delete"
+                                                {{-- <a href="#" class="btn btn-danger delete"
                                                     data-id="{{ $struktur->id }}"
                                                     data-struktur="{{ $struktur->judul }}"><i
-                                                        class="fa-solid fa-trash"></i></a>
+                                                        class="fa-solid fa-trash"></i></a> --}}
                                             </td>
                                         </tr>
                                     </tbody>
@@ -74,7 +74,7 @@
                         <div class="card mb-4">
                             <div class="card-datatable table-responsive pt-0">
                                 <h5 class="card-header">Data side bar Profil Struktur Organisasi</h5>
-                                <a href="/index/sidestrukturorganisasi" type="button"
+                                <a href="/index/addsidestrukturorganisasi" type="button"
                                     class="btn rounded-pill btn-primary">Tambah atau edit side struktur</a>
                                 <table class="table" id="sideso">
                                     <thead>
@@ -95,12 +95,12 @@
                                                 alt="" style="width: 80px; height:80px;">
                                             </td>
                                             <td>
-                                                <a href="/index/editstrukturorganisasi/{{ $struktur->id }}"
+                                                <a href="/index/viewstrukturorganisasi/{{ $data->id }}"
                                                     class="btn btn-warning"><i
                                                         class="fa-solid fa-pen-to-square"></i></a>
                                                 <a href="#" class="btn btn-danger delete"
-                                                    data-id="{{ $struktur->id }}"
-                                                    data-struktur="{{ $struktur->judul }}"><i
+                                                    data-id="{{ $data->id }}"
+                                                    data-struktur="{{ $data->judul }}"><i
                                                         class="fa-solid fa-trash"></i></a>
                                             </td>
                                         </tr>
@@ -208,7 +208,7 @@
             })
             .then((willDelete) => {
                 if (willDelete) {
-                    window.location = "/index/deletestrukturorganisasi/" + strukturid + ""
+                    window.location = "/deletestruktur/" + strukturid + ""
                     swal("Data berhasil dihapus", {
                         icon: "success",
                     });

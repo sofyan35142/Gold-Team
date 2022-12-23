@@ -198,7 +198,7 @@
 </script>
 <script>
     $(document).ready(function() {
-        $('#guruu').DataTable();
+        $('#coba').DataTable();
     });
 </script>
 <script>

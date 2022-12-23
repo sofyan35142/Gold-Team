@@ -44,19 +44,19 @@
                                 @csrf
                         <div>
                         <label for="defaultFormControlInput" class="form-label">nama</label>
-                        <input type="text" name="nama" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" />
+                        <input type="text" name="nama" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" required/>
                         </div>
                         <br/>
                         <div>
                         <label for="defaultFormControlInput" class="form-label">pekerjaan</label>
-                        <input type="text" name="pekerjaan" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" />
+                        <input type="text" name="pekerjaan" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" required/>
                         </div>
                         <br/>
 
                         <div>
                         <label for="editor" class="form-label">Deskripsi</label>
                         {{-- <input type="text" name="deskripsi" class="form-control" id="editor"  aria-describedby="defaultFormControlHelp" /> --}}
-                        <div class="card-body">
+                        <div class="card-body" required>
                                 <textarea name="deskripsi" id="editor"></textarea>
                             </div>
                         </div>
@@ -65,7 +65,7 @@
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Upload Foto Alumni</label>
 
-                            <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <input type="file" name="foto" class="form-control" accept="image/png,jpg,jpeg,jfif,webp" id="exampleInputEmail1" aria-describedby="emailHelp" required>
 <i style="float: left;font-size: 11px;color: red">Foto Harus 310px x 415px</i>
                         </div>
                         <button type="submit" class="btn rounded-pill btn-primary">Submit</button>

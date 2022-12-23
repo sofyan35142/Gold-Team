@@ -25,8 +25,8 @@
                         <div class="card mb-4">
                             <div class="card-datatable table-responsive pt-0">
                                 <h5 class="card-header">Data Sekolah adiwiyata</h5>
-                                <a href="/index/addsekolahadiwiyata" type="button"
-                                    class="btn rounded-pill btn-primary">Tambah +</a>
+                                {{-- <a href="/index/addsekolahadiwiyata" type="button"
+                                    class="btn rounded-pill btn-primary">Tambah +</a> --}}
                                 <table class="table" id="jurusan">
                                     <thead>
                                         <tr>
@@ -43,19 +43,19 @@
                                             <tr>
                                                 <td>{{ $no }}</td>
                                                 <td>{{ $adiwiyata->judul}}</td>
-                                                <td>{!! $adiwiyata->deskripsi !!}</td>
                                                 <td>
                                                     <img src="{{ asset('../assets/img/' . $adiwiyata->foto_adiwiyata) }}" alt=""
-                                                        style="width: 80px; height:80px;">
+                                                    style="width: 351px; height:244px;">
                                                 </td>
+                                                <td>{!! $adiwiyata->deskripsi !!}</td>
                                                 <td>
                                                     <a href="/visimisi/edit/{{ $adiwiyata->id }}"
                                                         class="btn btn-warning"><i
                                                             class="fa-solid fa-pen-to-square"></i></a>
-                                                    <a href="#" class="btn btn-danger delete"
+                                                    {{-- <a href="#" class="btn btn-danger delete"
                                                         data-id="{{ $adiwiyata->id }}"
                                                         data-jurusan="{{ $adiwiyata->visimisi }}"><i
-                                                            class="fa-solid fa-trash"></i></a>
+                                                            class="fa-solid fa-trash"></i></a> --}}
                                                 </td>
                                             </tr>
                                         @endforeach
