@@ -43,6 +43,7 @@
                                                 <div class="mb-3">
                                                     <img src="{{ asset('../assets/img/visimisi/' . $data->foto_side) }}" alt=""
                                                         style="width: 80px; height:80px;">
+                                                    <i style="color: red"> Foto Harus berukuran 350px x 500px</i>
                                                     <label for="exampleInputEmail1" class="form-label">Upload Foto Side visi Misi</label>
                                                     <input type="file" name="foto_side" class="form-control"
                                                         id="exampleInputEmail1" aria-describedby="emailHelp">

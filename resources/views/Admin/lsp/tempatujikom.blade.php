@@ -107,7 +107,7 @@
                         </div>
                         <br/>
 
-                        
+
                         <br/>
 
                         <div>
@@ -118,13 +118,13 @@
                         </div>
                         <br/>
                         <div>
-                        
+
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Foto </label>
                             <br/>
                             <img class="img mb-3" src="{{ asset('lsp/' . $data->foto) }}" alt="" style="width: 250px;">
                             <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto }}">
-                           
+                           <i style="float: left;font-size: 11px;color: red">Ukuran foto harus 768px x 768px</i>
                         </div>
                         <br/>
                         <div class="mb-3">
@@ -132,7 +132,7 @@
                             <br/>
                             <img class="img mb-3" src="{{ asset('lsp/' . $data->foto1) }}" alt="" style="width: 250px;">
                             <input type="file" name="foto1" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto1 }}">
-                           
+                            <i style="float: left;font-size: 11px;color: red">Ukuran foto harus 768px x 768px</i>
                         </div>
                         <br/>
                         <button type="submit" class="btn rounded-pill btn-primary">Update</button>

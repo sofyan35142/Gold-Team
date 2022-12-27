@@ -110,9 +110,9 @@
                                             <td>
                                                 <a href="/index/editsobkk" class="btn btn-warning"><i
                                                         class="fa-solid fa-pen-to-square"></i></a>
-                                                <a href="#" class="btn btn-danger delete"
+                                                {{-- <a href="#" class="btn btn-danger delete"
                                                     data-id="{{ $data->id }}" data-jurusan="{{ $data->visi }}"><i
-                                                        class="fa-solid fa-trash"></i></a>
+                                                        class="fa-solid fa-trash"></i></a> --}}
                                             </td>
                                         </tr>
                                     </tbody>
@@ -150,8 +150,8 @@
                                                         data-bs-target="#smallModal{{ $id }}"><i
                                                             class="fa-solid fa-pen-to-square"></i></button>
                                                     <a href="#" class="btn btn-danger delete"
-                                                        data-id="{{ $data->id }}"
-                                                        data-jurusan="{{ $data->visi }}"><i
+                                                        data-id="{{ $id }}"
+                                                        data-jurusan="{{ $nama[$id] }}"><i
                                                             class="fa-solid fa-trash"></i></a>
                                                 </td>
                                             </tr>
@@ -188,6 +188,7 @@
                                                                         <input type="file" name="foto"
                                                                             id="nameSmall" class="form-control"
                                                                             placeholder="Enter Name">
+                                                                        <i style="color:red">Foto Harus potrait</i>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -303,7 +304,7 @@
             })
             .then((willDelete) => {
                 if (willDelete) {
-                    window.location = "/deletevisimisibkk"
+                    window.location = "/deletesobkk/"+jurusanid+""
                     swal("Data berhasil direset", {
                         icon: "success",
                     });

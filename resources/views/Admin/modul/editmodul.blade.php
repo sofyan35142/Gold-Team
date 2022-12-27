@@ -14,7 +14,7 @@
 <!-- beautify ignore:start -->
 <html lang="en" class="light-style layout-navbar-fixed layout-menu-fixed " dir="ltr" data-theme="theme-semi-dark" data-assets-path="../../assets1/" data-template="vertical-menu-template-semi-dark">
 
-  
+
 <!-- Mirrored from pixinvent.com/demo/frest-clean-bootstrap-admin-dashboard-template/html/vertical-menu-template-semi-dark/tables-datatables-basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 15 Nov 2022 01:22:18 GMT -->
 @include('Admin.layoutadmin.head')
 
@@ -24,8 +24,8 @@
 <div class="layout-wrapper layout-content-navbar  ">
   <div class="layout-container">
 
-    
-    
+
+
 
 
 
@@ -35,12 +35,12 @@
 @include('Admin.layoutadmin.sidebar')
 <!-- / Menu -->
 
-    
+
 
     <!-- Layout container -->
     <div class="layout-page">
-      
-      
+
+
 
 
 
@@ -50,24 +50,24 @@
 
 
 
-  
 
-  
+
+
   @include('Admin.layoutadmin.navbar')
-  
 
-  
+
+
 <!-- / Navbar -->
 
-      
+
 
       <!-- Content wrapper -->
       <div class="content-wrapper">
 
         <!-- Content -->
-        
+
           <div class="container-xxl flex-grow-1 container-p-y">
-            
+
             <div class="row">
                 <div class="col-md-12">
                     <div class="card mb-4">
@@ -80,7 +80,7 @@
                         <label for="defaultFormControlInput" class="form-label">Judul Modul</label>
                         <input type="text" name="judul" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" value="{{ $data->judul }}" required/>
                         </div>
-                        
+
                         <br/>
 
                         <div>
@@ -92,17 +92,49 @@
                         </div>
                         <br/>
 
+
+                        <div>
+                        <label for="defaultFormControlInput" class="form-label">Judul Sidebar 1</label>
+                        <input type="text" name="judulsidebar1" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" value="{{ $data->judulsidebar1 }}" required/>
+                        </div>
+
+                        <br/>
+
+                        <div>
+                        <label for="defaultFormControlInput" class="form-label">Link Youtube Pengenalan Jurusan</label>
+                        <input type="text" name="linksidebar1" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" value="{{ $data->linksidebar1 }}" required/>
+                        </div>
+
+                        <br/>
+
+                        <div>
+                        <label for="defaultFormControlInput" class="form-label">Judul Sidebar 2</label>
+                        <input type="text" name="judulsidebar2" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" value="{{ $data->judulsidebar2 }}" required/>
+                        </div>
+
+                        <br/>
+
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Update Foto</label>
                             <br/>
                             <img class="img mb-3" src="{{ asset('foto/' . $data->foto) }}" alt="" style="width: 100px;">
-                            <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto }}" required>
-                            <i style="float: left;font-size: 11px;color: red">Abaikan jika tidak merubah foto</i>
+                            <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto }}">
+                            <i style="float: left;font-size: 11px;color: red">Ukuran foto harus 600px x 397px</i>
+                        </div>
+                        <br/>
+                        
+
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Update Foto Kegiatan Produktif</label>
+                            <br/>
+                            <img class="img mb-3" src="{{ asset('foto/jurusan/' . $data->fotosidebar2) }}" alt="" style="width: 100px;">
+                            <input type="file" name="fotosidebar2" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->fotosidebar2 }}">
+                            <i style="float: left;font-size: 11px;color: red">Ukuran foto harus 4592px x 3448px</i>
                         </div>
                         <br/>
                         <button type="submit" class="btn rounded-pill btn-primary">Submit</button>
                         </form>
-                        
+
                     </div>
                     </div>
                 </div>
@@ -132,18 +164,18 @@
 <!--/ Multilingual -->
 
 
-            
+
           </div>
           <!-- / Content -->
 
-          
-          
+
+
 
 <!-- Footer -->
 @include("Admin.layoutadmin.footer")
 <!-- / Footer -->
 
-          
+
           <div class="content-backdrop fade"></div>
         </div>
         <!-- Content wrapper -->
@@ -151,25 +183,25 @@
       <!-- / Layout page -->
     </div>
 
-    
-    
+
+
     <!-- Overlay -->
     <div class="layout-overlay layout-menu-toggle"></div>
-    
-    
+
+
     <!-- Drag Target Area To SlideIn Menu On Small Screens -->
     <div class="drag-target"></div>
-    
+
   </div>
   <!-- / Layout wrapper -->
 
-  
+
   <div class="buy-now">
     <a href="https://1.envato.market/frest_admin" target="_blank" class="btn btn-danger btn-buy-now">Buy Now</a>
   </div>
-  
 
-  
+
+
 
   <!-- Core JS -->
   <!-- build:js assets1/vendor/js/core.js -->
@@ -177,13 +209,13 @@
   <script src="../../assets1/vendor/libs/popper/popper.js"></script>
   <script src="../../assets1/vendor/js/bootstrap.js"></script>
   <script src="../../assets1/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
-  
+
   <script src="../../assets1/vendor/libs/hammer/hammer.js"></script>
-  
+
 
   <script src="../../assets1/vendor/libs/i18n/i18n.js"></script>
   <script src="../../assets1/vendor/libs/typeahead-js/typeahead.js"></script>
-  
+
   <script src="../../assets1/vendor/js/menu.js"></script>
   <!-- endbuild -->
 
@@ -226,8 +258,8 @@
           console.error(error);
         });
   </script>
-                       
-  
+
+
 </body>
 <script>
     $(document).ready(function() {

@@ -156,9 +156,8 @@ Route::get('/deletestruktur/{id}', [AdminController::class, 'deletestruktur']);
 Route::get('/index/sekolahadiwiyata', [Admincontroller::class, 'sekolahadiwiyata']);
 Route::get('/index/addsekolahadiwiyata', [Admincontroller::class, 'addsekolahadiwiyata']);
 Route::post('/insertsekolahadiwiyata', [Admincontroller::class, 'insertsekolahadiwiyata']);
-Route::get('/index/editsekolahadiwiyata/{id}', [Admincontroller::class, 'editsekolahadiwiyata']);
-Route::post('/updatestrukturorganisasi/{id}', [Admincontroller::class, 'updatestrukturorganisasi']);
-Route::get('/index/deletestrukturorganisasi/{id}', [AdminController::class, 'deletestrukturorganisasi']);
+Route::get('/index/editsekolahadiwiyata', [Admincontroller::class, 'editsekolahadiwiyata']);
+Route::post('/updateadiwiyata', [Admincontroller::class, 'updateadiwiyata']);
 //Sejarah Singkat
 Route::get('/index/sejarahsingkat', [Admincontroller::class, 'sejarahsingkat']);
 Route::get('/index/addsejarahsingkat', [Admincontroller::class, 'addsejarahsingkat']);
@@ -192,6 +191,7 @@ Route::get('/deletevisimisibkk', [Admincontroller::class, 'deletevisimisibkk']);
 Route::get('/index/sobkk', [Admincontroller::class, 'sobkk']);
 Route::get('/index/editsobkk', [Admincontroller::class, 'editviewsobkk']);
 Route::post('/editupdatesobkk', [Admincontroller::class, 'editupdatesobkk']);
+Route::get('/deletesobkk/{key}', [Admincontroller::class, 'deletesobkk']);
     //sidesobkk
 Route::get('/index/sidesobkk', [Admincontroller::class, 'sidesobkk']);
 Route::post('/editupdatesidesobkk', [Admincontroller::class, 'editupdatesidesobkk']);
@@ -438,6 +438,9 @@ Route::get('/index/artikel', [ModulController::class, 'artikel'])->name('artikel
 Route::post('/updateartikel/{id}', [ModulController::class, 'editartikel']);
 
 
+Route::get('/ptofile', [ModulController::class, 'profile'])->name('profile');
+Route::get('/logout', [ModulController::class, 'logout'])->name('logout');
+Route::post('/editprofile', [ModulController::class, 'editprofile'])->name('profile');
 
 
 

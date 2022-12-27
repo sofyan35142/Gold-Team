@@ -373,7 +373,7 @@ class DataController extends Controller
     {
         $count = Blog::where('kategori', $id)->count();
         if ($count > 0) {
-            return back()->with('error', 'Kategori Sedang Digunakan');
+            return redirect()->route('kategoriblog')->with('error', 'Kategori sedang digunakan');
         }
         $data = kategoriblog::find($id);
         $data->delete();

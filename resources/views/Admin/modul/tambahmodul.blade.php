@@ -110,16 +110,41 @@
                         <label for="editor" class="form-label">Deskripsi</label>
                         {{-- <input type="text" name="deskripsi" class="form-control" id="editor"  aria-describedby="defaultFormControlHelp" /> --}}
                         <div class="card-body">
-                                <textarea name="deskripsi" id="editor" required></textarea>
+                                <textarea name="deskripsi" id="editor"></textarea>
+                        </div>
+                        <br/>
+
+                        <div>
+                        <label for="defaultFormControlInput" class="form-label">Judul Sidebar 1</label>
+                        <input type="text" name="judulsidebar1" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" required/>
+                        </div>
+                        <br/>
+                        <div>
+                        <label for="defaultFormControlInput" class="form-label">Link Youtube Pengenalan Jurusan</label>
+                        <input type="text" name="linksidebar1" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" required/>
+                        </div>
+                        <br/>
+                        <div>
+                        <label for="defaultFormControlInput" class="form-label">Judul Sidebar 2</label>
+                        <input type="text" name="judulsidebar2" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" required/>
                         </div>
                         <br/>
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Upload Foto Modul</label>
 
                             <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                            <i style="float: left;font-size: 11px;color: red">Ukuran foto harus 600px x 397px</i>
+                        </div>
+                        <br/>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Upload Foto Kegiatan Produktif</label>
+
+                            <input type="file" name="fotosidebar2" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                            <i style="float: left;font-size: 11px;color: red">Ukuran foto harus 4592px x 3448px</i>
                         </div>
                         <button type="submit" class="btn rounded-pill btn-primary">Submit</button>
                         </form>
+
 
                     </div>
                     </div>

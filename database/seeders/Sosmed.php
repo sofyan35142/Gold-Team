@@ -16,13 +16,13 @@ class Sosmed extends Seeder
     public function run()
     {
         DB::table('sosmeds')->insert([
-            'script_logo' => 'icont-facebook',
+            'script_logo' => 'fa-brands fa-facebook',
             'jenis_sosmed' => 'Facebook',
             'link' => 'https://www.facebook.com/pages/Smkn-1-Sukorejo/1644253285790355',
         ]);
 
         DB::table('sosmeds')->insert([
-            'script_logo' => 'icont-instagram',
+            'script_logo' => 'fa-brands fa-instagram',
             'jenis_sosmed' => 'Instagram',
             'link' => 'https://instagram.com/sketsu_bisa?igshid=YmMyMTA2M2Y=',
         ]);

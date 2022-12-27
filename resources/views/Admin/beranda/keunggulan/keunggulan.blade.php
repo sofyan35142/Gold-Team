@@ -67,7 +67,7 @@
 
         <td>
             <a href="/beranda/editkeunggulan/{{ $keunggulan->id }}" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></a>
-            <a href="#" class="btn btn-danger delete" data-id="{{ $keunggulan->id }}" data-alumni="{{ $keunggulan->nama }}"><i class="fa-solid fa-trash"></i></a>
+            {{-- <a href="#" class="btn btn-danger delete" data-id="{{ $keunggulan->id }}" data-alumni="{{ $keunggulan->nama }}"><i class="fa-solid fa-trash"></i></a> --}}
         </td>
     </tr>
 
@@ -110,7 +110,7 @@
 
 
 <!-- Footer -->
-@include("Admin.layoutadmin.footer")
+@include('Admin.layoutadmin.footer')
 <!-- / Footer -->
 
 
@@ -213,7 +213,7 @@
 </script>
 <script>
     @if (Session::get('success'))
-    toastr.success("{{ Session::get('success') }}")
+        toastr.success("{{ Session::get('success') }}")
     @endif
 </script>
 

@@ -67,12 +67,12 @@
                 <div class="col-lg-4 main-service-area blog-side-bar border shadows mb-40px py-3" style="height: 63pc;overflow:auto">
                     <div class="service-sidebar h-fc">
                         <center><h3><b>Foto Kegiatan</b></h3></center> <br>
-                        <img class="imgvisi mb-2 hovchange" data-imageb="../foto/header.JPG" src="../foto/header.JPG" alt="service">
+                        {{-- <img class="imgvisi mb-2 hovchange" data-imageb="../foto/header.JPG" src="../foto/header.JPG" alt="service"> --}}
                         <div class="border side-sejarah" style="height: 254px;
                         margin-bottom: 0.5rem;">
                         </div>
                         @foreach ($foto as $fotok)
-                        <img class="imgvisi mb-2" src="{{asset("blog/" . $fotok)}}" alt="service">
+                        <img class="imgvisi mb-2" src="{{asset("foto_kegiatan/" . $fotok)}}" alt="service">
                         @endforeach
                     </div>
                 </div>

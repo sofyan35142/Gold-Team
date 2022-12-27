@@ -37,8 +37,9 @@
                                                 <img class="mb-3" width="250px" src="{{asset("assets/img/so/" .$data->foto_struktur)}}" alt="">
                                                 <label for="defaultFormControlInput" class="form-label">Foto anggota</label>
                                                 <input type="file" name="foto_struktur" class="form-control"
-                                                    id="defaultFormControlInput"
-                                                    aria-describedby="defaultFormControlHelp" />
+                                                id="defaultFormControlInput"
+                                                aria-describedby="defaultFormControlHelp" />
+                                                <i style="color: red">Foto Harus berukuran 250px x 250px</i>
                                             </div>
                                             <button type="submit" class="btn rounded-pill btn-primary">Submit</button>
                                         </form>

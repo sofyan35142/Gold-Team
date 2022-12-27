@@ -259,6 +259,10 @@
     toastr.success("{{ Session::get('success') }}")
     @endif
 </script>
-
+<script>
+    @if (Session::get('error'))
+    toastr.error("{{ Session::get('error') }}")
+    @endif
+</script>
 <!-- Mirrored from pixinvent.com/demo/frest-clean-bootstrap-admin-dashboard-template/html/vertical-menu-template-semi-dark/tables-datatables-basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 15 Nov 2022 01:22:20 GMT -->
 </html>

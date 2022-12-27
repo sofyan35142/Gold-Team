@@ -51,11 +51,11 @@
                 <div class="col-lg-8">
                     {{-- <img src="foto/jurusan/TKR.JPG" alt="service"> --}}
                     <div class="service-details-post">
-                        
+
                         <h1>{{$data->judul}}</h1>
                         {!!$data->deskripsi!!}
-                        
-                        
+
+
 
 
                     </div>
@@ -96,9 +96,9 @@ Next
                             <img src="{{ asset('lsp/' . $data->denah) }}"
                                             alt="layout lsp">
                     </div>
-                    
+
                 </div>
-                <div class="col-lg-8">
+                {{-- <div class="col-lg-8">
                     <div class="service-details-post">
                         <section
                             class="elementor-element elementor-element-41e4419 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section"
@@ -126,14 +126,14 @@ Next
                             </div>
                         </section>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </div>
     </div>
 
 
-    
+
 
 
     @include('landingpage.layout.footer')

@@ -22,17 +22,23 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="card mb-4">
-                                    <h5 class="card-header">Tambah foto wirausaha peserta didik</h5>
-                                    <i
+                                    <h5 class="card-header">Tambah Kegiatan BKK</h5>
+                                    <div class="card-body">
+                                        <form action="/insertkegiatanbkk" method="POST" enctype="multipart/form-data">
+                                            @csrf
+                                            <div class="mb-3">
+                                                <label for="defaultFormControlInput" class="form-label">judul</label>
+                                                <input type="text" name="judul" class="form-control"
+                                                    id="defaultFormControlInput"
+                                                    aria-describedby="defaultFormControlHelp"/>
+                                            </div>
+                                            <div class="mb-3">
+                                                <i
                                         style="    font-size: 17px;
                                     color: red;
                                     margin-left: 50px;
                                 }">Masukkan
-                                        Ukuran foto 350px x 470px</i>
-                                    <div class="card-body">
-                                        <form action="/insertsiswakbkk" method="POST" enctype="multipart/form-data">
-                                            @csrf
-                                            <div class="mb-3">
+                                        Ukuran foto 530px x 466px</i>
                                                 <div class="upload__box">
                                                     <div class="upload__btn-box">
                                                         <label class="upload__btn">

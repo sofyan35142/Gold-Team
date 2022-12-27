@@ -85,14 +85,14 @@
                         <label for="defaultFormControlInput" class="form-label">Sub Judul 1</label>
                         <input type="text"  name="sub_judul1" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" value="{{ $data->sub_judul1 }}"/>
                         </div>
-                        <br/>                        
-                        
+                        <br/>
+
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Foto Logo BKK</label>
                             <br/>
                             <img class="img mb-3" src="{{ asset('foto/' . $data->foto1) }}" alt="" style="width: 250px;">
                             <input type="file" name="foto1" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto1 }}">
-                           
+                           <i style="float: left;font-size: 11px;color: red">Ukuran foto harus 300px x 300px</i>
                         </div>
                         <br/>
 
@@ -111,13 +111,13 @@
                         <br/>
 
                         <div>
-                        
+
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Foto Gedung BKK</label>
                             <br/>
                             <img class="img mb-3" src="{{ asset('foto/' . $data->foto2) }}" alt="" style="width: 250px;">
                             <input type="file" name="foto2" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto2 }}">
-                           
+                            <i style="float: left;font-size: 11px;color: red">Ukuran foto harus 599px x 451px</i>
                         </div>
                         <br/>
                         <div class="mb-3">
@@ -125,7 +125,7 @@
                             <br/>
                             <img class="img mb-3" src="{{ asset('foto/' . $data->foto3) }}" alt="" style="width: 250px;">
                             <input type="file" name="foto3" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto3 }}">
-                           
+                            <i style="float: left;font-size: 11px;color: red">Ukuran foto harus 599px x 451px</i>
                         </div>
                         <br/>
                         <div class="mb-3">
@@ -133,7 +133,7 @@
                             <br/>
                             <img class="img mb-3" src="{{ asset('foto/' . $data->foto4) }}" alt="" style="width: 250px;">
                             <input type="file" name="foto4" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto4 }}">
-                            
+                            <i style="float: left;font-size: 11px;color: red">Ukuran foto harus 599px x 451px</i>
                         </div>
                         <br/>
 
@@ -142,7 +142,7 @@
                             <br/>
                             <img class="img mb-3" src="{{ asset('foto/' . $data->foto5) }}" alt="" style="width: 250px;">
                             <input type="file" name="foto5" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto5 }}">
-                            
+                            <i style="float: left;font-size: 11px;color: red">Ukuran foto harus 599px x 451px</i>
                         </div>
                         <br/>
 
@@ -151,13 +151,13 @@
                         <input type="text"  name="judul_sidebar" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" value="{{ $data->judul_sidebar }}"/>
                         </div>
                         <br/>
-                        
+
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Foto Sidebar</label>
                             <br/>
                             <img class="img mb-3" src="{{ asset('foto/' . $data->foto6) }}" alt="" style="width: 250px;">
                             <input type="file" name="foto6" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto6 }}">
-                            
+                            <i style="float: left;font-size: 11px;color: red">Ukuran foto harus 719px x 903px</i>
                         </div>
                         <br/>
 

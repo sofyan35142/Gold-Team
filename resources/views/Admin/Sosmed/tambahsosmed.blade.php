@@ -101,8 +101,14 @@
                         <form action="/insertsosmed" method="POST" enctype="multipart/form-data">
                                 @csrf
                         <div>
-                        <label for="defaultFormControlInput" class="form-label">Script logo</label>
+                        <label for="defaultFormControlInput" class="form-label">Script Ikon</label>
                         <input type="text" name="script_logo" class="form-control" id="defaultFormControlInput"  aria-describedby="defaultFormControlHelp" required/>
+                            <i
+                                        style="    font-size: 17px;
+                                    color: red;
+                                    margin-left: 50px;
+                                }">Cari script ikon di web fontawesome
+                                        </i>
                         </div>
                         <br/>
 
@@ -118,8 +124,8 @@
                         </div>
                         <br/>
 
-                        
-                        
+
+
                         <button type="submit" class="btn rounded-pill btn-primary">Submit</button>
                         </form>
 

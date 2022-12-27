@@ -31,8 +31,10 @@
                                                 <img src="{{asset("assets/img/" . $data->foto_head)}}" alt="" height="250px" width="250px">
                                                 <label for="exampleInputEmail1" class="form-label">Foto Atas</label>
                                                 <input type="file" name="foto_head" class="form-control mt-3"
-                                                    id="exampleInputEmail1" aria-describedby="emailHelp" required>
-                                            </div>
+                                                    id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                    <i style="float: left;font-size: 11px;color: red">foto harus berukuran 1060px x 800px</i>
+                                            </br>
+                                                </div>
                                             <div>
                                                 <label for="editor" class="form-label">Deskripsi</label>
                                                     <textarea required name="isiartikel" id="editor">{!! $data->isiartikel !!}</textarea>

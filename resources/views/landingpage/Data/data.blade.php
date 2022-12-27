@@ -22,27 +22,34 @@
             </div> --}}
             <div class="row">
                 <div class="col-md-4 col-sm-6">
+                    <a href="/guruu">
                     <div class="process-card">
-                        <i class="icofont-touch"></i>
+                        <i class="fa-solid fa-chalkboard-user"></i>
                         <h3>Data Guru Dan Karyawan</h3>
                         <p>Data guru dan karyawan yang ada disketsu.</p>
                         <img src="assets/img/process-pattern-2.png" alt="arrow">
                     </div>
+                </a>
                 </div>
                 <div class="col-md-4 col-sm-6">
+                    <a href="/data/dharmaa">
                     <div class="process-card">
-                        <i class="icofont-world"></i>
+                        <i class="fa-solid fa-user"></i>
                         <h3>Data DharmaWanita</h3>
                         <p>Data Dharmawanita sketsu.</p>
                         <img src="assets/img/process-pattern-2.png" alt="arrow">
+
                     </div>
+                    </a>
                 </div>
                 <div class="col-md-4 col-sm-6 offset-sm-3 offset-md-0">
+                    <a href="/data/datawalas">
                     <div class="process-card">
-                        <i class="icofont-recycle-alt"></i>
+                        <i class="fa-solid fa-user-pen"></i>
                         <h3>Data Walas(Wali Kelas)</h3>
                         <p>Data wali kelas yang ada disketsu.</p>
                     </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -51,9 +58,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-sm-6">
-                    <a href="12">
+                    <a href="/data/ekstraa">
                     <div class="process-card">
-                        <i class="icofont-touch"></i>
+                        <i class="fa-solid fa-volleyball"></i>
                         <h3>Data Ekstrakurikuler</h3>
                         <p>Data Ekstrakurikuler yang dikembangkan oleh sketsu.</p>
                         <img src="assets/img/process-pattern-2.png" alt="arrow">
@@ -61,12 +68,14 @@
                     </a>
                 </div>
                 <div class="col-md-4 col-sm-6">
+                    <a href="/data/prestasi">
                     <div class="process-card">
-                        <i class="icofont-world"></i>
+                        <i class="fa-solid fa-medal"></i>
                         <h3>Data Prestasi</h3>
                         <p>Data pretasi yang didapatkan siswa-siswi sketsu.</p>
                         {{-- <img src="assets/img/process-pattern-2.png" alt="arrow"> --}}
                     </div>
+                    </a>
                 </div>
                 {{-- <div class="col-md-4 col-sm-6 offset-sm-3 offset-md-0">
                     <div class="process-card">

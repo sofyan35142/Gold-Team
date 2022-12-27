@@ -29,7 +29,7 @@
                                             @csrf
                                             <div class="mb-3" style="display: grid">
                                                 <label for="defaultFormControlInput" class="form-label">Foto Struktur</label>
-                                                <img src="{{asset("assets/img/" . $data->foto_struktur)}}" alt="foto Struktur" width="500px" height="500px">
+                                                <img src="{{asset("assets/img/" . $data->foto_struktur)}}" alt="foto Struktur"  width="500px" height="500px">
                                             </div>
                                             <div class="mb-3">
                                                 <label for="editor" class="form-label">Deskripsi</label>
@@ -38,7 +38,8 @@
                                             <div class="mb-3" style="display: grid">
                                                 <label for="defaultFormControlInput" class="form-label">Foto Struktur</label>
                                                 <img src="{{asset("assets/img/" . $data->foto_struktur)}}" alt="foto Struktur" width="200px" height="200px">
-                                                <input type="file" name="foto_side[]" class="form-control" multiple>
+                                                <input type="file" name="foto_struktur" class="form-control" multiple>
+                                                <i style="color: red">Foto Harus berukuran 1500px x 850px</i>
                                             </div>
                                             <button type="submit" class="btn rounded-pill btn-primary">Submit</button>
                                         </form>

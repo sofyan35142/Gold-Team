@@ -69,8 +69,9 @@ class Admincontroller extends Controller
         $ekstra = ekstra::count();
         $sponsor = sponsor::count();
         $blog = Blog::count();
-
-        return view('Admin.index', compact('jurusan', 'guru', 'walas', 'dharma', 'ekstra','sponsor','blog'));
+        $ekstra = ekstra::count();
+        $bkk = kegiatanbkk::count();
+        return view('Admin.index', compact('jurusan','bkk', 'guru', 'walas', 'dharma', 'ekstra','sponsor','blog','ekstra'));
     }
     ///////////////////// START PROFIL LANDINGPAGE ADMIN ///////////////////////////
     //start profileditsekolahrujukan
@@ -209,7 +210,7 @@ class Admincontroller extends Controller
     }
     public function updatestrukturorganisasi(Request $request, $id)
     {
-
+        // dd($request->all());
         $data = strukturorganisasi::find($id);
         $data->update([
             'judul' => $request->judul,
@@ -218,17 +219,13 @@ class Admincontroller extends Controller
             // 'foto_sidestruktur' => $request->foto_sidestruktur,
         ]);
         // dd($data);
-        if ($request->hasFile('foto_adiwiyata')) {
-            $request->file('foto_adiwiyata')->move('struktur/', $request->file('foto_adiwiyata')->getClientOriginalName());
-            $data->foto_adiwiyata = $request->file('foto_adiwiyata')->getClientOriginalName();
+        if ($request->hasFile('foto')) {
+            $request->file('foto')->move('assets/img/', $request->file('foto')->getClientOriginalName());
+            $data->foto_struktur = $request->file('foto')->getClientOriginalName();
             $data->save();
         }
-        if ($request->hasFile('foto_sidestruktur')) {
-            $request->file('foto_sidestruktur')->move('sidestruktur/', $request->file('foto_sidestruktur')->getClientOriginalName());
-            $data->foto_sidestruktur = $request->file('foto_sidestruktur')->getClientOriginalName();
-            $data->save();
-        }
-        return redirect('/index/strukturorganisasi')->with('success', 'Berhasil Di Edit');
+
+    return redirect('/index/strukturorganisasi')->with('success', 'Berhasil Di Edit');
     }
 
     public function deletestrukturorganisasi($id)
@@ -305,6 +302,24 @@ class Admincontroller extends Controller
     }
     public function editsekolahadiwiyata()
     {
+        $data = sekolahadiwiyata::all()->first();
+    return view('Admin.profil.sekolah_adiwiyata.editsekolahadiwiyata',compact("data"));
+    }
+    public function updateadiwiyata(request $request){
+        $data = sekolahadiwiyata::all()->first();
+        $data->update([
+            "judul" => $request->judul,
+            // "foto_adiwiyata" => $request->foto_adiwiyata,
+            "deskripsi" => $request->deskripsi
+        ]);
+        if ($request->hasFile('foto_adiwiyata')) {
+            $request->file('foto_adiwiyata')->move('assets/img/', $request->file('foto_adiwiyata')->getClientOriginalName());
+            $data->foto_adiwiyata = $request->file('foto_adiwiyata')->getClientOriginalName();
+            $data->save();
+        }
+
+        return redirect('/index/sekolahadiwiyata')->with('success', 'data berhasil ditambahkan');
+
     }
     // end profil/sekolahadiwiyata
     // Start profil/sejarahsingkat
@@ -360,7 +375,7 @@ class Admincontroller extends Controller
         $file->foto_side = json_encode($files);
         $file->save();
         // dd($file);
-        return redirect()->route('sejarahsingkat')->with('success', 'Berhasil Di Edit');
+        return redirect('/index/sejarahsingkat')->with('success', 'Berhasil Di Edit');
     }
 
     public function deletesejarahsingkat($id)
@@ -384,10 +399,16 @@ class Admincontroller extends Controller
                 $files[] = $name;
             }
         }
-        $model = sejarahsingkat::find(1);
+        $model = sejarahsingkat::all()->first();
         $foto = json_decode($model->foto_side);
-        $fotoup = array_merge($foto, $files);
-        $model->foto_side = json_encode($fotoup);
+        // dd($foto);
+        if($foto != null){
+            $fotoup = array_merge($foto, $files);
+            $model->foto_side = json_encode($fotoup);
+        }else{
+            $model->foto_side = $files;
+        }
+        // dd($model->foto_side);
         $model->save();
         // dd($model);
         return redirect('/index/sejarahsingkat')->with("success", "data foto side berhasil ditambahkan");
@@ -407,8 +428,10 @@ class Admincontroller extends Controller
         return redirect('/index/sejarahsingkat')->with("success", "data berhasil diedit");
     }
     public function deletesidesejarah($idarray){
+        // dd($idarray);
         $data = sejarahsingkat::all()->first();
         $foto = json_decode($data->foto_side);
+        // dd($foto);
         unset($foto[$idarray]);
         $data->foto_side = $foto;
         $data->save();
@@ -468,8 +491,8 @@ class Admincontroller extends Controller
     }
     public function editupdatevisimisibkk(Request $request)
     {
-        $data = visimisibkk::find(1);
-        dd($request->all());
+        $data = visimisibkk::all()->first();
+        // dd($request->all());
         $data->update([
             'visi' => $request->visi,
             'misi' => $request->misi,
@@ -528,6 +551,19 @@ class Admincontroller extends Controller
         }
 
         return redirect("/index/sobkk")->with("success", "Data Berhasil Di Ubah");
+    }
+    public function deletesobkk($key){
+        $data = strukturbkk::all()->first();
+        $nama = json_decode($data->nama_member);
+        $foto = json_decode($data->foto_member);
+        unset($nama[$key]);
+        unset($foto[$key]);
+        $data->nama_member = $nama;
+        $data->foto_member = $foto;
+        $data->save();
+        // dd($data);
+        return redirect("/index/sobkk")->with("success","Data berhasil Dihapus");
+
     }
     //sidesobkk
     public function sidesobkk()

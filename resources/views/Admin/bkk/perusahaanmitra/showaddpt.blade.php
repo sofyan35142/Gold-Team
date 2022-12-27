@@ -31,7 +31,7 @@
                                 <div class="card mb-4">
                                     <h5 class="card-header">Tambah perusahaanmitra</h5>
                                     <div class="card-body">
-                                        <form action="/index/showumkm/{{$data->id}}" method="POST"
+                                        <form action="/editperusahaanmitra/{{$data->id}}" method="POST"
                                             enctype="multipart/form-data">
                                             @csrf
                                             <div class="mb-3">
@@ -48,7 +48,7 @@
                                             </div>
                                             <div class="mb-3">
                                                 <label for="defaultFormControlInput" class="form-label">Nomor :</label>
-                                                <input type="text" name="nomor" class="form-control"
+                                                <input type="number" name="nomor" class="form-control"
                                                     id="defaultFormControlInput"
                                                     aria-describedby="defaultFormControlHelp" value="{{$data->nomor}}"/>
                                             </div>

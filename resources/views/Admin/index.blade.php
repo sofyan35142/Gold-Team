@@ -41,8 +41,7 @@
                                                     <div class="d-flex align-items-center gap-3">
                                                         <div class="avatar">
                                                             <span
-                                                                class="avatar-initial bg-label-primary rounded-circle"><i
-                                                                    class="bx bx-user fs-4"></i></span>
+                                                                class="avatar-initial bg-label-primary rounded-circle"><i class="fa-solid fa-bolt"></i></span>
                                                         </div>
                                                         <div class="card-info">
                                                             <h5 class="card-title mb-0 me-2">{{ $jurusan }}</h5>
@@ -66,8 +65,7 @@
                                                     <div class="d-flex align-items-center gap-3">
                                                         <div class="avatar">
                                                             <span
-                                                                class="avatar-initial bg-label-primary rounded-circle"><i
-                                                                    class="bx bx-user fs-4"></i></span>
+                                                                class="avatar-initial bg-label-primary rounded-circle"><i class="fa-solid fa-user-group"></i></span>
                                                         </div>
                                                         <div class="card-info">
                                                             <h5 class="card-title mb-0 me-2">{{ $sponsor }}</h5>
@@ -91,8 +89,7 @@
                                                     <div class="d-flex align-items-center gap-3">
                                                         <div class="avatar">
                                                             <span
-                                                                class="avatar-initial bg-label-primary rounded-circle"><i
-                                                                    class="bx bx-user fs-4"></i></span>
+                                                                class="avatar-initial bg-label-primary rounded-circle"><i class="fa-solid fa-newspaper"></i></span>
                                                         </div>
                                                         <div class="card-info">
                                                             <h5 class="card-title mb-0 me-2">{{ $blog }}</h5>
@@ -116,12 +113,11 @@
                                                     <div class="d-flex align-items-center gap-3">
                                                         <div class="avatar">
                                                             <span
-                                                                class="avatar-initial bg-label-primary rounded-circle"><i
-                                                                    class="bx bx-user fs-4"></i></span>
+                                                                class="avatar-initial bg-label-primary rounded-circle"><i class="fa-solid fa-street-view"></i></span>
                                                         </div>
                                                         <div class="card-info">
-                                                            <h5 class="card-title mb-0 me-2">{{ $jurusan }}</h5>
-                                                            <small class="text-muted">Jurusan</small>
+                                                            <h5 class="card-title mb-0 me-2">{{ $bkk }}</h5>
+                                                            <small class="text-muted">Kegiatan BKK</small>
                                                         </div>
                                                     </div>
                                                     <div class="resize-triggers">
@@ -141,12 +137,11 @@
                                                     <div class="d-flex align-items-center gap-3">
                                                         <div class="avatar">
                                                             <span
-                                                                class="avatar-initial bg-label-primary rounded-circle"><i
-                                                                    class="bx bx-user fs-4"></i></span>
+                                                                class="avatar-initial bg-label-primary rounded-circle"><i class="fa-solid fa-circle-plus"></i></span>
                                                         </div>
                                                         <div class="card-info">
-                                                            <h5 class="card-title mb-0 me-2">{{ $jurusan }}</h5>
-                                                            <small class="text-muted">Jurusan</small>
+                                                            <h5 class="card-title mb-0 me-2">{{ $ekstra }}</h5>
+                                                            <small class="text-muted">Ekstrakurikuler</small>
                                                         </div>
                                                     </div>
                                                     <div class="resize-triggers">
@@ -166,12 +161,11 @@
                                                     <div class="d-flex align-items-center gap-3">
                                                         <div class="avatar">
                                                             <span
-                                                                class="avatar-initial bg-label-primary rounded-circle"><i
-                                                                    class="bx bx-user fs-4"></i></span>
+                                                                class="avatar-initial bg-label-primary rounded-circle"><i class="fa-solid fa-chalkboard-user"></i></span>
                                                         </div>
                                                         <div class="card-info">
-                                                            <h5 class="card-title mb-0 me-2">{{ $jurusan }}</h5>
-                                                            <small class="text-muted">Jurusan</small>
+                                                            <h5 class="card-title mb-0 me-2">{{ $guru }}</h5>
+                                                            <small class="text-muted">Guru</small>
                                                         </div>
                                                     </div>
                                                     <div class="resize-triggers">
@@ -269,8 +263,8 @@
                                 </div>
                             </div>
                             <!--/ Activity -->
-<script src="https://apps.elfsight.com/p/platform.js" defer></script>
-<div class="elfsight-app-f3a706da-b581-4af7-9b10-e84b26128d4e"></div>
+{{-- <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-f3a706da-b581-4af7-9b10-e84b26128d4e"></div> --}}
                             <!-- Profit Report & Registration -->
 
                             <!--/ Profit Report & Registration -->

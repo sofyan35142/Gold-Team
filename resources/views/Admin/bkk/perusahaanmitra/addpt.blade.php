@@ -48,7 +48,7 @@
                                             </div>
                                             <div class="mb-3">
                                                 <label for="defaultFormControlInput" class="form-label">Nomor :</label>
-                                                <input required type="text" name="nomor" class="form-control"
+                                                <input required type="number" name="nomor" class="form-control"
                                                     id="defaultFormControlInput"
                                                     aria-describedby="defaultFormControlHelp" />
                                             </div>

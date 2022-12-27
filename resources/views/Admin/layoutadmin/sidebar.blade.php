@@ -4,7 +4,7 @@
     <div class="app-brand demo ">
         <a href="index.html" class="app-brand-link">
             <span class="app-brand-logo demo">
-                <img width="26px" height="26px" viewBox="0 0 26 26" version="1.1" src="../foto/jurusan/smk.png"
+                <img width="26px" height="26px" viewBox="0 0 26 26" version="1.1" src="../../../foto/logo.png"
                     xmlns:xlink="http://www.w3.org/1999/xlink">
                 <title>icon</title>
                 <defs>
@@ -126,6 +126,11 @@
                 <li class="menu-item">
                     <a href="/beranda/videoprofil" class="menu-link">
                         <div data-i18n="Video Profil">Video Profil</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="/index/sosmed" class="menu-link">
+                        <div data-i18n="Sosial Media">Sosial Media</div>
                     </a>
                 </li>
             </ul>
@@ -324,6 +329,11 @@
                 <div data-i18n="Bursa Kerja Khusus(BKK)">Bursa Kerja Khusus(BKK)</div>
             </a>
             <ul class="menu-sub">
+                <li class="menu-item">
+                    <a href="/index/bkk" class="menu-link">
+                        <div data-i18n="BKK">BKK</div>
+                    </a>
+                </li>
                 <li class="menu-item">
                     <a href="/index/visimisibkk" class="menu-link">
                         <div data-i18n="Visi Misi BKK">Visi Misi BKK</div>

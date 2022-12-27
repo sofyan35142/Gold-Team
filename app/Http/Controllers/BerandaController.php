@@ -370,8 +370,10 @@ class BerandaController extends Controller
 
     public function deletesponsor($id)
     {
-        $data = Blog::find($id);
+        // dd($id);
+        $data = sponsor::find($id);
         $data->delete();
+        // $data->save();
         return redirect()->route('sponsor')->with('success', 'Berhasil Di Hapus');
     }
 

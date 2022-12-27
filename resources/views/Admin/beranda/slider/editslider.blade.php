@@ -43,7 +43,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="card mb-4">
-                    <h5 class="card-header">Edit blog</h5>
+                    <h5 class="card-header">Edit Slider</h5>
                     <div class="card-body">
                         <form action="/beranda/updateslider/{{ $data->id }}" method="POST" enctype="multipart/form-data">
                                 @csrf

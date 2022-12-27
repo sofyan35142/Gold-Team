@@ -82,6 +82,10 @@
       <th scope="col">Judul Modul</th>
       <th scope="col">Deskripsi</th>
       <th scope="col">Foto</th>
+      <th scope="col">Judul Sidebar 1</th>
+      <th scope="col">Link Youtube</th>
+      <th scope="col">Judul Sidebar 2</th>
+      <th scope="col">Foto Kegiatan Produktif</th>
       <th scope="col">Aksi</th>
     </tr>
   </thead>
@@ -95,8 +99,12 @@
         <td>
             <img src="{{ asset('foto/' . $modul->foto) }}" alt="" style="width: 80px; ">
         </td>
-
-
+        <td>{{ $modul->judulsidebar1 }}</td>
+        <td style="word-break: break-all">{{ $modul->linksidebar1 }}</td>
+        <td>{{ $modul->judulsidebar1 }}</td>
+        <td>
+            <img src="{{ asset('foto/jurusan/' . $modul->fotosidebar2) }}" alt="" style="width: 80px; ">
+        </td>
         <td>
             <a href="/modul/edit/{{ $modul->id }}" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></a>
             <a href="#" class="btn btn-danger delete" data-id="{{ $modul->id }}" data-modul="{{ $modul->judul }}"><i class="fa-solid fa-trash"></i></a>

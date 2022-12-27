@@ -180,19 +180,19 @@
 </body>
 <script>
     $('.delete').click(function() {
-        var sambutanid = $(this).attr('data-id');
-        var sambutan = $(this).attr('data-sambutan');
+        var sponsorid = $(this).attr('data-id');
+        var sponsor = $(this).attr('data-sponsor');
 
         swal({
                 title: "Apakah kamu yakin?",
-                text: "Kamu akan menghapus sambutan " + sambutan + "",
+                text: "Kamu akan menghapus sponsor " + sponsor + "",
                 icon: "warning",
                 buttons: true,
                 dangerMode: true,
             })
             .then((willDelete) => {
                 if (willDelete) {
-                    window.location = "/sponsor/deletesponsor/" + sambutanid + ""
+                    window.location = "/sponsor/deletesponsor/" + sponsorid + ""
                     swal("Data berhasil dihapus", {
                         icon: "success",
                     });

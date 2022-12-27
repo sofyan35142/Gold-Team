@@ -107,7 +107,7 @@
                         </div>
                         <br/>
 
-                        
+
                         <br/>
 
                         <div>
@@ -118,13 +118,13 @@
                         </div>
                         <br/>
                         <div>
-                        
+
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Foto Jumlah Pemegang Sertifikat</label>
                             <br/>
                             <img class="img mb-3" src="{{ asset('lsp/' . $data->jml) }}" alt="" style="width: 250px;">
                             <input type="file" name="jml" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->jml }}">
-                           
+
                         </div>
                         <br/>
                         <div class="mb-3">
@@ -132,11 +132,11 @@
                             <br/>
                             <img class="img mb-3" src="{{ asset('lsp/' . $data->foto) }}" alt="" style="width: 250px;">
                             <input type="file" name="foto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->foto }}">
-                           
+                           <i style="float: left;font-size: 11px;color: red">Ukuran foto harus 336px x 403px</i>
                         </div>
                         <br/>
-                        
-                        
+
+
                         </div>
                         <br/>
                         <button type="submit" class="btn rounded-pill btn-primary">Update</button>

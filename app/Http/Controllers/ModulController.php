@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Artikel;
-use App\Models\Reparasibengkel;
+use App\Models\User;
 use App\Models\Modul;
+use App\Models\Artikel;
 use Illuminate\Http\Request;
+use App\Models\Reparasibengkel;
+use Illuminate\Support\Facades\Auth;
 
 class ModulController extends Controller
 {
@@ -97,7 +99,7 @@ class ModulController extends Controller
 
         if ($request->hasFile('fotosidebar2')) {
             $request->file('fotosidebar2')->move('foto/jurusan/', $request->file('fotosidebar2')->getClientOriginalName());
-            $data->foto = $request->file('fotosidebar2')->getClientOriginalName();
+            $data->fotosidebar2 = $request->file('fotosidebar2')->getClientOriginalName();
             $data->save();
         }
 
@@ -141,34 +143,41 @@ class ModulController extends Controller
     public function update(Request $request, $id)
     {
         $data = Modul::find($id);
+        $data->update([
+            //'foto' => request->foto
+            'judul' => $request->judul,
+            'deskripsi' => $request->deskripsi,
+            'judulsidebar1' => $request->judulsidebar1,
+            'linksidebar1' => $request->linksidebar1,
+            'judulsidebar2' => $request->judulsidebar2,
+            // 'fotosidebar2' => $request->fotosidebar2,
+
+        ]);
         if ($request->hasFile('foto')) {
             $request->file('foto')->move('foto/', $request->file('foto')->getClientOriginalName());
-            $namafoto = $request->file('foto')->getClientOriginalName();
-            $data->update([
-                'foto' => $namafoto,
-                'judul' => $request->judul,
-                'deskripsi' => $request->deskripsi,
-                'judulsidebar1' => $request->judulsidebar1,
-                'linksidebar1' => $request->linksidebar1,
-                'judulsidebar2' => $request->judulsidebar2,
-                'fotosidebar2' => $request->fotosidebar2,
-            ]);
-
-        } else {
-            $data->update([
-                //'foto' => request->foto
-                'judul' => $request->judul,
-                'deskripsi' => $request->deskripsi,
-                'judulsidebar1' => $request->judulsidebar1,
-                'linksidebar1' => $request->linksidebar1,
-                'judulsidebar2' => $request->judulsidebar2,
-                'fotosidebar2' => $request->fotosidebar2,
-
-            ]);
+            $data->foto = $request->file('foto')->getClientOriginalName();
+            $data->save();
         }
-
-        return redirect()->route('modul')->with('success', 'Berhasil Di Update');
+        if ($request->hasFile('fotosidebar2')) {
+            $request->file('fotosidebar2')->move('foto/jurusan', $request->file('fotosidebar2')->getClientOriginalName());
+            $data->fotosidebar2 = $request->file('fotosidebar2')->getClientOriginalName();
+            $data->save();
+            // $data->update([
+            //     'foto' => $namafoto,
+            //     'judul' => $request->judul,
+            //     'deskripsi' => $request->deskripsi,
+            //     'judulsidebar1' => $request->judulsidebar1,
+            //     'linksidebar1' => $request->linksidebar1,
+            //     'judulsidebar2' => $request->judulsidebar2,
+            //     'fotosidebar2' => $namafoto,
+            // ]);
+            // dd($data);
+        }
+        // dd($data);
+            return redirect()->route('modul')->with('success', 'Berhasil Di Update');
     }
+
+    // }
 
     /**
      * Remove the specified resource from storage.
@@ -289,5 +298,35 @@ class ModulController extends Controller
             ]);
         }
         return redirect('index/artikel')->with('success', 'Berhasil Di Update');
+    }
+
+
+
+
+    public function profile(){
+        $data = User::all()->first();
+        return view('profileadmin.profileadmin',compact("data"));
+    }
+
+    public function editprofile(Request $request){
+        $data = User::all()->first();
+        $data->update([
+            "username" => $request->username,
+            "email" => $request->email,
+            "password" => bcrypt($request->password),
+        ]);
+        // dd($data);
+        // if($data->password == $request->password_new){
+
+        // }else{
+        //     return redirect("profile")->with("error","Pasword yang anda masukkan salah");
+        // }
+        return redirect('ptofile')->with("success","success");
+    }
+
+    public function logout(Request $request)
+    {
+        Auth::logout();
+        return redirect('/login');
     }
 }

@@ -81,7 +81,7 @@
                         </div>
                         <br/>
 
-                        
+
                         <br/>
 
                         <div>
@@ -92,13 +92,14 @@
                         </div>
                         <br/>
                         <div>
-                        
+
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Foto Papan Nama</label>
                             <br/>
                             <img class="img mb-3" src="{{ asset('lsp/' . $data->papannama) }}" alt="" style="width: 250px;">
                             <input type="file" name="papannama" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->papannama }}">
-                           
+                            <i style="float: left;font-size: 11px;color: red">foto harus berukuran 290px x 217px</i>
+
                         </div>
                         <br/>
                         <div class="mb-3">
@@ -106,7 +107,7 @@
                             <br/>
                             <img class="img mb-3" src="{{ asset('lsp/' . $data->kantor) }}" alt="" style="width: 250px;">
                             <input type="file" name="kantor" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->kantor }}">
-                           
+<i style="float: left;font-size: 11px;color: red">foto harus berukuran 290px x 217px</i>
                         </div>
                         <br/>
                         <div class="mb-3">
@@ -114,7 +115,7 @@
                             <br/>
                             <img class="img mb-3" src="{{ asset('lsp/' . $data->denah) }}" alt="" style="width: 250px;">
                             <input type="file" name="denah" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->denah }}">
-                            
+<i style="float: left;font-size: 11px;color: red">foto harus berukuran 290px x 217px</i>
                         </div>
                         <br/>
                         <div>

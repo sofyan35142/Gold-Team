@@ -79,7 +79,7 @@
   <thead>
     <tr>
       <th scope="col">No.</th>
-      <th scope="col">Script Logo</th>
+      <th scope="col">Script Ikon</th>
       <th scope="col">Jenis Sosial Media</th>
       <th scope="col">Link Sosial Media</th>
       <th scope="col">Aksi</th>

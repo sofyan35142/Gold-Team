@@ -19,13 +19,13 @@ class alumni extends Seeder
             'nama' => 'Sulton',
             'pekerjaan' => 'mabes polri',
             'deskripsi' => 'Kurikulum yang sangat UP-TO-DATE dan menyesuaikan kebutuhan pasar industri membuat lulusan SMKN 1 SUKOREJO dapat bersaing dan diandalkan perusahaan',
-            'foto' => '1.jpg',
+            'foto' => 'pakmun3.jpeg',
         ]);
         DB::table('alumnis')->insert([
             'nama' => 'Sulton',
             'pekerjaan' => 'mabes polri',
             'deskripsi' => 'Kurikulum yang sangat UP-TO-DATE dan menyesuaikan kebutuhan pasar industri membuat lulusan SMKN 1 SUKOREJO dapat bersaing dan diandalkan perusahaan',
-            'foto' => '1.jpg',
+            'foto' => 'pakmun3.jpeg',
         ]);
         DB::table('alumnis')->insert([
             'nama' => 'Zuham Munsif',

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Jurusan;
+use App\Models\Kakomli;
 use Illuminate\Http\Request;
 
 class JurusanController extends Controller
@@ -41,7 +42,7 @@ class JurusanController extends Controller
         }
         if ($request->hasFile('produktif')) {
             $request->file('produktif')->move('foto/jurusan/', $request->file('produktif')->getClientOriginalName());
-            $data->foto = $request->file('produktif')->getClientOriginalName();
+            $data->produktif = $request->file('produktif')->getClientOriginalName();
             $data->save();
         }
         return redirect()->route('jurusanview')->with('success', 'Berhasil Di Tambahkan');
@@ -89,6 +90,10 @@ class JurusanController extends Controller
     }
     public function deletejurusan($id)
     {
+        $count = Kakomli::where('id_jurusan', $id)->count();
+        if ($count > 0) {
+            return back()->with('error', 'Data masih digunakan');
+        }
         $data = Jurusan::find($id);
         $data->delete();
         return redirect()->route('jurusanview')->with('success', 'Berhasil Di Hapus');

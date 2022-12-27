@@ -17,6 +17,7 @@ class login extends Seeder
     public function run()
     {
         DB::table('users')->insert([
+            'username' => 'zaki',
             'email' => 'sketsu@gmail.com',
             'password' => bcrypt('12345678'),
             'remember_token' => Str::random(60),

@@ -134,7 +134,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link dropdown-toggle">
+                            <a href="/data" class="nav-link dropdown-toggle">
                                 Data
                                 <i class="icofont-rounded-right"></i>
                             </a>
@@ -157,7 +157,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link dropdown-toggle">
+                            <a href="#=/BKK" class="nav-link dropdown-toggle">
                                 Bursa Kerja Khusus
                                 <i class="icofont-rounded-right"></i>
                             </a>

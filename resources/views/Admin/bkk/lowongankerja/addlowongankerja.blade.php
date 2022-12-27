@@ -43,7 +43,7 @@
                                             <div class="mb-3">
                                                 <label for="defaultFormControlInput"
                                                     class="form-label">Deskripsi</label>
-                                                <textarea required name="deskripsi" id="editor"></textarea>
+                                                <textarea name="deskripsi" id="editor"></textarea>
                                             </div>
                                             <label for="defaultFormControlInput" class="form-label">Status</label>
                                             <div class="mb-3">

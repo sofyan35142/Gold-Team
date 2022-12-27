@@ -171,6 +171,7 @@
                                                                         alt="" width="100px" height="100px">
                                                                     <input type="file" name="foto_side" id="nameSmall"
                                                                         class="form-control" placeholder="Enter Name">
+                                                                    <i style="color: red">Foto Harus Berukuran 260px x 200px</i>
                                                                 </div>
                                                             </div>
                                                         </div>

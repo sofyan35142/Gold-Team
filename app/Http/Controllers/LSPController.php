@@ -70,6 +70,7 @@ class LSPController extends Controller
      */
     public function edit(Request $request)
     {
+        // dd($request->all());
         $data = LSP::find($request->id);
         if ($request->hasFile('papannama')) {
             $request->file('papannama')->move('lsp/', $request->file('papannama')->getClientOriginalName());
@@ -78,6 +79,7 @@ class LSPController extends Controller
                 'papannama' => $namafoto,
                 'judul' => $request->judul,
                 'deskripsi' => $request->deskripsi,
+                'link' => $request->link
             ]);
         }
         if ($request->hasFile('kantor')) {
@@ -87,8 +89,9 @@ class LSPController extends Controller
                 'kantor' => $namafoto1,
                 'judul' => $request->judul,
                 'deskripsi' => $request->deskripsi,
+                'link' => $request->link
             ]);
-            
+
         }
         if ($request->hasFile('denah')) {
             $request->file('denah')->move('lsp/', $request->file('denah')->getClientOriginalName());
@@ -97,16 +100,18 @@ class LSPController extends Controller
                 'denah' => $namafoto2,
                 'judul' => $request->judul,
                 'deskripsi' => $request->deskripsi,
+                'link' => $request->link
             ]);
         } else {
             $data->update([
                 //'foto' => request->foto
                 'judul' => $request->judul,
                 'deskripsi' => $request->deskripsi,
-
+                'link' => $request->link
             ]);
         }
-        $data->update($request->all());
+        // dd($data);
+        // $data->update($request->all());
         return redirect ('index/lsp')->with('success', 'Berhasil Di Update');
     }
 
@@ -215,9 +220,9 @@ class LSPController extends Controller
         $data = Skematerlisensi::find($request->id);
         if ($request->hasFile('foto2')) {
             $request->file('foto2')->move('lsp/', $request->file('foto2')->getClientOriginalName());
-            $namafoto = $request->file('foto2')->getClientOriginalName();
+            $namafoto2 = $request->file('foto2')->getClientOriginalName();
             $data->update([
-                'foto' => $namafoto,
+                'foto2' => $namafoto2,
                 'judul' => $request->judul,
                 'deskripsi' => $request->deskripsi,
             ]);
@@ -229,7 +234,7 @@ class LSPController extends Controller
 
             ]);
         }
-        
+
         return redirect('index/skemalsp')->with('success', 'Berhasil Di Update');
     }
 

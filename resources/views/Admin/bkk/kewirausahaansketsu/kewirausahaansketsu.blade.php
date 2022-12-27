@@ -71,7 +71,7 @@
                         <div class="card mb-4">
                             <div class="card-datatable table-responsive pt-0">
                                 <h5 class="card-header">Data Peserta Didik Kewirausahaan Sketsu</h5>
-                                <a href="/index/add_kegiatan" type="button" class="btn rounded-pill btn-primary">Tambah
+                                <a href="/index/addsiswakbkk" type="button" class="btn rounded-pill btn-primary">Tambah
                                     +</a>
                                     <table class="table" id="table2">
                                         <thead>

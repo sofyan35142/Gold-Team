@@ -60,7 +60,7 @@
                     </div>
                     <div class="service-details-post">
                         <h3>{{$data->judulsidebar2}}</h3>
-                        <img src="{{ asset('foto/jurusan/' . $data->foto) }}" alt="service">
+                        <img src="{{ asset('foto/jurusan/' . $data->fotosidebar2) }}" alt="service">
                     </div>
                 </div>
 

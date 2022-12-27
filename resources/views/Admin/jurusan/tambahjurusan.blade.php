@@ -78,7 +78,7 @@
 
 
 
-  @include("Admin.layoutadmin.navbar")
+  @include('Admin.layoutadmin.navbar')
 
 
 
@@ -92,7 +92,6 @@
         <!-- Content -->
 
           <div class="container-xxl flex-grow-1 container-p-y">
-
             <div class="row">
                 <div class="col-md-12">
                     <div class="card mb-4">
@@ -110,7 +109,7 @@
                         <label for="editor" class="form-label">Deskripsi</label>
                         {{-- <input type="text" name="deskripsi" class="form-control" id="editor"  aria-describedby="defaultFormControlHelp" /> --}}
                         <div class="card-body">
-                                <textarea name="deskripsi" id="editor" required></textarea>
+                                <textarea name="deskripsi" id="editor"></textarea>
                         </div>
                         <br/>
                         <div class="mb-3">
@@ -165,7 +164,7 @@
 
 
 <!-- Footer -->
-@include("Admin.layoutadmin.footer")
+@include('Admin.layoutadmin.footer')
 <!-- / Footer -->
 
 
@@ -243,11 +242,11 @@
   <script src="//cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.ckeditor.com/ckeditor5/35.3.1/classic/ckeditor.js"></script>
   <script>
-    ClassicEditor
-        .create( document.querySelector('#editor') )
-        .catch( error => {
-          console.error(error);
-        });
+      ClassicEditor
+          .create(document.querySelector('#editor'))
+          .catch(error => {
+              console.error(error);
+          });
   </script>
 </body>
 <script>

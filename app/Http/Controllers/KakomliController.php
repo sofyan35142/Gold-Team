@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Kakomli;
 use App\Models\Jurusan;
+use App\Models\kategoriblog;
 use Illuminate\Http\Request;
 
 class KakomliController extends Controller
@@ -41,7 +42,7 @@ class KakomliController extends Controller
      */
     public function store(Request $request)
     {
-        
+
         $data = Kakomli::create([
             'nama_guru' => $request->nama_guru,
             'id_jurusan' => $request->id_jurusan,
@@ -122,8 +123,10 @@ class KakomliController extends Controller
      * @param  \App\Models\Kakomli  $kakomli
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Kakomli $kakomli)
+    public function destroy($id)
     {
-        //
+        $data = Kakomli::find($id);
+        $data->delete();
+        return redirect()->route('kakomli')->with('success', 'Berhasil Di Hapus');
     }
 }

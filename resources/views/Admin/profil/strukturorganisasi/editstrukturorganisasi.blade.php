@@ -52,7 +52,7 @@
                                                 <input type="file" name="foto" class="form-control"
                                                     id="exampleInputEmail1" aria-describedby="emailHelp"
                                                     value="{{ $data->foto_sidestruktur }}">
-                                                {{-- <i style="float: left;font-size: 11px;color: red">Abaikan jika tidak merubah foto</i> --}}
+                                                <i style="float: left;font-size: 11px;color: red">foto harus berukuran 500px x 600px</i>
                                             </div>
                                             <button type="submit" class="btn rounded-pill btn-primary">Submit</button>
                                         </form>

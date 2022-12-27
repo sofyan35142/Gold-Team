@@ -71,7 +71,7 @@
 
         <td>
             <a href="/beranda/editslider/{{ $slider->id }}" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></a>
-            <a href="#" class="btn btn-danger delete" data-id="{{ $slider->id }}" data-slider="{{ $slider->nama }}"><i class="fa-solid fa-trash"></i></a>
+            {{-- <a href="#" class="btn btn-danger delete" data-id="{{ $slider->id }}" data-slider="{{ $slider->nama }}"><i class="fa-solid fa-trash"></i></a> --}}
         </td>
     </tr>
 

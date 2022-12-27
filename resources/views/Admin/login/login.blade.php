@@ -19,7 +19,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>Login Basic - Pages | Frest - Bootstrap Admin Template</title>
+    <title>Login Sketsu</title>
 
     <meta name="description" content="Start your development with a Dashboard for Bootstrap 5" />
     <meta name="keywords" content="dashboard, bootstrap 5 dashboard, bootstrap 5 admin, bootstrap 5 design, bootstrap 5">
@@ -139,10 +139,15 @@
                         <p class="mb-4"></p>
                         <form id="formAuthentication" class="mb-3" action="/postlogin" method="POST">
                             @csrf
+                             @if (session("salah"))
+                            <div class="alert alert-danger" role="alert">
+                            {{ session("salah") }}
+                            </div>
+                            @endif
                             <div class="mb-3">
                                 <label for="email" class="form-label">Email</label>
                                 <input type="text" class="form-control" id="email" name="email"
-                                    placeholder="Enter your email or username" autofocus>
+                                    placeholder="Masukkan Email Anda" autofocus>
                             </div>
                             <div class="mb-3 form-password-toggle">
                                 <div class="d-flex justify-content-between">
@@ -158,14 +163,14 @@
                                     <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
                                 </div>
                             </div>
-                            <div class="mb-3">
+                            {{-- <div class="mb-3">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" id="remember-me">
                                     <label class="form-check-label" for="remember-me">
                                         Remember Me
                                     </label>
                                 </div>
-                            </div>
+                            </div> --}}
                             <div class="mb-3">
                                 <button class="btn btn-primary d-grid w-100" type="submit">Sign in</button>
                             </div>

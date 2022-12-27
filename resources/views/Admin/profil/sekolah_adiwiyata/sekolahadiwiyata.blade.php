@@ -49,7 +49,7 @@
                                                 </td>
                                                 <td>{!! $adiwiyata->deskripsi !!}</td>
                                                 <td>
-                                                    <a href="/visimisi/edit/{{ $adiwiyata->id }}"
+                                                    <a href="/index/editsekolahadiwiyata"
                                                         class="btn btn-warning"><i
                                                             class="fa-solid fa-pen-to-square"></i></a>
                                                     {{-- <a href="#" class="btn btn-danger delete"

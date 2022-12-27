@@ -2,9 +2,11 @@
 <html lang="en" class="light-style layout-navbar-fixed layout-menu-fixed " dir="ltr" data-theme="theme-semi-dark"
     data-assets-path="../../assets1/" data-template="vertical-menu-template-semi-dark">
 @include('Admin.layoutadmin.head')
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css"
+    integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <body>
-    <!-- Layout wrapper -->
     <div class="layout-wrapper layout-content-navbar  ">
         <div class="layout-container">
             <!-- Menu -->
@@ -16,45 +18,75 @@
                 @include('Admin.layoutadmin.navbar')
                 <!-- / Navbar -->
                 <!-- Content wrapper -->
+                <!-- Content wrapper -->
                 <div class="content-wrapper">
+
                     <!-- Content -->
+
                     <div class="container-xxl flex-grow-1 container-p-y">
+
+
+                        <h4 class="py-3 breadcrumb-wrapper mb-4">
+                            <span class="text-muted fw-light">Account Settings /</span> Account
+                        </h4>
+
                         <div class="row">
                             <div class="col-md-12">
+                                {{-- <ul class="nav nav-pills flex-column flex-md-row mb-3">
+                                    <li class="nav-item"><a class="nav-link active" href="javascript:void(0);"><i
+                                                class="bx bx-user me-1"></i> Account</a></li>
+                                </ul> --}}
                                 <div class="card mb-4">
-                                    <h5 class="card-header">Tambah Data Sekolah Adiwiyata</h5>
+                                    <h5 class="card-header">Profile Details</h5>
+                                    <!-- Account -->
+                                    
+                                    <hr class="my-0">
                                     <div class="card-body">
-                                        <form action="/insertsekolahadiwiyata" method="POST"
-                                            enctype="multipart/form-data">
+                                        <form action="/editprofile" method="POST">
                                             @csrf
-                                            <div>
-                                                <label for="defaultFormControlInput" class="form-label">Judul</label>
-                                                <input type="text" name="judul" class="form-control"
-                                                    id="defaultFormControlInput"
-                                                    aria-describedby="defaultFormControlHelp" />
-                                            </div>
-                                            <br>
-                                            <div class="mb-3">
-                                                <label for="exampleInputEmail1" class="form-label">Upload logo
-                                                    adiwiyata</label>
-                                                <input type="file" name="foto_adiwiyata" class="form-control"
-                                                    id="exampleInputEmail1" aria-describedby="emailHelp">
-                                            </div>
-                                            <br>
-                                            <div>
-                                                <label for="editor" class="form-label">Deskripsi</label>
-                                                <div class="card-body">
-                                                    <textarea name="deskripsi" id="editor"></textarea>
+                                            <div class="row">
+                                                <div class="mb-3 col-md-6">
+                                                    <label for="firstName" class="form-label">Username</label>
+                                                    <input class="form-control" type="text" id="username"
+                                                        name="username" value="{{ $data->username }}" autofocus />
                                                 </div>
-                                                <button type="submit"
-                                                    class="btn rounded-pill btn-primary">Submit</button>
+                                                <div class="mb-3 col-md-6">
+                                                    <label for="lastName" class="form-label">Email</label>
+                                                    <input class="form-control" type="text" name="email"
+                                                        id="email" value="{{ $data->email }}" />
+                                                </div>
+                                                <div class="mb-3 col-md-6">
+                                                    <label for="email" class="form-label">Password Lama</label>
+                                                    <input class="form-control" type="password" id="password"
+                                                        name="password_lama" value="" />
+                                                </div>
+                                                <div class="mb-3 col-md-6">
+                                                    <label for="organization" class="form-label">
+                                                        password Baru</label>
+                                                    <input type="text" class="form-control" id="confirmpassword"
+                                                        name="password" value="" />
+                                                </div>
+                                                <div class="mt-2">
+                                                    <button type="submit" class="btn btn-primary me-2">Save
+                                                        changes</button>
+                                                    <button type="reset"
+                                                        class="btn btn-label-secondary">Cancel</button>
+                                                </div>
                                         </form>
                                     </div>
+                                    <!-- /Account -->
                                 </div>
                             </div>
                         </div>
+
+
+
                     </div>
                     <!-- / Content -->
+
+
+
+
                     <!-- Footer -->
                     <footer class="content-footer footer bg-footer-theme">
                         <div
@@ -68,18 +100,25 @@
                                     class="footer-link fw-semibold">PIXINVENT</a>
                             </div>
                             <div>
+
                                 <a href="https://themeforest.net/licenses/standard" class="footer-link me-4"
                                     target="_blank">License</a>
                                 <a href="https://1.envato.market/pixinvent_portfolio" target="_blank"
                                     class="footer-link me-4">More Themes</a>
+
                                 <a href="https://pixinvent.com/demo/frest-clean-bootstrap-admin-dashboard-template/documentation-bs5/"
                                     target="_blank" class="footer-link me-4">Documentation</a>
+
+
                                 <a href="https://pixinvent.ticksy.com/" target="_blank"
                                     class="footer-link d-none d-sm-inline-block">Support</a>
+
                             </div>
                         </div>
                     </footer>
                     <!-- / Footer -->
+
+
                     <div class="content-backdrop fade"></div>
                 </div>
                 <!-- Content wrapper -->
@@ -95,6 +134,7 @@
     <div class="buy-now">
         <a href="https://1.envato.market/frest_admin" target="_blank" class="btn btn-danger btn-buy-now">Buy Now</a>
     </div>
+
     <!-- Core JS -->
     <!-- build:js assets1/vendor/js/core.js -->
     <script src="../../assets1/vendor/libs/jquery/jquery.js"></script>
@@ -128,24 +168,20 @@
     <script src="../../assets1/vendor/libs/formvalidation/dist/js/FormValidation.min.js"></script>
     <script src="../../assets1/vendor/libs/formvalidation/dist/js/plugins/Bootstrap5.min.js"></script>
     <script src="../../assets1/vendor/libs/formvalidation/dist/js/plugins/AutoFocus.min.js"></script>
+
     <!-- Main JS -->
     <script src="../../assets1/js/main.js"></script>
+
     <!-- Page JS -->
     <script src="../../assets1/js/tables-datatables-basic.js"></script>
     <script src="//cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.ckeditor.com/ckeditor5/35.3.1/classic/ckeditor.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script> --}}
     <script>
-        ClassicEditor
-            .create(document.querySelector('#editor'))
-            .catch(error => {
-                console.error(error);
-            });
+    @if (Session::get('success'))
+        toastr.success("{{ Session::get('success') }}")
+    @endif
     </script>
 </body>
-<script>
-    $(document).ready(function() {
-        $('#jurusan').DataTable();
-    });
-</script>
 
 </html>

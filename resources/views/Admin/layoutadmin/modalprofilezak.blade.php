@@ -11,6 +11,7 @@
                 <div class="modal-body">
                     <div class="row">
                         <div class="col mb-3">
+                            <i style="color: red"> Foto Harus berukuran 640px x 656px</i>
                             <label for="nameSmall" class="form-label">Foto
                                 Sekolah</label>
                             <input type="file" id="nameSmall" class="form-control" placeholder="Enter Name"

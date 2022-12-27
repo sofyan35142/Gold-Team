@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('foto_sekolah');
             $table->string('nama_sekolah');
-            $table->integer('npsn');
+            $table->string('npsn');
             $table->string('desa');
             $table->string('kecamatan');
             $table->string('daerah');
