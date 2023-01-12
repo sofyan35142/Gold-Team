@@ -174,6 +174,9 @@
                             <div class="mb-3">
                                 <button class="btn btn-primary d-grid w-100" type="submit">Sign in</button>
                             </div>
+                            <div class="mb-3">
+                                <a class="btn btn-primary d-grid w-100" href="">Login With google</a>
+                            </div>
                         </form>
                     </div>
                 </div>

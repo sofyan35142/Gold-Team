@@ -8,6 +8,7 @@ use App\Models\Artikel;
 use Illuminate\Http\Request;
 use App\Models\Reparasibengkel;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 
 class ModulController extends Controller
 {
@@ -16,7 +17,8 @@ class ModulController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function tes(){
+    public function tes()
+    {
         return view('landingpage.test');
     }
     public function modul()
@@ -34,7 +36,7 @@ class ModulController extends Controller
     public function updatemodultkr(Request $request)
     {
         $data = Modul::find($request->id);
-        $data ->update($request->all());
+        $data->update($request->all());
 
         return redirect('index/modultkr')->with('success', 'Berhasil Di Update');
     }
@@ -174,7 +176,7 @@ class ModulController extends Controller
             // dd($data);
         }
         // dd($data);
-            return redirect()->route('modul')->with('success', 'Berhasil Di Update');
+        return redirect()->route('modul')->with('success', 'Berhasil Di Update');
     }
 
     // }
@@ -192,7 +194,7 @@ class ModulController extends Controller
         return redirect()->route('modul')->with('success', 'Berhasil Di Hapus');
     }
 
-///////BUKU REPARASI BENGKEL/////////////////
+    ///////BUKU REPARASI BENGKEL/////////////////
 
 
     public function reparasi()
@@ -303,25 +305,26 @@ class ModulController extends Controller
 
 
 
-    public function profile(){
+    public function profile()
+    {
         $data = User::all()->first();
-        return view('profileadmin.profileadmin',compact("data"));
+        return view('profileadmin.profileadmin', compact("data"));
     }
 
-    public function editprofile(Request $request){
+    public function editprofile(Request $request)
+    {
         $data = User::all()->first();
-        $data->update([
-            "username" => $request->username,
-            "email" => $request->email,
-            "password" => bcrypt($request->password),
-        ]);
-        // dd($data);
-        // if($data->password == $request->password_new){
-
+        if(!Hash::check($request->password_lama, auth()->user()->password)){
+            return back()->with("error", "Kata Sandi Lama Tidak Cocok!");
+        }
         // }else{
-        //     return redirect("profile")->with("error","Pasword yang anda masukkan salah");
+            $data->update([
+                "username" => $request->username,
+                "email" => $request->email,
+                "password" => bcrypt($request->password),
+            ]);
         // }
-        return redirect('ptofile')->with("success","success");
+        return redirect('profile')->with("success", "success");
     }
 
     public function logout(Request $request)

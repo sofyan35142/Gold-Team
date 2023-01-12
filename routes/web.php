@@ -110,12 +110,14 @@ Route::get('/jmlpemegangsertifikat', [LandingController::class, 'jmlpemegangsert
 
 
 //StartAdmin
-
+//login
 Route::get('/login', [Admincontroller::class, 'login'])->name('login');
 Route::get('/gantipass', [Admincontroller::class, 'gantipass'])->name('gantipass');
 Route::post('/postlogin', [Admincontroller::class, 'postlogin']);
 Route::get('/index', [Admincontroller::class, 'index']);
-
+//login google
+Route::get('/auth/google', [Admincontroller::class, 'redirectgoogle']);
+Route::get('/auth/google/callback', [Admincontroller::class, 'googlecallback']);
 
 // Jurusan Admin
 Route::get('/index/jurusan', [JurusanController::class, 'jurusanview'])->name('jurusanview');
@@ -438,7 +440,7 @@ Route::get('/index/artikel', [ModulController::class, 'artikel'])->name('artikel
 Route::post('/updateartikel/{id}', [ModulController::class, 'editartikel']);
 
 
-Route::get('/ptofile', [ModulController::class, 'profile'])->name('profile');
+Route::get('/profile', [ModulController::class, 'profile'])->name('profile');
 Route::get('/logout', [ModulController::class, 'logout'])->name('logout');
 Route::post('/editprofile', [ModulController::class, 'editprofile'])->name('profile');
 

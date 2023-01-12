@@ -1,0 +1,26 @@
+@media(max-width:600px){
+    .rprofilcard{
+        position: relative;
+        bottom: 35pc;
+    }
+
+    .owltik {
+        position: absolute;
+        bottom: -5px;
+        z-index: 5;
+        /* bottom: 41px; */
+        left: 186px;
+    }
+    .why-us .why-us-text {
+        padding-left: 0 !important;
+    }
+    .rowl{
+        padding-left: 0 !important;
+    }
+    .idenwarp {
+        padding: 5px;
+    }
+    .rspan{
+        display: grid !important;
+    }
+}

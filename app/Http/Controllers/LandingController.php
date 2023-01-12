@@ -250,12 +250,11 @@ class LandingController extends Controller
     public function sekolahadiwiyata(request $request)
     {
         $sponsor = sponsor::all();
-        $adiwiyata = sekolahadiwiyata::find(1);
+        $adiwiyata = sekolahadiwiyata::all()->first();
         $sosmed = Sosmed::all();
-
-        $data = Blog::where('kategori', '3')->get();
-
-        // dd($data);
+        $data =blog::where('judul', 'LIKE', '%' . 'adiwiyata' . '%')
+        ->get();
+        // dd($tes);
         return view("landingpage.profile.sekolahadiwiyata", compact('adiwiyata', 'sosmed', 'sponsor','data'));
     }
     public function sekolahrujukan()
@@ -477,7 +476,7 @@ class LandingController extends Controller
         $dataa = Blog::all();
         $sosmed = Sosmed::all();
         $dataa = Blog::paginate(3);
-        $join = Blog::join('idblog', 'blogs.kategori', '=', 'idblog.id')->select('blogs.*', 'kategoriblogs.kategori');
+        // $join = Blog::join('idblog', 'blogs.kategori', '=', 'idblog.id')->select('blogs.*', 'kategoriblogs.kategori');
         // $keyword = $request->keyword;
         // $data = Blog::query();
         if ($request->filled('judul')) {
@@ -489,6 +488,6 @@ class LandingController extends Controller
             ->paginate(3);
         }
         // $data = $data->get();
-        return view('landingpage.beranda.blogselengkapnya', compact('sponsor', 'kategori', 'join', 'dataa', 'sosmed'));
+        return view('landingpage.beranda.blogselengkapnya', compact('sponsor', 'kategori','dataa', 'sosmed'));
     }
 }

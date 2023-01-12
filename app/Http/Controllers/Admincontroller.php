@@ -2,35 +2,36 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\BKK;
 use App\Models\Blog;
+use App\Models\Guru;
+use App\Models\User;
+use App\Models\walas;
 use App\Models\Dharma;
 use App\Models\ekstra;
-use App\Models\Guru;
 use App\Models\Jurusan;
-use App\Models\User;
-use Illuminate\Support\Str;
-use App\Models\BKK;
+use App\Models\sponsor;
 use App\Models\kegiatanbkk;
-use App\Models\kewirausahaansketsu;
-use App\Models\lowongankerja;
 use App\Models\strukturbkk;
 use App\Models\visimisibkk;
+use Illuminate\Support\Str;
 use App\Models\sidestruktur;
 use Illuminate\Http\Request;
+use App\Models\lowongankerja;
 use App\Models\profilsekolah;
+use App\Models\umkm_pasangan;
+use App\Models\Bimbingankarir;
 use App\Models\profilvisimisi;
 use App\Models\sejarahsingkat;
+use App\Models\sekolahrujukan;
+use Illuminate\Support\Carbon;
+use App\Models\perusahaan_mitra;
+
 use App\Models\sekolahadiwiyata;
 use App\Models\strukturorganisasi;
+use App\Models\kewirausahaansketsu;
 use Illuminate\Support\Facades\Auth;
-use App\Models\sekolahrujukan;
-use App\Models\sponsor;
-use App\Models\walas;
-
-use App\Models\Bimbingankarir;
-use App\Models\perusahaan_mitra;
-use App\Models\umkm_pasangan;
-use Illuminate\Support\Carbon;
+use Laravel\Socialite\Facades\Socialite;
 
 class Admincontroller extends Controller
 {
@@ -56,7 +57,8 @@ class Admincontroller extends Controller
         return view('Admin.login.login');
     }
 
-    public function gantipass(){
+    public function gantipass()
+    {
         return view('Admin.profile.gantipass');
     }
 
@@ -71,7 +73,7 @@ class Admincontroller extends Controller
         $blog = Blog::count();
         $ekstra = ekstra::count();
         $bkk = kegiatanbkk::count();
-        return view('Admin.index', compact('jurusan','bkk', 'guru', 'walas', 'dharma', 'ekstra','sponsor','blog','ekstra'));
+        return view('Admin.index', compact('jurusan', 'bkk', 'guru', 'walas', 'dharma', 'ekstra', 'sponsor', 'blog', 'ekstra'));
     }
     ///////////////////// START PROFIL LANDINGPAGE ADMIN ///////////////////////////
     //start profileditsekolahrujukan
@@ -225,7 +227,7 @@ class Admincontroller extends Controller
             $data->save();
         }
 
-    return redirect('/index/strukturorganisasi')->with('success', 'Berhasil Di Edit');
+        return redirect('/index/strukturorganisasi')->with('success', 'Berhasil Di Edit');
     }
 
     public function deletestrukturorganisasi($id)
@@ -254,13 +256,15 @@ class Admincontroller extends Controller
             $data->foto_struktur = $request->file('foto_struktur')->getClientOriginalName();
             $data->save();
         }
-        return redirect("/index/strukturorganisasi")->with("success","Data Berhasil Update");
+        return redirect("/index/strukturorganisasi")->with("success", "Data Berhasil Update");
     }
-    public function viewstrukturorganisasi($id){
+    public function viewstrukturorganisasi($id)
+    {
         $data = sidestruktur::findorfail($id);
-        return view("Admin.profil.strukturorganisasi.sidestruktur.editmember",compact("data"));
+        return view("Admin.profil.strukturorganisasi.sidestruktur.editmember", compact("data"));
     }
-    public function editsidestrukturorganisasi(request $request,$id){
+    public function editsidestrukturorganisasi(request $request, $id)
+    {
         $data = sidestruktur::findorfail($id);
         $data->update([
             "nama" => $request->nama,
@@ -271,12 +275,13 @@ class Admincontroller extends Controller
             $data->foto_struktur = $request->file('foto_struktur')->getClientOriginalName();
             $data->save();
         }
-        return redirect("/index/strukturorganisasi")->with("success","Data Berhasil Update");
+        return redirect("/index/strukturorganisasi")->with("success", "Data Berhasil Update");
     }
-    public function deletestruktur($id){
+    public function deletestruktur($id)
+    {
         $data =  sidestruktur::find($id);
         $data->delete();
-        return redirect("/index/strukturorganisasi")->with("success","Data berhasil Dihapus");
+        return redirect("/index/strukturorganisasi")->with("success", "Data berhasil Dihapus");
     }
     // end profil/strukturorganisasi
     // start profil/sekolahadiwiyata
@@ -303,9 +308,10 @@ class Admincontroller extends Controller
     public function editsekolahadiwiyata()
     {
         $data = sekolahadiwiyata::all()->first();
-    return view('Admin.profil.sekolah_adiwiyata.editsekolahadiwiyata',compact("data"));
+        return view('Admin.profil.sekolah_adiwiyata.editsekolahadiwiyata', compact("data"));
     }
-    public function updateadiwiyata(request $request){
+    public function updateadiwiyata(request $request)
+    {
         $data = sekolahadiwiyata::all()->first();
         $data->update([
             "judul" => $request->judul,
@@ -319,7 +325,6 @@ class Admincontroller extends Controller
         }
 
         return redirect('/index/sekolahadiwiyata')->with('success', 'data berhasil ditambahkan');
-
     }
     // end profil/sekolahadiwiyata
     // Start profil/sejarahsingkat
@@ -402,10 +407,10 @@ class Admincontroller extends Controller
         $model = sejarahsingkat::all()->first();
         $foto = json_decode($model->foto_side);
         // dd($foto);
-        if($foto != null){
+        if ($foto != null) {
             $fotoup = array_merge($foto, $files);
             $model->foto_side = json_encode($fotoup);
-        }else{
+        } else {
             $model->foto_side = $files;
         }
         // dd($model->foto_side);
@@ -427,7 +432,8 @@ class Admincontroller extends Controller
         // dd($data);
         return redirect('/index/sejarahsingkat')->with("success", "data berhasil diedit");
     }
-    public function deletesidesejarah($idarray){
+    public function deletesidesejarah($idarray)
+    {
         // dd($idarray);
         $data = sejarahsingkat::all()->first();
         $foto = json_decode($data->foto_side);
@@ -436,7 +442,7 @@ class Admincontroller extends Controller
         $data->foto_side = $foto;
         $data->save();
         // dd($foto);
-        return redirect("/index/sejarahsingkat")->with("success","Data berhasil Dihapus");
+        return redirect("/index/sejarahsingkat")->with("success", "Data berhasil Dihapus");
     }
     //end sejarah singkat
     //start sekolah rujukan
@@ -552,7 +558,8 @@ class Admincontroller extends Controller
 
         return redirect("/index/sobkk")->with("success", "Data Berhasil Di Ubah");
     }
-    public function deletesobkk($key){
+    public function deletesobkk($key)
+    {
         $data = strukturbkk::all()->first();
         $nama = json_decode($data->nama_member);
         $foto = json_decode($data->foto_member);
@@ -562,8 +569,7 @@ class Admincontroller extends Controller
         $data->foto_member = $foto;
         $data->save();
         // dd($data);
-        return redirect("/index/sobkk")->with("success","Data berhasil Dihapus");
-
+        return redirect("/index/sobkk")->with("success", "Data berhasil Dihapus");
     }
     //sidesobkk
     public function sidesobkk()
@@ -826,15 +832,16 @@ class Admincontroller extends Controller
         unset($fotopeserta[$key]);
         $data->wirausahapesertadidik = $fotopeserta;
         $data->save();
-        return redirect("/index/kewirausahaan-sketsu")->with("success","Data Berhasil dihapus");
+        return redirect("/index/kewirausahaan-sketsu")->with("success", "Data Berhasil dihapus");
     }
-    public function deletealumni($key){
+    public function deletealumni($key)
+    {
         $data = kewirausahaansketsu::all()->first();
         $fotoalumni = json_decode($data->wirausahaalumni);
         unset($fotoalumni[$key]);
         $data->wirausahaalumni = $fotoalumni;
         $data->save();
-        return redirect("/index/kewirausahaan-sketsu")->with("success","Data Berhasil dihapus");
+        return redirect("/index/kewirausahaan-sketsu")->with("success", "Data Berhasil dihapus");
     }
     //end kewirausahaan bkk
 
@@ -868,7 +875,8 @@ class Admincontroller extends Controller
 
         // ]);
     }
-    public function editlowongankerja(request $request,$id){
+    public function editlowongankerja(request $request, $id)
+    {
         $data = lowongankerja::findorfail($id);
         $data->update([
             "judul" => $request->judul,
@@ -880,12 +888,13 @@ class Admincontroller extends Controller
             $data->foto = $request->file('foto')->getClientOriginalName();
             $data->save();
         }
-        return redirect("/index/lowongankerja")->with("success","Data berhasil diedit");
+        return redirect("/index/lowongankerja")->with("success", "Data berhasil diedit");
     }
-    public function deletelowongan($id){
+    public function deletelowongan($id)
+    {
         $data = lowongankerja::findorfail($id);
         $data->delete();
-        return redirect("/index/lowongankerja")->with("success","data berhasil dihapus");
+        return redirect("/index/lowongankerja")->with("success", "data berhasil dihapus");
     }
     //end lowongan_kerja
 
@@ -905,16 +914,19 @@ class Admincontroller extends Controller
         $data = perusahaan_mitra::create($request->all());
         return redirect("/index/perusahaanmitra")->with("success", "data berhasil ditambahkan");
     }
-    public function showaddpt($id){
+    public function showaddpt($id)
+    {
         $data = perusahaan_mitra::find($id);
-        return view("Admin.bkk.perusahaanmitra.showaddpt",compact("data"));
+        return view("Admin.bkk.perusahaanmitra.showaddpt", compact("data"));
     }
-    public function editperusahaanmitra(Request $request,$id){
+    public function editperusahaanmitra(Request $request, $id)
+    {
         $data = perusahaan_mitra::findorfail($id);
         $data->update($request->all());
         return redirect("/index/perusahaanmitra")->with("success", "data berhasil diedit");
     }
-    public function deletemitra($id){
+    public function deletemitra($id)
+    {
         $data = perusahaan_mitra::findorfail($id);
         $data->delete();
         return redirect("/index/perusahaanmitra")->with("success", "data berhasil dihapus");
@@ -929,19 +941,22 @@ class Admincontroller extends Controller
         $data = umkm_pasangan::create($request->all());
         return redirect("/index/perusahaanmitra")->with("success", "data berhasil ditambahkan");
     }
-    public function showumkm($id){
+    public function showumkm($id)
+    {
         $data = umkm_pasangan::findorfail($id);
-        return view("Admin.bkk.perusahaanmitra.showumkm",compact("data"));
+        return view("Admin.bkk.perusahaanmitra.showumkm", compact("data"));
     }
-    public function editshowumkm(Request $request,$id){
+    public function editshowumkm(Request $request, $id)
+    {
         $data = umkm_pasangan::find($id);
         $data->update($request->all());
-        return redirect("/index/perusahaanmitra")->with("success","Data Berhasil Di Edit");
+        return redirect("/index/perusahaanmitra")->with("success", "Data Berhasil Di Edit");
     }
-    public function deleteumkm($id){
+    public function deleteumkm($id)
+    {
         $data = umkm_pasangan::findorfail($id);
         $data->delete();
-        return redirect("/index/perusahaanmitra")->with("success","Data Berhasil Dihapus");
+        return redirect("/index/perusahaanmitra")->with("success", "Data Berhasil Dihapus");
     }
     //end perusahaan mitra
 
@@ -1011,7 +1026,35 @@ class Admincontroller extends Controller
         // $data->update($request->all());
         return redirect('index/bkk')->with('success', 'Berhasil Di Update');
     }
-
     //end bkk definition
     ///////////////////// END BKK LANDINGPAGE ADMIN ///////////////////////////
+    //login google
+    public function redirectgoogle()
+    {
+        return Socialite::driver('google')->redirect();
+    }
+    public function googlecallback()
+    {
+        try {
+            $user = Socialite::driver('google')->user();
+            // dd($user);
+            $ada = User::where('google_id', $user->id)->first();
+            // dd($ada);
+            if ($ada) {
+                Auth::login($ada);
+                return redirect('/index');
+            } else {
+                // dd($ada);
+                $userbaru = User::create([
+                    'username' => $user->name,
+                    'email' => $user->email,
+                    'google_id' => $user->id,
+                    'password' => bcrypt("abcde"),
+                ]);
+                Auth::login($userbaru);
+                return redirect('/index');
+            }
+        } catch (\Throwable $th) {
+        }
+    }
 }

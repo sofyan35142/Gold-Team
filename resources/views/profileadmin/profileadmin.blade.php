@@ -39,7 +39,7 @@
                                 <div class="card mb-4">
                                     <h5 class="card-header">Profile Details</h5>
                                     <!-- Account -->
-                                    
+
                                     <hr class="my-0">
                                     <div class="card-body">
                                         <form action="/editprofile" method="POST">
@@ -63,7 +63,7 @@
                                                 <div class="mb-3 col-md-6">
                                                     <label for="organization" class="form-label">
                                                         password Baru</label>
-                                                    <input type="text" class="form-control" id="confirmpassword"
+                                                    <input type="password" class="form-control" id="confirmpassword"
                                                         name="password" value="" />
                                                 </div>
                                                 <div class="mt-2">
@@ -180,6 +180,9 @@
     <script>
     @if (Session::get('success'))
         toastr.success("{{ Session::get('success') }}")
+    @endif
+    @if (Session::get('error'))
+        toastr.error("{{ Session::get('error') }}")
     @endif
     </script>
 </body>

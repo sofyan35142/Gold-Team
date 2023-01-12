@@ -34,7 +34,8 @@
     }
 
     .section-head h2 span {
-        font-size: 22px !important
+        font-size: 22px !important;
+        /* display:grid; */
     }
 
     .section-head p {

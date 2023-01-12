@@ -22,12 +22,11 @@
             <div class="col-md-4">
                 <div class="header-social text-end">
                     <ul>
-                         @foreach ($sosmed as $sos)
-                             <li>
-                                <a href="{{$sos->link}}"><i class="{{$sos->script_logo}}"></i></a>
+                        @foreach ($sosmed as $sos)
+                            <li>
+                                <a href="{{ $sos->link }}"><i class="{{ $sos->script_logo }}"></i></a>
                             </li>
-                         @endforeach
-
+                        @endforeach
                     </ul>
                 </div>
             </div>
@@ -38,7 +37,7 @@
 <div class="navbar-area">
     <div class="mobile-nav">
         <a href="index.html" class="logo">
-            <img src="http://127.0.0.1:8000/assets/img/logo.png" class="main-logo" alt="logo" />
+            <img src="http://127.0.0.1:8000/foto/header1.png" class="main-logo" alt="logo" />
             <img src="http://127.0.0.1:8000/assets/img/logo-2.png" class="white-logo" alt="logo" />
         </a>
     </div>
@@ -46,8 +45,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-md navbar-light">
                 <a class="navbar-brand" href="index.html">
-                    <img src="http://127.0.0.1:8000/foto/header1.png"
-                        class="main-logo" alt="logo" />
+                    <img src="http://127.0.0.1:8000/foto/header1.png" class="main-logo" alt="logo" />
                     <img src="http://127.0.0.1:8000/assets/img/logo-2.png" class="white-logo" alt="logo" />
                 </a>
                 <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
@@ -88,46 +86,39 @@
                                     <a href="/detailjurusan/1" class="nav-link">Teknik Kendaraan Ringan (TKR) </a>
 
                                     <ul class="dropdown-menu dropside">
-                                        <li class="nav-item"><a
-                                                href="/detailmodul/1">Modul
+                                        <li class="nav-item"><a href="/detailmodul/1">Modul
                                                 Produktif TKR</a></li>
-                                        <li class="nav-item"><a
-                                                href="/reparasibengkel">Buku
+                                        <li class="nav-item"><a href="/reparasibengkel">Buku
                                                 Pedoman Reparasi Bengkel TKR</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
                                     <a href="/detailjurusan/2" class="nav-link">Teknik Elektronika Industri (TEI)</a>
                                     <ul class="dropdown-menu dropside">
-                                        <li class="nav-item"><a
-                                                href="/detailmodul/2">Modul
+                                        <li class="nav-item"><a href="/detailmodul/2">Modul
                                                 Produktif TEI</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
                                     <a href="/detailjurusan/3" class="nav-link">Rekayasa Perangkat Lunak (RPL)</a>
                                     <ul class="dropdown-menu dropside">
-                                        <li class="nav-item"><a
-                                                href="/detailmodul/3">Modul
+                                        <li class="nav-item"><a href="/detailmodul/3">Modul
                                                 Produktif RPL</a></li>
-                                        <li class="nav-item"><a
-                                                href="/artikelilmiah">Artikel
+                                        <li class="nav-item"><a href="/artikelilmiah">Artikel
                                                 Ilmiah</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
                                     <a href="/detailjurusan/4" class="nav-link">Teknik Kimia Industri (TKI)</a>
                                     <ul class="dropdown-menu dropside">
-                                        <li class="nav-item"><a
-                                                href="/detailmodul/4">Modul
+                                        <li class="nav-item"><a href="/detailmodul/4">Modul
                                                 Produktif TKI</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
                                     <a href="/detailjurusan/5" class="nav-link">Teknik Audio Video (TAV)</a>
                                     <ul class="dropdown-menu dropside">
-                                        <li class="nav-item"><a
-                                                href="/detailmodul/5">Modul
+                                        <li class="nav-item"><a href="/detailmodul/5">Modul
                                                 Produktif TAV</a></li>
                                     </ul>
                                 </li>
@@ -219,7 +210,8 @@
                                     <a href="/alumni/profilealumni" class="nav-link">Profil Alumni</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeWsmECSRWrxLI766NLusaeIuar7bqwvLYs0pSfzJ-mrDaUzA/viewform" class="nav-link">Form Testimoni Alumni</a>
+                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeWsmECSRWrxLI766NLusaeIuar7bqwvLYs0pSfzJ-mrDaUzA/viewform"
+                                        class="nav-link">Form Testimoni Alumni</a>
                                 </li>
                             </ul>
                         </li>

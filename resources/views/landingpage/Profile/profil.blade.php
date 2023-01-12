@@ -35,7 +35,7 @@
         </div>
     </div>
     <div class="section-head text-center mt-5">
-        <h2>Profil Sekolah<span>SMKN 1 SUKOREJO</span></h2>
+        <h2>Profil Sekolah<span class="rspan">SMKN 1 SUKOREJO</span></h2>
     </div>
     <section class="why-us" style="
     height: 30pc;">
@@ -45,9 +45,12 @@
                 <div class="col-lg-6 p-0 h-100">
                     <div class="why-us-img" style="background-image: url({{ asset('assets/img/fotoprofilsekolah/' . $profil->foto_sekolah ) }})">
                     </div>
+                    <div class="text-center reimg px-3">
+                        <img src="{{ asset('assets/img/fotoprofilsekolah/' . $profil->foto_sekolah ) }}" class="rounded" alt="...">
+                    </div>
                 </div>
                 @endforeach
-                <div class="col-lg-6">
+                <div class="col-lg-6 rprofilcard">
                     <div class="why-us-text h-100 owl-carousel owl-theme" id="owl-demo">
                         @foreach ($data as $profil)
                             <div class="h-100 idenwarp">
@@ -282,8 +285,9 @@
             });
         });
         $(document).ready(function() {
-            $('.owl-stage-outer, .owl-stage, .owl-item').addClass('h-100')
-            $('.owl-dots').addClass('owltik')
+            $('.owl-stage-outer, .owl-stage, .owl-item').addClass('h-100');
+            $('.owl-dots').addClass('owltik');
+            $('.owl-item').addClass('rowl');
         })
     </script>
 </body>

@@ -49,23 +49,24 @@
                                 STRUKTUR ORGANISASI
                             </h3>
                             <h4>{{ $data->judul }}</h4>
-                            <h7>{{$data->tahun_ajaran}}</h7>
+                            <h7>{{ $data->tahun_ajaran }}</h7>
                         </div>
-                        <img src="{{ asset('assets/img/' . $data->foto_struktur)}}" alt="service">
+                        <img src="{{ asset('assets/img/' . $data->foto_struktur) }}" alt="service">
                     </div>
                 </div>
                 <div class="col-lg-4 main-service-area blog-side-bar border shadows mb-40px">
-                <h3 class="mt-3 text-center">Anggota Organisasi</h3>
+                    <h3 class="mt-3 text-center">Anggota Organisasi</h3>
                     <div class="row">
                         @foreach ($dataside as $side)
-                        <div class="col-lg-6 mt-3">
-                            <div class="img-overlay">
-                                <img class="h-12pc w-100" src="{{asset('assets/img/so/' . $side->foto_struktur)}}" alt="Avatar" class="img-overlay-image">
-                                <div class="overlay">
-                                    <div class="text">{{$side->nama}}</div>
+                            <div class="col-lg-6 mt-3 wrespon">
+                                <div class="img-overlay">
+                                    <img class="h-12pc w-100" src="{{ asset('assets/img/so/' . $side->foto_struktur) }}"
+                                        alt="Avatar" class="img-overlay-image">
+                                    <div class="overlay">
+                                        <div class="text">{{ $side->nama }}</div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
                         @endforeach
                     </div>
                 </div>

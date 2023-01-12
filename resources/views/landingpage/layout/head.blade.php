@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="http://127.0.0.1:8000/csszaki.css" />
     <link rel="stylesheet" href="http://127.0.0.1:8000/csskeysha.css" />
     <link rel="stylesheet" href="http://127.0.0.1:8000/scsszaki.css" />
+    <link rel="stylesheet" href="http://127.0.0.1:8000/responsivezak.css" />
     @if(!Route::is('lowongan-kerja'))
     <link rel="stylesheet" href="http://127.0.0.1:8000/cssyosop.css" />
     @endif

@@ -34,15 +34,15 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="{{ asset('slider/' . $foto->foto1) }}" alt="First slide"
+                        <img class="d-block w-100 h-30pc" src="{{ asset('slider/' . $foto->foto1) }}" alt="First slide"
                             style="height: 40pc;">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="{{ asset('slider/' . $foto->foto2) }}" alt="Second slide"
+                        <img class="d-block w-100 h-30pc" src="{{ asset('slider/' . $foto->foto2) }}" alt="Second slide"
                             style="height: 40pc;">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="{{ asset('slider/' . $foto->foto3) }}" alt="Third slide"
+                        <img class="d-block w-100 h-30pc" src="{{ asset('slider/' . $foto->foto3) }}" alt="Third slide"
                             style="height: 40pc;">
                     </div>
                 </div>
@@ -65,21 +65,20 @@
             </center> <br>
             <div class="text-container">
                 @foreach ($keunggulan as $data)
-
-                <div>
-                    <div class="icon-block">
-                        <div class=" bg-color-1 icon-block-img m-0 text-info">
-                            {{-- <i class="fas fa-school"></i> --}}
-                            <img src="{{ asset('keunggulan/' . $data->foto) }}" alt="">
-                        </div>
-                        <div class="icon-block-info mr-3">
-                            <h3>{{ $data->judul }}</h3>
-                            <p>
-                               {!! $data->deskripsi !!}
-                            </p>
+                    <div>
+                        <div class="icon-block">
+                            <div class=" bg-color-1 icon-block-img m-0 text-info">
+                                {{-- <i class="fas fa-school"></i> --}}
+                                <img src="{{ asset('keunggulan/' . $data->foto) }}" alt="">
+                            </div>
+                            <div class="icon-block-info mr-3">
+                                <h3>{{ $data->judul }}</h3>
+                                <p>
+                                    {!! $data->deskripsi !!}
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
                 @endforeach
                 {{-- <div>
                     <div class="icon-block ">
@@ -200,10 +199,11 @@
             {{-- <div class="container-fluid"> --}}
             @foreach ($datakepsek as $kepsek)
                 <div class="row align-items-center">
-                    <div class="col-lg-6 p-0">
+                    <div class="col-lg-6 p-0 position-kepsek">
                         <div class="about-img">
                             <div class="img-box5">
-                                <div class="img-blog"><img class="fotokepsek"
+                                <div class="img-blog">
+                                    <img class="fotokepsek"
                                         src="{{ asset('kepsek/' . $kepsek->foto) }}"alt="about"
                                         style="height: 28pc;"> <br>
                                     <center><b>{{ $kepsek->nama }}</b></center>
@@ -314,9 +314,9 @@
                 <h2>Berita & Blog Terbaru</h2>
             </div>
             <div class="price-card-area" style="border: none">
-              <div class="plan-btn">
-                <a href="/blogselengkapnya">Blog Lebih Banyak <i class="fa-regular fa-paper-plane"></i> </a>
-              </div>
+                <div class="plan-btn">
+                    <a href="/blogselengkapnya">Blog Lebih Banyak <i class="fa-regular fa-paper-plane"></i> </a>
+                </div>
             </div>
 
             <div class="blog-slider owl-carousel owl-theme">
@@ -396,6 +396,8 @@
     </div>
     <script>
         // Hide all item in .carousel-item initially
+        // $(".owl-item").addClass("w-res");
+        // $(".owl-stage").addClass("w-stage");
         $(".carousel-item *").addClass("d-none");
         // Animate the first slide
         setTimeout(function() {
